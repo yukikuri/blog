@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-01-06 23:03:25 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/windows-updateflash-crash2000272/</link>
+          <pubDate>Wed, 06 Jan 2016 23:03:25 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/windows-updateflash-crash2000272/</guid>
+          <description>&lt;p&gt;問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://winveg.com/win/kb3133431-adobe-flash-player-20-0-0-272-windows-10-update-06-jan-2016/&#34;&gt;KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/windows-updateflashcrash/</link>
+          <pubDate>Mon, 04 Jan 2016 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/windows-updateflashcrash/</guid>
+          <description>&lt;p&gt;Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。&lt;/p&gt;
+
+&lt;p&gt;Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ&lt;br /&gt;
+&lt;a href=&#34;http://d.hatena.ne.jp/noushibou/20160102/1451724506&#34;&gt;http://d.hatena.ne.jp/noushibou/20160102/1451724506&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。&lt;/p&gt;
+
+&lt;p&gt;Adobe Flash Playerの配布 | Adobe&lt;br /&gt;
+&lt;a href=&#34;http://www.adobe.com/jp/products/flashplayer/distribution3.html&#34;&gt;http://www.adobe.com/jp/products/flashplayer/distribution3.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。&lt;/p&gt;
+
+&lt;p&gt;Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering&lt;br /&gt;
+&lt;a href=&#34;http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/&#34;&gt;http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; 追記&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://kuku.neko2.net/?num=3246&#34;&gt;http://kuku.neko2.net/?num=3246&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>高解像度 HiDPI(Per-Monitor) に対応</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/hidpiper-monitor/</link>
+          <pubDate>Thu, 03 Sep 2015 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/hidpiper-monitor/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19112Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/Ancia19112.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;textsize.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/textsize.png&#34; width=&#34;448&#34; height=&#34;79&#34; style=&#34;border:1px #000 solid&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。&lt;/p&gt;
+
+&lt;p&gt;AnciaでのHiDPI対応は、Per-Monitor Awareですが、異なるdpiのMonitorにWindowを移動したとき、アイコンサイズはMonitorのdpiに応じた表示に変化するまでは対応していません。Internet Explorerも同様の動作のようです。異なるdpiのMonitorに移動したときアイコンサイズまでdpiに合わせることになると、Faviconやファイルのアイコンをサイズに従い再度取得することになるため、負荷が非常に大きいです。ツールバーのアイコンだけならそれほどの負荷もなくdpiに応じたサイズに切り替えられるでしょう。&lt;/p&gt;
+
+&lt;p&gt;Internet Explorerの場合だと、サイドバーのアイテムアイコンなどは、シェルのイメージリストを使用しているようなので、シェルのイメージリストがMonitor単位のサイズではなくSystem DPIに応じた固定サイズになることから、そもそもHiDPI(Per Monitor)でサイドバーアイコンサイズは切り替えられないのだと思います。&lt;/p&gt;
+
+&lt;p&gt;Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>IEDiagnosticsAdapterを使ってみる</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/iediagnosticsadapter/</link>
+          <pubDate>Thu, 09 Apr 2015 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/iediagnosticsadapter/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;で公開されているIEDiagnosticsAdapterを使用してみたメモです。&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter#installing&#34;&gt;installing&lt;/a&gt;に従えば、特にエラーもなく動かすことができました。下は、その手順です。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.Download&lt;/strong&gt;&lt;br /&gt;
+32bitのとき &lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter/releases/download/0.1.2/ieDiagnosticsAdapter-v0.1.2x86.zip&#34;&gt;x86&lt;/a&gt;、64bitのとき &lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter/releases/download/0.1.2/ieDiagnosticsAdapter-v0.1.2x64.zip&#34;&gt;x64&lt;/a&gt;をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する&lt;/strong&gt;&lt;br /&gt;
+64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&amp;rdquo;ALL APPLICATION PACKAGES&amp;rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。&lt;/p&gt;
+
+&lt;p&gt;実行するコマンド(RXは読み出し実行の意味)：&lt;br /&gt;
+icacls proxy.dll /grant &amp;ldquo;ALL APPLICATION PACKAGES&amp;rdquo;:(RX)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;icacls.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/icacls.png&#34; width=&#34;626&#34; height=&#34;98&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.IEを起動する&lt;/strong&gt;&lt;br /&gt;
+2と3は順序が逆でも大丈夫でした。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.Chromeで、localhost:9222を開く&lt;/strong&gt;&lt;br /&gt;
+Chromeで、&lt;a href=&#34;http://localhost:9222/&#34;&gt;http://localhost:9222&lt;/a&gt;を開きます。開くと、IEと、IEコンポも一覧で出てきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;iedlist.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/iedlist.png&#34; width=&#34;660&#34; height=&#34;381&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. localhost:9222の一覧から対象を選ぶ&lt;/strong&gt;&lt;br /&gt;
+対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;cmdline.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/cmdline.png&#34; width=&#34;734&#34; height=&#34;134&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;が表示されます。Chrome側はdevtoolの表示になります。&lt;/p&gt;
+
+&lt;p&gt;使ってみた感じだと、&lt;br /&gt;
+・consoleは動かない。&lt;br /&gt;
+・要素の変更も動かない。&lt;br /&gt;
+・要素の中身の表示と選択要素のハイライトは動く。&lt;br /&gt;
+・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。&lt;br /&gt;
+・IEコンポも認識される&lt;br /&gt;
+といったところでした。&lt;/p&gt;
+
+&lt;p&gt;IEコンポを認識するのは、プロセスに関係なく&amp;rdquo;Internet Explorer_Server&amp;rdquo;のwindow classをすべて列挙しているからみたいです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;の中身を見ると、JsRTというものを使用しています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qiita.com/GackyQiita/items/0bb8c259e8e8cbfcac27&#34;&gt;JavaScript - JsRT を Windows アプリに組み込む - Qiita&lt;/a&gt;&lt;br /&gt;
+Jsonのパーサに使えるかもしれません。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ハイライト、インライン検索で最新の状態に更新</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-66/</link>
+          <pubDate>Tue, 17 Mar 2015 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-66/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19101Beta&#34;&gt;更新履歴&lt;/a&gt;  &lt;a href=&#34;http://www.egrath.net/download/Ancia19101.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.101で、ハイライト・インライン検索を最新の状態に更新可能にしています。Twitter検索など、自動でコンテンツが追加されていくページなどは、アプリでハイライトを更新するのが残念ながら難しいです。最新に更新するボタンで、コンテンツが更新されても、ハイライト・インライン検索を行うことができます。ハイライト・インライン検索の最新の状態に更新では、キーワードの選択状態も維持します。&lt;/p&gt;
+
+&lt;p&gt;1.9.101ではハイライトが行われないページ対策でタイミングの調整も行っていますが、まだgoogle検索３ページ目などでハイライトが行われない場合があり、また調整予定です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>新機能: FullWindow表示ボタン</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/fullwindow/</link>
+          <pubDate>Mon, 02 Mar 2015 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/fullwindow/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1999Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/Ancia1999.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.99で前から追加したかった、フレーム上でフルウインドウ表示を可能にするボタン表示に対応しています。ただし、現状では試験機能(testFeature)がonで、さらにDWM表示が有効のときしか表示されません。今後の予定でDWM無効でも表示可能にするかもしれません。&lt;br /&gt;
+&lt;img alt=&#34;testfeature.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/testfeature.png&#34; width=&#34;586&#34; height=&#34;494&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;フルウインドウ表示自体はすでに備わっている機能ですが、フルウインドウ表示は、&lt;/p&gt;
+
+&lt;p&gt;■ 複数起動やタブの切り離しと相性がよい(動画だけ見たいときは、切り離し後フルウインドウ表示にすることで邪魔なツールバー・タブを非表示にできる)&lt;br /&gt;
+■ 多量にタブを開いていても・ツールバーが多量にあっても、非表示にすることで、今開いているページに集中できる&lt;br /&gt;
+■ 多量にタブを開いていても・ツールバーが多量にあっても、現ページのみの表示にすることで、簡易的なボスが来た機能に使える&lt;/p&gt;
+
+&lt;p&gt;のような利点があります。&lt;/p&gt;
+
+&lt;p&gt;今後の更新で、任意のボタンを追加できるようにする予定です。現状でもresource/frame_toolbar.jsonをsetting/customize配下に配置し、直接ファイルを変更することでボタン追加できますが自己責任となります。&lt;br /&gt;
+&lt;img alt=&#34;frametoolbarcustom.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/frametoolbarcustom.png&#34; width=&#34;423&#34; height=&#34;155&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>windows8.1環境でメニュー動作がおかしいの回避方法</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/windows81/</link>
+          <pubDate>Fri, 30 Jan 2015 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/windows81/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1995Beta&#34;&gt;更新履歴&lt;/a&gt;  &lt;a href=&#34;http://www.egrath.net/download/Ancia1995.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ver1.9.95で、windows8.1環境でtouch対応を行っています。その対応の関係で、touch操作ではブラウザメニュー操作が行えるんですが、マウスだとメニュー項目を選択できない不具合が出ています。この不具合は、次回対応予定です。&lt;/p&gt;
+
+&lt;p&gt;不具合は、オプション設定全般「ブラウザで旧メニューを使用する - legacyMenu」チェックonで回避できます。windows8.1環境の場合、対応までlagacyMenuチェックonで回避をお願いします。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2015/2/2追記&lt;/strong&gt;&lt;br /&gt;
+1.9.96でメニュー動作がおかしい問題に対応しています。&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1996Beta&#34;&gt;更新履歴&lt;/a&gt;  &lt;a href=&#34;http://www.egrath.net/download/Ancia1996.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>新機能: 応答なしページの検出</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-65/</link>
+          <pubDate>Tue, 23 Dec 2014 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-65/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1988Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/Ancia1988.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。&lt;/p&gt;
+
+&lt;p&gt;応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;foption.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/foption.png&#34; width=&#34;752&#34; height=&#34;172&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、&lt;br /&gt;
+&lt;img alt=&#34;nofreeze.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/nofreeze.png&#34; width=&#34;419&#34; height=&#34;131&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>キョリ測が動かないときがある</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-64/</link>
+          <pubDate>Thu, 23 Oct 2014 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-64/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
+
+&lt;p&gt;・204応答でNavigateError&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;naverror.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/naverror.png&#34; width=&#34;915&#34; height=&#34;185&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;iecapture.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/iecapture.png&#34; width=&#34;783&#34; height=&#34;441&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Lunascape が表示ページ上部に広告を表示するかもしれない</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/lunascape/</link>
+          <pubDate>Thu, 28 Aug 2014 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/lunascape/</guid>
+          <description>&lt;p&gt;試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>個人でのソフトウェア作成について</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-63/</link>
+          <pubDate>Tue, 29 Jul 2014 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-63/</guid>
+          <description>&lt;p&gt;Microsoft様よりIE11環境でTridentが固まる対応が行われました。ありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://support.microsoft.com/kb/2980020/en-us&#34;&gt;SessionStorage is shared incorrectly and Internet Explorer 11 becomes slow when you create WebBrowser controls&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;報告しました&lt;a href=&#34;https://connect.microsoft.com/IE/feedback/details/816140/ie11-webbrowser-control-if-domstorage-enable-webbrowser-control-freeze&#34;&gt;[IE11,WebBrowser Control] if DOMStorage enable, WebBrowser Control freeze Microsoft Connect&lt;/a&gt;で、バグを再現できる人数にご協力していただいた方ありがとうございました。対応が行われたのは、&lt;a href=&#34;http://blog.clientside.jp/archives/5371368.html&#34;&gt;Funguardの作者さんが報告したこと&lt;/a&gt;も関係しているかもしれません。&lt;/p&gt;
+
+&lt;p&gt;行われた対応ですが、調べるとシングルスレッドでは対応は効いていません(connectにバグ報告したアプリケーションで固まりが発生する)。ただ、マルチスレッドだと固まりは発生しなくなりました。&lt;/p&gt;
+
+&lt;p&gt;内容が変わりますが、どこの誰か作っているかわからない個人作者であるがために、オンラインソフトの使用が信頼できないといったことがあるかもしれません。個人情報の公開はそれなりのリスクが伴います。ただ、個人作者であっても、バグ内容を調べ報告しているという活動が、作者が怪しい事をしないことのいくらかの証明になると思っています。&lt;/p&gt;
+
+&lt;p&gt;個人作者の作ったフリーソフトなので使用を敬遠する、といったことはできればなくなればよいと願っています。&lt;/p&gt;
+
+&lt;p&gt;Yukihisa Kurimoto&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Anciaソフトウェアフォーラム</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia/</link>
+          <pubDate>Thu, 08 May 2014 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;forum.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/forum.png&#34; width=&#34;558&#34; height=&#34;199&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;今回、不具合報告などを受け付ける&lt;br /&gt;
+&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;Anciaソフトウェアフォーラム&lt;/a&gt;&lt;br /&gt;
+を作成したことをお知らせします。&lt;/p&gt;
+
+&lt;p&gt;投稿には、画像やcrashしたときのdumpファイルなどファイル添付が可能です。投稿の際にユーザ登録は必要ありません。&lt;/p&gt;
+
+&lt;p&gt;メールやブログコメントやtwitter、掲示板で不具合報告を受けることが多く、分散してしまっていることが作成した理由です。Forumだと投稿が残り、検索も可能であるため、出来ればForum側への不具合報告をお願いいたします。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia,AnciaChromeのアイコンを募集中です</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/anciaanciachrom/</link>
+          <pubDate>Mon, 28 Apr 2014 18:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/anciaanciachrom/</guid>
+          <description>&lt;p&gt;AnciaとAnciaChromeでアプリケーションアイコンの募集を行っています。&lt;/p&gt;
+
+&lt;p&gt;こちらより応募可能となっています。&lt;br /&gt;
+&lt;a href=&#34;https://crowdworks.jp/public/jobs/88284&#34;&gt;Windowsウェブブラウザ用アイコン作成依頼&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;アイコンは、アプリケーションの象徴となることと、Trident系とWebkit系2種類の作成をお願いしていることもあり、お支払い金額はそれなりとなっています。たくさんの応募があると作者が喜びます。応募をお待ちしています。&lt;/p&gt;
+
+&lt;p&gt;画像はブログ記事とは直接関係ないですが、なかなかいいデザインですね。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる(解決)</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage-1/</link>
+          <pubDate>Thu, 17 Apr 2014 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage-1/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;sessionstorage.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/sessionstorage.png&#34; width=&#34;729&#34; height=&#34;249&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;だいぶ前のversion 1.9.56(最新versionは1.9.62)で、&lt;a href=&#34;http://blog.anciasoft.jp/2014/01/ie11-domstorage.html&#34;&gt;IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記&lt;/a&gt; は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。&lt;/p&gt;
+
+&lt;p&gt;こちらで特定した原因は、IE内部で保持するsession storage値がタブを開くたびに倍で増えていき、そのsession storage値分ループ処理が動き、これが固まりにつながります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/spreadsheet/ccc?key=0At_G9JVgfatGdExlYXBkWlZjOWpsdERIaDFkalRjQ2c#gid=0&#34;&gt;ie11 session(google document) storage&lt;/a&gt;&lt;br /&gt;
+上は、再現動画(&lt;a href=&#34;http://www.youtube.com/watch?v=0xACMTPPoM8&#34;&gt;http://www.youtube.com/watch?v=0xACMTPPoM8&lt;/a&gt;)での増えていく値です。&lt;/p&gt;
+
+&lt;p&gt;1タブ目では1つの値が、2タブ目には2個、3タブ目には4個、4タブ目には8個、動画で固まった18タブ目には65536個となり、65536個分のループで長時間固まります。タブを開くごとに遅くなるという現象も、session storage値が倍で増え、その分ループ時間が増えるため、と説明できます。&lt;/p&gt;
+
+&lt;p&gt;恐らく、IEはマルチプロセスの関係で、新規タブプロセスにsession storageを引き継ぐ必要があり、開き元タブのsession storageを新規タブ側に渡しているのではと考えています。渡す先にsession storageが無ければ問題ないですが、もし、マルチスレッドやシングルスレッドで、すでにsession storageが存在する場合、開き元から引き継がれると、倍に増えることに、と内部動作を予想しています。&lt;/p&gt;
+
+&lt;p&gt;session storageの調べ方は、残念ながら非公開です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage/</link>
+          <pubDate>Fri, 31 Jan 2014 23:59:59 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ie11domstoragefreeze.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie11domstoragefreeze.png&#34; width=&#34;630&#34; height=&#34;251&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.anciasoft.jp/2013/11/internet-explor-2.html&#34;&gt;Internet Explorer 11でのJavascript問題 - 不定期日記&lt;/a&gt;のIE11環境で固まる現象で、DOMStorageを無効にすれば発生しないことがわかっています。&lt;/p&gt;
+
+&lt;p&gt;IE11での対応が無いとどうしようもなさそうで、フィードバックを送っています。英語がちょっとおかしいかもしれませんが、日本語も書いてあるのでたぶん大丈夫です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://connect.microsoft.com/IE/feedback/details/816140/ie11-webbrowser-control-if-domstorage-enable-webbrowser-control-freeze&#34;&gt;[IE11,WebBrowser Control] if DOMStorage enable, WebBrowser Control freeze&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;わかってもらえるように再現動画まで撮りました。ただ残念ながら、最近のフィードバックにコメントがつくことがほとんど無く、見てもらえずに直らない可能性が出てきました。IE10のころまでは、大体のフィードバックにMicrosoftからのコメントがついていました(再現しませんでしたといわれますが)。もしかするとフィードバックのバグを再現できるユーザ数が増えると見てくれるかもしれません(下の画像部分)。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;feedbackcnt.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/feedbackcnt.png&#34; width=&#34;424&#34; height=&#34;41&#34; style=&#34;float: left; margin: 0 20px 20px 0;border: 1px solid #000000;&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;再現動画(&lt;a href=&#34;http://www.youtube.com/watch?v=0xACMTPPoM8&#34;&gt;http://www.youtube.com/watch?v=0xACMTPPoM8&lt;/a&gt;)のままで行えば、誰でも再現できると思います。ブラウザ以外でもWebBrowser Controlを複数作成して使用するアプリは結構ありそうで、固まり現象が出ていないのか不思議です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Internet Explorer 11でのJavascript問題</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/internet-explor-2/</link>
+          <pubDate>Mon, 11 Nov 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/internet-explor-2/</guid>
+          <description>&lt;p&gt;Windows7用Internet Explorer11がdownload可能となりました。&lt;br /&gt;
+&lt;a href=&#34;http://windows.microsoft.com/ja-jp/internet-explorer/download-ie&#34;&gt;ダウンロード - Internet Explorer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Anciaでは今のところ相性が悪いです。以前報告があるとおり、シングルスレッド・マルチスレッド・マルチプロセスいずれでもタブを10程度開くとJavascriptの動作が次第に遅くなり、そのうち固まります。どうも1ブラウザプロセスでIEコンポを多数作成するとだめなようです。&lt;/p&gt;
+
+&lt;p&gt;現時点での解決手段として、オプションからタブの動作をマルチプロセスにし、タブグループのチェックを外します。これでリソースを消費しますが、タブ毎に別プロセスで動作し、Javascriptの問題はとりあえず出なくなります。&lt;br /&gt;
+&lt;img alt=&#34;ie11fix.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie11fix.png&#34; width=&#34;767&#34; height=&#34;516&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>新しいメニュー動作</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-62/</link>
+          <pubDate>Wed, 02 Oct 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-62/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1939Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1939.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。&lt;/p&gt;
+
+&lt;p&gt;テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。&lt;br /&gt;
+&lt;img alt=&#34;selectionmenu.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/selectionmenu.png&#34; width=&#34;521&#34; height=&#34;275&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;imageのメニューだとGoogle画像検索も行えます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;imgmenu.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/imgmenu.png&#34; width=&#34;417&#34; height=&#34;196&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;testfeature_a.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/testfeature_a.png&#34; width=&#34;595&#34; height=&#34;183&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>SleipnirのIE10表示問題</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/sleipnirie10/</link>
+          <pubDate>Fri, 09 Aug 2013 09:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/sleipnirie10/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ie9ie.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9ie.png&#34; width=&#34;517&#34; height=&#34;276&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;・SleipnirはページのX-UA-Compatibleを無視し、強制的にIE10モードで表示する&lt;/strong&gt;&lt;br /&gt;
+検証ページ：&lt;a href=&#34;http://www.egrath.net/download/conditionalcomments.htm&#34;&gt;Conditional Comments&lt;/a&gt; (X-UA-CompatibleにIE=9を指定)&lt;/p&gt;
+
+&lt;p&gt;環境は、Win7 64bit IE10、Sleipnirの最新versionです。下がSleipnirの表示です。IE10モードで表示しているため、&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms537512(v=VS.85).aspx&#34;&gt;About conditional comments (Internet Explorer)&lt;/a&gt;が動作していません。これはdocumentModeが10での挙動です。ほかにもIE10で変わった挙動は、&lt;a href=&#34;http://blogs.msdn.com/b/ie/archive/2011/07/06/html5-parsing-in-ie10.aspx&#34;&gt;HTML5 Parsing in IE10 - IEBlog - Site Home - MSDN Blogs&lt;/a&gt;に詳しく書いてあります。&lt;br /&gt;
+&lt;img alt=&#34;ie9s.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9s.png&#34; width=&#34;666&#34; height=&#34;458&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;Anciaでは、IEと同じ挙動になります。&lt;br /&gt;
+&lt;img alt=&#34;ie9a.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9a.png&#34; width=&#34;628&#34; height=&#34;300&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>互換表示対応</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-61/</link>
+          <pubDate>Thu, 08 Aug 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-61/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1934Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1934.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.34でIE独自でのみ可能と思われた互換表示設定に対応できました。互換表示設定は、IE7,8,9,10,11から選択できます。互換表示設定はdomain単位で保存します。&lt;br /&gt;
+&lt;img alt=&#34;emu10_0.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/emu10_0.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;ボタンに出る数字はページのdocumentModeです。メニューのチェックは現在の互換表示設定になります。下はgoogleでIE7表示を選んだ場合です。&lt;br /&gt;
+&lt;img alt=&#34;emu7_1.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/emu7_1.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;ページの動作がおかしい場合は、IE7互換表示で改善する場合があります。改善する例として&lt;a href=&#34;http://www.nhk.or.jp/r-news/index.html&#34;&gt;NHKラジオニュース&lt;/a&gt;があります。IE10だと再生が多重に動きますが、IE7表示で正常に再生できるようになります。&lt;/p&gt;
+
+&lt;p&gt;互換表示を設定しても、ページにX-UA-Compatibleがある場合は、そちらが優先されます(IEと同じ動作)。MSDNだと互換表示を設定してもresponseヘッダにX-UA-Compatible: IE=edgeがあるため、常に最新のレンダリングとなります。この場合だとrequestは互換表示設定のユーザエージェント(下だとIE7)で行われます。&lt;br /&gt;
+&lt;img alt=&#34;emu7_10.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/emu7_10.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;リクエストを見るには&lt;a href=&#34;http://fiddler2.com/&#34;&gt;Fiddler - The Free Web Debugging Proxy by Telerik&lt;/a&gt;が使いやすいです。&lt;/p&gt;
+
+&lt;p&gt;戻る進むボタンがフラットなのは次回更新予定の内容です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>msn関係・楽天で固まる問題の対応</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/msn/</link>
+          <pubDate>Tue, 23 Jul 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/msn/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1932Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1932.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.32で、ie10環境においてmsn、楽天のページを開くと固まる問題を修正しています。修正には2つの問題に対応しています。固まる原因はmsnと楽天で同じ(document.closeで固まる)ですが、状況は微妙に違います。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;問題1) IEとIEコンポでnavigator.appVersionの返す値が違う&lt;/strong&gt;&lt;br /&gt;
+IEとIEコンポでnavigator.appVersionの返す値が異なっています。この違いのため、msnのスクリプトでIEの場合はdocument.close()呼び出しが行われず、IEコンポの場合はdocument.close()呼び出しが行われます(ここでIEコンポは固まる)。1.9.32ではnavigator.appVersionの値がIEと同じ挙動となるよう対応しています。&lt;/p&gt;
+
+&lt;p&gt;・IE10(documentModeは7でappVerはIE7)&lt;br /&gt;
+&lt;img alt=&#34;ie10appver.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie10appver.jpg&#34; width=&#34;516&#34; height=&#34;231&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;・Ancia 1.9.31(documentModeは7でappVerはIE10)&lt;br /&gt;
+&lt;img alt=&#34;anappver.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/anappver.jpg&#34; width=&#34;448&#34; height=&#34;180&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;・Ancia 1.9.32(documentModeは7でappVerはIE7)&lt;br /&gt;
+&lt;img alt=&#34;fixappver.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/fixappver.jpg&#34; width=&#34;484&#34; height=&#34;221&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;問題2）楽天のページがIEコンポではquirks modeとなるが、IEではならない&lt;/strong&gt;&lt;br /&gt;
+楽天のページでdocument.close()の呼び出しで固まるのは同じですが、msnとは状況が異なります。楽天ではdocumentModeの値がIEとIEコンポで異なっています。msnはdocumentModeがIE,IEコンポともに7ですが、楽天ではIEが10(documentModeが10でもcompatMode はBackCompat)、IEコンポでは5(compatMode はBackCompat)です。&lt;/p&gt;
+
+&lt;p&gt;IE10からの&lt;a href=&#34;http://blogs.msdn.com/b/ie/archive/2011/12/14/interoperable-html5-quirks-mode-in-ie10.aspx&#34;&gt;Interoperable HTML5 Quirks Mode&lt;/a&gt;が関係し、1.9.32ではこれもIEと同じ挙動となるよう対応しています。&lt;/p&gt;
+
+&lt;p&gt;・IE10&lt;br /&gt;
+&lt;img alt=&#34;ie10docmode.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie10docmode.jpg&#34; width=&#34;367&#34; height=&#34;128&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;ie10docmode2.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie10docmode2.jpg&#34; width=&#34;338&#34; height=&#34;162&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;・Ancia 1.9.31&lt;br /&gt;
+&lt;img alt=&#34;adocmode.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/adocmode.jpg&#34; width=&#34;393&#34; height=&#34;162&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;・Ancia 1.9.32&lt;br /&gt;
+&lt;img alt=&#34;adocmode2.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/adocmode2.jpg&#34; width=&#34;375&#34; height=&#34;171&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>タブの分離・結合サポート</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-60/</link>
+          <pubDate>Tue, 09 Jul 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-60/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;iso.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/iso.jpg&#34; width=&#34;600&#34; height=&#34;414&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1930Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1930.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.30でほかのブラウザでは実装の少ないタブの分離と結合をサポートしています。シングルスレッドでは、動き的に無理で動作スタイルをシングルスレッド以外にする必要があります。また単一起動の場合もサポートしていません(これは今後制限付きでサポート予定です)。&lt;/p&gt;
+
+&lt;p&gt;オレンジ色以外の場所にタブをdragすると、タブの分離・結合が可能になります。&lt;br /&gt;
+&lt;img alt=&#34;isoin.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/isoin.jpg&#34; width=&#34;600&#34; height=&#34;414&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;ESCキーかマウスの右ボタンを押すことでキャンセル可能なのは、通常のdragdrop動作と同じです。次はIE10で固まる問題が対応できるかわかりませんが、調べる予定です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.8</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-45/</link>
+          <pubDate>Thu, 09 May 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-45/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1480&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus148.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?ExplorerBarPlus&#34;&gt;ExplorerBarPlus&lt;/a&gt;のVersion1.4.8を出しています。IEお気に入りパネルでお気に入りフォルダを変更していても、ボタンからお気に入りの追加と整理を可能にしています。Ancia上で使っているとき、お気に入りの追加を行うと、数秒操作不能になる問題を修正しています。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>IE10でmsn関係のサイトを開くと固まることについて</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ie10msn/</link>
+          <pubDate>Thu, 09 May 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ie10msn/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1918Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1918.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia1.9.18でIE10でmsn関係のサイトを開くと固まってしまい、プロセスも残ってしまう問題について暫定で対処しています。対処は、IE10の場合でhttp://&lt;em&gt;.&lt;/em&gt;.msn.com/* にhitするサイトでjavascriptを強制的に無効にしています。&lt;/p&gt;
+
+&lt;p&gt;その関係でmsn関係のサイトでは、javascriptを使って表示している部分が出ませんが、固まってしまうよりましで、不具合ではないので注意をお願いします。&lt;/p&gt;
+
+&lt;p&gt;IE10側で対応されるか、アプリ側で対応できるかは、どうなるかわからない感じです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>シングルキーショートカット、ポップアップブロック</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-59/</link>
+          <pubDate>Wed, 27 Mar 2013 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-59/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1912Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1912.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.12でシングルキーショートカット、ポップアップブロックに対応しています。&lt;/p&gt;
+
+&lt;p&gt;シングルキーショートカットは、オプション設定のsinglekeyShortcutにチェックを入れる必要があります。チェックを入れた後は、シングルキーでのキーを指定できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;singlekeyshortcutoption.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/singlekeyshortcutoption.png&#34; width=&#34;621&#34; height=&#34;311&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;フォームやFlash上ではシングルキーショートカットでは無くキー入力のほうが優先されます。シングルキーショートカットは、ブラウザ部分でのみ有効です。サイドバーやアドレスバーなどでは機能しません(ショートカットキーを標準設定に戻すがエラーになるのは次回直ります)。スペースを指定したときサイドバーでショートカットが効いてしまうのは、効かないようにしてみます。&lt;/p&gt;
+
+&lt;p&gt;ポップアップブロックは、今はステータスバーの右クリックからサイト(ドメイン)単位で抑止と許可を指定できます。指定した後、他のタブでポップアップブロック設定の表示が更新されない、最初が表示されないのは、不具合で修正予定です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;popupblockmenu.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/popupblockmenu.png&#34; width=&#34;452&#34; height=&#34;172&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;表示がされてなくても、サイト単位で指定したポップアップブロック抑止・許可は機能します(表示と無関係で抑止・許可は動作)。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WebKitでのgdi&#43;&#43;対応について(MacTypeの使用をおすすめ)</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/webkitdgimactyp/</link>
+          <pubDate>Thu, 18 Oct 2012 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/webkitdgimactyp/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;MacType.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/MacType.png&#34; width=&#34;600&#34; height=&#34;439&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0260&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/AnciaChrome026.7z&#34;&gt;download(AnciaChrome026)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Webkit版を更新しています。gdi++対応は含めず、今後も対応することはありません。gdi++で表示すると表示がおかしくなります。ですが、gdi++より高機能なMacTypeを使用するとちゃんと表示できます(@akkie2さんから情報を頂きました。ありがとうございます)。画像はXpでMacTypeで表示したものです。&lt;/p&gt;
+
+&lt;p&gt;・MacTypeの情報&lt;br /&gt;
+&lt;a href=&#34;http://www.google.co.jp/search?hl=ja&amp;amp;as_qdr=y15&amp;amp;lr=lang_ja&amp;amp;num=100&amp;amp;q=mactype&#34;&gt;mactype - Google 検索&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://did2memo.net/2012/04/01/mactype-install-settings/&#34;&gt;gdi++Heliumを越えた（？）と噂のMacTypeをインストールしてみた | 情報科学屋さんを目指す人のメモ&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.sunabox.net/2012/05/mactype.html&#34;&gt;Mactypeを導入してみました。 - Sunabox&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;インストーラは日本語じゃないです。ほかの画面は日本語化されているようです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.7</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-44/</link>
+          <pubDate>Wed, 05 Sep 2012 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-44/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ebp_proxy.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ebp_proxy.png&#34; width=&#34;428&#34; height=&#34;543&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1470&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus147.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?ExplorerBarPlus&#34;&gt;ExplorerBarPlus&lt;/a&gt;のVersion1.4.7を出しています。SimpleFavPanelでProxy設定を可能にしています。Proxy設定は各SimpleFavPanel毎に可能です。「次のアドレスにはプロキシを使用しない」には、セミコロン区切りで複数指定できます。&lt;/p&gt;
+
+&lt;p&gt;あと気付かれない更新としてアイテムの追加でURLをFeedURLにコピーできるようにしています(▼ボタン)。ChromeBookmarkが正しく読み込めないバグも修正しています。&lt;br /&gt;
+&lt;img alt=&#34;ebp147_add.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ebp147_add.png&#34; width=&#34;584&#34; height=&#34;291&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ホイールクリックでの貼り付け移動、貼り付け検索</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-58/</link>
+          <pubDate>Fri, 20 Apr 2012 08:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-58/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;wheel_paste_and_go.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/wheel_paste_and_go.png&#34; width=&#34;599&#34; height=&#34;89&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;Anciaでは、&lt;br /&gt;
+&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;アドレスバーをホイールクリックすると、クリップボードテキストで貼り付け移動(新規タブ)&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;検索バーでホイールクリックすると、クリップボードテキストで貼り付け検索&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;&lt;br /&gt;
+を行うことが出来ます。アドレスバーでの貼り付け移動は、補完込みでの貼り付け移動です。クリップボードの内容が「ttp://www.google.co.jp/」のときは、httpを補完し新規タブ、「aaa &lt;a href=&#34;http://www.google.co.jp/&#34;&gt;http://www.google.co.jp/&lt;/a&gt;   bbbb」の場合は、&lt;a href=&#34;http://www.google.co.jp/&#34;&gt;http://www.google.co.jp/&lt;/a&gt; だけを取り出して、貼り付け新規タブできます。実際は、ホイール移動は、スクリプトのreserved\pasteGoNew.jsを実行しているだけです。&lt;/p&gt;
+
+&lt;p&gt;自身では結構使う機能です。どうもこの機能、更新履歴にしか書いてないようで、存在が知られていないかも、ということで記事にしました。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WebKit Basic認証対応</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/webkit-basic/</link>
+          <pubDate>Mon, 13 Feb 2012 08:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/webkit-basic/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;webkit_auth.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/webkit_auth.png&#34; width=&#34;661&#34; height=&#34;360&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t14500Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia145.zip&#34;&gt;download(Ancia145)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0170&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/AnciaChrome017.7z&#34;&gt;download(AnciaChrome017)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;WebKitでBasic認証に対応しています。「次回から認証入力を省略」チェックで、ダイアログも出ずに自動で認証します。もし認証エラーとなった場合は、再度アクセスすることで、自動認証はクリアされ、ダイアログが表示されます。WebKitは他、インライン検索に対応しています(ショートカットキーはCTRL+F、または、CTRL+I)。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL81 11324</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl81-11324/</link>
+          <pubDate>Tue, 22 Nov 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl81-11324/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;wtlribbon.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/wtlribbon.png&#34; width=&#34;449&#34; height=&#34;287&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/projects/wtl/&#34;&gt;Windows Template Library (WTL) | Free Development software downloads at SourceForge.net&lt;/a&gt;で、WTL81 11324が出てます。更新履歴が「Changes Between WTL 8.1 And 8.0  @@ TODO」としか書いてませんね。下はざっと見た変更点です。&lt;br /&gt;
+・atlribbon.hが追加&lt;br /&gt;
+・atlapp.h  〜 IsRibbonUIAvailable()やIsWin7()、CRegKeyEx追加&lt;br /&gt;
+・atlctrlx.h 〜 CHyperLinkImplでリンクマウスオーバー時に下線表示になるっぽい&lt;br /&gt;
+・atlddx.h 〜 DDX_TAB_INDEX(nID, var),DDX_COMBO_INDEX(nID, var),DDX_LISTBOX_INDEX(nID, var),DDX_LISTVIEW_INDEX(nID, var)が追加&lt;br /&gt;
+・atldlgs.h 〜 CDialogBaseUnits追加&lt;br /&gt;
+・atlframe.h 〜 CAutoUpdateUI追加&lt;br /&gt;
+・atlmisc.h 〜 AtlLoadMenuなどatluser.hに移動&lt;br /&gt;
+atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
+
+&lt;p&gt;SPLIT_GRADIENTBARを使ってみると、splitbarがかっこよくなります（左がSPLIT_GRADIENTBARあり、右がSPLIT_GRADIENTBARなし）。これは今のアプリに使ってもいいかもしれません。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;wtlgradientbar.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/wtlgradientbar.png&#34; width=&#34;370&#34; height=&#34;229&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;新しくapp wizardにribbonが選択できて、はじめの画像は、ribbonありでビルドしてみたものです。&lt;br /&gt;
+&lt;img alt=&#34;wtlappwiz.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/wtlappwiz.png&#34; width=&#34;404&#34; height=&#34;261&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.6</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-43/</link>
+          <pubDate>Mon, 17 Oct 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-43/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;fxplace.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/fxplace.png&#34; width=&#34;347&#34; height=&#34;435&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1460&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus146.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefoxの一部placeを表示可能にしています。「最近ブックマークしたページ」など難しいplaceは、firefoxの処理をみると、ややこしいので、対応していません。「よく見るページ」は、表示できているので、少しはましです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>IE9メモリ問題とIE9環境でのマルチプロセス推奨について</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ie9/</link>
+          <pubDate>Tue, 13 Sep 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ie9/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t12300Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia123.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.2.3を出しています。正式版はもう少し後になりそうです。IE9のメモリ問題について書きます。&lt;/p&gt;
+
+&lt;p&gt;IE9のメモリ問題で、Flashで！が出るという現象、これがIE9で出るかを調べてみました。&lt;br /&gt;
+  関連ツイート１：&lt;a href=&#34;http://twitter.com/#!/kurimoto_y/status/111826171842396161&#34;&gt;http://twitter.com/#!/kurimoto_y/status/111826171842396161&lt;/a&gt;&lt;br /&gt;
+  関連ツイート２：&lt;a href=&#34;http://twitter.com/#!/kurimoto_y/status/111827188340375552&#34;&gt;http://twitter.com/#!/kurimoto_y/status/111827188340375552&lt;/a&gt;&lt;br /&gt;
+結果、IE9でも出ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;ie9mem.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9mem.png&#34; width=&#34;400&#34; height=&#34;339&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;● 出し方のコツ&lt;br /&gt;
+IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセスを作る動作のようです。&lt;br /&gt;
+タスクマネージャでIEプロセスのメモリ700Mを超えたあたりで、新規タブを開かず、Flashが多く貼っているページ、例えばYoutube埋め込みをどんどん再生していけば1Gを超えたぐらいで！が出ると思います。&lt;/p&gt;
+
+&lt;p&gt;IE9で出るということは、現状IE9でも直せない問題だと判断して、アプリで対応するのは難しいと思います。またIE9が700Mあたりで新規プロセスを作成するあたりが、Tridentで1プロセスで使用できるメモリに限界があるように見えます(このあたりでもうIEコンポーネントはマルチプロセス前提になっているかもしれません)。&lt;/p&gt;
+
+&lt;p&gt;上のことから、IE9環境では、シングルスレッド/マルチスレッドではなく、Anciaをマルチプロセスで使用することを推奨します。マルチプロセスで、シングルスレッド/マルチスレッドとの動作の違いは、セッションが継続する/しないかになります。マルチプロセスでも、同じタブグループ内ならセッションは継続します。&lt;/p&gt;
+
+&lt;p&gt;ただ、Anciaのマルチプロセスでのセッション継続は、タブグループが1つのプロセスであり、タブグループの各タブをそのプロセス内のスレッドで動かしているだけです。そのため、タブグループ内のタブ数が多くなり、長時間使用しプロセスのメモリサイズが多くなるとFlashの！問題は出やすくなります。それでもシングルスレッド/マルチスレッドに比べると、発生頻度は低くなります。&lt;/p&gt;
+
+&lt;p&gt;自分は、マルチプロセスで使用しています。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>1.1.9で起動時落ちる現象の回避について</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/119/</link>
+          <pubDate>Tue, 16 Aug 2011 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/119/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t11900Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia119.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.1.9を出していますが、jumplistの構築にバグがあり表示名のないjumplistのスクリプト項目があると、起動時に落ちてしまいます。&lt;/p&gt;
+
+&lt;p&gt;jumplistを変更していないときは落ちませんが、変更しているときは、setting\customize\jumplist.jsonを ajumplist.json などにrenameすれば回避できます。このバグは1.2.0で直ります。&lt;/p&gt;
+
+&lt;p&gt;1.1.9では起動時のタブ再現などで、複数タブの読み込み処理をいちどに読み込まず、順々に読み込むようにしています。この設定はオプション設定の「全般」「タブ読み込みスタイル」で変更できます。ただ、「アクティブ時読み込み - loadingActive」にした場合、非activeタブの読み込みがloadingのままでページが分からない、ということがありこれは何とかしたいです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>BHOとタブグループ機能</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/bho/</link>
+          <pubDate>Tue, 05 Jul 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/bho/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;tabgroupaero.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/tabgroupaero.png&#34; width=&#34;400&#34; height=&#34;106&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t11100Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia111.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ver1.0.0からBHOとタブグループ機能を追加しています。&lt;/p&gt;
+
+&lt;p&gt;マルチプロセスでは、同じタブグループの中では、セッションが継続できます(別のタブ、タブグループとセッションは共有しない)。マルチプロセスでのセッション共有は難しいので、タブグループ内ではセッションが継続できるという対応にしています。タブグループ対応でタブスキンのデザインかなり変えています。ホイールクリックか、ナビゲートロックで新規タブを開くと同じタブグループで開きます。&lt;/p&gt;
+
+&lt;p&gt;BHOは、たとえば、&lt;a href=&#34;http://www.orbitdownloader.com/jp/download.htm&#34;&gt;Orbit Downloader&lt;/a&gt;というのがありますが、こういうのが動作します(もともとBHOはIE用なので全て動作するわけではありません)。&lt;br /&gt;
+&lt;img alt=&#34;BHO.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/BHO.png&#34; width=&#34;404&#34; height=&#34;270&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;上は、&lt;a href=&#34;http://www.orbitdownloader.com/jp/Use-as-YouTube-Downloader.htm&#34;&gt;http://www.orbitdownloader.com/jp/Use-as-YouTube-Downloader.htm&lt;/a&gt; で試したもので、動いていることが分かります。&lt;/p&gt;
+
+&lt;p&gt;Ver1.1.0で正式版を出す予定でしたが、タブグループをつけたばかりで1.1.5か1.2.0が、そのあたりになると思います。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.5</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-42/</link>
+          <pubDate>Wed, 08 Jun 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-42/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1450&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus145.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;要望のあったFirefoxのブックマークとSimpleFavPanelで、1つのフォルダだけ展開する設定追加しています。1つのフィルダだけ展開するはマウスでクリックしたときだけ有効で、キーで展開したときは1つ以上展開できます。これはTreeViewがこういう動作なんです(&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb760013(VS.85).aspx&#34;&gt;TVS_SINGLEEXPANDの説明&lt;/a&gt;)。&lt;/p&gt;
+
+&lt;p&gt;1つだけ展開でSimpleFavPanelで展開情報を保存しているとき、その保存された展開済みのフォルダが閉じないのも仕様です。一度マウスで閉じると、1つだけ展開するが動作します。&lt;/p&gt;
+
+&lt;p&gt;FirefoxでplaceのURLが展開されてないのは、いずれ対応すると思います。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WebKitエンジン Ancia Chrome</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/webkit-ancia-ch/</link>
+          <pubDate>Tue, 10 May 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/webkit-ancia-ch/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;Ancia_Chrome.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/Ancia_Chrome.png&#34; width=&#34;400&#34; height=&#34;347&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome&#34;&gt;Ancia Chromeについて&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome001.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia Chromeとは、Anciaを元に描画エンジンをWebKitにしたタブブラウザです。&lt;br /&gt;
+組み込んでみただけで、&lt;br /&gt;
+・Tが入力できなかったり、ページでのキー入力が全体的におかしい&lt;br /&gt;
+・日本語入力がへん&lt;br /&gt;
+・エンコード指定ができない、言語がja-JPじゃない(設定してるんですが効いていない)&lt;br /&gt;
+・アドレスバー、検索バー等、シングルスレッドでキー入力ができないものがある&lt;br /&gt;
+・cookieが保存されない&lt;br /&gt;
+・最新のWebKitじゃない(Chrome7相当)&lt;br /&gt;
+など問題があり、ページを表示するぐらいしか今のところ使い道がありません。サイドバーは表示できます。マルチプロセスには対応してます。&lt;/p&gt;
+
+&lt;p&gt;マウスジェスチャやドロップアクションまでは動作するように何とかしたいんですが、時間を見て更新予定です。&lt;/p&gt;
+
+&lt;p&gt;ダウンロードの圧縮形式7zipは、&lt;a href=&#34;http://sevenzip.sourceforge.jp/&#34;&gt;7-Zip&lt;/a&gt;で解凍できます。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.4</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-41/</link>
+          <pubDate>Sun, 01 May 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-41/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1440&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus144.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;64bit環境で、ウインドウサイズが変わらないことがある対処を行っています。ただ、Anciaで使用している場合は、今後出る1.0.1の更新を待つ必要があります。ほかに、Firefox4のお気に入りが読めない、Vista以降でTree表示をExplorerっぽくしています。&lt;/p&gt;
+
+&lt;p&gt;64bit環境でウインドウサイズが変わらないのは、&lt;br /&gt;
+&lt;a href=&#34;http://blogs.msdn.com/b/alejacma/archive/2008/11/20/controls-won-t-get-resized-once-the-nesting-hierarchy-of-windows-exceeds-a-certain-depth-x64.aspx&#34;&gt;Controls won&amp;rsquo;t get resized once the nesting hierarchy of windows exceeds a certain depth (x64) - Decrypt my World - Site Home - MSDN Blogs&lt;/a&gt;&lt;br /&gt;
+が原因で、まさかこんな動作があるとは、、&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver1.0.0 をリリース!</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver100/</link>
+          <pubDate>Tue, 26 Apr 2011 01:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver100/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;v100.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/v100.png&#34; width=&#34;422&#34; height=&#34;166&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t10000&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia100.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;今日&lt;a href=&#34;http://windows.microsoft.com/ja-JP/internet-explorer/downloads/ie&#34;&gt;IE9がリリース&lt;/a&gt;されましたが、いつまで作っていてもきりがないので、このタイミングでAnciaもVer1.0.0をリリースしました。&lt;/p&gt;
+
+&lt;p&gt;正式版をリリースしたので、設定フォルダなどを大きく仕様変更することはないと思います。ブログでも不具合報告やコメントいただき、今のものが出来たと思っています。コメントいただいた方ありがとうございます！&lt;/p&gt;
+
+&lt;p&gt;1.0.0をリリースしても、たぶん更新は今までどおりです。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2FManual&#34;&gt;機能の説明&lt;/a&gt;に特徴を書きましたが、画像がないので、画像を付ける予定です。いつの間にか結構な機能があり、全て書かれているか自分でも謎です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>AnciaでAutoPagerizeを使用する</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/anciaautopageri/</link>
+          <pubDate>Tue, 12 Apr 2011 01:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/anciaautopageri/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ap.png&#34; width=&#34;400&#34; height=&#34;281&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09320&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0932.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia0.9.32が出ていますが、0.9.31からURLアクションが利用可能になっています。このURLActionでAutoPagerizeを動作させることが可能です。AutoPagerizeは、ブックマークレット &lt;a href=&#34;http://ss-o.net/xuserbookjs.html&#34;&gt;xAutoPagerize&lt;/a&gt; を利用させてもらっています。大変便利な機能ありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;● AutoPagerizeの利用の仕方&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;１, xAutoPagerizeForAncia.js をダウンロードする&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/xAutoPagerizeForAncia.js&#34;&gt;xAutoPagerizeForAncia.js&lt;/a&gt;をダウンロードし、Anciaのscriptフォルダに保存します。&lt;br /&gt;
+&lt;img alt=&#34;saveap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/saveap.png&#34; width=&#34;235&#34; height=&#34;107&#34;  /&gt;xAutoPagerizeForAncia.jsの内容は、ブックマークレットの内容と変わっていません。複雑でないブックマークレットなら、そのままURLActionに使用できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;２, オプション設定でURLActionの設定を行う&lt;/strong&gt;&lt;br /&gt;
+オプション設定のURLActionの「読み込み後のアクション一覧」にURLパターン「*」、動作に「スクリプト:xAutoPagerizeForAncia.js」としてアクションを追加します(下は追加後の画像です)。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;addap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/addap.png&#34; width=&#34;400&#34; height=&#34;279&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;「適用」を押すと、追加したアクションが反映されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;３, AutoPagerizeを動作させてみる&lt;/strong&gt;&lt;br /&gt;
+Google検索での動作が分かりやすいと思います。ドロップアクションで、適当な語句をGoogle検索に渡します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;ddap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ddap.png&#34; width=&#34;521&#34; height=&#34;320&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;検索結果のページで、赤い部分に緑の四角が出ていればAutoPagerizeが動作しています。&lt;br /&gt;
+&lt;img alt=&#34;apr.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/apr.png&#34; width=&#34;523&#34; height=&#34;323&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;あとは、ページの下へスクロールすれば、AutoPagerizeの動作が体感できるはずです。&lt;br /&gt;
+&lt;img alt=&#34;ap2.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ap2.png&#34; width=&#34;500&#34; height=&#34;392&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;注：IE9だと、AutoPagerizeで追加されたページにもハイライトが反映されるんですが、IE8だとうまく動いていません。これは対応可能なら対応します。IEのバージョンやページによっては、AutoPagerizeが動かないページがあるようです。&lt;/p&gt;
+
+&lt;p&gt;ドロップアクションで手軽に検索し、検索語句がハイライトされ、さらに検索結果のページにURLActionでAutoPagerizeが動いて、AutoPagerizeで追加ページにハイライトが反映されるといった、なんか連携した動きになってます。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>MSDNライブラリでサジェストが可能に</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/msdn/</link>
+          <pubDate>Fri, 11 Mar 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/msdn/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;msdns.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/msdns.png&#34; width=&#34;369&#34; height=&#34;255&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;MSDNライブラリで、候補を取得できるURLが分かり、&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B8%A1%BA%F7%A5%A8%A5%F3%A5%B8%A5%F3#wdc90f4e&#34;&gt;開発系の検索エンジン追加&lt;/a&gt; のMSDNオープンサーチのXMLファイル更新しています。追加で上書きすれば、更新されます。たぶん検索候補に対応したIEでも使えるはずです。&lt;/p&gt;
+
+&lt;p&gt;検索候補URLは、&lt;br /&gt;
+&lt;a href=&#34;http://services.social.microsoft.com/search//Data/AutoCompleteTerms?t={searchTerms}&amp;amp;b=Msdn&amp;amp;l=en-US&amp;amp;m=20&amp;amp;rf=oss10&#34;&gt;http://services.social.microsoft.com/search//Data/AutoCompleteTerms?t={searchTerms}&amp;amp;b=Msdn&amp;amp;l=en-US&amp;amp;m=20&amp;amp;rf=oss10&lt;/a&gt;&lt;br /&gt;
+で、最後のoss10をxml等にすれば別の形式が返ってきます。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.26 アプリケーション関連付け、タブリストツールバー・サイドバー</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0926/</link>
+          <pubDate>Tue, 01 Mar 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0926/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;regist.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/regist.png&#34; width=&#34;400&#34; height=&#34;266&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09260&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0926.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;やっとアプリケーションの関連付けが可能になりました。Vista,7では、オプション設定でレジストリに登録後、「規定のブラウザ選択画面」からAnciaを選択すれば関連付けられます。Xpならレジストリに登録すれば、関連付け、削除すれば関連付け解除です。&lt;/p&gt;
+
+&lt;p&gt;関連付ける拡張子は、Vista,7なら選択できますが、Xpは、.html、.htm、.mhtml、mht、.shtml、ftp・http・httpsプロトコル固定で関連付けしています。余裕があれば、Xpで登録する拡張子を選択できるようにする予定です。レジストリの登録実体は、script\reserved\regApp.jsなので、中を見れば何をやっているかわかります。関連付けを行った後、もしアプリケーションを削除する場合は、レジストリからの削除を推奨します。&lt;/p&gt;
+
+&lt;p&gt;regApp.jsは簡易的なsetbrowser的なことも可能で、単独で使用できます。たとえばunDonutを7に登録したい場合は、&lt;/p&gt;
+
+&lt;p&gt;cscript.exe C:\Ancia\script\reserved\regApp.js &amp;ldquo;{&amp;lsquo;regist&amp;rsquo;:true,&amp;lsquo;appPath&amp;rsquo;:&amp;lsquo;C:\app\unDonut\unDonut.exe&amp;rsquo;,&amp;lsquo;sysVer&amp;rsquo;:7000,&amp;lsquo;ieVer&amp;rsquo;:9000}&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;を管理者権限コマンドプロンプトから実行すれば、ブラウザ選択画面にunDonutを出せます。&amp;rsquo;regist&amp;rsquo;:falseで解除です。sysVerは5000(XP)、6000(Vista)、7000(Windows7)、ieVerは9000ならIE9、IE8なら8000です。appPathに登録するブラウザのフルパスを指定します(\は\にエスケープする必要あり)。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;tablist.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/tablist.png&#34; width=&#34;400&#34; height=&#34;211&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;タブリストの内容をサイドバー・ツールバーに表示可能になっています。もし表示できない場合は、オプション設定のブックマーク設定・ブックマークの追加で「タブリスト」ブックマークを追加すれば表示出来るはずです。タブリストバーでまだシェブロンは出ません。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.20 DropAction/マウスジェスチャ Aero表示、お気に入り順序</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0920-d/</link>
+          <pubDate>Mon, 24 Jan 2011 23:30:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0920-d/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;daaero.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/daaero-thumb-300x304-72.jpg&#34; width=&#34;300&#34; height=&#34;304&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09200&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0920.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ドロップアクションやボタン型マウスジェスチャのAero表示に対応しています。Aero表示するしないは、ドロップアクション/マウスジェスチャの設定から切り替え可能です（下はマウスジェスチャ）&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;mg.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/mg.png&#34; width=&#34;402&#34; height=&#34;171&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;IEお気に入りでマウスのドラッグドロップでアイテム順序を入れ替え可能にしています。デフォルトの順序は、IE順ですが、入れ替えを行うと、自動的にユーザ定義順になります。順序は各フォルダ毎に名前順・IE順・ユーザ定義を指定できます。&lt;br /&gt;
+&lt;img alt=&#34;ieorder.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ieorder.png&#34; width=&#34;400&#34; height=&#34;255&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;リンクバーもマウスで並び替えできるようにしていますが、まだサブフォルダへの移動がうまく動いてません。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.17 アイコンの変更、systemメニューの変更</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0917-s/</link>
+          <pubDate>Thu, 06 Jan 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0917-s/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;about.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/about.png&#34; width=&#34;273&#34; height=&#34;205&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09170&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0917.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2011年ということで、アプリアイコンを新しくしました。すこしTheWorldっぽいですが、、今年こそは、完成まで行くはず、、だと思います。&lt;/p&gt;
+
+&lt;p&gt;systemメニューにコマンドバーでのメニューなど色々含めています。XpでIEスタイルにすると落ちる問題が出ています。これは次のバージョンで修正されます。&lt;br /&gt;
+&lt;img alt=&#34;sysmenu.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/sysmenu.png&#34; width=&#34;295&#34; height=&#34;408&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>VirusTotalUrlScan、TweetThisPageなど</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/virustotalurlsc/</link>
+          <pubDate>Tue, 28 Dec 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/virustotalurlsc/</guid>
+          <description>&lt;p&gt;いままでの更新でいろいろ便利な機能を追加しているので、いくつか紹介したいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;VirusTotalでのUrlスキャン&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;
+リンク先の詳細を調べるのにドロップアクションから、&lt;a href=&#34;http://www.aguse.jp/&#34;&gt;aguse&lt;/a&gt;で簡単に調べることができますが、&lt;a href=&#34;http://www.virustotal.com/&#34;&gt;VirusTotal&lt;/a&gt;でのURLスキャンも可能になっています。0.9.16ではデフォルトでボタンが設定されていますが、ボタンがない場合は、ドロップアクションの設定からボタンを追加できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;m_addda.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/m_addda.jpg&#34; width=&#34;429&#34; height=&#34;348&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;あとは、リンクをドラッグし、VirustotalでURLをスキャンボタンにドロップするだけでスキャンが始まります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;m_aning.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/m_aning.jpg&#34; width=&#34;400&#34; height=&#34;276&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;見ているページをツイートする&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;
+今見ているページをツイートするTweetButtonのような動作を、ブラウザのツールバーボタンから行うことができます。デフォルトではボタンが表示されていないため、標準ツールバーを表示し、ツールバー右クリックから「ツールバーのボタンを変更&amp;copy;&amp;hellip;」を選びます。&lt;br /&gt;
+&lt;img alt=&#34;m_addbtn.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/m_addbtn.jpg&#34; width=&#34;374&#34; height=&#34;132&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;ツールバーの変更で、種類：規定のスクリプトにある「このページをツイートする」ボタンを追加します。&lt;br /&gt;
+&lt;img alt=&#34;addbutton.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/addbutton.jpg&#34; width=&#34;643&#34; height=&#34;259&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;あとは、ツイートしたいページでボタンを押せば、ツイートページが開きます。簡単ですね。&lt;br /&gt;
+&lt;img alt=&#34;tweetbutton.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/tweetbutton.jpg&#34; width=&#34;400&#34; height=&#34;291&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;ツイートボタンは、htsignさんに作成してもらいました！ありがとうございます。htsignさんには、他に&lt;a href=&#34;http://www.tumblr.com/&#34;&gt;Tumblr&lt;/a&gt;へのリンク投稿スクリプトも作成してもらっています。Tumblrへのリンク投稿は、このページをツイートするボタンと同じく、ボタン追加で使用することができます。&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;短縮URLをクリップボードにコピー&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;
+VirusTotalでのURLスキャンと同じく、ドラッグ＆ドロップで短縮URLをクリップボードにコピーすることができます。現在可能なのは、&lt;a href=&#34;http://bit.ly/&#34;&gt;bit.ly&lt;/a&gt;、&lt;a href=&#34;http://mcaf.ee/&#34;&gt;McAfee&lt;/a&gt;、&lt;a href=&#34;http://tinyurl.com/&#34;&gt;TinyURL&lt;/a&gt;、次のバージョン0.9.17では、&lt;a href=&#34;http://ux.nu/&#34;&gt;ux.nu&lt;/a&gt;も使用可能になります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;shrt.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/shrt.jpg&#34; width=&#34;326&#34; height=&#34;300&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;bit.lyで、アカウント情報を使用したいときは、オプション設定 -&amp;gt; スクリプトの設定の「スクリプト個別動作設定」で、bitlyで短縮URLをコピーの「設定」からユーザ情報を設定できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;bitlysetting.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/bitlysetting.jpg&#34; width=&#34;400&#34; height=&#34;267&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.16 TabManagerでタブリスト保存</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0916-t/</link>
+          <pubDate>Mon, 27 Dec 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0916-t/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;TabManager2.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/TabManager2.png&#34; width=&#34;428&#34; height=&#34;359&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09160&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0916.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;TabManagerの機能を強化しています。Anciaが固まっても、TabManagerでタブが表示されれば、「Ancia」右クリック -&amp;gt; 「タブリストで保存(S)」からタブリストで保存ダイアログを開くことができます。もし表示されない場合は、すみませんが、あきらめるしかないです。タブアイテム右クリックからURLをコピーなど、また、ドラッグ＆ドロップも可能です。&lt;/p&gt;
+
+&lt;p&gt;「全タブURLをクリップボードにコピー」はまだ未サポートです。タブリストの保存は、アプリでの保存と同じくセキュリティ、ハイライト、戻る進む履歴等も保存します。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.15 貼り付け検索、標準ツールバーAero表示、動画再生できないなど</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0915-a/</link>
+          <pubDate>Tue, 14 Dec 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0915-a/</guid>
+          <description>&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/archives/assets_c/2010/12/tbaero.jpg&#34; width=&#34;400&#34; height=&#34;123&#34; alt=&#34;tbaero.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09150&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0915.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
+標準ツールバーだけ、Aero表示切替の対応をしています。標準ツールバーの右クリック -&amp;gt; 「ツールバーをAero表示」を選択することで切り替えられます。Aero表示の切り替えは、画面スタイルがIEスタイルである必要があります。Xpだと少し見た目が悪いかもしれません。他のツールバーも切り替え対応予定です。&lt;br /&gt;
+&lt;img alt=&#34;check_aero.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/check_aero.jpg&#34; width=&#34;298&#34; height=&#34;158&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;検索バーの右クリックからクリップボードテキストで貼り付け検索出来るようになっています。貼り付け検索では、ステータスバーに貼り付けるクリップボードテキストが出るので事前に確認できます。検索エンジンをメニューから選んでの貼り付け検索も可能です。&lt;br /&gt;
+&lt;img alt=&#34;pasteandsearch.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/pasteandsearch.jpg&#34; width=&#34;437&#34; height=&#34;114&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong style=&#34;color:red&#34;&gt;また、動画が再生できないバグが見つかっています。もし動画が再生できない場合は、IEなどで開くようお願いします。&lt;/strong&gt;再生できないサイトとしては、例えば&lt;a href=&#34;http://mlb.mlb.com/video/play.jsp&#34;&gt;http://mlb.mlb.com/video/play.jsp&lt;/a&gt; があります。調べたんですが、ちょっと直し方は見当がつきません。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.12 Aero表示でのバー移動</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0912-a/</link>
+          <pubDate>Tue, 16 Nov 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0912-a/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;aero_singleline.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/aero_singleline.png&#34; width=&#34;500&#34; height=&#34;240&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09120&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0912.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aero表示のとき上部のバーを移動できるようにしています。配置によっては、IE9っぽくすることもできます。0.9.12でAero表示(オプション設定-&amp;gt;画面スタイル-&amp;gt;Internet Explorerスタイル)にすると、強制的に全ての検索バーとアドレスバーが上部に配置されます。今後の更新で、上部に配置する・配置しないを出来るようにする予定です。&lt;/p&gt;
+
+&lt;p&gt;デフォルトの画面スタイルでアドレスバーの背景をちょっと変えています。&lt;br /&gt;
+&lt;img alt=&#34;normal.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/normal.png&#34; width=&#34;286&#34; height=&#34;49&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;0.9.12のバグで、favicon表示されませんが、修正したものを&lt;a href=&#34;http://www.egrath.net/download/Ancia0912favicon_fix.zip&#34;&gt;http://www.egrath.net/download/Ancia0912favicon_fix.zip&lt;/a&gt;に置いています。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.11 App.InputBox()について</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0911-a/</link>
+          <pubDate>Tue, 02 Nov 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0911-a/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;inputbox.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/inputbox.png&#34; width=&#34;419&#34; height=&#34;238&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09110&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0911.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。&lt;br /&gt;
+&lt;pre&gt;var input=App.InputBox(&lt;br /&gt;
+    {   caption:&amp;ldquo;Windowキャプション&amp;rdquo;,&lt;br /&gt;
+        statics:[{text:&amp;ldquo;上部スタティックテキスト&amp;rdquo;},{text:&amp;ldquo;下部スタティックテキスト&amp;rdquo;}],//2つまで&lt;br /&gt;
+        inputs:[{label:&amp;ldquo;Input1(&amp;amp;1):&amp;ldquo;,value:&amp;ldquo;value1value1&amp;rdquo;},&lt;br /&gt;
+           {label:&amp;ldquo;Input2(&amp;amp;2):&amp;ldquo;,value:&amp;ldquo;value2value2&amp;rdquo;},&lt;br /&gt;
+           {label:&amp;ldquo;Input3(&amp;amp;3):&amp;ldquo;,value:&amp;ldquo;value3value3&amp;rdquo;},&lt;br /&gt;
+           {label:&amp;ldquo;Input4(&amp;amp;4):&amp;ldquo;,value:&amp;ldquo;1234567890&amp;rdquo;,style:&amp;ldquo;number&amp;rdquo;},// number: 数値入力のみ&lt;br /&gt;
+           {label:&amp;ldquo;Input5(&amp;amp;5):&amp;ldquo;,value:&amp;ldquo;1234567890&amp;rdquo;,style:&amp;ldquo;number&amp;rdquo;}],// 5つまで&lt;br /&gt;
+        buttons:[{text:&amp;ldquo;OK&amp;rdquo;},{text:&amp;ldquo;キャンセル&amp;rdquo;,style:&amp;ldquo;default&amp;rdquo;}]});&lt;br /&gt;
+// input： OKだとjson形式のテキスト、Cancelだとfalseが返却&lt;br /&gt;
+// json形式のテキストは以下の通り&lt;br /&gt;
+// {&amp;ldquo;inputs&amp;rdquo;:[&amp;ldquo;value1value1&amp;rdquo;,&amp;ldquo;value2value2&amp;rdquo;,&amp;ldquo;value3value3&amp;rdquo;,&amp;ldquo;1234567890&amp;rdquo;,&amp;ldquo;1234567890&amp;rdquo;]}&lt;br /&gt;
+&lt;/pre&gt;OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&amp;ldquo;(&amp;rdquo;+input+&amp;ldquo;)&amp;rdquo;).inputs[0]のように入力結果を取得できます。&lt;/p&gt;
+
+&lt;p&gt;Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。&lt;/p&gt;
+
+&lt;p&gt;inputのタイプは、指定なし(普通のedtibox)、style:&amp;ldquo;number&amp;rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.10 タブのフォント変更</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver0910/</link>
+          <pubDate>Mon, 25 Oct 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver0910/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;tabfont.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/tabfont.png&#34; width=&#34;509&#34; height=&#34;288&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09100&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0910.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;タブのフォントを変更できるようになっています。タブのフォントサイズは大きすぎてもタブのスキン最大表示サイズまで丸められます。それと、オプション設定の見た目を少し変えています。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.8 IEレンダリング指定、Jscript9対応</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver098-ie/</link>
+          <pubDate>Tue, 12 Oct 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver098-ie/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;Acid3_098.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/Acid3_098.png&#34; width=&#34;421&#34; height=&#34;357&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0980&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia098.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;インストールされているIEのバージョンに応じて最新のレンダリングを使用するよう対応しています。IE9ベータがインストールされていれば、自動的にIE9のレンダリングを使用します。画像はAnciaをIE9で使用したものですが、最初のオープンでAcid3は92点、なぜかリロードすると95点です。またIE9のみですが、最新のJavaScriptエンジンを使用するようになっています。&lt;/p&gt;
+
+&lt;p&gt;レンダリングとJavaScriptエンジンの指定は、最新のIEの機能を使用するために、レジストリを使用します。レジストリに書き込む値は、設定ファイルで決まり、起動時に毎回書き込むため、あらかじめレジストリに設定がないと動かない、というわけではありません。アプリ設定の保存にレジストリを使用しないのは従来どおりです。&lt;/p&gt;
+
+&lt;p&gt;できれば互換表示も対応したいんですが、なかなかうまくいってません。&lt;/p&gt;
+
+&lt;p&gt;設定ファイルの書き込みバグを修正しています。このバグが発生すると、前回起動時のタブの読み込みなど失敗するので、このようなバグが直っています。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.7 バグ修正、Aeroでのアドレスバー変更</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/ancia-ver097-ae/</link>
+          <pubDate>Mon, 04 Oct 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/ancia-ver097-ae/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0970&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia097.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;教えてもらった&lt;a href=&#34;http://blog.anciasoft.jp/archives/2010/09/ancia-ver095-ae.html#comment-454&#34;&gt;XpでIMEが消える現象&lt;/a&gt;など、他多くのバグ修正しています。Anciaでは、Web表示部分をポップアップで表示している関係で、なかなかそれ絡みのバグ(ZOrderなど)が多かったのですが、だいぶ減ってきていると思います。バグのご指摘ありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;Aeroあたりの更新もしたいのですが、XpでスクリプトからBrowserオブジェクトのNavigateを行うと固まる問題があり、これが修正できるか微妙です。Aero表示でのアドレスバー変更は可能にしています。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
