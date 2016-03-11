@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+    <link rel="stylesheet" href="http://yukikuri.github.io/blog/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://yukikuri.github.io/blog//index.xml">
 
     
     <title>pure virtual function call対応 - ウェブブラウザ開発ブログ</title>
@@ -12,7 +12,7 @@
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/post/pure-virtual-fu-1/">
+    <meta property="og:url" content="http://yukikuri.github.io/blog/post/pure-virtual-fu-1/">
     
     
 
@@ -21,7 +21,7 @@
   <body>
 
     <header class="site">
-      <div class="title"><a href="http://replace-this-with-your-hugo-site.com/">ウェブブラウザ開発ブログ</a></div>
+      <div class="title"><a href="http://yukikuri.github.io/blog/">ウェブブラウザ開発ブログ</a></div>
     </header>
 
     <div class="container site">
@@ -33,15 +33,15 @@
 
     <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://yukikuri.github.io/blog/"/>
       <meta itemprop="dateModified" content="2009-05-29T02:00:00&#43;09:00">
       <meta itemprop="headline" content="pure virtual function call対応">
       <meta itemprop="description" content="更新履歴 download 下がIEツールバーを破棄しているコードですが、Release()部分をコメントアウトするとpure〜〜が発生しなくなります。googleツールバーはAddRef()、Release()でカウントがinc/decとなるのでちゃんとした参照カウントを返しています。さらに下のRelease()後の値は0だったので、最後のRelease()だと分かります。 IDeskBand* pBand = (IDeskBand*)rbi.lParam; if(pBand) { pBand-&gt;CloseDW(0); if(S_OK == pBand-&gt;QueryInterface(__uuidof(pObjectWithSite), (void**)&amp;pObjectWithSite)) { pObjectWithSite-&gt;SetSite(NULL); pObjectWithSite-&gt;Release(); } pBand-&gt;Release(); ← ここをコメントアウトすると、発生しなくなる } そこで、Release()するタイミングをどうにかする対応としました。 よく考えると、 ・IE6は1プロセス、プロセス終了でツールバーも破棄、プロセス終了 ・IE7は1タブに1スレッド、1タブ終了でツールバーも破棄、スレッド終了 ・IE8は1タブに1プロセス、1タブ終了でツールバーも破棄、プロセス終了 ・Anciaは、複数タブに1スレッド、1タブ終了で、ツールバー破棄、スレッド継続 と、Anciaでは1スレッドの処理内で何度もツールバー作成/破棄が行われるため、若干動作モードが異なります。これがエラー原因に関係しているかもしれません。 まともに対応するとなるとマルチプロセスでしょうか。。 IEツールバーが破棄されないバグがあり、対応したのでAnciaのプロセスが残ることがもうないと思います。">
-      <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/post/pure-virtual-fu-1/">
+      <meta itemprop="url" content="http://yukikuri.github.io/blog/post/pure-virtual-fu-1/">
       
       <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
         <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+          <meta itemprop="url" content="http://yukikuri.github.io/blog/images/logo.jpg">
           <meta itemprop="width" content="100">
           <meta itemprop="height" content="100">
         </div>
@@ -89,13 +89,13 @@ if(pBand)<br />
       </div>
 
       <aside>
-        <div class="section">tags: <a href="http://replace-this-with-your-hugo-site.com/tags/online-soft" class="tag">online soft</a> </div>
+        <div class="section">tags: <a href="http://yukikuri.github.io/blog/tags/online-soft" class="tag">online soft</a> </div>
 
         <div class="section share">
-          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fpure-virtual-fu-1%2f&t=pure%20virtual%20function%20call%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fpure-virtual-fu-1%2f&text=pure%20virtual%20function%20call%e5%af%be%e5%bf%9c&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-          <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fpure-virtual-fu-1%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-          <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fpure-virtual-fu-1%2f&title=pure%20virtual%20function%20call%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpure-virtual-fu-1%2f&t=pure%20virtual%20function%20call%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpure-virtual-fu-1%2f&text=pure%20virtual%20function%20call%e5%af%be%e5%bf%9c&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/share?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpure-virtual-fu-1%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+          <a href="http://getpocket.com/edit?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpure-virtual-fu-1%2f&title=pure%20virtual%20function%20call%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
         </div>
 
         
@@ -116,8 +116,8 @@ if(pBand)<br />
     <div class="content">
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/windows-updateflash-crash2000272/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/flash.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/windows-updateflash-crash2000272/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
@@ -128,8 +128,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/flash.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/windows-updateflashcrash/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・04</time>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
@@ -140,8 +140,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/hidpi.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/hidpiper-monitor/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/hidpi.png);"></div>
     <div class="detail">
       <time>2015・09・03</time>
       <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
@@ -152,8 +152,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/iediagnosticsadapter/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/IEDiagnosticsAdapter.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/iediagnosticsadapter/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/IEDiagnosticsAdapter.png);"></div>
     <div class="detail">
       <time>2015・04・09</time>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
@@ -164,8 +164,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/refreshhilite.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/post-66/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/refreshhilite.png);"></div>
     <div class="detail">
       <time>2015・03・17</time>
       <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
@@ -176,8 +176,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/fullwindow/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/frametoolbar.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/fullwindow/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/frametoolbar.png);"></div>
     <div class="detail">
       <time>2015・03・02</time>
       <h2 class="title">新機能: FullWindow表示ボタン</h2>
@@ -188,8 +188,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/legacymenu.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/windows81/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/legacymenu.png);"></div>
     <div class="detail">
       <time>2015・01・30</time>
       <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
@@ -200,8 +200,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/freezechecker.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/post-65/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/freezechecker.png);"></div>
     <div class="detail">
       <time>2014・12・23</time>
       <h2 class="title">新機能: 応答なしページの検出</h2>
@@ -212,8 +212,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/post-64/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/kyorisoku.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/post-64/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/kyorisoku.png);"></div>
     <div class="detail">
       <time>2014・10・23</time>
       <h2 class="title">キョリ測が動かないときがある</h2>
@@ -224,8 +224,8 @@ if(pBand)<br />
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/lunascape/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/adluna.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/lunascape/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/adluna.png);"></div>
     <div class="detail">
       <time>2014・08・28</time>
       <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
@@ -242,13 +242,13 @@ if(pBand)<br />
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/internet">internet (29)</a>
+      <a href="http://yukikuri.github.io/blog/tags/internet">internet (29)</a>
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/no-category">no-category (6)</a>
+      <a href="http://yukikuri.github.io/blog/tags/no-category">no-category (6)</a>
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/online-soft">online-soft (178)</a>
+      <a href="http://yukikuri.github.io/blog/tags/online-soft">online-soft (178)</a>
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/programming">programming (38)</a>
+      <a href="http://yukikuri.github.io/blog/tags/programming">programming (38)</a>
     
     </div>
   </div>

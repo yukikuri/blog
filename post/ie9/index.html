@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+    <link rel="stylesheet" href="http://yukikuri.github.io/blog/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://yukikuri.github.io/blog//index.xml">
 
     
     <title>IE9メモリ問題とIE9環境でのマルチプロセス推奨について - ウェブブラウザ開発ブログ</title>
@@ -12,7 +12,7 @@
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/post/ie9/">
+    <meta property="og:url" content="http://yukikuri.github.io/blog/post/ie9/">
     
     
 
@@ -21,7 +21,7 @@
   <body>
 
     <header class="site">
-      <div class="title"><a href="http://replace-this-with-your-hugo-site.com/">ウェブブラウザ開発ブログ</a></div>
+      <div class="title"><a href="http://yukikuri.github.io/blog/">ウェブブラウザ開発ブログ</a></div>
     </header>
 
     <div class="container site">
@@ -33,15 +33,15 @@
 
     <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://yukikuri.github.io/blog/"/>
       <meta itemprop="dateModified" content="2011-09-13T02:00:00&#43;09:00">
       <meta itemprop="headline" content="IE9メモリ問題とIE9環境でのマルチプロセス推奨について">
       <meta itemprop="description" content="更新履歴 download 1.2.3を出しています。正式版はもう少し後になりそうです。IE9のメモリ問題について書きます。 IE9のメモリ問題で、Flashで！が出るという現象、これがIE9で出るかを調べてみました。 関連ツイート１：http://twitter.com/#!/kurimoto_y/status/111826171842396161 関連ツイート２：http://twitter.com/#!/kurimoto_y/status/111827188340375552 結果、IE9でも出ます。 ● 出し方のコツ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセスを作る動作のようです。 タスクマネージャでIEプロセスのメモリ700Mを超えたあたりで、新規タブを開かず、Flashが多く貼っているページ、例えばYoutube埋め込みをどんどん再生していけば1Gを超えたぐらいで！が出ると思います。 IE9で出るということは、現状IE9でも直せない問題だと判断して、アプリで対応するのは難しいと思います。またIE9が700Mあたりで新規プロセスを作成するあたりが、Tridentで1プロセスで使用できるメモリに限界があるように見えます(このあたりでもうIEコンポーネントはマルチプロセス前提になっているかもしれません)。 上のことから、IE9環境では、シングルスレッド/マルチスレッドではなく、Anciaをマルチプロセスで使用することを推奨します。マルチプロセスで、シングルスレッド/マルチスレッドとの動作の違いは、セッションが継続する/しないかになります。マルチプロセスでも、同じタブグループ内ならセッションは継続します。 ただ、Anciaのマルチプロセスでのセッション継続は、タブグループが1つのプロセスであり、タブグループの各タブをそのプロセス内のスレッドで動かしているだけです。そのため、タブグループ内のタブ数が多くなり、長時間使用しプロセスのメモリサイズが多くなるとFlashの！問題は出やすくなります。それでもシングルスレッド/マルチスレッドに比べると、発生頻度は低くなります。 自分は、マルチプロセスで使用しています。">
-      <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/post/ie9/">
+      <meta itemprop="url" content="http://yukikuri.github.io/blog/post/ie9/">
       
       <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
         <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+          <meta itemprop="url" content="http://yukikuri.github.io/blog/images/logo.jpg">
           <meta itemprop="width" content="100">
           <meta itemprop="height" content="100">
         </div>
@@ -85,28 +85,16 @@ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセ�
       </div>
 
       <aside>
-        <div class="section">tags: <a href="http://replace-this-with-your-hugo-site.com/tags/internet" class="tag">internet</a> <a href="http://replace-this-with-your-hugo-site.com/tags/online-soft" class="tag">online soft</a> </div>
+        <div class="section">tags: <a href="http://yukikuri.github.io/blog/tags/internet" class="tag">internet</a> <a href="http://yukikuri.github.io/blog/tags/online-soft" class="tag">online soft</a> </div>
 
         <div class="section share">
-          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fie9%2f&t=IE9%e3%83%a1%e3%83%a2%e3%83%aa%e5%95%8f%e9%a1%8c%e3%81%a8IE9%e7%92%b0%e5%a2%83%e3%81%a7%e3%81%ae%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e6%8e%a8%e5%a5%a8%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fie9%2f&text=IE9%e3%83%a1%e3%83%a2%e3%83%aa%e5%95%8f%e9%a1%8c%e3%81%a8IE9%e7%92%b0%e5%a2%83%e3%81%a7%e3%81%ae%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e6%8e%a8%e5%a5%a8%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-          <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fie9%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-          <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fpost%2fie9%2f&title=IE9%e3%83%a1%e3%83%a2%e3%83%aa%e5%95%8f%e9%a1%8c%e3%81%a8IE9%e7%92%b0%e5%a2%83%e3%81%a7%e3%81%ae%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e6%8e%a8%e5%a5%a8%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fie9%2f&t=IE9%e3%83%a1%e3%83%a2%e3%83%aa%e5%95%8f%e9%a1%8c%e3%81%a8IE9%e7%92%b0%e5%a2%83%e3%81%a7%e3%81%ae%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e6%8e%a8%e5%a5%a8%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fie9%2f&text=IE9%e3%83%a1%e3%83%a2%e3%83%aa%e5%95%8f%e9%a1%8c%e3%81%a8IE9%e7%92%b0%e5%a2%83%e3%81%a7%e3%81%ae%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e6%8e%a8%e5%a5%a8%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/share?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fie9%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+          <a href="http://getpocket.com/edit?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fie9%2f&title=IE9%e3%83%a1%e3%83%a2%e3%83%aa%e5%95%8f%e9%a1%8c%e3%81%a8IE9%e7%92%b0%e5%a2%83%e3%81%a7%e3%81%ae%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e6%8e%a8%e5%a5%a8%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
         </div>
 
         
-        
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-(function() {
-var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-var disqus_shortname = 'comenttest1238';
-dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         
         
       </aside>
@@ -126,8 +114,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     <div class="content">
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/windows-updateflash-crash2000272/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/flash.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/windows-updateflash-crash2000272/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
@@ -138,8 +126,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/flash.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/windows-updateflashcrash/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・04</time>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
@@ -150,8 +138,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/hidpi.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/hidpiper-monitor/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/hidpi.png);"></div>
     <div class="detail">
       <time>2015・09・03</time>
       <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
@@ -162,8 +150,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/iediagnosticsadapter/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/IEDiagnosticsAdapter.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/iediagnosticsadapter/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/IEDiagnosticsAdapter.png);"></div>
     <div class="detail">
       <time>2015・04・09</time>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
@@ -174,8 +162,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/refreshhilite.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/post-66/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/refreshhilite.png);"></div>
     <div class="detail">
       <time>2015・03・17</time>
       <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
@@ -186,8 +174,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/fullwindow/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/frametoolbar.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/fullwindow/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/frametoolbar.png);"></div>
     <div class="detail">
       <time>2015・03・02</time>
       <h2 class="title">新機能: FullWindow表示ボタン</h2>
@@ -198,8 +186,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/legacymenu.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/windows81/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/legacymenu.png);"></div>
     <div class="detail">
       <time>2015・01・30</time>
       <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
@@ -210,8 +198,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/freezechecker.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/post-65/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/freezechecker.png);"></div>
     <div class="detail">
       <time>2014・12・23</time>
       <h2 class="title">新機能: 応答なしページの検出</h2>
@@ -222,8 +210,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/post-64/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/kyorisoku.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/post-64/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/kyorisoku.png);"></div>
     <div class="detail">
       <time>2014・10・23</time>
       <h2 class="title">キョリ測が動かないときがある</h2>
@@ -234,8 +222,8 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://replace-this-with-your-hugo-site.com/post/lunascape/" class="clearfix">
-    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/adluna.png);"></div>
+  <a href="http://yukikuri.github.io/blog/post/lunascape/" class="clearfix">
+    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/adluna.png);"></div>
     <div class="detail">
       <time>2014・08・28</time>
       <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
@@ -252,13 +240,13 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/internet">internet (29)</a>
+      <a href="http://yukikuri.github.io/blog/tags/internet">internet (29)</a>
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/no-category">no-category (6)</a>
+      <a href="http://yukikuri.github.io/blog/tags/no-category">no-category (6)</a>
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/online-soft">online-soft (178)</a>
+      <a href="http://yukikuri.github.io/blog/tags/online-soft">online-soft (178)</a>
     
-      <a href="http://replace-this-with-your-hugo-site.com/tags/programming">programming (38)</a>
+      <a href="http://yukikuri.github.io/blog/tags/programming">programming (38)</a>
     
     </div>
   </div>

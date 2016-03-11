@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ウェブブラウザ開発ブログ </title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/no-category/</link>
+    <link>http://yukikuri.github.io/blog/tags/no-category/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>トップページ</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-16/</link>
+          <link>http://yukikuri.github.io/blog/post/post-16/</link>
           <pubDate>Sat, 03 Jan 2009 13:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-16/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-16/</guid>
           <description>&lt;p&gt;で、ブログエントリの最新3件まで表示しているが、日本語のタイトルで文字化けが発生。domxml_open_fileは、どうやらUTF-8として扱ってしまうらしく、mb_convert_encodingでUTF-8からEUC-JPにしたので、このタイトルが文字化けしていないはず。&lt;/p&gt;
 
 &lt;p&gt;ブログのatom.xml読み込みは、非同期でも可能ですが、非同期にしてさらにリクエストを増やすより、リクエストが来ているのだから、たかが20Kのファイル、サーバで読み取った方がいいんじゃないかと、素人考えで思いました。&lt;/p&gt;
@@ -26,10 +26,10 @@
       
         <item>
           <title>お休み。。</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-7/</link>
+          <link>http://yukikuri.github.io/blog/post/post-7/</link>
           <pubDate>Tue, 09 Jan 2007 02:03:50 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-7/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-7/</guid>
           <description>&lt;p&gt;休み中に時間があるかなと思い購入したゲーム、一度もプレイすることなくお休みが終了、、&lt;/p&gt;
 </description>
         </item>
@@ -38,10 +38,10 @@
       
         <item>
           <title>トラックバックスパム</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-5/</link>
+          <link>http://yukikuri.github.io/blog/post/post-5/</link>
           <pubDate>Mon, 24 Jul 2006 00:58:50 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-5/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-5/</guid>
           <description>&lt;p&gt;トラックバックスパムがくるようになったので、エントリのトラックバック受け付けないようにしました。&lt;/p&gt;
 </description>
         </item>
@@ -50,10 +50,10 @@
       
         <item>
           <title>障害</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-3/</link>
+          <link>http://yukikuri.github.io/blog/post/post-3/</link>
           <pubDate>Mon, 10 Apr 2006 02:00:51 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-3/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-3/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.value-domain.com/info.php?action=press&amp;amp;no=20060408-1&#34;&gt;■「xrea.com」を含むURLのアクセス障害について&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;障害が起こっているようです。&lt;/p&gt;
@@ -64,10 +64,10 @@
       
         <item>
           <title>Windows Vista Beta 1 スクリーンショット</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/windows-vista-b/</link>
+          <link>http://yukikuri.github.io/blog/post/windows-vista-b/</link>
           <pubDate>Thu, 28 Jul 2005 02:10:13 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/windows-vista-b/</guid>
+          <guid>http://yukikuri.github.io/blog/post/windows-vista-b/</guid>
           <description>&lt;p&gt;Vistaのスクリーンショット&lt;br /&gt;
 &lt;a href=&#34;http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx&#34;&gt;http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -77,10 +77,10 @@
       
         <item>
           <title>test</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/test/</link>
+          <link>http://yukikuri.github.io/blog/post/test/</link>
           <pubDate>Sat, 21 May 2005 02:46:05 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/test/</guid>
+          <guid>http://yukikuri.github.io/blog/post/test/</guid>
           <description>&lt;p&gt;test&lt;/p&gt;
 </description>
         </item>

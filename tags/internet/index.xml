@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ウェブブラウザ開発ブログ </title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/internet/</link>
+    <link>http://yukikuri.github.io/blog/tags/internet/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/windows-updateflash-crash2000272/</link>
+          <link>http://yukikuri.github.io/blog/post/windows-updateflash-crash2000272/</link>
           <pubDate>Wed, 06 Jan 2016 23:03:25 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/windows-updateflash-crash2000272/</guid>
+          <guid>http://yukikuri.github.io/blog/post/windows-updateflash-crash2000272/</guid>
           <description>&lt;p&gt;問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://winveg.com/win/kb3133431-adobe-flash-player-20-0-0-272-windows-10-update-06-jan-2016/&#34;&gt;KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering&lt;/a&gt;&lt;/p&gt;
@@ -26,10 +26,10 @@
       
         <item>
           <title>Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/windows-updateflashcrash/</link>
+          <link>http://yukikuri.github.io/blog/post/windows-updateflashcrash/</link>
           <pubDate>Mon, 04 Jan 2016 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/windows-updateflashcrash/</guid>
+          <guid>http://yukikuri.github.io/blog/post/windows-updateflashcrash/</guid>
           <description>&lt;p&gt;Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。&lt;/p&gt;
 
 &lt;p&gt;Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ&lt;br /&gt;
@@ -57,10 +57,10 @@
       
         <item>
           <title>IEDiagnosticsAdapterを使ってみる</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/iediagnosticsadapter/</link>
+          <link>http://yukikuri.github.io/blog/post/iediagnosticsadapter/</link>
           <pubDate>Thu, 09 Apr 2015 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/iediagnosticsadapter/</guid>
+          <guid>http://yukikuri.github.io/blog/post/iediagnosticsadapter/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;で公開されているIEDiagnosticsAdapterを使用してみたメモです。&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter#installing&#34;&gt;installing&lt;/a&gt;に従えば、特にエラーもなく動かすことができました。下は、その手順です。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1.Download&lt;/strong&gt;&lt;br /&gt;
@@ -72,7 +72,7 @@
 &lt;p&gt;実行するコマンド(RXは読み出し実行の意味)：&lt;br /&gt;
 icacls proxy.dll /grant &amp;ldquo;ALL APPLICATION PACKAGES&amp;rdquo;:(RX)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;icacls.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/icacls.png&#34; width=&#34;626&#34; height=&#34;98&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;icacls.png&#34; src=&#34;http://yukikuri.github.io/blog/img/icacls.png&#34; width=&#34;626&#34; height=&#34;98&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;3.IEを起動する&lt;/strong&gt;&lt;br /&gt;
 2と3は順序が逆でも大丈夫でした。&lt;/p&gt;
@@ -80,12 +80,12 @@ icacls proxy.dll /grant &amp;ldquo;ALL APPLICATION PACKAGES&amp;rdquo;:(RX)&lt;/
 &lt;p&gt;&lt;strong&gt;4.Chromeで、localhost:9222を開く&lt;/strong&gt;&lt;br /&gt;
 Chromeで、&lt;a href=&#34;http://localhost:9222/&#34;&gt;http://localhost:9222&lt;/a&gt;を開きます。開くと、IEと、IEコンポも一覧で出てきます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;iedlist.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/iedlist.png&#34; width=&#34;660&#34; height=&#34;381&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;iedlist.png&#34; src=&#34;http://yukikuri.github.io/blog/img/iedlist.png&#34; width=&#34;660&#34; height=&#34;381&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;5. localhost:9222の一覧から対象を選ぶ&lt;/strong&gt;&lt;br /&gt;
 対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;cmdline.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/cmdline.png&#34; width=&#34;734&#34; height=&#34;134&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;cmdline.png&#34; src=&#34;http://yukikuri.github.io/blog/img/cmdline.png&#34; width=&#34;734&#34; height=&#34;134&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;が表示されます。Chrome側はdevtoolの表示になります。&lt;/p&gt;
 
@@ -110,19 +110,19 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>キョリ測が動かないときがある</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-64/</link>
+          <link>http://yukikuri.github.io/blog/post/post-64/</link>
           <pubDate>Thu, 23 Oct 2014 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-64/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-64/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
 
 &lt;p&gt;・204応答でNavigateError&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;naverror.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/naverror.png&#34; width=&#34;915&#34; height=&#34;185&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;naverror.png&#34; src=&#34;http://yukikuri.github.io/blog/img/naverror.png&#34; width=&#34;915&#34; height=&#34;185&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;iecapture.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/iecapture.png&#34; width=&#34;783&#34; height=&#34;441&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;iecapture.png&#34; src=&#34;http://yukikuri.github.io/blog/img/iecapture.png&#34; width=&#34;783&#34; height=&#34;441&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。&lt;/p&gt;
 </description>
@@ -132,10 +132,10 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>Lunascape が表示ページ上部に広告を表示するかもしれない</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/lunascape/</link>
+          <link>http://yukikuri.github.io/blog/post/lunascape/</link>
           <pubDate>Thu, 28 Aug 2014 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/lunascape/</guid>
+          <guid>http://yukikuri.github.io/blog/post/lunascape/</guid>
           <description>&lt;p&gt;試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。&lt;/p&gt;
 </description>
         </item>
@@ -144,11 +144,11 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる(解決)</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage-1/</link>
+          <link>http://yukikuri.github.io/blog/post/ie11-domstorage-1/</link>
           <pubDate>Thu, 17 Apr 2014 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage-1/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;sessionstorage.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/sessionstorage.png&#34; width=&#34;729&#34; height=&#34;249&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/ie11-domstorage-1/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;sessionstorage.png&#34; src=&#34;http://yukikuri.github.io/blog/img/sessionstorage.png&#34; width=&#34;729&#34; height=&#34;249&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;だいぶ前のversion 1.9.56(最新versionは1.9.62)で、&lt;a href=&#34;http://blog.anciasoft.jp/2014/01/ie11-domstorage.html&#34;&gt;IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記&lt;/a&gt; は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。&lt;/p&gt;
 
@@ -169,11 +169,11 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage/</link>
+          <link>http://yukikuri.github.io/blog/post/ie11-domstorage/</link>
           <pubDate>Fri, 31 Jan 2014 23:59:59 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/ie11-domstorage/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;ie11domstoragefreeze.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie11domstoragefreeze.png&#34; width=&#34;630&#34; height=&#34;251&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/ie11-domstorage/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ie11domstoragefreeze.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ie11domstoragefreeze.png&#34; width=&#34;630&#34; height=&#34;251&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.anciasoft.jp/2013/11/internet-explor-2.html&#34;&gt;Internet Explorer 11でのJavascript問題 - 不定期日記&lt;/a&gt;のIE11環境で固まる現象で、DOMStorageを無効にすれば発生しないことがわかっています。&lt;/p&gt;
 
@@ -183,7 +183,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 
 &lt;p&gt;わかってもらえるように再現動画まで撮りました。ただ残念ながら、最近のフィードバックにコメントがつくことがほとんど無く、見てもらえずに直らない可能性が出てきました。IE10のころまでは、大体のフィードバックにMicrosoftからのコメントがついていました(再現しませんでしたといわれますが)。もしかするとフィードバックのバグを再現できるユーザ数が増えると見てくれるかもしれません(下の画像部分)。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;feedbackcnt.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/feedbackcnt.png&#34; width=&#34;424&#34; height=&#34;41&#34; style=&#34;float: left; margin: 0 20px 20px 0;border: 1px solid #000000;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;feedbackcnt.png&#34; src=&#34;http://yukikuri.github.io/blog/img/feedbackcnt.png&#34; width=&#34;424&#34; height=&#34;41&#34; style=&#34;float: left; margin: 0 20px 20px 0;border: 1px solid #000000;&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;再現動画(&lt;a href=&#34;http://www.youtube.com/watch?v=0xACMTPPoM8&#34;&gt;http://www.youtube.com/watch?v=0xACMTPPoM8&lt;/a&gt;)のままで行えば、誰でも再現できると思います。ブラウザ以外でもWebBrowser Controlを複数作成して使用するアプリは結構ありそうで、固まり現象が出ていないのか不思議です。&lt;/p&gt;
 </description>
@@ -193,17 +193,17 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>Internet Explorer 11でのJavascript問題</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/internet-explor-2/</link>
+          <link>http://yukikuri.github.io/blog/post/internet-explor-2/</link>
           <pubDate>Mon, 11 Nov 2013 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/internet-explor-2/</guid>
+          <guid>http://yukikuri.github.io/blog/post/internet-explor-2/</guid>
           <description>&lt;p&gt;Windows7用Internet Explorer11がdownload可能となりました。&lt;br /&gt;
 &lt;a href=&#34;http://windows.microsoft.com/ja-jp/internet-explorer/download-ie&#34;&gt;ダウンロード - Internet Explorer&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Anciaでは今のところ相性が悪いです。以前報告があるとおり、シングルスレッド・マルチスレッド・マルチプロセスいずれでもタブを10程度開くとJavascriptの動作が次第に遅くなり、そのうち固まります。どうも1ブラウザプロセスでIEコンポを多数作成するとだめなようです。&lt;/p&gt;
 
 &lt;p&gt;現時点での解決手段として、オプションからタブの動作をマルチプロセスにし、タブグループのチェックを外します。これでリソースを消費しますが、タブ毎に別プロセスで動作し、Javascriptの問題はとりあえず出なくなります。&lt;br /&gt;
-&lt;img alt=&#34;ie11fix.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie11fix.png&#34; width=&#34;767&#34; height=&#34;516&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;ie11fix.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ie11fix.png&#34; width=&#34;767&#34; height=&#34;516&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。&lt;/p&gt;
 </description>
@@ -213,24 +213,24 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>新しいメニュー動作</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-62/</link>
+          <link>http://yukikuri.github.io/blog/post/post-62/</link>
           <pubDate>Wed, 02 Oct 2013 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-62/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-62/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1939Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1939.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。&lt;/p&gt;
 
 &lt;p&gt;テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。&lt;br /&gt;
-&lt;img alt=&#34;selectionmenu.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/selectionmenu.png&#34; width=&#34;521&#34; height=&#34;275&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;selectionmenu.png&#34; src=&#34;http://yukikuri.github.io/blog/img/selectionmenu.png&#34; width=&#34;521&#34; height=&#34;275&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;imageのメニューだとGoogle画像検索も行えます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;imgmenu.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/imgmenu.png&#34; width=&#34;417&#34; height=&#34;196&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;imgmenu.png&#34; src=&#34;http://yukikuri.github.io/blog/img/imgmenu.png&#34; width=&#34;417&#34; height=&#34;196&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;testfeature_a.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/testfeature_a.png&#34; width=&#34;595&#34; height=&#34;183&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;testfeature_a.png&#34; src=&#34;http://yukikuri.github.io/blog/img/testfeature_a.png&#34; width=&#34;595&#34; height=&#34;183&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。&lt;/p&gt;
 </description>
@@ -240,11 +240,11 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>SleipnirのIE10表示問題</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/sleipnirie10/</link>
+          <link>http://yukikuri.github.io/blog/post/sleipnirie10/</link>
           <pubDate>Fri, 09 Aug 2013 09:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/sleipnirie10/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;ie9ie.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9ie.png&#34; width=&#34;517&#34; height=&#34;276&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/sleipnirie10/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ie9ie.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ie9ie.png&#34; width=&#34;517&#34; height=&#34;276&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。&lt;/p&gt;
 
@@ -252,10 +252,10 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 検証ページ：&lt;a href=&#34;http://www.egrath.net/download/conditionalcomments.htm&#34;&gt;Conditional Comments&lt;/a&gt; (X-UA-CompatibleにIE=9を指定)&lt;/p&gt;
 
 &lt;p&gt;環境は、Win7 64bit IE10、Sleipnirの最新versionです。下がSleipnirの表示です。IE10モードで表示しているため、&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms537512(v=VS.85).aspx&#34;&gt;About conditional comments (Internet Explorer)&lt;/a&gt;が動作していません。これはdocumentModeが10での挙動です。ほかにもIE10で変わった挙動は、&lt;a href=&#34;http://blogs.msdn.com/b/ie/archive/2011/07/06/html5-parsing-in-ie10.aspx&#34;&gt;HTML5 Parsing in IE10 - IEBlog - Site Home - MSDN Blogs&lt;/a&gt;に詳しく書いてあります。&lt;br /&gt;
-&lt;img alt=&#34;ie9s.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9s.png&#34; width=&#34;666&#34; height=&#34;458&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;ie9s.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ie9s.png&#34; width=&#34;666&#34; height=&#34;458&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;Anciaでは、IEと同じ挙動になります。&lt;br /&gt;
-&lt;img alt=&#34;ie9a.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9a.png&#34; width=&#34;628&#34; height=&#34;300&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;ie9a.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ie9a.png&#34; width=&#34;628&#34; height=&#34;300&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。&lt;/p&gt;
 </description>
@@ -265,22 +265,22 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>互換表示対応</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-61/</link>
+          <link>http://yukikuri.github.io/blog/post/post-61/</link>
           <pubDate>Thu, 08 Aug 2013 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-61/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-61/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1934Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1934.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;1.9.34でIE独自でのみ可能と思われた互換表示設定に対応できました。互換表示設定は、IE7,8,9,10,11から選択できます。互換表示設定はdomain単位で保存します。&lt;br /&gt;
-&lt;img alt=&#34;emu10_0.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/emu10_0.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;emu10_0.png&#34; src=&#34;http://yukikuri.github.io/blog/img/emu10_0.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;ボタンに出る数字はページのdocumentModeです。メニューのチェックは現在の互換表示設定になります。下はgoogleでIE7表示を選んだ場合です。&lt;br /&gt;
-&lt;img alt=&#34;emu7_1.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/emu7_1.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;emu7_1.png&#34; src=&#34;http://yukikuri.github.io/blog/img/emu7_1.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;ページの動作がおかしい場合は、IE7互換表示で改善する場合があります。改善する例として&lt;a href=&#34;http://www.nhk.or.jp/r-news/index.html&#34;&gt;NHKラジオニュース&lt;/a&gt;があります。IE10だと再生が多重に動きますが、IE7表示で正常に再生できるようになります。&lt;/p&gt;
 
 &lt;p&gt;互換表示を設定しても、ページにX-UA-Compatibleがある場合は、そちらが優先されます(IEと同じ動作)。MSDNだと互換表示を設定してもresponseヘッダにX-UA-Compatible: IE=edgeがあるため、常に最新のレンダリングとなります。この場合だとrequestは互換表示設定のユーザエージェント(下だとIE7)で行われます。&lt;br /&gt;
-&lt;img alt=&#34;emu7_10.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/emu7_10.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;emu7_10.png&#34; src=&#34;http://yukikuri.github.io/blog/img/emu7_10.png&#34; width=&#34;500&#34; height=&#34;223&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;リクエストを見るには&lt;a href=&#34;http://fiddler2.com/&#34;&gt;Fiddler - The Free Web Debugging Proxy by Telerik&lt;/a&gt;が使いやすいです。&lt;/p&gt;
 
@@ -292,10 +292,10 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
       
         <item>
           <title>msn関係・楽天で固まる問題の対応</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/msn/</link>
+          <link>http://yukikuri.github.io/blog/post/msn/</link>
           <pubDate>Tue, 23 Jul 2013 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/msn/</guid>
+          <guid>http://yukikuri.github.io/blog/post/msn/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1932Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1932.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;1.9.32で、ie10環境においてmsn、楽天のページを開くと固まる問題を修正しています。修正には2つの問題に対応しています。固まる原因はmsnと楽天で同じ(document.closeで固まる)ですが、状況は微妙に違います。&lt;/p&gt;
@@ -304,13 +304,13 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 IEとIEコンポでnavigator.appVersionの返す値が異なっています。この違いのため、msnのスクリプトでIEの場合はdocument.close()呼び出しが行われず、IEコンポの場合はdocument.close()呼び出しが行われます(ここでIEコンポは固まる)。1.9.32ではnavigator.appVersionの値がIEと同じ挙動となるよう対応しています。&lt;/p&gt;
 
 &lt;p&gt;・IE10(documentModeは7でappVerはIE7)&lt;br /&gt;
-&lt;img alt=&#34;ie10appver.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie10appver.jpg&#34; width=&#34;516&#34; height=&#34;231&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;ie10appver.jpg&#34; src=&#34;http://yukikuri.github.io/blog/img/ie10appver.jpg&#34; width=&#34;516&#34; height=&#34;231&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;・Ancia 1.9.31(documentModeは7でappVerはIE10)&lt;br /&gt;
-&lt;img alt=&#34;anappver.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/anappver.jpg&#34; width=&#34;448&#34; height=&#34;180&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;anappver.jpg&#34; src=&#34;http://yukikuri.github.io/blog/img/anappver.jpg&#34; width=&#34;448&#34; height=&#34;180&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;・Ancia 1.9.32(documentModeは7でappVerはIE7)&lt;br /&gt;
-&lt;img alt=&#34;fixappver.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/fixappver.jpg&#34; width=&#34;484&#34; height=&#34;221&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;fixappver.jpg&#34; src=&#34;http://yukikuri.github.io/blog/img/fixappver.jpg&#34; width=&#34;484&#34; height=&#34;221&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;問題2）楽天のページがIEコンポではquirks modeとなるが、IEではならない&lt;/strong&gt;&lt;br /&gt;
 楽天のページでdocument.close()の呼び出しで固まるのは同じですが、msnとは状況が異なります。楽天ではdocumentModeの値がIEとIEコンポで異なっています。msnはdocumentModeがIE,IEコンポともに7ですが、楽天ではIEが10(documentModeが10でもcompatMode はBackCompat)、IEコンポでは5(compatMode はBackCompat)です。&lt;/p&gt;
@@ -318,15 +318,15 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 &lt;p&gt;IE10からの&lt;a href=&#34;http://blogs.msdn.com/b/ie/archive/2011/12/14/interoperable-html5-quirks-mode-in-ie10.aspx&#34;&gt;Interoperable HTML5 Quirks Mode&lt;/a&gt;が関係し、1.9.32ではこれもIEと同じ挙動となるよう対応しています。&lt;/p&gt;
 
 &lt;p&gt;・IE10&lt;br /&gt;
-&lt;img alt=&#34;ie10docmode.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie10docmode.jpg&#34; width=&#34;367&#34; height=&#34;128&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;ie10docmode.jpg&#34; src=&#34;http://yukikuri.github.io/blog/img/ie10docmode.jpg&#34; width=&#34;367&#34; height=&#34;128&#34;  /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;ie10docmode2.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie10docmode2.jpg&#34; width=&#34;338&#34; height=&#34;162&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ie10docmode2.jpg&#34; src=&#34;http://yukikuri.github.io/blog/img/ie10docmode2.jpg&#34; width=&#34;338&#34; height=&#34;162&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;・Ancia 1.9.31&lt;br /&gt;
-&lt;img alt=&#34;adocmode.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/adocmode.jpg&#34; width=&#34;393&#34; height=&#34;162&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;adocmode.jpg&#34; src=&#34;http://yukikuri.github.io/blog/img/adocmode.jpg&#34; width=&#34;393&#34; height=&#34;162&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;・Ancia 1.9.32&lt;br /&gt;
-&lt;img alt=&#34;adocmode2.jpg&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/adocmode2.jpg&#34; width=&#34;375&#34; height=&#34;171&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;adocmode2.jpg&#34; src=&#34;http://yukikuri.github.io/blog/img/adocmode2.jpg&#34; width=&#34;375&#34; height=&#34;171&#34;  /&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -334,18 +334,18 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
       
         <item>
           <title>ExplorerBarPlus 1.4.7</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-44/</link>
+          <link>http://yukikuri.github.io/blog/post/explorerbarplus-44/</link>
           <pubDate>Wed, 05 Sep 2012 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-44/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;ebp_proxy.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ebp_proxy.png&#34; width=&#34;428&#34; height=&#34;543&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/explorerbarplus-44/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ebp_proxy.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ebp_proxy.png&#34; width=&#34;428&#34; height=&#34;543&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1470&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus147.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?ExplorerBarPlus&#34;&gt;ExplorerBarPlus&lt;/a&gt;のVersion1.4.7を出しています。SimpleFavPanelでProxy設定を可能にしています。Proxy設定は各SimpleFavPanel毎に可能です。「次のアドレスにはプロキシを使用しない」には、セミコロン区切りで複数指定できます。&lt;/p&gt;
 
 &lt;p&gt;あと気付かれない更新としてアイテムの追加でURLをFeedURLにコピーできるようにしています(▼ボタン)。ChromeBookmarkが正しく読み込めないバグも修正しています。&lt;br /&gt;
-&lt;img alt=&#34;ebp147_add.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ebp147_add.png&#34; width=&#34;584&#34; height=&#34;291&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;ebp147_add.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ebp147_add.png&#34; width=&#34;584&#34; height=&#34;291&#34;  /&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -353,10 +353,10 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
       
         <item>
           <title>IE9メモリ問題とIE9環境でのマルチプロセス推奨について</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/ie9/</link>
+          <link>http://yukikuri.github.io/blog/post/ie9/</link>
           <pubDate>Tue, 13 Sep 2011 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/ie9/</guid>
+          <guid>http://yukikuri.github.io/blog/post/ie9/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t12300Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia123.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;1.2.3を出しています。正式版はもう少し後になりそうです。IE9のメモリ問題について書きます。&lt;/p&gt;
@@ -366,7 +366,7 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
   関連ツイート２：&lt;a href=&#34;http://twitter.com/#!/kurimoto_y/status/111827188340375552&#34;&gt;http://twitter.com/#!/kurimoto_y/status/111827188340375552&lt;/a&gt;&lt;br /&gt;
 結果、IE9でも出ます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;ie9mem.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9mem.png&#34; width=&#34;400&#34; height=&#34;339&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ie9mem.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ie9mem.png&#34; width=&#34;400&#34; height=&#34;339&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;● 出し方のコツ&lt;br /&gt;
 IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセスを作る動作のようです。&lt;br /&gt;
@@ -386,11 +386,11 @@ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセ�
       
         <item>
           <title>BHOとタブグループ機能</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/bho/</link>
+          <link>http://yukikuri.github.io/blog/post/bho/</link>
           <pubDate>Tue, 05 Jul 2011 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/bho/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;tabgroupaero.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/tabgroupaero.png&#34; width=&#34;400&#34; height=&#34;106&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/bho/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;tabgroupaero.png&#34; src=&#34;http://yukikuri.github.io/blog/img/tabgroupaero.png&#34; width=&#34;400&#34; height=&#34;106&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t11100Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia111.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
@@ -399,7 +399,7 @@ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセ�
 &lt;p&gt;マルチプロセスでは、同じタブグループの中では、セッションが継続できます(別のタブ、タブグループとセッションは共有しない)。マルチプロセスでのセッション共有は難しいので、タブグループ内ではセッションが継続できるという対応にしています。タブグループ対応でタブスキンのデザインかなり変えています。ホイールクリックか、ナビゲートロックで新規タブを開くと同じタブグループで開きます。&lt;/p&gt;
 
 &lt;p&gt;BHOは、たとえば、&lt;a href=&#34;http://www.orbitdownloader.com/jp/download.htm&#34;&gt;Orbit Downloader&lt;/a&gt;というのがありますが、こういうのが動作します(もともとBHOはIE用なので全て動作するわけではありません)。&lt;br /&gt;
-&lt;img alt=&#34;BHO.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/BHO.png&#34; width=&#34;404&#34; height=&#34;270&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;BHO.png&#34; src=&#34;http://yukikuri.github.io/blog/img/BHO.png&#34; width=&#34;404&#34; height=&#34;270&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;上は、&lt;a href=&#34;http://www.orbitdownloader.com/jp/Use-as-YouTube-Downloader.htm&#34;&gt;http://www.orbitdownloader.com/jp/Use-as-YouTube-Downloader.htm&lt;/a&gt; で試したもので、動いていることが分かります。&lt;/p&gt;
 
@@ -411,11 +411,11 @@ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセ�
       
         <item>
           <title>WebKitエンジン Ancia Chrome</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/webkit-ancia-ch/</link>
+          <link>http://yukikuri.github.io/blog/post/webkit-ancia-ch/</link>
           <pubDate>Tue, 10 May 2011 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/webkit-ancia-ch/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;Ancia_Chrome.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/Ancia_Chrome.png&#34; width=&#34;400&#34; height=&#34;347&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/webkit-ancia-ch/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;Ancia_Chrome.png&#34; src=&#34;http://yukikuri.github.io/blog/img/Ancia_Chrome.png&#34; width=&#34;400&#34; height=&#34;347&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome&#34;&gt;Ancia Chromeについて&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome001.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
@@ -439,11 +439,11 @@ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセ�
       
         <item>
           <title>AnciaでAutoPagerizeを使用する</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/anciaautopageri/</link>
+          <link>http://yukikuri.github.io/blog/post/anciaautopageri/</link>
           <pubDate>Tue, 12 Apr 2011 01:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/anciaautopageri/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;ap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ap.png&#34; width=&#34;400&#34; height=&#34;281&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/anciaautopageri/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ap.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ap.png&#34; width=&#34;400&#34; height=&#34;281&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09320&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0932.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
@@ -453,25 +453,25 @@ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセ�
 
 &lt;p&gt;&lt;strong&gt;１, xAutoPagerizeForAncia.js をダウンロードする&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/download/xAutoPagerizeForAncia.js&#34;&gt;xAutoPagerizeForAncia.js&lt;/a&gt;をダウンロードし、Anciaのscriptフォルダに保存します。&lt;br /&gt;
-&lt;img alt=&#34;saveap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/saveap.png&#34; width=&#34;235&#34; height=&#34;107&#34;  /&gt;xAutoPagerizeForAncia.jsの内容は、ブックマークレットの内容と変わっていません。複雑でないブックマークレットなら、そのままURLActionに使用できます。&lt;/p&gt;
+&lt;img alt=&#34;saveap.png&#34; src=&#34;http://yukikuri.github.io/blog/img/saveap.png&#34; width=&#34;235&#34; height=&#34;107&#34;  /&gt;xAutoPagerizeForAncia.jsの内容は、ブックマークレットの内容と変わっていません。複雑でないブックマークレットなら、そのままURLActionに使用できます。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;２, オプション設定でURLActionの設定を行う&lt;/strong&gt;&lt;br /&gt;
 オプション設定のURLActionの「読み込み後のアクション一覧」にURLパターン「*」、動作に「スクリプト:xAutoPagerizeForAncia.js」としてアクションを追加します(下は追加後の画像です)。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;addap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/addap.png&#34; width=&#34;400&#34; height=&#34;279&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;addap.png&#34; src=&#34;http://yukikuri.github.io/blog/img/addap.png&#34; width=&#34;400&#34; height=&#34;279&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;「適用」を押すと、追加したアクションが反映されます。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;３, AutoPagerizeを動作させてみる&lt;/strong&gt;&lt;br /&gt;
 Google検索での動作が分かりやすいと思います。ドロップアクションで、適当な語句をGoogle検索に渡します。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;ddap.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ddap.png&#34; width=&#34;521&#34; height=&#34;320&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ddap.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ddap.png&#34; width=&#34;521&#34; height=&#34;320&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;検索結果のページで、赤い部分に緑の四角が出ていればAutoPagerizeが動作しています。&lt;br /&gt;
-&lt;img alt=&#34;apr.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/apr.png&#34; width=&#34;523&#34; height=&#34;323&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;apr.png&#34; src=&#34;http://yukikuri.github.io/blog/img/apr.png&#34; width=&#34;523&#34; height=&#34;323&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;あとは、ページの下へスクロールすれば、AutoPagerizeの動作が体感できるはずです。&lt;br /&gt;
-&lt;img alt=&#34;ap2.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ap2.png&#34; width=&#34;500&#34; height=&#34;392&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;ap2.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ap2.png&#34; width=&#34;500&#34; height=&#34;392&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;注：IE9だと、AutoPagerizeで追加されたページにもハイライトが反映されるんですが、IE8だとうまく動いていません。これは対応可能なら対応します。IEのバージョンやページによっては、AutoPagerizeが動かないページがあるようです。&lt;/p&gt;
 
@@ -483,11 +483,11 @@ Google検索での動作が分かりやすいと思います。ドロップア�
       
         <item>
           <title>MSDNライブラリでサジェストが可能に</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/msdn/</link>
+          <link>http://yukikuri.github.io/blog/post/msdn/</link>
           <pubDate>Fri, 11 Mar 2011 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/msdn/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;msdns.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/msdns.png&#34; width=&#34;369&#34; height=&#34;255&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/msdn/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;msdns.png&#34; src=&#34;http://yukikuri.github.io/blog/img/msdns.png&#34; width=&#34;369&#34; height=&#34;255&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;MSDNライブラリで、候補を取得できるURLが分かり、&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B8%A1%BA%F7%A5%A8%A5%F3%A5%B8%A5%F3#wdc90f4e&#34;&gt;開発系の検索エンジン追加&lt;/a&gt; のMSDNオープンサーチのXMLファイル更新しています。追加で上書きすれば、更新されます。たぶん検索候補に対応したIEでも使えるはずです。&lt;/p&gt;
@@ -502,10 +502,10 @@ Google検索での動作が分かりやすいと思います。ドロップア�
       
         <item>
           <title>Twitter</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/twitter/</link>
+          <link>http://yukikuri.github.io/blog/post/twitter/</link>
           <pubDate>Sun, 18 Jul 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/twitter/</guid>
+          <guid>http://yukikuri.github.io/blog/post/twitter/</guid>
           <description>&lt;p&gt;かなり遅いかもしれませんが、Twitterはじめました。y_kurimotoは使用されていたので、kurimoto_yで登録。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://twitter.com/kurimoto_y&#34;&gt;@kurimoto_y&lt;/a&gt;&lt;/p&gt;
@@ -518,10 +518,10 @@ Google検索での動作が分かりやすいと思います。ドロップア�
       
         <item>
           <title>検索パネルでGoogle検索できない２</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/google-1/</link>
+          <link>http://yukikuri.github.io/blog/post/google-1/</link>
           <pubDate>Tue, 06 Jul 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/google-1/</guid>
+          <guid>http://yukikuri.github.io/blog/post/google-1/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://blog.anciasoft.jp/archives/2010/05/google.html&#34;&gt;検索パネルでGoogle検索できない - 不定期日記&lt;/a&gt;で、またサイドバーでのGoogle検索ができなくなっています。どうやら、もう&lt;a href=&#34;http://www.google.co.jp/search?output=ieは使用できないようです。しばらく様子を見て、使用できるようになればいいのですが、、&#34;&gt;http://www.google.co.jp/search?output=ieは使用できないようです。しばらく様子を見て、使用できるようになればいいのですが、、&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
@@ -530,11 +530,11 @@ Google検索での動作が分かりやすいと思います。ドロップア�
       
         <item>
           <title>検索パネルでGoogle検索できない</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/google/</link>
+          <link>http://yukikuri.github.io/blog/post/google/</link>
           <pubDate>Sun, 16 May 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/google/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;SearchPanel_g.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/SearchPanel_g.png&#34; width=&#34;298&#34; height=&#34;331&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/google/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;SearchPanel_g.png&#34; src=&#34;http://yukikuri.github.io/blog/img/SearchPanel_g.png&#34; width=&#34;298&#34; height=&#34;331&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?ExplorerBarPlus%2F%A5%D1%A5%CD%A5%EB%B0%EC%CD%F7%2FSearchPanel&#34;&gt;ExplorerBarPlusのSearchPanel&lt;/a&gt;でGoogle検索のURL&lt;/p&gt;
 
@@ -552,11 +552,11 @@ Google検索での動作が分かりやすいと思います。ドロップア�
       
         <item>
           <title>AnciaでIE9 Platform Previewを使用する</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/anciaie9-platfo/</link>
+          <link>http://yukikuri.github.io/blog/post/anciaie9-platfo/</link>
           <pubDate>Sat, 20 Mar 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/anciaie9-platfo/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;ie9pp.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/ie9pp.png&#34; width=&#34;410&#34; height=&#34;271&#34;  /&gt;&lt;/p&gt;
+          <guid>http://yukikuri.github.io/blog/post/anciaie9-platfo/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;ie9pp.png&#34; src=&#34;http://yukikuri.github.io/blog/img/ie9pp.png&#34; width=&#34;410&#34; height=&#34;271&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;もう情報が出ていますが、&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms682600(VS.85).aspx&#34;&gt;Dynamic-Link Library Redirection (Windows)&lt;/a&gt;を利用することで、&lt;br /&gt;
 Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform Preview&lt;/a&gt;を動作させることが可能です。&lt;/p&gt;
@@ -576,10 +576,10 @@ Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform 
       
         <item>
           <title>Yahoo!ニュース - トピックスAPI</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/yahoo-api/</link>
+          <link>http://yukikuri.github.io/blog/post/yahoo-api/</link>
           <pubDate>Wed, 01 Aug 2007 00:25:18 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/yahoo-api/</guid>
+          <guid>http://yukikuri.github.io/blog/post/yahoo-api/</guid>
           <description>&lt;p&gt;Yahoo! JAPANトップページのみだし一覧などを取得する&lt;a href=&#34;http://developer.yahoo.co.jp/news/topics/V1/topics.html&#34;&gt;Yahoo Webサービス&lt;/a&gt;が出ています。&lt;/p&gt;
 </description>
         </item>
@@ -588,10 +588,10 @@ Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform 
       
         <item>
           <title>ブックマークカウント</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/post-13/</link>
+          <link>http://yukikuri.github.io/blog/post/post-13/</link>
           <pubDate>Fri, 13 Jul 2007 02:22:22 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/post-13/</guid>
+          <guid>http://yukikuri.github.io/blog/post/post-13/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/keyword/%a4%cf%a4%c6%a4%ca%a5%d6%a5%c3%a5%af%a5%de%a1%bc%a5%af%b7%ef%bf%f4%bc%e8%c6%c0API&#34;&gt;はてなブックマーク件数取得API&lt;/a&gt;、&lt;a href=&#34;http://wiki.livedoor.jp/staff_clip/d/%a5%af%a5%ea%a5%c3%a5%d7%b7%ef%bf%f4%bc%e8%c6%c0%20API&#34;&gt;クリップ件数取得 API&lt;/a&gt;とURLのブックマーク数を取得するXML-RPCがあるので、これをYahooディレクトリ検索結果に出してみようと思います。&lt;/p&gt;
 </description>
         </item>
@@ -600,10 +600,10 @@ Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform 
       
         <item>
           <title>Mashupedia（マッシュペディア）</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/mashupedia/</link>
+          <link>http://yukikuri.github.io/blog/post/mashupedia/</link>
           <pubDate>Tue, 10 Apr 2007 00:45:46 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/mashupedia/</guid>
+          <guid>http://yukikuri.github.io/blog/post/mashupedia/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.vector.co.jp/info/news_release/rel070409.html&#34;&gt;新サイト「Mashupedia（マッシュペディア）」の開始に関するお知らせ&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;いいWeb APIは紹介されるということなので、どんなものが紹介されるか楽しみです。&lt;/p&gt;
@@ -614,10 +614,10 @@ Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform 
       
         <item>
           <title>Firefox RC 2</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/firefox-rc-2/</link>
+          <link>http://yukikuri.github.io/blog/post/firefox-rc-2/</link>
           <pubDate>Mon, 09 Oct 2006 12:36:08 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/firefox-rc-2/</guid>
+          <guid>http://yukikuri.github.io/blog/post/firefox-rc-2/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://mozillazine.jp/?p=367&#34;&gt;Mozilla Firefox 2 のリリース候補２が公開&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Firefox RC 2が出たようです。&lt;/p&gt;
@@ -628,13 +628,13 @@ Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform 
       
         <item>
           <title>GMail</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/gmail/</link>
+          <link>http://yukikuri.github.io/blog/post/gmail/</link>
           <pubDate>Tue, 26 Sep 2006 01:07:08 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/gmail/</guid>
+          <guid>http://yukikuri.github.io/blog/post/gmail/</guid>
           <description>&lt;p&gt;Windows RSS Platformはatomをサポートしているので、GMailのフィード追加してみると、、ちゃんと表示できました。IE7以上でないと使えませんが、IEFeedViewでGMailのチェックができます。認証パスはIEに保存されているものを使うようです。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;GMail.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/GMail.png&#34; width=&#34;408&#34; height=&#34;206&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;GMail.png&#34; src=&#34;http://yukikuri.github.io/blog/img/GMail.png&#34; width=&#34;408&#34; height=&#34;206&#34;  /&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -642,10 +642,10 @@ Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform 
       
         <item>
           <title>Internet Explorer 7 RC1</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/internet-explor/</link>
+          <link>http://yukikuri.github.io/blog/post/internet-explor/</link>
           <pubDate>Wed, 13 Sep 2006 00:49:38 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/internet-explor/</guid>
+          <guid>http://yukikuri.github.io/blog/post/internet-explor/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=94e5bf41-2907-4415-8f72-da7c2c2ace09&amp;amp;DisplayLang=ja&#34;&gt;Internet Explorer 7 Release Candidate 1 for Windows XP SP2&lt;/a&gt;が出たようです。&lt;/p&gt;
 </description>
         </item>
@@ -654,10 +654,10 @@ Anciaで&lt;a href=&#34;http://ie.microsoft.com/testdrive/&#34;&gt;IE9 Platform 
       
         <item>
           <title>IE7: Beta 2 Preview</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/ie7-beta-2-prev/</link>
+          <link>http://yukikuri.github.io/blog/post/ie7-beta-2-prev/</link>
           <pubDate>Thu, 02 Feb 2006 01:23:48 JST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/ie7-beta-2-prev/</guid>
+          <guid>http://yukikuri.github.io/blog/post/ie7-beta-2-prev/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/windows/IE/ie7/ie7betaredirect.mspx&#34;&gt;Internet Explorer 7: Beta 2 Preview checklists&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;入れてみると、IE７はタブ毎にExplorerBarのインスタンスを作成していた。タブで開く方法は公開されていないらしい、、Object Viewerで見てみるとITabBrowserServiceというその名のとおりのインターフェースが。このインターフェースからTabで開けるのかもしれない。&lt;/p&gt;
