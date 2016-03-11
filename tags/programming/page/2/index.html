@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Programming - ウェブブラウザ開発ブログ</title>
+    <meta property='og:title' content="Programming - ウェブブラウザ開発ブログ">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/tags/programming/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <div class="title"><a href="http://replace-this-with-your-hugo-site.com/">ウェブブラウザ開発ブログ</a></div>
+    </header>
+
+    <div class="container site">
+
+
+<div class="row">
+  <div class="col-sm-9">
+
+    <header class="title list"><h1>Programming</h1></header>
+
+    <div class="articles">
+      <div class="row">
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-48/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/iecmp.png);"></div>
+    <div class="detail">
+      <time>2010・03・29</time>
+      <h2 class="title">互換表示</h2>
+      <div class="summary">IE8のヘッダとIEブログを見ているうちに、互換表示が変更できそうな怪しい部分があったので、試してみると、、変更できたっぽいです。ですが、変更できずに失敗するタイミングがあります。もう少し試してみて、できそうなら入れてみます。変更の仕方自体は、想像していたとおり単純で、大体5行程度です。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-47/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2010・03・23</time>
+      <h2 class="title">設定の同期で苦戦中</h2>
+      <div class="summary">設定の同期、というか子処理は、メイン処理と同じ設定値のコピー値で動作させるところで、直す部分が多すぎて、大変です。ビットフィールドは使うんじゃなかったかな。 struct A { UINT isA:1; UINT isB:1; UINT isC:1; UINT isD:1; } a; a.isA = TRUE; a.isB = FALSE; a.isC = TRUE; a.isD = FALSE; int v = (int)&a; で無理やり変換してもいいですが、if(a.isB)のアセンブリ mov edx,dword ptr [a] shr edx,1 and edx,1 がif(v &amp; 0x2)のandの mov eax,dword ptr [v] and eax,2 に比べ1命令多いので、ビットフィールドはやめることにします。たった1命令減ってもナノセカンドも差が出ないと思いますが、ifの使用箇所が多いのと、命令が少なくなることはデメリットではないので</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-46/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2010・03・01</time>
+      <h2 class="title">マルチスレッド/プロセス対応途中の公開</h2>
+      <div class="summary">マルチスレッド/プロセス対応中ですが、途中のものを公開しています。途中なので通常使用はお勧めしません。 更新履歴 download 主要機能 ドロップアクション、マウスジェスチャ、IEプラグイン、スクリプト、閉じたタブの復元、ステータスバー。。など のほとんどがまだ動作しません。これを全て対応してから出すと、とても時間がかかるので、順次出していくことにします。大体対応が終わったとき、0.8.1として出すつもりです。いまはスレッド/プロセスの制限数がありませんが、数の最大値は設定可能にします。ためしにマルチプロセスのとき子プロセスをタスクマネージャから終了しても、アプリは落ちず動作し続けます。 どのようにマルチスレッド/プロセスを対応しているか気になる人もいるかと思うので、実装イメージを書きます。まず、概要をいうとプロキシオブジェクトの動作を作っています。MDIChildFrameはメインスレッドで動かし、Frameの子Windowは、別スレッドで動かします。 Anciaでは、オブジェクト間でさまざまな処理を行えるよう struct __declspec(novtable) ICmdTarget : public IUnknown { STDMETHOD(CmdExec)(long cmdId, long cmdExecOpt, OPTIONAL VARIANT* arg1, OPTIONAL VARIANT* arg2, OPTIONAL VARIANT* arg3, OUT VARIANT* result) = 0; }; というIOleCommandTargetのようなインターフェースで内部動作を作っています。ここで、MDIChildFrame &lt;-&gt; Child間をICmdTargetでやり取りするようマルチスレッド対応で変更しました(いままでは、MDIChildFrameがすべて子Window処理を行っていた)。やり取りで、シングルスレッドのときは、直に相手のCmdExecを呼び、マルチスレッド/マルチプロセスのときは、プロキシオブジェクトを通してIPC通信で相手のCmdExecを呼ぶようにした、というのが簡単な動作説明です。単純なマーシャル的なものを作っているのと同じでしょうか。 ほとんどのプロキシ間コマンドは、CmdExecからIPC通信で相手側の処理を呼び出す HRESULT IpcCmdExec(HWND hWndTarget, IpcInfo* pIpcInfo, int fFlags, UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0); というのを呼ぶだけで、すむと思っていたんですが、中にはそう簡単にいかないものがあり、時間はかかりそうです。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-45/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2010・02・18</time>
+      <h2 class="title">途中２</h2>
+      <div class="summary">シングルスレッド、マルチスレッド、マルチプロセスを意識しないで動作するよう内部設計を変えている途中で、まあそれなりにうまくいくかもというところです。シングルスレッドでは多少遅くなるかもしれませんが、１つ、２つAPI呼び出しが増えてもそれど遅くならないでしょう。 タスクバーサムネイルが出るようになりましたが、スレッド（おそらくプロセスも）が違うとITaskbarList3::SetTabOrderが失敗してしまいました。仕方ないので、SetTabOrderのhwndInsertBeforeにNULLを渡して、後ろにどんどんずらしていく、というのは大変そうなのでどうしよう、、 追記）SetTabOrderの失敗は、間違ったHWNDを渡しているだけでした。SetTabOrderって別のプロセスがRegisterTabしても成功してます。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-41/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2010・01・04</time>
+      <h2 class="title">スクロール</h2>
+      <div class="summary">子スレッドでIEコンポーネントを動かすとホイールスクロールが少し引っかかるような動作になることで、 子スレッドをポップアップウインドウとすると、なぜか引っ掛かりが無くなる スムーズスクロールoffで改善する FEATURE_BROWSER_EMULATIONでIE8レンダリングモードとすると多少改善する ということが分かりました。１から親子スレッド間のウインドウや描画が関係してそうな雰囲気ですが、なぜかがまったく分からないので、スクロール引っかかりが気になる場合は、インターネットオプションで２をしてもらうことになりそうです。theworldやMaxthonはポップアップウインドウにしているようです。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-40/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2009・12・23</time>
+      <h2 class="title">マルチプロセススレッド試作物</h2>
+      <div class="summary">MultiProcessThread.zip メッセージベース＋共有メモリでのIPCを使用したマルチプロセス、スレッドのプロトタイプです。機能は、WTLのタブブラウザサンプル相当しかありません。exeの同じディレクトリにファイルthreadがあるとマルチスレッド、ないとマルチプロセスで動作します。 プロセス、スレッドの動作の違いは、制御の作成がCreateProcess/CreateThreadか、マーシャリングをプロセス間/プロセス内としているかぐらいしかありません。ただスレッドの場合は、共有メモリではなくヒープを使用するなど、改善部分はあります。タブのタイトル更新、アドレスバーのURL更新はIPC、戻る/進む/ホーム/中止は、マーシャリングしたポインタで行っています。マーシャリングはテストで毎回行っています。マウスホイールでのスクロール対応も入れてます。 IPCを決めるとき、名前つきパイプにしようと思ったんですが、パイプだとメッセージボックスやダイアログを表示中だとrecvできないので、UIスレッドとは別スレッドにすることになり、やめました。メッセージベースで単純なSendとし、再入可能の動作にする予定です。ただ固まっている子プロセスのウインドウへメインプロセスのウインドウからタイムアウトなしのSendが行われるとメインプロセスも固まってしまうため、Windowsが内部で自動的にSendしているものは、固まりを防げないかもしれません。たしか、同じホストで、マーシャリングしたポインタを介した呼び出しもメッセージベースなので、呼び先のタブが固まっていると、呼び元に制御が返らない、はずです。マーシャリングするときも応答があるときに行うようにしなければならないようです。 プロトタイプの公開はこれまでとし、次はプロトタイプをいじりながらAnciaに組み込んでいければというところです。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/windows7/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2009・10・26</time>
+      <h2 class="title">Windows7ライブサムネイル</h2>
+      <div class="summary">更新履歴 download Windows7ライブサムネイルに対応しています。ライブサムネイルは、WM_DWMSENDICONICTHUMBNAILで、タスクバーのサムネイルを返却（DwmSetIconicThumbnail）する、サムネイルをマウスオーバーしたときのWM_DWMSENDICONICLIVEPREVIEWBITMAPでアプリケーション画面に表示するビットマップを返却(DwmSetIconicLivePreviewBitmap)すれば対応できます。ビットマップは32ビットじゃないとE_INVALITARG?で処理が失敗してしまいます。ビットマップサイズもおかしいとINVALIDARGになってしまうようです。 faviconはまだ付いていませんが、そのうち付けます。サムネイルにはボタンをつけれるようなので、最新の状態に更新などつけるかもしれません。 XpとWindows7で同じフォルダのAnciaを起動しても、Windows7側からXpのフォルダのアクセス権をつけないと、設定が保存されない現象がありました。ので注意してください。 AnciaでIE8で落ちず、IE6で落ちる場合があるようです。IE6で落ちる場合はInternetExplorerでも落ちたので、何かのアドオン(flash?)か何かかもしれません。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/wtl/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2009・10・01</time>
+      <h2 class="title">WTLのコマンドバーメモ</h2>
+      <div class="summary">WTLコマンドバーでの主にメニュー表示動作メモ。 作成時メッセージフックセットMessageHookProc ボタンが押されると、TrackPopupMenuExでメニューを表示 TrackPopupMenuEx中、MessageHookProcで、バー上のマウスオーバーメッセージのとき、m_nNextPopBtnに次のメニュー表示インデックスをセット。現在のメニューを閉じ、TrackPopupMenuExから1度制御を返す。TrackPopupMenuExを抜けたあとで、m_nNextPopBtnをチェックし、次のメニューを表示するとき、WTL_CmdBar_InternalAutoPopupMsgをポストし、再度TrackPopupMenuExを実行。ここの処理はループっぽく動く。 MessageHookProcでは、左右キーもチェックし、マウスオーバーと同じように動作させる。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/explorerbarplus-36/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2009・09・07</time>
+      <h2 class="title">ExplorerBarPlus 1.3.9</h2>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Opera10を入れてみると、ブックマークの自動検出に失敗したので修正しました。またIEのお気に入りのパネルで、右クリックに新しいウインドウで開くを追加しています。 VC2008でリビルドしようと思ったのですが、vc2008はなぜかファイルサイズが少し大きめになるので止めました。インライン展開か何かかでしょうか、、謎です。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-29/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/sb.png);"></div>
+    <div class="detail">
+      <time>2009・08・19</time>
+      <h2 class="title">検索バーカスタマイズ</h2>
+      <div class="summary">更新履歴 download 検索バーで標準ツールバーのようにカスタマイズできるよう対応しました。スクリプトボタンも置けます。いまアドレスバーのボタンをすべて削除し、アドレスバーの変更を表示すると落ちてしまいました。。ボタンをすべて削除するのは止めておいた方がいいです。 オプション画面からのツールバー設定と今回の設定画面がかぶるので、オプション画面の方のツールバー設定画面は、こちらに置き換える予定です。 ・・・Chromeのマルチプロセスは、どうやらプロセス間通信は、名前つきパイプ＋IO completion port、あとメッセージ専用Windowも使用しているようです。メッセージ専用ウインドウがプロセス間通信に使っているかは分かりません。すごいのはLinuxでも動くようにプロセス間通信で、Windowsの場合は名前つきパイプ、posixの場合はソケットで、実装されているところです。chromeがWindows用になっていますが、Linuxでも動かす予定があるかもしれません。 調べてみるとLinux版Chromeが開発者向けにありました。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+      </div>
+    </div>
+
+    
+<nav class="paging">
+  
+  <a href="/tags/programming/page/1" class="left" rel="prev">PREV</a>
+  
+
+  
+  <a href="/tags/programming/page/3" class="right" rel="next">NEXT</a>
+  
+</nav>
+
+
+
+  </div>
+
+  <div class="col-sm-3">
+    <aside class="site">
+
+  
+
+  
+
+  <div class="section">
+    <header><div class="title">LatestPosts</div></header>
+    <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/windows-updateflash-crash2000272/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・01・06</time>
+      <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
+      <div class="summary">問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。 KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/windows-updateflashcrash/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・01・04</time>
+      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
+      <div class="summary">Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。 Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ http://d.hatena.ne.jp/noushibou/20160102/1451724506 Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。 Adobe Flash Playerの配布 | Adobe http://www.adobe.com/jp/products/flashplayer/distribution3.html Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。 Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/ 1&frasl;4 追記 フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。 http://kuku.neko2.net/?num=3246</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/hidpiper-monitor/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/hidpi.png);"></div>
+    <div class="detail">
+      <time>2015・09・03</time>
+      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
+      <div class="summary">更新履歴 Download 1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。 1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。 AnciaでのHiDPI対応は、Per-Monitor Awareですが、異なるdpiのMonitorにWindowを移動したとき、アイコンサイズはMonitorのdpiに応じた表示に変化するまでは対応していません。Internet Explorerも同様の動作のようです。異なるdpiのMonitorに移動したときアイコンサイズまでdpiに合わせることになると、Faviconやファイルのアイコンをサイズに従い再度取得することになるため、負荷が非常に大きいです。ツールバーのアイコンだけならそれほどの負荷もなくdpiに応じたサイズに切り替えられるでしょう。 Internet Explorerの場合だと、サイドバーのアイテムアイコンなどは、シェルのイメージリストを使用しているようなので、シェルのイメージリストがMonitor単位のサイズではなくSystem DPIに応じた固定サイズになることから、そもそもHiDPI(Per Monitor)でサイドバーアイコンサイズは切り替えられないのだと思います。 Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/iediagnosticsadapter/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/IEDiagnosticsAdapter.png);"></div>
+    <div class="detail">
+      <time>2015・04・09</time>
+      <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
+      <div class="summary">Microsoft/IEDiagnosticsAdapterで公開されているIEDiagnosticsAdapterを使用してみたメモです。installingに従えば、特にエラーもなく動かすことができました。下は、その手順です。 1.Download 32bitのとき x86、64bitのとき x64をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。 2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する 64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&rdquo;ALL APPLICATION PACKAGES&rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。 実行するコマンド(RXは読み出し実行の意味)： icacls proxy.dll /grant &ldquo;ALL APPLICATION PACKAGES&rdquo;:(RX) 3.IEを起動する 2と3は順序が逆でも大丈夫でした。 4.Chromeで、localhost:9222を開く Chromeで、http://localhost:9222を開きます。開くと、IEと、IEコンポも一覧で出てきます。 5. localhost:9222の一覧から対象を選ぶ 対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、 が表示されます。Chrome側はdevtoolの表示になります。 使ってみた感じだと、 ・consoleは動かない。 ・要素の変更も動かない。 ・要素の中身の表示と選択要素のハイライトは動く。 ・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。 ・IEコンポも認識される といったところでした。 IEコンポを認識するのは、プロセスに関係なく&rdquo;Internet Explorer_Server&rdquo;のwindow classをすべて列挙しているからみたいです。 Microsoft/IEDiagnosticsAdapterの中身を見ると、JsRTというものを使用しています。 JavaScript - JsRT を Windows アプリに組み込む - Qiita Jsonのパーサに使えるかもしれません。</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-66/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/refreshhilite.png);"></div>
+    <div class="detail">
+      <time>2015・03・17</time>
+      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
+      <div class="summary">更新履歴 Download 1.9.101で、ハイライト・インライン検索を最新の状態に更新可能にしています。Twitter検索など、自動でコンテンツが追加されていくページなどは、アプリでハイライトを更新するのが残念ながら難しいです。最新に更新するボタンで、コンテンツが更新されても、ハイライト・インライン検索を行うことができます。ハイライト・インライン検索の最新の状態に更新では、キーワードの選択状態も維持します。 1.9.101ではハイライトが行われないページ対策でタイミングの調整も行っていますが、まだgoogle検索３ページ目などでハイライトが行われない場合があり、また調整予定です。</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/fullwindow/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/frametoolbar.png);"></div>
+    <div class="detail">
+      <time>2015・03・02</time>
+      <h2 class="title">新機能: FullWindow表示ボタン</h2>
+      <div class="summary">更新履歴 Download 1.9.99で前から追加したかった、フレーム上でフルウインドウ表示を可能にするボタン表示に対応しています。ただし、現状では試験機能(testFeature)がonで、さらにDWM表示が有効のときしか表示されません。今後の予定でDWM無効でも表示可能にするかもしれません。 フルウインドウ表示自体はすでに備わっている機能ですが、フルウインドウ表示は、 ■ 複数起動やタブの切り離しと相性がよい(動画だけ見たいときは、切り離し後フルウインドウ表示にすることで邪魔なツールバー・タブを非表示にできる) ■ 多量にタブを開いていても・ツールバーが多量にあっても、非表示にすることで、今開いているページに集中できる ■ 多量にタブを開いていても・ツールバーが多量にあっても、現ページのみの表示にすることで、簡易的なボスが来た機能に使える のような利点があります。 今後の更新で、任意のボタンを追加できるようにする予定です。現状でもresource/frame_toolbar.jsonをsetting/customize配下に配置し、直接ファイルを変更することでボタン追加できますが自己責任となります。</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/windows81/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/legacymenu.png);"></div>
+    <div class="detail">
+      <time>2015・01・30</time>
+      <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
+      <div class="summary">更新履歴 Download ver1.9.95で、windows8.1環境でtouch対応を行っています。その対応の関係で、touch操作ではブラウザメニュー操作が行えるんですが、マウスだとメニュー項目を選択できない不具合が出ています。この不具合は、次回対応予定です。 不具合は、オプション設定全般「ブラウザで旧メニューを使用する - legacyMenu」チェックonで回避できます。windows8.1環境の場合、対応までlagacyMenuチェックonで回避をお願いします。 2015/2/2追記 1.9.96でメニュー動作がおかしい問題に対応しています。 更新履歴 Download</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-65/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/freezechecker.png);"></div>
+    <div class="detail">
+      <time>2014・12・23</time>
+      <h2 class="title">新機能: 応答なしページの検出</h2>
+      <div class="summary">更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/post-64/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/kyorisoku.png);"></div>
+    <div class="detail">
+      <time>2014・10・23</time>
+      <h2 class="title">キョリ測が動かないときがある</h2>
+      <div class="summary">キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。 ・204応答でNavigateError 204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。 200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://replace-this-with-your-hugo-site.com/post/lunascape/" class="clearfix">
+    <div class="image" style="background-image: url(http://replace-this-with-your-hugo-site.com/img/adluna.png);"></div>
+    <div class="detail">
+      <time>2014・08・28</time>
+      <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
+      <div class="summary">試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+    </div>
+  </div>
+
+  <div class="section taxonomies">
+    <header><div class="title">Tags</div></header>
+    <div class="content">
+    
+      <a href="http://replace-this-with-your-hugo-site.com/tags/internet">internet (29)</a>
+    
+      <a href="http://replace-this-with-your-hugo-site.com/tags/no-category">no-category (6)</a>
+    
+      <a href="http://replace-this-with-your-hugo-site.com/tags/online-soft">online-soft (178)</a>
+    
+      <a href="http://replace-this-with-your-hugo-site.com/tags/programming">programming (38)</a>
+    
+    </div>
+  </div>
+
+</aside>
+
+  </div>
+
+</div>
+    </div>
+
+    <footer class="site">
+      <p>&copy; 2016 ykuri</p>
+      <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+      <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+    </footer>
+   
+    
+
+  </body>
+</html>
+

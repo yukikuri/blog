@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/programming/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2015-09-03 00:00:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>高解像度 HiDPI(Per-Monitor) に対応</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/hidpiper-monitor/</link>
+          <pubDate>Thu, 03 Sep 2015 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/hidpiper-monitor/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19112Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/Ancia19112.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;textsize.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/textsize.png&#34; width=&#34;448&#34; height=&#34;79&#34; style=&#34;border:1px #000 solid&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。&lt;/p&gt;
+
+&lt;p&gt;AnciaでのHiDPI対応は、Per-Monitor Awareですが、異なるdpiのMonitorにWindowを移動したとき、アイコンサイズはMonitorのdpiに応じた表示に変化するまでは対応していません。Internet Explorerも同様の動作のようです。異なるdpiのMonitorに移動したときアイコンサイズまでdpiに合わせることになると、Faviconやファイルのアイコンをサイズに従い再度取得することになるため、負荷が非常に大きいです。ツールバーのアイコンだけならそれほどの負荷もなくdpiに応じたサイズに切り替えられるでしょう。&lt;/p&gt;
+
+&lt;p&gt;Internet Explorerの場合だと、サイドバーのアイテムアイコンなどは、シェルのイメージリストを使用しているようなので、シェルのイメージリストがMonitor単位のサイズではなくSystem DPIに応じた固定サイズになることから、そもそもHiDPI(Per Monitor)でサイドバーアイコンサイズは切り替えられないのだと思います。&lt;/p&gt;
+
+&lt;p&gt;Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>キョリ測が動かないときがある</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-64/</link>
+          <pubDate>Thu, 23 Oct 2014 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-64/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
+
+&lt;p&gt;・204応答でNavigateError&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;naverror.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/naverror.png&#34; width=&#34;915&#34; height=&#34;185&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;iecapture.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/iecapture.png&#34; width=&#34;783&#34; height=&#34;441&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL81 11324</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl81-11324/</link>
+          <pubDate>Tue, 22 Nov 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl81-11324/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;wtlribbon.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/wtlribbon.png&#34; width=&#34;449&#34; height=&#34;287&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/projects/wtl/&#34;&gt;Windows Template Library (WTL) | Free Development software downloads at SourceForge.net&lt;/a&gt;で、WTL81 11324が出てます。更新履歴が「Changes Between WTL 8.1 And 8.0  @@ TODO」としか書いてませんね。下はざっと見た変更点です。&lt;br /&gt;
+・atlribbon.hが追加&lt;br /&gt;
+・atlapp.h  〜 IsRibbonUIAvailable()やIsWin7()、CRegKeyEx追加&lt;br /&gt;
+・atlctrlx.h 〜 CHyperLinkImplでリンクマウスオーバー時に下線表示になるっぽい&lt;br /&gt;
+・atlddx.h 〜 DDX_TAB_INDEX(nID, var),DDX_COMBO_INDEX(nID, var),DDX_LISTBOX_INDEX(nID, var),DDX_LISTVIEW_INDEX(nID, var)が追加&lt;br /&gt;
+・atldlgs.h 〜 CDialogBaseUnits追加&lt;br /&gt;
+・atlframe.h 〜 CAutoUpdateUI追加&lt;br /&gt;
+・atlmisc.h 〜 AtlLoadMenuなどatluser.hに移動&lt;br /&gt;
+atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
+
+&lt;p&gt;SPLIT_GRADIENTBARを使ってみると、splitbarがかっこよくなります（左がSPLIT_GRADIENTBARあり、右がSPLIT_GRADIENTBARなし）。これは今のアプリに使ってもいいかもしれません。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;wtlgradientbar.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/wtlgradientbar.png&#34; width=&#34;370&#34; height=&#34;229&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;新しくapp wizardにribbonが選択できて、はじめの画像は、ribbonありでビルドしてみたものです。&lt;br /&gt;
+&lt;img alt=&#34;wtlappwiz.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/wtlappwiz.png&#34; width=&#34;404&#34; height=&#34;261&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.4</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-41/</link>
+          <pubDate>Sun, 01 May 2011 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-41/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1440&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus144.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;64bit環境で、ウインドウサイズが変わらないことがある対処を行っています。ただ、Anciaで使用している場合は、今後出る1.0.1の更新を待つ必要があります。ほかに、Firefox4のお気に入りが読めない、Vista以降でTree表示をExplorerっぽくしています。&lt;/p&gt;
+
+&lt;p&gt;64bit環境でウインドウサイズが変わらないのは、&lt;br /&gt;
+&lt;a href=&#34;http://blogs.msdn.com/b/alejacma/archive/2008/11/20/controls-won-t-get-resized-once-the-nesting-hierarchy-of-windows-exceeds-a-certain-depth-x64.aspx&#34;&gt;Controls won&amp;rsquo;t get resized once the nesting hierarchy of windows exceeds a certain depth (x64) - Decrypt my World - Site Home - MSDN Blogs&lt;/a&gt;&lt;br /&gt;
+が原因で、まさかこんな動作があるとは、、&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>jQueryのコード</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/jquery/</link>
+          <pubDate>Thu, 24 Jun 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/jquery/</guid>
+          <description>&lt;p&gt;jQueryのコードで、&lt;br /&gt;
+438:  var toplevel = false;&lt;br /&gt;
+・・・&lt;br /&gt;
+444:  if ( document.documentElement.doScroll &amp;amp;&amp;amp; toplevel ) {&lt;br /&gt;
+で&lt;br /&gt;
+444:  if ( toplevel &amp;amp;&amp;amp; document.documentElement.doScroll ) {&lt;br /&gt;
+のほうがほんの少し効率がいいと思いました。他にも同じような部分がありそうで、判定順序を変えるだけの影響が少なそうな、お手軽修正ではないでしょうか。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ReleaseバージョンでのCrash箇所の特定方法</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/releasecrash/</link>
+          <pubDate>Wed, 16 Jun 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/releasecrash/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;DetectCrashLine.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/DetectCrashLine.png&#34; width=&#34;474&#34; height=&#34;175&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;Releaseバージョンでcrashしたときの場所の特定方法です。minidumpファイルか、最悪落ちた場所のアドレス情報があることが条件です。画像はわざとcrashさせています。&lt;/p&gt;
+
+&lt;ol&gt;  
+&lt;li&gt;プロジェクトでマップファイルを作成する設定にしておく → プロジェクトのリンカ、デバッグ、マップファイルの作成ではいとする  
+&lt;li&gt;プロジェクトでcodファイルを作成する設定にしておく → プロジェクトのC/C++、出力ファイル、アセンブリの出力で、アセンブリ コード、コンピュータ語コード、ソース コード(/FAcs)を選択  
+&lt;li&gt;mapファイルから落ちた関数を特定&lt;br&gt;  
+画像だと0x004180ff が落ちた箇所で、mapファイルで、落ちた箇所の範囲の関数を調べる。下のmapファイルの内容では、MsgLoop関数内と分かる。&lt;br&gt;  
+0001:000170bd       ?MsgLoop省略  &lt;span style=&#34;color:red&#34;&gt;004180bd&lt;/span&gt; f   MainFrm.obj&lt;br&gt;  
+0001:000171dd       ?省略 004181dd f i MainFrm.obj  
+&lt;li&gt;落ちたオフセットを求める 〜 0x004180ffと0x004180bdからオフセットは&lt;span style=&#34;color:red&#34;&gt;0x42&lt;/span&gt;となる  
+&lt;li&gt;codファイルでMsgLoopのオフセット0x42を調べる&lt;br&gt;  
+下のcodファイルで0x42からソースコードの行が特定できる。&lt;br&gt;  
+; &lt;span style=&#34;color:red&#34;&gt;5971&lt;/span&gt; :                *(int*)(0) = 100;&lt;br&gt;  
+&lt;br&gt;  
+  &lt;span style=&#34;color:red&#34;&gt;00042&lt;/span&gt; c7 05 00 00 00&lt;br&gt;  
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;00 64 00 00 00   mov     DWORD PTR ds:0, 100    ; 00000064H&lt;br&gt;  
+&lt;/ol&gt;  
+
+&lt;p&gt;Anciaでは落ちたときのGetExceptionInformation()情報とモジュール一覧、minidumpファイルを出力する予定です。minidumpファイルがあれば、スタックトレースが出るので、かなり状況が分かるはずです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>スムーズスクロールがもたつく原因</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-51/</link>
+          <pubDate>Mon, 17 May 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-51/</guid>
+          <description>&lt;p&gt;どうもスムーズスクロールでもたつく原因は、foregroundウインドウの設定っぽいです。そのスレッド内でのウインドウにforegroundウインドウがないとだめっぽいです。単にポップアップにしてもforegroundでなければ、だめだったので。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.1</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-38/</link>
+          <pubDate>Mon, 26 Apr 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-38/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1410&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus141.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia0.8.0.6で分かったBSTRのパラメータ渡し誤りのバグを修正しています。そのほか、あまりバージョンアップしていなかったので、気になったところを直しています。SimpleFavPanelのアイコンを変更していますが、元のアイコンは、削除していないので、パネルのアイコン設定から変更できます。&lt;/p&gt;
+
+&lt;p&gt;BSTRのパラメータ渡し誤りというのは、&lt;br /&gt;
+inline void func(BSTR bstr){ ・・・ }   関数１&lt;br /&gt;
+inline void func(LPWCSTR psz)　　関数２&lt;br /&gt;
+{&lt;br /&gt;
+BSTR bstr=SysAllocString(psz);&lt;br /&gt;
+func(bstr);&lt;br /&gt;
+SysFreeString(bstr);&lt;br /&gt;
+}&lt;br /&gt;
+というのがあるとき、&lt;br /&gt;
+TCHAR　sz[256];　　//CStringもなぜか、関数１が呼ばれる&lt;br /&gt;
+lstrcpy(sz, _T(&amp;ldquo;aaa&amp;rdquo;));&lt;br /&gt;
+func(sz);&lt;br /&gt;
+が、関数２ではなく関数１を呼んでしまうというものです。これは、オーバーロードの仕様？で、constより、完全一致のBSTR(WCHAR*)が優先的に一致していることだと思います。関数１の名前を変更したので、全て直っているはずです。直した後はAnciaで落ちなくなりました。&lt;/p&gt;
+
+&lt;p&gt;v1.4.0の4/25日のインストーラで、インストールが不十分だったので、インストーラを差し替えています。もし、v1.4.0をインストールした方は、v1.4.1をインストール、または、再度v1.4.0のインストールをお願いします。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlusのタブモード表示対応</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-37/</link>
+          <pubDate>Mon, 19 Apr 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-37/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;tm2.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/tm2.png&#34; width=&#34;489&#34; height=&#34;278&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0806&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0806.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ExplorerBarPlusのタブモードとお気に入りを表示できるようになりました。ほかのIEツールバー、サイドバーはまだ表示できません。ExplorerBarPlusの表示は、メニュー[表示(V)]-&amp;gt;エクスプローラバーから行えます。スクリプトでの表示/非表示もまだ出来ません。&lt;/p&gt;
+
+&lt;p&gt;タブマネージャでCPUの詳細情報を表示するようにしました。この表示情報でできればcup-zの様にCPUのロゴを表示したいのですが、AMDの場合は、&lt;a href=&#34;http://www.amd.com/jp-ja/0,,3715_7374_15589,00.htmlからそのままのイメージを使うことでよさそうですが、インテルの場合は、そう簡単にはいかないようです。なんとかインテルのロゴも表示したいのですが、、&#34;&gt;http://www.amd.com/jp-ja/0,,3715_7374_15589,00.htmlからそのままのイメージを使うことでよさそうですが、インテルの場合は、そう簡単にはいかないようです。なんとかインテルのロゴも表示したいのですが、、&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CPU情報の表示はCPUIDを元にしていますが、確認マシンが少ないので、間違った表示になるかもしれません。Aero Glassの表示は、結構大変でした。これで、ドロップアクションの背景もAero Glassに出来るかも、、&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>タブマネージャ機能</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-49/</link>
+          <pubDate>Mon, 05 Apr 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-49/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0805&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0805.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
+タブを強制終了可能なタブマネージャ機能を追加しています。短時間で作ったのでThemeが効いていなかったりします。TabManagerの下の方は、グラス表示にしてみようかと思います。今の強制終了は、WM_QUITで終了できなければ、Terminateしています。ここは、安全に終了できるとき(タブの閉じる履歴が残る)は、そちらを優先するように変える予定です。CPU使用率や、メモリ表示、強制終了したタブはabout:crash表示する、も追加予定です。&lt;/p&gt;
+
+&lt;p&gt;プロセスで強制終了は、アドレス領域が分かれているので、メインが落ちずに終了できるというのは、わかりますが、スレッドでもこれを可能にしています。これは、子スレッド&amp;lt;-&amp;gt;メインとデータ結合※として動作しているためです。マルチプロセスにする時点で、データを共有とした動作は選択せず、データ結合で作ったところ、スレッドでもできてしまいました。共有だと、排他が絡みせっかくの子処理の効率が悪くなります。&lt;/p&gt;
+
+&lt;p&gt;マルチスレッド/プロセスもだいぶできてきて、あと残っているものは、IEプラグイン、タブ&amp;lt;-&amp;gt;タブ間操作、localhomeなどの閉じたタブの表示ぐらいです。&lt;/p&gt;
+
+&lt;p&gt;マルチプロセスのとき、pixivでページが表示できない場合があり、リファラなどが原因かもしれません。&lt;/p&gt;
+
+&lt;p&gt;※ここでのデータ結合という言葉を正しい意味で使用しているかは、よく知らない。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>互換表示</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-48/</link>
+          <pubDate>Mon, 29 Mar 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-48/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=bd98f760-1279-46f2-a456-de6df365584b&amp;amp;displaylang=en&#34;&gt;IE8のヘッダ&lt;/a&gt;と&lt;a href=&#34;http://blogs.msdn.com/ie/default.aspx&#34;&gt;IEブログ&lt;/a&gt;を見ているうちに、互換表示が変更できそうな怪しい部分があったので、試してみると、、変更できたっぽいです。ですが、変更できずに失敗するタイミングがあります。もう少し試してみて、できそうなら入れてみます。変更の仕方自体は、想像していたとおり単純で、大体5行程度です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>設定の同期で苦戦中</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-47/</link>
+          <pubDate>Tue, 23 Mar 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-47/</guid>
+          <description>&lt;p&gt;設定の同期、というか子処理は、メイン処理と同じ設定値のコピー値で動作させるところで、直す部分が多すぎて、大変です。ビットフィールドは使うんじゃなかったかな。&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;br /&gt;
+struct A&lt;br /&gt;
+{&lt;br /&gt;
+    UINT    isA:1;&lt;br /&gt;
+    UINT    isB:1;&lt;br /&gt;
+    UINT    isC:1;&lt;br /&gt;
+    UINT    isD:1;&lt;br /&gt;
+} a;&lt;br /&gt;
+a.isA = TRUE;&lt;br /&gt;
+a.isB = FALSE;&lt;br /&gt;
+a.isC = TRUE;&lt;br /&gt;
+a.isD = FALSE;&lt;br /&gt;
+int v = &lt;em&gt;(int&lt;/em&gt;)&amp;a;&lt;br /&gt;
+&lt;/pre&gt;&lt;br /&gt;
+で無理やり変換してもいいですが、if(a.isB)のアセンブリ&lt;br /&gt;
+&lt;pre&gt;&lt;br /&gt;
+mov         edx,dword ptr [a]&lt;br /&gt;
+shr         edx,1&lt;br /&gt;
+and         edx,1&lt;br /&gt;
+&lt;/pre&gt;&lt;br /&gt;
+がif(v &amp;amp; 0x2)のandの&lt;br /&gt;
+&lt;pre&gt;&lt;br /&gt;
+mov         eax,dword ptr [v]&lt;br /&gt;
+and         eax,2&lt;br /&gt;
+&lt;/pre&gt;&lt;br /&gt;
+に比べ1命令多いので、ビットフィールドはやめることにします。たった1命令減ってもナノセカンドも差が出ないと思いますが、ifの使用箇所が多いのと、命令が少なくなることはデメリットではないので&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>マルチスレッド/プロセス対応途中の公開</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-46/</link>
+          <pubDate>Mon, 01 Mar 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-46/</guid>
+          <description>&lt;p&gt;マルチスレッド/プロセス対応中ですが、途中のものを公開しています。途中なので通常使用はお勧めしません。&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0801&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0801.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;主要機能&lt;br /&gt;
+&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;ドロップアクション、マウスジェスチャ、IEプラグイン、スクリプト、閉じたタブの復元、ステータスバー。。など&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;&lt;br /&gt;
+のほとんどがまだ動作しません。これを全て対応してから出すと、とても時間がかかるので、順次出していくことにします。大体対応が終わったとき、0.8.1として出すつもりです。いまはスレッド/プロセスの制限数がありませんが、数の最大値は設定可能にします。ためしにマルチプロセスのとき子プロセスをタスクマネージャから終了しても、アプリは落ちず動作し続けます。&lt;/p&gt;
+
+&lt;p&gt;どのようにマルチスレッド/プロセスを対応しているか気になる人もいるかと思うので、実装イメージを書きます。まず、概要をいうとプロキシオブジェクトの動作を作っています。MDIChildFrameはメインスレッドで動かし、Frameの子Windowは、別スレッドで動かします。&lt;/p&gt;
+
+&lt;p&gt;Anciaでは、オブジェクト間でさまざまな処理を行えるよう&lt;br /&gt;
+struct __declspec(novtable) ICmdTarget : public IUnknown&lt;br /&gt;
+{&lt;br /&gt;
+    STDMETHOD(CmdExec)(long cmdId, long cmdExecOpt,&lt;br /&gt;
+     OPTIONAL VARIANT* arg1, OPTIONAL VARIANT* arg2, OPTIONAL VARIANT* arg3, OUT VARIANT* result) = 0;&lt;br /&gt;
+};&lt;br /&gt;
+というIOleCommandTargetのようなインターフェースで内部動作を作っています。ここで、MDIChildFrame　&amp;lt;-&amp;gt;　Child間をICmdTargetでやり取りするようマルチスレッド対応で変更しました(いままでは、MDIChildFrameがすべて子Window処理を行っていた)。やり取りで、シングルスレッドのときは、直に相手のCmdExecを呼び、マルチスレッド/マルチプロセスのときは、プロキシオブジェクトを通してIPC通信で相手のCmdExecを呼ぶようにした、というのが簡単な動作説明です。単純なマーシャル的なものを作っているのと同じでしょうか。&lt;/p&gt;
+
+&lt;p&gt;ほとんどのプロキシ間コマンドは、CmdExecからIPC通信で相手側の処理を呼び出す&lt;br /&gt;
+HRESULT IpcCmdExec(HWND hWndTarget, IpcInfo* pIpcInfo, int fFlags,&lt;br /&gt;
+UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);&lt;br /&gt;
+というのを呼ぶだけで、すむと思っていたんですが、中にはそう簡単にいかないものがあり、時間はかかりそうです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>途中２</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-45/</link>
+          <pubDate>Thu, 18 Feb 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-45/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;conti2.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/conti2.png&#34; width=&#34;352&#34; height=&#34;313&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;シングルスレッド、マルチスレッド、マルチプロセスを意識しないで動作するよう内部設計を変えている途中で、まあそれなりにうまくいくかもというところです。シングルスレッドでは多少遅くなるかもしれませんが、１つ、２つAPI呼び出しが増えてもそれど遅くならないでしょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;strike&gt;タスクバーサムネイルが出るようになりましたが、スレッド（おそらくプロセスも）が違うとITaskbarList3::SetTabOrderが失敗してしまいました。&lt;/strike&gt;仕方ないので、SetTabOrderのhwndInsertBeforeにNULLを渡して、後ろにどんどんずらしていく、というのは大変そうなのでどうしよう、、&lt;/p&gt;
+
+&lt;p&gt;追記）SetTabOrderの失敗は、間違ったHWNDを渡しているだけでした。SetTabOrderって別のプロセスがRegisterTabしても成功してます。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>スクロール</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-41/</link>
+          <pubDate>Mon, 04 Jan 2010 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-41/</guid>
+          <description>&lt;p&gt;子スレッドでIEコンポーネントを動かすとホイールスクロールが少し引っかかるような動作になることで、&lt;br /&gt;
+&lt;ol&gt;&lt;br /&gt;
+&lt;li&gt;子スレッドをポップアップウインドウとすると、なぜか引っ掛かりが無くなる&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;スムーズスクロールoffで改善する&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;FEATURE_BROWSER_EMULATIONでIE8レンダリングモードとすると多少改善する&lt;/li&gt;&lt;br /&gt;
+&lt;/ol&gt;&lt;br /&gt;
+ということが分かりました。１から親子スレッド間のウインドウや描画が関係してそうな雰囲気ですが、なぜかがまったく分からないので、スクロール引っかかりが気になる場合は、インターネットオプションで２をしてもらうことになりそうです。theworldやMaxthonはポップアップウインドウにしているようです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>マルチプロセススレッド試作物</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-40/</link>
+          <pubDate>Wed, 23 Dec 2009 06:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-40/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/download/MultiProcessThread.zip&#34;&gt;MultiProcessThread.zip&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;メッセージベース＋共有メモリでのIPCを使用したマルチプロセス、スレッドのプロトタイプです。機能は、WTLのタブブラウザサンプル相当しかありません。exeの同じディレクトリにファイルthreadがあるとマルチスレッド、ないとマルチプロセスで動作します。&lt;/p&gt;
+
+&lt;p&gt;プロセス、スレッドの動作の違いは、制御の作成がCreateProcess/CreateThreadか、マーシャリングをプロセス間/プロセス内としているかぐらいしかありません。ただスレッドの場合は、共有メモリではなくヒープを使用するなど、改善部分はあります。タブのタイトル更新、アドレスバーのURL更新はIPC、戻る/進む/ホーム/中止は、マーシャリングしたポインタで行っています。マーシャリングはテストで毎回行っています。マウスホイールでのスクロール対応も入れてます。&lt;/p&gt;
+
+&lt;p&gt;IPCを決めるとき、名前つきパイプにしようと思ったんですが、パイプだとメッセージボックスやダイアログを表示中だとrecvできないので、UIスレッドとは別スレッドにすることになり、やめました。メッセージベースで単純なSendとし、再入可能の動作にする予定です。ただ固まっている子プロセスのウインドウへメインプロセスのウインドウからタイムアウトなしのSendが行われるとメインプロセスも固まってしまうため、Windowsが内部で自動的にSendしているものは、固まりを防げないかもしれません。たしか、同じホストで、マーシャリングしたポインタを介した呼び出しもメッセージベースなので、呼び先のタブが固まっていると、呼び元に制御が返らない、はずです。マーシャリングするときも応答があるときに行うようにしなければならないようです。&lt;/p&gt;
+
+&lt;p&gt;プロトタイプの公開はこれまでとし、次はプロトタイプをいじりながらAnciaに組み込んでいければというところです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Windows7ライブサムネイル</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/windows7/</link>
+          <pubDate>Mon, 26 Oct 2009 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/windows7/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;liveth.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/liveth.png&#34; width=&#34;408&#34; height=&#34;349&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0750&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia075.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
+Windows7ライブサムネイルに対応しています。ライブサムネイルは、WM_DWMSENDICONICTHUMBNAILで、タスクバーのサムネイルを返却（DwmSetIconicThumbnail）する、サムネイルをマウスオーバーしたときのWM_DWMSENDICONICLIVEPREVIEWBITMAPでアプリケーション画面に表示するビットマップを返却(DwmSetIconicLivePreviewBitmap)すれば対応できます。ビットマップは32ビットじゃないとE_INVALITARG?で処理が失敗してしまいます。ビットマップサイズもおかしいとINVALIDARGになってしまうようです。&lt;/p&gt;
+
+&lt;p&gt;faviconはまだ付いていませんが、そのうち付けます。サムネイルにはボタンをつけれるようなので、最新の状態に更新などつけるかもしれません。&lt;/p&gt;
+
+&lt;p&gt;XpとWindows7で同じフォルダのAnciaを起動しても、Windows7側からXpのフォルダのアクセス権をつけないと、設定が保存されない現象がありました。ので注意してください。&lt;/p&gt;
+
+&lt;p&gt;AnciaでIE8で落ちず、IE6で落ちる場合があるようです。IE6で落ちる場合はInternetExplorerでも落ちたので、何かのアドオン(flash?)か何かかもしれません。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTLのコマンドバーメモ</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl/</link>
+          <pubDate>Thu, 01 Oct 2009 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl/</guid>
+          <description>&lt;p&gt;WTLコマンドバーでの主にメニュー表示動作メモ。&lt;br /&gt;
+&lt;ol&gt;&lt;br /&gt;
+&lt;li&gt;作成時メッセージフックセットMessageHookProc&lt;br /&gt;
+&lt;li&gt;ボタンが押されると、TrackPopupMenuExでメニューを表示&lt;br /&gt;
+&lt;li&gt;TrackPopupMenuEx中、MessageHookProcで、バー上のマウスオーバーメッセージのとき、m_nNextPopBtnに次のメニュー表示インデックスをセット。現在のメニューを閉じ、TrackPopupMenuExから1度制御を返す。TrackPopupMenuExを抜けたあとで、m_nNextPopBtnをチェックし、次のメニューを表示するとき、WTL_CmdBar_InternalAutoPopupMsgをポストし、再度TrackPopupMenuExを実行。ここの処理はループっぽく動く。&lt;br /&gt;
+&lt;li&gt;MessageHookProcでは、左右キーもチェックし、マウスオーバーと同じように動作させる。&lt;br /&gt;
+&lt;/ol&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.3.9</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-36/</link>
+          <pubDate>Mon, 07 Sep 2009 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/explorerbarplus-36/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1390&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus139.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Opera10を入れてみると、ブックマークの自動検出に失敗したので修正しました。またIEのお気に入りのパネルで、右クリックに新しいウインドウで開くを追加しています。&lt;/p&gt;
+
+&lt;p&gt;VC2008でリビルドしようと思ったのですが、vc2008はなぜかファイルサイズが少し大きめになるので止めました。インライン展開か何かかでしょうか、、謎です。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>検索バーカスタマイズ</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-29/</link>
+          <pubDate>Wed, 19 Aug 2009 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-29/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0630&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia063.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
+検索バーで標準ツールバーのようにカスタマイズできるよう対応しました。スクリプトボタンも置けます。いまアドレスバーのボタンをすべて削除し、アドレスバーの変更を表示すると落ちてしまいました。。ボタンをすべて削除するのは止めておいた方がいいです。&lt;/p&gt;
+
+&lt;p&gt;オプション画面からのツールバー設定と今回の設定画面がかぶるので、オプション画面の方のツールバー設定画面は、こちらに置き換える予定です。&lt;/p&gt;
+
+&lt;p&gt;・・・Chromeのマルチプロセスは、どうやらプロセス間通信は、名前つきパイプ＋IO completion port、あとメッセージ専用Windowも使用しているようです。メッセージ専用ウインドウがプロセス間通信に使っているかは分かりません。すごいのはLinuxでも動くようにプロセス間通信で、Windowsの場合は名前つきパイプ、posixの場合はソケットで、実装されているところです。chromeがWindows用になっていますが、Linuxでも動かす予定があるかもしれません。&lt;/p&gt;
+
+&lt;p&gt;調べてみるとLinux版Chromeが開発者向けにありました。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>zlib圧縮メモ</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/zlib/</link>
+          <pubDate>Sat, 06 Jun 2009 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/zlib/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://zlib.net/&#34;&gt;zlib 1.2.3&lt;/a&gt;の圧縮サイズメモ 。&lt;br /&gt;
+&lt;pre&gt;&lt;br /&gt;
+byte     Level9  Level6&lt;br /&gt;
+3638       2082    2083&lt;br /&gt;
+1150        295     297&lt;br /&gt;
+25214     14866   14978&lt;br /&gt;
+6598        827     832&lt;br /&gt;
+1150        962     962&lt;br /&gt;
+6598        827     832&lt;br /&gt;
+3638       1825    1830&lt;br /&gt;
+1150        102     103&lt;br /&gt;
+&lt;/pre&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL 8.1 WTL 8.1.9127</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl-81-wtl-8191/</link>
+          <pubDate>Fri, 08 May 2009 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl-81-wtl-8191/</guid>
+          <description>&lt;p&gt;１年以上ぶりで、あたらしいWTLが出ています。&lt;br /&gt;
+&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=680959&#34;&gt;http://sourceforge.net/project/shownotes.php?release_id=680959&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;desktop window manager関係の新しいクラスが追加されています。&lt;/p&gt;
+
+&lt;p&gt;atldwm.h&lt;br /&gt;
+CDwm&lt;br /&gt;
+CDwmImpl&lt;T, TBase&gt;&lt;br /&gt;
+CDwmWindowT&lt;TBase&gt; - CDwmWindow&lt;br /&gt;
+CDwmThumbnailT&lt;t_bManaged, TBase&gt;&lt;br /&gt;
+CDwmThumbnail&lt;br /&gt;
+CDwmThumbnailHandle&lt;br /&gt;
+CAeroControlImpl&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>if文</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/if/</link>
+          <pubDate>Mon, 20 Apr 2009 02:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/if/</guid>
+          <description>&lt;p&gt;文字列の大文字を小文字にする処理で、&lt;br /&gt;
+char c=psz[i];&lt;br /&gt;
+if((&amp;lsquo;A&amp;rsquo; &amp;lt;= c) &amp;amp;&amp;amp; (c &amp;lt;= &amp;lsquo;Z&amp;rsquo;)) c += 0x20;&lt;br /&gt;
+と&lt;br /&gt;
+if((c &amp;lt;= &amp;lsquo;Z&amp;rsquo;) &amp;amp;&amp;amp; (&amp;lsquo;A&amp;rsquo; &amp;lt;= c)) c += 0x20;&lt;br /&gt;
+では、下のif文のほうが、効率的です。&lt;/p&gt;
+
+&lt;p&gt;たとえば、URLはほぼ小文字なので、上のif文だと、&amp;rsquo;A&amp;rsquo;&amp;lt;=cが必ずtrueとなり、&lt;br /&gt;
+無駄に判定されてしまいます。if文では、先に効率よく判定できる条件順に書く&lt;br /&gt;
+些細なことですが&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>places 2</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/places-2/</link>
+          <pubDate>Wed, 16 Jul 2008 02:00:54 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/places-2/</guid>
+          <description>&lt;p&gt;firefox-3.0-source\mozilla\toolkit\components\places\src\nsNavHistory.cpp(766):&lt;br /&gt;
+  rv = mDBConn-&amp;gt;ExecuteSimpleSQL(&lt;br /&gt;
+    NS_LITERAL_CSTRING(&amp;ldquo;PRAGMA locking_mode = EXCLUSIVE&amp;rdquo;));&lt;/p&gt;
+
+&lt;p&gt;排他ロックなので、firefox3動作中のデータベースアクセスは無理ですね&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>places</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/places/</link>
+          <pubDate>Mon, 14 Jul 2008 02:00:21 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/places/</guid>
+          <description>&lt;p&gt;ExplorerBarPlusでのFirefox3ブックマーク読み取り対応で、Firefox3起動中だとデータベースが読み取れないという問題に遭遇。&lt;/p&gt;
+
+&lt;p&gt;Firefox3の複数起動で新たにプロセスが立ち上がらないところを見ると、他プロセスからの読み取りは無理なのか、、sqliteのソースを追うとLockFileで失敗しているし&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>XML-RPC</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/xmlrpc/</link>
+          <pubDate>Thu, 12 Jul 2007 02:22:22 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/xmlrpc/</guid>
+          <description>&lt;p&gt;特にライブラリは必要なく、IXMLHTTPRequestで簡単に出来ます。&lt;/p&gt;
+
+&lt;p&gt;// はてな被ブックマーク合計数取得APIの場合&lt;br /&gt;
+LPCWSTR pszTotal =&lt;br /&gt;
+L&amp;rdquo;&amp;lt;?xml version=\&amp;ldquo;1.0\&amp;ldquo;?&amp;gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;methodCall&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;methodName&gt;bookmark.getTotalCount&lt;/methodName&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;params&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;param&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;value&gt;&lt;string&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hatenadiary/&#34;&gt;http://d.hatena.ne.jp/hatenadiary/&lt;/a&gt;&lt;/string&gt;&lt;/value&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;/param&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;/params&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;/methodCall&gt;&amp;rdquo;;&lt;/p&gt;
+
+&lt;p&gt;// call&lt;br /&gt;
+CComPtr&lt;a href=&#34;MSXML2::IXMLHTTPRequest&#34;&gt;MSXML2::IXMLHTTPRequest&lt;/a&gt;    pReq;&lt;br /&gt;
+HRESULT hr = pReq.CoCreateInstance(MSXML2::CLSID_XMLHTTP);&lt;br /&gt;
+hr = pReq-&amp;gt;open(&lt;br /&gt;
+&amp;nbsp;CComBSTR(L&amp;rdquo;POST&amp;rdquo;),&lt;br /&gt;
+&amp;nbsp;CComBSTR(L&amp;rdquo;&lt;a href=&#34;http://b.hatena.ne.jp/xmlrpc&#34;&gt;http://b.hatena.ne.jp/xmlrpc&lt;/a&gt; &amp;ldquo;),&lt;br /&gt;
+&amp;nbsp;CComVariant(false),&lt;br /&gt;
+&amp;nbsp;CComVariant(),&lt;br /&gt;
+&amp;nbsp;CComVariant());&lt;br /&gt;
+hr = pReq-&amp;gt;send(CComVariant(pszTotal));&lt;br /&gt;
+CComBSTR    txt;&lt;br /&gt;
+hr = pReq-&amp;gt;get_responseText(&amp;amp;txt);&lt;br /&gt;
+cout &amp;lt;&amp;lt; CW2A(txt) &amp;lt;&amp;lt; endl;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL 8.0.7161</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl-807161/</link>
+          <pubDate>Tue, 12 Jun 2007 02:22:22 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl-807161/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=515154&#34;&gt;WTL 8.0 WTL 8.0 Final&lt;/a&gt;が出ています。&lt;/p&gt;
+
+&lt;p&gt;atlcrack.hとatldlgs.hに変更有り。finalでもタブブラウザサンプルが入ってないのは、なぜ？&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>atlhost.h</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/atlhosth/</link>
+          <pubDate>Sun, 13 May 2007 17:18:09 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/atlhosth/</guid>
+          <description>&lt;p&gt;タイプミス発見。&lt;br /&gt;
+STDMETHOD(ContextSensitiveHelp)(BOOL /&lt;em&gt;fEnterMode&lt;/em&gt;/)&lt;br /&gt;
+{&lt;br /&gt;
+    ATLTRACENOTIMPL(_T(&amp;ldquo;IOleWindow::CanInPlaceActivate&amp;rdquo;)); ← ここはContextSensitiveHelp&lt;br /&gt;
+}&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>タブブラウザサンプル</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-12/</link>
+          <pubDate>Fri, 20 Apr 2007 21:42:15 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-12/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=502298&#34;&gt;WTL 8.0.7108 Beta1&lt;/a&gt;が出ています。タブブラウザサンプルが追加されていますが、なぜかダウンロードファイルには含まれていませんでした。タブブラウザサンプルは、CVSに入っているのでそこから手に入ります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;TabBrowserSample.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/TabBrowserSample.png&#34; width=&#34;370&#34; height=&#34;263&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL 8.0.7070</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl-807070/</link>
+          <pubDate>Tue, 13 Mar 2007 00:35:29 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl-807070/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=493035&#34;&gt;WTL 8.0 WTL 8.0.7070 released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;AppWizardのバグ修正されていますが、VC7.1でまだエラーが出るようです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL 8.0 7058</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl-80-7058-1/</link>
+          <pubDate>Thu, 01 Mar 2007 00:00:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl-80-7058-1/</guid>
+          <description>&lt;p&gt;新しくCTabViewが追加されています。ドラッグドロップでTabの入れ替えもできます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;WTL8.png&#34; src=&#34;http://replace-this-with-your-hugo-site.com/img/WTL8.png&#34; width=&#34;228&#34; height=&#34;112&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL 8.0.6356</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl-806356/</link>
+          <pubDate>Sat, 23 Dec 2006 00:28:13 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl-806356/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=473172&#34;&gt;WTL 8.0.6356&lt;/a&gt;&lt;br /&gt;
+vistaへの更新ばかりのようですが、atlmisc.hのCRecentDocumentListBase::GetFromList()で&lt;br /&gt;
+if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;lt;= cchLength) が&lt;br /&gt;
+if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;gt;= cchLength) に修正されてますね。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WTL 8.0.6304</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wtl-806304/</link>
+          <pubDate>Wed, 01 Nov 2006 22:39:00 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wtl-806304/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=460007&#34;&gt;WTL 8.0.6304&lt;/a&gt;が出たようです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Windows RSS Platform</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/windows-rss-pla/</link>
+          <pubDate>Wed, 20 Sep 2006 02:26:14 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/windows-rss-pla/</guid>
+          <description>&lt;p&gt;ExplorerBarPlusの更新で&lt;a href=&#34;http://msdn.microsoft.com/library/en-us/FeedsAPI/rss/rss_entry.asp&#34;&gt;Windows RSS Platform&lt;/a&gt;を使ってみましたが、未読・既読の管理・同期がすごいですね。フィードは決まった位置に保存されるようです。（Local Settings\Application Data\Microsoft\Feeds）&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Visual Studio .NET 2003 SP1</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/visual-studio-n/</link>
+          <pubDate>Thu, 17 Aug 2006 01:15:55 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/visual-studio-n/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?familyid=69d2219f-ce82-46a5-8aec-072bd4bb955e&amp;amp;displaylang=en&#34;&gt;Visual Studio .NET 2003 SP1&lt;/a&gt;が出ました。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>WinInet</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/wininet/</link>
+          <pubDate>Sat, 24 Sep 2005 01:49:18 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/wininet/</guid>
+          <description>&lt;p&gt;WinInet関数でコネクションを閉じるときRSTがでているようだけど、こういう動作なのだろうか。。IEを閉じるときもRSTがでているようなので、こういう動作かもしれない。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>MultiSelect TreeView</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/multiselect-tre/</link>
+          <pubDate>Sun, 26 Jun 2005 00:46:30 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/multiselect-tre/</guid>
+          <description>&lt;p&gt;複数選択できるツリービュー。&lt;br /&gt;
+&lt;a href=&#34;http://groups.yahoo.com/group/wtl/message/11952&#34;&gt;WTL MultiSelect TreeView &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;MFC版もあるようだ。&lt;br /&gt;
+&lt;a href=&#34;http://www.codeguru.com/Cpp/controls/treeview/misc-advanced/article.php/c629/&#34;&gt;A multi-select tree control class&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>マウスホイール</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/post-6/</link>
+          <pubDate>Thu, 16 Jun 2005 23:02:18 JST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/post-6/</guid>
+          <description>&lt;p&gt;非アクティブでもホイールできる便利なソフト。&lt;br /&gt;
+&lt;a href=&#34;http://www.vector.co.jp/soft/win95/util/se261633.html&#34;&gt;Wheel Redirector&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://toshi.pobox.ne.jp/&#34;&gt;WheelPlus&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
