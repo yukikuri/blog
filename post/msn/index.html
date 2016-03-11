@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel="stylesheet" href="http://yukikuri.github.io/blog/css/style.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://yukikuri.github.io/blog//index.xml">
+    <link rel="stylesheet" href="http://blog.anciasoft.jp/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.anciasoft.jp/index.xml">
 
     
     <title>msn関係・楽天で固まる問題の対応 - ウェブブラウザ開発ブログ</title>
@@ -12,7 +12,7 @@
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://yukikuri.github.io/blog/post/msn/">
+    <meta property="og:url" content="http://blog.anciasoft.jp/post/msn/">
     
     
 
@@ -21,7 +21,7 @@
   <body>
 
     <header class="site">
-      <div class="title"><a href="http://yukikuri.github.io/blog/">ウェブブラウザ開発ブログ</a></div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
     </header>
 
     <div class="container site">
@@ -33,15 +33,15 @@
 
     <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://yukikuri.github.io/blog/"/>
+      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://blog.anciasoft.jp/"/>
       <meta itemprop="dateModified" content="2013-07-23T00:00:00&#43;09:00">
       <meta itemprop="headline" content="msn関係・楽天で固まる問題の対応">
       <meta itemprop="description" content="更新履歴 download 1.9.32で、ie10環境においてmsn、楽天のページを開くと固まる問題を修正しています。修正には2つの問題に対応しています。固まる原因はmsnと楽天で同じ(document.closeで固まる)ですが、状況は微妙に違います。 問題1) IEとIEコンポでnavigator.appVersionの返す値が違う IEとIEコンポでnavigator.appVersionの返す値が異なっています。この違いのため、msnのスクリプトでIEの場合はdocument.close()呼び出しが行われず、IEコンポの場合はdocument.close()呼び出しが行われます(ここでIEコンポは固まる)。1.9.32ではnavigator.appVersionの値がIEと同じ挙動となるよう対応しています。 ・IE10(documentModeは7でappVerはIE7) ・Ancia 1.9.31(documentModeは7でappVerはIE10) ・Ancia 1.9.32(documentModeは7でappVerはIE7) 問題2）楽天のページがIEコンポではquirks modeとなるが、IEではならない 楽天のページでdocument.close()の呼び出しで固まるのは同じですが、msnとは状況が異なります。楽天ではdocumentModeの値がIEとIEコンポで異なっています。msnはdocumentModeがIE,IEコンポともに7ですが、楽天ではIEが10(documentModeが10でもcompatMode はBackCompat)、IEコンポでは5(compatMode はBackCompat)です。 IE10からのInteroperable HTML5 Quirks Modeが関係し、1.9.32ではこれもIEと同じ挙動となるよう対応しています。 ・IE10 ・Ancia 1.9.31 ・Ancia 1.9.32">
-      <meta itemprop="url" content="http://yukikuri.github.io/blog/post/msn/">
+      <meta itemprop="url" content="http://blog.anciasoft.jp/post/msn/">
       
       <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
         <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="http://yukikuri.github.io/blog/images/logo.jpg">
+          <meta itemprop="url" content="http://blog.anciasoft.jp/images/logo.jpg">
           <meta itemprop="width" content="100">
           <meta itemprop="height" content="100">
         </div>
@@ -94,13 +94,13 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
       </div>
 
       <aside>
-        <div class="section">tags: <a href="http://yukikuri.github.io/blog/tags/internet" class="tag">internet</a> <a href="http://yukikuri.github.io/blog/tags/online-soft" class="tag">online soft</a> </div>
+        <div class="section">tags: <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 
         <div class="section share">
-          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fmsn%2f&t=msn%e9%96%a2%e4%bf%82%e3%83%bb%e6%a5%bd%e5%a4%a9%e3%81%a7%e5%9b%ba%e3%81%be%e3%82%8b%e5%95%8f%e9%a1%8c%e3%81%ae%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fmsn%2f&text=msn%e9%96%a2%e4%bf%82%e3%83%bb%e6%a5%bd%e5%a4%a9%e3%81%a7%e5%9b%ba%e3%81%be%e3%82%8b%e5%95%8f%e9%a1%8c%e3%81%ae%e5%af%be%e5%bf%9c&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-          <a href="https://plus.google.com/share?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fmsn%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-          <a href="http://getpocket.com/edit?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fmsn%2f&title=msn%e9%96%a2%e4%bf%82%e3%83%bb%e6%a5%bd%e5%a4%a9%e3%81%a7%e5%9b%ba%e3%81%be%e3%82%8b%e5%95%8f%e9%a1%8c%e3%81%ae%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fmsn%2f&t=msn%e9%96%a2%e4%bf%82%e3%83%bb%e6%a5%bd%e5%a4%a9%e3%81%a7%e5%9b%ba%e3%81%be%e3%82%8b%e5%95%8f%e9%a1%8c%e3%81%ae%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fmsn%2f&text=msn%e9%96%a2%e4%bf%82%e3%83%bb%e6%a5%bd%e5%a4%a9%e3%81%a7%e5%9b%ba%e3%81%be%e3%82%8b%e5%95%8f%e9%a1%8c%e3%81%ae%e5%af%be%e5%bf%9c&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/share?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fmsn%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+          <a href="http://getpocket.com/edit?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fmsn%2f&title=msn%e9%96%a2%e4%bf%82%e3%83%bb%e6%a5%bd%e5%a4%a9%e3%81%a7%e5%9b%ba%e3%81%be%e3%82%8b%e5%95%8f%e9%a1%8c%e3%81%ae%e5%af%be%e5%bf%9c" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
         </div>
 
         
@@ -123,8 +123,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
     <div class="content">
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/windows-updateflash-crash2000272/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
@@ -135,8 +135,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・04</time>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
@@ -147,8 +147,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/hidpi.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
     <div class="detail">
       <time>2015・09・03</time>
       <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
@@ -159,8 +159,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/iediagnosticsadapter/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/IEDiagnosticsAdapter.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/iediagnosticsadapter/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/IEDiagnosticsAdapter.png);"></div>
     <div class="detail">
       <time>2015・04・09</time>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
@@ -171,8 +171,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/refreshhilite.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
     <div class="detail">
       <time>2015・03・17</time>
       <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
@@ -183,8 +183,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/fullwindow/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/frametoolbar.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/fullwindow/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/frametoolbar.png);"></div>
     <div class="detail">
       <time>2015・03・02</time>
       <h2 class="title">新機能: FullWindow表示ボタン</h2>
@@ -195,8 +195,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/legacymenu.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/windows81/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/legacymenu.png);"></div>
     <div class="detail">
       <time>2015・01・30</time>
       <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
@@ -207,8 +207,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/freezechecker.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
     <div class="detail">
       <time>2014・12・23</time>
       <h2 class="title">新機能: 応答なしページの検出</h2>
@@ -219,8 +219,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/post-64/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/kyorisoku.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
     <div class="detail">
       <time>2014・10・23</time>
       <h2 class="title">キョリ測が動かないときがある</h2>
@@ -231,8 +231,8 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/lunascape/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/adluna.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/lunascape/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/adluna.png);"></div>
     <div class="detail">
       <time>2014・08・28</time>
       <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
@@ -249,13 +249,13 @@ IEとIEコンポでnavigator.appVersionの返す値が異なっています。�
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a href="http://yukikuri.github.io/blog/tags/internet">internet (29)</a>
+      <a href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
     
-      <a href="http://yukikuri.github.io/blog/tags/no-category">no-category (6)</a>
+      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (6)</a>
     
-      <a href="http://yukikuri.github.io/blog/tags/online-soft">online-soft (178)</a>
+      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (178)</a>
     
-      <a href="http://yukikuri.github.io/blog/tags/programming">programming (38)</a>
+      <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
     </div>
   </div>

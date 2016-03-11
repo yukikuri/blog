@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ウェブブラウザ開発ブログ </title>
-    <link>http://yukikuri.github.io/blog/tags/programming/</link>
+    <link>http://blog.anciasoft.jp/tags/programming/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,16 +12,16 @@
       
         <item>
           <title>高解像度 HiDPI(Per-Monitor) に対応</title>
-          <link>http://yukikuri.github.io/blog/post/hidpiper-monitor/</link>
+          <link>http://blog.anciasoft.jp/post/hidpiper-monitor/</link>
           <pubDate>Thu, 03 Sep 2015 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/hidpiper-monitor/</guid>
+          <guid>http://blog.anciasoft.jp/post/hidpiper-monitor/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19112Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/download/Ancia19112.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;textsize.png&#34; src=&#34;http://yukikuri.github.io/blog/img/textsize.png&#34; width=&#34;448&#34; height=&#34;79&#34; style=&#34;border:1px #000 solid&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;textsize.png&#34; src=&#34;http://blog.anciasoft.jp/img/textsize.png&#34; width=&#34;448&#34; height=&#34;79&#34; style=&#34;border:1px #000 solid&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。&lt;/p&gt;
 
@@ -37,19 +37,19 @@
       
         <item>
           <title>キョリ測が動かないときがある</title>
-          <link>http://yukikuri.github.io/blog/post/post-64/</link>
+          <link>http://blog.anciasoft.jp/post/post-64/</link>
           <pubDate>Thu, 23 Oct 2014 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-64/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-64/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
 
 &lt;p&gt;・204応答でNavigateError&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;naverror.png&#34; src=&#34;http://yukikuri.github.io/blog/img/naverror.png&#34; width=&#34;915&#34; height=&#34;185&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;naverror.png&#34; src=&#34;http://blog.anciasoft.jp/img/naverror.png&#34; width=&#34;915&#34; height=&#34;185&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;iecapture.png&#34; src=&#34;http://yukikuri.github.io/blog/img/iecapture.png&#34; width=&#34;783&#34; height=&#34;441&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;iecapture.png&#34; src=&#34;http://blog.anciasoft.jp/img/iecapture.png&#34; width=&#34;783&#34; height=&#34;441&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。&lt;/p&gt;
 </description>
@@ -59,11 +59,11 @@
       
         <item>
           <title>WTL81 11324</title>
-          <link>http://yukikuri.github.io/blog/post/wtl81-11324/</link>
+          <link>http://blog.anciasoft.jp/post/wtl81-11324/</link>
           <pubDate>Tue, 22 Nov 2011 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl81-11324/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;wtlribbon.png&#34; src=&#34;http://yukikuri.github.io/blog/img/wtlribbon.png&#34; width=&#34;449&#34; height=&#34;287&#34;  /&gt;&lt;/p&gt;
+          <guid>http://blog.anciasoft.jp/post/wtl81-11324/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;wtlribbon.png&#34; src=&#34;http://blog.anciasoft.jp/img/wtlribbon.png&#34; width=&#34;449&#34; height=&#34;287&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://sourceforge.net/projects/wtl/&#34;&gt;Windows Template Library (WTL) | Free Development software downloads at SourceForge.net&lt;/a&gt;で、WTL81 11324が出てます。更新履歴が「Changes Between WTL 8.1 And 8.0  @@ TODO」としか書いてませんね。下はざっと見た変更点です。&lt;br /&gt;
 ・atlribbon.hが追加&lt;br /&gt;
@@ -77,10 +77,10 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
 
 &lt;p&gt;SPLIT_GRADIENTBARを使ってみると、splitbarがかっこよくなります（左がSPLIT_GRADIENTBARあり、右がSPLIT_GRADIENTBARなし）。これは今のアプリに使ってもいいかもしれません。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;wtlgradientbar.png&#34; src=&#34;http://yukikuri.github.io/blog/img/wtlgradientbar.png&#34; width=&#34;370&#34; height=&#34;229&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;wtlgradientbar.png&#34; src=&#34;http://blog.anciasoft.jp/img/wtlgradientbar.png&#34; width=&#34;370&#34; height=&#34;229&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;新しくapp wizardにribbonが選択できて、はじめの画像は、ribbonありでビルドしてみたものです。&lt;br /&gt;
-&lt;img alt=&#34;wtlappwiz.png&#34; src=&#34;http://yukikuri.github.io/blog/img/wtlappwiz.png&#34; width=&#34;404&#34; height=&#34;261&#34;  /&gt;&lt;/p&gt;
+&lt;img alt=&#34;wtlappwiz.png&#34; src=&#34;http://blog.anciasoft.jp/img/wtlappwiz.png&#34; width=&#34;404&#34; height=&#34;261&#34;  /&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -88,10 +88,10 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
       
         <item>
           <title>ExplorerBarPlus 1.4.4</title>
-          <link>http://yukikuri.github.io/blog/post/explorerbarplus-41/</link>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-41/</link>
           <pubDate>Sun, 01 May 2011 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/explorerbarplus-41/</guid>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-41/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1440&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus144.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;64bit環境で、ウインドウサイズが変わらないことがある対処を行っています。ただ、Anciaで使用している場合は、今後出る1.0.1の更新を待つ必要があります。ほかに、Firefox4のお気に入りが読めない、Vista以降でTree表示をExplorerっぽくしています。&lt;/p&gt;
@@ -106,10 +106,10 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
       
         <item>
           <title>jQueryのコード</title>
-          <link>http://yukikuri.github.io/blog/post/jquery/</link>
+          <link>http://blog.anciasoft.jp/post/jquery/</link>
           <pubDate>Thu, 24 Jun 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/jquery/</guid>
+          <guid>http://blog.anciasoft.jp/post/jquery/</guid>
           <description>&lt;p&gt;jQueryのコードで、&lt;br /&gt;
 438:  var toplevel = false;&lt;br /&gt;
 ・・・&lt;br /&gt;
@@ -124,11 +124,11 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
       
         <item>
           <title>ReleaseバージョンでのCrash箇所の特定方法</title>
-          <link>http://yukikuri.github.io/blog/post/releasecrash/</link>
+          <link>http://blog.anciasoft.jp/post/releasecrash/</link>
           <pubDate>Wed, 16 Jun 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/releasecrash/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;DetectCrashLine.png&#34; src=&#34;http://yukikuri.github.io/blog/img/DetectCrashLine.png&#34; width=&#34;474&#34; height=&#34;175&#34;  /&gt;&lt;/p&gt;
+          <guid>http://blog.anciasoft.jp/post/releasecrash/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;DetectCrashLine.png&#34; src=&#34;http://blog.anciasoft.jp/img/DetectCrashLine.png&#34; width=&#34;474&#34; height=&#34;175&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;Releaseバージョンでcrashしたときの場所の特定方法です。minidumpファイルか、最悪落ちた場所のアドレス情報があることが条件です。画像はわざとcrashさせています。&lt;/p&gt;
 
@@ -156,10 +156,10 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
       
         <item>
           <title>スムーズスクロールがもたつく原因</title>
-          <link>http://yukikuri.github.io/blog/post/post-51/</link>
+          <link>http://blog.anciasoft.jp/post/post-51/</link>
           <pubDate>Mon, 17 May 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-51/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-51/</guid>
           <description>&lt;p&gt;どうもスムーズスクロールでもたつく原因は、foregroundウインドウの設定っぽいです。そのスレッド内でのウインドウにforegroundウインドウがないとだめっぽいです。単にポップアップにしてもforegroundでなければ、だめだったので。&lt;/p&gt;
 </description>
         </item>
@@ -168,10 +168,10 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
       
         <item>
           <title>ExplorerBarPlus 1.4.1</title>
-          <link>http://yukikuri.github.io/blog/post/explorerbarplus-38/</link>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-38/</link>
           <pubDate>Mon, 26 Apr 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/explorerbarplus-38/</guid>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-38/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1410&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus141.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ancia0.8.0.6で分かったBSTRのパラメータ渡し誤りのバグを修正しています。そのほか、あまりバージョンアップしていなかったので、気になったところを直しています。SimpleFavPanelのアイコンを変更していますが、元のアイコンは、削除していないので、パネルのアイコン設定から変更できます。&lt;/p&gt;
@@ -198,11 +198,11 @@ func(sz);&lt;br /&gt;
       
         <item>
           <title>ExplorerBarPlusのタブモード表示対応</title>
-          <link>http://yukikuri.github.io/blog/post/explorerbarplus-37/</link>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-37/</link>
           <pubDate>Mon, 19 Apr 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/explorerbarplus-37/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;tm2.png&#34; src=&#34;http://yukikuri.github.io/blog/img/tm2.png&#34; width=&#34;489&#34; height=&#34;278&#34;  /&gt;&lt;/p&gt;
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-37/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;tm2.png&#34; src=&#34;http://blog.anciasoft.jp/img/tm2.png&#34; width=&#34;489&#34; height=&#34;278&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0806&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0806.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
@@ -218,10 +218,10 @@ func(sz);&lt;br /&gt;
       
         <item>
           <title>タブマネージャ機能</title>
-          <link>http://yukikuri.github.io/blog/post/post-49/</link>
+          <link>http://blog.anciasoft.jp/post/post-49/</link>
           <pubDate>Mon, 05 Apr 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-49/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-49/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0805&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0805.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
 タブを強制終了可能なタブマネージャ機能を追加しています。短時間で作ったのでThemeが効いていなかったりします。TabManagerの下の方は、グラス表示にしてみようかと思います。今の強制終了は、WM_QUITで終了できなければ、Terminateしています。ここは、安全に終了できるとき(タブの閉じる履歴が残る)は、そちらを優先するように変える予定です。CPU使用率や、メモリ表示、強制終了したタブはabout:crash表示する、も追加予定です。&lt;/p&gt;
 
@@ -239,10 +239,10 @@ func(sz);&lt;br /&gt;
       
         <item>
           <title>互換表示</title>
-          <link>http://yukikuri.github.io/blog/post/post-48/</link>
+          <link>http://blog.anciasoft.jp/post/post-48/</link>
           <pubDate>Mon, 29 Mar 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-48/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-48/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=bd98f760-1279-46f2-a456-de6df365584b&amp;amp;displaylang=en&#34;&gt;IE8のヘッダ&lt;/a&gt;と&lt;a href=&#34;http://blogs.msdn.com/ie/default.aspx&#34;&gt;IEブログ&lt;/a&gt;を見ているうちに、互換表示が変更できそうな怪しい部分があったので、試してみると、、変更できたっぽいです。ですが、変更できずに失敗するタイミングがあります。もう少し試してみて、できそうなら入れてみます。変更の仕方自体は、想像していたとおり単純で、大体5行程度です。&lt;/p&gt;
 </description>
         </item>
@@ -251,10 +251,10 @@ func(sz);&lt;br /&gt;
       
         <item>
           <title>設定の同期で苦戦中</title>
-          <link>http://yukikuri.github.io/blog/post/post-47/</link>
+          <link>http://blog.anciasoft.jp/post/post-47/</link>
           <pubDate>Tue, 23 Mar 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-47/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-47/</guid>
           <description>&lt;p&gt;設定の同期、というか子処理は、メイン処理と同じ設定値のコピー値で動作させるところで、直す部分が多すぎて、大変です。ビットフィールドは使うんじゃなかったかな。&lt;/p&gt;
 
 &lt;p&gt;&lt;pre&gt;&lt;br /&gt;
@@ -290,10 +290,10 @@ and         eax,2&lt;br /&gt;
       
         <item>
           <title>マルチスレッド/プロセス対応途中の公開</title>
-          <link>http://yukikuri.github.io/blog/post/post-46/</link>
+          <link>http://blog.anciasoft.jp/post/post-46/</link>
           <pubDate>Mon, 01 Mar 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-46/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-46/</guid>
           <description>&lt;p&gt;マルチスレッド/プロセス対応中ですが、途中のものを公開しています。途中なので通常使用はお勧めしません。&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0801&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0801.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
@@ -324,11 +324,11 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);&lt;br /
       
         <item>
           <title>途中２</title>
-          <link>http://yukikuri.github.io/blog/post/post-45/</link>
+          <link>http://blog.anciasoft.jp/post/post-45/</link>
           <pubDate>Thu, 18 Feb 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-45/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;conti2.png&#34; src=&#34;http://yukikuri.github.io/blog/img/conti2.png&#34; width=&#34;352&#34; height=&#34;313&#34;  /&gt;&lt;/p&gt;
+          <guid>http://blog.anciasoft.jp/post/post-45/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;conti2.png&#34; src=&#34;http://blog.anciasoft.jp/img/conti2.png&#34; width=&#34;352&#34; height=&#34;313&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;シングルスレッド、マルチスレッド、マルチプロセスを意識しないで動作するよう内部設計を変えている途中で、まあそれなりにうまくいくかもというところです。シングルスレッドでは多少遅くなるかもしれませんが、１つ、２つAPI呼び出しが増えてもそれど遅くならないでしょう。&lt;/p&gt;
 
@@ -342,10 +342,10 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);&lt;br /
       
         <item>
           <title>スクロール</title>
-          <link>http://yukikuri.github.io/blog/post/post-41/</link>
+          <link>http://blog.anciasoft.jp/post/post-41/</link>
           <pubDate>Mon, 04 Jan 2010 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-41/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-41/</guid>
           <description>&lt;p&gt;子スレッドでIEコンポーネントを動かすとホイールスクロールが少し引っかかるような動作になることで、&lt;br /&gt;
 &lt;ol&gt;&lt;br /&gt;
 &lt;li&gt;子スレッドをポップアップウインドウとすると、なぜか引っ掛かりが無くなる&lt;/li&gt;&lt;br /&gt;
@@ -360,10 +360,10 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);&lt;br /
       
         <item>
           <title>マルチプロセススレッド試作物</title>
-          <link>http://yukikuri.github.io/blog/post/post-40/</link>
+          <link>http://blog.anciasoft.jp/post/post-40/</link>
           <pubDate>Wed, 23 Dec 2009 06:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-40/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-40/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/download/MultiProcessThread.zip&#34;&gt;MultiProcessThread.zip&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;メッセージベース＋共有メモリでのIPCを使用したマルチプロセス、スレッドのプロトタイプです。機能は、WTLのタブブラウザサンプル相当しかありません。exeの同じディレクトリにファイルthreadがあるとマルチスレッド、ないとマルチプロセスで動作します。&lt;/p&gt;
@@ -380,11 +380,11 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);&lt;br /
       
         <item>
           <title>Windows7ライブサムネイル</title>
-          <link>http://yukikuri.github.io/blog/post/windows7/</link>
+          <link>http://blog.anciasoft.jp/post/windows7/</link>
           <pubDate>Mon, 26 Oct 2009 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/windows7/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;liveth.png&#34; src=&#34;http://yukikuri.github.io/blog/img/liveth.png&#34; width=&#34;408&#34; height=&#34;349&#34;  /&gt;&lt;/p&gt;
+          <guid>http://blog.anciasoft.jp/post/windows7/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;liveth.png&#34; src=&#34;http://blog.anciasoft.jp/img/liveth.png&#34; width=&#34;408&#34; height=&#34;349&#34;  /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0750&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia075.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
 Windows7ライブサムネイルに対応しています。ライブサムネイルは、WM_DWMSENDICONICTHUMBNAILで、タスクバーのサムネイルを返却（DwmSetIconicThumbnail）する、サムネイルをマウスオーバーしたときのWM_DWMSENDICONICLIVEPREVIEWBITMAPでアプリケーション画面に表示するビットマップを返却(DwmSetIconicLivePreviewBitmap)すれば対応できます。ビットマップは32ビットじゃないとE_INVALITARG?で処理が失敗してしまいます。ビットマップサイズもおかしいとINVALIDARGになってしまうようです。&lt;/p&gt;
@@ -401,10 +401,10 @@ Windows7ライブサムネイルに対応しています。ライブサムネイ
       
         <item>
           <title>WTLのコマンドバーメモ</title>
-          <link>http://yukikuri.github.io/blog/post/wtl/</link>
+          <link>http://blog.anciasoft.jp/post/wtl/</link>
           <pubDate>Thu, 01 Oct 2009 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl/</guid>
+          <guid>http://blog.anciasoft.jp/post/wtl/</guid>
           <description>&lt;p&gt;WTLコマンドバーでの主にメニュー表示動作メモ。&lt;br /&gt;
 &lt;ol&gt;&lt;br /&gt;
 &lt;li&gt;作成時メッセージフックセットMessageHookProc&lt;br /&gt;
@@ -419,10 +419,10 @@ Windows7ライブサムネイルに対応しています。ライブサムネイ
       
         <item>
           <title>ExplorerBarPlus 1.3.9</title>
-          <link>http://yukikuri.github.io/blog/post/explorerbarplus-36/</link>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-36/</link>
           <pubDate>Mon, 07 Sep 2009 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/explorerbarplus-36/</guid>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-36/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1390&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus139.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Opera10を入れてみると、ブックマークの自動検出に失敗したので修正しました。またIEのお気に入りのパネルで、右クリックに新しいウインドウで開くを追加しています。&lt;/p&gt;
@@ -435,10 +435,10 @@ Windows7ライブサムネイルに対応しています。ライブサムネイ
       
         <item>
           <title>検索バーカスタマイズ</title>
-          <link>http://yukikuri.github.io/blog/post/post-29/</link>
+          <link>http://blog.anciasoft.jp/post/post-29/</link>
           <pubDate>Wed, 19 Aug 2009 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-29/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-29/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0630&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia063.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
 検索バーで標準ツールバーのようにカスタマイズできるよう対応しました。スクリプトボタンも置けます。いまアドレスバーのボタンをすべて削除し、アドレスバーの変更を表示すると落ちてしまいました。。ボタンをすべて削除するのは止めておいた方がいいです。&lt;/p&gt;
 
@@ -454,10 +454,10 @@ Windows7ライブサムネイルに対応しています。ライブサムネイ
       
         <item>
           <title>zlib圧縮メモ</title>
-          <link>http://yukikuri.github.io/blog/post/zlib/</link>
+          <link>http://blog.anciasoft.jp/post/zlib/</link>
           <pubDate>Sat, 06 Jun 2009 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/zlib/</guid>
+          <guid>http://blog.anciasoft.jp/post/zlib/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://zlib.net/&#34;&gt;zlib 1.2.3&lt;/a&gt;の圧縮サイズメモ 。&lt;br /&gt;
 &lt;pre&gt;&lt;br /&gt;
 byte     Level9  Level6&lt;br /&gt;
@@ -477,10 +477,10 @@ byte     Level9  Level6&lt;br /&gt;
       
         <item>
           <title>WTL 8.1 WTL 8.1.9127</title>
-          <link>http://yukikuri.github.io/blog/post/wtl-81-wtl-8191/</link>
+          <link>http://blog.anciasoft.jp/post/wtl-81-wtl-8191/</link>
           <pubDate>Fri, 08 May 2009 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl-81-wtl-8191/</guid>
+          <guid>http://blog.anciasoft.jp/post/wtl-81-wtl-8191/</guid>
           <description>&lt;p&gt;１年以上ぶりで、あたらしいWTLが出ています。&lt;br /&gt;
 &lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=680959&#34;&gt;http://sourceforge.net/project/shownotes.php?release_id=680959&lt;/a&gt;&lt;/p&gt;
 
@@ -501,10 +501,10 @@ CAeroControlImpl&lt;/p&gt;
       
         <item>
           <title>if文</title>
-          <link>http://yukikuri.github.io/blog/post/if/</link>
+          <link>http://blog.anciasoft.jp/post/if/</link>
           <pubDate>Mon, 20 Apr 2009 02:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/if/</guid>
+          <guid>http://blog.anciasoft.jp/post/if/</guid>
           <description>&lt;p&gt;文字列の大文字を小文字にする処理で、&lt;br /&gt;
 char c=psz[i];&lt;br /&gt;
 if((&amp;lsquo;A&amp;rsquo; &amp;lt;= c) &amp;amp;&amp;amp; (c &amp;lt;= &amp;lsquo;Z&amp;rsquo;)) c += 0x20;&lt;br /&gt;
@@ -522,10 +522,10 @@ if((c &amp;lt;= &amp;lsquo;Z&amp;rsquo;) &amp;amp;&amp;amp; (&amp;lsquo;A&amp;rs
       
         <item>
           <title>places 2</title>
-          <link>http://yukikuri.github.io/blog/post/places-2/</link>
+          <link>http://blog.anciasoft.jp/post/places-2/</link>
           <pubDate>Wed, 16 Jul 2008 02:00:54 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/places-2/</guid>
+          <guid>http://blog.anciasoft.jp/post/places-2/</guid>
           <description>&lt;p&gt;firefox-3.0-source\mozilla\toolkit\components\places\src\nsNavHistory.cpp(766):&lt;br /&gt;
   rv = mDBConn-&amp;gt;ExecuteSimpleSQL(&lt;br /&gt;
     NS_LITERAL_CSTRING(&amp;ldquo;PRAGMA locking_mode = EXCLUSIVE&amp;rdquo;));&lt;/p&gt;
@@ -538,10 +538,10 @@ if((c &amp;lt;= &amp;lsquo;Z&amp;rsquo;) &amp;amp;&amp;amp; (&amp;lsquo;A&amp;rs
       
         <item>
           <title>places</title>
-          <link>http://yukikuri.github.io/blog/post/places/</link>
+          <link>http://blog.anciasoft.jp/post/places/</link>
           <pubDate>Mon, 14 Jul 2008 02:00:21 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/places/</guid>
+          <guid>http://blog.anciasoft.jp/post/places/</guid>
           <description>&lt;p&gt;ExplorerBarPlusでのFirefox3ブックマーク読み取り対応で、Firefox3起動中だとデータベースが読み取れないという問題に遭遇。&lt;/p&gt;
 
 &lt;p&gt;Firefox3の複数起動で新たにプロセスが立ち上がらないところを見ると、他プロセスからの読み取りは無理なのか、、sqliteのソースを追うとLockFileで失敗しているし&lt;/p&gt;
@@ -552,10 +552,10 @@ if((c &amp;lt;= &amp;lsquo;Z&amp;rsquo;) &amp;amp;&amp;amp; (&amp;lsquo;A&amp;rs
       
         <item>
           <title>XML-RPC</title>
-          <link>http://yukikuri.github.io/blog/post/xmlrpc/</link>
+          <link>http://blog.anciasoft.jp/post/xmlrpc/</link>
           <pubDate>Thu, 12 Jul 2007 02:22:22 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/xmlrpc/</guid>
+          <guid>http://blog.anciasoft.jp/post/xmlrpc/</guid>
           <description>&lt;p&gt;特にライブラリは必要なく、IXMLHTTPRequestで簡単に出来ます。&lt;/p&gt;
 
 &lt;p&gt;// はてな被ブックマーク合計数取得APIの場合&lt;br /&gt;
@@ -590,10 +590,10 @@ cout &amp;lt;&amp;lt; CW2A(txt) &amp;lt;&amp;lt; endl;&lt;/p&gt;
       
         <item>
           <title>WTL 8.0.7161</title>
-          <link>http://yukikuri.github.io/blog/post/wtl-807161/</link>
+          <link>http://blog.anciasoft.jp/post/wtl-807161/</link>
           <pubDate>Tue, 12 Jun 2007 02:22:22 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl-807161/</guid>
+          <guid>http://blog.anciasoft.jp/post/wtl-807161/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=515154&#34;&gt;WTL 8.0 WTL 8.0 Final&lt;/a&gt;が出ています。&lt;/p&gt;
 
 &lt;p&gt;atlcrack.hとatldlgs.hに変更有り。finalでもタブブラウザサンプルが入ってないのは、なぜ？&lt;/p&gt;
@@ -604,10 +604,10 @@ cout &amp;lt;&amp;lt; CW2A(txt) &amp;lt;&amp;lt; endl;&lt;/p&gt;
       
         <item>
           <title>atlhost.h</title>
-          <link>http://yukikuri.github.io/blog/post/atlhosth/</link>
+          <link>http://blog.anciasoft.jp/post/atlhosth/</link>
           <pubDate>Sun, 13 May 2007 17:18:09 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/atlhosth/</guid>
+          <guid>http://blog.anciasoft.jp/post/atlhosth/</guid>
           <description>&lt;p&gt;タイプミス発見。&lt;br /&gt;
 STDMETHOD(ContextSensitiveHelp)(BOOL /&lt;em&gt;fEnterMode&lt;/em&gt;/)&lt;br /&gt;
 {&lt;br /&gt;
@@ -620,13 +620,13 @@ STDMETHOD(ContextSensitiveHelp)(BOOL /&lt;em&gt;fEnterMode&lt;/em&gt;/)&lt;br /&
       
         <item>
           <title>タブブラウザサンプル</title>
-          <link>http://yukikuri.github.io/blog/post/post-12/</link>
+          <link>http://blog.anciasoft.jp/post/post-12/</link>
           <pubDate>Fri, 20 Apr 2007 21:42:15 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-12/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-12/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=502298&#34;&gt;WTL 8.0.7108 Beta1&lt;/a&gt;が出ています。タブブラウザサンプルが追加されていますが、なぜかダウンロードファイルには含まれていませんでした。タブブラウザサンプルは、CVSに入っているのでそこから手に入ります。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;TabBrowserSample.png&#34; src=&#34;http://yukikuri.github.io/blog/img/TabBrowserSample.png&#34; width=&#34;370&#34; height=&#34;263&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;TabBrowserSample.png&#34; src=&#34;http://blog.anciasoft.jp/img/TabBrowserSample.png&#34; width=&#34;370&#34; height=&#34;263&#34;  /&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -634,10 +634,10 @@ STDMETHOD(ContextSensitiveHelp)(BOOL /&lt;em&gt;fEnterMode&lt;/em&gt;/)&lt;br /&
       
         <item>
           <title>WTL 8.0.7070</title>
-          <link>http://yukikuri.github.io/blog/post/wtl-807070/</link>
+          <link>http://blog.anciasoft.jp/post/wtl-807070/</link>
           <pubDate>Tue, 13 Mar 2007 00:35:29 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl-807070/</guid>
+          <guid>http://blog.anciasoft.jp/post/wtl-807070/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=493035&#34;&gt;WTL 8.0 WTL 8.0.7070 released&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;AppWizardのバグ修正されていますが、VC7.1でまだエラーが出るようです。&lt;/p&gt;
@@ -648,13 +648,13 @@ STDMETHOD(ContextSensitiveHelp)(BOOL /&lt;em&gt;fEnterMode&lt;/em&gt;/)&lt;br /&
       
         <item>
           <title>WTL 8.0 7058</title>
-          <link>http://yukikuri.github.io/blog/post/wtl-80-7058-1/</link>
+          <link>http://blog.anciasoft.jp/post/wtl-80-7058-1/</link>
           <pubDate>Thu, 01 Mar 2007 00:00:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl-80-7058-1/</guid>
+          <guid>http://blog.anciasoft.jp/post/wtl-80-7058-1/</guid>
           <description>&lt;p&gt;新しくCTabViewが追加されています。ドラッグドロップでTabの入れ替えもできます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&#34;WTL8.png&#34; src=&#34;http://yukikuri.github.io/blog/img/WTL8.png&#34; width=&#34;228&#34; height=&#34;112&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;WTL8.png&#34; src=&#34;http://blog.anciasoft.jp/img/WTL8.png&#34; width=&#34;228&#34; height=&#34;112&#34;  /&gt;&lt;/p&gt;
 </description>
         </item>
       
@@ -662,10 +662,10 @@ STDMETHOD(ContextSensitiveHelp)(BOOL /&lt;em&gt;fEnterMode&lt;/em&gt;/)&lt;br /&
       
         <item>
           <title>WTL 8.0.6356</title>
-          <link>http://yukikuri.github.io/blog/post/wtl-806356/</link>
+          <link>http://blog.anciasoft.jp/post/wtl-806356/</link>
           <pubDate>Sat, 23 Dec 2006 00:28:13 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl-806356/</guid>
+          <guid>http://blog.anciasoft.jp/post/wtl-806356/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=473172&#34;&gt;WTL 8.0.6356&lt;/a&gt;&lt;br /&gt;
 vistaへの更新ばかりのようですが、atlmisc.hのCRecentDocumentListBase::GetFromList()で&lt;br /&gt;
 if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;lt;= cchLength) が&lt;br /&gt;
@@ -677,10 +677,10 @@ if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;gt;= cchLength) に修正されて�
       
         <item>
           <title>WTL 8.0.6304</title>
-          <link>http://yukikuri.github.io/blog/post/wtl-806304/</link>
+          <link>http://blog.anciasoft.jp/post/wtl-806304/</link>
           <pubDate>Wed, 01 Nov 2006 22:39:00 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wtl-806304/</guid>
+          <guid>http://blog.anciasoft.jp/post/wtl-806304/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/project/shownotes.php?release_id=460007&#34;&gt;WTL 8.0.6304&lt;/a&gt;が出たようです。&lt;/p&gt;
 </description>
         </item>
@@ -689,10 +689,10 @@ if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;gt;= cchLength) に修正されて�
       
         <item>
           <title>Windows RSS Platform</title>
-          <link>http://yukikuri.github.io/blog/post/windows-rss-pla/</link>
+          <link>http://blog.anciasoft.jp/post/windows-rss-pla/</link>
           <pubDate>Wed, 20 Sep 2006 02:26:14 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/windows-rss-pla/</guid>
+          <guid>http://blog.anciasoft.jp/post/windows-rss-pla/</guid>
           <description>&lt;p&gt;ExplorerBarPlusの更新で&lt;a href=&#34;http://msdn.microsoft.com/library/en-us/FeedsAPI/rss/rss_entry.asp&#34;&gt;Windows RSS Platform&lt;/a&gt;を使ってみましたが、未読・既読の管理・同期がすごいですね。フィードは決まった位置に保存されるようです。（Local Settings\Application Data\Microsoft\Feeds）&lt;/p&gt;
 </description>
         </item>
@@ -701,10 +701,10 @@ if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;gt;= cchLength) に修正されて�
       
         <item>
           <title>Visual Studio .NET 2003 SP1</title>
-          <link>http://yukikuri.github.io/blog/post/visual-studio-n/</link>
+          <link>http://blog.anciasoft.jp/post/visual-studio-n/</link>
           <pubDate>Thu, 17 Aug 2006 01:15:55 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/visual-studio-n/</guid>
+          <guid>http://blog.anciasoft.jp/post/visual-studio-n/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?familyid=69d2219f-ce82-46a5-8aec-072bd4bb955e&amp;amp;displaylang=en&#34;&gt;Visual Studio .NET 2003 SP1&lt;/a&gt;が出ました。&lt;/p&gt;
 </description>
         </item>
@@ -713,10 +713,10 @@ if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;gt;= cchLength) に修正されて�
       
         <item>
           <title>WinInet</title>
-          <link>http://yukikuri.github.io/blog/post/wininet/</link>
+          <link>http://blog.anciasoft.jp/post/wininet/</link>
           <pubDate>Sat, 24 Sep 2005 01:49:18 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/wininet/</guid>
+          <guid>http://blog.anciasoft.jp/post/wininet/</guid>
           <description>&lt;p&gt;WinInet関数でコネクションを閉じるときRSTがでているようだけど、こういう動作なのだろうか。。IEを閉じるときもRSTがでているようなので、こういう動作かもしれない。&lt;/p&gt;
 </description>
         </item>
@@ -725,10 +725,10 @@ if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;gt;= cchLength) に修正されて�
       
         <item>
           <title>MultiSelect TreeView</title>
-          <link>http://yukikuri.github.io/blog/post/multiselect-tre/</link>
+          <link>http://blog.anciasoft.jp/post/multiselect-tre/</link>
           <pubDate>Sun, 26 Jun 2005 00:46:30 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/multiselect-tre/</guid>
+          <guid>http://blog.anciasoft.jp/post/multiselect-tre/</guid>
           <description>&lt;p&gt;複数選択できるツリービュー。&lt;br /&gt;
 &lt;a href=&#34;http://groups.yahoo.com/group/wtl/message/11952&#34;&gt;WTL MultiSelect TreeView &lt;/a&gt;&lt;/p&gt;
 
@@ -741,10 +741,10 @@ if(lstrlen(m_arrDocs[nIndex].szDocName) &amp;gt;= cchLength) に修正されて�
       
         <item>
           <title>マウスホイール</title>
-          <link>http://yukikuri.github.io/blog/post/post-6/</link>
+          <link>http://blog.anciasoft.jp/post/post-6/</link>
           <pubDate>Thu, 16 Jun 2005 23:02:18 JST</pubDate>
           <author></author>
-          <guid>http://yukikuri.github.io/blog/post/post-6/</guid>
+          <guid>http://blog.anciasoft.jp/post/post-6/</guid>
           <description>&lt;p&gt;非アクティブでもホイールできる便利なソフト。&lt;br /&gt;
 &lt;a href=&#34;http://www.vector.co.jp/soft/win95/util/se261633.html&#34;&gt;Wheel Redirector&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://toshi.pobox.ne.jp/&#34;&gt;WheelPlus&lt;/a&gt;&lt;/p&gt;

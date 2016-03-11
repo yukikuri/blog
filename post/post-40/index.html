@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel="stylesheet" href="http://yukikuri.github.io/blog/css/style.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://yukikuri.github.io/blog//index.xml">
+    <link rel="stylesheet" href="http://blog.anciasoft.jp/css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.anciasoft.jp/index.xml">
 
     
     <title>マルチプロセススレッド試作物 - ウェブブラウザ開発ブログ</title>
@@ -12,7 +12,7 @@
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://yukikuri.github.io/blog/post/post-40/">
+    <meta property="og:url" content="http://blog.anciasoft.jp/post/post-40/">
     
     
 
@@ -21,7 +21,7 @@
   <body>
 
     <header class="site">
-      <div class="title"><a href="http://yukikuri.github.io/blog/">ウェブブラウザ開発ブログ</a></div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
     </header>
 
     <div class="container site">
@@ -33,15 +33,15 @@
 
     <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://yukikuri.github.io/blog/"/>
+      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://blog.anciasoft.jp/"/>
       <meta itemprop="dateModified" content="2009-12-23T06:00:00&#43;09:00">
       <meta itemprop="headline" content="マルチプロセススレッド試作物">
       <meta itemprop="description" content="MultiProcessThread.zip メッセージベース＋共有メモリでのIPCを使用したマルチプロセス、スレッドのプロトタイプです。機能は、WTLのタブブラウザサンプル相当しかありません。exeの同じディレクトリにファイルthreadがあるとマルチスレッド、ないとマルチプロセスで動作します。 プロセス、スレッドの動作の違いは、制御の作成がCreateProcess/CreateThreadか、マーシャリングをプロセス間/プロセス内としているかぐらいしかありません。ただスレッドの場合は、共有メモリではなくヒープを使用するなど、改善部分はあります。タブのタイトル更新、アドレスバーのURL更新はIPC、戻る/進む/ホーム/中止は、マーシャリングしたポインタで行っています。マーシャリングはテストで毎回行っています。マウスホイールでのスクロール対応も入れてます。 IPCを決めるとき、名前つきパイプにしようと思ったんですが、パイプだとメッセージボックスやダイアログを表示中だとrecvできないので、UIスレッドとは別スレッドにすることになり、やめました。メッセージベースで単純なSendとし、再入可能の動作にする予定です。ただ固まっている子プロセスのウインドウへメインプロセスのウインドウからタイムアウトなしのSendが行われるとメインプロセスも固まってしまうため、Windowsが内部で自動的にSendしているものは、固まりを防げないかもしれません。たしか、同じホストで、マーシャリングしたポインタを介した呼び出しもメッセージベースなので、呼び先のタブが固まっていると、呼び元に制御が返らない、はずです。マーシャリングするときも応答があるときに行うようにしなければならないようです。 プロトタイプの公開はこれまでとし、次はプロトタイプをいじりながらAnciaに組み込んでいければというところです。">
-      <meta itemprop="url" content="http://yukikuri.github.io/blog/post/post-40/">
+      <meta itemprop="url" content="http://blog.anciasoft.jp/post/post-40/">
       
       <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
         <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="http://yukikuri.github.io/blog/images/logo.jpg">
+          <meta itemprop="url" content="http://blog.anciasoft.jp/images/logo.jpg">
           <meta itemprop="width" content="100">
           <meta itemprop="height" content="100">
         </div>
@@ -72,13 +72,13 @@
       </div>
 
       <aside>
-        <div class="section">tags: <a href="http://yukikuri.github.io/blog/tags/online-soft" class="tag">online soft</a> <a href="http://yukikuri.github.io/blog/tags/programming" class="tag">programming</a> </div>
+        <div class="section">tags: <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 
         <div class="section share">
-          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpost-40%2f&t=%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e3%82%b9%e3%83%ac%e3%83%83%e3%83%89%e8%a9%a6%e4%bd%9c%e7%89%a9" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpost-40%2f&text=%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e3%82%b9%e3%83%ac%e3%83%83%e3%83%89%e8%a9%a6%e4%bd%9c%e7%89%a9&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-          <a href="https://plus.google.com/share?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpost-40%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-          <a href="http://getpocket.com/edit?url=http%3a%2f%2fyukikuri.github.io%2fblog%2fpost%2fpost-40%2f&title=%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e3%82%b9%e3%83%ac%e3%83%83%e3%83%89%e8%a9%a6%e4%bd%9c%e7%89%a9" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fpost-40%2f&t=%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e3%82%b9%e3%83%ac%e3%83%83%e3%83%89%e8%a9%a6%e4%bd%9c%e7%89%a9" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+          <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fpost-40%2f&text=%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e3%82%b9%e3%83%ac%e3%83%83%e3%83%89%e8%a9%a6%e4%bd%9c%e7%89%a9&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/share?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fpost-40%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+          <a href="http://getpocket.com/edit?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fpost-40%2f&title=%e3%83%9e%e3%83%ab%e3%83%81%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e3%82%b9%e3%83%ac%e3%83%83%e3%83%89%e8%a9%a6%e4%bd%9c%e7%89%a9" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
         </div>
 
         
@@ -101,8 +101,8 @@
     <div class="content">
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/windows-updateflash-crash2000272/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
@@ -113,8 +113,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/flash.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
       <time>2016・01・04</time>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
@@ -125,8 +125,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/hidpi.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
     <div class="detail">
       <time>2015・09・03</time>
       <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
@@ -137,8 +137,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/iediagnosticsadapter/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/IEDiagnosticsAdapter.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/iediagnosticsadapter/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/IEDiagnosticsAdapter.png);"></div>
     <div class="detail">
       <time>2015・04・09</time>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
@@ -149,8 +149,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/refreshhilite.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
     <div class="detail">
       <time>2015・03・17</time>
       <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
@@ -161,8 +161,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/fullwindow/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/frametoolbar.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/fullwindow/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/frametoolbar.png);"></div>
     <div class="detail">
       <time>2015・03・02</time>
       <h2 class="title">新機能: FullWindow表示ボタン</h2>
@@ -173,8 +173,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/legacymenu.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/windows81/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/legacymenu.png);"></div>
     <div class="detail">
       <time>2015・01・30</time>
       <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
@@ -185,8 +185,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/freezechecker.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
     <div class="detail">
       <time>2014・12・23</time>
       <h2 class="title">新機能: 応答なしページの検出</h2>
@@ -197,8 +197,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/post-64/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/kyorisoku.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
     <div class="detail">
       <time>2014・10・23</time>
       <h2 class="title">キョリ測が動かないときがある</h2>
@@ -209,8 +209,8 @@
 </div>
       
       <div class="sm"><article class="li">
-  <a href="http://yukikuri.github.io/blog/post/lunascape/" class="clearfix">
-    <div class="image" style="background-image: url(http://yukikuri.github.io/blog/img/adluna.png);"></div>
+  <a href="http://blog.anciasoft.jp/post/lunascape/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/adluna.png);"></div>
     <div class="detail">
       <time>2014・08・28</time>
       <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
@@ -227,13 +227,13 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a href="http://yukikuri.github.io/blog/tags/internet">internet (29)</a>
+      <a href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
     
-      <a href="http://yukikuri.github.io/blog/tags/no-category">no-category (6)</a>
+      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (6)</a>
     
-      <a href="http://yukikuri.github.io/blog/tags/online-soft">online-soft (178)</a>
+      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (178)</a>
     
-      <a href="http://yukikuri.github.io/blog/tags/programming">programming (38)</a>
+      <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
     </div>
   </div>
