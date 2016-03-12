@@ -13,7 +13,7 @@
         <item>
           <title>Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</title>
           <link>http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/</link>
-          <pubDate>Wed, 06 Jan 2016 23:03:25 JST</pubDate>
+          <pubDate>2016-01-06 23:03:25 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/</guid>
           <description>&lt;p&gt;問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。&lt;/p&gt;
@@ -27,7 +27,7 @@
         <item>
           <title>Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</title>
           <link>http://blog.anciasoft.jp/post/windows-updateflashcrash/</link>
-          <pubDate>Mon, 04 Jan 2016 00:00:00 JST</pubDate>
+          <pubDate>2016-01-04 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/windows-updateflashcrash/</guid>
           <description>&lt;p&gt;Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。&lt;/p&gt;
@@ -58,7 +58,7 @@
         <item>
           <title>高解像度 HiDPI(Per-Monitor) に対応</title>
           <link>http://blog.anciasoft.jp/post/hidpiper-monitor/</link>
-          <pubDate>Thu, 03 Sep 2015 00:00:00 JST</pubDate>
+          <pubDate>2015-09-03 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/hidpiper-monitor/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19112Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
@@ -83,7 +83,7 @@
         <item>
           <title>IEDiagnosticsAdapterを使ってみる</title>
           <link>http://blog.anciasoft.jp/post/iediagnosticsadapter/</link>
-          <pubDate>Thu, 09 Apr 2015 00:00:00 JST</pubDate>
+          <pubDate>2015-04-09 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/iediagnosticsadapter/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;で公開されているIEDiagnosticsAdapterを使用してみたメモです。&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter#installing&#34;&gt;installing&lt;/a&gt;に従えば、特にエラーもなく動かすことができました。下は、その手順です。&lt;/p&gt;
@@ -136,7 +136,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>ハイライト、インライン検索で最新の状態に更新</title>
           <link>http://blog.anciasoft.jp/post/post-66/</link>
-          <pubDate>Tue, 17 Mar 2015 00:00:00 JST</pubDate>
+          <pubDate>2015-03-17 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/post-66/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19101Beta&#34;&gt;更新履歴&lt;/a&gt;  &lt;a href=&#34;http://www.egrath.net/download/Ancia19101.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
@@ -152,7 +152,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>新機能: FullWindow表示ボタン</title>
           <link>http://blog.anciasoft.jp/post/fullwindow/</link>
-          <pubDate>Mon, 02 Mar 2015 00:00:00 JST</pubDate>
+          <pubDate>2015-03-02 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/fullwindow/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1999Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
@@ -179,7 +179,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>windows8.1環境でメニュー動作がおかしいの回避方法</title>
           <link>http://blog.anciasoft.jp/post/windows81/</link>
-          <pubDate>Fri, 30 Jan 2015 00:00:00 JST</pubDate>
+          <pubDate>2015-01-30 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/windows81/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1995Beta&#34;&gt;更新履歴&lt;/a&gt;  &lt;a href=&#34;http://www.egrath.net/download/Ancia1995.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
@@ -199,7 +199,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>新機能: 応答なしページの検出</title>
           <link>http://blog.anciasoft.jp/post/post-65/</link>
-          <pubDate>Tue, 23 Dec 2014 00:00:00 JST</pubDate>
+          <pubDate>2014-12-23 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/post-65/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1988Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
@@ -223,7 +223,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>キョリ測が動かないときがある</title>
           <link>http://blog.anciasoft.jp/post/post-64/</link>
-          <pubDate>Thu, 23 Oct 2014 00:00:00 JST</pubDate>
+          <pubDate>2014-10-23 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/post-64/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
@@ -245,7 +245,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>Lunascape が表示ページ上部に広告を表示するかもしれない</title>
           <link>http://blog.anciasoft.jp/post/lunascape/</link>
-          <pubDate>Thu, 28 Aug 2014 00:00:00 JST</pubDate>
+          <pubDate>2014-08-28 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/lunascape/</guid>
           <description>&lt;p&gt;試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。&lt;/p&gt;

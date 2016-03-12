@@ -13,7 +13,7 @@
         <item>
           <title>Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</title>
           <link>http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/</link>
-          <pubDate>Wed, 06 Jan 2016 23:03:25 JST</pubDate>
+          <pubDate>2016-01-06 23:03:25 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/</guid>
           <description>&lt;p&gt;問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。&lt;/p&gt;
@@ -27,7 +27,7 @@
         <item>
           <title>Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</title>
           <link>http://blog.anciasoft.jp/post/windows-updateflashcrash/</link>
-          <pubDate>Mon, 04 Jan 2016 00:00:00 JST</pubDate>
+          <pubDate>2016-01-04 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/windows-updateflashcrash/</guid>
           <description>&lt;p&gt;Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。&lt;/p&gt;
@@ -58,7 +58,7 @@
         <item>
           <title>IEDiagnosticsAdapterを使ってみる</title>
           <link>http://blog.anciasoft.jp/post/iediagnosticsadapter/</link>
-          <pubDate>Thu, 09 Apr 2015 00:00:00 JST</pubDate>
+          <pubDate>2015-04-09 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/iediagnosticsadapter/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;で公開されているIEDiagnosticsAdapterを使用してみたメモです。&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter#installing&#34;&gt;installing&lt;/a&gt;に従えば、特にエラーもなく動かすことができました。下は、その手順です。&lt;/p&gt;
@@ -111,7 +111,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>キョリ測が動かないときがある</title>
           <link>http://blog.anciasoft.jp/post/post-64/</link>
-          <pubDate>Thu, 23 Oct 2014 00:00:00 JST</pubDate>
+          <pubDate>2014-10-23 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/post-64/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
@@ -133,7 +133,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>Lunascape が表示ページ上部に広告を表示するかもしれない</title>
           <link>http://blog.anciasoft.jp/post/lunascape/</link>
-          <pubDate>Thu, 28 Aug 2014 00:00:00 JST</pubDate>
+          <pubDate>2014-08-28 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/lunascape/</guid>
           <description>&lt;p&gt;試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。&lt;/p&gt;
@@ -145,7 +145,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる(解決)</title>
           <link>http://blog.anciasoft.jp/post/ie11-domstorage-1/</link>
-          <pubDate>Thu, 17 Apr 2014 00:00:00 JST</pubDate>
+          <pubDate>2014-04-17 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/ie11-domstorage-1/</guid>
           <description>&lt;p&gt;&lt;img alt=&#34;sessionstorage.png&#34; src=&#34;http://blog.anciasoft.jp/img/sessionstorage.png&#34; width=&#34;729&#34; height=&#34;249&#34;  /&gt;&lt;/p&gt;
@@ -170,7 +170,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる</title>
           <link>http://blog.anciasoft.jp/post/ie11-domstorage/</link>
-          <pubDate>Fri, 31 Jan 2014 23:59:59 JST</pubDate>
+          <pubDate>2014-01-31 23:59:59 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/ie11-domstorage/</guid>
           <description>&lt;p&gt;&lt;img alt=&#34;ie11domstoragefreeze.png&#34; src=&#34;http://blog.anciasoft.jp/img/ie11domstoragefreeze.png&#34; width=&#34;630&#34; height=&#34;251&#34;  /&gt;&lt;/p&gt;
@@ -194,7 +194,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>Internet Explorer 11でのJavascript問題</title>
           <link>http://blog.anciasoft.jp/post/internet-explor-2/</link>
-          <pubDate>Mon, 11 Nov 2013 00:00:00 JST</pubDate>
+          <pubDate>2013-11-11 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/internet-explor-2/</guid>
           <description>&lt;p&gt;Windows7用Internet Explorer11がdownload可能となりました。&lt;br /&gt;
@@ -214,7 +214,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>新しいメニュー動作</title>
           <link>http://blog.anciasoft.jp/post/post-62/</link>
-          <pubDate>Wed, 02 Oct 2013 00:00:00 JST</pubDate>
+          <pubDate>2013-10-02 00:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/post-62/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1939Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1939.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
@@ -241,7 +241,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
         <item>
           <title>SleipnirのIE10表示問題</title>
           <link>http://blog.anciasoft.jp/post/sleipnirie10/</link>
-          <pubDate>Fri, 09 Aug 2013 09:00:00 JST</pubDate>
+          <pubDate>2013-08-09 09:00:00 &#43;0900 JST</pubDate>
           <author></author>
           <guid>http://blog.anciasoft.jp/post/sleipnirie10/</guid>
           <description>&lt;p&gt;&lt;img alt=&#34;ie9ie.png&#34; src=&#34;http://blog.anciasoft.jp/img/ie9ie.png&#34; width=&#34;517&#34; height=&#34;276&#34;  /&gt;&lt;/p&gt;
