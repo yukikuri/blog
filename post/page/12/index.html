@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://blog.anciasoft.jp/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.anciasoft.jp/atom.xml">
 
@@ -37,12 +38,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/45/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/json/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・07・04</time>
-      <h2 class="title">マウス第4、第5ボタン動作設定ほか</h2>
-      <div class="summary">更新履歴 download マウスの第4、第5ボタンの動作を指定できるようになりました。デフォルトは、戻る、進むです。 ほかに、左、右ボタン押しながらの動作設定も追加しています。左ボタン＋ホイールクリック、右ボタン＋ホイールクリックは、左右押しながらではなく、同時押しでも動作します。 Googleの検索候補でいつの間にか日本語が出るようになってました。「ecopo」とすると「エコポイント」などIME変換しなくても検索候補が出てくるので、使い勝手が良くなってます。</div>
+      <time>2009・01・20</time>
+      <h2 class="title">json形式の設定ファイル</h2>
+      <div class="summary">Anciaの設定ファイルは、resourceやsetting、タブリストなど、json形式で保存します。Anciaは、一から作成したUnicodeビルドです。なので、まず設定ファイルを、iniファイルを使わず、おもいきってUnicode形式のjsonとしました。Unicodeビルドで設定ファイルもUnicodeとすることで、設定ファイルを読み込んだ際の無駄な文字コード変換を省けます。 jsonは、iniに比べ配列やオブジェクトの表現がしやすいので、良いです。json parser、writerは自前で書いていますが、IE8のが、APIやinterfaceで公開されれば、json形式で保存するアプリが増えるかもしれません。</div>
     </div>
   </a>
 </article>
@@ -51,12 +52,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-25/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+  <a href="http://blog.anciasoft.jp/post/opensearch/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/opensearch.png);"></div>
     <div class="detail">
-      <time>2009・06・29</time>
-      <h2 class="title">ショートカットキー設定</h2>
-      <div class="summary">更新履歴 download やっとショートカットキー設定が行えるようになりました。フォームのinput textをHot Key Controlのように動作させています。日本語入力ONだと入力できない不具合を見つけてしまいましたが、次に修正します。 一度マルチスレッドにしようとしてスクロールがおかしかったので止めましたが、マルチプロセスについて少し調べてみようと思います。マルチプロセスでも結局はプロセスだけでは処理は動かず、プロセスの中のメインスレッドが動くので、マルチスレッド、マルチプロセスでの違いはデータのやり取りで、やり取りがどうにかなれば、、というところでしょうか。</div>
+      <time>2009・01・14</time>
+      <h2 class="title">OpenSearchでの検索エンジン登録</h2>
+      <div class="summary">Anciaでの検索エンジン情報は、OpenSearch形式のファイルで持っています。どんな検索エンジンでもOpenSearch形式のファイルを作れば、使用できるはずです。 アプリへの検索エンジン登録は、searchフォルダに、OpenSearch形式のファイルを置くだけです。ファイル名＝検索エンジン名となり、ファイル名の.icoをおけば、検索エンジンのアイコンになります。ファイル削除で、登録が消えます。ただし、アプリで削除すると、検索履歴も一緒に消してくれます。登録が単純な分、検索エンジンの順番は、ファイル名順です。 検索バーは、検索エンジンごとに検索キーワード履歴を保存するため、aguse.jpで調べたURLやgoogleで調べたキーワードが、ごっちゃになることはありません。検索バーのキーワード履歴は、ホイールクリックすると、新しいタブで検索結果を表示し、また、右クリックメニューから他のエンジンで調べることが出来ます（上の画像）。履歴は、setting\SearchHist_検索エンジンファイル名.jsonで保存します。履歴ファイルがあれば、履歴を表示・なければ表示無しです。検索バーへの検索エンジンボタンの登録は、バーのボタン設定ファイルで&rdquo;btn&rdquo;:[・・・,{&ldquo;search&rdquo;:&ldquo;検索エンジンのファイル&rdquo;},・・・]とします。 検索URLテンプレートは、{searchTerms}のみサポートしています。Internet Explorerと同じく、GETのみサポートです。 次の更新は、タブ上での機能割り当て辺りを、、マウスジェスチャは、、違う形で提供するかもしれません。</div>
     </div>
   </a>
 </article>
@@ -65,12 +66,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-24/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+  <a href="http://blog.anciasoft.jp/post/ie/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ietoolbar.png);"></div>
     <div class="detail">
-      <time>2009・06・18</time>
-      <h2 class="title">フォームの自動生成</h2>
-      <div class="summary">ショートカットキーのオプション設定で、フォームでのselect部分で手こずっています。ショートカットキーすべてでselectのoptionアイテムを追加すると、かなり時間がかかるので、onfocusなどのタイミングでoptionアイテムを追加するようにしたいのですが、追加してみるとdropdownが閉じてしまいます。これは困った。。 画像はIE6で動かしているのでpngが透過ではないです。</div>
+      <time>2009・01・09</time>
+      <h2 class="title">IEツールバー</h2>
+      <div class="summary">Anciaは、ExplorerBarPlusをどうしても使用したかったので、初回v0.0.1の時点でIEツールバー・エクスプローラバーをサポートしています。サポートといっても、IEでしか動かないものなどあるため、全てのツールバーのサポートは無理です。 AnciaでのIEツールバーの仕様は、Internet Explorer同様、1つのタブにつき、１ツールバーインスタンスです。２つタブがあるとき、ツールバーも２つ存在します。タブを切り替えるときに、IEツールバーの表示も切り替えています。 IEツールバー自体、１つのIWebbrowserへの動作のため、複数タブで１つのIEツールバーを共有し動作させる実装は選択しませんでした。複数タブ対１つのIEツールバーは、仕様に従わず無理に動かすことは可能だと思いますが、無理に動かしてもしょうがないですし、無理に動かすための実装時間がもったいなく思えました。 Ancia初期の開発段階では、全タブが閉じた状態での起動でした。ですが、IEツールバーが1つのIWebBrowserが必要なので、IEツールバーをサポートしたことで、全タブが閉じた状態での起動仕様は捨てました。全タブが閉じた状態での起動が自身は好きですが、IEツールバーのサポートのほうが、上だったので、、仕方ないです。</div>
     </div>
   </a>
 </article>
@@ -79,12 +80,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-23/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+  <a href="http://blog.anciasoft.jp/post/localhome/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/localhome.png);"></div>
     <div class="detail">
-      <time>2009・06・10</time>
-      <h2 class="title">サムネイルが遅い</h2>
-      <div class="summary">新規タブ表示で、今日表示したページもサムネイルを表示するようにしたんですが、新規タブを開くとあまりに遅くなってしまったので、0.5.5bとして、公開するのは止めました。サムネイルはすべて表示する必要はなく、画面に出ている分だけ表示すればいいので、そのいい方法はないのか、、表示されるときのイベントもなさそうだし、ページのよっては表示されてから画像が出るものがあるので、スクロールイベント契機に要素の位置を比較して、・・・かな サムネイルは、今の動きではフレームが含まれているページを取得してません。</div>
+      <time>2009・01・04</time>
+      <h2 class="title">localhome機能</h2>
+      <div class="summary">Anciaの0.3.0のリリースで、ローカルホーム機能を追加しました。これは、about:localhomeにアクセスしたとき、resource配下のlocalhome.htmlの内容を表示するものです。resource/customizeにlocalhome.htmlがある場合は、そちらを優先に表示します。 about:localhomeのURLは特殊で、ローカルロックダウン・script無効でもスクリプトが実行できます。また、localhomeのときだけ、externalからアプリのさまざまなオブジェクト（IEのホーム一覧や、今日表示したページ一覧など）が参照できます。まだlocalhomeのデザインが適当なので、そのうち直します。localhomeの表示には、タブスナップショットの一覧も含める予定です。 localhomeは1日丸々使ったので、さすがに疲れました。年末も精神的にかなり辛いことがあったので、今日は、、ゆっくりしよう</div>
     </div>
   </a>
 </article>
@@ -93,12 +94,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/zlib/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-16/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・06・06</time>
-      <h2 class="title">zlib圧縮メモ</h2>
-      <div class="summary">zlib 1.2.3の圧縮サイズメモ 。 byte Level9 Level6 3638 2082 2083 1150 295 297 25214 14866 14978 6598 827 832 1150 962 962 6598 827 832 3638 1825 1830 1150 102 103</div>
+      <time>2009・01・03</time>
+      <h2 class="title">トップページ</h2>
+      <div class="summary">で、ブログエントリの最新3件まで表示しているが、日本語のタイトルで文字化けが発生。domxml_open_fileは、どうやらUTF-8として扱ってしまうらしく、mb_convert_encodingでUTF-8からEUC-JPにしたので、このタイトルが文字化けしていないはず。 ブログのatom.xml読み込みは、非同期でも可能ですが、非同期にしてさらにリクエストを増やすより、リクエストが来ているのだから、たかが20Kのファイル、サーバで読み取った方がいいんじゃないかと、素人考えで思いました。</div>
     </div>
   </a>
 </article>
@@ -107,12 +108,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/pure-virtual-fu-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+  <a href="http://blog.anciasoft.jp/post/dyn-menu-1/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dynmenu.png);"></div>
     <div class="detail">
-      <time>2009・05・29</time>
-      <h2 class="title">pure virtual function call対応</h2>
-      <div class="summary">更新履歴 download 下がIEツールバーを破棄しているコードですが、Release()部分をコメントアウトするとpure〜〜が発生しなくなります。googleツールバーはAddRef()、Release()でカウントがinc/decとなるのでちゃんとした参照カウントを返しています。さらに下のRelease()後の値は0だったので、最後のRelease()だと分かります。 IDeskBand* pBand = (IDeskBand*)rbi.lParam; if(pBand) { pBand-&gt;CloseDW(0); if(S_OK == pBand-&gt;QueryInterface(__uuidof(pObjectWithSite), (void**)&amp;pObjectWithSite)) { pObjectWithSite-&gt;SetSite(NULL); pObjectWithSite-&gt;Release(); } pBand-&gt;Release(); ← ここをコメントアウトすると、発生しなくなる } そこで、Release()するタイミングをどうにかする対応としました。 よく考えると、 ・IE6は1プロセス、プロセス終了でツールバーも破棄、プロセス終了 ・IE7は1タブに1スレッド、1タブ終了でツールバーも破棄、スレッド終了 ・IE8は1タブに1プロセス、1タブ終了でツールバーも破棄、プロセス終了 ・Anciaは、複数タブに1スレッド、1タブ終了で、ツールバー破棄、スレッド継続 と、Anciaでは1スレッドの処理内で何度もツールバー作成/破棄が行われるため、若干動作モードが異なります。これがエラー原因に関係しているかもしれません。 まともに対応するとなるとマルチプロセスでしょうか。。 IEツールバーが破棄されないバグがあり、対応したのでAnciaのプロセスが残ることがもうないと思います。</div>
+      <time>2008・12・31</time>
+      <h2 class="title">dyn menu</h2>
+      <div class="summary">Anciaは、ResHackerでみると分かりますが、メニューリソースを持っていません。メニューは全てファイルで持ち、メニューファイルには、動的メニューアイテム（dynamic menu）を定義できます。実装済み動的メニューは、placeholderのprefixではじまる placeholder.ietoolbar 〜 Internet Explorerツールバー placeholder.ievertbar 〜 Internet Explorerエクスプローラバー placeholder.up 〜 上へ移動 placeholder.back 〜 トラベルログの戻る placeholder.forward 〜 トラベルログの進む placeholder.travellog 〜 トラベルログ全て placeholder.closed 〜 最近閉じたタブ placeholder.new.closed 〜 最近閉じたタブ（新しいタブで開く） placeholder.home 〜 Internet ExplorerのホームURL placeholder.new.home 〜 Internet ExplorerのホームURL(新しいタブで開く) placeholder.toolbar 〜 アドレスバー、検索バーなど表示・非表示 placeholder.searchengine 〜 検索エンジン placeholder.encoding 〜 エンコーディング placeholder.tab 〜 タブ一覧（次回更新に含まれます） です。 ツールバーのメニューファイルmenu_toolbar.jsonを {&ldquo;menu&rdquo;:[ ← 次回更新でrootからmenuへ変更されます {&ldquo;popup&rdquo;:[ &nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.toolbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ハイライトバー&rdquo;,&ldquo;cmd&rdquo;:&ldquo;show.hilitebar&rdquo;}, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;インラインサーチ(&amp;I)&ldquo;,&ldquo;cmd&rdquo;:&ldquo;isearch&rdquo;}, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ステータスバー(&amp;B)&ldquo;,&ldquo;cmd&rdquo;:&ldquo;statusbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;エクスプローラバー&rdquo;,&ldquo;popup&rdquo;:[ &nbsp;&nbsp;&nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.ievertbar&rdquo;}]}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.ietoolbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ツールバー固定する(&amp;B)&ldquo;, &ldquo;cmd&rdquo;:&ldquo;locktoolbar&rdquo;}]} ]} とした場合、ツールバーで右クリックすると、placeholder.toolbar、ietoolbarが動的に展開され、上の画像のメニューが表示されます。placeholderでの展開がないときは「なし」になります。nullはセパレータです。 仕様として、下のように</div>
     </div>
   </a>
 </article>
@@ -121,12 +122,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl-81-wtl-8191/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/creating-ancia/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・05・08</time>
-      <h2 class="title">WTL 8.1 WTL 8.1.9127</h2>
-      <div class="summary">１年以上ぶりで、あたらしいWTLが出ています。 http://sourceforge.net/project/shownotes.php?release_id=680959 desktop window manager関係の新しいクラスが追加されています。 atldwm.h CDwm CDwmImpl CDwmWindowT - CDwmWindow CDwmThumbnailT CDwmThumbnail CDwmThumbnailHandle CAeroControlImpl</div>
+      <time>2008・12・29</time>
+      <h2 class="title">creating ancia</h2>
+      <div class="summary">Anciaの開発に当たって、実装をあきらめた機能があります。それは、タブごとにスレッドとする機能です。 タブを複数作成すると、1つのUIスレッドで複数tridentエンジンが動作するため、1タブが重いページを読み込むと他のタブも固まってしまいます。新しいタブブラウザを開発するからには、タブごとにスレッドとすることが実装目的の一つでした。 しかし残念ながら、タブごとにスレッドで動作させることは可能でしたが、どうしても解決できない問題があり、あきらめてしまいました。スレッドで生成したtridentエンジンで、どうにもスクロールがスレッドではないときに比べ、もたついてしまうのです。タブごとのスレッドのTheWorldで、http://www.yahoo.co.jp/を開くと、ホイール上下でのスクロールがIEに比べスムーズではないことが分かります。 1UIスレッド・複数タブで実装が進んでしまった今では、タブごとのスレッドやプロセス対応は、無理そうです。</div>
     </div>
   </a>
 </article>
@@ -135,12 +136,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/pure-virtual-fu/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+  <a href="http://blog.anciasoft.jp/post/autotextlink/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/alink.png);"></div>
     <div class="detail">
-      <time>2009・05・08</time>
-      <h2 class="title">pure virtual function call</h2>
-      <div class="summary">Ancia046で最新のgoogleツールバーを使用していて、次の事を行なうと100%落ちることが分かりました。 ・起動する、ローカルホームが表示される ・ローカルホームから新しいタブでページを開く ・ローカルホームのタブを閉じる ・適当なページへ移動する すると、以下の箇所で落ちていることが分かります。IEツールバーをホストしている側の参照カウンタ辺りが怪しそうです。。</div>
+      <time>2008・12・11</time>
+      <h2 class="title">AutoTextLink</h2>
+      <div class="summary">オートテキストリンクとは、テキストのURLを自動的にリンクにする機能です。Firefoxのアドオン、テキストリンクのようなものです。このテキスト http://www.egrath.net/?AnciaがAnciaで開くとリンクになります。オートテキストリンクされたことが区別できるよう、作成されたリンクにはアイコンを表示します。アイコンが表示されなければ、ページのリンクなのか、作成されたリンクなのか区別できません。 下のURLらしいテキストでもリンクを作成します。 ttps://addons.mozilla.org/ja/firefox/addon/1939 tps://addons.mozilla.org/ja/firefox/addon/1939 ps://addons.mozilla.org/ja/firefox/addon/1939 ttp://www.egrath.net/?Ancia tp://www.egrath.net/?Ancia 全角 ｈｔｔｐ：／／ｗｗｗ．ｅｇｒａｔｈ．ｎｅｔ／？Ａｎｃｉａ 欠点として、たとえば掲示板で怪しいURLのテキストをリンクとしてしまうため、クリックすると確認無しに開けてしまうことです。これは、次回更新でオートテキストリンクを開くときは、確認ダイログを表示する対応を入れます。 オートテキストリンクでもドロップアクションが動作するため、 怪しいURLは、aguse.jpへドロップ aguse.jpの調査結果で、大丈夫なら、調査結果のページから怪しいURLをオープン(オートテキストリンクが動作し、怪しいURLがリンクになってる） と、マウスの操作だけで出来ます。</div>
     </div>
   </a>
 </article>
@@ -149,12 +150,12 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-22/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+  <a href="http://blog.anciasoft.jp/post/post-14/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/da029.png);"></div>
     <div class="detail">
-      <time>2009・04・27</time>
-      <h2 class="title">不具合の修正</h2>
-      <div class="summary">更新履歴 download スクリプトからbrowserオブジェクトを参照すると（新しいタブを開くなど大部分）、タブを閉じるときなどで落ちることがある重大な不具合を修正しています。IFのrelease()洩れも修正しているため、プロセス終了時にプロセスが残ってしまう問題が修正されているかもしれません。 大きな不具合のためabout:tabsの機能が途中ですが、出しました。about:tabsを開くと、ホームの最初のサイトのサムネイルだけ表示されます。Faviconの取得を行なうと、一定時間後に消えてしまう問題が出ています。googleでのサジェストが最近になって出なくなった件を修正しています。</div>
+      <time>2008・12・09</time>
+      <h2 class="title">DropAction</h2>
+      <div class="summary">Anciaのドロップアクションとは、簡単にいうとドロップターゲットの表示です。リンクやテキストをドラッグすると、ボタンが表示されるので、直感的に行ないたいボタンへドロップします。 設定ファイルは、resourceのdrop_link.json（リンクの場合）、drop_text.json（テキストの場合）です。ボタンは、設定ファイルでdropdownがあると階層構造になります。アプリでは、階層構造の深さに制限は設けていません。dropdownとしてもdropdownボタンにドロップ可能です。 ボタンは、 スクリプト（script） 検索（search） が登録できます。アクションをスクリプトで書かなければならないことが面倒ですが、アプリでアクションを実装するときりがないので、その様にしました。逆にスクリプトが実行できるので、ActiveXObject等でインスタンスを作成し、ダウンローダを起動するなども簡単に出来ます。 ドロップアクションは、単なるOleDragDropのイベント契機に表示しているので、他のアプリからのドラッグなどでも表示できます。たとえば、こんなことが可能です。 他のブラウザからドラッグされたリンクを新しいタブで開く 他のブラウザからドラッグされたリンクをクリップボードにコピー Wordや秀丸からドロップされたテキストでGoogle検索し、ハイライト Anciaのリンクバーからドラッグされたボタンをバッググラウンドタブで開く ・・・など、スクリプトなのでアクションは自由です。</div>
     </div>
   </a>
 </article>
@@ -163,12 +164,40 @@
         
         <div class="col-sm-4">
           <article class="li">
-  <a href="http://blog.anciasoft.jp/post/if/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ancia-029/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/a029.png);"></div>
+    <div class="detail">
+      <time>2008・12・08</time>
+      <h2 class="title">Ancia 0.2.9</h2>
+      <div class="summary">まだ開発途中ですがAnciaを更新しました。アドレスバーと検索バーのスキン対応、ユーザエージョント変更など。他に、スクリプトの汎用性向上の仕様変更も入れる予定でしたが、時間がありませんでした。 スクリプトの汎用性向上とは、 アプリはアドレスバーのとき、DataObjectのTextにURL、UniformResourceLocatorにURLを設定し、スクリプトを実行 アプリは検索バーのとき、DataObjectのTextに検索キーワード、URLに検索クエリURLを設定し、スクリプトを実行 スクリプトのコピー.jsは、実行元によらず、DataObjectのTextをクリップボードにコピーする処理を書けばよい というものです。この仕様とすれば、ドロップアクション用のスクリプトを別ファイルに書く必要がなくなくなり、DataObjectを扱うスクリプトだけを書けばよい、となります。 Anciaについては、なにも書いていないので、備忘録としてもこれから少しずつでも書いていこうと思います。プロセスが残ったり、ドロップアクションを表示すると落ちることがあったり、まだまだです。。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-32/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・04・20</time>
-      <h2 class="title">if文</h2>
-      <div class="summary">文字列の大文字を小文字にする処理で、 char c=psz[i]; if((&lsquo;A&rsquo; &lt;= c) &amp;&amp; (c &lt;= &lsquo;Z&rsquo;)) c += 0x20; と if((c &lt;= &lsquo;Z&rsquo;) &amp;&amp; (&lsquo;A&rsquo; &lt;= c)) c += 0x20; では、下のif文のほうが、効率的です。 たとえば、URLはほぼ小文字なので、上のif文だと、&rsquo;A&rsquo;&lt;=cが必ずtrueとなり、 無駄に判定されてしまいます。if文では、先に効率よく判定できる条件順に書く 些細なことですが</div>
+      <time>2008・08・12</time>
+      <h2 class="title">ExplorerBarPlus 1.3.5</h2>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Firefoxのブックマーク読み取りで、フォルダの展開で表示異常になることがある問題を修正しています。placeのキーワード読み込みも対応しました。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://blog.anciasoft.jp/post/fxfavreader/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2008・07・29</time>
+      <h2 class="title">FxFavReader</h2>
+      <div class="summary">描画がおかしくなることがあるので直します。</div>
     </div>
   </a>
 </article>
@@ -203,6 +232,18 @@
   <div class="section">
     <header><div class="title">LatestPosts</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
+    <div class="detail">
+      <time>2016・03・23</time>
+      <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
+      <div class="summary">Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
@@ -312,18 +353,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/lunascape/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/adluna.png);"></div>
-    <div class="detail">
-      <time>2014・08・28</time>
-      <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
-      <div class="summary">試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。</div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -333,12 +362,25 @@
     
       <a href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (6)</a>
+      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (178)</a>
+      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (179)</a>
     
       <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
+      <a href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+    
+    </div>
+  </div>
+
+  <div class="section taxonomies">
+    <header><div class="title">Link</div></header>
+    <div class="content">
+      <a href="http://www.egrath.net/">Official Site</a>
+      <a href="https://twitter.com/kurimoto_y">Twitter</a>
+      <a href="http://forum.anciasoft.jp/">Forum</a>
+      <a href="http://blog.anciasoft.jp/atom.xml">Feed</a>
+
     </div>
   </div>
 
@@ -350,11 +392,20 @@
     </div>
 
     <footer class="site">
-      <p>&copy; 2016 ykuri</p>
+      <p>Copyright &copy; 2016 y-kurimoto.</p>
       <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
       <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
     </footer>
    
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-61717138-1', 'auto');
+    ga('send', 'pageview');
+    </script>
     
 
   </body>
