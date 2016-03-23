@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/tags/release/</link>
+    <language>ja-jp</language>
+    <author>ykuri</author>
+    <rights>Copyright (C) 2016 y-kurimoto.</rights>
+    <updated>2016-03-23 00:00:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>Ancia Ver1.9.118 のリリース内容</title>
+          <link>http://blog.anciasoft.jp/post/ancia19118/</link>
+          <pubDate>2016-03-23 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19118/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:f559805c96877e5a809e768dd3bb7410&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fix アプリアイコンの処理でリソースリークしているのを修正&lt;/strong&gt;&lt;br /&gt;
+報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。
+&lt;p&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118mixer.jpg&#34;&gt;&lt;/div&gt;&lt;br /&gt;
+この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。
+報告ありがとうございました。
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正&lt;/strong&gt;&lt;br /&gt;
+Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正&lt;/strong&gt;&lt;br /&gt;
+非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、
+固まったようになる問題を対応しています。
+報告ありがとうございました。
+&lt;p&gt;&lt;/p&gt;
+巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。
+この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、
+この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。
+&lt;p&gt;&lt;/p&gt;
+ハイライト、インライン検索でもこの対応を行う予定です。
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod GMailでURLが複数開かない状態でのTrident安定動作化&lt;/strong&gt;&lt;br /&gt;
+GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。
+もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように&lt;/strong&gt;&lt;br /&gt;
+Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。
+タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。
+&lt;p&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118flash.jpg&#34;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。
+そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。
+&lt;p&gt;&lt;/p&gt;
+現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod タブリストのサイドバー、ツールバーでfaviconを表示するように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod リンクのAタグコピーscriptでAタグを小文字に&lt;/strong&gt;&lt;br /&gt;
+他は軽い更新を行っています。
+お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。
+Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:f559805c96877e5a809e768dd3bb7410&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://www.egrath.net/download/Ancia19118.zip&#34;&gt;Ancia1.9.118.zip&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19118Beta&#34;&gt;更新一覧&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ブログリニューアルなど:f559805c96877e5a809e768dd3bb7410&#34;&gt;ブログリニューアルなど&lt;/h2&gt;
+
+&lt;p&gt;ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、
+管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。
+コメントはForumがあるため、受け付けることはやめることにしました。&lt;/p&gt;
+
+&lt;p&gt;今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。
+DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&gt;
+
+&lt;p&gt;今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。&lt;/p&gt;
+</description>
+          <syscatch>http://blog.anciasoft.jp/img/19118.jpg</syscatch>
+        </item>
+      
+    
+
+  </channel>
+</rss>

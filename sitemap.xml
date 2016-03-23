@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://blog.anciasoft.jp/</loc>
-    <lastmod>2016-01-06T23:03:25+09:00</lastmod>
+    <lastmod>2016-03-23T00:00:00+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/post/ancia19118/</loc>
+    <lastmod>2016-03-23T00:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -980,11 +985,6 @@
   <url>
     <loc>http://blog.anciasoft.jp/post/visual-studio-n/</loc>
     <lastmod>2006-08-17T01:15:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.anciasoft.jp/post/post-5/</loc>
-    <lastmod>2006-07-24T00:58:50+09:00</lastmod>
   </url>
   
   <url>

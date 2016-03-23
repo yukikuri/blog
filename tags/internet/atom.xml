@@ -3,9 +3,9 @@
   <channel>
     <title>ウェブブラウザ開発ブログ </title>
     <link>http://blog.anciasoft.jp/tags/internet/</link>
-    <language>en-us</language>
-    <author></author>
-    <rights>(C) 2016</rights>
+    <language>ja-jp</language>
+    <author>ykuri</author>
+    <rights>Copyright (C) 2016 y-kurimoto.</rights>
     <updated>2016-01-06 23:03:25 &#43;0900 JST</updated>
 
     
@@ -14,12 +14,13 @@
           <title>Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</title>
           <link>http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/</link>
           <pubDate>2016-01-06 23:03:25 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/</guid>
           <description>&lt;p&gt;問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://winveg.com/win/kb3133431-adobe-flash-player-20-0-0-272-windows-10-update-06-jan-2016/&#34;&gt;KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering&lt;/a&gt;&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/flash.png</syscatch>
         </item>
       
     
@@ -28,7 +29,7 @@
           <title>Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</title>
           <link>http://blog.anciasoft.jp/post/windows-updateflashcrash/</link>
           <pubDate>2016-01-04 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/windows-updateflashcrash/</guid>
           <description>&lt;p&gt;Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。&lt;/p&gt;
 
@@ -51,6 +52,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://kuku.neko2.net/?num=3246&#34;&gt;http://kuku.neko2.net/?num=3246&lt;/a&gt;&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/flash.png</syscatch>
         </item>
       
     
@@ -59,7 +61,7 @@
           <title>IEDiagnosticsAdapterを使ってみる</title>
           <link>http://blog.anciasoft.jp/post/iediagnosticsadapter/</link>
           <pubDate>2015-04-09 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/iediagnosticsadapter/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;で公開されているIEDiagnosticsAdapterを使用してみたメモです。&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter#installing&#34;&gt;installing&lt;/a&gt;に従えば、特にエラーもなく動かすことができました。下は、その手順です。&lt;/p&gt;
 
@@ -104,6 +106,7 @@ Chromeで、&lt;a href=&#34;http://localhost:9222/&#34;&gt;http://localhost:9222
 &lt;p&gt;&lt;a href=&#34;http://qiita.com/GackyQiita/items/0bb8c259e8e8cbfcac27&#34;&gt;JavaScript - JsRT を Windows アプリに組み込む - Qiita&lt;/a&gt;&lt;br /&gt;
 Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/IEDiagnosticsAdapter.png</syscatch>
         </item>
       
     
@@ -112,7 +115,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <title>キョリ測が動かないときがある</title>
           <link>http://blog.anciasoft.jp/post/post-64/</link>
           <pubDate>2014-10-23 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/post-64/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
 
@@ -126,6 +129,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 
 &lt;p&gt;200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/kyorisoku.png</syscatch>
         </item>
       
     
@@ -134,10 +138,11 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <title>Lunascape が表示ページ上部に広告を表示するかもしれない</title>
           <link>http://blog.anciasoft.jp/post/lunascape/</link>
           <pubDate>2014-08-28 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/lunascape/</guid>
           <description>&lt;p&gt;試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/adluna.png</syscatch>
         </item>
       
     
@@ -146,11 +151,9 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる(解決)</title>
           <link>http://blog.anciasoft.jp/post/ie11-domstorage-1/</link>
           <pubDate>2014-04-17 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/ie11-domstorage-1/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;sessionstorage.png&#34; src=&#34;http://blog.anciasoft.jp/img/sessionstorage.png&#34; width=&#34;729&#34; height=&#34;249&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;だいぶ前のversion 1.9.56(最新versionは1.9.62)で、&lt;a href=&#34;http://blog.anciasoft.jp/2014/01/ie11-domstorage.html&#34;&gt;IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記&lt;/a&gt; は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。&lt;/p&gt;
+          <description>&lt;p&gt;だいぶ前のversion 1.9.56(最新versionは1.9.62)で、&lt;a href=&#34;http://blog.anciasoft.jp/2014/01/ie11-domstorage.html&#34;&gt;IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記&lt;/a&gt; は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。&lt;/p&gt;
 
 &lt;p&gt;こちらで特定した原因は、IE内部で保持するsession storage値がタブを開くたびに倍で増えていき、そのsession storage値分ループ処理が動き、これが固まりにつながります。&lt;/p&gt;
 
@@ -163,6 +166,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 
 &lt;p&gt;session storageの調べ方は、残念ながら非公開です。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/sessionstorage.png</syscatch>
         </item>
       
     
@@ -171,11 +175,9 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる</title>
           <link>http://blog.anciasoft.jp/post/ie11-domstorage/</link>
           <pubDate>2014-01-31 23:59:59 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/ie11-domstorage/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;ie11domstoragefreeze.png&#34; src=&#34;http://blog.anciasoft.jp/img/ie11domstoragefreeze.png&#34; width=&#34;630&#34; height=&#34;251&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blog.anciasoft.jp/2013/11/internet-explor-2.html&#34;&gt;Internet Explorer 11でのJavascript問題 - 不定期日記&lt;/a&gt;のIE11環境で固まる現象で、DOMStorageを無効にすれば発生しないことがわかっています。&lt;/p&gt;
+          <description>&lt;p&gt;&lt;a href=&#34;http://blog.anciasoft.jp/post/internet-explor-2/&#34;&gt;Internet Explorer 11でのJavascript問題 - 不定期日記&lt;/a&gt;のIE11環境で固まる現象で、DOMStorageを無効にすれば発生しないことがわかっています。&lt;/p&gt;
 
 &lt;p&gt;IE11での対応が無いとどうしようもなさそうで、フィードバックを送っています。英語がちょっとおかしいかもしれませんが、日本語も書いてあるのでたぶん大丈夫です。&lt;/p&gt;
 
@@ -187,6 +189,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 
 &lt;p&gt;再現動画(&lt;a href=&#34;http://www.youtube.com/watch?v=0xACMTPPoM8&#34;&gt;http://www.youtube.com/watch?v=0xACMTPPoM8&lt;/a&gt;)のままで行えば、誰でも再現できると思います。ブラウザ以外でもWebBrowser Controlを複数作成して使用するアプリは結構ありそうで、固まり現象が出ていないのか不思議です。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/ie11domstoragefreeze.png</syscatch>
         </item>
       
     
@@ -195,7 +198,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <title>Internet Explorer 11でのJavascript問題</title>
           <link>http://blog.anciasoft.jp/post/internet-explor-2/</link>
           <pubDate>2013-11-11 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/internet-explor-2/</guid>
           <description>&lt;p&gt;Windows7用Internet Explorer11がdownload可能となりました。&lt;br /&gt;
 &lt;a href=&#34;http://windows.microsoft.com/ja-jp/internet-explorer/download-ie&#34;&gt;ダウンロード - Internet Explorer&lt;/a&gt;&lt;/p&gt;
@@ -207,6 +210,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 
 &lt;p&gt;タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
         </item>
       
     
@@ -215,7 +219,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <title>新しいメニュー動作</title>
           <link>http://blog.anciasoft.jp/post/post-62/</link>
           <pubDate>2013-10-02 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/post-62/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1939Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1939.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
@@ -234,6 +238,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 
 &lt;p&gt;メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/linkmenu.png</syscatch>
         </item>
       
     
@@ -242,11 +247,9 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <title>SleipnirのIE10表示問題</title>
           <link>http://blog.anciasoft.jp/post/sleipnirie10/</link>
           <pubDate>2013-08-09 09:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/sleipnirie10/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;ie9ie.png&#34; src=&#34;http://blog.anciasoft.jp/img/ie9ie.png&#34; width=&#34;517&#34; height=&#34;276&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。&lt;/p&gt;
+          <description>&lt;p&gt;SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;・SleipnirはページのX-UA-Compatibleを無視し、強制的にIE10モードで表示する&lt;/strong&gt;&lt;br /&gt;
 検証ページ：&lt;a href=&#34;http://www.egrath.net/download/conditionalcomments.htm&#34;&gt;Conditional Comments&lt;/a&gt; (X-UA-CompatibleにIE=9を指定)&lt;/p&gt;
@@ -259,6 +262,7 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 
 &lt;p&gt;Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/ie9ie.png</syscatch>
         </item>
       
     

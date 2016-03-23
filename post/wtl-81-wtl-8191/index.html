@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://blog.anciasoft.jp/css/style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.anciasoft.jp/atom.xml">
 
@@ -48,7 +49,7 @@
         <meta itemprop="name" content="ウェブブラウザ開発ブログ">
       </div>
       <div itemprop="author" itemscope itemtype="https://schema.org/Person">
-        <meta itemprop="name" content="">
+        <meta itemprop="name" content="ykuri">
       </div>
 
      <header class="article-header">
@@ -101,6 +102,18 @@ CAeroControlImpl</p>
   <div class="section">
     <header><div class="title">LatestPosts</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
+    <div class="detail">
+      <time>2016・03・23</time>
+      <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
+      <div class="summary">Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
@@ -210,18 +223,6 @@ CAeroControlImpl</p>
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/lunascape/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/adluna.png);"></div>
-    <div class="detail">
-      <time>2014・08・28</time>
-      <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
-      <div class="summary">試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。</div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -231,12 +232,25 @@ CAeroControlImpl</p>
     
       <a href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (6)</a>
+      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (178)</a>
+      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (179)</a>
     
       <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
+      <a href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+    
+    </div>
+  </div>
+
+  <div class="section taxonomies">
+    <header><div class="title">Link</div></header>
+    <div class="content">
+      <a href="http://www.egrath.net/">Official Site</a>
+      <a href="https://twitter.com/kurimoto_y">Twitter</a>
+      <a href="http://forum.anciasoft.jp/">Forum</a>
+      <a href="http://blog.anciasoft.jp/atom.xml">Feed</a>
+
     </div>
   </div>
 
@@ -249,11 +263,20 @@ CAeroControlImpl</p>
     </div>
 
     <footer class="site">
-      <p>&copy; 2016 ykuri</p>
+      <p>Copyright &copy; 2016 y-kurimoto.</p>
       <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
       <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
     </footer>
    
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-61717138-1', 'auto');
+    ga('send', 'pageview');
+    </script>
     
 
   </body>
