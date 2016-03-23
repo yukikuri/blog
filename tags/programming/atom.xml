@@ -3,9 +3,9 @@
   <channel>
     <title>ウェブブラウザ開発ブログ </title>
     <link>http://blog.anciasoft.jp/tags/programming/</link>
-    <language>en-us</language>
-    <author></author>
-    <rights>(C) 2016</rights>
+    <language>ja-jp</language>
+    <author>ykuri</author>
+    <rights>Copyright (C) 2016 y-kurimoto.</rights>
     <updated>2015-09-03 00:00:00 &#43;0900 JST</updated>
 
     
@@ -14,7 +14,7 @@
           <title>高解像度 HiDPI(Per-Monitor) に対応</title>
           <link>http://blog.anciasoft.jp/post/hidpiper-monitor/</link>
           <pubDate>2015-09-03 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/hidpiper-monitor/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19112Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/download/Ancia19112.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
@@ -31,6 +31,7 @@
 
 &lt;p&gt;Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/hidpi.png</syscatch>
         </item>
       
     
@@ -39,7 +40,7 @@
           <title>キョリ測が動かないときがある</title>
           <link>http://blog.anciasoft.jp/post/post-64/</link>
           <pubDate>2014-10-23 00:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/post-64/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
 
@@ -53,6 +54,7 @@
 
 &lt;p&gt;200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/kyorisoku.png</syscatch>
         </item>
       
     
@@ -61,11 +63,9 @@
           <title>WTL81 11324</title>
           <link>http://blog.anciasoft.jp/post/wtl81-11324/</link>
           <pubDate>2011-11-22 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/wtl81-11324/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;wtlribbon.png&#34; src=&#34;http://blog.anciasoft.jp/img/wtlribbon.png&#34; width=&#34;449&#34; height=&#34;287&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/projects/wtl/&#34;&gt;Windows Template Library (WTL) | Free Development software downloads at SourceForge.net&lt;/a&gt;で、WTL81 11324が出てます。更新履歴が「Changes Between WTL 8.1 And 8.0  @@ TODO」としか書いてませんね。下はざっと見た変更点です。&lt;br /&gt;
+          <description>&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/projects/wtl/&#34;&gt;Windows Template Library (WTL) | Free Development software downloads at SourceForge.net&lt;/a&gt;で、WTL81 11324が出てます。更新履歴が「Changes Between WTL 8.1 And 8.0  @@ TODO」としか書いてませんね。下はざっと見た変更点です。&lt;br /&gt;
 ・atlribbon.hが追加&lt;br /&gt;
 ・atlapp.h  〜 IsRibbonUIAvailable()やIsWin7()、CRegKeyEx追加&lt;br /&gt;
 ・atlctrlx.h 〜 CHyperLinkImplでリンクマウスオーバー時に下線表示になるっぽい&lt;br /&gt;
@@ -82,6 +82,7 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
 &lt;p&gt;新しくapp wizardにribbonが選択できて、はじめの画像は、ribbonありでビルドしてみたものです。&lt;br /&gt;
 &lt;img alt=&#34;wtlappwiz.png&#34; src=&#34;http://blog.anciasoft.jp/img/wtlappwiz.png&#34; width=&#34;404&#34; height=&#34;261&#34;  /&gt;&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/wtlribbon.png</syscatch>
         </item>
       
     
@@ -90,7 +91,7 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
           <title>ExplorerBarPlus 1.4.4</title>
           <link>http://blog.anciasoft.jp/post/explorerbarplus-41/</link>
           <pubDate>2011-05-01 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/explorerbarplus-41/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1440&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus144.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
@@ -100,6 +101,7 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
 &lt;a href=&#34;http://blogs.msdn.com/b/alejacma/archive/2008/11/20/controls-won-t-get-resized-once-the-nesting-hierarchy-of-windows-exceeds-a-certain-depth-x64.aspx&#34;&gt;Controls won&amp;rsquo;t get resized once the nesting hierarchy of windows exceeds a certain depth (x64) - Decrypt my World - Site Home - MSDN Blogs&lt;/a&gt;&lt;br /&gt;
 が原因で、まさかこんな動作があるとは、、&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
         </item>
       
     
@@ -108,7 +110,7 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
           <title>jQueryのコード</title>
           <link>http://blog.anciasoft.jp/post/jquery/</link>
           <pubDate>2010-06-24 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/jquery/</guid>
           <description>&lt;p&gt;jQueryのコードで、&lt;br /&gt;
 438:  var toplevel = false;&lt;br /&gt;
@@ -118,6 +120,7 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
 444:  if ( toplevel &amp;amp;&amp;amp; document.documentElement.doScroll ) {&lt;br /&gt;
 のほうがほんの少し効率がいいと思いました。他にも同じような部分がありそうで、判定順序を変えるだけの影響が少なそうな、お手軽修正ではないでしょうか。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
         </item>
       
     
@@ -126,11 +129,9 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
           <title>ReleaseバージョンでのCrash箇所の特定方法</title>
           <link>http://blog.anciasoft.jp/post/releasecrash/</link>
           <pubDate>2010-06-16 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/releasecrash/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;DetectCrashLine.png&#34; src=&#34;http://blog.anciasoft.jp/img/DetectCrashLine.png&#34; width=&#34;474&#34; height=&#34;175&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;Releaseバージョンでcrashしたときの場所の特定方法です。minidumpファイルか、最悪落ちた場所のアドレス情報があることが条件です。画像はわざとcrashさせています。&lt;/p&gt;
+          <description>&lt;p&gt;Releaseバージョンでcrashしたときの場所の特定方法です。minidumpファイルか、最悪落ちた場所のアドレス情報があることが条件です。画像はわざとcrashさせています。&lt;/p&gt;
 
 &lt;ol&gt;  
 &lt;li&gt;プロジェクトでマップファイルを作成する設定にしておく → プロジェクトのリンカ、デバッグ、マップファイルの作成ではいとする  
@@ -150,6 +151,7 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
 
 &lt;p&gt;Anciaでは落ちたときのGetExceptionInformation()情報とモジュール一覧、minidumpファイルを出力する予定です。minidumpファイルがあれば、スタックトレースが出るので、かなり状況が分かるはずです。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/DetectCrashLine.png</syscatch>
         </item>
       
     
@@ -158,10 +160,11 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
           <title>スムーズスクロールがもたつく原因</title>
           <link>http://blog.anciasoft.jp/post/post-51/</link>
           <pubDate>2010-05-17 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/post-51/</guid>
           <description>&lt;p&gt;どうもスムーズスクロールでもたつく原因は、foregroundウインドウの設定っぽいです。そのスレッド内でのウインドウにforegroundウインドウがないとだめっぽいです。単にポップアップにしてもforegroundでなければ、だめだったので。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/smooths.png</syscatch>
         </item>
       
     
@@ -170,7 +173,7 @@ atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加&lt;/p&gt;
           <title>ExplorerBarPlus 1.4.1</title>
           <link>http://blog.anciasoft.jp/post/explorerbarplus-38/</link>
           <pubDate>2010-04-26 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/explorerbarplus-38/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1410&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus141.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
@@ -192,6 +195,7 @@ func(sz);&lt;br /&gt;
 
 &lt;p&gt;v1.4.0の4/25日のインストーラで、インストールが不十分だったので、インストーラを差し替えています。もし、v1.4.0をインストールした方は、v1.4.1をインストール、または、再度v1.4.0のインストールをお願いします。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
         </item>
       
     
@@ -200,11 +204,9 @@ func(sz);&lt;br /&gt;
           <title>ExplorerBarPlusのタブモード表示対応</title>
           <link>http://blog.anciasoft.jp/post/explorerbarplus-37/</link>
           <pubDate>2010-04-19 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/explorerbarplus-37/</guid>
-          <description>&lt;p&gt;&lt;img alt=&#34;tm2.png&#34; src=&#34;http://blog.anciasoft.jp/img/tm2.png&#34; width=&#34;489&#34; height=&#34;278&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0806&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0806.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0806&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0806.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;ExplorerBarPlusのタブモードとお気に入りを表示できるようになりました。ほかのIEツールバー、サイドバーはまだ表示できません。ExplorerBarPlusの表示は、メニュー[表示(V)]-&amp;gt;エクスプローラバーから行えます。スクリプトでの表示/非表示もまだ出来ません。&lt;/p&gt;
 
@@ -212,6 +214,7 @@ func(sz);&lt;br /&gt;
 
 &lt;p&gt;CPU情報の表示はCPUIDを元にしていますが、確認マシンが少ないので、間違った表示になるかもしれません。Aero Glassの表示は、結構大変でした。これで、ドロップアクションの背景もAero Glassに出来るかも、、&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/tm2.png</syscatch>
         </item>
       
     
@@ -220,7 +223,7 @@ func(sz);&lt;br /&gt;
           <title>タブマネージャ機能</title>
           <link>http://blog.anciasoft.jp/post/post-49/</link>
           <pubDate>2010-04-05 02:00:00 &#43;0900 JST</pubDate>
-          <author></author>
+          <author>ykuri</author>
           <guid>http://blog.anciasoft.jp/post/post-49/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0805&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0805.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
 タブを強制終了可能なタブマネージャ機能を追加しています。短時間で作ったのでThemeが効いていなかったりします。TabManagerの下の方は、グラス表示にしてみようかと思います。今の強制終了は、WM_QUITで終了できなければ、Terminateしています。ここは、安全に終了できるとき(タブの閉じる履歴が残る)は、そちらを優先するように変える予定です。CPU使用率や、メモリ表示、強制終了したタブはabout:crash表示する、も追加予定です。&lt;/p&gt;
@@ -233,6 +236,7 @@ func(sz);&lt;br /&gt;
 
 &lt;p&gt;※ここでのデータ結合という言葉を正しい意味で使用しているかは、よく知らない。&lt;/p&gt;
 </description>
+          <syscatch>http://blog.anciasoft.jp/img/tm.png</syscatch>
         </item>
       
     
