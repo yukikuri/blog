@@ -20,7 +20,8 @@
 
 &lt;p&gt;ブログのatom.xml読み込みは、非同期でも可能ですが、非同期にしてさらにリクエストを増やすより、リクエストが来ているのだから、たかが20Kのファイル、サーバで読み取った方がいいんじゃないかと、素人考えで思いました。&lt;/p&gt;
 </description>
-          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
+          <desctext>で、ブログエントリの最新3件まで表示しているが、日本語のタイトルで文字化けが発生。domxml_open_fileは、どうやらUTF-8として扱ってしまうらしく、mb_convert_encodingでUTF-8からEUC-JPにしたので、このタイトルが文字化けしていないはず。 ブログのatom.xml読み込みは、非同期でも可能ですが、非同期にしてさらにリクエストを増やすより、リクエストが来ているのだから、たかが20Kのファイル、サーバで読み取った方がいいんじゃないかと、素人考えで思いました。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
         </item>
       
     
@@ -33,7 +34,8 @@
           <guid>http://blog.anciasoft.jp/post/post-7/</guid>
           <description>&lt;p&gt;休み中に時間があるかなと思い購入したゲーム、一度もプレイすることなくお休みが終了、、&lt;/p&gt;
 </description>
-          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
+          <desctext>休み中に時間があるかなと思い購入したゲーム、一度もプレイすることなくお休みが終了、、</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
         </item>
       
     
@@ -48,7 +50,8 @@
 
 &lt;p&gt;障害が起こっているようです。&lt;/p&gt;
 </description>
-          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
+          <desctext>■「xrea.com」を含むURLのアクセス障害について 障害が起こっているようです。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
         </item>
       
     
@@ -62,7 +65,8 @@
           <description>&lt;p&gt;Vistaのスクリーンショット&lt;br /&gt;
 &lt;a href=&#34;http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx&#34;&gt;http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx&lt;/a&gt;&lt;/p&gt;
 </description>
-          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
+          <desctext>Vistaのスクリーンショット http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
         </item>
       
     
@@ -75,7 +79,8 @@
           <guid>http://blog.anciasoft.jp/post/test/</guid>
           <description>&lt;p&gt;test&lt;/p&gt;
 </description>
-          <syscatch>http://blog.anciasoft.jp/img/default.jpg</syscatch>
+          <desctext>test</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
         </item>
       
     
