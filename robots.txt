@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://blog.anciasoft.jp/sitemap.xml
