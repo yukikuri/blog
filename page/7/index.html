@@ -38,6 +38,20 @@
         
         <div class="col-sm-6">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-56/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/mb.png);"></div>
+    <div class="detail">
+      <time>2010・08・02</time>
+      <h2 class="title">マルチブックマーク機能</h2>
+      <div class="summary">更新履歴 download マルチブックマーク機能を追加しています。いまはブックマークとして使用できるのはIEブックマークのみで、オプション設定のブックマーク設定からIEブックマークの追加や設定が行えます。いまは、設定機能が乏しく表示フォルダ変更ぐらいしかありません。今後の対応で設定項目の追加やブックマークの内容をツールバーで表示できるようにする予定です(IEブックマークならリンクバーが表示できる)。 使用できるブックマーク追加で、はてなブックマークとタブリストは対応しようと思いますが、他のブラウザFirefoxなどのブックマークは、正式公開した後になるかもしれません。マルチプロセスも大変そうなので、正式公開後に対応しようと思います。Firefoxなどが使えるようになると、使用するブックマークに依存しないブラウザになります。</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-6">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-ver088/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
@@ -78,7 +92,7 @@
 
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <article class="li">
   <a href="http://blog.anciasoft.jp/post/2/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/gesturecursor2.png);"></div>
@@ -162,20 +176,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/releasecrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/DetectCrashLine.png);"></div>
-    <div class="detail">
-      <time>2010・06・16</time>
-      <h2 class="title">ReleaseバージョンでのCrash箇所の特定方法</h2>
-      <div class="summary">Releaseバージョンでcrashしたときの場所の特定方法です。minidumpファイルか、最悪落ちた場所のアドレス情報があることが条件です。画像はわざとcrashさせています。 プロジェクトでマップファイルを作成する設定にしておく → プロジェクトのリンカ、デバッグ、マップファイルの作成ではいとする プロジェクトでcodファイルを作成する設定にしておく → プロジェクトのC/C++、出力ファイル、アセンブリの出力で、アセンブリ コード、コンピュータ語コード、ソース コード(/FAcs)を選択 mapファイルから落ちた関数を特定 画像だと0x004180ff が落ちた箇所で、mapファイルで、落ちた箇所の範囲の関数を調べる。下のmapファイルの内容では、MsgLoop関数内と分かる。 0001:000170bd ?MsgLoop省略 004180bd f MainFrm.obj 0001:000171dd ?省略 004181dd f i MainFrm.obj 落ちたオフセットを求める 〜 0x004180ffと0x004180bdからオフセットは0x42となる codファイルでMsgLoopのオフセット0x42を調べる 下のcodファイルで0x42からソースコードの行が特定できる。 ; 5971 : *(int*)(0) = 100; 00042 c7 05 00 00 00 &nbsp;&nbsp;&nbsp;&nbsp;00 64 00 00 00 mov DWORD PTR ds:0, 100 ; 00000064H Anciaでは落ちたときのGetExceptionInformation()情報とモジュール一覧、minidumpファイルを出力する予定です。minidumpファイルがあれば、スタックトレースが出るので、かなり状況が分かるはずです。</div>
-    </div>
-  </a>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -204,6 +204,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2016・03・27</time>
+      <h2 class="title">Ancia でのSkinの紹介</h2>
+      <div class="summary">Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。 タブスキンのご紹介 作者：g13131gさん ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。 ダウンロード: ancia_tabskin_pack.zip skin/default/ui配下に上書きして使用できます。 標準のスキンよりactiveなタブが強調表示されるスキンとなっています。 DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。 詳しいスキン説明についてはこちらをご覧いただければと思います。 Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版 Anciaソフトウェアフォーラム • トピック - タブスキン紹介</div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
@@ -313,18 +325,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
-    <div class="detail">
-      <time>2014・10・23</time>
-      <h2 class="title">キョリ測が動かないときがある</h2>
-      <div class="summary">キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。 ・204応答でNavigateError 204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。 200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -336,7 +336,7 @@
     
       <a href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (179)</a>
+      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
     
       <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     

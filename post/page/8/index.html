@@ -41,6 +41,20 @@
         
         <div class="col-sm-4">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-47/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2010・03・23</time>
+      <h2 class="title">設定の同期で苦戦中</h2>
+      <div class="summary">設定の同期、というか子処理は、メイン処理と同じ設定値のコピー値で動作させるところで、直す部分が多すぎて、大変です。ビットフィールドは使うんじゃなかったかな。 struct A { UINT isA:1; UINT isB:1; UINT isC:1; UINT isD:1; } a; a.isA = TRUE; a.isB = FALSE; a.isC = TRUE; a.isD = FALSE; int v = (int)&a; で無理やり変換してもいいですが、if(a.isB)のアセンブリ mov edx,dword ptr [a] shr edx,1 and edx,1 がif(v &amp; 0x2)のandの mov eax,dword ptr [v] and eax,2 に比べ1命令多いので、ビットフィールドはやめることにします。たった1命令減ってもナノセカンドも差が出ないと思いますが、ifの使用箇所が多いのと、命令が少なくなることはデメリットではないので</div>
+    </div>
+  </a>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/anciaie9-platfo/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9pp.png);"></div>
     <div class="detail">
@@ -193,20 +207,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-37/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/jll.png);"></div>
-    <div class="detail">
-      <time>2009・11・30</time>
-      <h2 class="title">ジャンプリストカスタマイズ</h2>
-      <div class="summary">更新履歴 download 久しぶりに更新しました。 ジャンプリストでよく表示するページの表示や、タスクから直にクリップボードテキストで検索、新規タブを開けるようにしました。テキストからの新規タブはある程度httpなどを補完します。タスクの実体はスクリプトに変更したので、アイコンが表示可能になり、スクリプトが書ける人は、いろいろできるようになっています。ただジャンプリストのアイコンは、一度アイコンが設定されると、アイコンを変えても反映されないようです。 ジャンプリストの変更は、設定名ｊｕｍｐＬｉｓｔのジャンプリスト設定から行えます。アプリをタスクアイテムから起動したとき、タブがひとつも無い状態でスクリプトが実行されるので、App.ActiveTab()は参照できません。またスクリプトの実行後タブが作成されなかったとき、強制的にlocalhomeが開かれます。 XpでWindowsUpdateがうまくいかないようですが、Xp新規インストールで試してみても大丈夫でした。まだ何か残っているかもしれません。。</div>
-    </div>
-  </a>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -235,6 +235,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2016・03・27</time>
+      <h2 class="title">Ancia でのSkinの紹介</h2>
+      <div class="summary">Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。 タブスキンのご紹介 作者：g13131gさん ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。 ダウンロード: ancia_tabskin_pack.zip skin/default/ui配下に上書きして使用できます。 標準のスキンよりactiveなタブが強調表示されるスキンとなっています。 DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。 詳しいスキン説明についてはこちらをご覧いただければと思います。 Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版 Anciaソフトウェアフォーラム • トピック - タブスキン紹介</div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
@@ -344,18 +356,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
-    <div class="detail">
-      <time>2014・10・23</time>
-      <h2 class="title">キョリ測が動かないときがある</h2>
-      <div class="summary">キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。 ・204応答でNavigateError 204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。 200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -367,7 +367,7 @@
     
       <a href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (179)</a>
+      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
     
       <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
