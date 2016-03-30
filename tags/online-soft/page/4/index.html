@@ -49,6 +49,7 @@
       <div class="summary">更新履歴 download Ancia0.9.32が出ていますが、0.9.31からURLアクションが利用可能になっています。このURLActionでAutoPagerizeを動作させることが可能です。AutoPagerizeは、ブックマークレット xAutoPagerize を利用させてもらっています。大変便利な機能ありがとうございます。 ● AutoPagerizeの利用の仕方 １, xAutoPagerizeForAncia.js をダウンロードする xAutoPagerizeForAncia.jsをダウンロードし、Anciaのscriptフォルダに保存します。 xAutoPagerizeForAncia.jsの内容は、ブックマークレットの内容と変わっていません。複雑でないブックマークレットなら、そのままURLActionに使用できます。 ２, オプション設定でURLActionの設定を行う オプション設定のURLActionの「読み込み後のアクション一覧」にURLパターン「*」、動作に「スクリプト:xAutoPagerizeForAncia.js」としてアクションを追加します(下は追加後の画像です)。 「適用」を押すと、追加したアクションが反映されます。 ３, AutoPagerizeを動作させてみる Google検索での動作が分かりやすいと思います。ドロップアクションで、適当な語句をGoogle検索に渡します。 検索結果のページで、赤い部分に緑の四角が出ていればAutoPagerizeが動作しています。 あとは、ページの下へスクロールすれば、AutoPagerizeの動作が体感できるはずです。 注：IE9だと、AutoPagerizeで追加されたページにもハイライトが反映されるんですが、IE8だとうまく動いていません。これは対応可能なら対応します。IEのバージョンやページによっては、AutoPagerizeが動かないページがあるようです。 ドロップアクションで手軽に検索し、検索語句がハイライトされ、さらに検索結果のページにURLActionでAutoPagerizeが動いて、AutoPagerizeで追加ページにハイライトが反映されるといった、なんか連携した動きになってます。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -63,6 +64,7 @@
       <div class="summary">MSDNライブラリで、候補を取得できるURLが分かり、 開発系の検索エンジン追加 のMSDNオープンサーチのXMLファイル更新しています。追加で上書きすれば、更新されます。たぶん検索候補に対応したIEでも使えるはずです。 検索候補URLは、 http://services.social.microsoft.com/search//Data/AutoCompleteTerms?t={searchTerms}&amp;b=Msdn&amp;l=en-US&amp;m=20&amp;rf=oss10 で、最後のoss10をxml等にすれば別の形式が返ってきます。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -77,6 +79,7 @@
       <div class="summary">更新履歴 download やっとアプリケーションの関連付けが可能になりました。Vista,7では、オプション設定でレジストリに登録後、「規定のブラウザ選択画面」からAnciaを選択すれば関連付けられます。Xpならレジストリに登録すれば、関連付け、削除すれば関連付け解除です。 関連付ける拡張子は、Vista,7なら選択できますが、Xpは、.html、.htm、.mhtml、mht、.shtml、ftp・http・httpsプロトコル固定で関連付けしています。余裕があれば、Xpで登録する拡張子を選択できるようにする予定です。レジストリの登録実体は、script\reserved\regApp.jsなので、中を見れば何をやっているかわかります。関連付けを行った後、もしアプリケーションを削除する場合は、レジストリからの削除を推奨します。 regApp.jsは簡易的なsetbrowser的なことも可能で、単独で使用できます。たとえばunDonutを7に登録したい場合は、 cscript.exe C:\Ancia\script\reserved\regApp.js &ldquo;{&lsquo;regist&rsquo;:true,&lsquo;appPath&rsquo;:&lsquo;C:\app\unDonut\unDonut.exe&rsquo;,&lsquo;sysVer&rsquo;:7000,&lsquo;ieVer&rsquo;:9000}&rdquo; を管理者権限コマンドプロンプトから実行すれば、ブラウザ選択画面にunDonutを出せます。&rsquo;regist&rsquo;:falseで解除です。sysVerは5000(XP)、6000(Vista)、7000(Windows7)、ieVerは9000ならIE9、IE8なら8000です。appPathに登録するブラウザのフルパスを指定します(\は\にエスケープする必要あり)。 タブリストの内容をサイドバー・ツールバーに表示可能になっています。もし表示できない場合は、オプション設定のブックマーク設定・ブックマークの追加で「タブリスト」ブックマークを追加すれば表示出来るはずです。タブリストバーでまだシェブロンは出ません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -91,6 +94,7 @@
       <div class="summary">更新履歴 download ドロップアクションやボタン型マウスジェスチャのAero表示に対応しています。Aero表示するしないは、ドロップアクション/マウスジェスチャの設定から切り替え可能です（下はマウスジェスチャ） IEお気に入りでマウスのドラッグドロップでアイテム順序を入れ替え可能にしています。デフォルトの順序は、IE順ですが、入れ替えを行うと、自動的にユーザ定義順になります。順序は各フォルダ毎に名前順・IE順・ユーザ定義を指定できます。 リンクバーもマウスで並び替えできるようにしていますが、まだサブフォルダへの移動がうまく動いてません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -105,6 +109,7 @@
       <div class="summary">更新履歴 download 2011年ということで、アプリアイコンを新しくしました。すこしTheWorldっぽいですが、、今年こそは、完成まで行くはず、、だと思います。 systemメニューにコマンドバーでのメニューなど色々含めています。XpでIEスタイルにすると落ちる問題が出ています。これは次のバージョンで修正されます。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -119,6 +124,7 @@
       <div class="summary">いままでの更新でいろいろ便利な機能を追加しているので、いくつか紹介したいと思います。 VirusTotalでのUrlスキャン リンク先の詳細を調べるのにドロップアクションから、aguseで簡単に調べることができますが、VirusTotalでのURLスキャンも可能になっています。0.9.16ではデフォルトでボタンが設定されていますが、ボタンがない場合は、ドロップアクションの設定からボタンを追加できます。 あとは、リンクをドラッグし、VirustotalでURLをスキャンボタンにドロップするだけでスキャンが始まります。 見ているページをツイートする 今見ているページをツイートするTweetButtonのような動作を、ブラウザのツールバーボタンから行うことができます。デフォルトではボタンが表示されていないため、標準ツールバーを表示し、ツールバー右クリックから「ツールバーのボタンを変更&copy;&hellip;」を選びます。 ツールバーの変更で、種類：規定のスクリプトにある「このページをツイートする」ボタンを追加します。 あとは、ツイートしたいページでボタンを押せば、ツイートページが開きます。簡単ですね。 ツイートボタンは、htsignさんに作成してもらいました！ありがとうございます。htsignさんには、他にTumblrへのリンク投稿スクリプトも作成してもらっています。Tumblrへのリンク投稿は、このページをツイートするボタンと同じく、ボタン追加で使用することができます。 短縮URLをクリップボードにコピー VirusTotalでのURLスキャンと同じく、ドラッグ＆ドロップで短縮URLをクリップボードにコピーすることができます。現在可能なのは、bit.ly、McAfee、TinyURL、次のバージョン0.9.17では、ux.nuも使用可能になります。 bit.lyで、アカウント情報を使用したいときは、オプション設定 -&gt; スクリプトの設定の「スクリプト個別動作設定」で、bitlyで短縮URLをコピーの「設定」からユーザ情報を設定できます。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -133,6 +139,7 @@
       <div class="summary">更新履歴 download TabManagerの機能を強化しています。Anciaが固まっても、TabManagerでタブが表示されれば、「Ancia」右クリック -&gt; 「タブリストで保存(S)」からタブリストで保存ダイアログを開くことができます。もし表示されない場合は、すみませんが、あきらめるしかないです。タブアイテム右クリックからURLをコピーなど、また、ドラッグ＆ドロップも可能です。 「全タブURLをクリップボードにコピー」はまだ未サポートです。タブリストの保存は、アプリでの保存と同じくセキュリティ、ハイライト、戻る進む履歴等も保存します。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -147,6 +154,7 @@
       <div class="summary">更新履歴 download 標準ツールバーだけ、Aero表示切替の対応をしています。標準ツールバーの右クリック -&gt; 「ツールバーをAero表示」を選択することで切り替えられます。Aero表示の切り替えは、画面スタイルがIEスタイルである必要があります。Xpだと少し見た目が悪いかもしれません。他のツールバーも切り替え対応予定です。 検索バーの右クリックからクリップボードテキストで貼り付け検索出来るようになっています。貼り付け検索では、ステータスバーに貼り付けるクリップボードテキストが出るので事前に確認できます。検索エンジンをメニューから選んでの貼り付け検索も可能です。 また、動画が再生できないバグが見つかっています。もし動画が再生できない場合は、IEなどで開くようお願いします。再生できないサイトとしては、例えばhttp://mlb.mlb.com/video/play.jsp があります。調べたんですが、ちょっと直し方は見当がつきません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -161,6 +169,7 @@
       <div class="summary">更新履歴 download Aero表示のとき上部のバーを移動できるようにしています。配置によっては、IE9っぽくすることもできます。0.9.12でAero表示(オプション設定-&gt;画面スタイル-&gt;Internet Explorerスタイル)にすると、強制的に全ての検索バーとアドレスバーが上部に配置されます。今後の更新で、上部に配置する・配置しないを出来るようにする予定です。 デフォルトの画面スタイルでアドレスバーの背景をちょっと変えています。 0.9.12のバグで、favicon表示されませんが、修正したものをhttp://www.egrath.net/download/Ancia0912favicon_fix.zipに置いています。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -175,6 +184,7 @@
       <div class="summary">更新履歴 download スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。 var input=App.InputBox( { caption:&ldquo;Windowキャプション&rdquo;, statics:[{text:&ldquo;上部スタティックテキスト&rdquo;},{text:&ldquo;下部スタティックテキスト&rdquo;}],//2つまで inputs:[{label:&ldquo;Input1(&amp;1):&ldquo;,value:&ldquo;value1value1&rdquo;}, {label:&ldquo;Input2(&amp;2):&ldquo;,value:&ldquo;value2value2&rdquo;}, {label:&ldquo;Input3(&amp;3):&ldquo;,value:&ldquo;value3value3&rdquo;}, {label:&ldquo;Input4(&amp;4):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;},// number: 数値入力のみ {label:&ldquo;Input5(&amp;5):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;}],// 5つまで buttons:[{text:&ldquo;OK&rdquo;},{text:&ldquo;キャンセル&rdquo;,style:&ldquo;default&rdquo;}]}); // input： OKだとjson形式のテキスト、Cancelだとfalseが返却 // json形式のテキストは以下の通り // {&ldquo;inputs&rdquo;:[&ldquo;value1value1&rdquo;,&ldquo;value2value2&rdquo;,&ldquo;value3value3&rdquo;,&ldquo;1234567890&rdquo;,&ldquo;1234567890&rdquo;]} OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&ldquo;(&rdquo;+input+&ldquo;)&rdquo;).inputs[0]のように入力結果を取得できます。 Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。 inputのタイプは、指定なし(普通のedtibox)、style:&ldquo;number&rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -189,6 +199,7 @@
       <div class="summary">更新履歴 download タブのフォントを変更できるようになっています。タブのフォントサイズは大きすぎてもタブのスキン最大表示サイズまで丸められます。それと、オプション設定の見た目を少し変えています。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -203,6 +214,7 @@
       <div class="summary">更新履歴 download インストールされているIEのバージョンに応じて最新のレンダリングを使用するよう対応しています。IE9ベータがインストールされていれば、自動的にIE9のレンダリングを使用します。画像はAnciaをIE9で使用したものですが、最初のオープンでAcid3は92点、なぜかリロードすると95点です。またIE9のみですが、最新のJavaScriptエンジンを使用するようになっています。 レンダリングとJavaScriptエンジンの指定は、最新のIEの機能を使用するために、レジストリを使用します。レジストリに書き込む値は、設定ファイルで決まり、起動時に毎回書き込むため、あらかじめレジストリに設定がないと動かない、というわけではありません。アプリ設定の保存にレジストリを使用しないのは従来どおりです。 できれば互換表示も対応したいんですが、なかなかうまくいってません。 設定ファイルの書き込みバグを修正しています。このバグが発生すると、前回起動時のタブの読み込みなど失敗するので、このようなバグが直っています。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -213,11 +225,13 @@
     
 <nav class="paging">
   
-  <a href="/tags/online-soft/page/3" class="left" rel="prev">PREV</a>
+  <a href="/tags/online-soft/page/3" class="left" rel="prev">&lt; 前へ</a>
   
 
+  <span class="center">Page 4 of 15</span>
+
   
-  <a href="/tags/online-soft/page/5" class="right" rel="next">NEXT</a>
+  <a href="/tags/online-soft/page/5" class="right" rel="next">次へ ></a>
   
 </nav>
 
@@ -242,7 +256,7 @@
     <div class="detail">
       <time>2016・03・27</time>
       <h2 class="title">Ancia でのSkinのご紹介</h2>
-      <div class="summary">Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。 タブスキンのご紹介 作者：g13131gさん ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。 ダウンロード: ancia_tabskin_pack.zip skin/default/ui配下に上書きして使用できます。 標準のスキンよりactiveなタブが強調表示されるスキンとなっています。 DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。 詳しいスキン説明についてはこちらをご覧いただければと思います。 Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版 Anciaソフトウェアフォーラム • トピック - タブスキン紹介</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -254,7 +268,7 @@
     <div class="detail">
       <time>2016・03・23</time>
       <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="summary">Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -266,7 +280,7 @@
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
-      <div class="summary">問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。 KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -278,7 +292,7 @@
     <div class="detail">
       <time>2016・01・04</time>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="summary">Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。 Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ http://d.hatena.ne.jp/noushibou/20160102/1451724506 Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。 Adobe Flash Playerの配布 | Adobe http://www.adobe.com/jp/products/flashplayer/distribution3.html Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。 Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/ 1&frasl;4 追記 フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。 http://kuku.neko2.net/?num=3246</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -290,7 +304,7 @@
     <div class="detail">
       <time>2015・09・03</time>
       <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="summary">更新履歴 Download 1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。 1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。 AnciaでのHiDPI対応は、Per-Monitor Awareですが、異なるdpiのMonitorにWindowを移動したとき、アイコンサイズはMonitorのdpiに応じた表示に変化するまでは対応していません。Internet Explorerも同様の動作のようです。異なるdpiのMonitorに移動したときアイコンサイズまでdpiに合わせることになると、Faviconやファイルのアイコンをサイズに従い再度取得することになるため、負荷が非常に大きいです。ツールバーのアイコンだけならそれほどの負荷もなくdpiに応じたサイズに切り替えられるでしょう。 Internet Explorerの場合だと、サイドバーのアイテムアイコンなどは、シェルのイメージリストを使用しているようなので、シェルのイメージリストがMonitor単位のサイズではなくSystem DPIに応じた固定サイズになることから、そもそもHiDPI(Per Monitor)でサイドバーアイコンサイズは切り替えられないのだと思います。 Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -302,7 +316,7 @@
     <div class="detail">
       <time>2015・04・09</time>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
-      <div class="summary">Microsoft/IEDiagnosticsAdapterで公開されているIEDiagnosticsAdapterを使用してみたメモです。installingに従えば、特にエラーもなく動かすことができました。下は、その手順です。 1.Download 32bitのとき x86、64bitのとき x64をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。 2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する 64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&rdquo;ALL APPLICATION PACKAGES&rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。 実行するコマンド(RXは読み出し実行の意味)： icacls proxy.dll /grant &ldquo;ALL APPLICATION PACKAGES&rdquo;:(RX) 3.IEを起動する 2と3は順序が逆でも大丈夫でした。 4.Chromeで、localhost:9222を開く Chromeで、http://localhost:9222を開きます。開くと、IEと、IEコンポも一覧で出てきます。 5. localhost:9222の一覧から対象を選ぶ 対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、 が表示されます。Chrome側はdevtoolの表示になります。 使ってみた感じだと、 ・consoleは動かない。 ・要素の変更も動かない。 ・要素の中身の表示と選択要素のハイライトは動く。 ・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。 ・IEコンポも認識される といったところでした。 IEコンポを認識するのは、プロセスに関係なく&rdquo;Internet Explorer_Server&rdquo;のwindow classをすべて列挙しているからみたいです。 Microsoft/IEDiagnosticsAdapterの中身を見ると、JsRTというものを使用しています。 JavaScript - JsRT を Windows アプリに組み込む - Qiita Jsonのパーサに使えるかもしれません。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
     </div>
   </a>
 </article>
@@ -314,7 +328,7 @@
     <div class="detail">
       <time>2015・03・17</time>
       <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="summary">更新履歴 Download 1.9.101で、ハイライト・インライン検索を最新の状態に更新可能にしています。Twitter検索など、自動でコンテンツが追加されていくページなどは、アプリでハイライトを更新するのが残念ながら難しいです。最新に更新するボタンで、コンテンツが更新されても、ハイライト・インライン検索を行うことができます。ハイライト・インライン検索の最新の状態に更新では、キーワードの選択状態も維持します。 1.9.101ではハイライトが行われないページ対策でタイミングの調整も行っていますが、まだgoogle検索３ページ目などでハイライトが行われない場合があり、また調整予定です。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -326,7 +340,7 @@
     <div class="detail">
       <time>2015・03・02</time>
       <h2 class="title">新機能: FullWindow表示ボタン</h2>
-      <div class="summary">更新履歴 Download 1.9.99で前から追加したかった、フレーム上でフルウインドウ表示を可能にするボタン表示に対応しています。ただし、現状では試験機能(testFeature)がonで、さらにDWM表示が有効のときしか表示されません。今後の予定でDWM無効でも表示可能にするかもしれません。 フルウインドウ表示自体はすでに備わっている機能ですが、フルウインドウ表示は、 ■ 複数起動やタブの切り離しと相性がよい(動画だけ見たいときは、切り離し後フルウインドウ表示にすることで邪魔なツールバー・タブを非表示にできる) ■ 多量にタブを開いていても・ツールバーが多量にあっても、非表示にすることで、今開いているページに集中できる ■ 多量にタブを開いていても・ツールバーが多量にあっても、現ページのみの表示にすることで、簡易的なボスが来た機能に使える のような利点があります。 今後の更新で、任意のボタンを追加できるようにする予定です。現状でもresource/frame_toolbar.jsonをsetting/customize配下に配置し、直接ファイルを変更することでボタン追加できますが自己責任となります。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -338,7 +352,7 @@
     <div class="detail">
       <time>2015・01・30</time>
       <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
-      <div class="summary">更新履歴 Download ver1.9.95で、windows8.1環境でtouch対応を行っています。その対応の関係で、touch操作ではブラウザメニュー操作が行えるんですが、マウスだとメニュー項目を選択できない不具合が出ています。この不具合は、次回対応予定です。 不具合は、オプション設定全般「ブラウザで旧メニューを使用する - legacyMenu」チェックonで回避できます。windows8.1環境の場合、対応までlagacyMenuチェックonで回避をお願いします。 2015/2/2追記 1.9.96でメニュー動作がおかしい問題に対応しています。 更新履歴 Download</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -350,7 +364,7 @@
     <div class="detail">
       <time>2014・12・23</time>
       <h2 class="title">新機能: 応答なしページの検出</h2>
-      <div class="summary">更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -363,15 +377,15 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (1)</a>
     
     </div>
   </div>

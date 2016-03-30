@@ -49,6 +49,7 @@
       <div class="summary">更新履歴 download マルチプロセス/スレッドでIEツールバー、ExplorerBarを使用可能にしました。IEツールバーで初めの表示のあと、非表示にすると、空のバーが出たままになるのと、初回のツールバー移動がうまくいかない不具合を早速見つけてしまいましたが、、次回になおします。この場合は、一度ツールバー表示の後アプリを再起動すると、直ります。 報告受けていた不具合 ・ツールバーを削除すると落ちる ・スクリプトエラーダイアログで固まる。 ・マルチプロセスでキー入力でタブが落ちる、これはおそらくMDIアクセラレータの修正で直っているはずです ・サイドバーが閉じない も直しました。報告ありがとうございます。 IEツールバーで、タブの作成でバックグラウンドであっても必ず作成していますが、マルチで動いているときに、多重でツールバー作成が動作するとあまりよろしくない感じがするので、これは、タブがアクティブになったときに作成するよう変えようと思います。TabManagerは今回更新していないのですが、またhttp://www.virustotal.com/jp/では、KasperskyとAntiy-AVLがウイルスと出ちゃいます。TabManagerにAMDのロゴ表示を入れようと思うので、消えるといいのですが、、 LZMA SDK (Software Development Kit)がいつのまにかパブリックドメインになっていますね。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -63,6 +64,7 @@
       <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Ancia0.8.0.6で分かったBSTRのパラメータ渡し誤りのバグを修正しています。そのほか、あまりバージョンアップしていなかったので、気になったところを直しています。SimpleFavPanelのアイコンを変更していますが、元のアイコンは、削除していないので、パネルのアイコン設定から変更できます。 BSTRのパラメータ渡し誤りというのは、 inline void func(BSTR bstr){ ・・・ } 関数１ inline void func(LPWCSTR psz) 関数２ { BSTR bstr=SysAllocString(psz); func(bstr); SysFreeString(bstr); } というのがあるとき、 TCHAR sz[256]; //CStringもなぜか、関数１が呼ばれる lstrcpy(sz, _T(&ldquo;aaa&rdquo;)); func(sz); が、関数２ではなく関数１を呼んでしまうというものです。これは、オーバーロードの仕様？で、constより、完全一致のBSTR(WCHAR*)が優先的に一致していることだと思います。関数１の名前を変更したので、全て直っているはずです。直した後はAnciaで落ちなくなりました。 v1.4.0の4/25日のインストーラで、インストールが不十分だったので、インストーラを差し替えています。もし、v1.4.0をインストールした方は、v1.4.1をインストール、または、再度v1.4.0のインストールをお願いします。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         </div>
@@ -77,6 +79,7 @@
       <div class="summary">更新履歴 download ExplorerBarPlusのタブモードとお気に入りを表示できるようになりました。ほかのIEツールバー、サイドバーはまだ表示できません。ExplorerBarPlusの表示は、メニュー[表示(V)]-&gt;エクスプローラバーから行えます。スクリプトでの表示/非表示もまだ出来ません。 タブマネージャでCPUの詳細情報を表示するようにしました。この表示情報でできればcup-zの様にCPUのロゴを表示したいのですが、AMDの場合は、http://www.amd.com/jp-ja/0,,3715_7374_15589,00.htmlからそのままのイメージを使うことでよさそうですが、インテルの場合は、そう簡単にはいかないようです。なんとかインテルのロゴも表示したいのですが、、 CPU情報の表示はCPUIDを元にしていますが、確認マシンが少ないので、間違った表示になるかもしれません。Aero Glassの表示は、結構大変でした。これで、ドロップアクションの背景もAero Glassに出来るかも、、</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         </div>
@@ -91,6 +94,7 @@
       <div class="summary">更新履歴 download タブを強制終了可能なタブマネージャ機能を追加しています。短時間で作ったのでThemeが効いていなかったりします。TabManagerの下の方は、グラス表示にしてみようかと思います。今の強制終了は、WM_QUITで終了できなければ、Terminateしています。ここは、安全に終了できるとき(タブの閉じる履歴が残る)は、そちらを優先するように変える予定です。CPU使用率や、メモリ表示、強制終了したタブはabout:crash表示する、も追加予定です。 プロセスで強制終了は、アドレス領域が分かれているので、メインが落ちずに終了できるというのは、わかりますが、スレッドでもこれを可能にしています。これは、子スレッド&lt;-&gt;メインとデータ結合※として動作しているためです。マルチプロセスにする時点で、データを共有とした動作は選択せず、データ結合で作ったところ、スレッドでもできてしまいました。共有だと、排他が絡みせっかくの子処理の効率が悪くなります。 マルチスレッド/プロセスもだいぶできてきて、あと残っているものは、IEプラグイン、タブ&lt;-&gt;タブ間操作、localhomeなどの閉じたタブの表示ぐらいです。 マルチプロセスのとき、pixivでページが表示できない場合があり、リファラなどが原因かもしれません。 ※ここでのデータ結合という言葉を正しい意味で使用しているかは、よく知らない。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         </div>
@@ -105,6 +109,7 @@
       <div class="summary">更新履歴 download 二転三転していたのですが、やっと設定の同期が落ち着きました。なぜかタスクバーサムネイルが出なくなったので、次に直します。ステータスバーは、テキストだけ表示できるようにしています。 WTLのコマンドバーのマウスフックが原因でたまにメインスレッドが落ちてしまう場合があるようです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -119,6 +124,7 @@
       <div class="summary">IE8のヘッダとIEブログを見ているうちに、互換表示が変更できそうな怪しい部分があったので、試してみると、、変更できたっぽいです。ですが、変更できずに失敗するタイミングがあります。もう少し試してみて、できそうなら入れてみます。変更の仕方自体は、想像していたとおり単純で、大体5行程度です。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         </div>
@@ -133,6 +139,7 @@
       <div class="summary">もう情報が出ていますが、Dynamic-Link Library Redirection (Windows)を利用することで、 AnciaでIE9 Platform Previewを動作させることが可能です。 IE9プレビューをインストールした後、Ancia.exe.localという空ファイルを作成し、IE9プレビューインストール配下のiepreview.exe.localフォルダの中身を全てAncia.exeがあるところにコピー またはiepreview.exe.localフォルダをそのままAncia.exeのあるフォルダにコピーし、Ancia.exe.localに名前変更 で、どちらでも使用できました。 IE9でページの互換表示の変更方法が公開されればいいのですが、今のところまったく不明です。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -147,6 +154,7 @@
       <div class="summary">更新履歴 download マウスジェスチャ、ドロップアクション、スクリプトをマルチスレッド/プロセスで使用可能にしています。が、まだスクリプトで他のタブへの処理（全タブでハイライトが該当）や、細々した機能(タブの複製、ハイライト継承/設定の同期など)の動作が不十分です。 タブのスレッドが落ちても、メインスレッドが落ちないようにしたので、タブマネージャのようなexeを作るつもりです。固まっても、タブマネージャでスレッド/プロセスを強制終了することで、メインスレッドを救えるはずです。ただ強制終了はTerminateThread/Processを使用しますが、これで強制終了したとき、コンポーネントがおかしくならないか心配ですが、、 スクリプトの実行が少し複雑になってしまいました。ツールバーのボタンやマウスジェスチャからスクリプトを実行したときは、タブが動作しているスレッド/プロセス内で、スクリプトを動かします。それ以外、ドロップアクションなどは、メインスレッド内で動作させています。 戻るメニューの順序がおかしいのを修正するのを忘れましたが、次回直します。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -161,6 +169,7 @@
       <div class="summary">マルチスレッド/プロセス対応中ですが、途中のものを公開しています。途中なので通常使用はお勧めしません。 更新履歴 download 主要機能 ドロップアクション、マウスジェスチャ、IEプラグイン、スクリプト、閉じたタブの復元、ステータスバー。。など のほとんどがまだ動作しません。これを全て対応してから出すと、とても時間がかかるので、順次出していくことにします。大体対応が終わったとき、0.8.1として出すつもりです。いまはスレッド/プロセスの制限数がありませんが、数の最大値は設定可能にします。ためしにマルチプロセスのとき子プロセスをタスクマネージャから終了しても、アプリは落ちず動作し続けます。 どのようにマルチスレッド/プロセスを対応しているか気になる人もいるかと思うので、実装イメージを書きます。まず、概要をいうとプロキシオブジェクトの動作を作っています。MDIChildFrameはメインスレッドで動かし、Frameの子Windowは、別スレッドで動かします。 Anciaでは、オブジェクト間でさまざまな処理を行えるよう struct __declspec(novtable) ICmdTarget : public IUnknown { STDMETHOD(CmdExec)(long cmdId, long cmdExecOpt, OPTIONAL VARIANT* arg1, OPTIONAL VARIANT* arg2, OPTIONAL VARIANT* arg3, OUT VARIANT* result) = 0; }; というIOleCommandTargetのようなインターフェースで内部動作を作っています。ここで、MDIChildFrame &lt;-&gt; Child間をICmdTargetでやり取りするようマルチスレッド対応で変更しました(いままでは、MDIChildFrameがすべて子Window処理を行っていた)。やり取りで、シングルスレッドのときは、直に相手のCmdExecを呼び、マルチスレッド/マルチプロセスのときは、プロキシオブジェクトを通してIPC通信で相手のCmdExecを呼ぶようにした、というのが簡単な動作説明です。単純なマーシャル的なものを作っているのと同じでしょうか。 ほとんどのプロキシ間コマンドは、CmdExecからIPC通信で相手側の処理を呼び出す HRESULT IpcCmdExec(HWND hWndTarget, IpcInfo* pIpcInfo, int fFlags, UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0); というのを呼ぶだけで、すむと思っていたんですが、中にはそう簡単にいかないものがあり、時間はかかりそうです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         </div>
@@ -175,6 +184,7 @@
       <div class="summary">シングルスレッド、マルチスレッド、マルチプロセスを意識しないで動作するよう内部設計を変えている途中で、まあそれなりにうまくいくかもというところです。シングルスレッドでは多少遅くなるかもしれませんが、１つ、２つAPI呼び出しが増えてもそれど遅くならないでしょう。 タスクバーサムネイルが出るようになりましたが、スレッド（おそらくプロセスも）が違うとITaskbarList3::SetTabOrderが失敗してしまいました。仕方ないので、SetTabOrderのhwndInsertBeforeにNULLを渡して、後ろにどんどんずらしていく、というのは大変そうなのでどうしよう、、 追記）SetTabOrderの失敗は、間違ったHWNDを渡しているだけでした。SetTabOrderって別のプロセスがRegisterTabしても成功してます。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         </div>
@@ -189,6 +199,7 @@
       <div class="summary">ぜんぜんまだまだですが、やっとページの表示まで行きました。ここからが大変で、IE拡張機能、スクリプト、IPCでの状態の同期等、いろいろあります。。MDIのマルチプロセス/スレッドは、そもそもあまり見かけないので、どうなるか、致命的なことが無ければいいのですが、、</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -203,6 +214,7 @@
       <div class="summary">更新履歴 download マルチプロセススレッド対応でグローバル変数をできるだけ使用しない修正で、内部はかなり変更になっています。なのでシングルスレッド版として一先ずリリースしました。いまブログも0.8.0で書いていますが、大丈夫そうです。致命的な不具合が無ければ、おそらく最後のシングルスレッド版になると思います。 マルチスレッドのとき、ステータスバーのメッセージを、親スレッドで出すが、子スレッドで出すか、メニュー関係のメッセージはメニューを出したスレッドで処理した方がいいんじゃないかなど、いろいろ悩みどころです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         </div>
@@ -213,11 +225,13 @@
     
 <nav class="paging">
   
-  <a href="/tags/online-soft/page/6" class="left" rel="prev">PREV</a>
+  <a href="/tags/online-soft/page/6" class="left" rel="prev">&lt; 前へ</a>
   
 
+  <span class="center">Page 7 of 15</span>
+
   
-  <a href="/tags/online-soft/page/8" class="right" rel="next">NEXT</a>
+  <a href="/tags/online-soft/page/8" class="right" rel="next">次へ ></a>
   
 </nav>
 
@@ -242,7 +256,7 @@
     <div class="detail">
       <time>2016・03・27</time>
       <h2 class="title">Ancia でのSkinのご紹介</h2>
-      <div class="summary">Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。 タブスキンのご紹介 作者：g13131gさん ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。 ダウンロード: ancia_tabskin_pack.zip skin/default/ui配下に上書きして使用できます。 標準のスキンよりactiveなタブが強調表示されるスキンとなっています。 DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。 詳しいスキン説明についてはこちらをご覧いただければと思います。 Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版 Anciaソフトウェアフォーラム • トピック - タブスキン紹介</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -254,7 +268,7 @@
     <div class="detail">
       <time>2016・03・23</time>
       <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="summary">Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -266,7 +280,7 @@
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
-      <div class="summary">問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。 KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -278,7 +292,7 @@
     <div class="detail">
       <time>2016・01・04</time>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="summary">Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。 Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ http://d.hatena.ne.jp/noushibou/20160102/1451724506 Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。 Adobe Flash Playerの配布 | Adobe http://www.adobe.com/jp/products/flashplayer/distribution3.html Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。 Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/ 1&frasl;4 追記 フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。 http://kuku.neko2.net/?num=3246</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -290,7 +304,7 @@
     <div class="detail">
       <time>2015・09・03</time>
       <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="summary">更新履歴 Download 1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。 1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。 AnciaでのHiDPI対応は、Per-Monitor Awareですが、異なるdpiのMonitorにWindowを移動したとき、アイコンサイズはMonitorのdpiに応じた表示に変化するまでは対応していません。Internet Explorerも同様の動作のようです。異なるdpiのMonitorに移動したときアイコンサイズまでdpiに合わせることになると、Faviconやファイルのアイコンをサイズに従い再度取得することになるため、負荷が非常に大きいです。ツールバーのアイコンだけならそれほどの負荷もなくdpiに応じたサイズに切り替えられるでしょう。 Internet Explorerの場合だと、サイドバーのアイテムアイコンなどは、シェルのイメージリストを使用しているようなので、シェルのイメージリストがMonitor単位のサイズではなくSystem DPIに応じた固定サイズになることから、そもそもHiDPI(Per Monitor)でサイドバーアイコンサイズは切り替えられないのだと思います。 Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -302,7 +316,7 @@
     <div class="detail">
       <time>2015・04・09</time>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
-      <div class="summary">Microsoft/IEDiagnosticsAdapterで公開されているIEDiagnosticsAdapterを使用してみたメモです。installingに従えば、特にエラーもなく動かすことができました。下は、その手順です。 1.Download 32bitのとき x86、64bitのとき x64をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。 2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する 64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&rdquo;ALL APPLICATION PACKAGES&rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。 実行するコマンド(RXは読み出し実行の意味)： icacls proxy.dll /grant &ldquo;ALL APPLICATION PACKAGES&rdquo;:(RX) 3.IEを起動する 2と3は順序が逆でも大丈夫でした。 4.Chromeで、localhost:9222を開く Chromeで、http://localhost:9222を開きます。開くと、IEと、IEコンポも一覧で出てきます。 5. localhost:9222の一覧から対象を選ぶ 対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、 が表示されます。Chrome側はdevtoolの表示になります。 使ってみた感じだと、 ・consoleは動かない。 ・要素の変更も動かない。 ・要素の中身の表示と選択要素のハイライトは動く。 ・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。 ・IEコンポも認識される といったところでした。 IEコンポを認識するのは、プロセスに関係なく&rdquo;Internet Explorer_Server&rdquo;のwindow classをすべて列挙しているからみたいです。 Microsoft/IEDiagnosticsAdapterの中身を見ると、JsRTというものを使用しています。 JavaScript - JsRT を Windows アプリに組み込む - Qiita Jsonのパーサに使えるかもしれません。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
     </div>
   </a>
 </article>
@@ -314,7 +328,7 @@
     <div class="detail">
       <time>2015・03・17</time>
       <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="summary">更新履歴 Download 1.9.101で、ハイライト・インライン検索を最新の状態に更新可能にしています。Twitter検索など、自動でコンテンツが追加されていくページなどは、アプリでハイライトを更新するのが残念ながら難しいです。最新に更新するボタンで、コンテンツが更新されても、ハイライト・インライン検索を行うことができます。ハイライト・インライン検索の最新の状態に更新では、キーワードの選択状態も維持します。 1.9.101ではハイライトが行われないページ対策でタイミングの調整も行っていますが、まだgoogle検索３ページ目などでハイライトが行われない場合があり、また調整予定です。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -326,7 +340,7 @@
     <div class="detail">
       <time>2015・03・02</time>
       <h2 class="title">新機能: FullWindow表示ボタン</h2>
-      <div class="summary">更新履歴 Download 1.9.99で前から追加したかった、フレーム上でフルウインドウ表示を可能にするボタン表示に対応しています。ただし、現状では試験機能(testFeature)がonで、さらにDWM表示が有効のときしか表示されません。今後の予定でDWM無効でも表示可能にするかもしれません。 フルウインドウ表示自体はすでに備わっている機能ですが、フルウインドウ表示は、 ■ 複数起動やタブの切り離しと相性がよい(動画だけ見たいときは、切り離し後フルウインドウ表示にすることで邪魔なツールバー・タブを非表示にできる) ■ 多量にタブを開いていても・ツールバーが多量にあっても、非表示にすることで、今開いているページに集中できる ■ 多量にタブを開いていても・ツールバーが多量にあっても、現ページのみの表示にすることで、簡易的なボスが来た機能に使える のような利点があります。 今後の更新で、任意のボタンを追加できるようにする予定です。現状でもresource/frame_toolbar.jsonをsetting/customize配下に配置し、直接ファイルを変更することでボタン追加できますが自己責任となります。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -338,7 +352,7 @@
     <div class="detail">
       <time>2015・01・30</time>
       <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
-      <div class="summary">更新履歴 Download ver1.9.95で、windows8.1環境でtouch対応を行っています。その対応の関係で、touch操作ではブラウザメニュー操作が行えるんですが、マウスだとメニュー項目を選択できない不具合が出ています。この不具合は、次回対応予定です。 不具合は、オプション設定全般「ブラウザで旧メニューを使用する - legacyMenu」チェックonで回避できます。windows8.1環境の場合、対応までlagacyMenuチェックonで回避をお願いします。 2015/2/2追記 1.9.96でメニュー動作がおかしい問題に対応しています。 更新履歴 Download</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -350,7 +364,7 @@
     <div class="detail">
       <time>2014・12・23</time>
       <h2 class="title">新機能: 応答なしページの検出</h2>
-      <div class="summary">更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -363,15 +377,15 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (1)</a>
     
     </div>
   </div>
