@@ -23,7 +23,13 @@
 
   <body>
 
-    <header class="site">
+    <header class="site vmiddle">
+      <div class='dummy'>&nbsp;</div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
+      <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
+    </header>
+    <header class="site vmiddle sticky" id='sticky'>
+      <div class='dummy'>&nbsp;</div>
       <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
       <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
     </header>
@@ -36,6 +42,21 @@
 
     <div class="articles">
       <div class="row">
+        
+        <div class="col-sm-6">
+          <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
+    <div class="detail">
+      <time>2014・12・23</time>
+      <h2 class="title">新機能: 応答なしページの検出</h2>
+      <div class="summary">更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
         
         <div class="col-sm-6">
           <article class="li">
@@ -82,7 +103,7 @@
 
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/forum.png);"></div>
@@ -172,21 +193,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/sleipnirie10/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9ie.png);"></div>
-    <div class="detail">
-      <time>2013・08・09</time>
-      <h2 class="title">SleipnirのIE10表示問題</h2>
-      <div class="summary">SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。 ・SleipnirはページのX-UA-Compatibleを無視し、強制的にIE10モードで表示する 検証ページ：Conditional Comments (X-UA-CompatibleにIE=9を指定) 環境は、Win7 64bit IE10、Sleipnirの最新versionです。下がSleipnirの表示です。IE10モードで表示しているため、About conditional comments (Internet Explorer)が動作していません。これはdocumentModeが10での挙動です。ほかにもIE10で変わった挙動は、HTML5 Parsing in IE10 - IEBlog - Site Home - MSDN Blogsに詳しく書いてあります。 Anciaでは、IEと同じ挙動になります。 Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -217,6 +223,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome052.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・06</time>
+      <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
@@ -326,18 +344,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
-    <div class="detail">
-      <time>2014・12・23</time>
-      <h2 class="title">新機能: 応答なしページの検出</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -349,11 +355,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (181)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (2)</a>
     
     </div>
   </div>
@@ -380,7 +386,8 @@
       <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
       <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
     </footer>
-   
+    
+    <script src="/js/js.min.js"></script>   
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

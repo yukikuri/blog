@@ -24,7 +24,13 @@
 
   <body>
 
-    <header class="site">
+    <header class="site vmiddle">
+      <div class='dummy'>&nbsp;</div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
+      <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
+    </header>
+    <header class="site vmiddle sticky" id='sticky'>
+      <div class='dummy'>&nbsp;</div>
       <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
       <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
     </header>
@@ -39,6 +45,21 @@
 
     <div class="articles">
       <div class="row">
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver087/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2010・07・20</time>
+      <h2 class="title">Ancia Ver0.8.7</h2>
+      <div class="summary">更新履歴 download 要望対応と、バグ修正が主です。マルチブックマークの実装に取り掛かり始め、まずはIEのブックマークで任意のフォルダを表示できることと、複数のIEブックマークが使用できるようになる予定です。 任意のフォルダは、相対パスのときは、アプリからの相対パスとなるようにします。アイテムの順序情報も独自にするかもしれません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
         
         <div class="col-sm-4">
           <article class="li">
@@ -205,21 +226,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-50/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/crash.png);"></div>
-    <div class="detail">
-      <time>2010・05・10</time>
-      <h2 class="title">マルチスレッド/プロセス対応を一先ず完了</h2>
-      <div class="summary">更新履歴 download Ｔａｂが落ちた場合、about:crashを表示するようにしました。今は、TabManagerでタブを終了するとａｂｏｕｔ：ｃｒａｓｈが見れます。半日かからないで作ったので少し不安ですが、、 0.8.0.8で一先ずマルチスレッド/プロセス対応は完了です。一先ずというのは、シングルスレッドが選択できないのと、やはりスムーズスクロールがonだと、スクロールがもたつく部分が気になっています。スクロール - 不定期日記で使用することを考えていたんですが、当時とは状況が変わって、スレッドでもタブの強制終了が出来ているため、ブラウザ部分をポップアップウインドウにする案をどうしようか悩んでいます。ポップアップはタブが固まると、ウインドウが前面に表示されて隠せなくなるので止めました。 ポップアップウインドウにするとウインドウ制御で多少特殊な処理が必要で大変そうですが、いまだと、インターネットオプションかレジストリがいじれる環境じゃないとだめなので、、 あと実装すべき大きな機能は、マルチブックマーク機能が残っています。その名のとおり、アプリで使用するブックマークを複数使用可能とする機能です。ExplorerBarPlusで他ブラウザのブックマーク読み込み処理はすでにあるので、それを利用します。ブックマークとして使用を追加したとき、サイドバーでの表示＋ツールバーでの表示を可能とする機能の予定です。 例えば、はてなブックマークをブックマークとして追加したときは、ポータブルとして使用できるようにしたいです。IEの場合は、お気に入りフォルダを指定するといった具合です。要望対応も少しずつ行おうと思います。 5/11追記 林さん連絡ありがとうございます。 TabManagerがカスペルスキーでウイルスと出るのは誤検知という連絡をいただきました。定義データベースが更新されれば検出されなくなるはずです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -229,7 +235,7 @@
   <span class="left"><a href="/tags/online-soft/page/5" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 6 of 15</span>
+  <span class="center vmiddle">Page 6 of 16</span>
 
   
   <span class="right"><a href="/tags/online-soft/page/7" rel="next">次へ</a></span>
@@ -250,6 +256,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome052.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・06</time>
+      <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
@@ -359,18 +377,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
-    <div class="detail">
-      <time>2014・12・23</time>
-      <h2 class="title">新機能: 応答なしページの検出</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -382,11 +388,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (181)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (2)</a>
     
     </div>
   </div>
@@ -413,7 +419,8 @@
       <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
       <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
     </footer>
-   
+    
+    <script src="/js/js.min.js"></script>   
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

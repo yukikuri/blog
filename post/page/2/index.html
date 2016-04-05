@@ -24,7 +24,13 @@
 
   <body>
 
-    <header class="site">
+    <header class="site vmiddle">
+      <div class='dummy'>&nbsp;</div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
+      <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
+    </header>
+    <header class="site vmiddle sticky" id='sticky'>
+      <div class='dummy'>&nbsp;</div>
       <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
       <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
     </header>
@@ -39,6 +45,21 @@
 
     <div class="articles">
       <div class="row">
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://blog.anciasoft.jp/post/lunascape/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/adluna.png);"></div>
+    <div class="detail">
+      <time>2014・08・28</time>
+      <h2 class="title">Lunascape が表示ページ上部に広告を表示するかもしれない</h2>
+      <div class="summary">試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
         
         <div class="col-sm-4">
           <article class="li">
@@ -205,21 +226,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-45/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2013・05・09</time>
-      <h2 class="title">ExplorerBarPlus 1.4.8</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード ExplorerBarPlusのVersion1.4.8を出しています。IEお気に入りパネルでお気に入りフォルダを変更していても、ボタンからお気に入りの追加と整理を可能にしています。Ancia上で使っているとき、お気に入りの追加を行うと、数秒操作不能になる問題を修正しています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -250,6 +256,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome052.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・06</time>
+      <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
@@ -359,18 +377,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
-    <div class="detail">
-      <time>2014・12・23</time>
-      <h2 class="title">新機能: 応答なしページの検出</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -382,11 +388,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (181)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (2)</a>
     
     </div>
   </div>
@@ -413,7 +419,8 @@
       <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
       <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
     </footer>
-   
+    
+    <script src="/js/js.min.js"></script>   
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

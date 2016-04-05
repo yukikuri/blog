@@ -6,8 +6,69 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-03-27 23:00:00 &#43;0900 JST</updated>
+    <updated>2016-04-06 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.2 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome052/</link>
+          <pubDate>2016-04-06 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome052/</guid>
+          <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?AnciaChrome#content_1_12&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome052.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:59bb5e72e481b86c70066f35d020139d&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;add rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように&lt;/strong&gt;&lt;br /&gt;
+Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。
+&lt;p&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/crashview.png&#34;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fix Twitterの動画が再生できなくなっていたのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fix Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように&lt;/strong&gt;&lt;br /&gt;
+TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。&lt;br /&gt;
+&lt;p&gt;&lt;/p&gt;
+動画再生で、コントロール表示ができるものは表示するようにしています。
+&lt;p&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/videocontrol.png&#34;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fix Flash上など、特定の場合でメニューが表示されないのを修正&lt;/strong&gt;&lt;br /&gt;
+ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。Flash上に限らず、メニューが出ない部分は出るようになったと思います。
+&lt;p&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/flashmenu.png&#34;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;fix 稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決&lt;/strong&gt;&lt;br /&gt;
+マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;fix Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます&lt;/strong&gt;&lt;br /&gt;
+ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;mod ソースの表示では、view-sourceプロトコルハンドラを使用するように&lt;/strong&gt;&lt;br /&gt;
+今までは、IEのHTMLエディタでソースを開いていましたが、本バージョンよりview-sourceプロトコルによりソースを表示します。残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;mod Ancia1.9.118までの更新を反映(全てではありません)&lt;/strong&gt;&lt;br /&gt;
+Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;mod blink版Chrome/49.0.2623.110に更新&lt;/strong&gt;&lt;br /&gt;
+現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。&lt;br /&gt;
+Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34;http://googlechromereleases.blogspot.jp/2016/03/stable-channel-update_28.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+GoogleChromeReleases+(Google+Chrome+Releases)&#34;&gt;Chrome Releases: Stable Channel Update&lt;/a&gt;
+から確認できます。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt;までお願いします。&lt;/p&gt;
+</description>
+          <desctext>更新内容 Ancia Chrome Version 0.5.2 ダウンロード Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。 更新内容 add rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。 fix Twitterの動画が再生できなくなっていたのを修正 fix Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。 動画再生で、コントロール表示ができるものは表示するようにしています。 fix Flash上など、特定の場合でメニューが表示されないのを修正 ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。Flash上に限らず、メニューが出ない部分は出るようになったと思います。 fix 稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決 マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。 fix Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。 mod ソースの表示では、view-sourceプロトコルハンドラを使用するように 今までは、IEのHTMLエディタでソースを開いていましたが、本バージョンよりview-sourceプロトコルによりソースを表示します。残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。 mod Ancia1.9.118までの更新を反映(全てではありません) Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。 mod blink版Chrome/49.0.2623.110に更新 現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 もし不具合がある場合、ソフトウェアフォーラムまでお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome052.jpg</eyecatch>
+        </item>
+      
     
       
         <item>
@@ -291,20 +352,6 @@ DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&g
 </description>
           <desctext>更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/freezechecker.png</eyecatch>
-        </item>
-      
-    
-      
-        <item>
-          <title>Lunascape が表示ページ上部に広告を表示するかもしれない</title>
-          <link>http://blog.anciasoft.jp/post/lunascape/</link>
-          <pubDate>2014-08-28 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/lunascape/</guid>
-          <description>&lt;p&gt;試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。&lt;/p&gt;
-</description>
-          <desctext>試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/adluna.png</eyecatch>
         </item>
       
     

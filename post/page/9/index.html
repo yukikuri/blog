@@ -24,7 +24,13 @@
 
   <body>
 
-    <header class="site">
+    <header class="site vmiddle">
+      <div class='dummy'>&nbsp;</div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
+      <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
+    </header>
+    <header class="site vmiddle sticky" id='sticky'>
+      <div class='dummy'>&nbsp;</div>
       <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
       <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
     </header>
@@ -39,6 +45,21 @@
 
     <div class="articles">
       <div class="row">
+        
+        <div class="col-sm-4">
+          <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-38/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2009・12・07</time>
+      <h2 class="title">ジャンプリストが表示されなくなった</h2>
+      <div class="summary">更新履歴 download マウスジェスチャまでのマウス移動距離を設定できるようにしています。 ジャンプリストで最近使ったもの、よく表示するもの、ピンが、いつのまにか表示されなくなってしまいました(タスクは表示される)。原因は不明で、クリアなど行っても表示されないので、しょうがなくAncia.exeが置いてあるフォルダをリネームして再度タスクバーに追加すると、直りました。。SHAddToRecentDocsの呼び方が間違っている？</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
         
         <div class="col-sm-4">
           <article class="li">
@@ -205,21 +226,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-30/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tbd.png);"></div>
-    <div class="detail">
-      <time>2009・08・24</time>
-      <h2 class="title">自動更新、クローズロック、検索バーでのスクリプト</h2>
-      <div class="summary">更新履歴 download タブの自動更新機能を追加しました。自動更新間隔は、サイトの負荷もあるため、分単位しかできません。自動更新やクローズロック(タブを閉じることを抑止)状態は、タブ部分にアイコンで表示し分かるようにしました。タブの自動更新アイコンをクリックしたとき、状態を解除することを考えたのですが、タブ上のクリック動作が指定できるため、処理が複雑になりそうなので止めました。 ほかに、タスクバーの位置によりウインドウの位置がずれる件、flash上で右＋ホイールが効かない件を修正しています。 検索バーでのスクリプトでDataObject.textは検索バー入力テキストを返すようにしましたが、まだスクリプトでのURL組み立ては試していません。もしかするとエンコードの処理が必要かもしれません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -250,6 +256,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome052.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・06</time>
+      <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
@@ -359,18 +377,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
-    <div class="detail">
-      <time>2014・12・23</time>
-      <h2 class="title">新機能: 応答なしページの検出</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -382,11 +388,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (180)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (181)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (2)</a>
     
     </div>
   </div>
@@ -413,7 +419,8 @@
       <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
       <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
     </footer>
-   
+    
+    <script src="/js/js.min.js"></script>   
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
