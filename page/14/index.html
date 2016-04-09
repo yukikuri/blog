@@ -46,6 +46,21 @@
         
         <div class="col-sm-6">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-15/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/toolbars.png);"></div>
+    <div class="detail">
+      <time>2009・02・24</time>
+      <h2 class="title">いくつも使えるツールバー</h2>
+      <div class="summary">Ancia0.3.6で、いくつも使えるツールバー対応を行ないました。検索バー/リンクバーは複数使用できます。標準ツールバーは、ボタン設定のUI作成に手間がかかるため、次回以降に対応します。 いくつも使えるツールバー機能の実装は、だいぶ前に入れました。ですが、Anciaのオプション設定がHTMLで、ツールバー追加のUI画面作成が面倒で、何とかオプション設定から追加出来るようにしたので、機能として公開しました。 リンクバーの設定で、テキスト表示やテキストの表示文字数制限を追加予定です。リンクバーの表示フォルダは、任意に変更でき、相対パスのとき、Anciaの実行ディレクトリからの相対パスとするため、実行ディレクトリにIEのお気に入りを置けば、ポータブルで使うことも可能です。 いくつも使えるツールバーの仕組みは、ExplorerBarPlusのように、いくつも使えるパネルと同じようなものです。ただ、いくつも使ってもバーの設定ファイルは複数出来ないようにしています。複数設定ファイルを作成する実装だと、起動時に読み込むファイルが増えてしまうからです。 他に、アドレス履歴の表示領域に、上への移動URLを追加しました。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
+        
+        <div class="col-sm-6">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/explorerbarplus-33/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
@@ -89,7 +104,7 @@
 
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-17/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/pagehilite.png);"></div>
@@ -179,21 +194,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/dyn-menu-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dynmenu.png);"></div>
-    <div class="detail">
-      <time>2008・12・31</time>
-      <h2 class="title">dyn menu</h2>
-      <div class="summary">Anciaは、ResHackerでみると分かりますが、メニューリソースを持っていません。メニューは全てファイルで持ち、メニューファイルには、動的メニューアイテム（dynamic menu）を定義できます。実装済み動的メニューは、placeholderのprefixではじまる placeholder.ietoolbar 〜 Internet Explorerツールバー placeholder.ievertbar 〜 Internet Explorerエクスプローラバー placeholder.up 〜 上へ移動 placeholder.back 〜 トラベルログの戻る placeholder.forward 〜 トラベルログの進む placeholder.travellog 〜 トラベルログ全て placeholder.closed 〜 最近閉じたタブ placeholder.new.closed 〜 最近閉じたタブ（新しいタブで開く） placeholder.home 〜 Internet ExplorerのホームURL placeholder.new.home 〜 Internet ExplorerのホームURL(新しいタブで開く) placeholder.toolbar 〜 アドレスバー、検索バーなど表示・非表示 placeholder.searchengine 〜 検索エンジン placeholder.encoding 〜 エンコーディング placeholder.tab 〜 タブ一覧（次回更新に含まれます） です。 ツールバーのメニューファイルmenu_toolbar.jsonを {&ldquo;menu&rdquo;:[ ← 次回更新でrootからmenuへ変更されます {&ldquo;popup&rdquo;:[ &nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.toolbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ハイライトバー&rdquo;,&ldquo;cmd&rdquo;:&ldquo;show.hilitebar&rdquo;}, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;インラインサーチ(&amp;I)&ldquo;,&ldquo;cmd&rdquo;:&ldquo;isearch&rdquo;}, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ステータスバー(&amp;B)&ldquo;,&ldquo;cmd&rdquo;:&ldquo;statusbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;エクスプローラバー&rdquo;,&ldquo;popup&rdquo;:[ &nbsp;&nbsp;&nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.ievertbar&rdquo;}]}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.ietoolbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ツールバー固定する(&amp;B)&ldquo;, &ldquo;cmd&rdquo;:&ldquo;locktoolbar&rdquo;}]} ]} とした場合、ツールバーで右クリックすると、placeholder.toolbar、ietoolbarが動的に展開され、上の画像のメニューが表示されます。placeholderでの展開がないときは「なし」になります。nullはセパレータです。 仕様として、下のように</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -224,6 +224,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・04・10</time>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
@@ -333,18 +345,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/legacymenu.png);"></div>
-    <div class="detail">
-      <time>2015・01・30</time>
-      <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -352,7 +352,9 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     

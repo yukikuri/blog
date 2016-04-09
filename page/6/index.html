@@ -46,6 +46,21 @@
         
         <div class="col-sm-6">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0911-a/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/inputbox.png);"></div>
+    <div class="detail">
+      <time>2010・11・02</time>
+      <h2 class="title">Ancia Ver0.9.11 App.InputBox()について</h2>
+      <div class="summary">更新履歴 download スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。 var input=App.InputBox( { caption:&ldquo;Windowキャプション&rdquo;, statics:[{text:&ldquo;上部スタティックテキスト&rdquo;},{text:&ldquo;下部スタティックテキスト&rdquo;}],//2つまで inputs:[{label:&ldquo;Input1(&amp;1):&ldquo;,value:&ldquo;value1value1&rdquo;}, {label:&ldquo;Input2(&amp;2):&ldquo;,value:&ldquo;value2value2&rdquo;}, {label:&ldquo;Input3(&amp;3):&ldquo;,value:&ldquo;value3value3&rdquo;}, {label:&ldquo;Input4(&amp;4):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;},// number: 数値入力のみ {label:&ldquo;Input5(&amp;5):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;}],// 5つまで buttons:[{text:&ldquo;OK&rdquo;},{text:&ldquo;キャンセル&rdquo;,style:&ldquo;default&rdquo;}]}); // input： OKだとjson形式のテキスト、Cancelだとfalseが返却 // json形式のテキストは以下の通り // {&ldquo;inputs&rdquo;:[&ldquo;value1value1&rdquo;,&ldquo;value2value2&rdquo;,&ldquo;value3value3&rdquo;,&ldquo;1234567890&rdquo;,&ldquo;1234567890&rdquo;]} OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&ldquo;(&rdquo;+input+&ldquo;)&rdquo;).inputs[0]のように入力結果を取得できます。 Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。 inputのタイプは、指定なし(普通のedtibox)、style:&ldquo;number&rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
+        
+        <div class="col-sm-6">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-ver0910/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabfont.png);"></div>
     <div class="detail">
@@ -89,7 +104,7 @@
 
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-ver096-ae/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/AeroMultiTab.png);"></div>
@@ -179,21 +194,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia091/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・08・23</time>
-      <h2 class="title">Ancia0.9.1</h2>
-      <div class="summary">更新履歴 download 0.9.1を出しましたが、そんなに更新内容はありません。不具合がたまってきているので、そちら優先にしています。Flashが再生できない不具合（Xenoblade ゼノブレイドで再現）を調べていて、もう少しというところです。 変ったところといえば、細かいですがアドレスバーでCtrl+左右キーでURLの論理単位でカーソルが動くようになってます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -224,6 +224,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・04・10</time>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
@@ -333,18 +345,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/legacymenu.png);"></div>
-    <div class="detail">
-      <time>2015・01・30</time>
-      <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -352,7 +352,9 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     

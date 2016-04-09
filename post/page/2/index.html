@@ -49,6 +49,21 @@
         
         <div class="col-sm-4">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
+    <div class="detail">
+      <time>2014・10・23</time>
+      <h2 class="title">キョリ測が動かないときがある</h2>
+      <div class="summary">キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。 ・204応答でNavigateError 204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。 200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/lunascape/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/adluna.png);"></div>
     <div class="detail">
@@ -212,21 +227,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-60/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/iso.jpg);"></div>
-    <div class="detail">
-      <time>2013・07・09</time>
-      <h2 class="title">タブの分離・結合サポート</h2>
-      <div class="summary">更新履歴 download 1.9.30でほかのブラウザでは実装の少ないタブの分離と結合をサポートしています。シングルスレッドでは、動き的に無理で動作スタイルをシングルスレッド以外にする必要があります。また単一起動の場合もサポートしていません(これは今後制限付きでサポート予定です)。 オレンジ色以外の場所にタブをdragすると、タブの分離・結合が可能になります。 ESCキーかマウスの右ボタンを押すことでキャンセル可能なのは、通常のdragdrop動作と同じです。次はIE10で固まる問題が対応できるかわかりませんが、調べる予定です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -257,6 +257,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・04・10</time>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
@@ -366,18 +378,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/legacymenu.png);"></div>
-    <div class="detail">
-      <time>2015・01・30</time>
-      <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -385,7 +385,9 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     

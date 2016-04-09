@@ -46,6 +46,21 @@
         
         <div class="col-sm-6">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-45/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/conti2.png);"></div>
+    <div class="detail">
+      <time>2010・02・18</time>
+      <h2 class="title">途中２</h2>
+      <div class="summary">シングルスレッド、マルチスレッド、マルチプロセスを意識しないで動作するよう内部設計を変えている途中で、まあそれなりにうまくいくかもというところです。シングルスレッドでは多少遅くなるかもしれませんが、１つ、２つAPI呼び出しが増えてもそれど遅くならないでしょう。 タスクバーサムネイルが出るようになりましたが、スレッド（おそらくプロセスも）が違うとITaskbarList3::SetTabOrderが失敗してしまいました。仕方ないので、SetTabOrderのhwndInsertBeforeにNULLを渡して、後ろにどんどんずらしていく、というのは大変そうなのでどうしよう、、 追記）SetTabOrderの失敗は、間違ったHWNDを渡しているだけでした。SetTabOrderって別のプロセスがRegisterTabしても成功してます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+        </div>
+        
+        <div class="col-sm-6">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-44/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/conti.png);"></div>
     <div class="detail">
@@ -89,7 +104,7 @@
 
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-41/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
@@ -179,21 +194,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows7/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/liveth.png);"></div>
-    <div class="detail">
-      <time>2009・10・26</time>
-      <h2 class="title">Windows7ライブサムネイル</h2>
-      <div class="summary">更新履歴 download Windows7ライブサムネイルに対応しています。ライブサムネイルは、WM_DWMSENDICONICTHUMBNAILで、タスクバーのサムネイルを返却（DwmSetIconicThumbnail）する、サムネイルをマウスオーバーしたときのWM_DWMSENDICONICLIVEPREVIEWBITMAPでアプリケーション画面に表示するビットマップを返却(DwmSetIconicLivePreviewBitmap)すれば対応できます。ビットマップは32ビットじゃないとE_INVALITARG?で処理が失敗してしまいます。ビットマップサイズもおかしいとINVALIDARGになってしまうようです。 faviconはまだ付いていませんが、そのうち付けます。サムネイルにはボタンをつけれるようなので、最新の状態に更新などつけるかもしれません。 XpとWindows7で同じフォルダのAnciaを起動しても、Windows7側からXpのフォルダのアクセス権をつけないと、設定が保存されない現象がありました。ので注意してください。 AnciaでIE8で落ちず、IE6で落ちる場合があるようです。IE6で落ちる場合はInternetExplorerでも落ちたので、何かのアドオン(flash?)か何かかもしれません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -224,6 +224,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・04・10</time>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
@@ -333,18 +345,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/legacymenu.png);"></div>
-    <div class="detail">
-      <time>2015・01・30</time>
-      <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -352,7 +352,9 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     

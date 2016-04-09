@@ -6,8 +6,42 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-01-06 23:03:25 &#43;0900 JST</updated>
+    <updated>2016-04-10 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</title>
+          <link>http://blog.anciasoft.jp/post/install-ppapi-flash/</link>
+          <pubDate>2016-04-10 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/install-ppapi-flash/</guid>
+          <description>&lt;p&gt;Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。&lt;/p&gt;
+
+&lt;p&gt;Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1) Adobe Flash Player インストールのページを開く&lt;/strong&gt;&lt;br /&gt;
+&lt;a target=&#34;_blank&#34; href=&#34;https://get.adobe.com/jp/flashplayer/otherversions/&#34;&gt;&lt;a href=&#34;https://get.adobe.com/flashplayer/otherversions/&#34;&gt;https://get.adobe.com/flashplayer/otherversions/&lt;/a&gt;&lt;/a&gt; を適当なブラウザで開きます。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2) 開いたページで、手順1と手順2を選択する&lt;/strong&gt;&lt;br /&gt;
+手順1のオペレーティングシステムを環境のOSを選択します。&lt;br /&gt;
+手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-select.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3) 提供オプションを任意で選択する&lt;/strong&gt;&lt;br /&gt;
+インストールで追加のソフトウェアを入れるかのオプションがありますが、任意オプションです。任意オプションチェックオフでインストール可能です。&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-option.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4) 「インストール」ボタンからインストーラをダウンロード&lt;/strong&gt;&lt;br /&gt;
+「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-download.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。&lt;/p&gt;
+</description>
+          <desctext>Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。 Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。 1) Adobe Flash Player インストールのページを開く https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。 2) 開いたページで、手順1と手順2を選択する 手順1のオペレーティングシステムを環境のOSを選択します。 手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。 3) 提供オプションを任意で選択する インストールで追加のソフトウェアを入れるかのオプションがありますが、任意オプションです。任意オプションチェックオフでインストール可能です。 4) 「インストール」ボタンからインストーラをダウンロード 「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。 あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/flash.png</eyecatch>
+        </item>
+      
     
       
         <item>
@@ -248,31 +282,6 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 </description>
           <desctext>更新履歴 download 1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。 テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。 imageのメニューだとGoogle画像検索も行えます。 新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。 メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/linkmenu.png</eyecatch>
-        </item>
-      
-    
-      
-        <item>
-          <title>SleipnirのIE10表示問題</title>
-          <link>http://blog.anciasoft.jp/post/sleipnirie10/</link>
-          <pubDate>2013-08-09 09:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/sleipnirie10/</guid>
-          <description>&lt;p&gt;SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;・SleipnirはページのX-UA-Compatibleを無視し、強制的にIE10モードで表示する&lt;/strong&gt;&lt;br /&gt;
-検証ページ：&lt;a href=&#34;http://www.egrath.net/download/conditionalcomments.htm&#34;&gt;Conditional Comments&lt;/a&gt; (X-UA-CompatibleにIE=9を指定)&lt;/p&gt;
-
-&lt;p&gt;環境は、Win7 64bit IE10、Sleipnirの最新versionです。下がSleipnirの表示です。IE10モードで表示しているため、&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms537512(v=VS.85).aspx&#34;&gt;About conditional comments (Internet Explorer)&lt;/a&gt;が動作していません。これはdocumentModeが10での挙動です。ほかにもIE10で変わった挙動は、&lt;a href=&#34;http://blogs.msdn.com/b/ie/archive/2011/07/06/html5-parsing-in-ie10.aspx&#34;&gt;HTML5 Parsing in IE10 - IEBlog - Site Home - MSDN Blogs&lt;/a&gt;に詳しく書いてあります。&lt;br /&gt;
-&lt;img alt=&#34;ie9s.png&#34; src=&#34;http://blog.anciasoft.jp/img/ie9s.png&#34; width=&#34;666&#34; height=&#34;458&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;Anciaでは、IEと同じ挙動になります。&lt;br /&gt;
-&lt;img alt=&#34;ie9a.png&#34; src=&#34;http://blog.anciasoft.jp/img/ie9a.png&#34; width=&#34;628&#34; height=&#34;300&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。&lt;/p&gt;
-</description>
-          <desctext>SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。 ・SleipnirはページのX-UA-Compatibleを無視し、強制的にIE10モードで表示する 検証ページ：Conditional Comments (X-UA-CompatibleにIE=9を指定) 環境は、Win7 64bit IE10、Sleipnirの最新versionです。下がSleipnirの表示です。IE10モードで表示しているため、About conditional comments (Internet Explorer)が動作していません。これはdocumentModeが10での挙動です。ほかにもIE10で変わった挙動は、HTML5 Parsing in IE10 - IEBlog - Site Home - MSDN Blogsに詳しく書いてあります。 Anciaでは、IEと同じ挙動になります。 Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/ie9ie.png</eyecatch>
         </item>
       
     

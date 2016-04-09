@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/tags/flash/</link>
+    <language>ja-jp</language>
+    <author>ykuri</author>
+    <rights>Copyright (C) 2016 y-kurimoto.</rights>
+    <updated>2016-04-10 00:00:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</title>
+          <link>http://blog.anciasoft.jp/post/install-ppapi-flash/</link>
+          <pubDate>2016-04-10 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/install-ppapi-flash/</guid>
+          <description>&lt;p&gt;Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。&lt;/p&gt;
+
+&lt;p&gt;Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1) Adobe Flash Player インストールのページを開く&lt;/strong&gt;&lt;br /&gt;
+&lt;a target=&#34;_blank&#34; href=&#34;https://get.adobe.com/jp/flashplayer/otherversions/&#34;&gt;&lt;a href=&#34;https://get.adobe.com/flashplayer/otherversions/&#34;&gt;https://get.adobe.com/flashplayer/otherversions/&lt;/a&gt;&lt;/a&gt; を適当なブラウザで開きます。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2) 開いたページで、手順1と手順2を選択する&lt;/strong&gt;&lt;br /&gt;
+手順1のオペレーティングシステムを環境のOSを選択します。&lt;br /&gt;
+手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-select.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3) 提供オプションを任意で選択する&lt;/strong&gt;&lt;br /&gt;
+インストールで追加のソフトウェアを入れるかのオプションがありますが、任意オプションです。任意オプションチェックオフでインストール可能です。&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-option.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4) 「インストール」ボタンからインストーラをダウンロード&lt;/strong&gt;&lt;br /&gt;
+「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-download.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。&lt;/p&gt;
+</description>
+          <desctext>Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。 Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。 1) Adobe Flash Player インストールのページを開く https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。 2) 開いたページで、手順1と手順2を選択する 手順1のオペレーティングシステムを環境のOSを選択します。 手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。 3) 提供オプションを任意で選択する インストールで追加のソフトウェアを入れるかのオプションがありますが、任意オプションです。任意オプションチェックオフでインストール可能です。 4) 「インストール」ボタンからインストーラをダウンロード 「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。 あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/flash.png</eyecatch>
+        </item>
+      
+    
+
+  </channel>
+</rss>

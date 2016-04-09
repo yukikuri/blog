@@ -49,6 +49,21 @@
         
         <div class="col-sm-4">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・04・10</time>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="summary">Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。 Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。 1) Adobe Flash Player インストールのページを開く https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。 2) 開いたページで、手順1と手順2を選択する 手順1のオペレーティングシステムを環境のOSを選択します。 手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。 3) 提供オプションを任意で選択する インストールで追加のソフトウェアを入れるかのオプションがありますが、任意オプションです。任意オプションチェックオフでインストール可能です。 4) 「インストール」ボタンからインストーラをダウンロード 「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。 あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
@@ -212,21 +227,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/msn/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2013・07・23</time>
-      <h2 class="title">msn関係・楽天で固まる問題の対応</h2>
-      <div class="summary">更新履歴 download 1.9.32で、ie10環境においてmsn、楽天のページを開くと固まる問題を修正しています。修正には2つの問題に対応しています。固まる原因はmsnと楽天で同じ(document.closeで固まる)ですが、状況は微妙に違います。 問題1) IEとIEコンポでnavigator.appVersionの返す値が違う IEとIEコンポでnavigator.appVersionの返す値が異なっています。この違いのため、msnのスクリプトでIEの場合はdocument.close()呼び出しが行われず、IEコンポの場合はdocument.close()呼び出しが行われます(ここでIEコンポは固まる)。1.9.32ではnavigator.appVersionの値がIEと同じ挙動となるよう対応しています。 ・IE10(documentModeは7でappVerはIE7) ・Ancia 1.9.31(documentModeは7でappVerはIE10) ・Ancia 1.9.32(documentModeは7でappVerはIE7) 問題2）楽天のページがIEコンポではquirks modeとなるが、IEではならない 楽天のページでdocument.close()の呼び出しで固まるのは同じですが、msnとは状況が異なります。楽天ではdocumentModeの値がIEとIEコンポで異なっています。msnはdocumentModeがIE,IEコンポともに7ですが、楽天ではIEが10(documentModeが10でもcompatMode はBackCompat)、IEコンポでは5(compatMode はBackCompat)です。 IE10からのInteroperable HTML5 Quirks Modeが関係し、1.9.32ではこれもIEと同じ挙動となるよう対応しています。 ・IE10 ・Ancia 1.9.31 ・Ancia 1.9.32</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -255,6 +255,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・04・10</time>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
@@ -364,18 +376,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows81/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/legacymenu.png);"></div>
-    <div class="detail">
-      <time>2015・01・30</time>
-      <h2 class="title">windows8.1環境でメニュー動作がおかしいの回避方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -383,7 +383,9 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (29)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
