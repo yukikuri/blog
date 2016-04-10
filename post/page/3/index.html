@@ -49,6 +49,21 @@
         
         <div class="col-sm-4">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/msn/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2013・07・23</time>
+      <h2 class="title">msn関係・楽天で固まる問題の対応</h2>
+      <div class="summary">更新履歴 download 1.9.32で、ie10環境においてmsn、楽天のページを開くと固まる問題を修正しています。修正には2つの問題に対応しています。固まる原因はmsnと楽天で同じ(document.closeで固まる)ですが、状況は微妙に違います。 問題1) IEとIEコンポでnavigator.appVersionの返す値が違う IEとIEコンポでnavigator.appVersionの返す値が異なっています。この違いのため、msnのスクリプトでIEの場合はdocument.close()呼び出しが行われず、IEコンポの場合はdocument.close()呼び出しが行われます(ここでIEコンポは固まる)。1.9.32ではnavigator.appVersionの値がIEと同じ挙動となるよう対応しています。 ・IE10(documentModeは7でappVerはIE7) ・Ancia 1.9.31(documentModeは7でappVerはIE10) ・Ancia 1.9.32(documentModeは7でappVerはIE7) 問題2）楽天のページがIEコンポではquirks modeとなるが、IEではならない 楽天のページでdocument.close()の呼び出しで固まるのは同じですが、msnとは状況が異なります。楽天ではdocumentModeの値がIEとIEコンポで異なっています。msnはdocumentModeがIE,IEコンポともに7ですが、楽天ではIEが10(documentModeが10でもcompatMode はBackCompat)、IEコンポでは5(compatMode はBackCompat)です。 IE10からのInteroperable HTML5 Quirks Modeが関係し、1.9.32ではこれもIEと同じ挙動となるよう対応しています。 ・IE10 ・Ancia 1.9.31 ・Ancia 1.9.32</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-60/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/iso.jpg);"></div>
     <div class="detail">
@@ -212,21 +227,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/119/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2011・08・16</time>
-      <h2 class="title">1.1.9で起動時落ちる現象の回避について</h2>
-      <div class="summary">更新履歴 download 1.1.9を出していますが、jumplistの構築にバグがあり表示名のないjumplistのスクリプト項目があると、起動時に落ちてしまいます。 jumplistを変更していないときは落ちませんが、変更しているときは、setting\customize\jumplist.jsonを ajumplist.json などにrenameすれば回避できます。このバグは1.2.0で直ります。 1.1.9では起動時のタブ再現などで、複数タブの読み込み処理をいちどに読み込まず、順々に読み込むようにしています。この設定はオプション設定の「全般」「タブ読み込みスタイル」で変更できます。ただ、「アクティブ時読み込み - loadingActive」にした場合、非activeタブの読み込みがloadingのままでページが分からない、ということがありこれは何とかしたいです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -257,6 +257,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・11</time>
+      <h2 class="title">Ancia Chrome Ver0.5.3 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
@@ -366,18 +378,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/fullwindow/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/frametoolbar.png);"></div>
-    <div class="detail">
-      <time>2015・03・02</time>
-      <h2 class="title">新機能: FullWindow表示ボタン</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -391,11 +391,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (181)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (2)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     
     </div>
   </div>

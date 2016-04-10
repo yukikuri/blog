@@ -6,8 +6,45 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-04-06 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-04-11 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.3 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome053/</link>
+          <pubDate>2016-04-11 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome053/</guid>
+          <description>
+
+&lt;h2 id=&#34;ダウンロード:8504db62e70ea03b22fad5f6941bb263&#34;&gt;ダウンロード&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0530&#34;&gt;更新内容 Ancia Chrome Version 0.5.3&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome053.7z&#34;&gt;ダウンロード (AnciaChrome053.7z)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:8504db62e70ea03b22fad5f6941bb263&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;mod タブを多く開くとパフォーマンスが大幅に低下するのを改善&lt;/strong&gt;&lt;br /&gt;
+タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod blink版Chrome/49.0.2623.112に更新&lt;/strong&gt;&lt;br /&gt;
+4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。
+Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34;http://googlechromereleases.blogspot.jp/2016/04/stable-channel-update.html&#34;&gt;Chrome Releases: Stable Channel Update&lt;/a&gt;
+から確認できます。&lt;br /&gt;
+&lt;p&gt;&lt;/p&gt;
+49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;/p&gt;
+もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>ダウンロード 更新内容 Ancia Chrome Version 0.5.3 ダウンロード (AnciaChrome053.7z) Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。 更新内容 mod タブを多く開くとパフォーマンスが大幅に低下するのを改善 タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。 mod blink版Chrome/49.0.2623.112に更新 4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome053.jpg</eyecatch>
+        </item>
+      
     
       
         <item>
@@ -18,7 +55,7 @@
           <guid>http://blog.anciasoft.jp/post/ancia-chrome052/</guid>
           <description>
 
-&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?AnciaChrome#content_1_12&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0520&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/download/AnciaChrome052.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。&lt;/p&gt;
@@ -328,32 +365,6 @@ DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&g
 </description>
           <desctext>更新履歴 Download ver1.9.95で、windows8.1環境でtouch対応を行っています。その対応の関係で、touch操作ではブラウザメニュー操作が行えるんですが、マウスだとメニュー項目を選択できない不具合が出ています。この不具合は、次回対応予定です。 不具合は、オプション設定全般「ブラウザで旧メニューを使用する - legacyMenu」チェックonで回避できます。windows8.1環境の場合、対応までlagacyMenuチェックonで回避をお願いします。 2015/2/2追記 1.9.96でメニュー動作がおかしい問題に対応しています。 更新履歴 Download</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/legacymenu.png</eyecatch>
-        </item>
-      
-    
-      
-        <item>
-          <title>新機能: 応答なしページの検出</title>
-          <link>http://blog.anciasoft.jp/post/post-65/</link>
-          <pubDate>2014-12-23 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/post-65/</guid>
-          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1988Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.egrath.net/download/Ancia1988.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。&lt;/p&gt;
-
-&lt;p&gt;応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;foption.png&#34; src=&#34;http://blog.anciasoft.jp/img/foption.png&#34; width=&#34;752&#34; height=&#34;172&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、&lt;br /&gt;
-&lt;img alt=&#34;nofreeze.png&#34; src=&#34;http://blog.anciasoft.jp/img/nofreeze.png&#34; width=&#34;419&#34; height=&#34;131&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。&lt;/p&gt;
-</description>
-          <desctext>更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/freezechecker.png</eyecatch>
         </item>
       
     

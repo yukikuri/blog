@@ -6,8 +6,45 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-04-10 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-04-11 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.3 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome053/</link>
+          <pubDate>2016-04-11 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome053/</guid>
+          <description>
+
+&lt;h2 id=&#34;ダウンロード:8504db62e70ea03b22fad5f6941bb263&#34;&gt;ダウンロード&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0530&#34;&gt;更新内容 Ancia Chrome Version 0.5.3&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome053.7z&#34;&gt;ダウンロード (AnciaChrome053.7z)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:8504db62e70ea03b22fad5f6941bb263&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;mod タブを多く開くとパフォーマンスが大幅に低下するのを改善&lt;/strong&gt;&lt;br /&gt;
+タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod blink版Chrome/49.0.2623.112に更新&lt;/strong&gt;&lt;br /&gt;
+4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。
+Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34;http://googlechromereleases.blogspot.jp/2016/04/stable-channel-update.html&#34;&gt;Chrome Releases: Stable Channel Update&lt;/a&gt;
+から確認できます。&lt;br /&gt;
+&lt;p&gt;&lt;/p&gt;
+49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;/p&gt;
+もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>ダウンロード 更新内容 Ancia Chrome Version 0.5.3 ダウンロード (AnciaChrome053.7z) Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。 更新内容 mod タブを多く開くとパフォーマンスが大幅に低下するのを改善 タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。 mod blink版Chrome/49.0.2623.112に更新 4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome053.jpg</eyecatch>
+        </item>
+      
     
       
         <item>
@@ -52,7 +89,7 @@
           <guid>http://blog.anciasoft.jp/post/ancia-chrome052/</guid>
           <description>
 
-&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?AnciaChrome#content_1_12&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0520&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/download/AnciaChrome052.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。&lt;/p&gt;
@@ -366,35 +403,6 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
 </description>
           <desctext>更新履歴 Download 1.9.101で、ハイライト・インライン検索を最新の状態に更新可能にしています。Twitter検索など、自動でコンテンツが追加されていくページなどは、アプリでハイライトを更新するのが残念ながら難しいです。最新に更新するボタンで、コンテンツが更新されても、ハイライト・インライン検索を行うことができます。ハイライト・インライン検索の最新の状態に更新では、キーワードの選択状態も維持します。 1.9.101ではハイライトが行われないページ対策でタイミングの調整も行っていますが、まだgoogle検索３ページ目などでハイライトが行われない場合があり、また調整予定です。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/refreshhilite.png</eyecatch>
-        </item>
-      
-    
-      
-        <item>
-          <title>新機能: FullWindow表示ボタン</title>
-          <link>http://blog.anciasoft.jp/post/fullwindow/</link>
-          <pubDate>2015-03-02 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/fullwindow/</guid>
-          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1999Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.egrath.net/download/Ancia1999.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;1.9.99で前から追加したかった、フレーム上でフルウインドウ表示を可能にするボタン表示に対応しています。ただし、現状では試験機能(testFeature)がonで、さらにDWM表示が有効のときしか表示されません。今後の予定でDWM無効でも表示可能にするかもしれません。&lt;br /&gt;
-&lt;img alt=&#34;testfeature.png&#34; src=&#34;http://blog.anciasoft.jp/img/testfeature.png&#34; width=&#34;586&#34; height=&#34;494&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;フルウインドウ表示自体はすでに備わっている機能ですが、フルウインドウ表示は、&lt;/p&gt;
-
-&lt;p&gt;■ 複数起動やタブの切り離しと相性がよい(動画だけ見たいときは、切り離し後フルウインドウ表示にすることで邪魔なツールバー・タブを非表示にできる)&lt;br /&gt;
-■ 多量にタブを開いていても・ツールバーが多量にあっても、非表示にすることで、今開いているページに集中できる&lt;br /&gt;
-■ 多量にタブを開いていても・ツールバーが多量にあっても、現ページのみの表示にすることで、簡易的なボスが来た機能に使える&lt;/p&gt;
-
-&lt;p&gt;のような利点があります。&lt;/p&gt;
-
-&lt;p&gt;今後の更新で、任意のボタンを追加できるようにする予定です。現状でもresource/frame_toolbar.jsonをsetting/customize配下に配置し、直接ファイルを変更することでボタン追加できますが自己責任となります。&lt;br /&gt;
-&lt;img alt=&#34;frametoolbarcustom.png&#34; src=&#34;http://blog.anciasoft.jp/img/frametoolbarcustom.png&#34; width=&#34;423&#34; height=&#34;155&#34;  /&gt;&lt;/p&gt;
-</description>
-          <desctext>更新履歴 Download 1.9.99で前から追加したかった、フレーム上でフルウインドウ表示を可能にするボタン表示に対応しています。ただし、現状では試験機能(testFeature)がonで、さらにDWM表示が有効のときしか表示されません。今後の予定でDWM無効でも表示可能にするかもしれません。 フルウインドウ表示自体はすでに備わっている機能ですが、フルウインドウ表示は、 ■ 複数起動やタブの切り離しと相性がよい(動画だけ見たいときは、切り離し後フルウインドウ表示にすることで邪魔なツールバー・タブを非表示にできる) ■ 多量にタブを開いていても・ツールバーが多量にあっても、非表示にすることで、今開いているページに集中できる ■ 多量にタブを開いていても・ツールバーが多量にあっても、現ページのみの表示にすることで、簡易的なボスが来た機能に使える のような利点があります。 今後の更新で、任意のボタンを追加できるようにする予定です。現状でもresource/frame_toolbar.jsonをsetting/customize配下に配置し、直接ファイルを変更することでボタン追加できますが自己責任となります。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/frametoolbar.png</eyecatch>
         </item>
       
     

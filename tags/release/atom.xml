@@ -6,8 +6,45 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-04-06 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-04-11 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.3 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome053/</link>
+          <pubDate>2016-04-11 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome053/</guid>
+          <description>
+
+&lt;h2 id=&#34;ダウンロード:8504db62e70ea03b22fad5f6941bb263&#34;&gt;ダウンロード&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0530&#34;&gt;更新内容 Ancia Chrome Version 0.5.3&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome053.7z&#34;&gt;ダウンロード (AnciaChrome053.7z)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:8504db62e70ea03b22fad5f6941bb263&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;mod タブを多く開くとパフォーマンスが大幅に低下するのを改善&lt;/strong&gt;&lt;br /&gt;
+タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mod blink版Chrome/49.0.2623.112に更新&lt;/strong&gt;&lt;br /&gt;
+4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。
+Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34;http://googlechromereleases.blogspot.jp/2016/04/stable-channel-update.html&#34;&gt;Chrome Releases: Stable Channel Update&lt;/a&gt;
+から確認できます。&lt;br /&gt;
+&lt;p&gt;&lt;/p&gt;
+49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;/p&gt;
+もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>ダウンロード 更新内容 Ancia Chrome Version 0.5.3 ダウンロード (AnciaChrome053.7z) Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。 更新内容 mod タブを多く開くとパフォーマンスが大幅に低下するのを改善 タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。 mod blink版Chrome/49.0.2623.112に更新 4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome053.jpg</eyecatch>
+        </item>
+      
     
       
         <item>
@@ -18,7 +55,7 @@
           <guid>http://blog.anciasoft.jp/post/ancia-chrome052/</guid>
           <description>
 
-&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?AnciaChrome#content_1_12&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0520&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.egrath.net/download/AnciaChrome052.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。&lt;/p&gt;

@@ -49,6 +49,21 @@
         
         <div class="col-sm-4">
           <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-31/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dawrap.png);"></div>
+    <div class="detail">
+      <time>2009・09・14</time>
+      <h2 class="title">ドロップアクションカスタマイズ途中</h2>
+      <div class="summary">ドロップアクションのカスタマイズ対応中ですが、まだかかりそうです。折り返し表示はできるようになります。スクロールより、折り返しのほうがやっぱり楽です。スクロール・折り返しは選択可にする予定です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+        </div>
+        
+        <div class="col-sm-4">
+          <article class="li">
   <a href="http://blog.anciasoft.jp/post/explorerbarplus-36/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
@@ -212,21 +227,6 @@
 
         </div>
         
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/pure-virtual-fu-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2009・05・29</time>
-      <h2 class="title">pure virtual function call対応</h2>
-      <div class="summary">更新履歴 download 下がIEツールバーを破棄しているコードですが、Release()部分をコメントアウトするとpure〜〜が発生しなくなります。googleツールバーはAddRef()、Release()でカウントがinc/decとなるのでちゃんとした参照カウントを返しています。さらに下のRelease()後の値は0だったので、最後のRelease()だと分かります。 IDeskBand* pBand = (IDeskBand*)rbi.lParam; if(pBand) { pBand-&gt;CloseDW(0); if(S_OK == pBand-&gt;QueryInterface(__uuidof(pObjectWithSite), (void**)&amp;pObjectWithSite)) { pObjectWithSite-&gt;SetSite(NULL); pObjectWithSite-&gt;Release(); } pBand-&gt;Release(); ← ここをコメントアウトすると、発生しなくなる } そこで、Release()するタイミングをどうにかする対応としました。 よく考えると、 ・IE6は1プロセス、プロセス終了でツールバーも破棄、プロセス終了 ・IE7は1タブに1スレッド、1タブ終了でツールバーも破棄、スレッド終了 ・IE8は1タブに1プロセス、1タブ終了でツールバーも破棄、プロセス終了 ・Anciaは、複数タブに1スレッド、1タブ終了で、ツールバー破棄、スレッド継続 と、Anciaでは1スレッドの処理内で何度もツールバー作成/破棄が行われるため、若干動作モードが異なります。これがエラー原因に関係しているかもしれません。 まともに対応するとなるとマルチプロセスでしょうか。。 IEツールバーが破棄されないバグがあり、対応したのでAnciaのプロセスが残ることがもうないと思います。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
     </div>
 
@@ -257,6 +257,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・11</time>
+      <h2 class="title">Ancia Chrome Ver0.5.3 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
@@ -366,18 +378,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/fullwindow/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/frametoolbar.png);"></div>
-    <div class="detail">
-      <time>2015・03・02</time>
-      <h2 class="title">新機能: FullWindow表示ボタン</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -391,11 +391,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (181)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (2)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     
     </div>
   </div>
