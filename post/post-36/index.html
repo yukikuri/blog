@@ -124,25 +124,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-37/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-37/" class="clearfix" title="ジャンプリストカスタマイズ">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/jll.png);"></div>
     <div class="detail">
-      <time>2009・11・30</time>
+      <span class='li-header'><time>2009・11・30</time></span>
       <h2 class="title">ジャンプリストカスタマイズ</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download 久しぶりに更新しました。 ジャンプリストでよく表示するページの表示や、タスクから直にクリップボードテキストで検索、新規タブを開けるようにしました。テキストからの新規タブはある程度httpなどを補完します。タスクの実体はスクリプトに変更したので、アイコンが表示可能になり、スクリプトが書ける人は、いろいろできるようになっています。ただジャンプリストのアイコンは、一度アイコンが設定されると、アイコンを変えても反映されないようです。 ジャンプリストの変更は、設定名ｊｕｍｐＬｉｓｔのジャンプリスト設定から行えます。アプリをタスクアイテムから起動したとき、タブがひとつも無い状態でスクリプトが実行されるので、App.ActiveTab()は参照できません。またスクリプトの実行後タブが作成されなかったとき、強制的にlocalhomeが開かれます。 XpでWindowsUpdateがうまくいかないようですが、Xp新規インストールで試してみても大丈夫でした。まだ何か残っているかもしれません。。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows7/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/windows7/" class="clearfix" title="Windows7ライブサムネイル">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/liveth.png);"></div>
     <div class="detail">
-      <time>2009・10・26</time>
+      <span class='li-header'><time>2009・10・26</time></span>
       <h2 class="title">Windows7ライブサムネイル</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="summary">更新履歴 download Windows7ライブサムネイルに対応しています。ライブサムネイルは、WM_DWMSENDICONICTHUMBNAILで、タスクバーのサムネイルを返却（DwmSetIconicThumbnail）する、サムネイルをマウスオーバーしたときのWM_DWMSENDICONICLIVEPREVIEWBITMAPでアプリケーション画面に表示するビットマップを返却(DwmSetIconicLivePreviewBitmap)すれば対応できます。ビットマップは32ビットじゃないとE_INVALITARG?で処理が失敗してしまいます。ビットマップサイズもおかしいとINVALIDARGになってしまうようです。 faviconはまだ付いていませんが、そのうち付けます。サムネイルにはボタンをつけれるようなので、最新の状態に更新などつけるかもしれません。 XpとWindows7で同じフォルダのAnciaを起動しても、Windows7側からXpのフォルダのアクセス権をつけないと、設定が保存されない現象がありました。ので注意してください。 AnciaでIE8で落ちず、IE6で落ちる場合があるようです。IE6で落ちる場合はInternetExplorerでも落ちたので、何かのアドオン(flash?)か何かかもしれません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
       </aside>
@@ -163,6 +165,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -928,7 +938,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/windows7/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/liveth.png);"></div>
@@ -1695,6 +1705,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1802,18 +1824,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1827,9 +1837,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

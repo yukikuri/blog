@@ -107,25 +107,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/iediagnosticsadapter/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/iediagnosticsadapter/" class="clearfix" title="IEDiagnosticsAdapterを使ってみる">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/IEDiagnosticsAdapter.png);"></div>
     <div class="detail">
-      <time>2015・04・09</time>
+      <span class='li-header'><time>2015・04・09</time></span>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+      <div class="summary">Microsoft/IEDiagnosticsAdapterで公開されているIEDiagnosticsAdapterを使用してみたメモです。installingに従えば、特にエラーもなく動かすことができました。下は、その手順です。 1.Download 32bitのとき x86、64bitのとき x64をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。 2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する 64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&rdquo;ALL APPLICATION PACKAGES&rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。 実行するコマンド(RXは読み出し実行の意味)： icacls proxy.dll /grant &ldquo;ALL APPLICATION PACKAGES&rdquo;:(RX) 3.IEを起動する 2と3は順序が逆でも大丈夫でした。 4.Chromeで、localhost:9222を開く Chromeで、http://localhost:9222を開きます。開くと、IEと、IEコンポも一覧で出てきます。 5. localhost:9222の一覧から対象を選ぶ 対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、 が表示されます。Chrome側はdevtoolの表示になります。 使ってみた感じだと、 ・consoleは動かない。 ・要素の変更も動かない。 ・要素の中身の表示と選択要素のハイライトは動く。 ・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。 ・IEコンポも認識される といったところでした。 IEコンポを認識するのは、プロセスに関係なく&rdquo;Internet Explorer_Server&rdquo;のwindow classをすべて列挙しているからみたいです。 Microsoft/IEDiagnosticsAdapterの中身を見ると、JsRTというものを使用しています。 JavaScript - JsRT を Windows アプリに組み込む - Qiita Jsonのパーサに使えるかもしれません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/fullwindow/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/fullwindow/" class="clearfix" title="新機能: FullWindow表示ボタン">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/frametoolbar.png);"></div>
     <div class="detail">
-      <time>2015・03・02</time>
+      <span class='li-header'><time>2015・03・02</time></span>
       <h2 class="title">新機能: FullWindow表示ボタン</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 Download 1.9.99で前から追加したかった、フレーム上でフルウインドウ表示を可能にするボタン表示に対応しています。ただし、現状では試験機能(testFeature)がonで、さらにDWM表示が有効のときしか表示されません。今後の予定でDWM無効でも表示可能にするかもしれません。 フルウインドウ表示自体はすでに備わっている機能ですが、フルウインドウ表示は、 ■ 複数起動やタブの切り離しと相性がよい(動画だけ見たいときは、切り離し後フルウインドウ表示にすることで邪魔なツールバー・タブを非表示にできる) ■ 多量にタブを開いていても・ツールバーが多量にあっても、非表示にすることで、今開いているページに集中できる ■ 多量にタブを開いていても・ツールバーが多量にあっても、現ページのみの表示にすることで、簡易的なボスが来た機能に使える のような利点があります。 今後の更新で、任意のボタンを追加できるようにする予定です。現状でもresource/frame_toolbar.jsonをsetting/customize配下に配置し、直接ファイルを変更することでボタン追加できますが自己責任となります。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -146,6 +148,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -207,7 +217,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/fullwindow/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/frametoolbar.png);"></div>
@@ -1508,6 +1518,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1615,18 +1637,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1640,9 +1650,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

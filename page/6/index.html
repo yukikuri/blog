@@ -41,160 +41,136 @@
 <div class="row">
   <div class="col-sm-9">
 
-    <div class="articles">
-      <div class="row">
-        
+    <div class="articles row ani">
+      
+      
         <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0912-a/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/aero_singleline.png);"></div>
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/webkit-ancia-ch/" class="clearfix" title="WebKitエンジン Ancia Chrome">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/Ancia_Chrome.png);"></div>
     <div class="detail">
-      <time>2010・11・16</time>
-      <h2 class="title">Ancia Ver0.9.12 Aero表示でのバー移動</h2>
-      <div class="summary">更新履歴 download Aero表示のとき上部のバーを移動できるようにしています。配置によっては、IE9っぽくすることもできます。0.9.12でAero表示(オプション設定-&gt;画面スタイル-&gt;Internet Explorerスタイル)にすると、強制的に全ての検索バーとアドレスバーが上部に配置されます。今後の更新で、上部に配置する・配置しないを出来るようにする予定です。 デフォルトの画面スタイルでアドレスバーの背景をちょっと変えています。 0.9.12のバグで、favicon表示されませんが、修正したものをhttp://www.egrath.net/download/Ancia0912favicon_fix.zipに置いています。</div>
+      <span class='li-header'><time>2011・05・10</time></span>
+      <h2 class="title">WebKitエンジン Ancia Chrome</h2>
+      <div class="summary">Ancia Chromeについて&nbsp;&nbsp;ダウンロード Ancia Chromeとは、Anciaを元に描画エンジンをWebKitにしたタブブラウザです。 組み込んでみただけで、 ・Tが入力できなかったり、ページでのキー入力が全体的におかしい ・日本語入力がへん ・エンコード指定ができない、言語がja-JPじゃない(設定してるんですが効いていない) ・アドレスバー、検索バー等、シングルスレッドでキー入力ができないものがある ・cookieが保存されない ・最新のWebKitじゃない(Chrome7相当) など問題があり、ページを表示するぐらいしか今のところ使い道がありません。サイドバーは表示できます。マルチプロセスには対応してます。 マウスジェスチャやドロップアクションまでは動作するように何とかしたいんですが、時間を見て更新予定です。 ダウンロードの圧縮形式7zipは、7-Zipで解凍できます。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
-        </div>
-        
+      </div>
+      
+      
         <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0911-a/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/inputbox.png);"></div>
-    <div class="detail">
-      <time>2010・11・02</time>
-      <h2 class="title">Ancia Ver0.9.11 App.InputBox()について</h2>
-      <div class="summary">更新履歴 download スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。 var input=App.InputBox( { caption:&ldquo;Windowキャプション&rdquo;, statics:[{text:&ldquo;上部スタティックテキスト&rdquo;},{text:&ldquo;下部スタティックテキスト&rdquo;}],//2つまで inputs:[{label:&ldquo;Input1(&amp;1):&ldquo;,value:&ldquo;value1value1&rdquo;}, {label:&ldquo;Input2(&amp;2):&ldquo;,value:&ldquo;value2value2&rdquo;}, {label:&ldquo;Input3(&amp;3):&ldquo;,value:&ldquo;value3value3&rdquo;}, {label:&ldquo;Input4(&amp;4):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;},// number: 数値入力のみ {label:&ldquo;Input5(&amp;5):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;}],// 5つまで buttons:[{text:&ldquo;OK&rdquo;},{text:&ldquo;キャンセル&rdquo;,style:&ldquo;default&rdquo;}]}); // input： OKだとjson形式のテキスト、Cancelだとfalseが返却 // json形式のテキストは以下の通り // {&ldquo;inputs&rdquo;:[&ldquo;value1value1&rdquo;,&ldquo;value2value2&rdquo;,&ldquo;value3value3&rdquo;,&ldquo;1234567890&rdquo;,&ldquo;1234567890&rdquo;]} OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&ldquo;(&rdquo;+input+&ldquo;)&rdquo;).inputs[0]のように入力結果を取得できます。 Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。 inputのタイプは、指定なし(普通のedtibox)、style:&ldquo;number&rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0910/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabfont.png);"></div>
-    <div class="detail">
-      <time>2010・10・25</time>
-      <h2 class="title">Ancia Ver0.9.10 タブのフォント変更</h2>
-      <div class="summary">更新履歴 download タブのフォントを変更できるようになっています。タブのフォントサイズは大きすぎてもタブのスキン最大表示サイズまで丸められます。それと、オプション設定の見た目を少し変えています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver098-ie/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/Acid3_098.png);"></div>
-    <div class="detail">
-      <time>2010・10・12</time>
-      <h2 class="title">Ancia Ver0.9.8 IEレンダリング指定、Jscript9対応</h2>
-      <div class="summary">更新履歴 download インストールされているIEのバージョンに応じて最新のレンダリングを使用するよう対応しています。IE9ベータがインストールされていれば、自動的にIE9のレンダリングを使用します。画像はAnciaをIE9で使用したものですが、最初のオープンでAcid3は92点、なぜかリロードすると95点です。またIE9のみですが、最新のJavaScriptエンジンを使用するようになっています。 レンダリングとJavaScriptエンジンの指定は、最新のIEの機能を使用するために、レジストリを使用します。レジストリに書き込む値は、設定ファイルで決まり、起動時に毎回書き込むため、あらかじめレジストリに設定がないと動かない、というわけではありません。アプリ設定の保存にレジストリを使用しないのは従来どおりです。 できれば互換表示も対応したいんですが、なかなかうまくいってません。 設定ファイルの書き込みバグを修正しています。このバグが発生すると、前回起動時のタブの読み込みなど失敗するので、このようなバグが直っています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver097-ae/" class="clearfix">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-41/" class="clearfix" title="ExplorerBarPlus 1.4.4">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・10・04</time>
-      <h2 class="title">Ancia Ver0.9.7 バグ修正、Aeroでのアドレスバー変更</h2>
-      <div class="summary">更新履歴 download 教えてもらったXpでIMEが消える現象など、他多くのバグ修正しています。Anciaでは、Web表示部分をポップアップで表示している関係で、なかなかそれ絡みのバグ(ZOrderなど)が多かったのですが、だいぶ減ってきていると思います。バグのご指摘ありがとうございます。 Aeroあたりの更新もしたいのですが、XpでスクリプトからBrowserオブジェクトのNavigateを行うと固まる問題があり、これが修正できるか微妙です。Aero表示でのアドレスバー変更は可能にしています。</div>
+      <span class='li-header'><time>2011・05・01</time></span>
+      <h2 class="title">ExplorerBarPlus 1.4.4</h2>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 64bit環境で、ウインドウサイズが変わらないことがある対処を行っています。ただ、Anciaで使用している場合は、今後出る1.0.1の更新を待つ必要があります。ほかに、Firefox4のお気に入りが読めない、Vista以降でTree表示をExplorerっぽくしています。 64bit環境でウインドウサイズが変わらないのは、 Controls won&rsquo;t get resized once the nesting hierarchy of windows exceeds a certain depth (x64) - Decrypt my World - Site Home - MSDN Blogs が原因で、まさかこんな動作があるとは、、</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver096-ae/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/AeroMultiTab.png);"></div>
-    <div class="detail">
-      <time>2010・09・27</time>
-      <h2 class="title">Ancia Ver0.9.6 タブAero表示対応</h2>
-      <div class="summary">更新履歴 download IEスタイルでのTab Aero表示に対応しています。マルチライン・シングルラインの変更にも対応しています。タブ位置指定はできませんが、可能にする予定です。IEスタイルでは、アドレスバーが横に長くなってしまうので、ちょっとどうするか考えます。0.9.6からはタブ描画でスキン画像を使用します。 報告してもらっているバグ、修正できていないので、次は手を付けたいと思います。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver095-ae/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/Aero.png);"></div>
-    <div class="detail">
-      <time>2010・09・22</time>
-      <h2 class="title">Ancia Ver0.9.5 Aeroスタイル途中</h2>
-      <div class="summary">更新履歴 download IE9のスタイルがなんかいいので、Aeroスタイルに対応中です。オプション設定の画面スタイルで選択できますが、アドレスバーテキスト選択で見づらいバグがあります。予定ではタブもIE9のようにするつもりです。ただタブはアドレスバーの下に置けるようにします。Aero無効でもこのスタイルが表示できるようにしたいです(いまはAero有効のみ表示)。 Xpでタスクバーが隠れるバグ修正で、検索バーからの検索でZオーダーがおかしくなるのを修正しています。これが起こるとブラウザが白くなったりしたので、IMEが消える現象や、白くなる減少が直っている可能性があります。再起動などで設定ファイルが保存できないことがあるバグも修正しています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver094/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/addressbar_feed.png);"></div>
-    <div class="detail">
-      <time>2010・09・13</time>
-      <h2 class="title">Ancia Ver0.9.4 アドレスバーフィードアイコン</h2>
-      <div class="summary">更新履歴 download サイトにフィードがあるとき、アドレスバーにアイコンを表示するようにしました。ただ窓の社などフィードボタンを押してもフィードのURLが開かないバグがあり、修正予定です。 オプション設定-&gt;ブックマーク詳細設定で、ツールバーとブックマーク両方の設定を統合しています。ブックマークの設定で新規タブを開くをチェックとすると、ツールバー/サイドバー/お気に入りメニューで新規タブで開くようになります。各ブックマークで設定できるようになったため、お気に入りを新しいタブで開く設定(ieFavNewTab)は削除しました。IEブックマークはデフォルトで新規タブで開く設定としました。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-40/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ExplorerBarPlus143.png);"></div>
-    <div class="detail">
-      <time>2010・09・08</time>
-      <h2 class="title">ExplorerBarPlus 1.4.3</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 検索パネルで規定の検索URLが使えなくなったための更新です。どうやらGoogleサイドバー用検索URL(http://www.google.com/ie)は、提供が停止となったようです。Googleの検索URLを使用している場合は、検索パネルのオプション設定から変更願います。 XPで使用している場合は、メモリ関係の有効な更新を行っているので、更新すると多少意味があります。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver093/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sc.png);"></div>
-    <div class="detail">
-      <time>2010・09・06</time>
-      <h2 class="title">Ancia Ver0.9.3 最近閉じたタブの保存</h2>
-      <div class="summary">更新履歴 download 最近閉じたタブを保存できるようになっています。最近閉じたタブは、アプリ終了時に保存するので、シングル起動ではないときは、それぞれのアプリ終了で保存されます。 ブックマークの設定で、ブックマークを追加したとき、ツールバーも表示できるようになっています。今までに追加したブックマークがツールバーに出ない、メニューでツールバーのテキストが消えることがありますが、次回修正予定です。もう少しでブックマーク/ツールバーの機能充実できそうです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver100/" class="clearfix" title="Ancia Ver1.0.0 をリリース!">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/v100.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・04・26</time></span>
+      <h2 class="title">Ancia Ver1.0.0 をリリース!</h2>
+      <div class="summary">更新履歴 download 今日IE9がリリースされましたが、いつまで作っていてもきりがないので、このタイミングでAnciaもVer1.0.0をリリースしました。 正式版をリリースしたので、設定フォルダなどを大きく仕様変更することはないと思います。ブログでも不具合報告やコメントいただき、今のものが出来たと思っています。コメントいただいた方ありがとうございます！ 1.0.0をリリースしても、たぶん更新は今までどおりです。機能の説明に特徴を書きましたが、画像がないので、画像を付ける予定です。いつの間にか結構な機能があり、全て書かれているか自分でも謎です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/anciaautopageri/" class="clearfix" title="AnciaでAutoPagerizeを使用する">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ap.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・04・12</time></span>
+      <h2 class="title">AnciaでAutoPagerizeを使用する</h2>
+      <div class="summary">更新履歴 download Ancia0.9.32が出ていますが、0.9.31からURLアクションが利用可能になっています。このURLActionでAutoPagerizeを動作させることが可能です。AutoPagerizeは、ブックマークレット xAutoPagerize を利用させてもらっています。大変便利な機能ありがとうございます。 ● AutoPagerizeの利用の仕方 １, xAutoPagerizeForAncia.js をダウンロードする xAutoPagerizeForAncia.jsをダウンロードし、Anciaのscriptフォルダに保存します。 xAutoPagerizeForAncia.jsの内容は、ブックマークレットの内容と変わっていません。複雑でないブックマークレットなら、そのままURLActionに使用できます。 ２, オプション設定でURLActionの設定を行う オプション設定のURLActionの「読み込み後のアクション一覧」にURLパターン「*」、動作に「スクリプト:xAutoPagerizeForAncia.js」としてアクションを追加します(下は追加後の画像です)。 「適用」を押すと、追加したアクションが反映されます。 ３, AutoPagerizeを動作させてみる Google検索での動作が分かりやすいと思います。ドロップアクションで、適当な語句をGoogle検索に渡します。 検索結果のページで、赤い部分に緑の四角が出ていればAutoPagerizeが動作しています。 あとは、ページの下へスクロールすれば、AutoPagerizeの動作が体感できるはずです。 注：IE9だと、AutoPagerizeで追加されたページにもハイライトが反映されるんですが、IE8だとうまく動いていません。これは対応可能なら対応します。IEのバージョンやページによっては、AutoPagerizeが動かないページがあるようです。 ドロップアクションで手軽に検索し、検索語句がハイライトされ、さらに検索結果のページにURLActionでAutoPagerizeが動いて、AutoPagerizeで追加ページにハイライトが反映されるといった、なんか連携した動きになってます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/msdn/" class="clearfix" title="MSDNライブラリでサジェストが可能に">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/msdns.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・03・11</time></span>
+      <h2 class="title">MSDNライブラリでサジェストが可能に</h2>
+      <div class="summary">MSDNライブラリで、候補を取得できるURLが分かり、 開発系の検索エンジン追加 のMSDNオープンサーチのXMLファイル更新しています。追加で上書きすれば、更新されます。たぶん検索候補に対応したIEでも使えるはずです。 検索候補URLは、 http://services.social.microsoft.com/search//Data/AutoCompleteTerms?t={searchTerms}&amp;b=Msdn&amp;l=en-US&amp;m=20&amp;rf=oss10 で、最後のoss10をxml等にすれば別の形式が返ってきます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0926/" class="clearfix" title="Ancia Ver0.9.26 アプリケーション関連付け、タブリストツールバー・サイドバー">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/regist.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・03・01</time></span>
+      <h2 class="title">Ancia Ver0.9.26 アプリケーション関連付け、タブリストツールバー・サイドバー</h2>
+      <div class="summary">更新履歴 download やっとアプリケーションの関連付けが可能になりました。Vista,7では、オプション設定でレジストリに登録後、「規定のブラウザ選択画面」からAnciaを選択すれば関連付けられます。Xpならレジストリに登録すれば、関連付け、削除すれば関連付け解除です。 関連付ける拡張子は、Vista,7なら選択できますが、Xpは、.html、.htm、.mhtml、mht、.shtml、ftp・http・httpsプロトコル固定で関連付けしています。余裕があれば、Xpで登録する拡張子を選択できるようにする予定です。レジストリの登録実体は、script\reserved\regApp.jsなので、中を見れば何をやっているかわかります。関連付けを行った後、もしアプリケーションを削除する場合は、レジストリからの削除を推奨します。 regApp.jsは簡易的なsetbrowser的なことも可能で、単独で使用できます。たとえばunDonutを7に登録したい場合は、 cscript.exe C:\Ancia\script\reserved\regApp.js &ldquo;{&lsquo;regist&rsquo;:true,&lsquo;appPath&rsquo;:&lsquo;C:\app\unDonut\unDonut.exe&rsquo;,&lsquo;sysVer&rsquo;:7000,&lsquo;ieVer&rsquo;:9000}&rdquo; を管理者権限コマンドプロンプトから実行すれば、ブラウザ選択画面にunDonutを出せます。&rsquo;regist&rsquo;:falseで解除です。sysVerは5000(XP)、6000(Vista)、7000(Windows7)、ieVerは9000ならIE9、IE8なら8000です。appPathに登録するブラウザのフルパスを指定します(\は\にエスケープする必要あり)。 タブリストの内容をサイドバー・ツールバーに表示可能になっています。もし表示できない場合は、オプション設定のブックマーク設定・ブックマークの追加で「タブリスト」ブックマークを追加すれば表示出来るはずです。タブリストバーでまだシェブロンは出ません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0920-d/" class="clearfix" title="Ancia Ver0.9.20 DropAction/マウスジェスチャ Aero表示、お気に入り順序">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/daaero-thumb-300x304-72.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・01・24</time></span>
+      <h2 class="title">Ancia Ver0.9.20 DropAction/マウスジェスチャ Aero表示、お気に入り順序</h2>
+      <div class="summary">更新履歴 download ドロップアクションやボタン型マウスジェスチャのAero表示に対応しています。Aero表示するしないは、ドロップアクション/マウスジェスチャの設定から切り替え可能です（下はマウスジェスチャ） IEお気に入りでマウスのドラッグドロップでアイテム順序を入れ替え可能にしています。デフォルトの順序は、IE順ですが、入れ替えを行うと、自動的にユーザ定義順になります。順序は各フォルダ毎に名前順・IE順・ユーザ定義を指定できます。 リンクバーもマウスで並び替えできるようにしていますが、まだサブフォルダへの移動がうまく動いてません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0917-s/" class="clearfix" title="Ancia Ver0.9.17 アイコンの変更、systemメニューの変更">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/about.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・01・06</time></span>
+      <h2 class="title">Ancia Ver0.9.17 アイコンの変更、systemメニューの変更</h2>
+      <div class="summary">更新履歴 download 2011年ということで、アプリアイコンを新しくしました。すこしTheWorldっぽいですが、、今年こそは、完成まで行くはず、、だと思います。 systemメニューにコマンドバーでのメニューなど色々含めています。XpでIEスタイルにすると落ちる問題が出ています。これは次のバージョンで修正されます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
     </div>
 
     
@@ -203,7 +179,7 @@
   <span class="left"><a href="/page/5" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 6 of 23</span>
+  <span class="center vmiddle">Page 6 of 29</span>
 
   
   <span class="right"><a href="/page/7" rel="next">次へ</a></span>
@@ -224,6 +200,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -333,18 +321,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -358,9 +334,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

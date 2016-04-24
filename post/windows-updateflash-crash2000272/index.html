@@ -105,25 +105,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix" title="Ancia Ver1.9.118 のリリース内容">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
     <div class="detail">
-      <time>2016・03・23</time>
+      <span class='li-header'><time>2016・03・23</time></span>
       <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="summary">Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに 関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix" title="Windows Update後にFlashが原因でCrashする(1/4 対処法追記)">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
-      <time>2016・01・04</time>
+      <span class='li-header'><time>2016・01・04</time></span>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。 Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ http://d.hatena.ne.jp/noushibou/20160102/1451724506 Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。 Adobe Flash Playerの配布 | Adobe http://www.adobe.com/jp/products/flashplayer/distribution3.html Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。 Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/ 1&frasl;4 追記 フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。 http://kuku.neko2.net/?num=3246</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -176,12 +178,20 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
@@ -1524,6 +1534,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1631,18 +1653,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1656,9 +1666,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

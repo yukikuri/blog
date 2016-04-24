@@ -112,25 +112,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-18/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-18/" class="clearfix" title="アドレス履歴の表示">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ahist.png);"></div>
     <div class="detail">
-      <time>2009・02・09</time>
+      <span class='li-header'><time>2009・02・09</time></span>
       <h2 class="title">アドレス履歴の表示</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Ancia0.3.5で、アドレス履歴の表示に、ホーム一覧や、履歴の削除、localhomeへの移動ボタンを追加しました。他にアドレス履歴の表示領域がもったいないので、上へ移動のURL表示も追加します。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-17/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-17/" class="clearfix" title="ページのハイライト">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/pagehilite.png);"></div>
     <div class="detail">
-      <time>2009・01・27</time>
+      <span class='li-header'><time>2009・01・27</time></span>
       <h2 class="title">ページのハイライト</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Anciaでは、ページのハイライトをハイライトバーとしてタブ毎に持ちます。タブ毎に持っているので、タブ切り替えでハイライトボタンを押す必要ありません。バーでは、ハイライトの数が表示され、ハイライトされなければ灰色表示となるので、すぐにヒット数が分かります。 最新の状態に更新しても、ハイライトを失いません。ただ、、IE8βのころで、最新の状態に更新すると、ハイライトが失われてしまいました。ここは、IE8で最新の状態に更新する挙動が変わったのかもしれません。HTML Elementでのハイライトではなく、別の方法ではハイライトしているため、高速にハイライトします。HTML Elementだと、DOMなど更新してるはずなので、重そうです。 ハイライトバーが表示されていれば、自動的にページを読み込んだとき、ハイライトします。バーを非表示にすると、ハイライトも消えます。バーのハイライトボタンは、ドラッグ＆ドロップできます。ハイライト追加のショートカットキーは、デフォルトCtrl+Hです。resource/hilite.jsonが設定ファイルです。ドロップアクションで、「全てのタブでハイライト」へドロップすると、その名のとおり、全てのハブでハイライトできます。 おそらく、前回終了のタブ保存や、タブリストの保存で、ハイライト情報も保存できそうなので、タブリスト保存でハイライトも保存するよう対応予定です。セキュリティも保存できそうです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -151,6 +153,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -1172,7 +1182,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-17/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/pagehilite.png);"></div>
@@ -1743,6 +1753,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1850,18 +1872,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1875,9 +1885,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

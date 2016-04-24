@@ -117,25 +117,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/anciaie9-platfo/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/anciaie9-platfo/" class="clearfix" title="AnciaでIE9 Platform Previewを使用する">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9pp.png);"></div>
     <div class="detail">
-      <time>2010・03・20</time>
+      <span class='li-header'><time>2010・03・20</time></span>
       <h2 class="title">AnciaでIE9 Platform Previewを使用する</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">もう情報が出ていますが、Dynamic-Link Library Redirection (Windows)を利用することで、 AnciaでIE9 Platform Previewを動作させることが可能です。 IE9プレビューをインストールした後、Ancia.exe.localという空ファイルを作成し、IE9プレビューインストール配下のiepreview.exe.localフォルダの中身を全てAncia.exeがあるところにコピー またはiepreview.exe.localフォルダをそのままAncia.exeのあるフォルダにコピーし、Ancia.exe.localに名前変更 で、どちらでも使用できました。 IE9でページの互換表示の変更方法が公開されればいいのですが、今のところまったく不明です。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-46/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-46/" class="clearfix" title="マルチスレッド/プロセス対応途中の公開">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・03・01</time>
+      <span class='li-header'><time>2010・03・01</time></span>
       <h2 class="title">マルチスレッド/プロセス対応途中の公開</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="summary">マルチスレッド/プロセス対応中ですが、途中のものを公開しています。途中なので通常使用はお勧めしません。 更新履歴 download 主要機能 ドロップアクション、マウスジェスチャ、IEプラグイン、スクリプト、閉じたタブの復元、ステータスバー。。など のほとんどがまだ動作しません。これを全て対応してから出すと、とても時間がかかるので、順次出していくことにします。大体対応が終わったとき、0.8.1として出すつもりです。いまはスレッド/プロセスの制限数がありませんが、数の最大値は設定可能にします。ためしにマルチプロセスのとき子プロセスをタスクマネージャから終了しても、アプリは落ちず動作し続けます。 どのようにマルチスレッド/プロセスを対応しているか気になる人もいるかと思うので、実装イメージを書きます。まず、概要をいうとプロキシオブジェクトの動作を作っています。MDIChildFrameはメインスレッドで動かし、Frameの子Windowは、別スレッドで動かします。 Anciaでは、オブジェクト間でさまざまな処理を行えるよう struct __declspec(novtable) ICmdTarget : public IUnknown { STDMETHOD(CmdExec)(long cmdId, long cmdExecOpt, OPTIONAL VARIANT* arg1, OPTIONAL VARIANT* arg2, OPTIONAL VARIANT* arg3, OUT VARIANT* result) = 0; }; というIOleCommandTargetのようなインターフェースで内部動作を作っています。ここで、MDIChildFrame &lt;-&gt; Child間をICmdTargetでやり取りするようマルチスレッド対応で変更しました(いままでは、MDIChildFrameがすべて子Window処理を行っていた)。やり取りで、シングルスレッドのときは、直に相手のCmdExecを呼び、マルチスレッド/マルチプロセスのときは、プロキシオブジェクトを通してIPC通信で相手のCmdExecを呼ぶようにした、というのが簡単な動作説明です。単純なマーシャル的なものを作っているのと同じでしょうか。 ほとんどのプロキシ間コマンドは、CmdExecからIPC通信で相手側の処理を呼び出す HRESULT IpcCmdExec(HWND hWndTarget, IpcInfo* pIpcInfo, int fFlags, UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0); というのを呼ぶだけで、すむと思っていたんですが、中にはそう簡単にいかないものがあり、時間はかかりそうです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
       </aside>
@@ -156,6 +158,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -833,7 +843,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-46/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
@@ -1666,6 +1676,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1773,18 +1795,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1798,9 +1808,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

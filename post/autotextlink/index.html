@@ -118,25 +118,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/creating-ancia/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/creating-ancia/" class="clearfix" title="creating ancia">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2008・12・29</time>
+      <span class='li-header'><time>2008・12・29</time></span>
       <h2 class="title">creating ancia</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Anciaの開発に当たって、実装をあきらめた機能があります。それは、タブごとにスレッドとする機能です。 タブを複数作成すると、1つのUIスレッドで複数tridentエンジンが動作するため、1タブが重いページを読み込むと他のタブも固まってしまいます。新しいタブブラウザを開発するからには、タブごとにスレッドとすることが実装目的の一つでした。 しかし残念ながら、タブごとにスレッドで動作させることは可能でしたが、どうしても解決できない問題があり、あきらめてしまいました。スレッドで生成したtridentエンジンで、どうにもスクロールがスレッドではないときに比べ、もたついてしまうのです。タブごとのスレッドのTheWorldで、http://www.yahoo.co.jp/を開くと、ホイール上下でのスクロールがIEに比べスムーズではないことが分かります。 1UIスレッド・複数タブで実装が進んでしまった今では、タブごとのスレッドやプロセス対応は、無理そうです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-14/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-14/" class="clearfix" title="DropAction">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/da029.png);"></div>
     <div class="detail">
-      <time>2008・12・09</time>
+      <span class='li-header'><time>2008・12・09</time></span>
       <h2 class="title">DropAction</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Anciaのドロップアクションとは、簡単にいうとドロップターゲットの表示です。リンクやテキストをドラッグすると、ボタンが表示されるので、直感的に行ないたいボタンへドロップします。 設定ファイルは、resourceのdrop_link.json（リンクの場合）、drop_text.json（テキストの場合）です。ボタンは、設定ファイルでdropdownがあると階層構造になります。アプリでは、階層構造の深さに制限は設けていません。dropdownとしてもdropdownボタンにドロップ可能です。 ボタンは、 スクリプト（script） 検索（search） が登録できます。アクションをスクリプトで書かなければならないことが面倒ですが、アプリでアクションを実装するときりがないので、その様にしました。逆にスクリプトが実行できるので、ActiveXObject等でインスタンスを作成し、ダウンローダを起動するなども簡単に出来ます。 ドロップアクションは、単なるOleDragDropのイベント契機に表示しているので、他のアプリからのドラッグなどでも表示できます。たとえば、こんなことが可能です。 他のブラウザからドラッグされたリンクを新しいタブで開く 他のブラウザからドラッグされたリンクをクリップボードにコピー Wordや秀丸からドロップされたテキストでGoogle検索し、ハイライト Anciaのリンクバーからドラッグされたボタンをバッググラウンドタブで開く ・・・など、スクリプトなのでアクションは自由です。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -157,6 +159,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -1246,7 +1256,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-14/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/da029.png);"></div>
@@ -1765,6 +1775,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1872,18 +1894,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1897,9 +1907,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

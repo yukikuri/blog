@@ -116,25 +116,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix" title="Windows Update後にFlashが原因でCrashする(1/4 対処法追記)">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
-      <time>2016・01・04</time>
+      <span class='li-header'><time>2016・01・04</time></span>
       <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。 Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ http://d.hatena.ne.jp/noushibou/20160102/1451724506 Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。 Adobe Flash Playerの配布 | Adobe http://www.adobe.com/jp/products/flashplayer/distribution3.html Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。 Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/ 1&frasl;4 追記 フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。 http://kuku.neko2.net/?num=3246</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/iediagnosticsadapter/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/iediagnosticsadapter/" class="clearfix" title="IEDiagnosticsAdapterを使ってみる">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/IEDiagnosticsAdapter.png);"></div>
     <div class="detail">
-      <time>2015・04・09</time>
+      <span class='li-header'><time>2015・04・09</time></span>
       <h2 class="title">IEDiagnosticsAdapterを使ってみる</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+      <div class="summary">Microsoft/IEDiagnosticsAdapterで公開されているIEDiagnosticsAdapterを使用してみたメモです。installingに従えば、特にエラーもなく動かすことができました。下は、その手順です。 1.Download 32bitのとき x86、64bitのとき x64をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。 2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する 64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&rdquo;ALL APPLICATION PACKAGES&rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。 実行するコマンド(RXは読み出し実行の意味)： icacls proxy.dll /grant &ldquo;ALL APPLICATION PACKAGES&rdquo;:(RX) 3.IEを起動する 2と3は順序が逆でも大丈夫でした。 4.Chromeで、localhost:9222を開く Chromeで、http://localhost:9222を開きます。開くと、IEと、IEコンポも一覧で出てきます。 5. localhost:9222の一覧から対象を選ぶ 対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、 が表示されます。Chrome側はdevtoolの表示になります。 使ってみた感じだと、 ・consoleは動かない。 ・要素の変更も動かない。 ・要素の中身の表示と選択要素のハイライトは動く。 ・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。 ・IEコンポも認識される といったところでした。 IEコンポを認識するのは、プロセスに関係なく&rdquo;Internet Explorer_Server&rdquo;のwindow classをすべて列挙しているからみたいです。 Microsoft/IEDiagnosticsAdapterの中身を見ると、JsRTというものを使用しています。 JavaScript - JsRT を Windows アプリに組み込む - Qiita Jsonのパーサに使えるかもしれません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
 </article>
 
       </aside>
@@ -155,6 +157,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -208,7 +218,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
@@ -1563,6 +1573,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1670,18 +1692,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1695,9 +1705,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

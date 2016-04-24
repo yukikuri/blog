@@ -135,25 +135,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-53/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-53/" class="clearfix" title="クラッシュ詳細情報の表示">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/crashdetail.png);"></div>
     <div class="detail">
-      <time>2010・06・21</time>
+      <span class='li-header'><time>2010・06・21</time></span>
       <h2 class="title">クラッシュ詳細情報の表示</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download クラッシュ詳細情報を表示できるようになってます。クラッシュ情報はTMPフォルダに作成し、削除機能が無いので、次のバージョンで自動で古い情報ファイルを削除するように、クラッシュページで削除できるようにします。 今のところ、情報ファイルやdumpファイルを送信する機能は無いので、作者宛にメールするくらいしかありません。情報ファイルはunicodeのテキストなのでどのような内容か開けば分かりますが、dumpファイルはメモリに個人情報が含まれているかもしれないので、気になる方は送らない方がいいです。ただdumpファイルがあるとクラッシュの詳細が情報ファイルより分かります。 クラッシュページで、アプリでjson形式でページに情報を渡し、ページはeval()で情報を取り出す、という方式、ページに情報を渡すためにidispatch実装は結構面倒なので初めからこのように作ればよかったと、、jsonでの書き込み実装＝ページにも渡せるとなるので。 マルチプロセスのセッション継続は、cookieを送れば継続できることがわかりましたが、TheWorldの更新内容でcookieに関する修正が多いので、少し難しいと思います。gmailはリダイレクトやhttpsも絡み複雑のようです。 長時間使っていて落ちたときタブが失われることがあるので、一定間隔でタブのスナップショットを取る機能を付けようと思います。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/kaspersky/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/kaspersky/" class="clearfix" title="Kasperskyでの誤検知について">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・06・12</time>
+      <span class='li-header'><time>2010・06・12</time></span>
       <h2 class="title">Kasperskyでの誤検知について</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">KasperskyでTabManagerがウイルスと検知されることで、Kaspersky社より誤検知であると連絡がありました。連絡した次の日に対応していただき定義データベースが更新され、現在TabManagerはウイルスと検知されなくなっています。次の日に対応してもらえるとは、、Kaspersky社の対応に好印象です。 http://www.virustotal.com/で調べるとTabManagerは誤検知されやすいようで、まだいくつかウイルスと出ています。サイズが小さいからでしょうか。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -166,6 +168,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -499,7 +509,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-51/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/smooths.png);"></div>
@@ -1244,6 +1254,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1351,18 +1373,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1376,9 +1386,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

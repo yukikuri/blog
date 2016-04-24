@@ -44,190 +44,128 @@
 
     <header class="title list"><h1>Posts</h1></header>
 
-    <div class="articles">
-      <div class="row">
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-8/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="articles row ani">
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-17/" class="clearfix" title="ページのハイライト">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/pagehilite.png);"></div>
     <div class="detail">
-      <time>2006・04・04</time>
-      <h2 class="title">ExplorerBarPlus 1.0.9</h2>
-      <div class="summary">タブブラウザ用の対応（今のところunDonutプラグインのみ）をしました。IEでは今までと変わらず使用できます。タブブラウザのときはメニューで「タブで開く」ができたり、タブブラウザ用設定ダイアログが出るなどあります。ExplorerBarPlusの設定はIEと共有です。 仕組みは単純で、IEで動いているものをunDonutのプラグイン上から作っているだけです。なのでExplorerBarPlusがバージョンアップしても、プラグインは更新する必要ないです。</div>
+      <span class='li-header'><time>2009・01・27</time></span>
+      <h2 class="title">ページのハイライト</h2>
+      <div class="summary">Anciaでは、ページのハイライトをハイライトバーとしてタブ毎に持ちます。タブ毎に持っているので、タブ切り替えでハイライトボタンを押す必要ありません。バーでは、ハイライトの数が表示され、ハイライトされなければ灰色表示となるので、すぐにヒット数が分かります。 最新の状態に更新しても、ハイライトを失いません。ただ、、IE8βのころで、最新の状態に更新すると、ハイライトが失われてしまいました。ここは、IE8で最新の状態に更新する挙動が変わったのかもしれません。HTML Elementでのハイライトではなく、別の方法ではハイライトしているため、高速にハイライトします。HTML Elementだと、DOMなど更新してるはずなので、重そうです。 ハイライトバーが表示されていれば、自動的にページを読み込んだとき、ハイライトします。バーを非表示にすると、ハイライトも消えます。バーのハイライトボタンは、ドラッグ＆ドロップできます。ハイライト追加のショートカットキーは、デフォルトCtrl+Hです。resource/hilite.jsonが設定ファイルです。ドロップアクションで、「全てのタブでハイライト」へドロップすると、その名のとおり、全てのハブでハイライトできます。 おそらく、前回終了のタブ保存や、タブリストの保存で、ハイライト情報も保存できそうなので、タブリスト保存でハイライトも保存するよう対応予定です。セキュリティも保存できそうです。</div>
     </div>
   </a>
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/plugin/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/20060325.png);"></div>
-    <div class="detail">
-      <time>2006・03・25</time>
-      <h2 class="title">plugin 途中</h2>
-      <div class="summary">表示まではできるようになりました。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-6/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/20060322.png);"></div>
-    <div class="detail">
-      <time>2006・03・22</time>
-      <h2 class="title">ExplorerBarPlus 1.0.8</h2>
-      <div class="summary">リンクの抽出でハイライトに対応しました。ハイライトでは位置がわかるようにアイコンも表示されます（内部・外部リンクでアイコンの色が異なる）。 ExplorerBarPlusを他のブラウザのプラグインとして使えるようにできるだろうか。ExplorerBarPlus用にIServiceProviderなどをダミーで実装してSetSiteしてあげれば、うまくいきそうな感じがするけど。。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-5/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/20060313.png);"></div>
-    <div class="detail">
-      <time>2006・03・13</time>
-      <h2 class="title">ExplorerBarPlus 1.0.7</h2>
-      <div class="summary">DOMViewPanelやExtractTagPanelでタグのハイライトに対応しました。ExtractLinkPanelへの対応は時間がないので次の機会にでも。。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-2/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・03・06</time>
-      <h2 class="title">要素のハイライト２</h2>
-      <div class="summary">フレームやインラインフレームでハイライトがずれてしまう。IHTMLPaintSite::TransformGlobalToLocalの使い方が間違っているのだろうか。もうすぐFF12がでてしまうし。うーん。。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/20060227.png);"></div>
-    <div class="detail">
-      <time>2006・02・27</time>
-      <h2 class="title">要素のハイライト</h2>
-      <div class="summary">要素のハイライトを色々なページで試してみると、、隠しリンクが見つかったりしてます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-4/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・02・10</time>
-      <h2 class="title">ExplorerBarPlus 1.0.6</h2>
-      <div class="summary">ExplorerBarPlus 1.0.6をリリースしました。新しく追加したFxFavReaderでのブックマーク自動検出で、Firefoxは対応しましたが、NetscapeやMozillaのブックマーク検出は対応しませんでした。どうやらregistry.datというバイナリファイルを読まなければならないらしい。 次回、時間がかかりそうで対応しなかった、抽出タグやリンクのページ内の位置がわかる表示に対応できるかどうか。。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ie7-beta-2-prev/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・02・02</time>
-      <h2 class="title">IE7: Beta 2 Preview</h2>
-      <div class="summary">Internet Explorer 7: Beta 2 Preview checklists 入れてみると、IE７はタブ毎にExplorerBarのインスタンスを作成していた。タブで開く方法は公開されていないらしい、、Object Viewerで見てみるとITabBrowserServiceというその名のとおりのインターフェースが。このインターフェースからTabで開けるのかもしれない。 このエントリをIE７で開くとなぜかアドレスバーの色にに変化が、、「Internet Explorer 7: Beta 2 Preview checklists」のリンクを取るとアドレスバーの色の変化が消える。とりあえずフィードバックしておきました。 Yahoo! Internet GuideでExplorerBarPlusを掲載していただきました。１ページも使って掲載してもらえるとは思ってなかったので感激です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/simplefavpanel/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/20060126.png);"></div>
-    <div class="detail">
-      <time>2006・01・25</time>
-      <h2 class="title">SimpleFavPanelの機能（追記）</h2>
-      <div class="summary">SimpleFavPanelのお気に入りパスにURLを指定できる機能は、OPMLのURLが指定されることを想定しています。たとえばOPMLファイルが公開されています。このURLをSimpleFavPanelで表示すると下のようになります。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/simplefavpanel-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・01・24</time>
-      <h2 class="title">SimpleFavPanelの機能</h2>
-      <div class="summary">隠し機能ではないですがSimpleFavPanelで表示するお気に入りのパスにはURL（http://&hellip;)を指定できます。URLを指定したときはお気に入りの内容を変更しても、表示しているURLに対して更新はされません。オンラインストレージなどにお気に入りファイルをアップロードし表示すれば、オンラインブックマークのように使用できます。 アイテムにはHTMLとRSSのURLを登録できます。RSSを登録したアイテムはクリックするとRSSのリストが表示されますが、ブラウザのメインのところにドラッグ＆ドロップするとHTMLのURLを開くことができます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・01・17</time>
-      <h2 class="title">最近時間が。。</h2>
-      <div class="summary">最近開発する時間がなかなか取れません。FxFavReaderは作りかけだしマルチユーザ対応とかデータの保存場所変更、RSS認証対応、バグ修正も。。 このたびネットランナーでExplorerBarPlusとQuickLinkBarExを紹介していただきました。この場を借りてお礼申し上げます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-3/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2005・12・31</time>
-      <h2 class="title">ExplorerBarPlus 1.0.5</h2>
-      <div class="summary">ExplorerBarPlus 1.0.5をリリース。Sleipnirのお気に入りを表示できる機能の追加、IEFavPanelやExtractLinkPanelのバグなどがいくつか修正されています。 ダウンロードはこちらからできます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/json/" class="clearfix" title="json形式の設定ファイル">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・01・20</time></span>
+      <h2 class="title">json形式の設定ファイル</h2>
+      <div class="summary">Anciaの設定ファイルは、resourceやsetting、タブリストなど、json形式で保存します。Anciaは、一から作成したUnicodeビルドです。なので、まず設定ファイルを、iniファイルを使わず、おもいきってUnicode形式のjsonとしました。Unicodeビルドで設定ファイルもUnicodeとすることで、設定ファイルを読み込んだ際の無駄な文字コード変換を省けます。 jsonは、iniに比べ配列やオブジェクトの表現がしやすいので、良いです。json parser、writerは自前で書いていますが、IE8のが、APIやinterfaceで公開されれば、json形式で保存するアプリが増えるかもしれません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/opensearch/" class="clearfix" title="OpenSearchでの検索エンジン登録">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/opensearch.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・01・14</time></span>
+      <h2 class="title">OpenSearchでの検索エンジン登録</h2>
+      <div class="summary">Anciaでの検索エンジン情報は、OpenSearch形式のファイルで持っています。どんな検索エンジンでもOpenSearch形式のファイルを作れば、使用できるはずです。 アプリへの検索エンジン登録は、searchフォルダに、OpenSearch形式のファイルを置くだけです。ファイル名＝検索エンジン名となり、ファイル名の.icoをおけば、検索エンジンのアイコンになります。ファイル削除で、登録が消えます。ただし、アプリで削除すると、検索履歴も一緒に消してくれます。登録が単純な分、検索エンジンの順番は、ファイル名順です。 検索バーは、検索エンジンごとに検索キーワード履歴を保存するため、aguse.jpで調べたURLやgoogleで調べたキーワードが、ごっちゃになることはありません。検索バーのキーワード履歴は、ホイールクリックすると、新しいタブで検索結果を表示し、また、右クリックメニューから他のエンジンで調べることが出来ます（上の画像）。履歴は、setting\SearchHist_検索エンジンファイル名.jsonで保存します。履歴ファイルがあれば、履歴を表示・なければ表示無しです。検索バーへの検索エンジンボタンの登録は、バーのボタン設定ファイルで&rdquo;btn&rdquo;:[・・・,{&ldquo;search&rdquo;:&ldquo;検索エンジンのファイル&rdquo;},・・・]とします。 検索URLテンプレートは、{searchTerms}のみサポートしています。Internet Explorerと同じく、GETのみサポートです。 次の更新は、タブ上での機能割り当て辺りを、、マウスジェスチャは、、違う形で提供するかもしれません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ie/" class="clearfix" title="IEツールバー">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ietoolbar.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・01・09</time></span>
+      <h2 class="title">IEツールバー</h2>
+      <div class="summary">Anciaは、ExplorerBarPlusをどうしても使用したかったので、初回v0.0.1の時点でIEツールバー・エクスプローラバーをサポートしています。サポートといっても、IEでしか動かないものなどあるため、全てのツールバーのサポートは無理です。 AnciaでのIEツールバーの仕様は、Internet Explorer同様、1つのタブにつき、１ツールバーインスタンスです。２つタブがあるとき、ツールバーも２つ存在します。タブを切り替えるときに、IEツールバーの表示も切り替えています。 IEツールバー自体、１つのIWebbrowserへの動作のため、複数タブで１つのIEツールバーを共有し動作させる実装は選択しませんでした。複数タブ対１つのIEツールバーは、仕様に従わず無理に動かすことは可能だと思いますが、無理に動かしてもしょうがないですし、無理に動かすための実装時間がもったいなく思えました。 Ancia初期の開発段階では、全タブが閉じた状態での起動でした。ですが、IEツールバーが1つのIWebBrowserが必要なので、IEツールバーをサポートしたことで、全タブが閉じた状態での起動仕様は捨てました。全タブが閉じた状態での起動が自身は好きですが、IEツールバーのサポートのほうが、上だったので、、仕方ないです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/localhome/" class="clearfix" title="localhome機能">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/localhome.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・01・04</time></span>
+      <h2 class="title">localhome機能</h2>
+      <div class="summary">Anciaの0.3.0のリリースで、ローカルホーム機能を追加しました。これは、about:localhomeにアクセスしたとき、resource配下のlocalhome.htmlの内容を表示するものです。resource/customizeにlocalhome.htmlがある場合は、そちらを優先に表示します。 about:localhomeのURLは特殊で、ローカルロックダウン・script無効でもスクリプトが実行できます。また、localhomeのときだけ、externalからアプリのさまざまなオブジェクト（IEのホーム一覧や、今日表示したページ一覧など）が参照できます。まだlocalhomeのデザインが適当なので、そのうち直します。localhomeの表示には、タブスナップショットの一覧も含める予定です。 localhomeは1日丸々使ったので、さすがに疲れました。年末も精神的にかなり辛いことがあったので、今日は、、ゆっくりしよう</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-16/" class="clearfix" title="トップページ">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・01・03</time></span>
+      <h2 class="title">トップページ</h2>
+      <div class="summary">で、ブログエントリの最新3件まで表示しているが、日本語のタイトルで文字化けが発生。domxml_open_fileは、どうやらUTF-8として扱ってしまうらしく、mb_convert_encodingでUTF-8からEUC-JPにしたので、このタイトルが文字化けしていないはず。 ブログのatom.xml読み込みは、非同期でも可能ですが、非同期にしてさらにリクエストを増やすより、リクエストが来ているのだから、たかが20Kのファイル、サーバで読み取った方がいいんじゃないかと、素人考えで思いました。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/no-category" class="tag">no category</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/dyn-menu-1/" class="clearfix" title="dyn menu">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dynmenu.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2008・12・31</time></span>
+      <h2 class="title">dyn menu</h2>
+      <div class="summary">Anciaは、ResHackerでみると分かりますが、メニューリソースを持っていません。メニューは全てファイルで持ち、メニューファイルには、動的メニューアイテム（dynamic menu）を定義できます。実装済み動的メニューは、placeholderのprefixではじまる placeholder.ietoolbar 〜 Internet Explorerツールバー placeholder.ievertbar 〜 Internet Explorerエクスプローラバー placeholder.up 〜 上へ移動 placeholder.back 〜 トラベルログの戻る placeholder.forward 〜 トラベルログの進む placeholder.travellog 〜 トラベルログ全て placeholder.closed 〜 最近閉じたタブ placeholder.new.closed 〜 最近閉じたタブ（新しいタブで開く） placeholder.home 〜 Internet ExplorerのホームURL placeholder.new.home 〜 Internet ExplorerのホームURL(新しいタブで開く) placeholder.toolbar 〜 アドレスバー、検索バーなど表示・非表示 placeholder.searchengine 〜 検索エンジン placeholder.encoding 〜 エンコーディング placeholder.tab 〜 タブ一覧（次回更新に含まれます） です。 ツールバーのメニューファイルmenu_toolbar.jsonを {&ldquo;menu&rdquo;:[ ← 次回更新でrootからmenuへ変更されます {&ldquo;popup&rdquo;:[ &nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.toolbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ハイライトバー&rdquo;,&ldquo;cmd&rdquo;:&ldquo;show.hilitebar&rdquo;}, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;インラインサーチ(&amp;I)&ldquo;,&ldquo;cmd&rdquo;:&ldquo;isearch&rdquo;}, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ステータスバー(&amp;B)&ldquo;,&ldquo;cmd&rdquo;:&ldquo;statusbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;エクスプローラバー&rdquo;,&ldquo;popup&rdquo;:[ &nbsp;&nbsp;&nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.ievertbar&rdquo;}]}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;cmd&rdquo;:&ldquo;placeholder.ietoolbar&rdquo;}, &nbsp;&nbsp;null, &nbsp;&nbsp;{&ldquo;txt&rdquo;:&ldquo;ツールバー固定する(&amp;B)&ldquo;, &ldquo;cmd&rdquo;:&ldquo;locktoolbar&rdquo;}]} ]} とした場合、ツールバーで右クリックすると、placeholder.toolbar、ietoolbarが動的に展開され、上の画像のメニューが表示されます。placeholderでの展開がないときは「なし」になります。nullはセパレータです。 仕様として、下のように</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/creating-ancia/" class="clearfix" title="creating ancia">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2008・12・29</time></span>
+      <h2 class="title">creating ancia</h2>
+      <div class="summary">Anciaの開発に当たって、実装をあきらめた機能があります。それは、タブごとにスレッドとする機能です。 タブを複数作成すると、1つのUIスレッドで複数tridentエンジンが動作するため、1タブが重いページを読み込むと他のタブも固まってしまいます。新しいタブブラウザを開発するからには、タブごとにスレッドとすることが実装目的の一つでした。 しかし残念ながら、タブごとにスレッドで動作させることは可能でしたが、どうしても解決できない問題があり、あきらめてしまいました。スレッドで生成したtridentエンジンで、どうにもスクロールがスレッドではないときに比べ、もたついてしまうのです。タブごとのスレッドのTheWorldで、http://www.yahoo.co.jp/を開くと、ホイール上下でのスクロールがIEに比べスムーズではないことが分かります。 1UIスレッド・複数タブで実装が進んでしまった今では、タブごとのスレッドやプロセス対応は、無理そうです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
     </div>
 
     
@@ -236,7 +174,7 @@
   <span class="left"><a href="/post/page/17" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 18 of 19</span>
+  <span class="center vmiddle">Page 18 of 29</span>
 
   
   <span class="right"><a href="/post/page/19" rel="next">次へ</a></span>
@@ -257,6 +195,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -366,18 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -391,9 +329,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

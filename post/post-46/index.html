@@ -131,25 +131,27 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);<br />
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ver0803/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ver0803/" class="clearfix" title="Ver0.8.0.3">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・03・15</time>
+      <span class='li-header'><time>2010・03・15</time></span>
       <h2 class="title">Ver0.8.0.3</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download マウスジェスチャ、ドロップアクション、スクリプトをマルチスレッド/プロセスで使用可能にしています。が、まだスクリプトで他のタブへの処理（全タブでハイライトが該当）や、細々した機能(タブの複製、ハイライト継承/設定の同期など)の動作が不十分です。 タブのスレッドが落ちても、メインスレッドが落ちないようにしたので、タブマネージャのようなexeを作るつもりです。固まっても、タブマネージャでスレッド/プロセスを強制終了することで、メインスレッドを救えるはずです。ただ強制終了はTerminateThread/Processを使用しますが、これで強制終了したとき、コンポーネントがおかしくならないか心配ですが、、 スクリプトの実行が少し複雑になってしまいました。ツールバーのボタンやマウスジェスチャからスクリプトを実行したときは、タブが動作しているスレッド/プロセス内で、スクリプトを動かします。それ以外、ドロップアクションなどは、メインスレッド内で動作させています。 戻るメニューの順序がおかしいのを修正するのを忘れましたが、次回直します。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-45/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-45/" class="clearfix" title="途中２">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/conti2.png);"></div>
     <div class="detail">
-      <time>2010・02・18</time>
+      <span class='li-header'><time>2010・02・18</time></span>
       <h2 class="title">途中２</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="summary">シングルスレッド、マルチスレッド、マルチプロセスを意識しないで動作するよう内部設計を変えている途中で、まあそれなりにうまくいくかもというところです。シングルスレッドでは多少遅くなるかもしれませんが、１つ、２つAPI呼び出しが増えてもそれど遅くならないでしょう。 タスクバーサムネイルが出るようになりましたが、スレッド（おそらくプロセスも）が違うとITaskbarList3::SetTabOrderが失敗してしまいました。仕方ないので、SetTabOrderのhwndInsertBeforeにNULLを渡して、後ろにどんどんずらしていく、というのは大変そうなのでどうしよう、、 追記）SetTabOrderの失敗は、間違ったHWNDを渡しているだけでした。SetTabOrderって別のプロセスがRegisterTabしても成功してます。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
       </aside>
@@ -170,6 +172,14 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);<br />
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -875,7 +885,7 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);<br />
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-45/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/conti2.png);"></div>
@@ -1740,6 +1750,18 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);<br />
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1847,18 +1869,6 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);<br />
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1872,9 +1882,9 @@ UINT idCmd, LPVARIANT arg1 = 0, LPVARIANT arg2 = 0, LPVARIANT arg3 = 0);<br />
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

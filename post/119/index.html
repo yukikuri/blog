@@ -115,25 +115,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ie9/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ie9/" class="clearfix" title="IE9メモリ問題とIE9環境でのマルチプロセス推奨について">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9mem.png);"></div>
     <div class="detail">
-      <time>2011・09・13</time>
+      <span class='li-header'><time>2011・09・13</time></span>
       <h2 class="title">IE9メモリ問題とIE9環境でのマルチプロセス推奨について</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download 1.2.3を出しています。正式版はもう少し後になりそうです。IE9のメモリ問題について書きます。 IE9のメモリ問題で、Flashで！が出るという現象、これがIE9で出るかを調べてみました。 関連ツイート１：http://twitter.com/#!/kurimoto_y/status/111826171842396161 関連ツイート２：http://twitter.com/#!/kurimoto_y/status/111827188340375552 結果、IE9でも出ます。 ● 出し方のコツ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセスを作る動作のようです。 タスクマネージャでIEプロセスのメモリ700Mを超えたあたりで、新規タブを開かず、Flashが多く貼っているページ、例えばYoutube埋め込みをどんどん再生していけば1Gを超えたぐらいで！が出ると思います。 IE9で出るということは、現状IE9でも直せない問題だと判断して、アプリで対応するのは難しいと思います。またIE9が700Mあたりで新規プロセスを作成するあたりが、Tridentで1プロセスで使用できるメモリに限界があるように見えます(このあたりでもうIEコンポーネントはマルチプロセス前提になっているかもしれません)。 上のことから、IE9環境では、シングルスレッド/マルチスレッドではなく、Anciaをマルチプロセスで使用することを推奨します。マルチプロセスで、シングルスレッド/マルチスレッドとの動作の違いは、セッションが継続する/しないかになります。マルチプロセスでも、同じタブグループ内ならセッションは継続します。 ただ、Anciaのマルチプロセスでのセッション継続は、タブグループが1つのプロセスであり、タブグループの各タブをそのプロセス内のスレッドで動かしているだけです。そのため、タブグループ内のタブ数が多くなり、長時間使用しプロセスのメモリサイズが多くなるとFlashの！問題は出やすくなります。それでもシングルスレッド/マルチスレッドに比べると、発生頻度は低くなります。 自分は、マルチプロセスで使用しています。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/bho/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/bho/" class="clearfix" title="BHOとタブグループ機能">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabgroupaero.png);"></div>
     <div class="detail">
-      <time>2011・07・05</time>
+      <span class='li-header'><time>2011・07・05</time></span>
       <h2 class="title">BHOとタブグループ機能</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download Ver1.0.0からBHOとタブグループ機能を追加しています。 マルチプロセスでは、同じタブグループの中では、セッションが継続できます(別のタブ、タブグループとセッションは共有しない)。マルチプロセスでのセッション共有は難しいので、タブグループ内ではセッションが継続できるという対応にしています。タブグループ対応でタブスキンのデザインかなり変えています。ホイールクリックか、ナビゲートロックで新規タブを開くと同じタブグループで開きます。 BHOは、たとえば、Orbit Downloaderというのがありますが、こういうのが動作します(もともとBHOはIE用なので全て動作するわけではありません)。 上は、http://www.orbitdownloader.com/jp/Use-as-YouTube-Downloader.htm で試したもので、動いていることが分かります。 Ver1.1.0で正式版を出す予定でしたが、タブグループをつけたばかりで1.1.5か1.2.0が、そのあたりになると思います。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -154,86 +156,6 @@
           
           
           
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
             
           
           
@@ -294,6 +216,10 @@
           
           
           
+          
+          
+          
+          
             
           
           
@@ -303,6 +229,26 @@
           
           
             
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
           
           
           
@@ -398,6 +344,50 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
           
           
           
@@ -423,7 +413,27 @@
           
           
             
-             <div>Related Posts</div>
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/bho/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabgroupaero.png);"></div>
@@ -1566,6 +1576,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1673,18 +1695,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1698,9 +1708,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

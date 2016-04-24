@@ -111,25 +111,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/json/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/json/" class="clearfix" title="json形式の設定ファイル">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・01・20</time>
+      <span class='li-header'><time>2009・01・20</time></span>
       <h2 class="title">json形式の設定ファイル</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Anciaの設定ファイルは、resourceやsetting、タブリストなど、json形式で保存します。Anciaは、一から作成したUnicodeビルドです。なので、まず設定ファイルを、iniファイルを使わず、おもいきってUnicode形式のjsonとしました。Unicodeビルドで設定ファイルもUnicodeとすることで、設定ファイルを読み込んだ際の無駄な文字コード変換を省けます。 jsonは、iniに比べ配列やオブジェクトの表現がしやすいので、良いです。json parser、writerは自前で書いていますが、IE8のが、APIやinterfaceで公開されれば、json形式で保存するアプリが増えるかもしれません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ie/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ie/" class="clearfix" title="IEツールバー">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ietoolbar.png);"></div>
     <div class="detail">
-      <time>2009・01・09</time>
+      <span class='li-header'><time>2009・01・09</time></span>
       <h2 class="title">IEツールバー</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Anciaは、ExplorerBarPlusをどうしても使用したかったので、初回v0.0.1の時点でIEツールバー・エクスプローラバーをサポートしています。サポートといっても、IEでしか動かないものなどあるため、全てのツールバーのサポートは無理です。 AnciaでのIEツールバーの仕様は、Internet Explorer同様、1つのタブにつき、１ツールバーインスタンスです。２つタブがあるとき、ツールバーも２つ存在します。タブを切り替えるときに、IEツールバーの表示も切り替えています。 IEツールバー自体、１つのIWebbrowserへの動作のため、複数タブで１つのIEツールバーを共有し動作させる実装は選択しませんでした。複数タブ対１つのIEツールバーは、仕様に従わず無理に動かすことは可能だと思いますが、無理に動かしてもしょうがないですし、無理に動かすための実装時間がもったいなく思えました。 Ancia初期の開発段階では、全タブが閉じた状態での起動でした。ですが、IEツールバーが1つのIWebBrowserが必要なので、IEツールバーをサポートしたことで、全タブが閉じた状態での起動仕様は捨てました。全タブが閉じた状態での起動が自身は好きですが、IEツールバーのサポートのほうが、上だったので、、仕方ないです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -150,6 +152,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -1195,7 +1205,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/ie/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ietoolbar.png);"></div>
@@ -1748,6 +1758,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1855,18 +1877,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1880,9 +1890,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

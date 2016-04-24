@@ -44,190 +44,128 @@
 
     <header class="title list"><h1>Online Soft</h1></header>
 
-    <div class="articles">
-      <div class="row">
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0910/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabfont.png);"></div>
+    <div class="articles row ani">
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ie9/" class="clearfix" title="IE9メモリ問題とIE9環境でのマルチプロセス推奨について">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9mem.png);"></div>
     <div class="detail">
-      <time>2010・10・25</time>
-      <h2 class="title">Ancia Ver0.9.10 タブのフォント変更</h2>
-      <div class="summary">更新履歴 download タブのフォントを変更できるようになっています。タブのフォントサイズは大きすぎてもタブのスキン最大表示サイズまで丸められます。それと、オプション設定の見た目を少し変えています。</div>
+      <span class='li-header'><time>2011・09・13</time></span>
+      <h2 class="title">IE9メモリ問題とIE9環境でのマルチプロセス推奨について</h2>
+      <div class="summary">更新履歴 download 1.2.3を出しています。正式版はもう少し後になりそうです。IE9のメモリ問題について書きます。 IE9のメモリ問題で、Flashで！が出るという現象、これがIE9で出るかを調べてみました。 関連ツイート１：http://twitter.com/#!/kurimoto_y/status/111826171842396161 関連ツイート２：http://twitter.com/#!/kurimoto_y/status/111827188340375552 結果、IE9でも出ます。 ● 出し方のコツ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセスを作る動作のようです。 タスクマネージャでIEプロセスのメモリ700Mを超えたあたりで、新規タブを開かず、Flashが多く貼っているページ、例えばYoutube埋め込みをどんどん再生していけば1Gを超えたぐらいで！が出ると思います。 IE9で出るということは、現状IE9でも直せない問題だと判断して、アプリで対応するのは難しいと思います。またIE9が700Mあたりで新規プロセスを作成するあたりが、Tridentで1プロセスで使用できるメモリに限界があるように見えます(このあたりでもうIEコンポーネントはマルチプロセス前提になっているかもしれません)。 上のことから、IE9環境では、シングルスレッド/マルチスレッドではなく、Anciaをマルチプロセスで使用することを推奨します。マルチプロセスで、シングルスレッド/マルチスレッドとの動作の違いは、セッションが継続する/しないかになります。マルチプロセスでも、同じタブグループ内ならセッションは継続します。 ただ、Anciaのマルチプロセスでのセッション継続は、タブグループが1つのプロセスであり、タブグループの各タブをそのプロセス内のスレッドで動かしているだけです。そのため、タブグループ内のタブ数が多くなり、長時間使用しプロセスのメモリサイズが多くなるとFlashの！問題は出やすくなります。それでもシングルスレッド/マルチスレッドに比べると、発生頻度は低くなります。 自分は、マルチプロセスで使用しています。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver098-ie/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/Acid3_098.png);"></div>
-    <div class="detail">
-      <time>2010・10・12</time>
-      <h2 class="title">Ancia Ver0.9.8 IEレンダリング指定、Jscript9対応</h2>
-      <div class="summary">更新履歴 download インストールされているIEのバージョンに応じて最新のレンダリングを使用するよう対応しています。IE9ベータがインストールされていれば、自動的にIE9のレンダリングを使用します。画像はAnciaをIE9で使用したものですが、最初のオープンでAcid3は92点、なぜかリロードすると95点です。またIE9のみですが、最新のJavaScriptエンジンを使用するようになっています。 レンダリングとJavaScriptエンジンの指定は、最新のIEの機能を使用するために、レジストリを使用します。レジストリに書き込む値は、設定ファイルで決まり、起動時に毎回書き込むため、あらかじめレジストリに設定がないと動かない、というわけではありません。アプリ設定の保存にレジストリを使用しないのは従来どおりです。 できれば互換表示も対応したいんですが、なかなかうまくいってません。 設定ファイルの書き込みバグを修正しています。このバグが発生すると、前回起動時のタブの読み込みなど失敗するので、このようなバグが直っています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver097-ae/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・10・04</time>
-      <h2 class="title">Ancia Ver0.9.7 バグ修正、Aeroでのアドレスバー変更</h2>
-      <div class="summary">更新履歴 download 教えてもらったXpでIMEが消える現象など、他多くのバグ修正しています。Anciaでは、Web表示部分をポップアップで表示している関係で、なかなかそれ絡みのバグ(ZOrderなど)が多かったのですが、だいぶ減ってきていると思います。バグのご指摘ありがとうございます。 Aeroあたりの更新もしたいのですが、XpでスクリプトからBrowserオブジェクトのNavigateを行うと固まる問題があり、これが修正できるか微妙です。Aero表示でのアドレスバー変更は可能にしています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver096-ae/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/AeroMultiTab.png);"></div>
-    <div class="detail">
-      <time>2010・09・27</time>
-      <h2 class="title">Ancia Ver0.9.6 タブAero表示対応</h2>
-      <div class="summary">更新履歴 download IEスタイルでのTab Aero表示に対応しています。マルチライン・シングルラインの変更にも対応しています。タブ位置指定はできませんが、可能にする予定です。IEスタイルでは、アドレスバーが横に長くなってしまうので、ちょっとどうするか考えます。0.9.6からはタブ描画でスキン画像を使用します。 報告してもらっているバグ、修正できていないので、次は手を付けたいと思います。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver095-ae/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/Aero.png);"></div>
-    <div class="detail">
-      <time>2010・09・22</time>
-      <h2 class="title">Ancia Ver0.9.5 Aeroスタイル途中</h2>
-      <div class="summary">更新履歴 download IE9のスタイルがなんかいいので、Aeroスタイルに対応中です。オプション設定の画面スタイルで選択できますが、アドレスバーテキスト選択で見づらいバグがあります。予定ではタブもIE9のようにするつもりです。ただタブはアドレスバーの下に置けるようにします。Aero無効でもこのスタイルが表示できるようにしたいです(いまはAero有効のみ表示)。 Xpでタスクバーが隠れるバグ修正で、検索バーからの検索でZオーダーがおかしくなるのを修正しています。これが起こるとブラウザが白くなったりしたので、IMEが消える現象や、白くなる減少が直っている可能性があります。再起動などで設定ファイルが保存できないことがあるバグも修正しています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver094/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/addressbar_feed.png);"></div>
-    <div class="detail">
-      <time>2010・09・13</time>
-      <h2 class="title">Ancia Ver0.9.4 アドレスバーフィードアイコン</h2>
-      <div class="summary">更新履歴 download サイトにフィードがあるとき、アドレスバーにアイコンを表示するようにしました。ただ窓の社などフィードボタンを押してもフィードのURLが開かないバグがあり、修正予定です。 オプション設定-&gt;ブックマーク詳細設定で、ツールバーとブックマーク両方の設定を統合しています。ブックマークの設定で新規タブを開くをチェックとすると、ツールバー/サイドバー/お気に入りメニューで新規タブで開くようになります。各ブックマークで設定できるようになったため、お気に入りを新しいタブで開く設定(ieFavNewTab)は削除しました。IEブックマークはデフォルトで新規タブで開く設定としました。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-40/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ExplorerBarPlus143.png);"></div>
-    <div class="detail">
-      <time>2010・09・08</time>
-      <h2 class="title">ExplorerBarPlus 1.4.3</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 検索パネルで規定の検索URLが使えなくなったための更新です。どうやらGoogleサイドバー用検索URL(http://www.google.com/ie)は、提供が停止となったようです。Googleの検索URLを使用している場合は、検索パネルのオプション設定から変更願います。 XPで使用している場合は、メモリ関係の有効な更新を行っているので、更新すると多少意味があります。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver093/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sc.png);"></div>
-    <div class="detail">
-      <time>2010・09・06</time>
-      <h2 class="title">Ancia Ver0.9.3 最近閉じたタブの保存</h2>
-      <div class="summary">更新履歴 download 最近閉じたタブを保存できるようになっています。最近閉じたタブは、アプリ終了時に保存するので、シングル起動ではないときは、それぞれのアプリ終了で保存されます。 ブックマークの設定で、ブックマークを追加したとき、ツールバーも表示できるようになっています。今までに追加したブックマークがツールバーに出ない、メニューでツールバーのテキストが消えることがありますが、次回修正予定です。もう少しでブックマーク/ツールバーの機能充実できそうです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-57/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sctrl.png);"></div>
-    <div class="detail">
-      <time>2010・08・30</time>
-      <h2 class="title">サイドバー縦バー表示/非表示</h2>
-      <div class="summary">更新履歴 download サイドバーの縦バーを表示/非表示できるようにしています（サイドバーメニューの「サイドバーコントロール」）。やっとFlashが再生できない問題が対応できました。こちらの環境（32ビットWin7IE8、XpIE6）でいくつかのページで試して再生できています。 ほか結構不具合を修正しています。白くなる現象なかなか再現しないのですが、もしかすると直っているかもしれません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia091/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・08・23</time>
-      <h2 class="title">Ancia0.9.1</h2>
-      <div class="summary">更新履歴 download 0.9.1を出しましたが、そんなに更新内容はありません。不具合がたまってきているので、そちら優先にしています。Flashが再生できない不具合（Xenoblade ゼノブレイドで再現）を調べていて、もう少しというところです。 変ったところといえば、細かいですがアドレスバーでCtrl+左右キーでURLの論理単位でカーソルが動くようになってます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver090/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・08・09</time>
-      <h2 class="title">Ancia Ver0.9.0</h2>
-      <div class="summary">更新履歴 download バグ修正ばかりです。追加機能としては、HTML Meta Refreshの有効無効をUIで設定できるようになっています。設定ファイルで初期化状態で起動してしまうバグを修正しています。しばらく設定ファイルの初期化バグが発生しなければ、既知のバグから削除するつもりです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-56/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/mb.png);"></div>
-    <div class="detail">
-      <time>2010・08・02</time>
-      <h2 class="title">マルチブックマーク機能</h2>
-      <div class="summary">更新履歴 download マルチブックマーク機能を追加しています。いまはブックマークとして使用できるのはIEブックマークのみで、オプション設定のブックマーク設定からIEブックマークの追加や設定が行えます。いまは、設定機能が乏しく表示フォルダ変更ぐらいしかありません。今後の対応で設定項目の追加やブックマークの内容をツールバーで表示できるようにする予定です(IEブックマークならリンクバーが表示できる)。 使用できるブックマーク追加で、はてなブックマークとタブリストは対応しようと思いますが、他のブラウザFirefoxなどのブックマークは、正式公開した後になるかもしれません。マルチプロセスも大変そうなので、正式公開後に対応しようと思います。Firefoxなどが使えるようになると、使用するブックマークに依存しないブラウザになります。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/119/" class="clearfix" title="1.1.9で起動時落ちる現象の回避について">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・08・16</time></span>
+      <h2 class="title">1.1.9で起動時落ちる現象の回避について</h2>
+      <div class="summary">更新履歴 download 1.1.9を出していますが、jumplistの構築にバグがあり表示名のないjumplistのスクリプト項目があると、起動時に落ちてしまいます。 jumplistを変更していないときは落ちませんが、変更しているときは、setting\customize\jumplist.jsonを ajumplist.json などにrenameすれば回避できます。このバグは1.2.0で直ります。 1.1.9では起動時のタブ再現などで、複数タブの読み込み処理をいちどに読み込まず、順々に読み込むようにしています。この設定はオプション設定の「全般」「タブ読み込みスタイル」で変更できます。ただ、「アクティブ時読み込み - loadingActive」にした場合、非activeタブの読み込みがloadingのままでページが分からない、ということがありこれは何とかしたいです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/bho/" class="clearfix" title="BHOとタブグループ機能">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabgroupaero.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・07・05</time></span>
+      <h2 class="title">BHOとタブグループ機能</h2>
+      <div class="summary">更新履歴 download Ver1.0.0からBHOとタブグループ機能を追加しています。 マルチプロセスでは、同じタブグループの中では、セッションが継続できます(別のタブ、タブグループとセッションは共有しない)。マルチプロセスでのセッション共有は難しいので、タブグループ内ではセッションが継続できるという対応にしています。タブグループ対応でタブスキンのデザインかなり変えています。ホイールクリックか、ナビゲートロックで新規タブを開くと同じタブグループで開きます。 BHOは、たとえば、Orbit Downloaderというのがありますが、こういうのが動作します(もともとBHOはIE用なので全て動作するわけではありません)。 上は、http://www.orbitdownloader.com/jp/Use-as-YouTube-Downloader.htm で試したもので、動いていることが分かります。 Ver1.1.0で正式版を出す予定でしたが、タブグループをつけたばかりで1.1.5か1.2.0が、そのあたりになると思います。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-42/" class="clearfix" title="ExplorerBarPlus 1.4.5">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・06・08</time></span>
+      <h2 class="title">ExplorerBarPlus 1.4.5</h2>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 要望のあったFirefoxのブックマークとSimpleFavPanelで、1つのフォルダだけ展開する設定追加しています。1つのフィルダだけ展開するはマウスでクリックしたときだけ有効で、キーで展開したときは1つ以上展開できます。これはTreeViewがこういう動作なんです(TVS_SINGLEEXPANDの説明)。 1つだけ展開でSimpleFavPanelで展開情報を保存しているとき、その保存された展開済みのフォルダが閉じないのも仕様です。一度マウスで閉じると、1つだけ展開するが動作します。 FirefoxでplaceのURLが展開されてないのは、いずれ対応すると思います。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/webkit-ancia-ch/" class="clearfix" title="WebKitエンジン Ancia Chrome">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/Ancia_Chrome.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・05・10</time></span>
+      <h2 class="title">WebKitエンジン Ancia Chrome</h2>
+      <div class="summary">Ancia Chromeについて&nbsp;&nbsp;ダウンロード Ancia Chromeとは、Anciaを元に描画エンジンをWebKitにしたタブブラウザです。 組み込んでみただけで、 ・Tが入力できなかったり、ページでのキー入力が全体的におかしい ・日本語入力がへん ・エンコード指定ができない、言語がja-JPじゃない(設定してるんですが効いていない) ・アドレスバー、検索バー等、シングルスレッドでキー入力ができないものがある ・cookieが保存されない ・最新のWebKitじゃない(Chrome7相当) など問題があり、ページを表示するぐらいしか今のところ使い道がありません。サイドバーは表示できます。マルチプロセスには対応してます。 マウスジェスチャやドロップアクションまでは動作するように何とかしたいんですが、時間を見て更新予定です。 ダウンロードの圧縮形式7zipは、7-Zipで解凍できます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-41/" class="clearfix" title="ExplorerBarPlus 1.4.4">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・05・01</time></span>
+      <h2 class="title">ExplorerBarPlus 1.4.4</h2>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 64bit環境で、ウインドウサイズが変わらないことがある対処を行っています。ただ、Anciaで使用している場合は、今後出る1.0.1の更新を待つ必要があります。ほかに、Firefox4のお気に入りが読めない、Vista以降でTree表示をExplorerっぽくしています。 64bit環境でウインドウサイズが変わらないのは、 Controls won&rsquo;t get resized once the nesting hierarchy of windows exceeds a certain depth (x64) - Decrypt my World - Site Home - MSDN Blogs が原因で、まさかこんな動作があるとは、、</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver100/" class="clearfix" title="Ancia Ver1.0.0 をリリース!">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/v100.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・04・26</time></span>
+      <h2 class="title">Ancia Ver1.0.0 をリリース!</h2>
+      <div class="summary">更新履歴 download 今日IE9がリリースされましたが、いつまで作っていてもきりがないので、このタイミングでAnciaもVer1.0.0をリリースしました。 正式版をリリースしたので、設定フォルダなどを大きく仕様変更することはないと思います。ブログでも不具合報告やコメントいただき、今のものが出来たと思っています。コメントいただいた方ありがとうございます！ 1.0.0をリリースしても、たぶん更新は今までどおりです。機能の説明に特徴を書きましたが、画像がないので、画像を付ける予定です。いつの間にか結構な機能があり、全て書かれているか自分でも謎です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/anciaautopageri/" class="clearfix" title="AnciaでAutoPagerizeを使用する">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ap.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・04・12</time></span>
+      <h2 class="title">AnciaでAutoPagerizeを使用する</h2>
+      <div class="summary">更新履歴 download Ancia0.9.32が出ていますが、0.9.31からURLアクションが利用可能になっています。このURLActionでAutoPagerizeを動作させることが可能です。AutoPagerizeは、ブックマークレット xAutoPagerize を利用させてもらっています。大変便利な機能ありがとうございます。 ● AutoPagerizeの利用の仕方 １, xAutoPagerizeForAncia.js をダウンロードする xAutoPagerizeForAncia.jsをダウンロードし、Anciaのscriptフォルダに保存します。 xAutoPagerizeForAncia.jsの内容は、ブックマークレットの内容と変わっていません。複雑でないブックマークレットなら、そのままURLActionに使用できます。 ２, オプション設定でURLActionの設定を行う オプション設定のURLActionの「読み込み後のアクション一覧」にURLパターン「*」、動作に「スクリプト:xAutoPagerizeForAncia.js」としてアクションを追加します(下は追加後の画像です)。 「適用」を押すと、追加したアクションが反映されます。 ３, AutoPagerizeを動作させてみる Google検索での動作が分かりやすいと思います。ドロップアクションで、適当な語句をGoogle検索に渡します。 検索結果のページで、赤い部分に緑の四角が出ていればAutoPagerizeが動作しています。 あとは、ページの下へスクロールすれば、AutoPagerizeの動作が体感できるはずです。 注：IE9だと、AutoPagerizeで追加されたページにもハイライトが反映されるんですが、IE8だとうまく動いていません。これは対応可能なら対応します。IEのバージョンやページによっては、AutoPagerizeが動かないページがあるようです。 ドロップアクションで手軽に検索し、検索語句がハイライトされ、さらに検索結果のページにURLActionでAutoPagerizeが動いて、AutoPagerizeで追加ページにハイライトが反映されるといった、なんか連携した動きになってます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
     </div>
 
     
@@ -236,7 +174,7 @@
   <span class="left"><a href="/tags/online-soft/page/4" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 5 of 16</span>
+  <span class="center vmiddle">Page 5 of 23</span>
 
   
   <span class="right"><a href="/tags/online-soft/page/6" rel="next">次へ</a></span>
@@ -257,6 +195,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -366,18 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -391,9 +329,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

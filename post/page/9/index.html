@@ -44,190 +44,128 @@
 
     <header class="title list"><h1>Posts</h1></header>
 
-    <div class="articles">
-      <div class="row">
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-40/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="articles row ani">
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-56/" class="clearfix" title="マルチブックマーク機能">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/mb.png);"></div>
     <div class="detail">
-      <time>2009・12・23</time>
-      <h2 class="title">マルチプロセススレッド試作物</h2>
-      <div class="summary">MultiProcessThread.zip メッセージベース＋共有メモリでのIPCを使用したマルチプロセス、スレッドのプロトタイプです。機能は、WTLのタブブラウザサンプル相当しかありません。exeの同じディレクトリにファイルthreadがあるとマルチスレッド、ないとマルチプロセスで動作します。 プロセス、スレッドの動作の違いは、制御の作成がCreateProcess/CreateThreadか、マーシャリングをプロセス間/プロセス内としているかぐらいしかありません。ただスレッドの場合は、共有メモリではなくヒープを使用するなど、改善部分はあります。タブのタイトル更新、アドレスバーのURL更新はIPC、戻る/進む/ホーム/中止は、マーシャリングしたポインタで行っています。マーシャリングはテストで毎回行っています。マウスホイールでのスクロール対応も入れてます。 IPCを決めるとき、名前つきパイプにしようと思ったんですが、パイプだとメッセージボックスやダイアログを表示中だとrecvできないので、UIスレッドとは別スレッドにすることになり、やめました。メッセージベースで単純なSendとし、再入可能の動作にする予定です。ただ固まっている子プロセスのウインドウへメインプロセスのウインドウからタイムアウトなしのSendが行われるとメインプロセスも固まってしまうため、Windowsが内部で自動的にSendしているものは、固まりを防げないかもしれません。たしか、同じホストで、マーシャリングしたポインタを介した呼び出しもメッセージベースなので、呼び先のタブが固まっていると、呼び元に制御が返らない、はずです。マーシャリングするときも応答があるときに行うようにしなければならないようです。 プロトタイプの公開はこれまでとし、次はプロトタイプをいじりながらAnciaに組み込んでいければというところです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-39/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/mpt.png);"></div>
-    <div class="detail">
-      <time>2009・12・18</time>
-      <h2 class="title">マルチプロセススレッド試作中</h2>
-      <div class="summary">手元のFFは我慢して、、WTLのタブブラウザサンプルを改造してマルチプロセスで試作中、、IPCはメッセージベース＋共有メモリの予定。marshalは、部分的に使うかもしれません。</div>
+      <span class='li-header'><time>2010・08・02</time></span>
+      <h2 class="title">マルチブックマーク機能</h2>
+      <div class="summary">更新履歴 download マルチブックマーク機能を追加しています。いまはブックマークとして使用できるのはIEブックマークのみで、オプション設定のブックマーク設定からIEブックマークの追加や設定が行えます。いまは、設定機能が乏しく表示フォルダ変更ぐらいしかありません。今後の対応で設定項目の追加やブックマークの内容をツールバーで表示できるようにする予定です(IEブックマークならリンクバーが表示できる)。 使用できるブックマーク追加で、はてなブックマークとタブリストは対応しようと思いますが、他のブラウザFirefoxなどのブックマークは、正式公開した後になるかもしれません。マルチプロセスも大変そうなので、正式公開後に対応しようと思います。Firefoxなどが使えるようになると、使用するブックマークに依存しないブラウザになります。</div>
     </div>
   </a>
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-38/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2009・12・07</time>
-      <h2 class="title">ジャンプリストが表示されなくなった</h2>
-      <div class="summary">更新履歴 download マウスジェスチャまでのマウス移動距離を設定できるようにしています。 ジャンプリストで最近使ったもの、よく表示するもの、ピンが、いつのまにか表示されなくなってしまいました(タスクは表示される)。原因は不明で、クリアなど行っても表示されないので、しょうがなくAncia.exeが置いてあるフォルダをリネームして再度タスクバーに追加すると、直りました。。SHAddToRecentDocsの呼び方が間違っている？</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-37/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/jll.png);"></div>
-    <div class="detail">
-      <time>2009・11・30</time>
-      <h2 class="title">ジャンプリストカスタマイズ</h2>
-      <div class="summary">更新履歴 download 久しぶりに更新しました。 ジャンプリストでよく表示するページの表示や、タスクから直にクリップボードテキストで検索、新規タブを開けるようにしました。テキストからの新規タブはある程度httpなどを補完します。タスクの実体はスクリプトに変更したので、アイコンが表示可能になり、スクリプトが書ける人は、いろいろできるようになっています。ただジャンプリストのアイコンは、一度アイコンが設定されると、アイコンを変えても反映されないようです。 ジャンプリストの変更は、設定名ｊｕｍｐＬｉｓｔのジャンプリスト設定から行えます。アプリをタスクアイテムから起動したとき、タブがひとつも無い状態でスクリプトが実行されるので、App.ActiveTab()は参照できません。またスクリプトの実行後タブが作成されなかったとき、強制的にlocalhomeが開かれます。 XpでWindowsUpdateがうまくいかないようですが、Xp新規インストールで試してみても大丈夫でした。まだ何か残っているかもしれません。。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-36/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/jumplist.png);"></div>
-    <div class="detail">
-      <time>2009・11・02</time>
-      <h2 class="title">タスクバープログレス、ジャンプリスト</h2>
-      <div class="summary">更新履歴 download プログレスとジャンプリストを付けました。ジャンプリストのタスクはまだ変更できませんが、変更できるようにする予定です。 サムネイルは、ホイールクリックすると閉じることができるなんて知りませんでした。右クリックのほか、左ボタンを押しながらタスクバーボタンをデスクトップ側にドラッグしてもジャンプリストが表示されますが、表示の後、実行したいボタンで左ボタンを離すで起動できないのが、ちょっと残念です。 これで大体Windows7の対応はできたかな。Anciaはただの32ビットアプリなので、64ビットOSでも動くはずです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows7/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/liveth.png);"></div>
-    <div class="detail">
-      <time>2009・10・26</time>
-      <h2 class="title">Windows7ライブサムネイル</h2>
-      <div class="summary">更新履歴 download Windows7ライブサムネイルに対応しています。ライブサムネイルは、WM_DWMSENDICONICTHUMBNAILで、タスクバーのサムネイルを返却（DwmSetIconicThumbnail）する、サムネイルをマウスオーバーしたときのWM_DWMSENDICONICLIVEPREVIEWBITMAPでアプリケーション画面に表示するビットマップを返却(DwmSetIconicLivePreviewBitmap)すれば対応できます。ビットマップは32ビットじゃないとE_INVALITARG?で処理が失敗してしまいます。ビットマップサイズもおかしいとINVALIDARGになってしまうようです。 faviconはまだ付いていませんが、そのうち付けます。サムネイルにはボタンをつけれるようなので、最新の状態に更新などつけるかもしれません。 XpとWindows7で同じフォルダのAnciaを起動しても、Windows7側からXpのフォルダのアクセス権をつけないと、設定が保存されない現象がありました。ので注意してください。 AnciaでIE8で落ちず、IE6で落ちる場合があるようです。IE6で落ちる場合はInternetExplorerでも落ちたので、何かのアドオン(flash?)か何かかもしれません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-35/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sl.png);"></div>
-    <div class="detail">
-      <time>2009・10・21</time>
-      <h2 class="title">シングルライン表示、タブリストの選択保存</h2>
-      <div class="summary">更新履歴 download 何回かバージョンアップし、タブのシングルライン表示に対応しています。アクティブタブを作成すると、自動的にスクロールしますが、非アクティブタブのときは自動的にスクロールしません（仕様）。 タブリストの保存で、保存タブを選択可にもしています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-34/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2009・10・05</time>
-      <h2 class="title">ホイールリダイレクトなど</h2>
-      <div class="summary">更新履歴 download バーの位置変更など、いろいろオプション設定を追加しています。どこでもホイール出来る、ホイールリダイレクトオプション設定(wheelRedirect)は、いままでホイール補助の常駐ソフトを使っていたので、気にしていなかったのですが、対応しました。今のところ常駐との競合は起こっていないので大丈夫だと思います。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2009・10・01</time>
-      <h2 class="title">WTLのコマンドバーメモ</h2>
-      <div class="summary">WTLコマンドバーでの主にメニュー表示動作メモ。 作成時メッセージフックセットMessageHookProc ボタンが押されると、TrackPopupMenuExでメニューを表示 TrackPopupMenuEx中、MessageHookProcで、バー上のマウスオーバーメッセージのとき、m_nNextPopBtnに次のメニュー表示インデックスをセット。現在のメニューを閉じ、TrackPopupMenuExから1度制御を返す。TrackPopupMenuExを抜けたあとで、m_nNextPopBtnをチェックし、次のメニューを表示するとき、WTL_CmdBar_InternalAutoPopupMsgをポストし、再度TrackPopupMenuExを実行。ここの処理はループっぽく動く。 MessageHookProcでは、左右キーもチェックし、マウスオーバーと同じように動作させる。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/imeie6/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2009・09・28</time>
-      <h2 class="title">アドレスバーIME無効、IE6でのズームなど</h2>
-      <div class="summary">更新履歴 download アドレスバーでIMEを無効にする設定を追加しています。デフォルトIME無効なので、アドレスバーで日本語を入力したい場合は、アドレスバーの設定でIMEの無効のチェックを外す必要があります。 新規全セキュリティ許可で開くスクリプトnewAllowSecurity.jsを追加しています。ドロップアクションのカスタマイズから追加して使用できます。検索バーの新規タブアクティブ設定も可能にしています。 IE6はズームが出来ていなかったので動作環境はIE7以降としていましたが、できるようになったので、IE6も動作対象としました。ズームはbodyのstyleのzoomを変更して行っていますが、zoomとならないページがあるようです。IE6でホイールボタンクリックで新規タブは出来るようにしたいです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-33/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2009・09・25</time>
-      <h2 class="title">スレッドでスクロールがおかしくなる</h2>
-      <div class="summary">以前マルチスレッドでIEコンポーネントのスクロールがおかしくなったことを書きましたが、どうやら間違いのようです。常駐ソフトのWheelPlusが動いていると、スレッドAからスレッドBへマウスホイールメッセージがsendされ、スレッド切り替えが起こるからスクロールがもたつくようです。常駐を停止させると現象が消えました。追記：どうやら常駐が起動されていなくてもsendされたりされなかったりするので、違うようです。。 AnciaでChrome Frameを使用すると落ちますが、直ったので次の更新に含めます。検索バーの全選択の件と、ドロップアクションカスタマイズでボタンが消えることがある、サブメニューが出ないことがある、もfixで次の更新に含まれます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-32/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dac.png);"></div>
-    <div class="detail">
-      <time>2009・09・22</time>
-      <h2 class="title">ドロップアクションカスタマイズ</h2>
-      <div class="summary">更新履歴 download やっとドロップアクションのカスタマイズに対応しました。 ボタンの表示数やイメージサイズ・折り返し表示の設定は、各列で持つようにしています。デフォルトは折り返し表示です。 ボタンの登録数に制限はありません。サブメニューの下にサブメニューは作成できない仕様にしました。登録数に制限がないので、検索エンジンを展開ボタンをいくつも追加するとひどいことになります。 結構大き目の対応が終わったので、次は出来るかわかりませんが、気になっているマルチプロセスに時間を使ってみようかと、、</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver088/" class="clearfix" title="Ancia Ver0.8.8">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・21</time></span>
+      <h2 class="title">Ancia Ver0.8.8</h2>
+      <div class="summary">更新履歴 download 単一起動のとき、終了処理に問題がありました。２つ目のプロセスが終了のたびにダイアログが出てうっとおしいため、修正を行っています。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver087/" class="clearfix" title="Ancia Ver0.8.7">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・20</time></span>
+      <h2 class="title">Ancia Ver0.8.7</h2>
+      <div class="summary">更新履歴 download 要望対応と、バグ修正が主です。マルチブックマークの実装に取り掛かり始め、まずはIEのブックマークで任意のフォルダを表示できることと、複数のIEブックマークが使用できるようになる予定です。 任意のフォルダは、相対パスのときは、アプリからの相対パスとなるようにします。アイテムの順序情報も独自にするかもしれません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/twitter/" class="clearfix" title="Twitter">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/TwitterLogo.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・18</time></span>
+      <h2 class="title">Twitter</h2>
+      <div class="summary">かなり遅いかもしれませんが、Twitterはじめました。y_kurimotoは使用されていたので、kurimoto_yで登録。 @kurimoto_y 更新内容をメモ代わりに書き込むつもりです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/2/" class="clearfix" title="カーソル型マウスジェスチャ2">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/gesturecursor2.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・12</time></span>
+      <h2 class="title">カーソル型マウスジェスチャ2</h2>
+      <div class="summary">更新履歴 download カーソル型マウスジェスチャ機能の追加は、とりあえず終えたつもりです。「違う方向になったとき、ジェスチャを検出する(&amp;G)」は分かりにくいので、実際にチェックありなしで動かすと違いが分かると思います。チェックが無いときは、ぶら。のような動作、チェックがあるとunDonutのような動作です。 マルチプロセスが難しいと分かったのがやっぱりショックで（IEには無い機能を自前で実装？）、、しばらくは大変じゃない更新になると思います。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-55/" class="clearfix" title="カーソル型マウスジェスチャ">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/gesturecursor.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・06</time></span>
+      <h2 class="title">カーソル型マウスジェスチャ</h2>
+      <div class="summary">更新履歴 download カーソル型マウスジェスチャを追加していますが、まだUIから設定できる項目は少なく、増やす予定です。カーソル型マウスジェスチャは、オプション画面で「カーソル型マウスジェスチャ - mouseGestureCursor」を選択することで使用できます。 ユーザエージェントでiPadを指定したとき、iPad用のtwitterが見れたのですが、今は見れないようです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-54/" class="clearfix" title="マルチプロセスのセッション継続は難しい">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・06</time></span>
+      <h2 class="title">マルチプロセスのセッション継続は難しい</h2>
+      <div class="summary">マルチプロセスのセッション継続は、かなり手間取ることが分かりました。プロセス毎にセッションのcookieを共有することになるのですが、cookieはドメインで設定されることがあり、これを取得するのが難しいのです。 応答で Set-Cookie: HSID=XXXXXXXXXXXX;Domain=.google.co.jp;Path=/;HttpOnly というのがあると、ページのURLとcookieの設定ドメインが一致しているとは限らないので、どのようなドメインでcookieが設定されているのかは、HTTPヘッダを取得するしかないようです。 IEコンポーネントからHTTPヘッダの取得はできないようで、方法として ・HttpQueryInfo APIをhookする -&gt; HttpQueryInfoが呼び出されない場合は× ・RAWソケットを使用する -&gt; HTTPSが厳しい ・他の方法 となりますが、そう簡単ではなく、そこまでしなければならないのかもあるので、しばらく対応は保留します。TheWorldでのマルチプロセスセッション継続がどこまでやっているのかは、なぞです。 ドメイン単位でのcookie設定は、InternetSetCookieEx(&ldquo;http://google.com/&quot;,....)のように、URLをドメインで指定すると出来ました。 IE6の「新しいウインドウを開く」の場合、プロセスが新規にできるのではないので、プロセスでのcookie継続はそもそもできないはずです。IE8からはSession MergingというIE内部機能？で、セッション共有しているようです。IE9のベータが出るのが早そうなので、可能性は低そうですが、そのような機能が使えるようになることに期待したいです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/google-1/" class="clearfix" title="検索パネルでGoogle検索できない２">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・06</time></span>
+      <h2 class="title">検索パネルでGoogle検索できない２</h2>
+      <div class="summary">検索パネルでGoogle検索できない - 不定期日記で、またサイドバーでのGoogle検索ができなくなっています。どうやら、もうhttp://www.google.co.jp/search?output=ieは使用できないようです。しばらく様子を見て、使用できるようになればいいのですが、、</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
     </div>
 
     
@@ -236,7 +174,7 @@
   <span class="left"><a href="/post/page/8" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 9 of 19</span>
+  <span class="center vmiddle">Page 9 of 29</span>
 
   
   <span class="right"><a href="/post/page/10" rel="next">次へ</a></span>
@@ -257,6 +195,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -366,18 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -391,9 +329,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

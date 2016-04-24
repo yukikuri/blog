@@ -44,190 +44,128 @@
 
     <header class="title list"><h1>Programming</h1></header>
 
-    <div class="articles">
-      <div class="row">
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/places/" class="clearfix">
+    <div class="articles row ani">
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-40/" class="clearfix" title="マルチプロセススレッド試作物">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2008・07・14</time>
-      <h2 class="title">places</h2>
-      <div class="summary">ExplorerBarPlusでのFirefox3ブックマーク読み取り対応で、Firefox3起動中だとデータベースが読み取れないという問題に遭遇。 Firefox3の複数起動で新たにプロセスが立ち上がらないところを見ると、他プロセスからの読み取りは無理なのか、、sqliteのソースを追うとLockFileで失敗しているし</div>
+      <span class='li-header'><time>2009・12・23</time></span>
+      <h2 class="title">マルチプロセススレッド試作物</h2>
+      <div class="summary">MultiProcessThread.zip メッセージベース＋共有メモリでのIPCを使用したマルチプロセス、スレッドのプロトタイプです。機能は、WTLのタブブラウザサンプル相当しかありません。exeの同じディレクトリにファイルthreadがあるとマルチスレッド、ないとマルチプロセスで動作します。 プロセス、スレッドの動作の違いは、制御の作成がCreateProcess/CreateThreadか、マーシャリングをプロセス間/プロセス内としているかぐらいしかありません。ただスレッドの場合は、共有メモリではなくヒープを使用するなど、改善部分はあります。タブのタイトル更新、アドレスバーのURL更新はIPC、戻る/進む/ホーム/中止は、マーシャリングしたポインタで行っています。マーシャリングはテストで毎回行っています。マウスホイールでのスクロール対応も入れてます。 IPCを決めるとき、名前つきパイプにしようと思ったんですが、パイプだとメッセージボックスやダイアログを表示中だとrecvできないので、UIスレッドとは別スレッドにすることになり、やめました。メッセージベースで単純なSendとし、再入可能の動作にする予定です。ただ固まっている子プロセスのウインドウへメインプロセスのウインドウからタイムアウトなしのSendが行われるとメインプロセスも固まってしまうため、Windowsが内部で自動的にSendしているものは、固まりを防げないかもしれません。たしか、同じホストで、マーシャリングしたポインタを介した呼び出しもメッセージベースなので、呼び先のタブが固まっていると、呼び元に制御が返らない、はずです。マーシャリングするときも応答があるときに行うようにしなければならないようです。 プロトタイプの公開はこれまでとし、次はプロトタイプをいじりながらAnciaに組み込んでいければというところです。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/xmlrpc/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2007・07・12</time>
-      <h2 class="title">XML-RPC</h2>
-      <div class="summary">特にライブラリは必要なく、IXMLHTTPRequestで簡単に出来ます。 // はてな被ブックマーク合計数取得APIの場合 LPCWSTR pszTotal = L&rdquo;&lt;?xml version=\&ldquo;1.0\&ldquo;?&gt;&rdquo; L&rdquo;&rdquo; L&rdquo;bookmark.getTotalCount&rdquo; L&rdquo;&rdquo; L&rdquo;&rdquo; L&rdquo;http://d.hatena.ne.jp/hatenadiary/&rdquo; L&rdquo;&rdquo; L&rdquo;&rdquo; L&rdquo;&rdquo;; // call CComPtrMSXML2::IXMLHTTPRequest pReq; HRESULT hr = pReq.CoCreateInstance(MSXML2::CLSID_XMLHTTP); hr = pReq-&gt;open( &nbsp;CComBSTR(L&rdquo;POST&rdquo;), &nbsp;CComBSTR(L&rdquo;http://b.hatena.ne.jp/xmlrpc &ldquo;), &nbsp;CComVariant(false), &nbsp;CComVariant(), &nbsp;CComVariant()); hr = pReq-&gt;send(CComVariant(pszTotal)); CComBSTR txt; hr = pReq-&gt;get_responseText(&amp;txt); cout &lt;&lt; CW2A(txt) &lt;&lt; endl;</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl-807161/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2007・06・12</time>
-      <h2 class="title">WTL 8.0.7161</h2>
-      <div class="summary">WTL 8.0 WTL 8.0 Finalが出ています。 atlcrack.hとatldlgs.hに変更有り。finalでもタブブラウザサンプルが入ってないのは、なぜ？</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/atlhosth/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2007・05・13</time>
-      <h2 class="title">atlhost.h</h2>
-      <div class="summary">タイプミス発見。 STDMETHOD(ContextSensitiveHelp)(BOOL /fEnterMode/) { ATLTRACENOTIMPL(_T(&ldquo;IOleWindow::CanInPlaceActivate&rdquo;)); ← ここはContextSensitiveHelp }</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-12/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/TabBrowserSample.png);"></div>
-    <div class="detail">
-      <time>2007・04・20</time>
-      <h2 class="title">タブブラウザサンプル</h2>
-      <div class="summary">WTL 8.0.7108 Beta1が出ています。タブブラウザサンプルが追加されていますが、なぜかダウンロードファイルには含まれていませんでした。タブブラウザサンプルは、CVSに入っているのでそこから手に入ります。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl-807070/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2007・03・13</time>
-      <h2 class="title">WTL 8.0.7070</h2>
-      <div class="summary">WTL 8.0 WTL 8.0.7070 released AppWizardのバグ修正されていますが、VC7.1でまだエラーが出るようです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl-80-7058-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/WTL8.png);"></div>
-    <div class="detail">
-      <time>2007・03・01</time>
-      <h2 class="title">WTL 8.0 7058</h2>
-      <div class="summary">新しくCTabViewが追加されています。ドラッグドロップでTabの入れ替えもできます。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl-806356/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・12・23</time>
-      <h2 class="title">WTL 8.0.6356</h2>
-      <div class="summary">WTL 8.0.6356 vistaへの更新ばかりのようですが、atlmisc.hのCRecentDocumentListBase::GetFromList()で if(lstrlen(m_arrDocs[nIndex].szDocName) &lt;= cchLength) が if(lstrlen(m_arrDocs[nIndex].szDocName) &gt;= cchLength) に修正されてますね。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl-806304/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・11・01</time>
-      <h2 class="title">WTL 8.0.6304</h2>
-      <div class="summary">WTL 8.0.6304が出たようです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-rss-pla/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・09・20</time>
-      <h2 class="title">Windows RSS Platform</h2>
-      <div class="summary">ExplorerBarPlusの更新でWindows RSS Platformを使ってみましたが、未読・既読の管理・同期がすごいですね。フィードは決まった位置に保存されるようです。（Local Settings\Application Data\Microsoft\Feeds）</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/visual-studio-n/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2006・08・17</time>
-      <h2 class="title">Visual Studio .NET 2003 SP1</h2>
-      <div class="summary">Visual Studio .NET 2003 SP1が出ました。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wininet/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2005・09・24</time>
-      <h2 class="title">WinInet</h2>
-      <div class="summary">WinInet関数でコネクションを閉じるときRSTがでているようだけど、こういう動作なのだろうか。。IEを閉じるときもRSTがでているようなので、こういう動作かもしれない。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/windows7/" class="clearfix" title="Windows7ライブサムネイル">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/liveth.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・10・26</time></span>
+      <h2 class="title">Windows7ライブサムネイル</h2>
+      <div class="summary">更新履歴 download Windows7ライブサムネイルに対応しています。ライブサムネイルは、WM_DWMSENDICONICTHUMBNAILで、タスクバーのサムネイルを返却（DwmSetIconicThumbnail）する、サムネイルをマウスオーバーしたときのWM_DWMSENDICONICLIVEPREVIEWBITMAPでアプリケーション画面に表示するビットマップを返却(DwmSetIconicLivePreviewBitmap)すれば対応できます。ビットマップは32ビットじゃないとE_INVALITARG?で処理が失敗してしまいます。ビットマップサイズもおかしいとINVALIDARGになってしまうようです。 faviconはまだ付いていませんが、そのうち付けます。サムネイルにはボタンをつけれるようなので、最新の状態に更新などつけるかもしれません。 XpとWindows7で同じフォルダのAnciaを起動しても、Windows7側からXpのフォルダのアクセス権をつけないと、設定が保存されない現象がありました。ので注意してください。 AnciaでIE8で落ちず、IE6で落ちる場合があるようです。IE6で落ちる場合はInternetExplorerでも落ちたので、何かのアドオン(flash?)か何かかもしれません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/wtl/" class="clearfix" title="WTLのコマンドバーメモ">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・10・01</time></span>
+      <h2 class="title">WTLのコマンドバーメモ</h2>
+      <div class="summary">WTLコマンドバーでの主にメニュー表示動作メモ。 作成時メッセージフックセットMessageHookProc ボタンが押されると、TrackPopupMenuExでメニューを表示 TrackPopupMenuEx中、MessageHookProcで、バー上のマウスオーバーメッセージのとき、m_nNextPopBtnに次のメニュー表示インデックスをセット。現在のメニューを閉じ、TrackPopupMenuExから1度制御を返す。TrackPopupMenuExを抜けたあとで、m_nNextPopBtnをチェックし、次のメニューを表示するとき、WTL_CmdBar_InternalAutoPopupMsgをポストし、再度TrackPopupMenuExを実行。ここの処理はループっぽく動く。 MessageHookProcでは、左右キーもチェックし、マウスオーバーと同じように動作させる。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-36/" class="clearfix" title="ExplorerBarPlus 1.3.9">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・09・07</time></span>
+      <h2 class="title">ExplorerBarPlus 1.3.9</h2>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Opera10を入れてみると、ブックマークの自動検出に失敗したので修正しました。またIEのお気に入りのパネルで、右クリックに新しいウインドウで開くを追加しています。 VC2008でリビルドしようと思ったのですが、vc2008はなぜかファイルサイズが少し大きめになるので止めました。インライン展開か何かかでしょうか、、謎です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-29/" class="clearfix" title="検索バーカスタマイズ">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sb.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・08・19</time></span>
+      <h2 class="title">検索バーカスタマイズ</h2>
+      <div class="summary">更新履歴 download 検索バーで標準ツールバーのようにカスタマイズできるよう対応しました。スクリプトボタンも置けます。いまアドレスバーのボタンをすべて削除し、アドレスバーの変更を表示すると落ちてしまいました。。ボタンをすべて削除するのは止めておいた方がいいです。 オプション画面からのツールバー設定と今回の設定画面がかぶるので、オプション画面の方のツールバー設定画面は、こちらに置き換える予定です。 ・・・Chromeのマルチプロセスは、どうやらプロセス間通信は、名前つきパイプ＋IO completion port、あとメッセージ専用Windowも使用しているようです。メッセージ専用ウインドウがプロセス間通信に使っているかは分かりません。すごいのはLinuxでも動くようにプロセス間通信で、Windowsの場合は名前つきパイプ、posixの場合はソケットで、実装されているところです。chromeがWindows用になっていますが、Linuxでも動かす予定があるかもしれません。 調べてみるとLinux版Chromeが開発者向けにありました。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/zlib/" class="clearfix" title="zlib圧縮メモ">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・06・06</time></span>
+      <h2 class="title">zlib圧縮メモ</h2>
+      <div class="summary">zlib 1.2.3の圧縮サイズメモ 。 byte Level9 Level6 3638 2082 2083 1150 295 297 25214 14866 14978 6598 827 832 1150 962 962 6598 827 832 3638 1825 1830 1150 102 103</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/wtl-81-wtl-8191/" class="clearfix" title="WTL 8.1 WTL 8.1.9127">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・05・08</time></span>
+      <h2 class="title">WTL 8.1 WTL 8.1.9127</h2>
+      <div class="summary">１年以上ぶりで、あたらしいWTLが出ています。 http://sourceforge.net/project/shownotes.php?release_id=680959 desktop window manager関係の新しいクラスが追加されています。 atldwm.h CDwm CDwmImpl CDwmWindowT - CDwmWindow CDwmThumbnailT CDwmThumbnail CDwmThumbnailHandle CAeroControlImpl</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/if/" class="clearfix" title="if文">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・04・20</time></span>
+      <h2 class="title">if文</h2>
+      <div class="summary">文字列の大文字を小文字にする処理で、 char c=psz[i]; if((&lsquo;A&rsquo; &lt;= c) &amp;&amp; (c &lt;= &lsquo;Z&rsquo;)) c += 0x20; と if((c &lt;= &lsquo;Z&rsquo;) &amp;&amp; (&lsquo;A&rsquo; &lt;= c)) c += 0x20; では、下のif文のほうが、効率的です。 たとえば、URLはほぼ小文字なので、上のif文だと、&rsquo;A&rsquo;&lt;=cが必ずtrueとなり、 無駄に判定されてしまいます。if文では、先に効率よく判定できる条件順に書く 些細なことですが</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
     </div>
 
     
@@ -236,7 +174,7 @@
   <span class="left"><a href="/tags/programming/page/2" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 3 of 4</span>
+  <span class="center vmiddle">Page 3 of 5</span>
 
   
   <span class="right"><a href="/tags/programming/page/4" rel="next">次へ</a></span>
@@ -257,6 +195,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -366,18 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -391,9 +329,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

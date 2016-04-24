@@ -106,25 +106,27 @@ byte     Level9  Level6<br />
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-23/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-23/" class="clearfix" title="サムネイルが遅い">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・06・10</time>
+      <span class='li-header'><time>2009・06・10</time></span>
       <h2 class="title">サムネイルが遅い</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">新規タブ表示で、今日表示したページもサムネイルを表示するようにしたんですが、新規タブを開くとあまりに遅くなってしまったので、0.5.5bとして、公開するのは止めました。サムネイルはすべて表示する必要はなく、画面に出ている分だけ表示すればいいので、そのいい方法はないのか、、表示されるときのイベントもなさそうだし、ページのよっては表示されてから画像が出るものがあるので、スクロールイベント契機に要素の位置を比較して、・・・かな サムネイルは、今の動きではフレームが含まれているページを取得してません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/pure-virtual-fu-1/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/pure-virtual-fu-1/" class="clearfix" title="pure virtual function call対応">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・05・29</time>
+      <span class='li-header'><time>2009・05・29</time></span>
       <h2 class="title">pure virtual function call対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download 下がIEツールバーを破棄しているコードですが、Release()部分をコメントアウトするとpure〜〜が発生しなくなります。googleツールバーはAddRef()、Release()でカウントがinc/decとなるのでちゃんとした参照カウントを返しています。さらに下のRelease()後の値は0だったので、最後のRelease()だと分かります。 IDeskBand* pBand = (IDeskBand*)rbi.lParam; if(pBand) { pBand-&gt;CloseDW(0); if(S_OK == pBand-&gt;QueryInterface(__uuidof(pObjectWithSite), (void**)&amp;pObjectWithSite)) { pObjectWithSite-&gt;SetSite(NULL); pObjectWithSite-&gt;Release(); } pBand-&gt;Release(); ← ここをコメントアウトすると、発生しなくなる } そこで、Release()するタイミングをどうにかする対応としました。 よく考えると、 ・IE6は1プロセス、プロセス終了でツールバーも破棄、プロセス終了 ・IE7は1タブに1スレッド、1タブ終了でツールバーも破棄、スレッド終了 ・IE8は1タブに1プロセス、1タブ終了でツールバーも破棄、プロセス終了 ・Anciaは、複数タブに1スレッド、1タブ終了で、ツールバー破棄、スレッド継続 と、Anciaでは1スレッドの処理内で何度もツールバー作成/破棄が行われるため、若干動作モードが異なります。これがエラー原因に関係しているかもしれません。 まともに対応するとなるとマルチプロセスでしょうか。。 IEツールバーが破棄されないバグがあり、対応したのでAnciaのプロセスが残ることがもうないと思います。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -137,6 +139,14 @@ byte     Level9  Level6<br />
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -702,7 +712,7 @@ byte     Level9  Level6<br />
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/wtl-81-wtl-8191/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
@@ -1245,6 +1255,18 @@ byte     Level9  Level6<br />
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1352,18 +1374,6 @@ byte     Level9  Level6<br />
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1377,9 +1387,9 @@ byte     Level9  Level6<br />
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

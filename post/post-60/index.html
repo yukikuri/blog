@@ -110,25 +110,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/msn/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/msn/" class="clearfix" title="msn関係・楽天で固まる問題の対応">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2013・07・23</time>
+      <span class='li-header'><time>2013・07・23</time></span>
       <h2 class="title">msn関係・楽天で固まる問題の対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download 1.9.32で、ie10環境においてmsn、楽天のページを開くと固まる問題を修正しています。修正には2つの問題に対応しています。固まる原因はmsnと楽天で同じ(document.closeで固まる)ですが、状況は微妙に違います。 問題1) IEとIEコンポでnavigator.appVersionの返す値が違う IEとIEコンポでnavigator.appVersionの返す値が異なっています。この違いのため、msnのスクリプトでIEの場合はdocument.close()呼び出しが行われず、IEコンポの場合はdocument.close()呼び出しが行われます(ここでIEコンポは固まる)。1.9.32ではnavigator.appVersionの値がIEと同じ挙動となるよう対応しています。 ・IE10(documentModeは7でappVerはIE7) ・Ancia 1.9.31(documentModeは7でappVerはIE10) ・Ancia 1.9.32(documentModeは7でappVerはIE7) 問題2）楽天のページがIEコンポではquirks modeとなるが、IEではならない 楽天のページでdocument.close()の呼び出しで固まるのは同じですが、msnとは状況が異なります。楽天ではdocumentModeの値がIEとIEコンポで異なっています。msnはdocumentModeがIE,IEコンポともに7ですが、楽天ではIEが10(documentModeが10でもcompatMode はBackCompat)、IEコンポでは5(compatMode はBackCompat)です。 IE10からのInteroperable HTML5 Quirks Modeが関係し、1.9.32ではこれもIEと同じ挙動となるよう対応しています。 ・IE10 ・Ancia 1.9.31 ・Ancia 1.9.32</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-45/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-45/" class="clearfix" title="ExplorerBarPlus 1.4.8">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2013・05・09</time>
+      <span class='li-header'><time>2013・05・09</time></span>
       <h2 class="title">ExplorerBarPlus 1.4.8</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード ExplorerBarPlusのVersion1.4.8を出しています。IEお気に入りパネルでお気に入りフォルダを変更していても、ボタンからお気に入りの追加と整理を可能にしています。Ancia上で使っているとき、お気に入りの追加を行うと、数秒操作不能になる問題を修正しています。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -149,86 +151,6 @@
           
           
           
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
             
           
           
@@ -289,6 +211,46 @@
           
           
           
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
             
           
           
@@ -329,12 +291,60 @@
           
           
           
+            
+          
+          
+          
           
           
           
           
             
-             <div>Related Posts</div>
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/explorerbarplus-45/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
@@ -1541,6 +1551,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1648,18 +1670,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1673,9 +1683,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

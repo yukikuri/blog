@@ -125,25 +125,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-51/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-51/" class="clearfix" title="スムーズスクロールがもたつく原因">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/smooths.png);"></div>
     <div class="detail">
-      <time>2010・05・17</time>
+      <span class='li-header'><time>2010・05・17</time></span>
       <h2 class="title">スムーズスクロールがもたつく原因</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="summary">どうもスムーズスクロールでもたつく原因は、foregroundウインドウの設定っぽいです。そのスレッド内でのウインドウにforegroundウインドウがないとだめっぽいです。単にポップアップにしてもforegroundでなければ、だめだったので。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-50/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-50/" class="clearfix" title="マルチスレッド/プロセス対応を一先ず完了">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/crash.png);"></div>
     <div class="detail">
-      <time>2010・05・10</time>
+      <span class='li-header'><time>2010・05・10</time></span>
       <h2 class="title">マルチスレッド/プロセス対応を一先ず完了</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download Ｔａｂが落ちた場合、about:crashを表示するようにしました。今は、TabManagerでタブを終了するとａｂｏｕｔ：ｃｒａｓｈが見れます。半日かからないで作ったので少し不安ですが、、 0.8.0.8で一先ずマルチスレッド/プロセス対応は完了です。一先ずというのは、シングルスレッドが選択できないのと、やはりスムーズスクロールがonだと、スクロールがもたつく部分が気になっています。スクロール - 不定期日記で使用することを考えていたんですが、当時とは状況が変わって、スレッドでもタブの強制終了が出来ているため、ブラウザ部分をポップアップウインドウにする案をどうしようか悩んでいます。ポップアップはタブが固まると、ウインドウが前面に表示されて隠せなくなるので止めました。 ポップアップウインドウにするとウインドウ制御で多少特殊な処理が必要で大変そうですが、いまだと、インターネットオプションかレジストリがいじれる環境じゃないとだめなので、、 あと実装すべき大きな機能は、マルチブックマーク機能が残っています。その名のとおり、アプリで使用するブックマークを複数使用可能とする機能です。ExplorerBarPlusで他ブラウザのブックマーク読み込み処理はすでにあるので、それを利用します。ブックマークとして使用を追加したとき、サイドバーでの表示＋ツールバーでの表示を可能とする機能の予定です。 例えば、はてなブックマークをブックマークとして追加したときは、ポータブルとして使用できるようにしたいです。IEの場合は、お気に入りフォルダを指定するといった具合です。要望対応も少しずつ行おうと思います。 5/11追記 林さん連絡ありがとうございます。 TabManagerがカスペルスキーでウイルスと出るのは誤検知という連絡をいただきました。定義データベースが更新されれば検出されなくなるはずです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -420,6 +422,54 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
           
           
           
@@ -680,46 +730,6 @@
           
           
           
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
           
           
           
@@ -781,7 +791,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-50/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/crash.png);"></div>
@@ -1686,6 +1696,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1793,18 +1815,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1818,9 +1828,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

@@ -103,25 +103,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-40/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-40/" class="clearfix" title="マルチプロセススレッド試作物">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・12・23</time>
+      <span class='li-header'><time>2009・12・23</time></span>
       <h2 class="title">マルチプロセススレッド試作物</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="summary">MultiProcessThread.zip メッセージベース＋共有メモリでのIPCを使用したマルチプロセス、スレッドのプロトタイプです。機能は、WTLのタブブラウザサンプル相当しかありません。exeの同じディレクトリにファイルthreadがあるとマルチスレッド、ないとマルチプロセスで動作します。 プロセス、スレッドの動作の違いは、制御の作成がCreateProcess/CreateThreadか、マーシャリングをプロセス間/プロセス内としているかぐらいしかありません。ただスレッドの場合は、共有メモリではなくヒープを使用するなど、改善部分はあります。タブのタイトル更新、アドレスバーのURL更新はIPC、戻る/進む/ホーム/中止は、マーシャリングしたポインタで行っています。マーシャリングはテストで毎回行っています。マウスホイールでのスクロール対応も入れてます。 IPCを決めるとき、名前つきパイプにしようと思ったんですが、パイプだとメッセージボックスやダイアログを表示中だとrecvできないので、UIスレッドとは別スレッドにすることになり、やめました。メッセージベースで単純なSendとし、再入可能の動作にする予定です。ただ固まっている子プロセスのウインドウへメインプロセスのウインドウからタイムアウトなしのSendが行われるとメインプロセスも固まってしまうため、Windowsが内部で自動的にSendしているものは、固まりを防げないかもしれません。たしか、同じホストで、マーシャリングしたポインタを介した呼び出しもメッセージベースなので、呼び先のタブが固まっていると、呼び元に制御が返らない、はずです。マーシャリングするときも応答があるときに行うようにしなければならないようです。 プロトタイプの公開はこれまでとし、次はプロトタイプをいじりながらAnciaに組み込んでいければというところです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-38/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-38/" class="clearfix" title="ジャンプリストが表示されなくなった">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2009・12・07</time>
+      <span class='li-header'><time>2009・12・07</time></span>
       <h2 class="title">ジャンプリストが表示されなくなった</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download マウスジェスチャまでのマウス移動距離を設定できるようにしています。 ジャンプリストで最近使ったもの、よく表示するもの、ピンが、いつのまにか表示されなくなってしまいました(タスクは表示される)。原因は不明で、クリアなど行っても表示されないので、しょうがなくAncia.exeが置いてあるフォルダをリネームして再度タスクバーに追加すると、直りました。。SHAddToRecentDocsの呼び方が間違っている？</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -142,6 +144,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -883,7 +893,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-38/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
@@ -1668,6 +1678,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1775,18 +1797,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1800,9 +1810,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

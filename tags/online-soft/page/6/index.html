@@ -44,190 +44,128 @@
 
     <header class="title list"><h1>Online Soft</h1></header>
 
-    <div class="articles">
-      <div class="row">
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver088/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="articles row ani">
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/msdn/" class="clearfix" title="MSDNライブラリでサジェストが可能に">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/msdns.png);"></div>
     <div class="detail">
-      <time>2010・07・21</time>
-      <h2 class="title">Ancia Ver0.8.8</h2>
-      <div class="summary">更新履歴 download 単一起動のとき、終了処理に問題がありました。２つ目のプロセスが終了のたびにダイアログが出てうっとおしいため、修正を行っています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver087/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・07・20</time>
-      <h2 class="title">Ancia Ver0.8.7</h2>
-      <div class="summary">更新履歴 download 要望対応と、バグ修正が主です。マルチブックマークの実装に取り掛かり始め、まずはIEのブックマークで任意のフォルダを表示できることと、複数のIEブックマークが使用できるようになる予定です。 任意のフォルダは、相対パスのときは、アプリからの相対パスとなるようにします。アイテムの順序情報も独自にするかもしれません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/2/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/gesturecursor2.png);"></div>
-    <div class="detail">
-      <time>2010・07・12</time>
-      <h2 class="title">カーソル型マウスジェスチャ2</h2>
-      <div class="summary">更新履歴 download カーソル型マウスジェスチャ機能の追加は、とりあえず終えたつもりです。「違う方向になったとき、ジェスチャを検出する(&amp;G)」は分かりにくいので、実際にチェックありなしで動かすと違いが分かると思います。チェックが無いときは、ぶら。のような動作、チェックがあるとunDonutのような動作です。 マルチプロセスが難しいと分かったのがやっぱりショックで（IEには無い機能を自前で実装？）、、しばらくは大変じゃない更新になると思います。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-55/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/gesturecursor.png);"></div>
-    <div class="detail">
-      <time>2010・07・06</time>
-      <h2 class="title">カーソル型マウスジェスチャ</h2>
-      <div class="summary">更新履歴 download カーソル型マウスジェスチャを追加していますが、まだUIから設定できる項目は少なく、増やす予定です。カーソル型マウスジェスチャは、オプション画面で「カーソル型マウスジェスチャ - mouseGestureCursor」を選択することで使用できます。 ユーザエージェントでiPadを指定したとき、iPad用のtwitterが見れたのですが、今は見れないようです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-54/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・07・06</time>
-      <h2 class="title">マルチプロセスのセッション継続は難しい</h2>
-      <div class="summary">マルチプロセスのセッション継続は、かなり手間取ることが分かりました。プロセス毎にセッションのcookieを共有することになるのですが、cookieはドメインで設定されることがあり、これを取得するのが難しいのです。 応答で Set-Cookie: HSID=XXXXXXXXXXXX;Domain=.google.co.jp;Path=/;HttpOnly というのがあると、ページのURLとcookieの設定ドメインが一致しているとは限らないので、どのようなドメインでcookieが設定されているのかは、HTTPヘッダを取得するしかないようです。 IEコンポーネントからHTTPヘッダの取得はできないようで、方法として ・HttpQueryInfo APIをhookする -&gt; HttpQueryInfoが呼び出されない場合は× ・RAWソケットを使用する -&gt; HTTPSが厳しい ・他の方法 となりますが、そう簡単ではなく、そこまでしなければならないのかもあるので、しばらく対応は保留します。TheWorldでのマルチプロセスセッション継続がどこまでやっているのかは、なぞです。 ドメイン単位でのcookie設定は、InternetSetCookieEx(&ldquo;http://google.com/&quot;,....)のように、URLをドメインで指定すると出来ました。 IE6の「新しいウインドウを開く」の場合、プロセスが新規にできるのではないので、プロセスでのcookie継続はそもそもできないはずです。IE8からはSession MergingというIE内部機能？で、セッション共有しているようです。IE9のベータが出るのが早そうなので、可能性は低そうですが、そのような機能が使えるようになることに期待したいです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/google-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・07・06</time>
-      <h2 class="title">検索パネルでGoogle検索できない２</h2>
-      <div class="summary">検索パネルでGoogle検索できない - 不定期日記で、またサイドバーでのGoogle検索ができなくなっています。どうやら、もうhttp://www.google.co.jp/search?output=ieは使用できないようです。しばらく様子を見て、使用できるようになればいいのですが、、</div>
+      <span class='li-header'><time>2011・03・11</time></span>
+      <h2 class="title">MSDNライブラリでサジェストが可能に</h2>
+      <div class="summary">MSDNライブラリで、候補を取得できるURLが分かり、 開発系の検索エンジン追加 のMSDNオープンサーチのXMLファイル更新しています。追加で上書きすれば、更新されます。たぶん検索候補に対応したIEでも使えるはずです。 検索候補URLは、 http://services.social.microsoft.com/search//Data/AutoCompleteTerms?t={searchTerms}&amp;b=Msdn&amp;l=en-US&amp;m=20&amp;rf=oss10 で、最後のoss10をxml等にすれば別の形式が返ってきます。</div>
     </div>
   </a>
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-53/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/crashdetail.png);"></div>
-    <div class="detail">
-      <time>2010・06・21</time>
-      <h2 class="title">クラッシュ詳細情報の表示</h2>
-      <div class="summary">更新履歴 download クラッシュ詳細情報を表示できるようになってます。クラッシュ情報はTMPフォルダに作成し、削除機能が無いので、次のバージョンで自動で古い情報ファイルを削除するように、クラッシュページで削除できるようにします。 今のところ、情報ファイルやdumpファイルを送信する機能は無いので、作者宛にメールするくらいしかありません。情報ファイルはunicodeのテキストなのでどのような内容か開けば分かりますが、dumpファイルはメモリに個人情報が含まれているかもしれないので、気になる方は送らない方がいいです。ただdumpファイルがあるとクラッシュの詳細が情報ファイルより分かります。 クラッシュページで、アプリでjson形式でページに情報を渡し、ページはeval()で情報を取り出す、という方式、ページに情報を渡すためにidispatch実装は結構面倒なので初めからこのように作ればよかったと、、jsonでの書き込み実装＝ページにも渡せるとなるので。 マルチプロセスのセッション継続は、cookieを送れば継続できることがわかりましたが、TheWorldの更新内容でcookieに関する修正が多いので、少し難しいと思います。gmailはリダイレクトやhttpsも絡み複雑のようです。 長時間使っていて落ちたときタブが失われることがあるので、一定間隔でタブのスナップショットを取る機能を付けようと思います。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/kaspersky/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・06・12</time>
-      <h2 class="title">Kasperskyでの誤検知について</h2>
-      <div class="summary">KasperskyでTabManagerがウイルスと検知されることで、Kaspersky社より誤検知であると連絡がありました。連絡した次の日に対応していただき定義データベースが更新され、現在TabManagerはウイルスと検知されなくなっています。次の日に対応してもらえるとは、、Kaspersky社の対応に好印象です。 http://www.virustotal.com/で調べるとTabManagerは誤検知されやすいようで、まだいくつかウイルスと出ています。サイズが小さいからでしょうか。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-52/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dpi.png);"></div>
-    <div class="detail">
-      <time>2010・06・08</time>
-      <h2 class="title">高DPI設定、中央ハイライト</h2>
-      <div class="summary">更新履歴 download 主に不具合の修正を行っています。Tridentの高DPI設定を行えるようにしています。上は左がDPI無効、右が有効のときの画像です。DPIはWindows7でコントロールパネルのディスプレイで125％としました。有効のときは、右で少し大きくなっています。以前要望のあったハイライトで中央スクロールも対応し、使いやすくなっています。 画像で気付いたのですが、拡大率が125％となるのは、コントロールパネルの設定が反映される？かもしれません。上ではなく高DPIは別の分かりやすい方法で確認した方がいいですね。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-39/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・06・06</time>
-      <h2 class="title">ExplorerBarPlus 1.4.2</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 特に大きな変更は無く、Anciaで使用しているとき、ツールチップが出ない場合があるので出るようにしています。ハイライトパネルやリンク抽出がマルチスレッドプロセスでのAnciaでうまく動かない(マーシャリングしたプロキシオブジェクトへの処理がうまく動かない)のは、どうしようか考え中です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ver081/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tp.png);"></div>
-    <div class="detail">
-      <time>2010・06・01</time>
-      <h2 class="title">Ver0.8.1</h2>
-      <div class="summary">更新履歴 download シングルスレッドも選択可能にし、機能限定は取りました。高セキュリティーで開く、セキュリティー許可で開く、が動かないということで試してみたんですが、こちらでは動きました(http://headlines.yahoo.co.jp/hlで確認)。 スムーズスクロールの対応でExplorerBarPlusのツールチップが表示されなくなる場合があり、近いうちに対応します。スムーズスクロール対応は、MDIでの表示を最大にしているとき有効です。MDIが最大ではない表示(重ねて表示など）では、スクロールはもたついてしまいます。最大表示ではない場合のスムーズスクロール対応は、技術的に難しいのではないでしょうか。スレッド/プロセスのときでMDI最大表示のときは、ブラウザ部分をポップアップにしているのですが、これを今までどおり違和感が少なく使えるようにするには結構大変でした。 スレッド/プロセスの自動選択は、マルチプロセスでのcookie継続が解決しないと付けませんが、解決できるかどうか、、ハイライトのスクロールで中央表示はできそうです。落ちる報告もいただいているため、crash表示に落ちた情報表示も検討中です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-51/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/smooths.png);"></div>
-    <div class="detail">
-      <time>2010・05・17</time>
-      <h2 class="title">スムーズスクロールがもたつく原因</h2>
-      <div class="summary">どうもスムーズスクロールでもたつく原因は、foregroundウインドウの設定っぽいです。そのスレッド内でのウインドウにforegroundウインドウがないとだめっぽいです。単にポップアップにしてもforegroundでなければ、だめだったので。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0926/" class="clearfix" title="Ancia Ver0.9.26 アプリケーション関連付け、タブリストツールバー・サイドバー">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/regist.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・03・01</time></span>
+      <h2 class="title">Ancia Ver0.9.26 アプリケーション関連付け、タブリストツールバー・サイドバー</h2>
+      <div class="summary">更新履歴 download やっとアプリケーションの関連付けが可能になりました。Vista,7では、オプション設定でレジストリに登録後、「規定のブラウザ選択画面」からAnciaを選択すれば関連付けられます。Xpならレジストリに登録すれば、関連付け、削除すれば関連付け解除です。 関連付ける拡張子は、Vista,7なら選択できますが、Xpは、.html、.htm、.mhtml、mht、.shtml、ftp・http・httpsプロトコル固定で関連付けしています。余裕があれば、Xpで登録する拡張子を選択できるようにする予定です。レジストリの登録実体は、script\reserved\regApp.jsなので、中を見れば何をやっているかわかります。関連付けを行った後、もしアプリケーションを削除する場合は、レジストリからの削除を推奨します。 regApp.jsは簡易的なsetbrowser的なことも可能で、単独で使用できます。たとえばunDonutを7に登録したい場合は、 cscript.exe C:\Ancia\script\reserved\regApp.js &ldquo;{&lsquo;regist&rsquo;:true,&lsquo;appPath&rsquo;:&lsquo;C:\app\unDonut\unDonut.exe&rsquo;,&lsquo;sysVer&rsquo;:7000,&lsquo;ieVer&rsquo;:9000}&rdquo; を管理者権限コマンドプロンプトから実行すれば、ブラウザ選択画面にunDonutを出せます。&rsquo;regist&rsquo;:falseで解除です。sysVerは5000(XP)、6000(Vista)、7000(Windows7)、ieVerは9000ならIE9、IE8なら8000です。appPathに登録するブラウザのフルパスを指定します(\は\にエスケープする必要あり)。 タブリストの内容をサイドバー・ツールバーに表示可能になっています。もし表示できない場合は、オプション設定のブックマーク設定・ブックマークの追加で「タブリスト」ブックマークを追加すれば表示出来るはずです。タブリストバーでまだシェブロンは出ません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0920-d/" class="clearfix" title="Ancia Ver0.9.20 DropAction/マウスジェスチャ Aero表示、お気に入り順序">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/daaero-thumb-300x304-72.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・01・24</time></span>
+      <h2 class="title">Ancia Ver0.9.20 DropAction/マウスジェスチャ Aero表示、お気に入り順序</h2>
+      <div class="summary">更新履歴 download ドロップアクションやボタン型マウスジェスチャのAero表示に対応しています。Aero表示するしないは、ドロップアクション/マウスジェスチャの設定から切り替え可能です（下はマウスジェスチャ） IEお気に入りでマウスのドラッグドロップでアイテム順序を入れ替え可能にしています。デフォルトの順序は、IE順ですが、入れ替えを行うと、自動的にユーザ定義順になります。順序は各フォルダ毎に名前順・IE順・ユーザ定義を指定できます。 リンクバーもマウスで並び替えできるようにしていますが、まだサブフォルダへの移動がうまく動いてません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0917-s/" class="clearfix" title="Ancia Ver0.9.17 アイコンの変更、systemメニューの変更">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/about.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・01・06</time></span>
+      <h2 class="title">Ancia Ver0.9.17 アイコンの変更、systemメニューの変更</h2>
+      <div class="summary">更新履歴 download 2011年ということで、アプリアイコンを新しくしました。すこしTheWorldっぽいですが、、今年こそは、完成まで行くはず、、だと思います。 systemメニューにコマンドバーでのメニューなど色々含めています。XpでIEスタイルにすると落ちる問題が出ています。これは次のバージョンで修正されます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/virustotalurlsc/" class="clearfix" title="VirusTotalUrlScan、TweetThisPageなど">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・12・28</time></span>
+      <h2 class="title">VirusTotalUrlScan、TweetThisPageなど</h2>
+      <div class="summary">いままでの更新でいろいろ便利な機能を追加しているので、いくつか紹介したいと思います。 VirusTotalでのUrlスキャン リンク先の詳細を調べるのにドロップアクションから、aguseで簡単に調べることができますが、VirusTotalでのURLスキャンも可能になっています。0.9.16ではデフォルトでボタンが設定されていますが、ボタンがない場合は、ドロップアクションの設定からボタンを追加できます。 あとは、リンクをドラッグし、VirustotalでURLをスキャンボタンにドロップするだけでスキャンが始まります。 見ているページをツイートする 今見ているページをツイートするTweetButtonのような動作を、ブラウザのツールバーボタンから行うことができます。デフォルトではボタンが表示されていないため、標準ツールバーを表示し、ツールバー右クリックから「ツールバーのボタンを変更&copy;&hellip;」を選びます。 ツールバーの変更で、種類：規定のスクリプトにある「このページをツイートする」ボタンを追加します。 あとは、ツイートしたいページでボタンを押せば、ツイートページが開きます。簡単ですね。 ツイートボタンは、htsignさんに作成してもらいました！ありがとうございます。htsignさんには、他にTumblrへのリンク投稿スクリプトも作成してもらっています。Tumblrへのリンク投稿は、このページをツイートするボタンと同じく、ボタン追加で使用することができます。 短縮URLをクリップボードにコピー VirusTotalでのURLスキャンと同じく、ドラッグ＆ドロップで短縮URLをクリップボードにコピーすることができます。現在可能なのは、bit.ly、McAfee、TinyURL、次のバージョン0.9.17では、ux.nuも使用可能になります。 bit.lyで、アカウント情報を使用したいときは、オプション設定 -&gt; スクリプトの設定の「スクリプト個別動作設定」で、bitlyで短縮URLをコピーの「設定」からユーザ情報を設定できます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0916-t/" class="clearfix" title="Ancia Ver0.9.16 TabManagerでタブリスト保存">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/TabManager2.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・12・27</time></span>
+      <h2 class="title">Ancia Ver0.9.16 TabManagerでタブリスト保存</h2>
+      <div class="summary">更新履歴 download TabManagerの機能を強化しています。Anciaが固まっても、TabManagerでタブが表示されれば、「Ancia」右クリック -&gt; 「タブリストで保存(S)」からタブリストで保存ダイアログを開くことができます。もし表示されない場合は、すみませんが、あきらめるしかないです。タブアイテム右クリックからURLをコピーなど、また、ドラッグ＆ドロップも可能です。 「全タブURLをクリップボードにコピー」はまだ未サポートです。タブリストの保存は、アプリでの保存と同じくセキュリティ、ハイライト、戻る進む履歴等も保存します。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0915-a/" class="clearfix" title="Ancia Ver0.9.15 貼り付け検索、標準ツールバーAero表示、動画再生できないなど">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tbaero.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・12・14</time></span>
+      <h2 class="title">Ancia Ver0.9.15 貼り付け検索、標準ツールバーAero表示、動画再生できないなど</h2>
+      <div class="summary">更新履歴 download 標準ツールバーだけ、Aero表示切替の対応をしています。標準ツールバーの右クリック -&gt; 「ツールバーをAero表示」を選択することで切り替えられます。Aero表示の切り替えは、画面スタイルがIEスタイルである必要があります。Xpだと少し見た目が悪いかもしれません。他のツールバーも切り替え対応予定です。 検索バーの右クリックからクリップボードテキストで貼り付け検索出来るようになっています。貼り付け検索では、ステータスバーに貼り付けるクリップボードテキストが出るので事前に確認できます。検索エンジンをメニューから選んでの貼り付け検索も可能です。 また、動画が再生できないバグが見つかっています。もし動画が再生できない場合は、IEなどで開くようお願いします。再生できないサイトとしては、例えばhttp://mlb.mlb.com/video/play.jsp があります。調べたんですが、ちょっと直し方は見当がつきません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0912-a/" class="clearfix" title="Ancia Ver0.9.12 Aero表示でのバー移動">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/aero_singleline.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・11・16</time></span>
+      <h2 class="title">Ancia Ver0.9.12 Aero表示でのバー移動</h2>
+      <div class="summary">更新履歴 download Aero表示のとき上部のバーを移動できるようにしています。配置によっては、IE9っぽくすることもできます。0.9.12でAero表示(オプション設定-&gt;画面スタイル-&gt;Internet Explorerスタイル)にすると、強制的に全ての検索バーとアドレスバーが上部に配置されます。今後の更新で、上部に配置する・配置しないを出来るようにする予定です。 デフォルトの画面スタイルでアドレスバーの背景をちょっと変えています。 0.9.12のバグで、favicon表示されませんが、修正したものをhttp://www.egrath.net/download/Ancia0912favicon_fix.zipに置いています。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
     </div>
 
     
@@ -236,7 +174,7 @@
   <span class="left"><a href="/tags/online-soft/page/5" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 6 of 16</span>
+  <span class="center vmiddle">Page 6 of 23</span>
 
   
   <span class="right"><a href="/tags/online-soft/page/7" rel="next">次へ</a></span>
@@ -257,6 +195,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -366,18 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -391,9 +329,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

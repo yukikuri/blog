@@ -41,160 +41,136 @@
 <div class="row">
   <div class="col-sm-9">
 
-    <div class="articles">
-      <div class="row">
-        
+    <div class="articles row ani">
+      
+      
         <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/google-1/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver096-ae/" class="clearfix" title="Ancia Ver0.9.6 タブAero表示対応">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/AeroMultiTab.png);"></div>
     <div class="detail">
-      <time>2010・07・06</time>
-      <h2 class="title">検索パネルでGoogle検索できない２</h2>
-      <div class="summary">検索パネルでGoogle検索できない - 不定期日記で、またサイドバーでのGoogle検索ができなくなっています。どうやら、もうhttp://www.google.co.jp/search?output=ieは使用できないようです。しばらく様子を見て、使用できるようになればいいのですが、、</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/jquery/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・06・24</time>
-      <h2 class="title">jQueryのコード</h2>
-      <div class="summary">jQueryのコードで、 438: var toplevel = false; ・・・ 444: if ( document.documentElement.doScroll &amp;&amp; toplevel ) { で 444: if ( toplevel &amp;&amp; document.documentElement.doScroll ) { のほうがほんの少し効率がいいと思いました。他にも同じような部分がありそうで、判定順序を変えるだけの影響が少なそうな、お手軽修正ではないでしょうか。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-53/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/crashdetail.png);"></div>
-    <div class="detail">
-      <time>2010・06・21</time>
-      <h2 class="title">クラッシュ詳細情報の表示</h2>
-      <div class="summary">更新履歴 download クラッシュ詳細情報を表示できるようになってます。クラッシュ情報はTMPフォルダに作成し、削除機能が無いので、次のバージョンで自動で古い情報ファイルを削除するように、クラッシュページで削除できるようにします。 今のところ、情報ファイルやdumpファイルを送信する機能は無いので、作者宛にメールするくらいしかありません。情報ファイルはunicodeのテキストなのでどのような内容か開けば分かりますが、dumpファイルはメモリに個人情報が含まれているかもしれないので、気になる方は送らない方がいいです。ただdumpファイルがあるとクラッシュの詳細が情報ファイルより分かります。 クラッシュページで、アプリでjson形式でページに情報を渡し、ページはeval()で情報を取り出す、という方式、ページに情報を渡すためにidispatch実装は結構面倒なので初めからこのように作ればよかったと、、jsonでの書き込み実装＝ページにも渡せるとなるので。 マルチプロセスのセッション継続は、cookieを送れば継続できることがわかりましたが、TheWorldの更新内容でcookieに関する修正が多いので、少し難しいと思います。gmailはリダイレクトやhttpsも絡み複雑のようです。 長時間使っていて落ちたときタブが失われることがあるので、一定間隔でタブのスナップショットを取る機能を付けようと思います。</div>
+      <span class='li-header'><time>2010・09・27</time></span>
+      <h2 class="title">Ancia Ver0.9.6 タブAero表示対応</h2>
+      <div class="summary">更新履歴 download IEスタイルでのTab Aero表示に対応しています。マルチライン・シングルラインの変更にも対応しています。タブ位置指定はできませんが、可能にする予定です。IEスタイルでは、アドレスバーが横に長くなってしまうので、ちょっとどうするか考えます。0.9.6からはタブ描画でスキン画像を使用します。 報告してもらっているバグ、修正できていないので、次は手を付けたいと思います。</div>
     </div>
   </a>
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-6">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/releasecrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/DetectCrashLine.png);"></div>
-    <div class="detail">
-      <time>2010・06・16</time>
-      <h2 class="title">ReleaseバージョンでのCrash箇所の特定方法</h2>
-      <div class="summary">Releaseバージョンでcrashしたときの場所の特定方法です。minidumpファイルか、最悪落ちた場所のアドレス情報があることが条件です。画像はわざとcrashさせています。 プロジェクトでマップファイルを作成する設定にしておく → プロジェクトのリンカ、デバッグ、マップファイルの作成ではいとする プロジェクトでcodファイルを作成する設定にしておく → プロジェクトのC/C++、出力ファイル、アセンブリの出力で、アセンブリ コード、コンピュータ語コード、ソース コード(/FAcs)を選択 mapファイルから落ちた関数を特定 画像だと0x004180ff が落ちた箇所で、mapファイルで、落ちた箇所の範囲の関数を調べる。下のmapファイルの内容では、MsgLoop関数内と分かる。 0001:000170bd ?MsgLoop省略 004180bd f MainFrm.obj 0001:000171dd ?省略 004181dd f i MainFrm.obj 落ちたオフセットを求める 〜 0x004180ffと0x004180bdからオフセットは0x42となる codファイルでMsgLoopのオフセット0x42を調べる 下のcodファイルで0x42からソースコードの行が特定できる。 ; 5971 : *(int*)(0) = 100; 00042 c7 05 00 00 00 &nbsp;&nbsp;&nbsp;&nbsp;00 64 00 00 00 mov DWORD PTR ds:0, 100 ; 00000064H Anciaでは落ちたときのGetExceptionInformation()情報とモジュール一覧、minidumpファイルを出力する予定です。minidumpファイルがあれば、スタックトレースが出るので、かなり状況が分かるはずです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/kaspersky/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・06・12</time>
-      <h2 class="title">Kasperskyでの誤検知について</h2>
-      <div class="summary">KasperskyでTabManagerがウイルスと検知されることで、Kaspersky社より誤検知であると連絡がありました。連絡した次の日に対応していただき定義データベースが更新され、現在TabManagerはウイルスと検知されなくなっています。次の日に対応してもらえるとは、、Kaspersky社の対応に好印象です。 http://www.virustotal.com/で調べるとTabManagerは誤検知されやすいようで、まだいくつかウイルスと出ています。サイズが小さいからでしょうか。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-52/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dpi.png);"></div>
-    <div class="detail">
-      <time>2010・06・08</time>
-      <h2 class="title">高DPI設定、中央ハイライト</h2>
-      <div class="summary">更新履歴 download 主に不具合の修正を行っています。Tridentの高DPI設定を行えるようにしています。上は左がDPI無効、右が有効のときの画像です。DPIはWindows7でコントロールパネルのディスプレイで125％としました。有効のときは、右で少し大きくなっています。以前要望のあったハイライトで中央スクロールも対応し、使いやすくなっています。 画像で気付いたのですが、拡大率が125％となるのは、コントロールパネルの設定が反映される？かもしれません。上ではなく高DPIは別の分かりやすい方法で確認した方がいいですね。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-39/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・06・06</time>
-      <h2 class="title">ExplorerBarPlus 1.4.2</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 特に大きな変更は無く、Anciaで使用しているとき、ツールチップが出ない場合があるので出るようにしています。ハイライトパネルやリンク抽出がマルチスレッドプロセスでのAnciaでうまく動かない(マーシャリングしたプロキシオブジェクトへの処理がうまく動かない)のは、どうしようか考え中です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ver081/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tp.png);"></div>
-    <div class="detail">
-      <time>2010・06・01</time>
-      <h2 class="title">Ver0.8.1</h2>
-      <div class="summary">更新履歴 download シングルスレッドも選択可能にし、機能限定は取りました。高セキュリティーで開く、セキュリティー許可で開く、が動かないということで試してみたんですが、こちらでは動きました(http://headlines.yahoo.co.jp/hlで確認)。 スムーズスクロールの対応でExplorerBarPlusのツールチップが表示されなくなる場合があり、近いうちに対応します。スムーズスクロール対応は、MDIでの表示を最大にしているとき有効です。MDIが最大ではない表示(重ねて表示など）では、スクロールはもたついてしまいます。最大表示ではない場合のスムーズスクロール対応は、技術的に難しいのではないでしょうか。スレッド/プロセスのときでMDI最大表示のときは、ブラウザ部分をポップアップにしているのですが、これを今までどおり違和感が少なく使えるようにするには結構大変でした。 スレッド/プロセスの自動選択は、マルチプロセスでのcookie継続が解決しないと付けませんが、解決できるかどうか、、ハイライトのスクロールで中央表示はできそうです。落ちる報告もいただいているため、crash表示に落ちた情報表示も検討中です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-51/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/smooths.png);"></div>
-    <div class="detail">
-      <time>2010・05・17</time>
-      <h2 class="title">スムーズスクロールがもたつく原因</h2>
-      <div class="summary">どうもスムーズスクロールでもたつく原因は、foregroundウインドウの設定っぽいです。そのスレッド内でのウインドウにforegroundウインドウがないとだめっぽいです。単にポップアップにしてもforegroundでなければ、だめだったので。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/google/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/SearchPanel_g.png);"></div>
-    <div class="detail">
-      <time>2010・05・16</time>
-      <h2 class="title">検索パネルでGoogle検索できない</h2>
-      <div class="summary">ExplorerBarPlusのSearchPanelでGoogle検索のURL http://www.google.co.jp/ie が変わり使用できなくなってしまいました。代わりの検索URLは、 http://www.google.co.jp/search?output=ie が引き続き使用できますので、対応までは上のURLを設定で変更し使用ください。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver095-ae/" class="clearfix" title="Ancia Ver0.9.5 Aeroスタイル途中">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/Aero.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・09・22</time></span>
+      <h2 class="title">Ancia Ver0.9.5 Aeroスタイル途中</h2>
+      <div class="summary">更新履歴 download IE9のスタイルがなんかいいので、Aeroスタイルに対応中です。オプション設定の画面スタイルで選択できますが、アドレスバーテキスト選択で見づらいバグがあります。予定ではタブもIE9のようにするつもりです。ただタブはアドレスバーの下に置けるようにします。Aero無効でもこのスタイルが表示できるようにしたいです(いまはAero有効のみ表示)。 Xpでタスクバーが隠れるバグ修正で、検索バーからの検索でZオーダーがおかしくなるのを修正しています。これが起こるとブラウザが白くなったりしたので、IMEが消える現象や、白くなる減少が直っている可能性があります。再起動などで設定ファイルが保存できないことがあるバグも修正しています。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver094/" class="clearfix" title="Ancia Ver0.9.4 アドレスバーフィードアイコン">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/addressbar_feed.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・09・13</time></span>
+      <h2 class="title">Ancia Ver0.9.4 アドレスバーフィードアイコン</h2>
+      <div class="summary">更新履歴 download サイトにフィードがあるとき、アドレスバーにアイコンを表示するようにしました。ただ窓の社などフィードボタンを押してもフィードのURLが開かないバグがあり、修正予定です。 オプション設定-&gt;ブックマーク詳細設定で、ツールバーとブックマーク両方の設定を統合しています。ブックマークの設定で新規タブを開くをチェックとすると、ツールバー/サイドバー/お気に入りメニューで新規タブで開くようになります。各ブックマークで設定できるようになったため、お気に入りを新しいタブで開く設定(ieFavNewTab)は削除しました。IEブックマークはデフォルトで新規タブで開く設定としました。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-40/" class="clearfix" title="ExplorerBarPlus 1.4.3">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ExplorerBarPlus143.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・09・08</time></span>
+      <h2 class="title">ExplorerBarPlus 1.4.3</h2>
+      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 検索パネルで規定の検索URLが使えなくなったための更新です。どうやらGoogleサイドバー用検索URL(http://www.google.com/ie)は、提供が停止となったようです。Googleの検索URLを使用している場合は、検索パネルのオプション設定から変更願います。 XPで使用している場合は、メモリ関係の有効な更新を行っているので、更新すると多少意味があります。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver093/" class="clearfix" title="Ancia Ver0.9.3 最近閉じたタブの保存">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sc.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・09・06</time></span>
+      <h2 class="title">Ancia Ver0.9.3 最近閉じたタブの保存</h2>
+      <div class="summary">更新履歴 download 最近閉じたタブを保存できるようになっています。最近閉じたタブは、アプリ終了時に保存するので、シングル起動ではないときは、それぞれのアプリ終了で保存されます。 ブックマークの設定で、ブックマークを追加したとき、ツールバーも表示できるようになっています。今までに追加したブックマークがツールバーに出ない、メニューでツールバーのテキストが消えることがありますが、次回修正予定です。もう少しでブックマーク/ツールバーの機能充実できそうです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-57/" class="clearfix" title="サイドバー縦バー表示/非表示">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sctrl.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・08・30</time></span>
+      <h2 class="title">サイドバー縦バー表示/非表示</h2>
+      <div class="summary">更新履歴 download サイドバーの縦バーを表示/非表示できるようにしています（サイドバーメニューの「サイドバーコントロール」）。やっとFlashが再生できない問題が対応できました。こちらの環境（32ビットWin7IE8、XpIE6）でいくつかのページで試して再生できています。 ほか結構不具合を修正しています。白くなる現象なかなか再現しないのですが、もしかすると直っているかもしれません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia091/" class="clearfix" title="Ancia0.9.1">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・08・23</time></span>
+      <h2 class="title">Ancia0.9.1</h2>
+      <div class="summary">更新履歴 download 0.9.1を出しましたが、そんなに更新内容はありません。不具合がたまってきているので、そちら優先にしています。Flashが再生できない不具合（Xenoblade ゼノブレイドで再現）を調べていて、もう少しというところです。 変ったところといえば、細かいですがアドレスバーでCtrl+左右キーでURLの論理単位でカーソルが動くようになってます。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver090/" class="clearfix" title="Ancia Ver0.9.0">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・08・09</time></span>
+      <h2 class="title">Ancia Ver0.9.0</h2>
+      <div class="summary">更新履歴 download バグ修正ばかりです。追加機能としては、HTML Meta Refreshの有効無効をUIで設定できるようになっています。設定ファイルで初期化状態で起動してしまうバグを修正しています。しばらく設定ファイルの初期化バグが発生しなければ、既知のバグから削除するつもりです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
     </div>
 
     
@@ -203,7 +179,7 @@
   <span class="left"><a href="/page/7" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 8 of 23</span>
+  <span class="center vmiddle">Page 8 of 29</span>
 
   
   <span class="right"><a href="/page/9" rel="next">次へ</a></span>
@@ -224,6 +200,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -333,18 +321,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -358,9 +334,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

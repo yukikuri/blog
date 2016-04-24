@@ -124,25 +124,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0915-a/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0915-a/" class="clearfix" title="Ancia Ver0.9.15 貼り付け検索、標準ツールバーAero表示、動画再生できないなど">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tbaero.jpg);"></div>
     <div class="detail">
-      <time>2010・12・14</time>
+      <span class='li-header'><time>2010・12・14</time></span>
       <h2 class="title">Ancia Ver0.9.15 貼り付け検索、標準ツールバーAero表示、動画再生できないなど</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download 標準ツールバーだけ、Aero表示切替の対応をしています。標準ツールバーの右クリック -&gt; 「ツールバーをAero表示」を選択することで切り替えられます。Aero表示の切り替えは、画面スタイルがIEスタイルである必要があります。Xpだと少し見た目が悪いかもしれません。他のツールバーも切り替え対応予定です。 検索バーの右クリックからクリップボードテキストで貼り付け検索出来るようになっています。貼り付け検索では、ステータスバーに貼り付けるクリップボードテキストが出るので事前に確認できます。検索エンジンをメニューから選んでの貼り付け検索も可能です。 また、動画が再生できないバグが見つかっています。もし動画が再生できない場合は、IEなどで開くようお願いします。再生できないサイトとしては、例えばhttp://mlb.mlb.com/video/play.jsp があります。調べたんですが、ちょっと直し方は見当がつきません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0911-a/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0911-a/" class="clearfix" title="Ancia Ver0.9.11 App.InputBox()について">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/inputbox.png);"></div>
     <div class="detail">
-      <time>2010・11・02</time>
+      <span class='li-header'><time>2010・11・02</time></span>
       <h2 class="title">Ancia Ver0.9.11 App.InputBox()について</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。 var input=App.InputBox( { caption:&ldquo;Windowキャプション&rdquo;, statics:[{text:&ldquo;上部スタティックテキスト&rdquo;},{text:&ldquo;下部スタティックテキスト&rdquo;}],//2つまで inputs:[{label:&ldquo;Input1(&amp;1):&ldquo;,value:&ldquo;value1value1&rdquo;}, {label:&ldquo;Input2(&amp;2):&ldquo;,value:&ldquo;value2value2&rdquo;}, {label:&ldquo;Input3(&amp;3):&ldquo;,value:&ldquo;value3value3&rdquo;}, {label:&ldquo;Input4(&amp;4):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;},// number: 数値入力のみ {label:&ldquo;Input5(&amp;5):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;}],// 5つまで buttons:[{text:&ldquo;OK&rdquo;},{text:&ldquo;キャンセル&rdquo;,style:&ldquo;default&rdquo;}]}); // input： OKだとjson形式のテキスト、Cancelだとfalseが返却 // json形式のテキストは以下の通り // {&ldquo;inputs&rdquo;:[&ldquo;value1value1&rdquo;,&ldquo;value2value2&rdquo;,&ldquo;value3value3&rdquo;,&ldquo;1234567890&rdquo;,&ldquo;1234567890&rdquo;]} OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&ldquo;(&rdquo;+input+&ldquo;)&rdquo;).inputs[0]のように入力結果を取得できます。 Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。 inputのタイプは、指定なし(普通のedtibox)、style:&ldquo;number&rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -163,86 +165,6 @@
           
           
           
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
             
           
           
@@ -300,74 +222,6 @@
           
           
           
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
           
           
           
@@ -539,12 +393,168 @@
           
           
           
+            
+          
+          
+          
           
           
           
           
             
-             <div>Related Posts</div>
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-ver0911-a/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/inputbox.png);"></div>
@@ -1603,6 +1613,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1710,18 +1732,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1735,9 +1745,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

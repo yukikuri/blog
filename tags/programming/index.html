@@ -44,15 +44,29 @@
 
     <header class="title list"><h1>Programming</h1></header>
 
-    <div class="articles">
-      <div class="row">
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
+    <div class="articles row ani">
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix" title="Ancia用の TypeScript 定義ファイルのご紹介">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2016・04・24</time><span class='new' data-time='1461506400'>NEW</span></span>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="summary">この度 @htsign さん より Ancia用の TypeScript 定義ファイルを作成いただきましたのでご紹介します。 作成していただきありがとうございます。 TypeScript 定義ファイルとは？ TypeScript 定義ファイルは、TypeScript に対応したエディタで使用できます。 Typescript(.ts)へ定義ファイルを読み込む 例: /// &lt;reference path=&quot;AnciaScript.d.ts&quot;/&gt; ことで、コード補間やメソッド呼び出しのパラメータ型エラーの事前チェックなどを行えるようになります。特にコード補完はメソッドの説明も出るため、スクリプト作成の手助けになります。 TypeScript エディタは、Atom 用プラグインの atom-typescript や、 Visual Studio Code があります。 「TypeScript エディタ」で Google 検索 すると色々出てきます。 TypeScript 定義ファイルの入手方法 Gist にてAncia用定義ファイルが公開されています。 Ancia スクリプトリファレンス にはない CmdExec() も定義されていますが、非公開メソッドのため使用は自己責任となります。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix" title="高解像度 HiDPI(Per-Monitor) に対応">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
     <div class="detail">
-      <time>2015・09・03</time>
+      <span class='li-header'><time>2015・09・03</time></span>
       <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
       <div class="summary">更新履歴 Download 1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。 1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。 AnciaでのHiDPI対応は、Per-Monitor Awareですが、異なるdpiのMonitorにWindowを移動したとき、アイコンサイズはMonitorのdpiに応じた表示に変化するまでは対応していません。Internet Explorerも同様の動作のようです。異なるdpiのMonitorに移動したときアイコンサイズまでdpiに合わせることになると、Faviconやファイルのアイコンをサイズに従い再度取得することになるため、負荷が非常に大きいです。ツールバーのアイコンだけならそれほどの負荷もなくdpiに応じたサイズに切り替えられるでしょう。 Internet Explorerの場合だと、サイドバーのアイテムアイコンなどは、シェルのイメージリストを使用しているようなので、シェルのイメージリストがMonitor単位のサイズではなくSystem DPIに応じた固定サイズになることから、そもそもHiDPI(Per Monitor)でサイドバーアイコンサイズは切り替えられないのだと思います。 Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。</div>
     </div>
@@ -60,14 +74,14 @@
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix">
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix" title="キョリ測が動かないときがある">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
     <div class="detail">
-      <time>2014・10・23</time>
+      <span class='li-header'><time>2014・10・23</time></span>
       <h2 class="title">キョリ測が動かないときがある</h2>
       <div class="summary">キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。 ・204応答でNavigateError 204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。 200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</div>
     </div>
@@ -75,14 +89,14 @@
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/wtl81-11324/" class="clearfix">
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/wtl81-11324/" class="clearfix" title="WTL81 11324">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/wtlribbon.png);"></div>
     <div class="detail">
-      <time>2011・11・22</time>
+      <span class='li-header'><time>2011・11・22</time></span>
       <h2 class="title">WTL81 11324</h2>
       <div class="summary">Windows Template Library (WTL) | Free Development software downloads at SourceForge.netで、WTL81 11324が出てます。更新履歴が「Changes Between WTL 8.1 And 8.0 @@ TODO」としか書いてませんね。下はざっと見た変更点です。 ・atlribbon.hが追加 ・atlapp.h 〜 IsRibbonUIAvailable()やIsWin7()、CRegKeyEx追加 ・atlctrlx.h 〜 CHyperLinkImplでリンクマウスオーバー時に下線表示になるっぽい ・atlddx.h 〜 DDX_TAB_INDEX(nID, var),DDX_COMBO_INDEX(nID, var),DDX_LISTBOX_INDEX(nID, var),DDX_LISTVIEW_INDEX(nID, var)が追加 ・atldlgs.h 〜 CDialogBaseUnits追加 ・atlframe.h 〜 CAutoUpdateUI追加 ・atlmisc.h 〜 AtlLoadMenuなどatluser.hに移動 atlsplit.h 〜 SPLIT_GRADIENTBAR,SPLIT_FIXEDBARSIZEが追加 SPLIT_GRADIENTBARを使ってみると、splitbarがかっこよくなります（左がSPLIT_GRADIENTBARあり、右がSPLIT_GRADIENTBARなし）。これは今のアプリに使ってもいいかもしれません。 新しくapp wizardにribbonが選択できて、はじめの画像は、ribbonありでビルドしてみたものです。</div>
     </div>
@@ -90,14 +104,14 @@
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-41/" class="clearfix">
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/explorerbarplus-41/" class="clearfix" title="ExplorerBarPlus 1.4.4">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2011・05・01</time>
+      <span class='li-header'><time>2011・05・01</time></span>
       <h2 class="title">ExplorerBarPlus 1.4.4</h2>
       <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 64bit環境で、ウインドウサイズが変わらないことがある対処を行っています。ただ、Anciaで使用している場合は、今後出る1.0.1の更新を待つ必要があります。ほかに、Firefox4のお気に入りが読めない、Vista以降でTree表示をExplorerっぽくしています。 64bit環境でウインドウサイズが変わらないのは、 Controls won&rsquo;t get resized once the nesting hierarchy of windows exceeds a certain depth (x64) - Decrypt my World - Site Home - MSDN Blogs が原因で、まさかこんな動作があるとは、、</div>
     </div>
@@ -105,14 +119,14 @@
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/jquery/" class="clearfix">
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/jquery/" class="clearfix" title="jQueryのコード">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・06・24</time>
+      <span class='li-header'><time>2010・06・24</time></span>
       <h2 class="title">jQueryのコード</h2>
       <div class="summary">jQueryのコードで、 438: var toplevel = false; ・・・ 444: if ( document.documentElement.doScroll &amp;&amp; toplevel ) { で 444: if ( toplevel &amp;&amp; document.documentElement.doScroll ) { のほうがほんの少し効率がいいと思いました。他にも同じような部分がありそうで、判定順序を変えるだけの影響が少なそうな、お手軽修正ではないでしょうか。</div>
     </div>
@@ -120,14 +134,14 @@
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/releasecrash/" class="clearfix">
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/releasecrash/" class="clearfix" title="ReleaseバージョンでのCrash箇所の特定方法">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/DetectCrashLine.png);"></div>
     <div class="detail">
-      <time>2010・06・16</time>
+      <span class='li-header'><time>2010・06・16</time></span>
       <h2 class="title">ReleaseバージョンでのCrash箇所の特定方法</h2>
       <div class="summary">Releaseバージョンでcrashしたときの場所の特定方法です。minidumpファイルか、最悪落ちた場所のアドレス情報があることが条件です。画像はわざとcrashさせています。 プロジェクトでマップファイルを作成する設定にしておく → プロジェクトのリンカ、デバッグ、マップファイルの作成ではいとする プロジェクトでcodファイルを作成する設定にしておく → プロジェクトのC/C++、出力ファイル、アセンブリの出力で、アセンブリ コード、コンピュータ語コード、ソース コード(/FAcs)を選択 mapファイルから落ちた関数を特定 画像だと0x004180ff が落ちた箇所で、mapファイルで、落ちた箇所の範囲の関数を調べる。下のmapファイルの内容では、MsgLoop関数内と分かる。 0001:000170bd ?MsgLoop省略 004180bd f MainFrm.obj 0001:000171dd ?省略 004181dd f i MainFrm.obj 落ちたオフセットを求める 〜 0x004180ffと0x004180bdからオフセットは0x42となる codファイルでMsgLoopのオフセット0x42を調べる 下のcodファイルで0x42からソースコードの行が特定できる。 ; 5971 : *(int*)(0) = 100; 00042 c7 05 00 00 00 &nbsp;&nbsp;&nbsp;&nbsp;00 64 00 00 00 mov DWORD PTR ds:0, 100 ; 00000064H Anciaでは落ちたときのGetExceptionInformation()情報とモジュール一覧、minidumpファイルを出力する予定です。minidumpファイルがあれば、スタックトレースが出るので、かなり状況が分かるはずです。</div>
     </div>
@@ -135,14 +149,14 @@
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-51/" class="clearfix">
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-51/" class="clearfix" title="スムーズスクロールがもたつく原因">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/smooths.png);"></div>
     <div class="detail">
-      <time>2010・05・17</time>
+      <span class='li-header'><time>2010・05・17</time></span>
       <h2 class="title">スムーズスクロールがもたつく原因</h2>
       <div class="summary">どうもスムーズスクロールでもたつく原因は、foregroundウインドウの設定っぽいです。そのスレッド内でのウインドウにforegroundウインドウがないとだめっぽいです。単にポップアップにしてもforegroundでなければ、だめだったので。</div>
     </div>
@@ -150,91 +164,15 @@
   <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-38/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・04・26</time>
-      <h2 class="title">ExplorerBarPlus 1.4.1</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Ancia0.8.0.6で分かったBSTRのパラメータ渡し誤りのバグを修正しています。そのほか、あまりバージョンアップしていなかったので、気になったところを直しています。SimpleFavPanelのアイコンを変更していますが、元のアイコンは、削除していないので、パネルのアイコン設定から変更できます。 BSTRのパラメータ渡し誤りというのは、 inline void func(BSTR bstr){ ・・・ } 関数１ inline void func(LPWCSTR psz) 関数２ { BSTR bstr=SysAllocString(psz); func(bstr); SysFreeString(bstr); } というのがあるとき、 TCHAR sz[256]; //CStringもなぜか、関数１が呼ばれる lstrcpy(sz, _T(&ldquo;aaa&rdquo;)); func(sz); が、関数２ではなく関数１を呼んでしまうというものです。これは、オーバーロードの仕様？で、constより、完全一致のBSTR(WCHAR*)が優先的に一致していることだと思います。関数１の名前を変更したので、全て直っているはずです。直した後はAnciaで落ちなくなりました。 v1.4.0の4/25日のインストーラで、インストールが不十分だったので、インストーラを差し替えています。もし、v1.4.0をインストールした方は、v1.4.1をインストール、または、再度v1.4.0のインストールをお願いします。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-37/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tm2.png);"></div>
-    <div class="detail">
-      <time>2010・04・19</time>
-      <h2 class="title">ExplorerBarPlusのタブモード表示対応</h2>
-      <div class="summary">更新履歴 download ExplorerBarPlusのタブモードとお気に入りを表示できるようになりました。ほかのIEツールバー、サイドバーはまだ表示できません。ExplorerBarPlusの表示は、メニュー[表示(V)]-&gt;エクスプローラバーから行えます。スクリプトでの表示/非表示もまだ出来ません。 タブマネージャでCPUの詳細情報を表示するようにしました。この表示情報でできればcup-zの様にCPUのロゴを表示したいのですが、AMDの場合は、http://www.amd.com/jp-ja/0,,3715_7374_15589,00.htmlからそのままのイメージを使うことでよさそうですが、インテルの場合は、そう簡単にはいかないようです。なんとかインテルのロゴも表示したいのですが、、 CPU情報の表示はCPUIDを元にしていますが、確認マシンが少ないので、間違った表示になるかもしれません。Aero Glassの表示は、結構大変でした。これで、ドロップアクションの背景もAero Glassに出来るかも、、</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-49/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tm.png);"></div>
-    <div class="detail">
-      <time>2010・04・05</time>
-      <h2 class="title">タブマネージャ機能</h2>
-      <div class="summary">更新履歴 download タブを強制終了可能なタブマネージャ機能を追加しています。短時間で作ったのでThemeが効いていなかったりします。TabManagerの下の方は、グラス表示にしてみようかと思います。今の強制終了は、WM_QUITで終了できなければ、Terminateしています。ここは、安全に終了できるとき(タブの閉じる履歴が残る)は、そちらを優先するように変える予定です。CPU使用率や、メモリ表示、強制終了したタブはabout:crash表示する、も追加予定です。 プロセスで強制終了は、アドレス領域が分かれているので、メインが落ちずに終了できるというのは、わかりますが、スレッドでもこれを可能にしています。これは、子スレッド&lt;-&gt;メインとデータ結合※として動作しているためです。マルチプロセスにする時点で、データを共有とした動作は選択せず、データ結合で作ったところ、スレッドでもできてしまいました。共有だと、排他が絡みせっかくの子処理の効率が悪くなります。 マルチスレッド/プロセスもだいぶできてきて、あと残っているものは、IEプラグイン、タブ&lt;-&gt;タブ間操作、localhomeなどの閉じたタブの表示ぐらいです。 マルチプロセスのとき、pixivでページが表示できない場合があり、リファラなどが原因かもしれません。 ※ここでのデータ結合という言葉を正しい意味で使用しているかは、よく知らない。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-48/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/iecmp.png);"></div>
-    <div class="detail">
-      <time>2010・03・29</time>
-      <h2 class="title">互換表示</h2>
-      <div class="summary">IE8のヘッダとIEブログを見ているうちに、互換表示が変更できそうな怪しい部分があったので、試してみると、、変更できたっぽいです。ですが、変更できずに失敗するタイミングがあります。もう少し試してみて、できそうなら入れてみます。変更の仕方自体は、想像していたとおり単純で、大体5行程度です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
-        <div class="col-sm-4">
-          <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-47/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <time>2010・03・23</time>
-      <h2 class="title">設定の同期で苦戦中</h2>
-      <div class="summary">設定の同期、というか子処理は、メイン処理と同じ設定値のコピー値で動作させるところで、直す部分が多すぎて、大変です。ビットフィールドは使うんじゃなかったかな。 struct A { UINT isA:1; UINT isB:1; UINT isC:1; UINT isD:1; } a; a.isA = TRUE; a.isB = FALSE; a.isC = TRUE; a.isD = FALSE; int v = (int)&a; で無理やり変換してもいいですが、if(a.isB)のアセンブリ mov edx,dword ptr [a] shr edx,1 and edx,1 がif(v &amp; 0x2)のandの mov eax,dword ptr [v] and eax,2 に比べ1命令多いので、ビットフィールドはやめることにします。たった1命令減ってもナノセカンドも差が出ないと思いますが、ifの使用箇所が多いのと、命令が少なくなることはデメリットではないので</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-        </div>
-        
       </div>
+      
     </div>
 
     
 <nav class="paging">
   
 
-  <span class="center vmiddle">Page 1 of 4</span>
+  <span class="center vmiddle">Page 1 of 5</span>
 
   
   <span class="right"><a href="/tags/programming/page/2" rel="next">次へ</a></span>
@@ -255,6 +193,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
@@ -364,18 +314,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -389,9 +327,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

@@ -123,25 +123,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/opensearch/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/opensearch/" class="clearfix" title="OpenSearchでの検索エンジン登録">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/opensearch.png);"></div>
     <div class="detail">
-      <time>2009・01・14</time>
+      <span class='li-header'><time>2009・01・14</time></span>
       <h2 class="title">OpenSearchでの検索エンジン登録</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Anciaでの検索エンジン情報は、OpenSearch形式のファイルで持っています。どんな検索エンジンでもOpenSearch形式のファイルを作れば、使用できるはずです。 アプリへの検索エンジン登録は、searchフォルダに、OpenSearch形式のファイルを置くだけです。ファイル名＝検索エンジン名となり、ファイル名の.icoをおけば、検索エンジンのアイコンになります。ファイル削除で、登録が消えます。ただし、アプリで削除すると、検索履歴も一緒に消してくれます。登録が単純な分、検索エンジンの順番は、ファイル名順です。 検索バーは、検索エンジンごとに検索キーワード履歴を保存するため、aguse.jpで調べたURLやgoogleで調べたキーワードが、ごっちゃになることはありません。検索バーのキーワード履歴は、ホイールクリックすると、新しいタブで検索結果を表示し、また、右クリックメニューから他のエンジンで調べることが出来ます（上の画像）。履歴は、setting\SearchHist_検索エンジンファイル名.jsonで保存します。履歴ファイルがあれば、履歴を表示・なければ表示無しです。検索バーへの検索エンジンボタンの登録は、バーのボタン設定ファイルで&rdquo;btn&rdquo;:[・・・,{&ldquo;search&rdquo;:&ldquo;検索エンジンのファイル&rdquo;},・・・]とします。 検索URLテンプレートは、{searchTerms}のみサポートしています。Internet Explorerと同じく、GETのみサポートです。 次の更新は、タブ上での機能割り当て辺りを、、マウスジェスチャは、、違う形で提供するかもしれません。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/localhome/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/localhome/" class="clearfix" title="localhome機能">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/localhome.png);"></div>
     <div class="detail">
-      <time>2009・01・04</time>
+      <span class='li-header'><time>2009・01・04</time></span>
       <h2 class="title">localhome機能</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Anciaの0.3.0のリリースで、ローカルホーム機能を追加しました。これは、about:localhomeにアクセスしたとき、resource配下のlocalhome.htmlの内容を表示するものです。resource/customizeにlocalhome.htmlがある場合は、そちらを優先に表示します。 about:localhomeのURLは特殊で、ローカルロックダウン・script無効でもスクリプトが実行できます。また、localhomeのときだけ、externalからアプリのさまざまなオブジェクト（IEのホーム一覧や、今日表示したページ一覧など）が参照できます。まだlocalhomeのデザインが適当なので、そのうち直します。localhomeの表示には、タブスナップショットの一覧も含める予定です。 localhomeは1日丸々使ったので、さすがに疲れました。年末も精神的にかなり辛いことがあったので、今日は、、ゆっくりしよう</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -162,6 +164,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -1215,7 +1225,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/localhome/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/localhome.png);"></div>
@@ -1762,6 +1772,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1869,18 +1891,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1894,9 +1904,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

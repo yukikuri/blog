@@ -107,25 +107,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/2/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/2/" class="clearfix" title="カーソル型マウスジェスチャ2">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/gesturecursor2.png);"></div>
     <div class="detail">
-      <time>2010・07・12</time>
+      <span class='li-header'><time>2010・07・12</time></span>
       <h2 class="title">カーソル型マウスジェスチャ2</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download カーソル型マウスジェスチャ機能の追加は、とりあえず終えたつもりです。「違う方向になったとき、ジェスチャを検出する(&amp;G)」は分かりにくいので、実際にチェックありなしで動かすと違いが分かると思います。チェックが無いときは、ぶら。のような動作、チェックがあるとunDonutのような動作です。 マルチプロセスが難しいと分かったのがやっぱりショックで（IEには無い機能を自前で実装？）、、しばらくは大変じゃない更新になると思います。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-54/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-54/" class="clearfix" title="マルチプロセスのセッション継続は難しい">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・07・06</time>
+      <span class='li-header'><time>2010・07・06</time></span>
       <h2 class="title">マルチプロセスのセッション継続は難しい</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">マルチプロセスのセッション継続は、かなり手間取ることが分かりました。プロセス毎にセッションのcookieを共有することになるのですが、cookieはドメインで設定されることがあり、これを取得するのが難しいのです。 応答で Set-Cookie: HSID=XXXXXXXXXXXX;Domain=.google.co.jp;Path=/;HttpOnly というのがあると、ページのURLとcookieの設定ドメインが一致しているとは限らないので、どのようなドメインでcookieが設定されているのかは、HTTPヘッダを取得するしかないようです。 IEコンポーネントからHTTPヘッダの取得はできないようで、方法として ・HttpQueryInfo APIをhookする -&gt; HttpQueryInfoが呼び出されない場合は× ・RAWソケットを使用する -&gt; HTTPSが厳しい ・他の方法 となりますが、そう簡単ではなく、そこまでしなければならないのかもあるので、しばらく対応は保留します。TheWorldでのマルチプロセスセッション継続がどこまでやっているのかは、なぞです。 ドメイン単位でのcookie設定は、InternetSetCookieEx(&ldquo;http://google.com/&quot;,....)のように、URLをドメインで指定すると出来ました。 IE6の「新しいウインドウを開く」の場合、プロセスが新規にできるのではないので、プロセスでのcookie継続はそもそもできないはずです。IE8からはSession MergingというIE内部機能？で、セッション共有しているようです。IE9のベータが出るのが早そうなので、可能性は低そうですが、そのような機能が使えるようになることに期待したいです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -146,86 +148,6 @@
           
           
           
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
             
           
           
@@ -283,74 +205,6 @@
           
           
           
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
-          
-          
-          
-          
-          
-          
-          
-            
           
           
           
@@ -451,6 +305,98 @@
           
           
             
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
           
           
           
@@ -650,6 +596,58 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+          
           
           
           
@@ -667,7 +665,19 @@
           
           
             
-             <div>Related Posts</div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-54/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
@@ -1620,6 +1630,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1727,18 +1749,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1752,9 +1762,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

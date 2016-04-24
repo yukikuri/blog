@@ -132,25 +132,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/internet-explor-2/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/internet-explor-2/" class="clearfix" title="Internet Explorer 11でのJavascript問題">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2013・11・11</time>
+      <span class='li-header'><time>2013・11・11</time></span>
       <h2 class="title">Internet Explorer 11でのJavascript問題</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">Windows7用Internet Explorer11がdownload可能となりました。 ダウンロード - Internet Explorer Anciaでは今のところ相性が悪いです。以前報告があるとおり、シングルスレッド・マルチスレッド・マルチプロセスいずれでもタブを10程度開くとJavascriptの動作が次第に遅くなり、そのうち固まります。どうも1ブラウザプロセスでIEコンポを多数作成するとだめなようです。 現時点での解決手段として、オプションからタブの動作をマルチプロセスにし、タブグループのチェックを外します。これでリソースを消費しますが、タブ毎に別プロセスで動作し、Javascriptの問題はとりあえず出なくなります。 タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/sleipnirie10/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/sleipnirie10/" class="clearfix" title="SleipnirのIE10表示問題">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9ie.png);"></div>
     <div class="detail">
-      <time>2013・08・09</time>
+      <span class='li-header'><time>2013・08・09</time></span>
       <h2 class="title">SleipnirのIE10表示問題</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。 ・SleipnirはページのX-UA-Compatibleを無視し、強制的にIE10モードで表示する 検証ページ：Conditional Comments (X-UA-CompatibleにIE=9を指定) 環境は、Win7 64bit IE10、Sleipnirの最新versionです。下がSleipnirの表示です。IE10モードで表示しているため、About conditional comments (Internet Explorer)が動作していません。これはdocumentModeが10での挙動です。ほかにもIE10で変わった挙動は、HTML5 Parsing in IE10 - IEBlog - Site Home - MSDN Blogsに詳しく書いてあります。 Anciaでは、IEと同じ挙動になります。 Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
       </aside>
@@ -331,12 +333,20 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/sleipnirie10/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9ie.png);"></div>
@@ -1583,6 +1593,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1690,18 +1712,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1715,9 +1725,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

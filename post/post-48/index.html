@@ -103,25 +103,27 @@
       
       <aside class="md prevnext">
         <div class='prev'>次の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ver0804/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/ver0804/" class="clearfix" title="Ver0.8.0.4">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・03・29</time>
+      <span class='li-header'><time>2010・03・29</time></span>
       <h2 class="title">Ver0.8.0.4</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="summary">更新履歴 download 二転三転していたのですが、やっと設定の同期が落ち着きました。なぜかタスクバーサムネイルが出なくなったので、次に直します。ステータスバーは、テキストだけ表示できるようにしています。 WTLのコマンドバーのマウスフックが原因でたまにメインスレッドが落ちてしまう場合があるようです。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-47/" class="clearfix">
+  <a href="http://blog.anciasoft.jp/post/post-47/" class="clearfix" title="設定の同期で苦戦中">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
-      <time>2010・03・23</time>
+      <span class='li-header'><time>2010・03・23</time></span>
       <h2 class="title">設定の同期で苦戦中</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="summary">設定の同期、というか子処理は、メイン処理と同じ設定値のコピー値で動作させるところで、直す部分が多すぎて、大変です。ビットフィールドは使うんじゃなかったかな。 struct A { UINT isA:1; UINT isB:1; UINT isC:1; UINT isD:1; } a; a.isA = TRUE; a.isB = FALSE; a.isC = TRUE; a.isD = FALSE; int v = (int)&a; で無理やり変換してもいいですが、if(a.isB)のアセンブリ mov edx,dword ptr [a] shr edx,1 and edx,1 がif(v &amp; 0x2)のandの mov eax,dword ptr [v] and eax,2 に比べ1命令多いので、ビットフィールドはやめることにします。たった1命令減ってもナノセカンドも差が出ないと思いますが、ifの使用箇所が多いのと、命令が少なくなることはデメリットではないので</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
 </article>
 
       </aside>
@@ -142,6 +144,14 @@
           
           
           
+            
+          
+          
+          
+          
+          
+          
+          
           
           
           
@@ -803,7 +813,7 @@
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/ver0804/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
@@ -1702,6 +1712,18 @@
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1809,18 +1831,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1834,9 +1844,9 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

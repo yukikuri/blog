@@ -96,18 +96,21 @@
 <h2 id="更新内容:8504db62e70ea03b22fad5f6941bb263">更新内容</h2>
 
 <ul>
-<li><strong>mod タブを多く開くとパフォーマンスが大幅に低下するのを改善</strong><br />
-タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。</li>
-<li><strong>mod blink版Chrome/49.0.2623.112に更新</strong><br />
+<li><strong>mod タブを多く開くとパフォーマンスが大幅に低下するのを改善</strong>
+<p>
+タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。
+</p></li>
+<li><strong>mod blink版Chrome/49.0.2623.112に更新</strong>
+<p>
 4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。
 Google Chrome の最新の更新内容は<a target="_blank" href="http://googlechromereleases.blogspot.jp/2016/04/stable-channel-update.html">Chrome Releases: Stable Channel Update</a>
-から確認できます。<br />
-<p></p>
-49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。</li>
+から確認できます。</p>
+<p>
+49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。
+</p></li>
 </ul>
 
-<p><p></p>
-もし不具合がある場合、<a href="http://forum.anciasoft.jp/">ソフトウェアフォーラム</a> までお願いします。</p>
+<p>もし不具合がある場合、<a href="http://forum.anciasoft.jp/">ソフトウェアフォーラム</a> までお願いします。</p>
 
       </div>
 
@@ -125,16 +128,28 @@ Google Chrome の最新の更新内容は<a target="_blank" href="http://googlec
       </aside>
       
       <aside class="md prevnext">
-        
-        <div class='next'>前の記事</div><article class="li">
-  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+        <div class='prev'>次の記事</div><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix" title="Ancia用の TypeScript 定義ファイルのご紹介">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
     <div class="detail">
-      <time>2016・04・10</time>
-      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+      <span class='li-header'><time>2016・04・24</time><span class='new' data-time='1461506400'>NEW</span></span>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="summary">この度 @htsign さん より Ancia用の TypeScript 定義ファイルを作成いただきましたのでご紹介します。 作成していただきありがとうございます。 TypeScript 定義ファイルとは？ TypeScript 定義ファイルは、TypeScript に対応したエディタで使用できます。 Typescript(.ts)へ定義ファイルを読み込む 例: /// &lt;reference path=&quot;AnciaScript.d.ts&quot;/&gt; ことで、コード補間やメソッド呼び出しのパラメータ型エラーの事前チェックなどを行えるようになります。特にコード補完はメソッドの説明も出るため、スクリプト作成の手助けになります。 TypeScript エディタは、Atom 用プラグインの atom-typescript や、 Visual Studio Code があります。 「TypeScript エディタ」で Google 検索 すると色々出てきます。 TypeScript 定義ファイルの入手方法 Gist にてAncia用定義ファイルが公開されています。 Ancia スクリプトリファレンス にはない CmdExec() も定義されていますが、非公開メソッドのため使用は自己責任となります。</div>
     </div>
   </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+        <div class='next'>前の記事</div><article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix" title="Chrome 系ブラウザへの PPAPI版 Flash のインストール方法">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2016・04・10</time></span>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="summary">Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。 Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。 1) Adobe Flash Player インストールのページを開く https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。 2) 開いたページで、手順1と手順2を選択する 手順1のオペレーティングシステムを環境のOSを選択します。 手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。 3) 提供オプションを任意で選択する インストールで追加のソフトウェアを入れるかの提供オプションがありますが、任意です。提供オプションはチェックオフでもインストール可能です。 4) 「インストール」ボタンからインストーラをダウンロード 「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。 あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
 </article>
 
       </aside>
@@ -142,6 +157,14 @@ Google Chrome の最新の更新内容は<a target="_blank" href="http://googlec
       <aside class="list related">
         
         
+          
+          
+          
+          
+          
+            
+          
+          
           
           
           
@@ -156,7 +179,7 @@ Google Chrome の最新の更新内容は<a target="_blank" href="http://googlec
           
           
             
-             <div>Related Posts</div>
+             <div>関連する記事</div>
               <article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome052.jpg);"></div>
@@ -1516,6 +1539,18 @@ Google Chrome の最新の更新内容は<a target="_blank" href="http://googlec
     <div class="content">
       
       <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
     <div class="detail">
@@ -1623,18 +1658,6 @@ Google Chrome の最新の更新内容は<a target="_blank" href="http://googlec
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-66/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/refreshhilite.png);"></div>
-    <div class="detail">
-      <time>2015・03・17</time>
-      <h2 class="title">ハイライト、インライン検索で最新の状態に更新</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -1648,9 +1671,9 @@ Google Chrome の最新の更新内容は<a target="_blank" href="http://googlec
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (182)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (38)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
     

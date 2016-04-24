@@ -6,8 +6,52 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2015-09-03 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-04-24 23:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia用の TypeScript 定義ファイルのご紹介</title>
+          <link>http://blog.anciasoft.jp/post/typescript/</link>
+          <pubDate>2016-04-24 23:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/typescript/</guid>
+          <description>
+
+&lt;p&gt;この度 &lt;a href=&#34;https://twitter.com/htsign&#34;&gt;@htsign&lt;/a&gt; さん
+より Ancia用の TypeScript 定義ファイルを作成いただきましたのでご紹介します。
+作成していただきありがとうございます。&lt;/p&gt;
+
+&lt;h2 id=&#34;typescript-定義ファイルとは:e59cda7384c4b1abd41426b7efae3052&#34;&gt;TypeScript 定義ファイルとは？&lt;/h2&gt;
+
+&lt;p&gt;TypeScript 定義ファイルは、TypeScript に対応したエディタで使用できます。
+Typescript(.ts)へ定義ファイルを読み込む&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;例: &lt;code&gt;/// &amp;lt;reference path=&amp;quot;AnciaScript.d.ts&amp;quot;/&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ことで、コード補間やメソッド呼び出しのパラメータ型エラーの事前チェックなどを行えるようになります。特にコード補完はメソッドの説明も出るため、スクリプト作成の手助けになります。&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/typescript-use.png&#34;&gt;&lt;/div&gt;  
+
+&lt;p&gt;TypeScript エディタは、&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt; 用プラグインの &lt;a href=&#34;https://atom.io/packages/atom-typescript&#34;&gt;atom-typescript&lt;/a&gt; や、
+&lt;a href=&#34;https://www.visualstudio.com/products/code-vs.aspx&#34;&gt;Visual Studio Code&lt;/a&gt; があります。
+&lt;a href=&#34;https://www.google.co.jp/webhp?hl=ja&amp;lr=lang_ja#&amp;hl=ja&amp;lr=lang_ja&amp;q=TypeScript%20%e3%82%a8%e3%83%87%e3%82%a3%e3%82%bf&#34;&gt;「TypeScript エディタ」で Google 検索&lt;/a&gt; すると色々出てきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;typescript-定義ファイルの入手方法:e59cda7384c4b1abd41426b7efae3052&#34;&gt;TypeScript 定義ファイルの入手方法&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/htsign/6e0f48586626695c723546a7114845ae&#34;&gt;Gist&lt;/a&gt;
+にてAncia用定義ファイルが公開されています。
+&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8%20%A5%EA%A5%D5%A5%A1%A5%EC%A5%F3%A5%B9&#34;&gt;Ancia スクリプトリファレンス&lt;/a&gt;
+にはない CmdExec() も定義されていますが、非公開メソッドのため使用は自己責任となります。&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/htsign/6e0f48586626695c723546a7114845ae.js&#34;&gt;&lt;/script&gt;
+</description>
+          <desctext>この度 @htsign さん より Ancia用の TypeScript 定義ファイルを作成いただきましたのでご紹介します。 作成していただきありがとうございます。 TypeScript 定義ファイルとは？ TypeScript 定義ファイルは、TypeScript に対応したエディタで使用できます。 Typescript(.ts)へ定義ファイルを読み込む 例: /// &amp;lt;reference path=&amp;quot;AnciaScript.d.ts&amp;quot;/&amp;gt; ことで、コード補間やメソッド呼び出しのパラメータ型エラーの事前チェックなどを行えるようになります。特にコード補完はメソッドの説明も出るため、スクリプト作成の手助けになります。 TypeScript エディタは、Atom 用プラグインの atom-typescript や、 Visual Studio Code があります。 「TypeScript エディタ」で Google 検索 すると色々出てきます。 TypeScript 定義ファイルの入手方法 Gist にてAncia用定義ファイルが公開されています。 Ancia スクリプトリファレンス にはない CmdExec() も定義されていますが、非公開メソッドのため使用は自己責任となります。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/typescript.png</eyecatch>
+        </item>
+      
     
       
         <item>
@@ -224,29 +268,6 @@ func(sz);&lt;br /&gt;
 </description>
           <desctext>更新履歴 download ExplorerBarPlusのタブモードとお気に入りを表示できるようになりました。ほかのIEツールバー、サイドバーはまだ表示できません。ExplorerBarPlusの表示は、メニュー[表示(V)]-&amp;gt;エクスプローラバーから行えます。スクリプトでの表示/非表示もまだ出来ません。 タブマネージャでCPUの詳細情報を表示するようにしました。この表示情報でできればcup-zの様にCPUのロゴを表示したいのですが、AMDの場合は、http://www.amd.com/jp-ja/0,,3715_7374_15589,00.htmlからそのままのイメージを使うことでよさそうですが、インテルの場合は、そう簡単にはいかないようです。なんとかインテルのロゴも表示したいのですが、、 CPU情報の表示はCPUIDを元にしていますが、確認マシンが少ないので、間違った表示になるかもしれません。Aero Glassの表示は、結構大変でした。これで、ドロップアクションの背景もAero Glassに出来るかも、、</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/tm2.png</eyecatch>
-        </item>
-      
-    
-      
-        <item>
-          <title>タブマネージャ機能</title>
-          <link>http://blog.anciasoft.jp/post/post-49/</link>
-          <pubDate>2010-04-05 02:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/post-49/</guid>
-          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0805&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0805.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
-タブを強制終了可能なタブマネージャ機能を追加しています。短時間で作ったのでThemeが効いていなかったりします。TabManagerの下の方は、グラス表示にしてみようかと思います。今の強制終了は、WM_QUITで終了できなければ、Terminateしています。ここは、安全に終了できるとき(タブの閉じる履歴が残る)は、そちらを優先するように変える予定です。CPU使用率や、メモリ表示、強制終了したタブはabout:crash表示する、も追加予定です。&lt;/p&gt;
-
-&lt;p&gt;プロセスで強制終了は、アドレス領域が分かれているので、メインが落ちずに終了できるというのは、わかりますが、スレッドでもこれを可能にしています。これは、子スレッド&amp;lt;-&amp;gt;メインとデータ結合※として動作しているためです。マルチプロセスにする時点で、データを共有とした動作は選択せず、データ結合で作ったところ、スレッドでもできてしまいました。共有だと、排他が絡みせっかくの子処理の効率が悪くなります。&lt;/p&gt;
-
-&lt;p&gt;マルチスレッド/プロセスもだいぶできてきて、あと残っているものは、IEプラグイン、タブ&amp;lt;-&amp;gt;タブ間操作、localhomeなどの閉じたタブの表示ぐらいです。&lt;/p&gt;
-
-&lt;p&gt;マルチプロセスのとき、pixivでページが表示できない場合があり、リファラなどが原因かもしれません。&lt;/p&gt;
-
-&lt;p&gt;※ここでのデータ結合という言葉を正しい意味で使用しているかは、よく知らない。&lt;/p&gt;
-</description>
-          <desctext>更新履歴 download タブを強制終了可能なタブマネージャ機能を追加しています。短時間で作ったのでThemeが効いていなかったりします。TabManagerの下の方は、グラス表示にしてみようかと思います。今の強制終了は、WM_QUITで終了できなければ、Terminateしています。ここは、安全に終了できるとき(タブの閉じる履歴が残る)は、そちらを優先するように変える予定です。CPU使用率や、メモリ表示、強制終了したタブはabout:crash表示する、も追加予定です。 プロセスで強制終了は、アドレス領域が分かれているので、メインが落ちずに終了できるというのは、わかりますが、スレッドでもこれを可能にしています。これは、子スレッド&amp;lt;-&amp;gt;メインとデータ結合※として動作しているためです。マルチプロセスにする時点で、データを共有とした動作は選択せず、データ結合で作ったところ、スレッドでもできてしまいました。共有だと、排他が絡みせっかくの子処理の効率が悪くなります。 マルチスレッド/プロセスもだいぶできてきて、あと残っているものは、IEプラグイン、タブ&amp;lt;-&amp;gt;タブ間操作、localhomeなどの閉じたタブの表示ぐらいです。 マルチプロセスのとき、pixivでページが表示できない場合があり、リファラなどが原因かもしれません。 ※ここでのデータ結合という言葉を正しい意味で使用しているかは、よく知らない。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/tm.png</eyecatch>
         </item>
       
     
