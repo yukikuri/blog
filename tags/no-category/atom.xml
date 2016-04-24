@@ -22,6 +22,7 @@
 </description>
           <desctext>で、ブログエントリの最新3件まで表示しているが、日本語のタイトルで文字化けが発生。domxml_open_fileは、どうやらUTF-8として扱ってしまうらしく、mb_convert_encodingでUTF-8からEUC-JPにしたので、このタイトルが文字化けしていないはず。 ブログのatom.xml読み込みは、非同期でも可能ですが、非同期にしてさらにリクエストを増やすより、リクエストが来ているのだから、たかが20Kのファイル、サーバで読み取った方がいいんじゃないかと、素人考えで思いました。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1230955200</datetimeUnix>
         </item>
       
     
@@ -36,6 +37,7 @@
 </description>
           <desctext>休み中に時間があるかなと思い購入したゲーム、一度もプレイすることなくお休みが終了、、</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1168275830</datetimeUnix>
         </item>
       
     
@@ -52,6 +54,7 @@
 </description>
           <desctext>■「xrea.com」を含むURLのアクセス障害について 障害が起こっているようです。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1144602051</datetimeUnix>
         </item>
       
     
@@ -67,6 +70,7 @@
 </description>
           <desctext>Vistaのスクリーンショット http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1122484213</datetimeUnix>
         </item>
       
     
@@ -81,6 +85,7 @@
 </description>
           <desctext>test</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1116611165</datetimeUnix>
         </item>
       
     
