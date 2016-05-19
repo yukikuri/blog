@@ -6,8 +6,86 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-04-24 23:00:00 &#43;0900 JST</updated>
+    <updated>2016-05-20 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>速吸なし 2016春イベントE7ゲージ破壊構成</title>
+          <link>http://blog.anciasoft.jp/post/kancolle2016e7last/</link>
+          <pubDate>2016-05-20 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/kancolle2016e7last/</guid>
+          <description>
+
+&lt;p&gt;2016春イベントE7甲は、沼っている人が多そうで現状でも最適な編成が見つかっていない状況ですので、参考にこちらがゲージを破壊した編成を紹介します。
+課金アイテムの洋上補給は使用していませんので、洋上補給を使用したくない人にもおすすめです。なお、削りではなくゲージ破壊の編成です。
+自身はこの編成で3回目の出撃でゲージ破壊ができました。&lt;/p&gt;
+
+&lt;h2 id=&#34;第一艦隊構成:b20f6429ec539c32d4c125202822d855&#34;&gt;第一艦隊構成&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-1.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;編成は水上打撃での秋津洲固定ルートです。&lt;/p&gt;
+
+&lt;p&gt;軽空母を2隻使用し、搭載数の多い隼鷹改二、飛鷹改を推奨します。搭載数の多いスロットに艦上攻撃機を6スロット載せます。
+水上ルートは艦攻が結構残るため、ボスで機動なみの開幕攻撃が期待できます。&lt;/p&gt;
+
+&lt;p&gt;秋津洲には、熟練度MAXの Ro.44水上戦闘機 と 二式水戦改 を載せ制空値を底上げしています(Ro.44水上戦闘機 や二式水戦改 が足りない場合、
+&lt;a target=&#34;_blank&#34; href=&#34;http://wikiwiki.jp/kancolle/?Pola%B2%FE&#34;&gt;Pola改&lt;/a&gt; から手に入れる方法があります)。この装備で制空を計算すると下になります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;border: solid 1px #000&#34; src=&#34;http://blog.anciasoft.jp/img/2016e7-a.png&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;道中は制空がとれますがボスで制空は互角となります。ですが、&lt;b&gt;基地航空隊のおかげで敵制空値を削ることができるため、
+艦戦が少なくても優勢をとることができました。&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;戦艦にはテンプレの徹甲弾・弾着装備です。
+軽空母は駆逐の攻撃でも大破することがあったため旗艦としています。また、できるだけ攻撃させるため上に持ってきています。&lt;/p&gt;
+
+&lt;p&gt;初回マスでは軽空母が対潜してくれるため、多少事故が減ります。
+補強増設が余っているときは大破しやすい艦に使用し、ダメコンを載せるのもよいと思います。&lt;/p&gt;
+
+&lt;p&gt;水上ルートは艦攻の熟練度が落ちることがあります。熟練度が落ちた艦攻が多くなった時は、一休みして熟練度の付け直しをしていました。&lt;/p&gt;
+
+&lt;h2 id=&#34;第二艦隊構成:b20f6429ec539c32d4c125202822d855&#34;&gt;第二艦隊構成&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-2.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;第二艦隊構成は攻略サイトによくあるテンプレ装備です。
+WGの所持数は3つのため航巡と軽巡に回し、戦艦を2隻に三式弾、さらに夜偵を載せています。&lt;/p&gt;
+
+&lt;p&gt;駆逐は今回あまり活躍できないため、探照灯・対空カットイン要員にしています。&lt;/p&gt;
+
+&lt;h2 id=&#34;決戦支援:b20f6429ec539c32d4c125202822d855&#34;&gt;決戦支援&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-3.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;道中はよくあるテンプレ支援のため省略します。決戦支援は、艦爆・艦攻も試してみましたが、艦攻での航空支援のほうがダメージが出ていました。
+意味があるか分かりませんが、飛龍など死にスロットに二式艦上偵察機を装備し旗艦にしています。ボスに攻撃が集中したのか450overのダメージが出たことがありました。&lt;/p&gt;
+
+&lt;p&gt;駆逐は何を装備しても変わらないと思ったため、適当に機銃を載せました。&lt;/p&gt;
+
+&lt;h2 id=&#34;基地航空隊:b20f6429ec539c32d4c125202822d855&#34;&gt;基地航空隊&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-kk.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;基地航空隊はよくある構成で、21型熟練(戦闘行動範囲7)を第一航空隊、第二航空隊、第三航空隊に2つ、1つ、1つ配置しています。
+流星など戦闘行動範囲が足りてなくても攻撃させたほうが良い結果が出ていました。&lt;/p&gt;
+
+&lt;p&gt;熟練度は2、3回出撃すると消えることがあるため、熟練度が無くなった航空隊が多くなったとき付け直しました(面倒ですが)。&lt;/p&gt;
+
+&lt;h2 id=&#34;最後に:b20f6429ec539c32d4c125202822d855&#34;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;最後は開幕攻撃が強力ではなければ突破が厳しい感じがします。基地航空隊に頼るのではなく、
+艦攻を多く構成することで開幕攻撃を強力にすることができます。今回の構成がお役に立てれば幸いです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-end.jpg&#34;&gt;&lt;/p&gt;
+</description>
+          <desctext>2016春イベントE7甲は、沼っている人が多そうで現状でも最適な編成が見つかっていない状況ですので、参考にこちらがゲージを破壊した編成を紹介します。 課金アイテムの洋上補給は使用していませんので、洋上補給を使用したくない人にもおすすめです。なお、削りではなくゲージ破壊の編成です。 自身はこの編成で3回目の出撃でゲージ破壊ができました。 第一艦隊構成 編成は水上打撃での秋津洲固定ルートです。 軽空母を2隻使用し、搭載数の多い隼鷹改二、飛鷹改を推奨します。搭載数の多いスロットに艦上攻撃機を6スロット載せます。 水上ルートは艦攻が結構残るため、ボスで機動なみの開幕攻撃が期待できます。 秋津洲には、熟練度MAXの Ro.44水上戦闘機 と 二式水戦改 を載せ制空値を底上げしています(Ro.44水上戦闘機 や二式水戦改 が足りない場合、 Pola改 から手に入れる方法があります)。この装備で制空を計算すると下になります。 道中は制空がとれますがボスで制空は互角となります。ですが、基地航空隊のおかげで敵制空値を削ることができるため、 艦戦が少なくても優勢をとることができました。 戦艦にはテンプレの徹甲弾・弾着装備です。 軽空母は駆逐の攻撃でも大破することがあったため旗艦としています。また、できるだけ攻撃させるため上に持ってきています。 初回マスでは軽空母が対潜してくれるため、多少事故が減ります。 補強増設が余っているときは大破しやすい艦に使用し、ダメコンを載せるのもよいと思います。 水上ルートは艦攻の熟練度が落ちることがあります。熟練度が落ちた艦攻が多くなった時は、一休みして熟練度の付け直しをしていました。 第二艦隊構成 第二艦隊構成は攻略サイトによくあるテンプレ装備です。 WGの所持数は3つのため航巡と軽巡に回し、戦艦を2隻に三式弾、さらに夜偵を載せています。 駆逐は今回あまり活躍できないため、探照灯・対空カットイン要員にしています。 決戦支援 道中はよくあるテンプレ支援のため省略します。決戦支援は、艦爆・艦攻も試してみましたが、艦攻での航空支援のほうがダメージが出ていました。 意味があるか分かりませんが、飛龍など死にスロットに二式艦上偵察機を装備し旗艦にしています。ボスに攻撃が集中したのか450overのダメージが出たことがありました。 駆逐は何を装備しても変わらないと思ったため、適当に機銃を載せました。 基地航空隊 基地航空隊はよくある構成で、21型熟練(戦闘行動範囲7)を第一航空隊、第二航空隊、第三航空隊に2つ、1つ、1つ配置しています。 流星など戦闘行動範囲が足りてなくても攻撃させたほうが良い結果が出ていました。 熟練度は2、3回出撃すると消えることがあるため、熟練度が無くなった航空隊が多くなったとき付け直しました(面倒ですが)。 最後に 最後は開幕攻撃が強力ではなければ突破が厳しい感じがします。基地航空隊に頼るのではなく、 艦攻を多く構成することで開幕攻撃を強力にすることができます。今回の構成がお役に立てれば幸いです。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/2016e7.png</eyecatch>
+          <datetimeUnix>1463670000</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -378,62 +456,6 @@ DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&g
           <desctext>更新履歴 Download 1.9.109から高解像度HiDPI(Per Monitor)に対応しています。国産Tridentブラウザで、Per Monitorに対応をしているのは初ではないでしょうか。HiHPI対応で、dpiを96で使用している場合は特に表示に違いは出ません。dpiが120以上(テキストのサイズが125%など)の場合で表示に違いが出ます。 1.9.109以降では鮮明に表示されますが、1.9.108まではOSが表示を拡大するため、ページ部分など全体的にぼやけた表示になります。記事topの画像はdpiが120の場合のものです(鮮明に表示されるHiDPI対応と鮮明に表示されないの画面スクリーンショット)。 AnciaでのHiDPI対応は、Per-Monitor Awareですが、異なるdpiのMonitorにWindowを移動したとき、アイコンサイズはMonitorのdpiに応じた表示に変化するまでは対応していません。Internet Explorerも同様の動作のようです。異なるdpiのMonitorに移動したときアイコンサイズまでdpiに合わせることになると、Faviconやファイルのアイコンをサイズに従い再度取得することになるため、負荷が非常に大きいです。ツールバーのアイコンだけならそれほどの負荷もなくdpiに応じたサイズに切り替えられるでしょう。 Internet Explorerの場合だと、サイドバーのアイテムアイコンなどは、シェルのイメージリストを使用しているようなので、シェルのイメージリストがMonitor単位のサイズではなくSystem DPIに応じた固定サイズになることから、そもそもHiDPI(Per Monitor)でサイドバーアイコンサイズは切り替えられないのだと思います。 Per-Monitor Awareである新しいブラウザEdgeはその点を考慮し、IEのお気に入り(ファイルシステムやDPIによりサイズが固定になるシェルイメージリストなど)は使用せず、直にブックマークを持っているのではないでしょうか。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/hidpi.png</eyecatch>
           <datetimeUnix>1441206000</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>IEDiagnosticsAdapterを使ってみる</title>
-          <link>http://blog.anciasoft.jp/post/iediagnosticsadapter/</link>
-          <pubDate>2015-04-09 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/iediagnosticsadapter/</guid>
-          <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;で公開されているIEDiagnosticsAdapterを使用してみたメモです。&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter#installing&#34;&gt;installing&lt;/a&gt;に従えば、特にエラーもなく動かすことができました。下は、その手順です。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.Download&lt;/strong&gt;&lt;br /&gt;
-32bitのとき &lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter/releases/download/0.1.2/ieDiagnosticsAdapter-v0.1.2x86.zip&#34;&gt;x86&lt;/a&gt;、64bitのとき &lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter/releases/download/0.1.2/ieDiagnosticsAdapter-v0.1.2x64.zip&#34;&gt;x64&lt;/a&gt;をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する&lt;/strong&gt;&lt;br /&gt;
-64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&amp;rdquo;ALL APPLICATION PACKAGES&amp;rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。&lt;/p&gt;
-
-&lt;p&gt;実行するコマンド(RXは読み出し実行の意味)：&lt;br /&gt;
-icacls proxy.dll /grant &amp;ldquo;ALL APPLICATION PACKAGES&amp;rdquo;:(RX)&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;icacls.png&#34; src=&#34;http://blog.anciasoft.jp/img/icacls.png&#34; width=&#34;626&#34; height=&#34;98&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3.IEを起動する&lt;/strong&gt;&lt;br /&gt;
-2と3は順序が逆でも大丈夫でした。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.Chromeで、localhost:9222を開く&lt;/strong&gt;&lt;br /&gt;
-Chromeで、&lt;a href=&#34;http://localhost:9222/&#34;&gt;http://localhost:9222&lt;/a&gt;を開きます。開くと、IEと、IEコンポも一覧で出てきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;iedlist.png&#34; src=&#34;http://blog.anciasoft.jp/img/iedlist.png&#34; width=&#34;660&#34; height=&#34;381&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;5. localhost:9222の一覧から対象を選ぶ&lt;/strong&gt;&lt;br /&gt;
-対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;cmdline.png&#34; src=&#34;http://blog.anciasoft.jp/img/cmdline.png&#34; width=&#34;734&#34; height=&#34;134&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;が表示されます。Chrome側はdevtoolの表示になります。&lt;/p&gt;
-
-&lt;p&gt;使ってみた感じだと、&lt;br /&gt;
-・consoleは動かない。&lt;br /&gt;
-・要素の変更も動かない。&lt;br /&gt;
-・要素の中身の表示と選択要素のハイライトは動く。&lt;br /&gt;
-・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。&lt;br /&gt;
-・IEコンポも認識される&lt;br /&gt;
-といったところでした。&lt;/p&gt;
-
-&lt;p&gt;IEコンポを認識するのは、プロセスに関係なく&amp;rdquo;Internet Explorer_Server&amp;rdquo;のwindow classをすべて列挙しているからみたいです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/Microsoft/IEDiagnosticsAdapter&#34;&gt;Microsoft/IEDiagnosticsAdapter&lt;/a&gt;の中身を見ると、JsRTというものを使用しています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qiita.com/GackyQiita/items/0bb8c259e8e8cbfcac27&#34;&gt;JavaScript - JsRT を Windows アプリに組み込む - Qiita&lt;/a&gt;&lt;br /&gt;
-Jsonのパーサに使えるかもしれません。&lt;/p&gt;
-</description>
-          <desctext>Microsoft/IEDiagnosticsAdapterで公開されているIEDiagnosticsAdapterを使用してみたメモです。installingに従えば、特にエラーもなく動かすことができました。下は、その手順です。 1.Download 32bitのとき x86、64bitのとき x64をDownloadして適当な場所に解凍します。32bit/64bitは、動いているIEのプロセスに合わせます。OSが64bitであっても、IEのエンジン部分が32bitで動いているとき、32bit側を使用します。IEのデフォルト設定なら32bitでブラウザプロセスが動くため、32bit側をDownloadすることになります。 2.解凍したファイルのIEDiagnosticsAdapter.exeを実行する 64bitの場合は注意が必要で、拡張保護モードの関係で、実行前にアクセス制御リストを変更するコマンドが必要です。&amp;rdquo;ALL APPLICATION PACKAGES&amp;rdquo;は、Windows7で存在しないため、windows7 64bitでは、IEDiagnosticsAdapterを動かすことはできないと思います(icaclsなしでWindows7の64bitを動かすとIE側がcrash)。 実行するコマンド(RXは読み出し実行の意味)： icacls proxy.dll /grant &amp;ldquo;ALL APPLICATION PACKAGES&amp;rdquo;:(RX) 3.IEを起動する 2と3は順序が逆でも大丈夫でした。 4.Chromeで、localhost:9222を開く Chromeで、http://localhost:9222を開きます。開くと、IEと、IEコンポも一覧で出てきます。 5. localhost:9222の一覧から対象を選ぶ 対象を選び、エラーがなければ、IEDiagnosticsAdapter.exe側に、 が表示されます。Chrome側はdevtoolの表示になります。 使ってみた感じだと、 ・consoleは動かない。 ・要素の変更も動かない。 ・要素の中身の表示と選択要素のハイライトは動く。 ・ElementsとSourcesぐらいしか表示できない(Sourcesでsave asは動かなかった、中身は表示される)。 ・IEコンポも認識される といったところでした。 IEコンポを認識するのは、プロセスに関係なく&amp;rdquo;Internet Explorer_Server&amp;rdquo;のwindow classをすべて列挙しているからみたいです。 Microsoft/IEDiagnosticsAdapterの中身を見ると、JsRTというものを使用しています。 JavaScript - JsRT を Windows アプリに組み込む - Qiita Jsonのパーサに使えるかもしれません。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/IEDiagnosticsAdapter.png</eyecatch>
-          <datetimeUnix>1428505200</datetimeUnix>
         </item>
       
     
