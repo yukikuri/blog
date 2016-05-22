@@ -48,6 +48,36 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-23/" class="clearfix" title="サムネイルが遅い">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・06・10</time></span>
+      <h2 class="title">サムネイルが遅い</h2>
+      <div class="summary">新規タブ表示で、今日表示したページもサムネイルを表示するようにしたんですが、新規タブを開くとあまりに遅くなってしまったので、0.5.5bとして、公開するのは止めました。サムネイルはすべて表示する必要はなく、画面に出ている分だけ表示すればいいので、そのいい方法はないのか、、表示されるときのイベントもなさそうだし、ページのよっては表示されてから画像が出るものがあるので、スクロールイベント契機に要素の位置を比較して、・・・かな サムネイルは、今の動きではフレームが含まれているページを取得してません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/pure-virtual-fu-1/" class="clearfix" title="pure virtual function call対応">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・05・29</time></span>
+      <h2 class="title">pure virtual function call対応</h2>
+      <div class="summary">更新履歴 download 下がIEツールバーを破棄しているコードですが、Release()部分をコメントアウトするとpure〜〜が発生しなくなります。googleツールバーはAddRef()、Release()でカウントがinc/decとなるのでちゃんとした参照カウントを返しています。さらに下のRelease()後の値は0だったので、最後のRelease()だと分かります。 IDeskBand* pBand = (IDeskBand*)rbi.lParam; if(pBand) { pBand-&gt;CloseDW(0); if(S_OK == pBand-&gt;QueryInterface(__uuidof(pObjectWithSite), (void**)&amp;pObjectWithSite)) { pObjectWithSite-&gt;SetSite(NULL); pObjectWithSite-&gt;Release(); } pBand-&gt;Release(); ← ここをコメントアウトすると、発生しなくなる } そこで、Release()するタイミングをどうにかする対応としました。 よく考えると、 ・IE6は1プロセス、プロセス終了でツールバーも破棄、プロセス終了 ・IE7は1タブに1スレッド、1タブ終了でツールバーも破棄、スレッド終了 ・IE8は1タブに1プロセス、1タブ終了でツールバーも破棄、プロセス終了 ・Anciaは、複数タブに1スレッド、1タブ終了で、ツールバー破棄、スレッド継続 と、Anciaでは1スレッドの処理内で何度もツールバー作成/破棄が行われるため、若干動作モードが異なります。これがエラー原因に関係しているかもしれません。 まともに対応するとなるとマルチプロセスでしょうか。。 IEツールバーが破棄されないバグがあり、対応したのでAnciaのプロセスが残ることがもうないと思います。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/pure-virtual-fu/" class="clearfix" title="pure virtual function call">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/r6025.png);"></div>
     <div class="detail">
@@ -136,36 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-20/" class="clearfix" title="検索バーの検索エンジンボタン">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sbar.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2009・03・17</time></span>
-      <h2 class="title">検索バーの検索エンジンボタン</h2>
-      <div class="summary">Ancia 0.4.1で検索バーへの検索エンジンボタン追加に対応しました。アプリケーションオプション-&gt;ツールバーの設定-&gt;検索の詳細設定から、検索エンジンボタン追加/削除、また、ボタンの位置変更が行なえます。 resource/customizeの位置を、setting/customizeへ移動する予定です。そうすれば、settingフォルダに、動作設定を集約できます。ドロップアクションを表示するときに落ちるバグが、しばらく出ていないので、直ったようです。描画でのNULLポインタチェックを入れてからかな、、落ちなくなったのは。IE8が20日に出るというのは、本当なのだろうか、、</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-19/" class="clearfix" title="マウスジェスチャ">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/raction_bottom.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2009・03・02</time></span>
-      <h2 class="title">マウスジェスチャ</h2>
-      <div class="summary">Ancia0.3.8で、マウスジェスチャの代わりの機能として、Rアクション機能が使用できます。RアクションのRはrightの略です。マウスジェスチャのように右ボタンを押しながら、マウスを動かすと、任意の動作を行なえます。 Anciaでのマウスジェスチャは、他のブラウザと違い、まず、右ボタンを押しながらマウスを上、または、下、または、左、または、右へ動かすと、ボタンが表示されます（上の画像は、下へ動かしたとき）。表示されたボタン上で、右ボタンを離すことで、ボタンの処理が実行されます。ボタン表示は、ESCキー、左ボタンを押すと非表示となります。視覚的にボタンが表示される分、ステータスバーにコマンド表示されるのに比べ、操作しやすく、誤動作も少ないはずです。 下の画像は、それぞれ、上に動かしたとき、左に動かしたとき、右に動かしたときのボタンです。 上に動かしたとき 左に動かしたとき 右に動かしたとき 左右のとき、ボタンは縦表示となり、マウスを動かす距離が少ないようにしています。 現仕様では、ボタンは、ドロップアクションと同じく、スクリプトで書く必要があります。また、ドロップアクションでは、階層構造と出来ますが、Rアクションは、階層構造に対応していません。ボタンの数に制限は設けていません。表示しきれない場合は、Pagerコントロールにより非表示のボタンを表示できます。 一番上へのスクロール、下へのスクロールで、doScroll Methodを使ってるんですが、なぜかドキュメントに書いていない、&rdquo;top&rdquo;と&rdquo;bottom&rdquo;を指定すると、上と下にスクロールできました。leftやrightがあるので、記述漏れかもしれません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -174,7 +174,7 @@
   <span class="left"><a href="/tags/online-soft/page/14" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 15 of 23</span>
+  <span class="center vmiddle">Page 15 of 24</span>
 
   
   <span class="right"><a href="/tags/online-soft/page/16" rel="next">次へ</a></span>
@@ -195,6 +195,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -292,30 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -331,11 +331,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>

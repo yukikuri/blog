@@ -46,6 +46,38 @@
       
         <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/internet-explor-2/" class="clearfix" title="Internet Explorer 11でのJavascript問題">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2013・11・11</time></span>
+      <h2 class="title">Internet Explorer 11でのJavascript問題</h2>
+      <div class="summary">Windows7用Internet Explorer11がdownload可能となりました。 ダウンロード - Internet Explorer Anciaでは今のところ相性が悪いです。以前報告があるとおり、シングルスレッド・マルチスレッド・マルチプロセスいずれでもタブを10程度開くとJavascriptの動作が次第に遅くなり、そのうち固まります。どうも1ブラウザプロセスでIEコンポを多数作成するとだめなようです。 現時点での解決手段として、オプションからタブの動作をマルチプロセスにし、タブグループのチェックを外します。これでリソースを消費しますが、タブ毎に別プロセスで動作し、Javascriptの問題はとりあえず出なくなります。 タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-62/" class="clearfix" title="新しいメニュー動作">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/linkmenu.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2013・10・02</time></span>
+      <h2 class="title">新しいメニュー動作</h2>
+      <div class="summary">更新履歴 download 1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。 テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。 imageのメニューだとGoogle画像検索も行えます。 新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。 メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/sleipnirie10/" class="clearfix" title="SleipnirのIE10表示問題">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9ie.png);"></div>
     <div class="detail">
@@ -139,38 +171,6 @@
 
       </div>
       
-      
-        <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-59/" class="clearfix" title="シングルキーショートカット、ポップアップブロック">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/singlekeyshortcutoption.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2013・03・27</time></span>
-      <h2 class="title">シングルキーショートカット、ポップアップブロック</h2>
-      <div class="summary">更新履歴 download 1.9.12でシングルキーショートカット、ポップアップブロックに対応しています。 シングルキーショートカットは、オプション設定のsinglekeyShortcutにチェックを入れる必要があります。チェックを入れた後は、シングルキーでのキーを指定できます。 フォームやFlash上ではシングルキーショートカットでは無くキー入力のほうが優先されます。シングルキーショートカットは、ブラウザ部分でのみ有効です。サイドバーやアドレスバーなどでは機能しません(ショートカットキーを標準設定に戻すがエラーになるのは次回直ります)。スペースを指定したときサイドバーでショートカットが効いてしまうのは、効かないようにしてみます。 ポップアップブロックは、今はステータスバーの右クリックからサイト(ドメイン)単位で抑止と許可を指定できます。指定した後、他のタブでポップアップブロック設定の表示が更新されない、最初が表示されないのは、不具合で修正予定です。 表示がされてなくても、サイト単位で指定したポップアップブロック抑止・許可は機能します(表示と無関係で抑止・許可は動作)。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      
-        <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/webkitdgimactyp/" class="clearfix" title="WebKitでのgdi&#43;&#43;対応について(MacTypeの使用をおすすめ)">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/MacType.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2012・10・18</time></span>
-      <h2 class="title">WebKitでのgdi&#43;&#43;対応について(MacTypeの使用をおすすめ)</h2>
-      <div class="summary">更新履歴 download(AnciaChrome026) Webkit版を更新しています。gdi++対応は含めず、今後も対応することはありません。gdi++で表示すると表示がおかしくなります。ですが、gdi++より高機能なMacTypeを使用するとちゃんと表示できます(@akkie2さんから情報を頂きました。ありがとうございます)。画像はXpでMacTypeで表示したものです。 ・MacTypeの情報 mactype - Google 検索 gdi++Heliumを越えた（？）と噂のMacTypeをインストールしてみた | 情報科学屋さんを目指す人のメモ Mactypeを導入してみました。 - Sunabox インストーラは日本語じゃないです。ほかの画面は日本語化されているようです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -200,6 +200,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -297,30 +321,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -336,11 +336,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>

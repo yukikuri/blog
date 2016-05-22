@@ -48,6 +48,36 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/msn/" class="clearfix" title="msn関係・楽天で固まる問題の対応">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2013・07・23</time></span>
+      <h2 class="title">msn関係・楽天で固まる問題の対応</h2>
+      <div class="summary">更新履歴 download 1.9.32で、ie10環境においてmsn、楽天のページを開くと固まる問題を修正しています。修正には2つの問題に対応しています。固まる原因はmsnと楽天で同じ(document.closeで固まる)ですが、状況は微妙に違います。 問題1) IEとIEコンポでnavigator.appVersionの返す値が違う IEとIEコンポでnavigator.appVersionの返す値が異なっています。この違いのため、msnのスクリプトでIEの場合はdocument.close()呼び出しが行われず、IEコンポの場合はdocument.close()呼び出しが行われます(ここでIEコンポは固まる)。1.9.32ではnavigator.appVersionの値がIEと同じ挙動となるよう対応しています。 ・IE10(documentModeは7でappVerはIE7) ・Ancia 1.9.31(documentModeは7でappVerはIE10) ・Ancia 1.9.32(documentModeは7でappVerはIE7) 問題2）楽天のページがIEコンポではquirks modeとなるが、IEではならない 楽天のページでdocument.close()の呼び出しで固まるのは同じですが、msnとは状況が異なります。楽天ではdocumentModeの値がIEとIEコンポで異なっています。msnはdocumentModeがIE,IEコンポともに7ですが、楽天ではIEが10(documentModeが10でもcompatMode はBackCompat)、IEコンポでは5(compatMode はBackCompat)です。 IE10からのInteroperable HTML5 Quirks Modeが関係し、1.9.32ではこれもIEと同じ挙動となるよう対応しています。 ・IE10 ・Ancia 1.9.31 ・Ancia 1.9.32</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-60/" class="clearfix" title="タブの分離・結合サポート">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/iso.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2013・07・09</time></span>
+      <h2 class="title">タブの分離・結合サポート</h2>
+      <div class="summary">更新履歴 download 1.9.30でほかのブラウザでは実装の少ないタブの分離と結合をサポートしています。シングルスレッドでは、動き的に無理で動作スタイルをシングルスレッド以外にする必要があります。また単一起動の場合もサポートしていません(これは今後制限付きでサポート予定です)。 オレンジ色以外の場所にタブをdragすると、タブの分離・結合が可能になります。 ESCキーかマウスの右ボタンを押すことでキャンセル可能なのは、通常のdragdrop動作と同じです。次はIE10で固まる問題が対応できるかわかりませんが、調べる予定です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/explorerbarplus-45/" class="clearfix" title="ExplorerBarPlus 1.4.8">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
@@ -136,36 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/webkit-basic/" class="clearfix" title="WebKit Basic認証対応">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/webkit_auth.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2012・02・13</time></span>
-      <h2 class="title">WebKit Basic認証対応</h2>
-      <div class="summary">更新履歴 download(Ancia145) 更新履歴 download(AnciaChrome017) WebKitでBasic認証に対応しています。「次回から認証入力を省略」チェックで、ダイアログも出ずに自動で認証します。もし認証エラーとなった場合は、再度アクセスすることで、自動認証はクリアされ、ダイアログが表示されます。WebKitは他、インライン検索に対応しています(ショートカットキーはCTRL+F、または、CTRL+I)。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-43/" class="clearfix" title="ExplorerBarPlus 1.4.6">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2011・10・17</time></span>
-      <h2 class="title">ExplorerBarPlus 1.4.6</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Firefoxの一部placeを表示可能にしています。「最近ブックマークしたページ」など難しいplaceは、firefoxの処理をみると、ややこしいので、対応していません。「よく見るページ」は、表示できているので、少しはましです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -174,7 +174,7 @@
   <span class="left"><a href="/tags/online-soft/page/3" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 4 of 23</span>
+  <span class="center vmiddle">Page 4 of 24</span>
 
   
   <span class="right"><a href="/tags/online-soft/page/5" rel="next">次へ</a></span>
@@ -195,6 +195,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -292,30 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -331,11 +331,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>

@@ -48,6 +48,36 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix" title="新機能: 応答なしページの検出">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2014・12・23</time></span>
+      <h2 class="title">新機能: 応答なしページの検出</h2>
+      <div class="summary">更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix" title="キョリ測が動かないときがある">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2014・10・23</time></span>
+      <h2 class="title">キョリ測が動かないときがある</h2>
+      <div class="summary">キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。 ・204応答でNavigateError 204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。 200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/lunascape/" class="clearfix" title="Lunascape が表示ページ上部に広告を表示するかもしれない">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/adluna.png);"></div>
     <div class="detail">
@@ -136,36 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/internet-explor-2/" class="clearfix" title="Internet Explorer 11でのJavascript問題">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2013・11・11</time></span>
-      <h2 class="title">Internet Explorer 11でのJavascript問題</h2>
-      <div class="summary">Windows7用Internet Explorer11がdownload可能となりました。 ダウンロード - Internet Explorer Anciaでは今のところ相性が悪いです。以前報告があるとおり、シングルスレッド・マルチスレッド・マルチプロセスいずれでもタブを10程度開くとJavascriptの動作が次第に遅くなり、そのうち固まります。どうも1ブラウザプロセスでIEコンポを多数作成するとだめなようです。 現時点での解決手段として、オプションからタブの動作をマルチプロセスにし、タブグループのチェックを外します。これでリソースを消費しますが、タブ毎に別プロセスで動作し、Javascriptの問題はとりあえず出なくなります。 タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-62/" class="clearfix" title="新しいメニュー動作">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/linkmenu.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2013・10・02</time></span>
-      <h2 class="title">新しいメニュー動作</h2>
-      <div class="summary">更新履歴 download 1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。 テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。 imageのメニューだとGoogle画像検索も行えます。 新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。 メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -195,6 +195,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -292,30 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -331,11 +331,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>

@@ -48,6 +48,36 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix" title="Ancia Ver1.9.118 のリリース内容">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2016・03・23</time></span>
+      <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
+      <div class="summary">Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに 関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix" title="Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2016・01・06</time></span>
+      <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
+      <div class="summary">問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。 KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix" title="Windows Update後にFlashが原因でCrashする(1/4 対処法追記)">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
     <div class="detail">
@@ -136,36 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-65/" class="clearfix" title="新機能: 応答なしページの検出">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/freezechecker.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2014・12・23</time></span>
-      <h2 class="title">新機能: 応答なしページの検出</h2>
-      <div class="summary">更新履歴 Download ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。 応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。 応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、 の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-64/" class="clearfix" title="キョリ測が動かないときがある">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/kyorisoku.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2014・10・23</time></span>
-      <h2 class="title">キョリ測が動かないときがある</h2>
-      <div class="summary">キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。 ・204応答でNavigateError 204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。 200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -195,6 +195,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -292,30 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -331,11 +331,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>

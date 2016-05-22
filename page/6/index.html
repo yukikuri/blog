@@ -46,6 +46,38 @@
       
         <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/119/" class="clearfix" title="1.1.9で起動時落ちる現象の回避について">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・08・16</time></span>
+      <h2 class="title">1.1.9で起動時落ちる現象の回避について</h2>
+      <div class="summary">更新履歴 download 1.1.9を出していますが、jumplistの構築にバグがあり表示名のないjumplistのスクリプト項目があると、起動時に落ちてしまいます。 jumplistを変更していないときは落ちませんが、変更しているときは、setting\customize\jumplist.jsonを ajumplist.json などにrenameすれば回避できます。このバグは1.2.0で直ります。 1.1.9では起動時のタブ再現などで、複数タブの読み込み処理をいちどに読み込まず、順々に読み込むようにしています。この設定はオプション設定の「全般」「タブ読み込みスタイル」で変更できます。ただ、「アクティブ時読み込み - loadingActive」にした場合、非activeタブの読み込みがloadingのままでページが分からない、ということがありこれは何とかしたいです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/bho/" class="clearfix" title="BHOとタブグループ機能">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabgroupaero.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2011・07・05</time></span>
+      <h2 class="title">BHOとタブグループ機能</h2>
+      <div class="summary">更新履歴 download Ver1.0.0からBHOとタブグループ機能を追加しています。 マルチプロセスでは、同じタブグループの中では、セッションが継続できます(別のタブ、タブグループとセッションは共有しない)。マルチプロセスでのセッション共有は難しいので、タブグループ内ではセッションが継続できるという対応にしています。タブグループ対応でタブスキンのデザインかなり変えています。ホイールクリックか、ナビゲートロックで新規タブを開くと同じタブグループで開きます。 BHOは、たとえば、Orbit Downloaderというのがありますが、こういうのが動作します(もともとBHOはIE用なので全て動作するわけではありません)。 上は、http://www.orbitdownloader.com/jp/Use-as-YouTube-Downloader.htm で試したもので、動いていることが分かります。 Ver1.1.0で正式版を出す予定でしたが、タブグループをつけたばかりで1.1.5か1.2.0が、そのあたりになると思います。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/explorerbarplus-42/" class="clearfix" title="ExplorerBarPlus 1.4.5">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
@@ -139,38 +171,6 @@
 
       </div>
       
-      
-        <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0926/" class="clearfix" title="Ancia Ver0.9.26 アプリケーション関連付け、タブリストツールバー・サイドバー">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/regist.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2011・03・01</time></span>
-      <h2 class="title">Ancia Ver0.9.26 アプリケーション関連付け、タブリストツールバー・サイドバー</h2>
-      <div class="summary">更新履歴 download やっとアプリケーションの関連付けが可能になりました。Vista,7では、オプション設定でレジストリに登録後、「規定のブラウザ選択画面」からAnciaを選択すれば関連付けられます。Xpならレジストリに登録すれば、関連付け、削除すれば関連付け解除です。 関連付ける拡張子は、Vista,7なら選択できますが、Xpは、.html、.htm、.mhtml、mht、.shtml、ftp・http・httpsプロトコル固定で関連付けしています。余裕があれば、Xpで登録する拡張子を選択できるようにする予定です。レジストリの登録実体は、script\reserved\regApp.jsなので、中を見れば何をやっているかわかります。関連付けを行った後、もしアプリケーションを削除する場合は、レジストリからの削除を推奨します。 regApp.jsは簡易的なsetbrowser的なことも可能で、単独で使用できます。たとえばunDonutを7に登録したい場合は、 cscript.exe C:\Ancia\script\reserved\regApp.js &ldquo;{&lsquo;regist&rsquo;:true,&lsquo;appPath&rsquo;:&lsquo;C:\app\unDonut\unDonut.exe&rsquo;,&lsquo;sysVer&rsquo;:7000,&lsquo;ieVer&rsquo;:9000}&rdquo; を管理者権限コマンドプロンプトから実行すれば、ブラウザ選択画面にunDonutを出せます。&rsquo;regist&rsquo;:falseで解除です。sysVerは5000(XP)、6000(Vista)、7000(Windows7)、ieVerは9000ならIE9、IE8なら8000です。appPathに登録するブラウザのフルパスを指定します(\は\にエスケープする必要あり)。 タブリストの内容をサイドバー・ツールバーに表示可能になっています。もし表示できない場合は、オプション設定のブックマーク設定・ブックマークの追加で「タブリスト」ブックマークを追加すれば表示出来るはずです。タブリストバーでまだシェブロンは出ません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      
-        <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver0920-d/" class="clearfix" title="Ancia Ver0.9.20 DropAction/マウスジェスチャ Aero表示、お気に入り順序">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/daaero-thumb-300x304-72.jpg);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2011・01・24</time></span>
-      <h2 class="title">Ancia Ver0.9.20 DropAction/マウスジェスチャ Aero表示、お気に入り順序</h2>
-      <div class="summary">更新履歴 download ドロップアクションやボタン型マウスジェスチャのAero表示に対応しています。Aero表示するしないは、ドロップアクション/マウスジェスチャの設定から切り替え可能です（下はマウスジェスチャ） IEお気に入りでマウスのドラッグドロップでアイテム順序を入れ替え可能にしています。デフォルトの順序は、IE順ですが、入れ替えを行うと、自動的にユーザ定義順になります。順序は各フォルダ毎に名前順・IE順・ユーザ定義を指定できます。 リンクバーもマウスで並び替えできるようにしていますが、まだサブフォルダへの移動がうまく動いてません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -200,6 +200,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -297,30 +321,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -336,11 +336,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>

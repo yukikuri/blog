@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="http://blog.anciasoft.jp/css/style.css">
+    <link rel="canonical" href="http://blog.anciasoft.jp/post/ancia19119/">
+    
+    
+    <title>Ancia Ver1.9.119 リリース - ウェブブラウザ開発ブログ</title>
+    <meta name="keywords" content="Ancia,リリース,1.9.119,ウェブブラウザ,タブブラウザ,Youtube,フルスクリーン">
+    
+    <meta name="description" content="Ancia Ver1.9.119をリリースしています。更新内容は、次の通りとなります。 更新内容 add ActiveScriptの実行Versionで環境に応じた最新のJScriptで実行を追加、また規定の設定に Active ...">
+    <meta name="og:description" content="Ancia Ver1.9.119をリリースしています。更新内容は、次の通りとなります。 更新内容 add ActiveScriptの実行Versionで環境に応じた最新のJScriptで実行を追加、また規定の設定に Active ...">
+    
+    <meta property='og:title' content="Ancia Ver1.9.119 リリース - ウェブブラウザ開発ブログ">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://blog.anciasoft.jp/img/19119.jpg">
+    
+    <meta property="og:url" content="http://blog.anciasoft.jp/post/ancia19119/">
+    <meta property="og:site_name" content="ウェブブラウザ開発ブログ" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="alternate" type="application/rss+xml" title="ウェブブラウザ開発ブログ" href="http://blog.anciasoft.jp/atom.xml">   
+
+  </head>
+
+  <body>
+
+    <header class="site vmiddle">
+      <div class='dummy'>&nbsp;</div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
+      <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
+    </header>
+    <header class="site vmiddle sticky" id='sticky'>
+      <div class='dummy'>&nbsp;</div>
+      <div class="title"><a href="http://blog.anciasoft.jp/">ウェブブラウザ開発ブログ</a></div>
+      <div class="subscribe"><a href="http://blog.anciasoft.jp/atom.xml"><span>Subscribe</span></a></div>
+    </header>
+
+    <div class="container site">
+
+
+
+<div class="row">
+  <div class="col-sm-9">
+
+    <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+      <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://blog.anciasoft.jp/"/>
+      <meta itemprop="dateModified" content="2016-05-23T00:00:01&#43;09:00">
+      <meta itemprop="headline" content="Ancia Ver1.9.119 リリース">
+      <meta itemprop="description" content="Ancia Ver1.9.119をリリースしています。更新内容は、次の通りとなります。 更新内容 add ActiveScriptの実行Versionで環境に応じた最新のJScriptで実行を追加、また規定の設定に Active Scriptの実行Versionが環境に応じて最新のVersionで実行します。IE9以降がインストールされていれば、高速なエンジン(JScript9.dll)でユーザスクリプトが実行されます。 fix youtubeでfullscreenが動作しないのを修正 報告ありがとうございます Youtube で Player でのフルスクリーンボタンが反応しないのが修正されています。報告ありがとうございました。 fix 起動時のタブ復元でcloselockを外しても復活するのを修正 ナビゲートロックだけしている状態で、タブを復元するとクローズロックを外していても復活する不具合を修正しています。 fix Google Chrome がインストールされていない場合、Chromeのブックマークを表示するとCrashするのを修正 報告ありがとうございます Google Chrome がインストールされていない状態で Google Chrome のお気に入りを表示するとクラッシュする不具合を修正しています。報告ありがとうございます。 fix Windows Storeでのアプリをゲットのボタンが動作しないのを修正 Windows ストア のページで、「アプリをゲット」ボタンが無反応である不具合を修正しています。 mod 前回終了時のタブ保存で、タブ情報が取得できない場合できるだけ情報を保存するように(その場合、ハイライト、戻る進む履歴、自動更新情報は失われます) mod IPC通信のタイムアウト時間を長めに マルチプロセスでタブの終了状態が取得できない場合の発生が起こる場合があり(こちらでは再現できず)、IPC通信のタイムアウトと取得失敗時でもできるだけタブ情報を保存するようにしています。 mod window.open()でタブを開く際のpopup block設定が効いていないのを修正 ポップアップブロックの設定が、window.open()でタブを開く場合に判定されていない(常にIEでの判定が行われる)不具合を修正しています。報告により試すと発見できました。報告ありがとうございました。 mod ローカルファイルやインターネットショートカットなどをタブバーにdropできるように 今更ですがタブにローカルファイルなどをドロップして開けるようにしました。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.119 更新一覧はこちらとなります。更新一覧 Ancia 1.9.119 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。">
+      <meta itemprop="url" content="http://blog.anciasoft.jp/post/ancia19119/">
+      
+      <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <meta itemprop="url" content="http://blog.anciasoft.jp/img/19119.jpg" />
+        <meta itemprop="width" content="800">
+        <meta itemprop="height" content="500">
+      </div>
+      
+      <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://blog.anciasoft.jp/img/logo.png">
+          <meta itemprop="width" content="100">
+          <meta itemprop="height" content="100">
+        </div>
+        <meta itemprop="name" content="ウェブブラウザ開発ブログ">
+      </div>
+      <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="name" content="ykuri">
+      </div>
+
+     <header class="article-header">
+        <time itemprop="datePublished" pubdate="pubdate" datetime="2016-05-23T00:00:01&#43;09:00">2016・05・23</time>
+        <h1 class="article-title">Ancia Ver1.9.119 リリース</h1>
+      </header>
+      
+      
+      <div class="image " style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+      
+
+      <div class="article-body" itemprop="articleBody">
+        
+
+<p>Ancia Ver1.9.119をリリースしています。更新内容は、次の通りとなります。</p>
+
+<h2 id="更新内容:81222be33e469730f044e7eed4b8a7c5">更新内容</h2>
+
+<ul>
+<li><span class='add'>add</span> <strong>ActiveScriptの実行Versionで環境に応じた最新のJScriptで実行を追加、また規定の設定に</strong>
+<p>
+Active Scriptの実行Versionが環境に応じて最新のVersionで実行します。IE9以降がインストールされていれば、高速なエンジン(JScript9.dll)でユーザスクリプトが実行されます。
+</p></li>
+<li><span class='fix'>fix</span> <strong>youtubeでfullscreenが動作しないのを修正 報告ありがとうございます</strong>
+<p>Youtube で Player でのフルスクリーンボタンが反応しないのが修正されています。報告ありがとうございました。</p></li>
+<li><span class='fix'>fix</span> <strong>起動時のタブ復元でcloselockを外しても復活するのを修正</strong>
+<p>ナビゲートロックだけしている状態で、タブを復元するとクローズロックを外していても復活する不具合を修正しています。</p></li>
+<li><span class='fix'>fix</span> <b>Google Chrome がインストールされていない場合、Chromeのブックマークを表示するとCrashするのを修正 報告ありがとうございます</b>
+<p>Google Chrome がインストールされていない状態で Google Chrome のお気に入りを表示するとクラッシュする不具合を修正しています。報告ありがとうございます。</p></li>
+<li><span class='fix'>fix</span> <strong>Windows Storeでのアプリをゲットのボタンが動作しないのを修正</strong>
+<p><a href="https://www.microsoft.com/ja-jp/store/apps">Windows ストア</a> のページで、「アプリをゲット」ボタンが無反応である不具合を修正しています。</p></li>
+<li><span class='mod'>mod</span> <b>前回終了時のタブ保存で、タブ情報が取得できない場合できるだけ情報を保存するように(その場合、ハイライト、戻る進む履歴、自動更新情報は失われます)</b></li>
+<li><span class='mod'>mod</span> <b>IPC通信のタイムアウト時間を長めに</b>
+<p>マルチプロセスでタブの終了状態が取得できない場合の発生が起こる場合があり(こちらでは再現できず)、IPC通信のタイムアウトと取得失敗時でもできるだけタブ情報を保存するようにしています。</p></li>
+<li><span class='mod'>mod</span> <strong>window.open()でタブを開く際のpopup block設定が効いていないのを修正</strong>
+<p>ポップアップブロックの設定が、window.open()でタブを開く場合に判定されていない(常にIEでの判定が行われる)不具合を修正しています。報告により試すと発見できました。報告ありがとうございました。</p></li>
+<li><span class='mod'>mod</span> <strong>ローカルファイルやインターネットショートカットなどをタブバーにdropできるように</strong>
+<p>今更ですがタブにローカルファイルなどをドロップして開けるようにしました。</p></li>
+</ul>
+
+<h2 id="ダウンロードと更新一覧:81222be33e469730f044e7eed4b8a7c5">ダウンロードと更新一覧</h2>
+
+<p>ダウンロードはこちらより行えます。<a href="http://www.egrath.net/download/Ancia19119.zip">ダウンロード Ancia 1.9.119</a><br />
+更新一覧はこちらとなります。<a href="http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19119Beta">更新一覧 Ancia 1.9.119</a></p>
+
+<h2 id="不具合について:81222be33e469730f044e7eed4b8a7c5">不具合について</h2>
+
+<p>もし不具合がある場合、<a href="http://forum.anciasoft.jp/">ソフトウェアフォーラム</a> までお願いします。</p>
+
+      </div>
+
+      <aside>
+        <div class="section">tags: <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+        <div class="section share">
+          <a class='fa fa-facebook' title='Share Facebook' href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fancia19119%2f&t=Ancia%20Ver1.9.119%20%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9" onclick="window.open(this.href, '', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"></a>
+          <a class='fa fa-twitter' title='Tweet' href="http://twitter.com/intent/tweet?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fancia19119%2f&text=Ancia%20Ver1.9.119%20%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9&tw_p=tweetbutton" onclick="window.open(this.href, '', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"></a>
+          <a class='fa hatena-bookmark-button' title='このエントリーをはてなブックマークに追加' target='_blank' href="http://b.hatena.ne.jp/bookmarklet?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fancia19119%2f&btitle=Ancia%20Ver1.9.119%20%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9" onclick="window.open(this.href, '', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;">B!</a>
+          <a class='fa fa-google-plus' title='Google Plus' href="https://plus.google.com/share?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fancia19119%2f" onclick="window.open(this.href, '', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"></a>
+          <a class='fa fa-get-pocket' title='Pocket' href="http://getpocket.com/edit?url=http%3a%2f%2fblog.anciasoft.jp%2fpost%2fancia19119%2f&title=Ancia%20Ver1.9.119%20%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9" onclick="window.open(this.href, '', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"></a>
+          <a class='fa fa-plus-square addthis_button' href="#"><i></i></a>
+        </div>
+        
+      </aside>
+      
+      <aside class="md prevnext">
+        
+        <div class='next'>前の記事</div><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix" title="Ancia Chrome Ver0.5.4 リリース">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2016・05・23</time><span class='new' data-time='1463929200'>NEW</span></span>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="summary">ブログの更新が遅れましたが、2016/5/2 に Ancia Chrome Ver0.5.4 をリリースしています。Blinkのバージョンは49のままですので、XPでも使用できます。 更新内容 add DNSエラーや404エラーなどで、Google Chromeと同様のエラーページを表示を行うように Google Chromeと同等のページエラー表示を可能にしています。 add mp4やmp3直リンを再生可能に mp4やmp3の直リンク表示(??.mp4)などの直接の再生を可能にしています。報告ありがとうございます。 add 新規タブでよく表示すページを表示するように add よく表示するページやHistory、Thumbnailを保存するように(現時点では、よく表示するページを新規タブで表示するのみをサポート) 表示したページの履歴などをローカルに保存するようにしています。新規タブでよく表示するページを表示するようにしてみました。 fix 特定のvideoタグでmedia fallbackが動作しないのを修正 videoタグでsourceの指定方法によりmp4などの再生が行われない場合を修正しています。 fix 特定のFormでsubmit時にcrashするのを修正 報告ありがとうございます 特定のフォームで送信すると、フォームのオートコンプリート関係でクラッシュする問題を修正しています。 fix pdfが表示できないのを修正 PDFが表示できていなかったのを、表示可能になりました。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.5.4 更新一覧はこちらとなります。更新一覧 Ancia Chrome 0.5.4 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+</article>
+
+      </aside>
+
+      <aside class="list related">
+        
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+             <div>関連する記事</div>
+              <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+
+              
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+             
+              <article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+
+              
+            
+          
+          
+          
+          
+          
+          
+          
+            
+             
+              <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・11</time>
+      <h2 class="title">Ancia Chrome Ver0.5.3 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+
+              
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+             
+              <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome052.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・06</time>
+      <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+
+              
+            
+          
+          
+          
+          
+          
+          
+          
+            
+             
+              <article class="li">
+  <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2016・03・27</time>
+      <h2 class="title">Ancia でのSkinのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+    </div>
+  </a>
+</article>
+
+              
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </aside>
+      
+    </article>
+
+  </div>
+
+  <div class="col-sm-3">
+    <aside class="site">
+
+  
+  <div class="section">
+    <header><div class="title">Table Of Contents</div></header>
+    <div class="list-default"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#更新内容:81222be33e469730f044e7eed4b8a7c5">更新内容</a></li>
+<li><a href="#ダウンロードと更新一覧:81222be33e469730f044e7eed4b8a7c5">ダウンロードと更新一覧</a></li>
+<li><a href="#不具合について:81222be33e469730f044e7eed4b8a7c5">不具合について</a></li>
+</ul></li>
+</ul>
+</nav></div>
+  </div>
+  
+
+  
+
+  <div class="section">
+    <header><div class="title">Latest</div></header>
+    <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/2016e7.png);"></div>
+    <div class="detail">
+      <time>2016・05・20</time>
+      <h2 class="title">速吸なし 水上艦攻6スロットで攻略する2016春イベントE7ゲージ破壊構成</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/kancolle" class="tag">kancolle</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/typescript/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/typescript.png);"></div>
+    <div class="detail">
+      <time>2016・04・24</time>
+      <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome053/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome053.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・11</time>
+      <h2 class="title">Ancia Chrome Ver0.5.3 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/install-ppapi-flash/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・04・10</time>
+      <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome052/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome052.jpg);"></div>
+    <div class="detail">
+      <time>2016・04・06</time>
+      <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/anciaskin/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <time>2016・03・27</time>
+      <h2 class="title">Ancia でのSkinのご紹介</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
+    <div class="detail">
+      <time>2016・03・23</time>
+      <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
+    <div class="detail">
+      <time>2016・01・06</time>
+      <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+    </div>
+  </div>
+
+  <div class="section taxonomies">
+    <header><div class="title">Tags</div></header>
+    <div class="content">
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/kancolle">kancolle (1)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
+    
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
+    
+    </div>
+  </div>
+
+  <div class="section taxonomies">
+    <header><div class="title">Link</div></header>
+    <div class="content">
+      <a href="http://www.egrath.net/">Official Site</a>
+      <a href="https://twitter.com/kurimoto_y">Twitter</a>
+      <a href="http://forum.anciasoft.jp/">Forum</a>
+      <a href="http://blog.anciasoft.jp/atom.xml">Subscribe</a>
+    </div>
+  </div>
+
+</aside>
+
+  </div>
+
+</div>
+
+    </div>
+
+    <footer class="site">
+      <p>Copyright &copy; 2016 y-kurimoto.</p>
+      <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+      <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+    </footer>
+    
+    <script src="/js/js.min.js"></script>
+    
+    <script src="http://s7.addthis.com/js/250/addthis_widget.js" async defer></script>
+    
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-61717138-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    
+
+  </body>
+</html>
+

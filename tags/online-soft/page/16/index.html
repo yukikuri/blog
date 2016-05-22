@@ -48,6 +48,36 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-20/" class="clearfix" title="検索バーの検索エンジンボタン">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sbar.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・03・17</time></span>
+      <h2 class="title">検索バーの検索エンジンボタン</h2>
+      <div class="summary">Ancia 0.4.1で検索バーへの検索エンジンボタン追加に対応しました。アプリケーションオプション-&gt;ツールバーの設定-&gt;検索の詳細設定から、検索エンジンボタン追加/削除、また、ボタンの位置変更が行なえます。 resource/customizeの位置を、setting/customizeへ移動する予定です。そうすれば、settingフォルダに、動作設定を集約できます。ドロップアクションを表示するときに落ちるバグが、しばらく出ていないので、直ったようです。描画でのNULLポインタチェックを入れてからかな、、落ちなくなったのは。IE8が20日に出るというのは、本当なのだろうか、、</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-19/" class="clearfix" title="マウスジェスチャ">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/raction_bottom.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・03・02</time></span>
+      <h2 class="title">マウスジェスチャ</h2>
+      <div class="summary">Ancia0.3.8で、マウスジェスチャの代わりの機能として、Rアクション機能が使用できます。RアクションのRはrightの略です。マウスジェスチャのように右ボタンを押しながら、マウスを動かすと、任意の動作を行なえます。 Anciaでのマウスジェスチャは、他のブラウザと違い、まず、右ボタンを押しながらマウスを上、または、下、または、左、または、右へ動かすと、ボタンが表示されます（上の画像は、下へ動かしたとき）。表示されたボタン上で、右ボタンを離すことで、ボタンの処理が実行されます。ボタン表示は、ESCキー、左ボタンを押すと非表示となります。視覚的にボタンが表示される分、ステータスバーにコマンド表示されるのに比べ、操作しやすく、誤動作も少ないはずです。 下の画像は、それぞれ、上に動かしたとき、左に動かしたとき、右に動かしたときのボタンです。 上に動かしたとき 左に動かしたとき 右に動かしたとき 左右のとき、ボタンは縦表示となり、マウスを動かす距離が少ないようにしています。 現仕様では、ボタンは、ドロップアクションと同じく、スクリプトで書く必要があります。また、ドロップアクションでは、階層構造と出来ますが、Rアクションは、階層構造に対応していません。ボタンの数に制限は設けていません。表示しきれない場合は、Pagerコントロールにより非表示のボタンを表示できます。 一番上へのスクロール、下へのスクロールで、doScroll Methodを使ってるんですが、なぜかドキュメントに書いていない、&rdquo;top&rdquo;と&rdquo;bottom&rdquo;を指定すると、上と下にスクロールできました。leftやrightがあるので、記述漏れかもしれません。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-15/" class="clearfix" title="いくつも使えるツールバー">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/toolbars.png);"></div>
     <div class="detail">
@@ -136,36 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/opensearch/" class="clearfix" title="OpenSearchでの検索エンジン登録">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/opensearch.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2009・01・14</time></span>
-      <h2 class="title">OpenSearchでの検索エンジン登録</h2>
-      <div class="summary">Anciaでの検索エンジン情報は、OpenSearch形式のファイルで持っています。どんな検索エンジンでもOpenSearch形式のファイルを作れば、使用できるはずです。 アプリへの検索エンジン登録は、searchフォルダに、OpenSearch形式のファイルを置くだけです。ファイル名＝検索エンジン名となり、ファイル名の.icoをおけば、検索エンジンのアイコンになります。ファイル削除で、登録が消えます。ただし、アプリで削除すると、検索履歴も一緒に消してくれます。登録が単純な分、検索エンジンの順番は、ファイル名順です。 検索バーは、検索エンジンごとに検索キーワード履歴を保存するため、aguse.jpで調べたURLやgoogleで調べたキーワードが、ごっちゃになることはありません。検索バーのキーワード履歴は、ホイールクリックすると、新しいタブで検索結果を表示し、また、右クリックメニューから他のエンジンで調べることが出来ます（上の画像）。履歴は、setting\SearchHist_検索エンジンファイル名.jsonで保存します。履歴ファイルがあれば、履歴を表示・なければ表示無しです。検索バーへの検索エンジンボタンの登録は、バーのボタン設定ファイルで&rdquo;btn&rdquo;:[・・・,{&ldquo;search&rdquo;:&ldquo;検索エンジンのファイル&rdquo;},・・・]とします。 検索URLテンプレートは、{searchTerms}のみサポートしています。Internet Explorerと同じく、GETのみサポートです。 次の更新は、タブ上での機能割り当て辺りを、、マウスジェスチャは、、違う形で提供するかもしれません。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ie/" class="clearfix" title="IEツールバー">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ietoolbar.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2009・01・09</time></span>
-      <h2 class="title">IEツールバー</h2>
-      <div class="summary">Anciaは、ExplorerBarPlusをどうしても使用したかったので、初回v0.0.1の時点でIEツールバー・エクスプローラバーをサポートしています。サポートといっても、IEでしか動かないものなどあるため、全てのツールバーのサポートは無理です。 AnciaでのIEツールバーの仕様は、Internet Explorer同様、1つのタブにつき、１ツールバーインスタンスです。２つタブがあるとき、ツールバーも２つ存在します。タブを切り替えるときに、IEツールバーの表示も切り替えています。 IEツールバー自体、１つのIWebbrowserへの動作のため、複数タブで１つのIEツールバーを共有し動作させる実装は選択しませんでした。複数タブ対１つのIEツールバーは、仕様に従わず無理に動かすことは可能だと思いますが、無理に動かしてもしょうがないですし、無理に動かすための実装時間がもったいなく思えました。 Ancia初期の開発段階では、全タブが閉じた状態での起動でした。ですが、IEツールバーが1つのIWebBrowserが必要なので、IEツールバーをサポートしたことで、全タブが閉じた状態での起動仕様は捨てました。全タブが閉じた状態での起動が自身は好きですが、IEツールバーのサポートのほうが、上だったので、、仕方ないです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -174,7 +174,7 @@
   <span class="left"><a href="/tags/online-soft/page/15" rel="prev">前へ</a></span>
   
 
-  <span class="center vmiddle">Page 16 of 23</span>
+  <span class="center vmiddle">Page 16 of 24</span>
 
   
   <span class="right"><a href="/tags/online-soft/page/17" rel="next">次へ</a></span>
@@ -195,6 +195,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -292,30 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -331,11 +331,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>

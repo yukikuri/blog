@@ -48,6 +48,36 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-55/" class="clearfix" title="カーソル型マウスジェスチャ">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/gesturecursor.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・06</time></span>
+      <h2 class="title">カーソル型マウスジェスチャ</h2>
+      <div class="summary">更新履歴 download カーソル型マウスジェスチャを追加していますが、まだUIから設定できる項目は少なく、増やす予定です。カーソル型マウスジェスチャは、オプション画面で「カーソル型マウスジェスチャ - mouseGestureCursor」を選択することで使用できます。 ユーザエージェントでiPadを指定したとき、iPad用のtwitterが見れたのですが、今は見れないようです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-54/" class="clearfix" title="マルチプロセスのセッション継続は難しい">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・07・06</time></span>
+      <h2 class="title">マルチプロセスのセッション継続は難しい</h2>
+      <div class="summary">マルチプロセスのセッション継続は、かなり手間取ることが分かりました。プロセス毎にセッションのcookieを共有することになるのですが、cookieはドメインで設定されることがあり、これを取得するのが難しいのです。 応答で Set-Cookie: HSID=XXXXXXXXXXXX;Domain=.google.co.jp;Path=/;HttpOnly というのがあると、ページのURLとcookieの設定ドメインが一致しているとは限らないので、どのようなドメインでcookieが設定されているのかは、HTTPヘッダを取得するしかないようです。 IEコンポーネントからHTTPヘッダの取得はできないようで、方法として ・HttpQueryInfo APIをhookする -&gt; HttpQueryInfoが呼び出されない場合は× ・RAWソケットを使用する -&gt; HTTPSが厳しい ・他の方法 となりますが、そう簡単ではなく、そこまでしなければならないのかもあるので、しばらく対応は保留します。TheWorldでのマルチプロセスセッション継続がどこまでやっているのかは、なぞです。 ドメイン単位でのcookie設定は、InternetSetCookieEx(&ldquo;http://google.com/&quot;,....)のように、URLをドメインで指定すると出来ました。 IE6の「新しいウインドウを開く」の場合、プロセスが新規にできるのではないので、プロセスでのcookie継続はそもそもできないはずです。IE8からはSession MergingというIE内部機能？で、セッション共有しているようです。IE9のベータが出るのが早そうなので、可能性は低そうですが、そのような機能が使えるようになることに期待したいです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/google-1/" class="clearfix" title="検索パネルでGoogle検索できない２">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
@@ -136,36 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-39/" class="clearfix" title="ExplorerBarPlus 1.4.2">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2010・06・06</time></span>
-      <h2 class="title">ExplorerBarPlus 1.4.2</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード 特に大きな変更は無く、Anciaで使用しているとき、ツールチップが出ない場合があるので出るようにしています。ハイライトパネルやリンク抽出がマルチスレッドプロセスでのAnciaでうまく動かない(マーシャリングしたプロキシオブジェクトへの処理がうまく動かない)のは、どうしようか考え中です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ver081/" class="clearfix" title="Ver0.8.1">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tp.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2010・06・01</time></span>
-      <h2 class="title">Ver0.8.1</h2>
-      <div class="summary">更新履歴 download シングルスレッドも選択可能にし、機能限定は取りました。高セキュリティーで開く、セキュリティー許可で開く、が動かないということで試してみたんですが、こちらでは動きました(http://headlines.yahoo.co.jp/hlで確認)。 スムーズスクロールの対応でExplorerBarPlusのツールチップが表示されなくなる場合があり、近いうちに対応します。スムーズスクロール対応は、MDIでの表示を最大にしているとき有効です。MDIが最大ではない表示(重ねて表示など）では、スクロールはもたついてしまいます。最大表示ではない場合のスムーズスクロール対応は、技術的に難しいのではないでしょうか。スレッド/プロセスのときでMDI最大表示のときは、ブラウザ部分をポップアップにしているのですが、これを今までどおり違和感が少なく使えるようにするには結構大変でした。 スレッド/プロセスの自動選択は、マルチプロセスでのcookie継続が解決しないと付けませんが、解決できるかどうか、、ハイライトのスクロールで中央表示はできそうです。落ちる報告もいただいているため、crash表示に落ちた情報表示も検討中です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -195,6 +195,30 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19119.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Ver1.9.119 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome054/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome054.jpg);"></div>
+    <div class="detail">
+      <time>2016・05・23</time>
+      <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/kancolle2016e7last/" class="clearfix">
@@ -292,30 +316,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflashcrash/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・04</time>
-      <h2 class="title">Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/hidpiper-monitor/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/hidpi.png);"></div>
-    <div class="detail">
-      <time>2015・09・03</time>
-      <h2 class="title">高解像度 HiDPI(Per-Monitor) に対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -331,11 +331,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (183)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (3)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
     
     </div>
   </div>
