@@ -56,7 +56,7 @@
       <div class="summary">更新履歴 download 要望対応と、バグ修正が主です。マルチブックマークの実装に取り掛かり始め、まずはIEのブックマークで任意のフォルダを表示できることと、複数のIEブックマークが使用できるようになる予定です。 任意のフォルダは、相対パスのときは、アプリからの相対パスとなるようにします。アイテムの順序情報も独自にするかもしれません。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -71,7 +71,7 @@
       <div class="summary">更新履歴 download カーソル型マウスジェスチャ機能の追加は、とりあえず終えたつもりです。「違う方向になったとき、ジェスチャを検出する(&amp;G)」は分かりにくいので、実際にチェックありなしで動かすと違いが分かると思います。チェックが無いときは、ぶら。のような動作、チェックがあるとunDonutのような動作です。 マルチプロセスが難しいと分かったのがやっぱりショックで（IEには無い機能を自前で実装？）、、しばらくは大変じゃない更新になると思います。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -86,7 +86,7 @@
       <div class="summary">更新履歴 download カーソル型マウスジェスチャを追加していますが、まだUIから設定できる項目は少なく、増やす予定です。カーソル型マウスジェスチャは、オプション画面で「カーソル型マウスジェスチャ - mouseGestureCursor」を選択することで使用できます。 ユーザエージェントでiPadを指定したとき、iPad用のtwitterが見れたのですが、今は見れないようです。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -101,7 +101,7 @@
       <div class="summary">マルチプロセスのセッション継続は、かなり手間取ることが分かりました。プロセス毎にセッションのcookieを共有することになるのですが、cookieはドメインで設定されることがあり、これを取得するのが難しいのです。 応答で Set-Cookie: HSID=XXXXXXXXXXXX;Domain=.google.co.jp;Path=/;HttpOnly というのがあると、ページのURLとcookieの設定ドメインが一致しているとは限らないので、どのようなドメインでcookieが設定されているのかは、HTTPヘッダを取得するしかないようです。 IEコンポーネントからHTTPヘッダの取得はできないようで、方法として ・HttpQueryInfo APIをhookする -&gt; HttpQueryInfoが呼び出されない場合は× ・RAWソケットを使用する -&gt; HTTPSが厳しい ・他の方法 となりますが、そう簡単ではなく、そこまでしなければならないのかもあるので、しばらく対応は保留します。TheWorldでのマルチプロセスセッション継続がどこまでやっているのかは、なぞです。 ドメイン単位でのcookie設定は、InternetSetCookieEx(&ldquo;http://google.com/&quot;,....)のように、URLをドメインで指定すると出来ました。 IE6の「新しいウインドウを開く」の場合、プロセスが新規にできるのではないので、プロセスでのcookie継続はそもそもできないはずです。IE8からはSession MergingというIE内部機能？で、セッション共有しているようです。IE9のベータが出るのが早そうなので、可能性は低そうですが、そのような機能が使えるようになることに期待したいです。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -116,7 +116,7 @@
       <div class="summary">検索パネルでGoogle検索できない - 不定期日記で、またサイドバーでのGoogle検索ができなくなっています。どうやら、もうhttp://www.google.co.jp/search?output=ieは使用できないようです。しばらく様子を見て、使用できるようになればいいのですが、、</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -131,7 +131,7 @@
       <div class="summary">更新履歴 download クラッシュ詳細情報を表示できるようになってます。クラッシュ情報はTMPフォルダに作成し、削除機能が無いので、次のバージョンで自動で古い情報ファイルを削除するように、クラッシュページで削除できるようにします。 今のところ、情報ファイルやdumpファイルを送信する機能は無いので、作者宛にメールするくらいしかありません。情報ファイルはunicodeのテキストなのでどのような内容か開けば分かりますが、dumpファイルはメモリに個人情報が含まれているかもしれないので、気になる方は送らない方がいいです。ただdumpファイルがあるとクラッシュの詳細が情報ファイルより分かります。 クラッシュページで、アプリでjson形式でページに情報を渡し、ページはeval()で情報を取り出す、という方式、ページに情報を渡すためにidispatch実装は結構面倒なので初めからこのように作ればよかったと、、jsonでの書き込み実装＝ページにも渡せるとなるので。 マルチプロセスのセッション継続は、cookieを送れば継続できることがわかりましたが、TheWorldの更新内容でcookieに関する修正が多いので、少し難しいと思います。gmailはリダイレクトやhttpsも絡み複雑のようです。 長時間使っていて落ちたときタブが失われることがあるので、一定間隔でタブのスナップショットを取る機能を付けようと思います。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -146,7 +146,7 @@
       <div class="summary">KasperskyでTabManagerがウイルスと検知されることで、Kaspersky社より誤検知であると連絡がありました。連絡した次の日に対応していただき定義データベースが更新され、現在TabManagerはウイルスと検知されなくなっています。次の日に対応してもらえるとは、、Kaspersky社の対応に好印象です。 http://www.virustotal.com/で調べるとTabManagerは誤検知されやすいようで、まだいくつかウイルスと出ています。サイズが小さいからでしょうか。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -161,7 +161,7 @@
       <div class="summary">更新履歴 download 主に不具合の修正を行っています。Tridentの高DPI設定を行えるようにしています。上は左がDPI無効、右が有効のときの画像です。DPIはWindows7でコントロールパネルのディスプレイで125％としました。有効のときは、右で少し大きくなっています。以前要望のあったハイライトで中央スクロールも対応し、使いやすくなっています。 画像で気付いたのですが、拡大率が125％となるのは、コントロールパネルの設定が反映される？かもしれません。上ではなく高DPIは別の分かりやすい方法で確認した方がいいですね。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -177,7 +177,7 @@
   <span class="center vmiddle">Page 9 of 24</span>
 
   
-  <span class="right"><a href="/tags/online-soft/page/10" rel="next">次へ</a></span>
+  <span class="right"><a href="/tags/online-soft/page/10/" rel="next">次へ</a></span>
   
 </nav>
 
@@ -192,6 +192,23 @@
 
   
 
+
+  <div class="section">
+    <header><div class="title">キーワード検索</div></header>
+        
+    <form action="https://cse.google.co.jp/cse" id="cse-search-box">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-2905019770567698:2858894463" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" />
+        <input type="submit" name="sa" value="" />
+      </div>
+    </form>
+
+    <script type="text/javascript" src="https://cse.google.co.jp/coop/cse/brand?form=cse-search-box&lang=ja"></script>
+
+  </div>
+
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
@@ -202,7 +219,7 @@
     <div class="detail">
       <time>2016・05・23</time>
       <h2 class="title">Ancia Ver1.9.119 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -214,7 +231,7 @@
     <div class="detail">
       <time>2016・05・23</time>
       <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -226,7 +243,7 @@
     <div class="detail">
       <time>2016・05・20</time>
       <h2 class="title">速吸なし 水上艦攻6スロットで攻略する2016春イベントE7ゲージ破壊構成</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/kancolle" class="tag">kancolle</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/kancolle/" class="tag">kancolle</a> </div>
     </div>
   </a>
 </article>
@@ -238,7 +255,7 @@
     <div class="detail">
       <time>2016・04・24</time>
       <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -250,7 +267,7 @@
     <div class="detail">
       <time>2016・04・11</time>
       <h2 class="title">Ancia Chrome Ver0.5.3 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -262,7 +279,7 @@
     <div class="detail">
       <time>2016・04・10</time>
       <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash/" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> </div>
     </div>
   </a>
 </article>
@@ -274,7 +291,7 @@
     <div class="detail">
       <time>2016・04・06</time>
       <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -286,7 +303,7 @@
     <div class="detail">
       <time>2016・03・27</time>
       <h2 class="title">Ancia でのSkinのご紹介</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -298,7 +315,7 @@
     <div class="detail">
       <time>2016・03・23</time>
       <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -310,7 +327,7 @@
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -323,19 +340,19 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash/">flash (1)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet/">internet (30)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/kancolle">kancolle (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/kancolle/">kancolle (1)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (185)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (5)</a>
     
     </div>
   </div>

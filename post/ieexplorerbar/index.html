@@ -138,7 +138,7 @@
       <div class="summary">更新履歴 download Ｔａｂが落ちた場合、about:crashを表示するようにしました。今は、TabManagerでタブを終了するとａｂｏｕｔ：ｃｒａｓｈが見れます。半日かからないで作ったので少し不安ですが、、 0.8.0.8で一先ずマルチスレッド/プロセス対応は完了です。一先ずというのは、シングルスレッドが選択できないのと、やはりスムーズスクロールがonだと、スクロールがもたつく部分が気になっています。スクロール - 不定期日記で使用することを考えていたんですが、当時とは状況が変わって、スレッドでもタブの強制終了が出来ているため、ブラウザ部分をポップアップウインドウにする案をどうしようか悩んでいます。ポップアップはタブが固まると、ウインドウが前面に表示されて隠せなくなるので止めました。 ポップアップウインドウにするとウインドウ制御で多少特殊な処理が必要で大変そうですが、いまだと、インターネットオプションかレジストリがいじれる環境じゃないとだめなので、、 あと実装すべき大きな機能は、マルチブックマーク機能が残っています。その名のとおり、アプリで使用するブックマークを複数使用可能とする機能です。ExplorerBarPlusで他ブラウザのブックマーク読み込み処理はすでにあるので、それを利用します。ブックマークとして使用を追加したとき、サイドバーでの表示＋ツールバーでの表示を可能とする機能の予定です。 例えば、はてなブックマークをブックマークとして追加したときは、ポータブルとして使用できるようにしたいです。IEの場合は、お気に入りフォルダを指定するといった具合です。要望対応も少しずつ行おうと思います。 5/11追記 林さん連絡ありがとうございます。 TabManagerがカスペルスキーでウイルスと出るのは誤検知という連絡をいただきました。定義データベースが更新されれば検出されなくなるはずです。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
         <div class='next'>前の記事</div><article class="li">
@@ -150,7 +150,7 @@
       <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Ancia0.8.0.6で分かったBSTRのパラメータ渡し誤りのバグを修正しています。そのほか、あまりバージョンアップしていなかったので、気になったところを直しています。SimpleFavPanelのアイコンを変更していますが、元のアイコンは、削除していないので、パネルのアイコン設定から変更できます。 BSTRのパラメータ渡し誤りというのは、 inline void func(BSTR bstr){ ・・・ } 関数１ inline void func(LPWCSTR psz) 関数２ { BSTR bstr=SysAllocString(psz); func(bstr); SysFreeString(bstr); } というのがあるとき、 TCHAR sz[256]; //CStringもなぜか、関数１が呼ばれる lstrcpy(sz, _T(&ldquo;aaa&rdquo;)); func(sz); が、関数２ではなく関数１を呼んでしまうというものです。これは、オーバーロードの仕様？で、constより、完全一致のBSTR(WCHAR*)が優先的に一致していることだと思います。関数１の名前を変更したので、全て直っているはずです。直した後はAnciaで落ちなくなりました。 v1.4.0の4/25日のインストーラで、インストールが不十分だったので、インストーラを差し替えています。もし、v1.4.0をインストールした方は、v1.4.1をインストール、または、再度v1.4.0のインストールをお願いします。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
 </article>
 
       </aside>
@@ -823,7 +823,7 @@
     <div class="detail">
       <time>2010・04・26</time>
       <h2 class="title">ExplorerBarPlus 1.4.1</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -845,7 +845,7 @@
     <div class="detail">
       <time>2010・04・19</time>
       <h2 class="title">ExplorerBarPlusのタブモード表示対応</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -867,7 +867,7 @@
     <div class="detail">
       <time>2010・04・05</time>
       <h2 class="title">タブマネージャ機能</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -889,7 +889,7 @@
     <div class="detail">
       <time>2010・03・29</time>
       <h2 class="title">Ver0.8.0.4</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -911,7 +911,7 @@
     <div class="detail">
       <time>2010・03・29</time>
       <h2 class="title">互換表示</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -1690,6 +1690,23 @@
 
   
 
+
+  <div class="section">
+    <header><div class="title">キーワード検索</div></header>
+        
+    <form action="https://cse.google.co.jp/cse" id="cse-search-box">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-2905019770567698:2858894463" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" />
+        <input type="submit" name="sa" value="" />
+      </div>
+    </form>
+
+    <script type="text/javascript" src="https://cse.google.co.jp/coop/cse/brand?form=cse-search-box&lang=ja"></script>
+
+  </div>
+
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
@@ -1700,7 +1717,7 @@
     <div class="detail">
       <time>2016・05・23</time>
       <h2 class="title">Ancia Ver1.9.119 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -1712,7 +1729,7 @@
     <div class="detail">
       <time>2016・05・23</time>
       <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -1724,7 +1741,7 @@
     <div class="detail">
       <time>2016・05・20</time>
       <h2 class="title">速吸なし 水上艦攻6スロットで攻略する2016春イベントE7ゲージ破壊構成</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/kancolle" class="tag">kancolle</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/kancolle/" class="tag">kancolle</a> </div>
     </div>
   </a>
 </article>
@@ -1736,7 +1753,7 @@
     <div class="detail">
       <time>2016・04・24</time>
       <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -1748,7 +1765,7 @@
     <div class="detail">
       <time>2016・04・11</time>
       <h2 class="title">Ancia Chrome Ver0.5.3 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -1760,7 +1777,7 @@
     <div class="detail">
       <time>2016・04・10</time>
       <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash/" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> </div>
     </div>
   </a>
 </article>
@@ -1772,7 +1789,7 @@
     <div class="detail">
       <time>2016・04・06</time>
       <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -1784,7 +1801,7 @@
     <div class="detail">
       <time>2016・03・27</time>
       <h2 class="title">Ancia でのSkinのご紹介</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -1796,7 +1813,7 @@
     <div class="detail">
       <time>2016・03・23</time>
       <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -1808,7 +1825,7 @@
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -1821,19 +1838,19 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash/">flash (1)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet/">internet (30)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/kancolle">kancolle (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/kancolle/">kancolle (1)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (185)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (5)</a>
     
     </div>
   </div>

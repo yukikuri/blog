@@ -56,7 +56,7 @@
       <div class="summary">今回、不具合報告などを受け付ける Anciaソフトウェアフォーラム を作成したことをお知らせします。 投稿には、画像やcrashしたときのdumpファイルなどファイル添付が可能です。投稿の際にユーザ登録は必要ありません。 メールやブログコメントやtwitter、掲示板で不具合報告を受けることが多く、分散してしまっていることが作成した理由です。Forumだと投稿が残り、検索も可能であるため、出来ればForum側への不具合報告をお願いいたします。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -71,7 +71,7 @@
       <div class="summary">AnciaとAnciaChromeでアプリケーションアイコンの募集を行っています。 こちらより応募可能となっています。 Windowsウェブブラウザ用アイコン作成依頼 アイコンは、アプリケーションの象徴となることと、Trident系とWebkit系2種類の作成をお願いしていることもあり、お支払い金額はそれなりとなっています。たくさんの応募があると作者が喜びます。応募をお待ちしています。 画像はブログ記事とは直接関係ないですが、なかなかいいデザインですね。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -86,7 +86,7 @@
       <div class="summary">だいぶ前のversion 1.9.56(最新versionは1.9.62)で、IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記 は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。 こちらで特定した原因は、IE内部で保持するsession storage値がタブを開くたびに倍で増えていき、そのsession storage値分ループ処理が動き、これが固まりにつながります。 ie11 session(google document) storage 上は、再現動画(http://www.youtube.com/watch?v=0xACMTPPoM8)での増えていく値です。 1タブ目では1つの値が、2タブ目には2個、3タブ目には4個、4タブ目には8個、動画で固まった18タブ目には65536個となり、65536個分のループで長時間固まります。タブを開くごとに遅くなるという現象も、session storage値が倍で増え、その分ループ時間が増えるため、と説明できます。 恐らく、IEはマルチプロセスの関係で、新規タブプロセスにsession storageを引き継ぐ必要があり、開き元タブのsession storageを新規タブ側に渡しているのではと考えています。渡す先にsession storageが無ければ問題ないですが、もし、マルチスレッドやシングルスレッドで、すでにsession storageが存在する場合、開き元から引き継がれると、倍に増えることに、と内部動作を予想しています。 session storageの調べ方は、残念ながら非公開です。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -101,7 +101,7 @@
       <div class="summary">Internet Explorer 11でのJavascript問題 - 不定期日記のIE11環境で固まる現象で、DOMStorageを無効にすれば発生しないことがわかっています。 IE11での対応が無いとどうしようもなさそうで、フィードバックを送っています。英語がちょっとおかしいかもしれませんが、日本語も書いてあるのでたぶん大丈夫です。 [IE11,WebBrowser Control] if DOMStorage enable, WebBrowser Control freeze わかってもらえるように再現動画まで撮りました。ただ残念ながら、最近のフィードバックにコメントがつくことがほとんど無く、見てもらえずに直らない可能性が出てきました。IE10のころまでは、大体のフィードバックにMicrosoftからのコメントがついていました(再現しませんでしたといわれますが)。もしかするとフィードバックのバグを再現できるユーザ数が増えると見てくれるかもしれません(下の画像部分)。 再現動画(http://www.youtube.com/watch?v=0xACMTPPoM8)のままで行えば、誰でも再現できると思います。ブラウザ以外でもWebBrowser Controlを複数作成して使用するアプリは結構ありそうで、固まり現象が出ていないのか不思議です。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -116,7 +116,7 @@
       <div class="summary">Windows7用Internet Explorer11がdownload可能となりました。 ダウンロード - Internet Explorer Anciaでは今のところ相性が悪いです。以前報告があるとおり、シングルスレッド・マルチスレッド・マルチプロセスいずれでもタブを10程度開くとJavascriptの動作が次第に遅くなり、そのうち固まります。どうも1ブラウザプロセスでIEコンポを多数作成するとだめなようです。 現時点での解決手段として、オプションからタブの動作をマルチプロセスにし、タブグループのチェックを外します。これでリソースを消費しますが、タブ毎に別プロセスで動作し、Javascriptの問題はとりあえず出なくなります。 タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -131,7 +131,7 @@
       <div class="summary">更新履歴 download 1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。 テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。 imageのメニューだとGoogle画像検索も行えます。 新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。 メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -146,7 +146,7 @@
       <div class="summary">SleipnirのIE10環境での動作で、documentModeである挙動が見つかりました。 ・SleipnirはページのX-UA-Compatibleを無視し、強制的にIE10モードで表示する 検証ページ：Conditional Comments (X-UA-CompatibleにIE=9を指定) 環境は、Win7 64bit IE10、Sleipnirの最新versionです。下がSleipnirの表示です。IE10モードで表示しているため、About conditional comments (Internet Explorer)が動作していません。これはdocumentModeが10での挙動です。ほかにもIE10で変わった挙動は、HTML5 Parsing in IE10 - IEBlog - Site Home - MSDN Blogsに詳しく書いてあります。 Anciaでは、IEと同じ挙動になります。 Sleipnirでページソースを見ると、ヘッダのX-UA-Compatible部分を消している動作のようです。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -161,7 +161,7 @@
       <div class="summary">更新履歴 download 1.9.34でIE独自でのみ可能と思われた互換表示設定に対応できました。互換表示設定は、IE7,8,9,10,11から選択できます。互換表示設定はdomain単位で保存します。 ボタンに出る数字はページのdocumentModeです。メニューのチェックは現在の互換表示設定になります。下はgoogleでIE7表示を選んだ場合です。 ページの動作がおかしい場合は、IE7互換表示で改善する場合があります。改善する例としてNHKラジオニュースがあります。IE10だと再生が多重に動きますが、IE7表示で正常に再生できるようになります。 互換表示を設定しても、ページにX-UA-Compatibleがある場合は、そちらが優先されます(IEと同じ動作)。MSDNだと互換表示を設定してもresponseヘッダにX-UA-Compatible: IE=edgeがあるため、常に最新のレンダリングとなります。この場合だとrequestは互換表示設定のユーザエージェント(下だとIE7)で行われます。 リクエストを見るにはFiddler - The Free Web Debugging Proxy by Telerikが使いやすいです。 戻る進むボタンがフラットなのは次回更新予定の内容です。</div>
     </div>
   </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
 </article>
 
       </div>
@@ -177,7 +177,7 @@
   <span class="center vmiddle">Page 3 of 24</span>
 
   
-  <span class="right"><a href="/tags/online-soft/page/4" rel="next">次へ</a></span>
+  <span class="right"><a href="/tags/online-soft/page/4/" rel="next">次へ</a></span>
   
 </nav>
 
@@ -192,6 +192,23 @@
 
   
 
+
+  <div class="section">
+    <header><div class="title">キーワード検索</div></header>
+        
+    <form action="https://cse.google.co.jp/cse" id="cse-search-box">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-2905019770567698:2858894463" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" />
+        <input type="submit" name="sa" value="" />
+      </div>
+    </form>
+
+    <script type="text/javascript" src="https://cse.google.co.jp/coop/cse/brand?form=cse-search-box&lang=ja"></script>
+
+  </div>
+
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
@@ -202,7 +219,7 @@
     <div class="detail">
       <time>2016・05・23</time>
       <h2 class="title">Ancia Ver1.9.119 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -214,7 +231,7 @@
     <div class="detail">
       <time>2016・05・23</time>
       <h2 class="title">Ancia Chrome Ver0.5.4 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -226,7 +243,7 @@
     <div class="detail">
       <time>2016・05・20</time>
       <h2 class="title">速吸なし 水上艦攻6スロットで攻略する2016春イベントE7ゲージ破壊構成</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/kancolle" class="tag">kancolle</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/kancolle/" class="tag">kancolle</a> </div>
     </div>
   </a>
 </article>
@@ -238,7 +255,7 @@
     <div class="detail">
       <time>2016・04・24</time>
       <h2 class="title">Ancia用の TypeScript 定義ファイルのご紹介</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming" class="tag">programming</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
     </div>
   </a>
 </article>
@@ -250,7 +267,7 @@
     <div class="detail">
       <time>2016・04・11</time>
       <h2 class="title">Ancia Chrome Ver0.5.3 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -262,7 +279,7 @@
     <div class="detail">
       <time>2016・04・10</time>
       <h2 class="title">Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/flash/" class="tag">flash</a> <a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> </div>
     </div>
   </a>
 </article>
@@ -274,7 +291,7 @@
     <div class="detail">
       <time>2016・04・06</time>
       <h2 class="title">Ancia Chrome Ver0.5.2 リリース</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -286,7 +303,7 @@
     <div class="detail">
       <time>2016・03・27</time>
       <h2 class="title">Ancia でのSkinのご紹介</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -298,7 +315,7 @@
     <div class="detail">
       <time>2016・03・23</time>
       <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release" class="tag">release</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
     </div>
   </a>
 </article>
@@ -310,7 +327,7 @@
     <div class="detail">
       <time>2016・01・06</time>
       <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft" class="tag">online soft</a> </div>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
     </div>
   </a>
 </article>
@@ -323,19 +340,19 @@
     <header><div class="title">Tags</div></header>
     <div class="content">
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/flash">flash (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/flash/">flash (1)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/internet">internet (30)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/internet/">internet (30)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/kancolle">kancolle (1)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/kancolle/">kancolle (1)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category">no-category (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft">online-soft (185)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (185)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/programming">programming (39)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release">release (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (5)</a>
     
     </div>
   </div>
