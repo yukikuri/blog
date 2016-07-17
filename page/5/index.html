@@ -46,6 +46,22 @@
       
         <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ie10msn/" class="clearfix" title="IE10でmsn関係のサイトを開くと固まることについて">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2013・05・09</time></span>
+      <h2 class="title">IE10でmsn関係のサイトを開くと固まることについて</h2>
+      <div class="summary">更新履歴 download Ancia1.9.18でIE10でmsn関係のサイトを開くと固まってしまい、プロセスも残ってしまう問題について暫定で対処しています。対処は、IE10の場合でhttp://..msn.com/* にhitするサイトでjavascriptを強制的に無効にしています。 その関係でmsn関係のサイトでは、javascriptを使って表示している部分が出ませんが、固まってしまうよりましで、不具合ではないので注意をお願いします。 IE10側で対応されるか、アプリ側で対応できるかは、どうなるかわからない感じです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-59/" class="clearfix" title="シングルキーショートカット、ポップアップブロック">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/singlekeyshortcutoption.png);"></div>
     <div class="detail">
@@ -155,22 +171,6 @@
 
       </div>
       
-      
-        <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ie9/" class="clearfix" title="IE9メモリ問題とIE9環境でのマルチプロセス推奨について">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie9mem.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2011・09・13</time></span>
-      <h2 class="title">IE9メモリ問題とIE9環境でのマルチプロセス推奨について</h2>
-      <div class="summary">更新履歴 download 1.2.3を出しています。正式版はもう少し後になりそうです。IE9のメモリ問題について書きます。 IE9のメモリ問題で、Flashで！が出るという現象、これがIE9で出るかを調べてみました。 関連ツイート１：http://twitter.com/#!/kurimoto_y/status/111826171842396161 関連ツイート２：http://twitter.com/#!/kurimoto_y/status/111827188340375552 結果、IE9でも出ます。 ● 出し方のコツ IE9はメモリ使用量が700Mを超えると、新規タブで新規プロセスを作る動作のようです。 タスクマネージャでIEプロセスのメモリ700Mを超えたあたりで、新規タブを開かず、Flashが多く貼っているページ、例えばYoutube埋め込みをどんどん再生していけば1Gを超えたぐらいで！が出ると思います。 IE9で出るということは、現状IE9でも直せない問題だと判断して、アプリで対応するのは難しいと思います。またIE9が700Mあたりで新規プロセスを作成するあたりが、Tridentで1プロセスで使用できるメモリに限界があるように見えます(このあたりでもうIEコンポーネントはマルチプロセス前提になっているかもしれません)。 上のことから、IE9環境では、シングルスレッド/マルチスレッドではなく、Anciaをマルチプロセスで使用することを推奨します。マルチプロセスで、シングルスレッド/マルチスレッドとの動作の違いは、セッションが継続する/しないかになります。マルチプロセスでも、同じタブグループ内ならセッションは継続します。 ただ、Anciaのマルチプロセスでのセッション継続は、タブグループが1つのプロセスであり、タブグループの各タブをそのプロセス内のスレッドで動かしているだけです。そのため、タブグループ内のタブ数が多くなり、長時間使用しプロセスのメモリサイズが多くなるとFlashの！問題は出やすくなります。それでもシングルスレッド/マルチスレッドに比べると、発生頻度は低くなります。 自分は、マルチプロセスで使用しています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -216,6 +216,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome055/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome055.jpg);"></div>
+    <div class="detail">
+      <time>2016・07・18</time>
+      <h2 class="title">Ancia Chrome Ver0.5.5 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
@@ -325,18 +337,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・06</time>
-      <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -352,11 +352,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (185)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (186)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (6)</a>
     
     </div>
   </div>

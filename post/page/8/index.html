@@ -48,6 +48,21 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-ver0911-a/" class="clearfix" title="Ancia Ver0.9.11 App.InputBox()について">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/inputbox.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・11・02</time></span>
+      <h2 class="title">Ancia Ver0.9.11 App.InputBox()について</h2>
+      <div class="summary">更新履歴 download スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。 var input=App.InputBox( { caption:&ldquo;Windowキャプション&rdquo;, statics:[{text:&ldquo;上部スタティックテキスト&rdquo;},{text:&ldquo;下部スタティックテキスト&rdquo;}],//2つまで inputs:[{label:&ldquo;Input1(&amp;1):&ldquo;,value:&ldquo;value1value1&rdquo;}, {label:&ldquo;Input2(&amp;2):&ldquo;,value:&ldquo;value2value2&rdquo;}, {label:&ldquo;Input3(&amp;3):&ldquo;,value:&ldquo;value3value3&rdquo;}, {label:&ldquo;Input4(&amp;4):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;},// number: 数値入力のみ {label:&ldquo;Input5(&amp;5):&ldquo;,value:&ldquo;1234567890&rdquo;,style:&ldquo;number&rdquo;}],// 5つまで buttons:[{text:&ldquo;OK&rdquo;},{text:&ldquo;キャンセル&rdquo;,style:&ldquo;default&rdquo;}]}); // input： OKだとjson形式のテキスト、Cancelだとfalseが返却 // json形式のテキストは以下の通り // {&ldquo;inputs&rdquo;:[&ldquo;value1value1&rdquo;,&ldquo;value2value2&rdquo;,&ldquo;value3value3&rdquo;,&ldquo;1234567890&rdquo;,&ldquo;1234567890&rdquo;]} OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&ldquo;(&rdquo;+input+&ldquo;)&rdquo;).inputs[0]のように入力結果を取得できます。 Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。 inputのタイプは、指定なし(普通のedtibox)、style:&ldquo;number&rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-ver0910/" class="clearfix" title="Ancia Ver0.9.10 タブのフォント変更">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/tabfont.png);"></div>
     <div class="detail">
@@ -151,21 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia-ver093/" class="clearfix" title="Ancia Ver0.9.3 最近閉じたタブの保存">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sc.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2010・09・06</time></span>
-      <h2 class="title">Ancia Ver0.9.3 最近閉じたタブの保存</h2>
-      <div class="summary">更新履歴 download 最近閉じたタブを保存できるようになっています。最近閉じたタブは、アプリ終了時に保存するので、シングル起動ではないときは、それぞれのアプリ終了で保存されます。 ブックマークの設定で、ブックマークを追加したとき、ツールバーも表示できるようになっています。今までに追加したブックマークがツールバーに出ない、メニューでツールバーのテキストが消えることがありますが、次回修正予定です。もう少しでブックマーク/ツールバーの機能充実できそうです。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -211,6 +211,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia-chrome055/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/anciachrome055.jpg);"></div>
+    <div class="detail">
+      <time>2016・07・18</time>
+      <h2 class="title">Ancia Chrome Ver0.5.5 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia19119/" class="clearfix">
@@ -320,18 +332,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/windows-updateflash-crash2000272/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/flash.png);"></div>
-    <div class="detail">
-      <time>2016・01・06</time>
-      <h2 class="title">Windows UpdateでFlash Crash修正版(20.0.0.272)が提供されています</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -347,11 +347,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (185)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (186)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (5)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (6)</a>
     
     </div>
   </div>
