@@ -6,8 +6,73 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-07-18 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-07-26 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.120 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19120/</link>
+          <pubDate>2016-07-26 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19120/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.120をリリースしています。更新内容は、次の通りとなります。更新内容の中にはフリーズすることがある問題修正や、ページ検索動作の軽量化を行っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:9623420deb54bd1619c4a95bd66c71c8&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;fixActiveXが有効なとき、iframe表示などでページ表示が固まる場合があるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;fixActiveXの設定が有効なとき、iframeなどで応答が固まってしまう現象を修正しています。報告ありがとうございました。
+1.9.120で修正されていますが、以前のバージョンでもfixActiveXを無効にすることでも問題は発生しません。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ローソン店舗検索を新規タブで開くなど、新規タブでリファラエラーが出るのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;新規タブを開くとき、リファラが失われ、ページによっては表示できない問題を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;フレームでハイライトやインライン検索が行われたとき、ページ遷移してもハイライトが残るのを修正&lt;/strong&gt;
+&lt;p&gt;フレームにハイライトが行われると、ページ遷移してもハイライト数が残ってしまう問題を修正しています&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;DNSエラーなどページ表示エラーで最新に更新すると、タブが読み込み中のままになるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のサイトで最新に更新後、読み込み状態のままになるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;以下のようなエラー表示ページで最新に更新すると読み込み中のままになる問題を修正しています。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/errpage.png&#39;&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;また、特定のサイトでも更新に更新時、タブが読み込み中状態になる問題を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ハイ コントラストでの描画を修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;掲示板に報告がありましたハイ コンストラクトのタイトル部分の描画を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ページが非常に巨大なとき、ハイライトやインライン検索で非常に時間がかかるのを修正(ハイライト動作の軽量化)&lt;/strong&gt;
+&lt;p&gt;ハイライトやインライン検索でヒットする数が多い時やページの内容が非常に大きいとき検索に時間がかかり、固まった動作になっていました。&lt;/p&gt;
+&lt;p&gt;1.9.120ではキーワードの検索の処理を変更することで固まることなくハイライトを行えるようにしています。時間がかかる場合は、画像のように次々ハイライトが行われていきます。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/perhilite.gif&#39;&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;SSLエラーがあるページでセキュリティー警告ダイアログを出すのではなく、IEと同じ証明書エラーページを表示する動作に&lt;/strong&gt;
+&lt;p&gt;1.9.119まではSSLでセキュリティー証明書にエラーがあるとダイアログが表示される動作です。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/securitydialog.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Internet Explorer はダイアログではなく証明書エラーページが表示されます。1.9.120でも Internet Explorer と同じく証明書エラーページを表示するようにし、ダイアログを閉じる動作を省略するようにしています。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;border&#39; src=&#39;http://blog.anciasoft.jp/img/securitypage.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ダウンロード中にアプリケーションを終了した場合の確認表示はデフォルトoffに(ダウンロード中にアプリを終了してもデフォルトでダウンロードは継続するため)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブの最大数のデフォルトを100から200に&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;AutoPagerizeでハイライトが自動で行われる機能は非サポートへ&lt;/strong&gt;
+&lt;p&gt;他はデフォルト設定の変更などを行っています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+今後の更新で、&lt;a href=&#34;https://www.microsoft.com/ja-jp/windows/lifecycle/iesupport/&#34;&gt;Internet Explorerサポートポリシー変更の重要なお知らせ - Microsoft&lt;/a&gt; より、
+Internet Explorer 11 以外を非サポートとする可能性があります。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:9623420deb54bd1619c4a95bd66c71c8&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19120.zip&#34;&gt;ダウンロード Ancia 1.9.120&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19120Beta&#34;&gt;更新一覧 Ancia 1.9.120&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:9623420deb54bd1619c4a95bd66c71c8&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.120をリリースしています。更新内容は、次の通りとなります。更新内容の中にはフリーズすることがある問題修正や、ページ検索動作の軽量化を行っています。 更新内容 fix fixActiveXが有効なとき、iframe表示などでページ表示が固まる場合があるのを修正 報告ありがとうございます fixActiveXの設定が有効なとき、iframeなどで応答が固まってしまう現象を修正しています。報告ありがとうございました。 1.9.120で修正されていますが、以前のバージョンでもfixActiveXを無効にすることでも問題は発生しません。 fix ローソン店舗検索を新規タブで開くなど、新規タブでリファラエラーが出るのを修正 報告ありがとうございます 新規タブを開くとき、リファラが失われ、ページによっては表示できない問題を修正しています。報告ありがとうございます。 fix フレームでハイライトやインライン検索が行われたとき、ページ遷移してもハイライトが残るのを修正 フレームにハイライトが行われると、ページ遷移してもハイライト数が残ってしまう問題を修正しています fix DNSエラーなどページ表示エラーで最新に更新すると、タブが読み込み中のままになるのを修正 fix 特定のサイトで最新に更新後、読み込み状態のままになるのを修正 報告ありがとうございます 以下のようなエラー表示ページで最新に更新すると読み込み中のままになる問題を修正しています。 また、特定のサイトでも更新に更新時、タブが読み込み中状態になる問題を修正しています。報告ありがとうございます。 fix ハイ コントラストでの描画を修正 報告ありがとうございます 掲示板に報告がありましたハイ コンストラクトのタイトル部分の描画を修正しています。報告ありがとうございます。 mod ページが非常に巨大なとき、ハイライトやインライン検索で非常に時間がかかるのを修正(ハイライト動作の軽量化) ハイライトやインライン検索でヒットする数が多い時やページの内容が非常に大きいとき検索に時間がかかり、固まった動作になっていました。 1.9.120ではキーワードの検索の処理を変更することで固まることなくハイライトを行えるようにしています。時間がかかる場合は、画像のように次々ハイライトが行われていきます。 mod SSLエラーがあるページでセキュリティー警告ダイアログを出すのではなく、IEと同じ証明書エラーページを表示する動作に 1.9.119まではSSLでセキュリティー証明書にエラーがあるとダイアログが表示される動作です。 Internet Explorer はダイアログではなく証明書エラーページが表示されます。1.9.120でも Internet Explorer と同じく証明書エラーページを表示するようにし、ダイアログを閉じる動作を省略するようにしています。 mod ダウンロード中にアプリケーションを終了した場合の確認表示はデフォルトoffに(ダウンロード中にアプリを終了してもデフォルトでダウンロードは継続するため) mod タブの最大数のデフォルトを100から200に mod AutoPagerizeでハイライトが自動で行われる機能は非サポートへ 他はデフォルト設定の変更などを行っています。 今後の更新で、Internet Explorerサポートポリシー変更の重要なお知らせ - Microsoft より、 Internet Explorer 11 以外を非サポートとする可能性があります。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.120 更新一覧はこちらとなります。更新一覧 Ancia 1.9.120 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19120.jpg</eyecatch>
+          <datetimeUnix>1469458801</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -472,85 +537,6 @@ DPIの違いも考慮されており、各画像サイズが用意され高DPI�
           <desctext>Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。 タブスキンのご紹介 作者：g13131gさん ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。 ダウンロード: ancia_tabskin_pack.zip skin/default/ui配下に上書きして使用できます。 標準のスキンよりactiveなタブが強調表示されるスキンとなっています。 DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。 詳しいスキン説明についてはこちらをご覧いただければと思います。 Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版 Anciaソフトウェアフォーラム • トピック - タブスキン紹介</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
           <datetimeUnix>1459087200</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Ver1.9.118 のリリース内容</title>
-          <link>http://blog.anciasoft.jp/post/ancia19118/</link>
-          <pubDate>2016-03-23 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia19118/</guid>
-          <description>
-
-&lt;p&gt;Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:f559805c96877e5a809e768dd3bb7410&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;アプリアイコンの処理でリソースリークしているのを修正&lt;/strong&gt;
-&lt;p&gt;
-報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118mixer.jpg&#34;&gt;&lt;/div&gt;&lt;br /&gt;
-この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。
-報告ありがとうございました。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正&lt;/strong&gt;
-&lt;p&gt;Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正&lt;/strong&gt;
-&lt;p&gt;非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、
-固まったようになる問題を対応しています。
-報告ありがとうございました。&lt;/p&gt;
-&lt;p&gt;
-巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。
-この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、
-この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。&lt;/p&gt;
-&lt;p&gt;ハイライト、インライン検索でもこの対応を行う予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;GMailでURLが複数開かない状態でのTrident安定動作化&lt;/strong&gt;
-&lt;p&gt;GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。
-もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように&lt;/strong&gt;
-&lt;p&gt;Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。
-タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。&lt;/p&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118flash.jpg&#34;&gt;&lt;/div&gt;
-&lt;p&gt;
-アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。
-そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに
-関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。
-&lt;/p&gt;
-&lt;p&gt;現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブリストのサイドバー、ツールバーでfaviconを表示するように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;リンクのAタグコピーscriptでAタグを小文字に&lt;/strong&gt;
-&lt;p&gt;他は軽い更新を行っています。
-お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。
-Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。
-&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:f559805c96877e5a809e768dd3bb7410&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://www.egrath.net/download/Ancia19118.zip&#34;&gt;Ancia1.9.118.zip&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19118Beta&#34;&gt;更新一覧&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ブログリニューアルなど:f559805c96877e5a809e768dd3bb7410&#34;&gt;ブログリニューアルなど&lt;/h2&gt;
-
-&lt;p&gt;ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、
-管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。
-コメントはForumがあるため、受け付けることはやめることにしました。&lt;/p&gt;
-
-&lt;p&gt;今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。
-DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&gt;
-
-&lt;p&gt;今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。&lt;/p&gt;
-</description>
-          <desctext>Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに 関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/19118.jpg</eyecatch>
-          <datetimeUnix>1458658800</datetimeUnix>
         </item>
       
     

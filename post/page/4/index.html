@@ -48,6 +48,21 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/ie11-domstorage-1/" class="clearfix" title="IE11 DOMStorageが有効だとWebBrowser Controlが固まる(解決)">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/sessionstorage.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2014・04・17</time></span>
+      <h2 class="title">IE11 DOMStorageが有効だとWebBrowser Controlが固まる(解決)</h2>
+      <div class="summary">だいぶ前のversion 1.9.56(最新versionは1.9.62)で、IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記 は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。 こちらで特定した原因は、IE内部で保持するsession storage値がタブを開くたびに倍で増えていき、そのsession storage値分ループ処理が動き、これが固まりにつながります。 ie11 session(google document) storage 上は、再現動画(http://www.youtube.com/watch?v=0xACMTPPoM8)での増えていく値です。 1タブ目では1つの値が、2タブ目には2個、3タブ目には4個、4タブ目には8個、動画で固まった18タブ目には65536個となり、65536個分のループで長時間固まります。タブを開くごとに遅くなるという現象も、session storage値が倍で増え、その分ループ時間が増えるため、と説明できます。 恐らく、IEはマルチプロセスの関係で、新規タブプロセスにsession storageを引き継ぐ必要があり、開き元タブのsession storageを新規タブ側に渡しているのではと考えています。渡す先にsession storageが無ければ問題ないですが、もし、マルチスレッドやシングルスレッドで、すでにsession storageが存在する場合、開き元から引き継がれると、倍に増えることに、と内部動作を予想しています。 session storageの調べ方は、残念ながら非公開です。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/internet/" class="tag">internet</a> <a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/ie11-domstorage/" class="clearfix" title="IE11 DOMStorageが有効だとWebBrowser Controlが固まる">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/ie11domstoragefreeze.png);"></div>
     <div class="detail">
@@ -151,21 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-45/" class="clearfix" title="ExplorerBarPlus 1.4.8">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2013・05・09</time></span>
-      <h2 class="title">ExplorerBarPlus 1.4.8</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード ExplorerBarPlusのVersion1.4.8を出しています。IEお気に入りパネルでお気に入りフォルダを変更していても、ボタンからお気に入りの追加と整理を可能にしています。Ancia上で使っているとき、お気に入りの追加を行うと、数秒操作不能になる問題を修正しています。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -211,6 +211,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19120/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19120.jpg);"></div>
+    <div class="detail">
+      <time>2016・07・26</time>
+      <h2 class="title">Ancia Ver1.9.120 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome055/" class="clearfix">
@@ -320,18 +332,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
-    <div class="detail">
-      <time>2016・03・23</time>
-      <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -347,11 +347,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (186)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (187)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (6)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (7)</a>
     
     </div>
   </div>

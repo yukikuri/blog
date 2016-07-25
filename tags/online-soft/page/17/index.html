@@ -48,6 +48,21 @@
       
       <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/post-17/" class="clearfix" title="ページのハイライト">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/pagehilite.png);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2009・01・27</time></span>
+      <h2 class="title">ページのハイライト</h2>
+      <div class="summary">Anciaでは、ページのハイライトをハイライトバーとしてタブ毎に持ちます。タブ毎に持っているので、タブ切り替えでハイライトボタンを押す必要ありません。バーでは、ハイライトの数が表示され、ハイライトされなければ灰色表示となるので、すぐにヒット数が分かります。 最新の状態に更新しても、ハイライトを失いません。ただ、、IE8βのころで、最新の状態に更新すると、ハイライトが失われてしまいました。ここは、IE8で最新の状態に更新する挙動が変わったのかもしれません。HTML Elementでのハイライトではなく、別の方法ではハイライトしているため、高速にハイライトします。HTML Elementだと、DOMなど更新してるはずなので、重そうです。 ハイライトバーが表示されていれば、自動的にページを読み込んだとき、ハイライトします。バーを非表示にすると、ハイライトも消えます。バーのハイライトボタンは、ドラッグ＆ドロップできます。ハイライト追加のショートカットキーは、デフォルトCtrl+Hです。resource/hilite.jsonが設定ファイルです。ドロップアクションで、「全てのタブでハイライト」へドロップすると、その名のとおり、全てのハブでハイライトできます。 おそらく、前回終了のタブ保存や、タブリストの保存で、ハイライト情報も保存できそうなので、タブリスト保存でハイライトも保存するよう対応予定です。セキュリティも保存できそうです。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/json/" class="clearfix" title="json形式の設定ファイル">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
     <div class="detail">
@@ -151,21 +166,6 @@
 
       </div>
       
-      <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/post-14/" class="clearfix" title="DropAction">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/da029.png);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2008・12・09</time></span>
-      <h2 class="title">DropAction</h2>
-      <div class="summary">Anciaのドロップアクションとは、簡単にいうとドロップターゲットの表示です。リンクやテキストをドラッグすると、ボタンが表示されるので、直感的に行ないたいボタンへドロップします。 設定ファイルは、resourceのdrop_link.json（リンクの場合）、drop_text.json（テキストの場合）です。ボタンは、設定ファイルでdropdownがあると階層構造になります。アプリでは、階層構造の深さに制限は設けていません。dropdownとしてもdropdownボタンにドロップ可能です。 ボタンは、 スクリプト（script） 検索（search） が登録できます。アクションをスクリプトで書かなければならないことが面倒ですが、アプリでアクションを実装するときりがないので、その様にしました。逆にスクリプトが実行できるので、ActiveXObject等でインスタンスを作成し、ダウンローダを起動するなども簡単に出来ます。 ドロップアクションは、単なるOleDragDropのイベント契機に表示しているので、他のアプリからのドラッグなどでも表示できます。たとえば、こんなことが可能です。 他のブラウザからドラッグされたリンクを新しいタブで開く 他のブラウザからドラッグされたリンクをクリップボードにコピー Wordや秀丸からドロップされたテキストでGoogle検索し、ハイライト Anciaのリンクバーからドラッグされたボタンをバッググラウンドタブで開く ・・・など、スクリプトなのでアクションは自由です。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -211,6 +211,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19120/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19120.jpg);"></div>
+    <div class="detail">
+      <time>2016・07・26</time>
+      <h2 class="title">Ancia Ver1.9.120 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome055/" class="clearfix">
@@ -320,18 +332,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
-    <div class="detail">
-      <time>2016・03・23</time>
-      <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -347,11 +347,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (186)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (187)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (6)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (7)</a>
     
     </div>
   </div>

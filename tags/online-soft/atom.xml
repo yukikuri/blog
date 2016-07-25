@@ -6,8 +6,73 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-07-18 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-07-26 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.120 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19120/</link>
+          <pubDate>2016-07-26 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19120/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.120をリリースしています。更新内容は、次の通りとなります。更新内容の中にはフリーズすることがある問題修正や、ページ検索動作の軽量化を行っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:9623420deb54bd1619c4a95bd66c71c8&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;fixActiveXが有効なとき、iframe表示などでページ表示が固まる場合があるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;fixActiveXの設定が有効なとき、iframeなどで応答が固まってしまう現象を修正しています。報告ありがとうございました。
+1.9.120で修正されていますが、以前のバージョンでもfixActiveXを無効にすることでも問題は発生しません。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ローソン店舗検索を新規タブで開くなど、新規タブでリファラエラーが出るのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;新規タブを開くとき、リファラが失われ、ページによっては表示できない問題を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;フレームでハイライトやインライン検索が行われたとき、ページ遷移してもハイライトが残るのを修正&lt;/strong&gt;
+&lt;p&gt;フレームにハイライトが行われると、ページ遷移してもハイライト数が残ってしまう問題を修正しています&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;DNSエラーなどページ表示エラーで最新に更新すると、タブが読み込み中のままになるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のサイトで最新に更新後、読み込み状態のままになるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;以下のようなエラー表示ページで最新に更新すると読み込み中のままになる問題を修正しています。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/errpage.png&#39;&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;また、特定のサイトでも更新に更新時、タブが読み込み中状態になる問題を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ハイ コントラストでの描画を修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;掲示板に報告がありましたハイ コンストラクトのタイトル部分の描画を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ページが非常に巨大なとき、ハイライトやインライン検索で非常に時間がかかるのを修正(ハイライト動作の軽量化)&lt;/strong&gt;
+&lt;p&gt;ハイライトやインライン検索でヒットする数が多い時やページの内容が非常に大きいとき検索に時間がかかり、固まった動作になっていました。&lt;/p&gt;
+&lt;p&gt;1.9.120ではキーワードの検索の処理を変更することで固まることなくハイライトを行えるようにしています。時間がかかる場合は、画像のように次々ハイライトが行われていきます。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/perhilite.gif&#39;&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;SSLエラーがあるページでセキュリティー警告ダイアログを出すのではなく、IEと同じ証明書エラーページを表示する動作に&lt;/strong&gt;
+&lt;p&gt;1.9.119まではSSLでセキュリティー証明書にエラーがあるとダイアログが表示される動作です。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/securitydialog.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Internet Explorer はダイアログではなく証明書エラーページが表示されます。1.9.120でも Internet Explorer と同じく証明書エラーページを表示するようにし、ダイアログを閉じる動作を省略するようにしています。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;border&#39; src=&#39;http://blog.anciasoft.jp/img/securitypage.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ダウンロード中にアプリケーションを終了した場合の確認表示はデフォルトoffに(ダウンロード中にアプリを終了してもデフォルトでダウンロードは継続するため)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブの最大数のデフォルトを100から200に&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;AutoPagerizeでハイライトが自動で行われる機能は非サポートへ&lt;/strong&gt;
+&lt;p&gt;他はデフォルト設定の変更などを行っています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+今後の更新で、&lt;a href=&#34;https://www.microsoft.com/ja-jp/windows/lifecycle/iesupport/&#34;&gt;Internet Explorerサポートポリシー変更の重要なお知らせ - Microsoft&lt;/a&gt; より、
+Internet Explorer 11 以外を非サポートとする可能性があります。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:9623420deb54bd1619c4a95bd66c71c8&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19120.zip&#34;&gt;ダウンロード Ancia 1.9.120&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19120Beta&#34;&gt;更新一覧 Ancia 1.9.120&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:9623420deb54bd1619c4a95bd66c71c8&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.120をリリースしています。更新内容は、次の通りとなります。更新内容の中にはフリーズすることがある問題修正や、ページ検索動作の軽量化を行っています。 更新内容 fix fixActiveXが有効なとき、iframe表示などでページ表示が固まる場合があるのを修正 報告ありがとうございます fixActiveXの設定が有効なとき、iframeなどで応答が固まってしまう現象を修正しています。報告ありがとうございました。 1.9.120で修正されていますが、以前のバージョンでもfixActiveXを無効にすることでも問題は発生しません。 fix ローソン店舗検索を新規タブで開くなど、新規タブでリファラエラーが出るのを修正 報告ありがとうございます 新規タブを開くとき、リファラが失われ、ページによっては表示できない問題を修正しています。報告ありがとうございます。 fix フレームでハイライトやインライン検索が行われたとき、ページ遷移してもハイライトが残るのを修正 フレームにハイライトが行われると、ページ遷移してもハイライト数が残ってしまう問題を修正しています fix DNSエラーなどページ表示エラーで最新に更新すると、タブが読み込み中のままになるのを修正 fix 特定のサイトで最新に更新後、読み込み状態のままになるのを修正 報告ありがとうございます 以下のようなエラー表示ページで最新に更新すると読み込み中のままになる問題を修正しています。 また、特定のサイトでも更新に更新時、タブが読み込み中状態になる問題を修正しています。報告ありがとうございます。 fix ハイ コントラストでの描画を修正 報告ありがとうございます 掲示板に報告がありましたハイ コンストラクトのタイトル部分の描画を修正しています。報告ありがとうございます。 mod ページが非常に巨大なとき、ハイライトやインライン検索で非常に時間がかかるのを修正(ハイライト動作の軽量化) ハイライトやインライン検索でヒットする数が多い時やページの内容が非常に大きいとき検索に時間がかかり、固まった動作になっていました。 1.9.120ではキーワードの検索の処理を変更することで固まることなくハイライトを行えるようにしています。時間がかかる場合は、画像のように次々ハイライトが行われていきます。 mod SSLエラーがあるページでセキュリティー警告ダイアログを出すのではなく、IEと同じ証明書エラーページを表示する動作に 1.9.119まではSSLでセキュリティー証明書にエラーがあるとダイアログが表示される動作です。 Internet Explorer はダイアログではなく証明書エラーページが表示されます。1.9.120でも Internet Explorer と同じく証明書エラーページを表示するようにし、ダイアログを閉じる動作を省略するようにしています。 mod ダウンロード中にアプリケーションを終了した場合の確認表示はデフォルトoffに(ダウンロード中にアプリを終了してもデフォルトでダウンロードは継続するため) mod タブの最大数のデフォルトを100から200に mod AutoPagerizeでハイライトが自動で行われる機能は非サポートへ 他はデフォルト設定の変更などを行っています。 今後の更新で、Internet Explorerサポートポリシー変更の重要なお知らせ - Microsoft より、 Internet Explorer 11 以外を非サポートとする可能性があります。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.120 更新一覧はこちらとなります。更新一覧 Ancia 1.9.120 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19120.jpg</eyecatch>
+          <datetimeUnix>1469458801</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -455,40 +520,6 @@ DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&g
           <desctext>問題のFlash(20.0.0.267)だとページ広告等でFlashを使用していてもcrashしてしまうため、頻繁にcrashする方はWindows Updateをお願いします(まぁくんさん情報ありがとうございます)。 KB3133431 Adobe Flash Player 20.0.0.272 Windows 10 Update on 06 Jan. 2016 | Volitional Engineering</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/flash.png</eyecatch>
           <datetimeUnix>1452089005</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Windows Update後にFlashが原因でCrashする(1/4 対処法追記)</title>
-          <link>http://blog.anciasoft.jp/post/windows-updateflashcrash/</link>
-          <pubDate>2016-01-04 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/windows-updateflashcrash/</guid>
-          <description>&lt;p&gt;Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。&lt;/p&gt;
-
-&lt;p&gt;Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ&lt;br /&gt;
-&lt;a href=&#34;http://d.hatena.ne.jp/noushibou/20160102/1451724506&#34;&gt;http://d.hatena.ne.jp/noushibou/20160102/1451724506&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。&lt;/p&gt;
-
-&lt;p&gt;Adobe Flash Playerの配布 | Adobe&lt;br /&gt;
-&lt;a href=&#34;http://www.adobe.com/jp/products/flashplayer/distribution3.html&#34;&gt;http://www.adobe.com/jp/products/flashplayer/distribution3.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。&lt;/p&gt;
-
-&lt;p&gt;Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering&lt;br /&gt;
-&lt;a href=&#34;http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/&#34;&gt;http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; 追記&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kuku.neko2.net/?num=3246&#34;&gt;http://kuku.neko2.net/?num=3246&lt;/a&gt;&lt;/p&gt;
-</description>
-          <desctext>Flashのsecurity updateで20.0.0.267が公開されましたが、IEコンポだとCrashする現象が出ています。 Adobe Flash Player 20.0.0.270 - 脳脂肪のパクリメモ http://d.hatena.ne.jp/noushibou/20160102/1451724506 Crashが対応された20.0.0.270は、下からインストーラがダウンロードできます(Windows7)。 Adobe Flash Playerの配布 | Adobe http://www.adobe.com/jp/products/flashplayer/distribution3.html Windows10、8.1の場合インストーラからでは更新できず、Windows Updateでの更新を待つことになります。 Adobe Flash Player 20.0.0.270 Update on 02 Jan. 2016 | Volitional Engineering http://winveg.com/win/adobe-flash-player-20-0-0-270-02-jan-2016/ 1&amp;frasl;4 追記 フォーラムでLOCOさんより対処法を教えていただきました。ありがとうございます。 http://kuku.neko2.net/?num=3246</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/flash.png</eyecatch>
-          <datetimeUnix>1451833200</datetimeUnix>
         </item>
       
     

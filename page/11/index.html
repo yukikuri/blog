@@ -46,6 +46,22 @@
       
         <div class="col-sm-6">
         <article class="li">
+  <a href="http://blog.anciasoft.jp/post/kaspersky/" class="clearfix" title="Kasperskyでの誤検知について">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
+    <div class="detail">
+      <span class='li-header'><time>2010・06・12</time></span>
+      <h2 class="title">Kasperskyでの誤検知について</h2>
+      <div class="summary">KasperskyでTabManagerがウイルスと検知されることで、Kaspersky社より誤検知であると連絡がありました。連絡した次の日に対応していただき定義データベースが更新され、現在TabManagerはウイルスと検知されなくなっています。次の日に対応してもらえるとは、、Kaspersky社の対応に好印象です。 http://www.virustotal.com/で調べるとTabManagerは誤検知されやすいようで、まだいくつかウイルスと出ています。サイズが小さいからでしょうか。</div>
+    </div>
+  </a>
+  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> </div>
+</article>
+
+      </div>
+      
+      
+        <div class="col-sm-6">
+        <article class="li">
   <a href="http://blog.anciasoft.jp/post/post-52/" class="clearfix" title="高DPI設定、中央ハイライト">
     <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/dpi.png);"></div>
     <div class="detail">
@@ -155,22 +171,6 @@
 
       </div>
       
-      
-        <div class="col-sm-6">
-        <article class="li">
-  <a href="http://blog.anciasoft.jp/post/explorerbarplus-38/" class="clearfix" title="ExplorerBarPlus 1.4.1">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/default.jpg);"></div>
-    <div class="detail">
-      <span class='li-header'><time>2010・04・26</time></span>
-      <h2 class="title">ExplorerBarPlus 1.4.1</h2>
-      <div class="summary">更新内容&nbsp;&nbsp;ダウンロード Ancia0.8.0.6で分かったBSTRのパラメータ渡し誤りのバグを修正しています。そのほか、あまりバージョンアップしていなかったので、気になったところを直しています。SimpleFavPanelのアイコンを変更していますが、元のアイコンは、削除していないので、パネルのアイコン設定から変更できます。 BSTRのパラメータ渡し誤りというのは、 inline void func(BSTR bstr){ ・・・ } 関数１ inline void func(LPWCSTR psz) 関数２ { BSTR bstr=SysAllocString(psz); func(bstr); SysFreeString(bstr); } というのがあるとき、 TCHAR sz[256]; //CStringもなぜか、関数１が呼ばれる lstrcpy(sz, _T(&ldquo;aaa&rdquo;)); func(sz); が、関数２ではなく関数１を呼んでしまうというものです。これは、オーバーロードの仕様？で、constより、完全一致のBSTR(WCHAR*)が優先的に一致していることだと思います。関数１の名前を変更したので、全て直っているはずです。直した後はAnciaで落ちなくなりました。 v1.4.0の4/25日のインストーラで、インストールが不十分だったので、インストーラを差し替えています。もし、v1.4.0をインストールした方は、v1.4.1をインストール、または、再度v1.4.0のインストールをお願いします。</div>
-    </div>
-  </a>
-  <div class="tags tagright"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/programming/" class="tag">programming</a> </div>
-</article>
-
-      </div>
-      
     </div>
 
     
@@ -216,6 +216,18 @@
   <div class="section">
     <header><div class="title">Latest</div></header>
     <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="http://blog.anciasoft.jp/post/ancia19120/" class="clearfix">
+    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19120.jpg);"></div>
+    <div class="detail">
+      <time>2016・07・26</time>
+      <h2 class="title">Ancia Ver1.9.120 リリース</h2>
+      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
+    </div>
+  </a>
+</article>
+</div>
       
       <div class="sm"><article class="li">
   <a href="http://blog.anciasoft.jp/post/ancia-chrome055/" class="clearfix">
@@ -325,18 +337,6 @@
 </article>
 </div>
       
-      <div class="sm"><article class="li">
-  <a href="http://blog.anciasoft.jp/post/ancia19118/" class="clearfix">
-    <div class="image" style="background-image: url(http://blog.anciasoft.jp/img/19118.jpg);"></div>
-    <div class="detail">
-      <time>2016・03・23</time>
-      <h2 class="title">Ancia Ver1.9.118 のリリース内容</h2>
-      <div class="tags"><a href="http://blog.anciasoft.jp/tags/online-soft/" class="tag">online soft</a> <a href="http://blog.anciasoft.jp/tags/release/" class="tag">release</a> </div>
-    </div>
-  </a>
-</article>
-</div>
-      
     </div>
   </div>
 
@@ -352,11 +352,11 @@
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/no-category/">no-category (5)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (186)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/online-soft/">online-soft (187)</a>
     
       <a class="tag" href="http://blog.anciasoft.jp/tags/programming/">programming (39)</a>
     
-      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (6)</a>
+      <a class="tag" href="http://blog.anciasoft.jp/tags/release/">release (7)</a>
     
     </div>
   </div>
