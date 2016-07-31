@@ -35,5 +35,5 @@ function stickycb(sticky, visible) {
 document.addEventListener('DOMContentLoaded',function(){
   new Sticky('sticky', stickycb);
   window.setTimeout(hide_new(), 0);
-  article_ani();
+  //article_ani();
 });
