@@ -6,8 +6,86 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-07-26 00:00:01 &#43;0900 JST</updated>
+    <updated>2016-08-16 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.122 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19122/</link>
+          <pubDate>2016-08-16 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19122/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.122をリリースしています。報告がありました特定の証明書エラーがある場合、ページが開けない重大な不具合が修正されています。
+報告ありがとうございます。また、IE10以降限定ですが、Blink版と同じような新しいバージョン情報表示と更新チェック機能を追加しています。
+更新内容は次の通りとなります。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:590eabbdcfca912fcd478a336eeb3375&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;オプション設定にカーソルブラウズ時に確認を表示するかの設定追加(設定名:confirmCursorBrowse 規定:表示する)&lt;/strong&gt;
+&lt;p&gt;カーソルブラウジングへの切り替えの際(規定ではF7キー)、Internet Explorerと同じように確認メッセージを表示するようにしています。この確認メッセージを表示する/しない設定を追加しています。
+「次回、この確認を省略する」からでも off にできます。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/caretbrowsing.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;IE10以降の環境でchrome:newtabでの新しい「よく表示するページ」「バージョン情報」表示のサポート。「バージョン情報」からは1.9.123リリース後アプリケーションの更新が可能です&lt;/strong&gt;
+&lt;p&gt;chrome:newtab から「よく表示するページ」「バージョン情報」が表示できます。chrome:newtab は直接アドレスバーに入力する必要があります。
+「バージョン情報」ではバージョン情報のコピーや、リリースがあるかのチェックも行えます。リリースがあると、ダウンロード・展開・再起動まで行うことができます。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/19122version.jpg&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;chrome:newtab はIE10以降でのみサポートされます。今後、現在の新規タブ表示を今回の chrome:newtab に変更し、さらにIE10～を動作環境にする可能性があります。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;証明書エラーのページで、証明書エラーが連続する場合や特定の証明書で遷移しないページがあるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;証明書で特定のエラーが出る場合や証明書のエラーが連続すると証明書エラーページから遷移できない問題を修正しています。報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Youtubeなどページ側でフルスクリーンとなったとき、タブ切り替えやタブ閉じでもフルスクリーンが解除されないのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;Youtubeなどページ側からフルスクリーンした場合、Internet Explorer ではタブを閉じる・タブを切り替えるとフルスクリーンが解除される動作でした。Ancia でも同じ動作としています。報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ページ側からのフルスクリーンが行われたとき、フルスクリーンを解除してもページ側がフルスクリーンのままであるのを修正(ただし、フルスクリーン解除でウインドウいっぱいへのフルウインドウ表示への切り替えの場合は、ページ側フルスクリーン表示が継続されます)&lt;/strong&gt;
+&lt;p&gt;Internet Explorer と同じようにフルスクリーンを解除したとき、ページ側も解除するようにしています。
+ただし、フルスクリーンから画面いっぱい表示(フルウインドウ表示)に切り替えた場合は、ページ側のフルスクリーン表示は解除しません。&lt;/p&gt;
+&lt;p&gt;
+これは、ウインドウいっぱいに表示したままの状態で任意のサイズで表示可能にするためです。例えば、Youtubeの動画をフルスクリーンではなく任意のサイズで画面いっぱいに表示ができます。
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/youtubefullwindow.jpg&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Firefoxのブックマークが取り込めないのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;Firefox 48からブックマークデータベースに変更があり、Ancia でFirefox のブックマーク読み込みが失敗していました。この問題を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;「セキュリティで保護されているコンテンツのみ表示」確認を、ダイアログではなく下部へのシンプルな確認メッセージに変更(メッセージへ何も操作しない場合、自動で非表示になります) 注: Google画像検索では常に出るため、Google画像検索ではこのメッセージを抑止しています&lt;/strong&gt;
+&lt;p&gt;https ページに http の画像などが存在していると、セキュリティの警告ダイアログが表示されていましたが、ダイアログではなく Internet Explorerのような簡易的なメッセージ表示にしています。
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/mixedcontent.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;ダイアログ表示だと確認するまでページ読み込みが止まってしまいますが、簡易メッセージ表示により止まることなく読み込みが行われます。&lt;/p&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;テキストから生成されたリンクオープン確認を、ダイアログではなく下部へのシンプルな確認メッセージに変更&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;テキストから生成されたリンクオープン時、開くURLを変更可能に&lt;/strong&gt;
+&lt;p&gt;テキストからリンクを自動で生成されたとき、開くときの確認をダイアログではなく、簡易メッセージに変更しています。これまでは開く URL を変更できませんでしたが、今回より変更可能です。
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/textlinkmessage.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;カーソルブラウズ時に有効にするか確認メッセージを表示するように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ユーザスクリプトの実行エラーで、ダイアログではなく下部へのシンプルな確認メッセージに変更(メッセージへ何も操作しない場合、自動で非表示になります)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ユーザスクリプトの実行エラーメッセージ表示で、設定をデフォルトon(今までのshowActiveScriptError設定が失われますが、メッセージ表示時にすぐoffにできます)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ページでのスクリプトエラーメッセージ表示で、ダイアログではなく下部へのシンプルな確認メッセージに変更&lt;/strong&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ページでのスクリプトエラーメッセージ表示の設定保存方法を変更(showPageScriptError設定が失われますが、onに設定している場合は、再度の設定をお願いします)&lt;/strong&gt;
+&lt;p&gt;他スクリプトエラーメッセージなども簡易的なメッセージ表示に変更しています。一部設定が失われますが、メッセージ部分で表示を行わない設定に変更することができます。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/activescripterror.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/pagescripterror.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;sqlite3.14.1に更新&lt;/strong&gt;
+&lt;p&gt;sqlite3.dll のバージョンを更新しています。&lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite Home Page&lt;/a&gt; で配布されているファイルと同じです。&lt;/p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:590eabbdcfca912fcd478a336eeb3375&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19122.zip&#34;&gt;ダウンロード Ancia 1.9.122&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19122Beta&#34;&gt;更新一覧 Ancia 1.9.122&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:590eabbdcfca912fcd478a336eeb3375&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.122をリリースしています。報告がありました特定の証明書エラーがある場合、ページが開けない重大な不具合が修正されています。 報告ありがとうございます。また、IE10以降限定ですが、Blink版と同じような新しいバージョン情報表示と更新チェック機能を追加しています。 更新内容は次の通りとなります。 更新内容 add オプション設定にカーソルブラウズ時に確認を表示するかの設定追加(設定名:confirmCursorBrowse 規定:表示する) カーソルブラウジングへの切り替えの際(規定ではF7キー)、Internet Explorerと同じように確認メッセージを表示するようにしています。この確認メッセージを表示する/しない設定を追加しています。 「次回、この確認を省略する」からでも off にできます。 add IE10以降の環境でchrome:newtabでの新しい「よく表示するページ」「バージョン情報」表示のサポート。「バージョン情報」からは1.9.123リリース後アプリケーションの更新が可能です chrome:newtab から「よく表示するページ」「バージョン情報」が表示できます。chrome:newtab は直接アドレスバーに入力する必要があります。 「バージョン情報」ではバージョン情報のコピーや、リリースがあるかのチェックも行えます。リリースがあると、ダウンロード・展開・再起動まで行うことができます。 chrome:newtab はIE10以降でのみサポートされます。今後、現在の新規タブ表示を今回の chrome:newtab に変更し、さらにIE10～を動作環境にする可能性があります。 fix 証明書エラーのページで、証明書エラーが連続する場合や特定の証明書で遷移しないページがあるのを修正 報告ありがとうございます 証明書で特定のエラーが出る場合や証明書のエラーが連続すると証明書エラーページから遷移できない問題を修正しています。報告ありがとうございました。 fix Youtubeなどページ側でフルスクリーンとなったとき、タブ切り替えやタブ閉じでもフルスクリーンが解除されないのを修正 報告ありがとうございます Youtubeなどページ側からフルスクリーンした場合、Internet Explorer ではタブを閉じる・タブを切り替えるとフルスクリーンが解除される動作でした。Ancia でも同じ動作としています。報告ありがとうございました。 fix ページ側からのフルスクリーンが行われたとき、フルスクリーンを解除してもページ側がフルスクリーンのままであるのを修正(ただし、フルスクリーン解除でウインドウいっぱいへのフルウインドウ表示への切り替えの場合は、ページ側フルスクリーン表示が継続されます) Internet Explorer と同じようにフルスクリーンを解除したとき、ページ側も解除するようにしています。 ただし、フルスクリーンから画面いっぱい表示(フルウインドウ表示)に切り替えた場合は、ページ側のフルスクリーン表示は解除しません。 これは、ウインドウいっぱいに表示したままの状態で任意のサイズで表示可能にするためです。例えば、Youtubeの動画をフルスクリーンではなく任意のサイズで画面いっぱいに表示ができます。 fix Firefoxのブックマークが取り込めないのを修正 報告ありがとうございます Firefox 48からブックマークデータベースに変更があり、Ancia でFirefox のブックマーク読み込みが失敗していました。この問題を修正しています。報告ありがとうございます。 mod 「セキュリティで保護されているコンテンツのみ表示」確認を、ダイアログではなく下部へのシンプルな確認メッセージに変更(メッセージへ何も操作しない場合、自動で非表示になります) 注: Google画像検索では常に出るため、Google画像検索ではこのメッセージを抑止しています https ページに http の画像などが存在していると、セキュリティの警告ダイアログが表示されていましたが、ダイアログではなく Internet Explorerのような簡易的なメッセージ表示にしています。 ダイアログ表示だと確認するまでページ読み込みが止まってしまいますが、簡易メッセージ表示により止まることなく読み込みが行われます。 mod テキストから生成されたリンクオープン確認を、ダイアログではなく下部へのシンプルな確認メッセージに変更 mod テキストから生成されたリンクオープン時、開くURLを変更可能に テキストからリンクを自動で生成されたとき、開くときの確認をダイアログではなく、簡易メッセージに変更しています。これまでは開く URL を変更できませんでしたが、今回より変更可能です。 mod カーソルブラウズ時に有効にするか確認メッセージを表示するように mod ユーザスクリプトの実行エラーで、ダイアログではなく下部へのシンプルな確認メッセージに変更(メッセージへ何も操作しない場合、自動で非表示になります)</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19122.jpg</eyecatch>
+          <datetimeUnix>1471273201</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -503,40 +581,6 @@ Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34
           <desctext>更新内容 Ancia Chrome Version 0.5.2 ダウンロード Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。 更新内容 add rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。 fix Twitterの動画が再生できなくなっていたのを修正 fix Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。 動画再生で、コントロール表示ができるものは表示するようにしています。 fix Flash上など、特定の場合でメニューが表示されないのを修正 ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。 Flash上に限らず、メニューが出ない部分は出るようになったと思います。 fix 稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決 マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。 今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。 fix Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。 mod ソースの表示では、view-sourceプロトコルハンドラを使用するように 今までは、IEのHTMLエディタでソースを開いていましたが、 本バージョンよりview-sourceプロトコルによりソースを表示します。 残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。 mod Ancia1.9.118までの更新を反映(全てではありません) Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。 mod blink版Chrome/49.0.2623.110に更新 現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。 少し自分で使ってみた感じですが、どうもスクロールが Google Chrome と比べてスムーズではない感じがします。ここは改善したいところです。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/anciachrome052.jpg</eyecatch>
           <datetimeUnix>1459868400</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia でのSkinのご紹介</title>
-          <link>http://blog.anciasoft.jp/post/anciaskin/</link>
-          <pubDate>2016-03-27 23:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/anciaskin/</guid>
-          <description>
-
-&lt;p&gt;Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。&lt;/p&gt;
-
-&lt;h2 id=&#34;タブスキンのご紹介:7e602d60a734472642398847b04921ba&#34;&gt;タブスキンのご紹介&lt;/h2&gt;
-
-&lt;p&gt;作者：g13131gさん&lt;/p&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。&lt;br /&gt;
-ダウンロード: &lt;a href=&#34;http://forum.anciasoft.jp/download/file.php?id=132&#34;&gt;ancia_tabskin_pack.zip&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blog.anciasoft.jp/img/ancia_tabskin_preview.png&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/ancia_tabskin_preview.png&#34; alt=&#34;タブスキンイメージ&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;skin/default/ui配下に上書きして使用できます。
-標準のスキンよりactiveなタブが強調表示されるスキンとなっています。
-DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。&lt;/p&gt;
-
-&lt;p&gt;詳しいスキン説明についてはこちらをご覧いただければと思います。&lt;br /&gt;
-&lt;a href=&#34;http://forum.anciasoft.jp/viewtopic.php?f=5&amp;amp;t=354&#34;&gt;Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://forum.anciasoft.jp/viewtopic.php?f=5&amp;amp;t=349&#34;&gt;Anciaソフトウェアフォーラム • トピック - タブスキン紹介&lt;/a&gt;&lt;/p&gt;
-</description>
-          <desctext>Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。 タブスキンのご紹介 作者：g13131gさん ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。 ダウンロード: ancia_tabskin_pack.zip skin/default/ui配下に上書きして使用できます。 標準のスキンよりactiveなタブが強調表示されるスキンとなっています。 DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。 詳しいスキン説明についてはこちらをご覧いただければと思います。 Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版 Anciaソフトウェアフォーラム • トピック - タブスキン紹介</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
-          <datetimeUnix>1459087200</datetimeUnix>
         </item>
       
     
