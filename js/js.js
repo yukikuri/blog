@@ -32,6 +32,7 @@ function stickycb(sticky, visible) {
   elem.classList.toggle('sticky-visible');
 }
 
+AOS.init({duration: 1000});
 document.addEventListener('DOMContentLoaded',function(){
   new Sticky('sticky', stickycb);
   window.setTimeout(hide_new(), 0);
