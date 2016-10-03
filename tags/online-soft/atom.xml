@@ -6,8 +6,120 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-08-16 00:00:01 &#43;0900 JST</updated>
+    <updated>2016-10-04 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.6 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome056/</link>
+          <pubDate>2016-10-04 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome056/</guid>
+          <description>
+
+&lt;p&gt;Ancia Chrome Ver 0.5.6 をリリースしています。
+今後の更新で最難関と思われたメディア再生に対応しています。0.5.5 使用中の方は、chrome://tabs/#version から更新を行えます。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;mp3,mp4などChromeと同等のmedia再生に対応 TwitterやVineなど動画再生が可能に&lt;/strong&gt;
+&lt;p&gt;動画が再生できないことは既定のブラウザにできないほど致命的なもので対応に悩んでいましたが、いろいろ調べやっと対応することができました。
+ライセンスについても調べていますが、労力がかかっているため内容は一切伏せさせていただきます。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;証明書にエラーがあるページでは、空のページ表示ではなくエラー内容を表示するように&lt;/strong&gt;
+&lt;p&gt;HTTPS のページで証明書でエラーがある場合、Google Chrome と同じエラー画面を表示するようにしています。
+Google Chrome では「セキュリティに関する事象についての詳細を Google に自動送信します。」のチェックがありますが、
+Ancia Chrome ではチェックは非表示で送信することはありません。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;border&#39; src=&#39;http://blog.anciasoft.jp/img/ssherror.png&#39;&gt;&lt;/div&gt;&lt;p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;sourcetree://などの外部プロトコルで確認画面を出しオープンできるように&lt;/strong&gt;
+&lt;p&gt;外部プロトコルのリンクを開く際何もしていませんでしたが、確認画面を出しオープン可能になりました。
+「このようなリンク設定をすべて保存する」は、起動中のアプリケーションに保存されます。再起動すると設定は失われ、再度確認画面が表示されます。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/externalprotocol.png&#39;&gt;&lt;/div&gt;&lt;p&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Twitter動作不安定に対する対策(window.notificationを動作deniedでのサポート) 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;Twitterにログインすると window.notification を参照しエラーが出ていたため、window.notification を denied動作(許可しない) でサポートしています。
+0.5.6 でしばらくツイートしてみましたが特に不安定になることはありませんでした。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のタブから新規タブを開くと、空のタブが生成されることがあるのを修正&lt;/strong&gt;
+&lt;p&gt;Amazon で新規タブが開かれる場合、無駄に空タブができる報告がありましたが、このような空タブができる場合を修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;開発者ツールの表示で選択要素がメニューでの選択要素とならないのを修正&lt;/strong&gt;
+&lt;p&gt;右クリックから「検証(I)」で開発者ツールを表示すると、初期の選択要素が右クリックした要素になるよう対応しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;メニュー表示でメモリの2重開放などバグ修正&lt;/strong&gt;
+&lt;p&gt;右クリック動作でメモリ2重開放があったため修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;オプション設定ショートカットキーでBackspaceの表示が常に0になるのを修正&lt;/strong&gt;
+&lt;p&gt;オプション設定のショートカットキーで Backspace を登録するとショートカットキー表示がおかしい問題を修正しています。
+Trident 版でも起こる問題で、Trident 版は次回更新対応されます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;TabManagerでBlink版のタブ一覧が表示できないのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブスナップショットが動作していないのを修正&lt;/strong&gt;
+&lt;p&gt;Blink板では TabManager での表示とタブスナップショットが動作していませんでしたが、0.5.6 から動作可能になりました。
+TabManager でのタブのプロセスIDがレンダラプロセスではありませんが、今後対応予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;zoomの拡大率がおかしいのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;起動時や閉じたタブの開き直しでzoom状態が復元されないのを修正&lt;/strong&gt;
+&lt;p&gt;ズームの拡大率が実際と合わない動作でしたが、正常な拡大率になるよう対応しています。タブを開きなおした時もズームを復元するようにしています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;consoleメッセージがdebug.logに吐き出されるのを抑止&lt;/strong&gt;
+&lt;p&gt;ページ側の Javascript で console 出力を行うと、debug.log に吐き出され、ページによっては多量に出力される場合がありました。
+そのため、debug.log のサイズが肥大化することがありましたが、 これを抑止しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;mp3,mp4再生伴いFlashでの疑似再生機能を削除&lt;/strong&gt;
+&lt;p&gt;メディア再生対応でmp3などを Flash で疑似再生する機能が不要となりましたので削除しています。
+chrome://tabs/#version から更新した場合は、疑似再生でのファイルも自動で削除されます(resource/loader 配下)。
+resource/loader 配下はもう使用されませんので、手動での削除しても大丈夫です。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;videoタグやaudioタグ、canvasタグでメニュー項目をChromeと同等に&lt;/strong&gt;
+&lt;p&gt;一部の要素で右クリックメニューが通常時のものが出ていましたが、各タグ固有メニューを表示するようにしています。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/mediamenu.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ChromiumよりDirectWrite有効無効の処理が削除されたため、DirectWrite有効無効オプション削除&lt;/strong&gt;
+&lt;p&gt;Chromium 52への更新でコードから Direct Write の有効無効オプションが削除されていました。
+さらにコードから DirectWrite が有効かのチェック自体も削除され、DirectWrite 前提のコードのように見えます。&lt;/p&gt;
+&lt;p&gt;Chromium は数百のプロジェクトからなっており、DirectWrite がどこで使用されているかの判断は難しい状況です。
+そのため、DirectWrite 有効無効を独自で対応するのは無理があり、残念ながら DirectWrite 有効無効のサポートは不可となります。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Backspaceで戻るが標準ショートカットではなくなったため、Backspaceで戻るを既定のショートカットキーに追加(ショートカットキーを変更している場合は、Backspace動作をオプション設定から追加する必要があります)&lt;/strong&gt;
+&lt;p&gt;今までは Blink 側の規定ショートカットキーで Backspace で戻るが行われていました。&lt;/p&gt;
+&lt;p&gt;52.0.2743.116 への更新で Backspace で戻るが既定のショートカットから削除されたため、アプリケーション側のショートカットキーに Backspace を追加しています。
+もし、0.5.6 以前にショートカットキーを変更している場合、オプション設定から Backspace を追加する必要があります。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ホイールスクロールでもたつくことがあることへの対策&lt;/strong&gt;
+&lt;p&gt;ページスクロールでもたつくことがあり対応しましたが、、こちら環境で試すとまだもたつきが発生しています。もう少し調べてみます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報 chrome://tabs/#version からバージョン情報のコピーを可能に&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報のコピーでFlash Versionは、PPAPI側のFlash Versionがコピーされるように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;履歴でabout:関係は追加しないように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報の表示は ダイアログではなく chrome://newtab/#version を開くように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;chrome://newtab/#version から利用規約(EULA)を表示できるように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;初期のよく表示するサイトで配布ページと開発ブログを表示(よく表示しなければいずれ消えます)&lt;/strong&gt;
+&lt;p&gt;新規タブ表示で細かな対応を行っています。バージョン情報で chrome://newtab/#version を表示するのは、Trident 版でも行う予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;デフォルトで起動時に開始するページは前回起動時のページに&lt;/strong&gt;
+&lt;p&gt;規定でアプリケーション起動時は、前回起動時のタブを復元する設定としています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Update時、不要になったファイルを削除するように&lt;/strong&gt;
+&lt;p&gt;chrome://tabs/#version から更新を行った場合、動作に不要となったファイルを削除するようにしています。
+今回は resource/loader 配下が該当します。&lt;/p&gt;
+&lt;p&gt;chrome://tabs/#version と chrome://newtab/#version と2種類ありますが、どちらも同じ内容を表示します。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ChromiumのBuild環境の影響でサポートOSからXpとVistaを削除(XPとVistaは動作対象外となります)&lt;/strong&gt;
+&lt;p&gt;Chromium の Build 環境で XP が非サポートとなったことから、動作環境から XP と Vista を削除しています。
+厳密にはVista だと動作できるかもしれませんが、こちらでは未確認です。
+ただ、XP ではコンパイラが XP を対象としないもののため、起動することはできません。&lt;/p&gt;
+&lt;p&gt;Chromium は数百ものプロジェクトからなっていると書きましたが、数百のプロジェクトを同じコンパイル設定で Build します。
+独自に XP も対象とする Build とすることもできますが、数百のプロジェクトが XP も対象としているコードとなっているかの保証はなく、
+独自に対応するにもプロジェクト数の関係で無理があります。残念ながら XP への対応は難しくなります。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/52.0.2743.116に更新&lt;/strong&gt;
+&lt;p&gt;2016/10/3 現在 Google Chrome の最新バージョンは、53.0.2785.143 ですが、時間の関係で最新にはできませんでした。
+次回更新時はできるだけ最新バージョンに更新予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;0.5.6 からタブの切り替えでちらつきが発生するようになりました。できれば早めに対処したいところです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome056.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.5&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0560&#34;&gt;更新一覧 Ancia Chrome 0.5.5&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Chrome Ver 0.5.6 をリリースしています。 今後の更新で最難関と思われたメディア再生に対応しています。0.5.5 使用中の方は、chrome://tabs/#version から更新を行えます。 更新内容 add mp3,mp4などChromeと同等のmedia再生に対応 TwitterやVineなど動画再生が可能に 動画が再生できないことは既定のブラウザにできないほど致命的なもので対応に悩んでいましたが、いろいろ調べやっと対応することができました。 ライセンスについても調べていますが、労力がかかっているため内容は一切伏せさせていただきます。 add 証明書にエラーがあるページでは、空のページ表示ではなくエラー内容を表示するように HTTPS のページで証明書でエラーがある場合、Google Chrome と同じエラー画面を表示するようにしています。 Google Chrome では「セキュリティに関する事象についての詳細を Google に自動送信します。」のチェックがありますが、 Ancia Chrome ではチェックは非表示で送信することはありません。 add sourcetree://などの外部プロトコルで確認画面を出しオープンできるように 外部プロトコルのリンクを開く際何もしていませんでしたが、確認画面を出しオープン可能になりました。 「このようなリンク設定をすべて保存する」は、起動中のアプリケーションに保存されます。再起動すると設定は失われ、再度確認画面が表示されます。 fix Twitter動作不安定に対する対策(window.notificationを動作deniedでのサポート) 報告ありがとうございます Twitterにログインすると window.notification を参照しエラーが出ていたため、window.notification を denied動作(許可しない) でサポートしています。 0.5.6 でしばらくツイートしてみましたが特に不安定になることはありませんでした。 fix 特定のタブから新規タブを開くと、空のタブが生成されることがあるのを修正 Amazon で新規タブが開かれる場合、無駄に空タブができる報告がありましたが、このような空タブができる場合を修正しています。 fix 開発者ツールの表示で選択要素がメニューでの選択要素とならないのを修正 右クリックから「検証(I)」で開発者ツールを表示すると、初期の選択要素が右クリックした要素になるよう対応しています。 fix メニュー表示でメモリの2重開放などバグ修正 右クリック動作でメモリ2重開放があったため修正しています。 fix オプション設定ショートカットキーでBackspaceの表示が常に0になるのを修正 オプション設定のショートカットキーで Backspace を登録するとショートカットキー表示がおかしい問題を修正しています。 Trident 版でも起こる問題で、Trident 版は次回更新対応されます。 fix TabManagerでBlink版のタブ一覧が表示できないのを修正 fix タブスナップショットが動作していないのを修正 Blink板では TabManager での表示とタブスナップショットが動作していませんでしたが、0.5.6 から動作可能になりました。 TabManager</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome056.jpg</eyecatch>
+          <datetimeUnix>1475506800</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -502,85 +614,6 @@ DPIの違いも考慮されており、各画像サイズが用意され高DPI�
           <desctext>Ancia用のタブスキンを作成いただいたため、ご紹介させていただきます。作成ありがとうございます。 タブスキンのご紹介 作者：g13131gさん ダウンロードはこちらより行えます(g13131gさんより編集・改変は許可なく自由にしていただいて構わないとのことです)。 ダウンロード: ancia_tabskin_pack.zip skin/default/ui配下に上書きして使用できます。 標準のスキンよりactiveなタブが強調表示されるスキンとなっています。 DPIの違いも考慮されており、各画像サイズが用意され高DPIでも使用できるものです。 詳しいスキン説明についてはこちらをご覧いただければと思います。 Anciaソフトウェアフォーラム • トピック - タブスキン修正・派生版 Anciaソフトウェアフォーラム • トピック - タブスキン紹介</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
           <datetimeUnix>1459087200</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Ver1.9.118 のリリース内容</title>
-          <link>http://blog.anciasoft.jp/post/ancia19118/</link>
-          <pubDate>2016-03-23 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia19118/</guid>
-          <description>
-
-&lt;p&gt;Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:f559805c96877e5a809e768dd3bb7410&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;アプリアイコンの処理でリソースリークしているのを修正&lt;/strong&gt;
-&lt;p&gt;
-報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118mixer.jpg&#34;&gt;&lt;/div&gt;&lt;br /&gt;
-この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。
-報告ありがとうございました。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正&lt;/strong&gt;
-&lt;p&gt;Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正&lt;/strong&gt;
-&lt;p&gt;非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、
-固まったようになる問題を対応しています。
-報告ありがとうございました。&lt;/p&gt;
-&lt;p&gt;
-巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。
-この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、
-この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。&lt;/p&gt;
-&lt;p&gt;ハイライト、インライン検索でもこの対応を行う予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;GMailでURLが複数開かない状態でのTrident安定動作化&lt;/strong&gt;
-&lt;p&gt;GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。
-もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように&lt;/strong&gt;
-&lt;p&gt;Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。
-タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。&lt;/p&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118flash.jpg&#34;&gt;&lt;/div&gt;
-&lt;p&gt;
-アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。
-そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに
-関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。
-&lt;/p&gt;
-&lt;p&gt;現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブリストのサイドバー、ツールバーでfaviconを表示するように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;リンクのAタグコピーscriptでAタグを小文字に&lt;/strong&gt;
-&lt;p&gt;他は軽い更新を行っています。
-お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。
-Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。
-&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:f559805c96877e5a809e768dd3bb7410&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://www.egrath.net/download/Ancia19118.zip&#34;&gt;Ancia1.9.118.zip&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19118Beta&#34;&gt;更新一覧&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ブログリニューアルなど:f559805c96877e5a809e768dd3bb7410&#34;&gt;ブログリニューアルなど&lt;/h2&gt;
-
-&lt;p&gt;ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、
-管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。
-コメントはForumがあるため、受け付けることはやめることにしました。&lt;/p&gt;
-
-&lt;p&gt;今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。
-DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&gt;
-
-&lt;p&gt;今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。&lt;/p&gt;
-</description>
-          <desctext>Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに 関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/19118.jpg</eyecatch>
-          <datetimeUnix>1458658800</datetimeUnix>
         </item>
       
     

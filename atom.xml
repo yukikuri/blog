@@ -6,8 +6,120 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-08-16 00:00:01 &#43;0900 JST</updated>
+    <updated>2016-10-04 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.6 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome056/</link>
+          <pubDate>2016-10-04 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome056/</guid>
+          <description>
+
+&lt;p&gt;Ancia Chrome Ver 0.5.6 をリリースしています。
+今後の更新で最難関と思われたメディア再生に対応しています。0.5.5 使用中の方は、chrome://tabs/#version から更新を行えます。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;mp3,mp4などChromeと同等のmedia再生に対応 TwitterやVineなど動画再生が可能に&lt;/strong&gt;
+&lt;p&gt;動画が再生できないことは既定のブラウザにできないほど致命的なもので対応に悩んでいましたが、いろいろ調べやっと対応することができました。
+ライセンスについても調べていますが、労力がかかっているため内容は一切伏せさせていただきます。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;証明書にエラーがあるページでは、空のページ表示ではなくエラー内容を表示するように&lt;/strong&gt;
+&lt;p&gt;HTTPS のページで証明書でエラーがある場合、Google Chrome と同じエラー画面を表示するようにしています。
+Google Chrome では「セキュリティに関する事象についての詳細を Google に自動送信します。」のチェックがありますが、
+Ancia Chrome ではチェックは非表示で送信することはありません。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;border&#39; src=&#39;http://blog.anciasoft.jp/img/ssherror.png&#39;&gt;&lt;/div&gt;&lt;p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;sourcetree://などの外部プロトコルで確認画面を出しオープンできるように&lt;/strong&gt;
+&lt;p&gt;外部プロトコルのリンクを開く際何もしていませんでしたが、確認画面を出しオープン可能になりました。
+「このようなリンク設定をすべて保存する」は、起動中のアプリケーションに保存されます。再起動すると設定は失われ、再度確認画面が表示されます。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/externalprotocol.png&#39;&gt;&lt;/div&gt;&lt;p&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Twitter動作不安定に対する対策(window.notificationを動作deniedでのサポート) 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;Twitterにログインすると window.notification を参照しエラーが出ていたため、window.notification を denied動作(許可しない) でサポートしています。
+0.5.6 でしばらくツイートしてみましたが特に不安定になることはありませんでした。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のタブから新規タブを開くと、空のタブが生成されることがあるのを修正&lt;/strong&gt;
+&lt;p&gt;Amazon で新規タブが開かれる場合、無駄に空タブができる報告がありましたが、このような空タブができる場合を修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;開発者ツールの表示で選択要素がメニューでの選択要素とならないのを修正&lt;/strong&gt;
+&lt;p&gt;右クリックから「検証(I)」で開発者ツールを表示すると、初期の選択要素が右クリックした要素になるよう対応しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;メニュー表示でメモリの2重開放などバグ修正&lt;/strong&gt;
+&lt;p&gt;右クリック動作でメモリ2重開放があったため修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;オプション設定ショートカットキーでBackspaceの表示が常に0になるのを修正&lt;/strong&gt;
+&lt;p&gt;オプション設定のショートカットキーで Backspace を登録するとショートカットキー表示がおかしい問題を修正しています。
+Trident 版でも起こる問題で、Trident 版は次回更新対応されます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;TabManagerでBlink版のタブ一覧が表示できないのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブスナップショットが動作していないのを修正&lt;/strong&gt;
+&lt;p&gt;Blink板では TabManager での表示とタブスナップショットが動作していませんでしたが、0.5.6 から動作可能になりました。
+TabManager でのタブのプロセスIDがレンダラプロセスではありませんが、今後対応予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;zoomの拡大率がおかしいのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;起動時や閉じたタブの開き直しでzoom状態が復元されないのを修正&lt;/strong&gt;
+&lt;p&gt;ズームの拡大率が実際と合わない動作でしたが、正常な拡大率になるよう対応しています。タブを開きなおした時もズームを復元するようにしています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;consoleメッセージがdebug.logに吐き出されるのを抑止&lt;/strong&gt;
+&lt;p&gt;ページ側の Javascript で console 出力を行うと、debug.log に吐き出され、ページによっては多量に出力される場合がありました。
+そのため、debug.log のサイズが肥大化することがありましたが、 これを抑止しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;mp3,mp4再生伴いFlashでの疑似再生機能を削除&lt;/strong&gt;
+&lt;p&gt;メディア再生対応でmp3などを Flash で疑似再生する機能が不要となりましたので削除しています。
+chrome://tabs/#version から更新した場合は、疑似再生でのファイルも自動で削除されます(resource/loader 配下)。
+resource/loader 配下はもう使用されませんので、手動での削除しても大丈夫です。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;videoタグやaudioタグ、canvasタグでメニュー項目をChromeと同等に&lt;/strong&gt;
+&lt;p&gt;一部の要素で右クリックメニューが通常時のものが出ていましたが、各タグ固有メニューを表示するようにしています。
+&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/mediamenu.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ChromiumよりDirectWrite有効無効の処理が削除されたため、DirectWrite有効無効オプション削除&lt;/strong&gt;
+&lt;p&gt;Chromium 52への更新でコードから Direct Write の有効無効オプションが削除されていました。
+さらにコードから DirectWrite が有効かのチェック自体も削除され、DirectWrite 前提のコードのように見えます。&lt;/p&gt;
+&lt;p&gt;Chromium は数百のプロジェクトからなっており、DirectWrite がどこで使用されているかの判断は難しい状況です。
+そのため、DirectWrite 有効無効を独自で対応するのは無理があり、残念ながら DirectWrite 有効無効のサポートは不可となります。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Backspaceで戻るが標準ショートカットではなくなったため、Backspaceで戻るを既定のショートカットキーに追加(ショートカットキーを変更している場合は、Backspace動作をオプション設定から追加する必要があります)&lt;/strong&gt;
+&lt;p&gt;今までは Blink 側の規定ショートカットキーで Backspace で戻るが行われていました。&lt;/p&gt;
+&lt;p&gt;52.0.2743.116 への更新で Backspace で戻るが既定のショートカットから削除されたため、アプリケーション側のショートカットキーに Backspace を追加しています。
+もし、0.5.6 以前にショートカットキーを変更している場合、オプション設定から Backspace を追加する必要があります。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ホイールスクロールでもたつくことがあることへの対策&lt;/strong&gt;
+&lt;p&gt;ページスクロールでもたつくことがあり対応しましたが、、こちら環境で試すとまだもたつきが発生しています。もう少し調べてみます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報 chrome://tabs/#version からバージョン情報のコピーを可能に&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報のコピーでFlash Versionは、PPAPI側のFlash Versionがコピーされるように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;履歴でabout:関係は追加しないように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報の表示は ダイアログではなく chrome://newtab/#version を開くように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;chrome://newtab/#version から利用規約(EULA)を表示できるように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;初期のよく表示するサイトで配布ページと開発ブログを表示(よく表示しなければいずれ消えます)&lt;/strong&gt;
+&lt;p&gt;新規タブ表示で細かな対応を行っています。バージョン情報で chrome://newtab/#version を表示するのは、Trident 版でも行う予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;デフォルトで起動時に開始するページは前回起動時のページに&lt;/strong&gt;
+&lt;p&gt;規定でアプリケーション起動時は、前回起動時のタブを復元する設定としています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Update時、不要になったファイルを削除するように&lt;/strong&gt;
+&lt;p&gt;chrome://tabs/#version から更新を行った場合、動作に不要となったファイルを削除するようにしています。
+今回は resource/loader 配下が該当します。&lt;/p&gt;
+&lt;p&gt;chrome://tabs/#version と chrome://newtab/#version と2種類ありますが、どちらも同じ内容を表示します。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ChromiumのBuild環境の影響でサポートOSからXpとVistaを削除(XPとVistaは動作対象外となります)&lt;/strong&gt;
+&lt;p&gt;Chromium の Build 環境で XP が非サポートとなったことから、動作環境から XP と Vista を削除しています。
+厳密にはVista だと動作できるかもしれませんが、こちらでは未確認です。
+ただ、XP ではコンパイラが XP を対象としないもののため、起動することはできません。&lt;/p&gt;
+&lt;p&gt;Chromium は数百ものプロジェクトからなっていると書きましたが、数百のプロジェクトを同じコンパイル設定で Build します。
+独自に XP も対象とする Build とすることもできますが、数百のプロジェクトが XP も対象としているコードとなっているかの保証はなく、
+独自に対応するにもプロジェクト数の関係で無理があります。残念ながら XP への対応は難しくなります。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/52.0.2743.116に更新&lt;/strong&gt;
+&lt;p&gt;2016/10/3 現在 Google Chrome の最新バージョンは、53.0.2785.143 ですが、時間の関係で最新にはできませんでした。
+次回更新時はできるだけ最新バージョンに更新予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;0.5.6 からタブの切り替えでちらつきが発生するようになりました。できれば早めに対処したいところです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome056.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.5&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0560&#34;&gt;更新一覧 Ancia Chrome 0.5.5&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Chrome Ver 0.5.6 をリリースしています。 今後の更新で最難関と思われたメディア再生に対応しています。0.5.5 使用中の方は、chrome://tabs/#version から更新を行えます。 更新内容 add mp3,mp4などChromeと同等のmedia再生に対応 TwitterやVineなど動画再生が可能に 動画が再生できないことは既定のブラウザにできないほど致命的なもので対応に悩んでいましたが、いろいろ調べやっと対応することができました。 ライセンスについても調べていますが、労力がかかっているため内容は一切伏せさせていただきます。 add 証明書にエラーがあるページでは、空のページ表示ではなくエラー内容を表示するように HTTPS のページで証明書でエラーがある場合、Google Chrome と同じエラー画面を表示するようにしています。 Google Chrome では「セキュリティに関する事象についての詳細を Google に自動送信します。」のチェックがありますが、 Ancia Chrome ではチェックは非表示で送信することはありません。 add sourcetree://などの外部プロトコルで確認画面を出しオープンできるように 外部プロトコルのリンクを開く際何もしていませんでしたが、確認画面を出しオープン可能になりました。 「このようなリンク設定をすべて保存する」は、起動中のアプリケーションに保存されます。再起動すると設定は失われ、再度確認画面が表示されます。 fix Twitter動作不安定に対する対策(window.notificationを動作deniedでのサポート) 報告ありがとうございます Twitterにログインすると window.notification を参照しエラーが出ていたため、window.notification を denied動作(許可しない) でサポートしています。 0.5.6 でしばらくツイートしてみましたが特に不安定になることはありませんでした。 fix 特定のタブから新規タブを開くと、空のタブが生成されることがあるのを修正 Amazon で新規タブが開かれる場合、無駄に空タブができる報告がありましたが、このような空タブができる場合を修正しています。 fix 開発者ツールの表示で選択要素がメニューでの選択要素とならないのを修正 右クリックから「検証(I)」で開発者ツールを表示すると、初期の選択要素が右クリックした要素になるよう対応しています。 fix メニュー表示でメモリの2重開放などバグ修正 右クリック動作でメモリ2重開放があったため修正しています。 fix オプション設定ショートカットキーでBackspaceの表示が常に0になるのを修正 オプション設定のショートカットキーで Backspace を登録するとショートカットキー表示がおかしい問題を修正しています。 Trident 版でも起こる問題で、Trident 版は次回更新対応されます。 fix TabManagerでBlink版のタブ一覧が表示できないのを修正 fix タブスナップショットが動作していないのを修正 Blink板では TabManager での表示とタブスナップショットが動作していませんでしたが、0.5.6 から動作可能になりました。 TabManager</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome056.jpg</eyecatch>
+          <datetimeUnix>1475506800</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -522,65 +634,6 @@ Google Chrome の最新の更新内容は &lt;a target=&#34;_blank&#34; href=&#3
           <desctext>Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。 Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。 1) Adobe Flash Player インストールのページを開く https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。 2) 開いたページで、手順1と手順2を選択する 手順1のオペレーティングシステムを環境のOSを選択します。 手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。 3) 提供オプションを任意で選択する インストールで追加のソフトウェアを入れるかの提供オプションがありますが、任意です。提供オプションはチェックオフでもインストール可能です。 4) 「インストール」ボタンからインストーラをダウンロード 「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。 あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/flash.png</eyecatch>
           <datetimeUnix>1460214000</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Chrome Ver0.5.2 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia-chrome052/</link>
-          <pubDate>2016-04-06 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia-chrome052/</guid>
-          <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0520&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome052.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:59bb5e72e481b86c70066f35d020139d&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように&lt;/strong&gt;
-&lt;p&gt;Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。
-&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/crashview.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Twitterの動画が再生できなくなっていたのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように&lt;/strong&gt;
-&lt;p&gt;
-TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。
-&lt;/p&gt;
-&lt;p&gt;動画再生で、コントロール表示ができるものは表示するようにしています。&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/videocontrol.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Flash上など、特定の場合でメニューが表示されないのを修正&lt;/strong&gt;
-&lt;p&gt;ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。
-Flash上に限らず、メニューが出ない部分は出るようになったと思います。&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/flashmenu.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決&lt;/strong&gt;
-&lt;p&gt;マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。
-今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます&lt;/strong&gt;
-&lt;p&gt;ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ソースの表示では、view-sourceプロトコルハンドラを使用するように&lt;/strong&gt;
-&lt;p&gt;今までは、IEのHTMLエディタでソースを開いていましたが、
-本バージョンよりview-sourceプロトコルによりソースを表示します。
-残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Ancia1.9.118までの更新を反映(全てではありません)&lt;/strong&gt;
-&lt;p&gt;Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/49.0.2623.110に更新&lt;/strong&gt;
-&lt;p&gt;現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。
-Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34;http://googlechromereleases.blogspot.jp/2016/03/stable-channel-update_28.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+GoogleChromeReleases+(Google+Chrome+Releases)&#34;&gt;Chrome Releases: Stable Channel Update&lt;/a&gt;
-から確認できます。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-
-&lt;p&gt;少し自分で使ってみた感じですが、どうもスクロールが Google Chrome と比べてスムーズではない感じがします。ここは改善したいところです。&lt;/p&gt;
-</description>
-          <desctext>更新内容 Ancia Chrome Version 0.5.2 ダウンロード Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。 更新内容 add rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。 fix Twitterの動画が再生できなくなっていたのを修正 fix Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。 動画再生で、コントロール表示ができるものは表示するようにしています。 fix Flash上など、特定の場合でメニューが表示されないのを修正 ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。 Flash上に限らず、メニューが出ない部分は出るようになったと思います。 fix 稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決 マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。 今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。 fix Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。 mod ソースの表示では、view-sourceプロトコルハンドラを使用するように 今までは、IEのHTMLエディタでソースを開いていましたが、 本バージョンよりview-sourceプロトコルによりソースを表示します。 残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。 mod Ancia1.9.118までの更新を反映(全てではありません) Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。 mod blink版Chrome/49.0.2623.110に更新 現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。 少し自分で使ってみた感じですが、どうもスクロールが Google Chrome と比べてスムーズではない感じがします。ここは改善したいところです。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/anciachrome052.jpg</eyecatch>
-          <datetimeUnix>1459868400</datetimeUnix>
         </item>
       
     
