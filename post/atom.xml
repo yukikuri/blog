@@ -6,8 +6,79 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-10-04 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-10-31 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.123 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19123/</link>
+          <pubDate>2016-10-31 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19123/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.123をリリースしています。混在したコンテンツのメッセージが頻繁に表示される場合がある現象が改善されています。
+また、IEとは別に独自に履歴を管理するようにし、新規タブから独自履歴からよく表示するページや履歴の検索・削除ができます。
+更新内容は次の通りとなります。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:2971c67e2000513ec2f446c8458bf2ee&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;独自の履歴管理をサポート。IEでの履歴を削除しても独自の履歴が残ります(独自履歴も削除可能)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;chrome://newtabで、独自履歴に基づいたよく使用するサイトの表示と、表示履歴を管理・削除できるように(初回、使用するサイト表示が空表示になるのは仕様です)&lt;/strong&gt;
+&lt;p&gt;
+IE とは別に履歴をアプリケーションで保存するようにしました。履歴は chrome://newtab/#history から直接開くことができます。
+IE では履歴がエクスプローラで表示できるからか取得に手間がかかる・保存されないページがあるなどありましたので、独自に保存する仕様にしました。
+IE での履歴を削除しても独自履歴は残るため、ポータブルでも履歴の参照ができます。サイドバーの履歴表示が IE 側を参照していますが、独自履歴を表示する仕様にする予定です。
+&lt;/p&gt;
+&lt;p&gt;
+Google Chrome や Internet Explorer からの履歴インポートをサポートするかもしれません。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;混在コンテンツの表示でのメッセージ表示で、すべてのコンテンツを表示・アンセキュアなコンテンツを非表示を選択し、設定保存できるように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;混在コンテンツメッセージの表示がよく行われるところで、表示条件をIEと同等に&lt;/strong&gt;
+&lt;p&gt;「この表示を規定にする」をチェックすることで、表示の設定を保存できるようにしています。またメッセージ表示が邪魔にならないよう小さめになるよう調整しています。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/mixedcontent19123.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;混在コンテンツメッセージの表示が、頻繁に出る(特に画像関係が原因)ことがあるため、表示条件がIEと同様になるよう対応しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;localhome,tabsは廃止し、about:localhome,about:tabsはchrome://newtabを開く仕様に&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;動作対象をIE9以降に IE8以前でも起動できますが、新規タブ画面の表示が乱れる弊害が出ます(まだオプション設定は開けますが今後IE8以前では開けなくなります)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報の表示は chrome://newtab/#version を開くように&lt;/strong&gt;
+&lt;p&gt;以前のバージョンのローカルホームや新規タブページは IE8 でも動くことを想定してか古い HTML や Javascript を使用していたため、表示が重くなっていました。
+今回 IE9 以降を動作対象とし、 古い Javascript が動作しないようにしたことにより新規タブ表示が早くなっています。&lt;/p&gt;
+&lt;p&gt;
+また、新規タブはローカルホームといった特定のページを開くのではなく、履歴やバージョン情報など表示できる共通の chrome://newtab を開くことで動作を簡略化しています(例えば、新規タブを開けば、バージョン情報を表示するときメニューなどを探す必要がない)。
+&lt;/p&gt;
+&lt;p&gt;オプション設定まだ IE8 以前でも開くことができますが、今後開けなくなる予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;クラッシュページで、about:crashはchrome://crashを表示するように、クラッシュページのデザインを変更・動作を軽量に&lt;/strong&gt;
+&lt;p&gt;クラッシュページの表示方法を見直し、画像を svg 埋め込みにするなど表示が軽くなるよう対応しています。対応前はクラッシュ情報ファイルを常に読み込むようにしていましたが、クラッシュ内容を表示するまでは読み込まないなどです。
+また、戻るや進むを行うとクラッシュしたページのURLなどが情報が失われていましたが、失われないよう対応しています。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/crash_page.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;デフォルトで起動時に開始するページは前回起動時のページに&lt;/strong&gt;
+&lt;p&gt;ローカルホームを廃止したことにより、起動時にローカルホームを開く設定の場合は、自動的に前回起動時のページを開くよう置き換えられます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ツールバーでchevronを右クリックするとおかしな動作になるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;混在コンテンツの表示で、メッセージではなくダイアログが出ることがあるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブがアクティブではないとき、ページのスクリプトエラーメッセージなどの表示サイズがおかしいのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;chrome://newtab#versionでversion情報コピーの一部がおかしいのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ページからwindows storeアプリインストールページが開けない問題が特定のページで起こるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;コンパイラをvc2015に変更&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;sqlite3.15.0に更新&lt;/strong&gt;
+&lt;p&gt;他は細かな不具合を修正などを行っています。Windows Storeアプリインストールページ開けない特定ページは、Edge の拡張機能インストールのページが該当します。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:2971c67e2000513ec2f446c8458bf2ee&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19123.zip&#34;&gt;ダウンロード Ancia 1.9.123&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19123Beta&#34;&gt;更新一覧 Ancia 1.9.123&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:2971c67e2000513ec2f446c8458bf2ee&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.123をリリースしています。混在したコンテンツのメッセージが頻繁に表示される場合がある現象が改善されています。 また、IEとは別に独自に履歴を管理するようにし、新規タブから独自履歴からよく表示するページや履歴の検索・削除ができます。 更新内容は次の通りとなります。 更新内容 add 独自の履歴管理をサポート。IEでの履歴を削除しても独自の履歴が残ります(独自履歴も削除可能) add chrome://newtabで、独自履歴に基づいたよく使用するサイトの表示と、表示履歴を管理・削除できるように(初回、使用するサイト表示が空表示になるのは仕様です) IE とは別に履歴をアプリケーションで保存するようにしました。履歴は chrome://newtab/#history から直接開くことができます。 IE では履歴がエクスプローラで表示できるからか取得に手間がかかる・保存されないページがあるなどありましたので、独自に保存する仕様にしました。 IE での履歴を削除しても独自履歴は残るため、ポータブルでも履歴の参照ができます。サイドバーの履歴表示が IE 側を参照していますが、独自履歴を表示する仕様にする予定です。 Google Chrome や Internet Explorer からの履歴インポートをサポートするかもしれません。 add 混在コンテンツの表示でのメッセージ表示で、すべてのコンテンツを表示・アンセキュアなコンテンツを非表示を選択し、設定保存できるように mod 混在コンテンツメッセージの表示がよく行われるところで、表示条件をIEと同等に 「この表示を規定にする」をチェックすることで、表示の設定を保存できるようにしています。またメッセージ表示が邪魔にならないよう小さめになるよう調整しています。 混在コンテンツメッセージの表示が、頻繁に出る(特に画像関係が原因)ことがあるため、表示条件がIEと同様になるよう対応しています。 mod localhome,tabsは廃止し、about:localhome,about:tabsはchrome://newtabを開く仕様に mod 動作対象をIE9以降に IE8以前でも起動できますが、新規タブ画面の表示が乱れる弊害が出ます(まだオプション設定は開けますが今後IE8以前では開けなくなります) mod バージョン情報の表示は chrome://newtab/#version を開くように 以前のバージョンのローカルホームや新規タブページは IE8 でも動くことを想定してか古い HTML や Javascript を使用していたため、表示が重くなっていました。 今回 IE9 以降を動作対象とし、 古い Javascript が動作しないようにしたことにより新規タブ表示が早くなっています。 また、新規タブはローカルホームといった特定のページを開くのではなく、履歴やバージョン情報など表示できる共通の chrome://newtab を開くことで動作を簡略化しています(例えば、新規タブを開けば、バージョン情報を表示するときメニューなどを探す必要がない)。 オプション設定まだ IE8 以前でも開くことができますが、今後開けなくなる予定です。 mod クラッシュページで、about:crashはchrome://crashを表示するように、クラッシュページのデザインを変更・動作を軽量に クラッシュページの表示方法を見直し、画像を svg 埋め込みにするなど表示が軽くなるよう対応しています。対応前はクラッシュ情報ファイルを常に読み込むようにしていましたが、クラッシュ内容を表示するまでは読み込まないなどです。 また、戻るや進むを行うとクラッシュしたページのURLなどが情報が失われていましたが、失われないよう対応しています。 mod デフォルトで起動時に開始するページは前回起動時のページに ローカルホームを廃止したことにより、起動時にローカルホームを開く設定の場合は、自動的に前回起動時のページを開くよう置き換えられます。 fix ツールバーでchevronを右クリックするとおかしな動作になるのを修正</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19123.png</eyecatch>
+          <datetimeUnix>1477839601</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -599,41 +670,6 @@ Google Chrome の最新の更新内容は &lt;a target=&#34;_blank&#34; href=&#3
           <desctext>ダウンロード 更新内容 Ancia Chrome Version 0.5.3 ダウンロード (AnciaChrome053.7z) Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。 更新内容 mod タブを多く開くとパフォーマンスが大幅に低下するのを改善 タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。 mod blink版Chrome/49.0.2623.112に更新 4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容は Chrome Releases: Stable Channel Update から確認できます。 49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/anciachrome053.jpg</eyecatch>
           <datetimeUnix>1460300400</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</title>
-          <link>http://blog.anciasoft.jp/post/install-ppapi-flash/</link>
-          <pubDate>2016-04-10 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/install-ppapi-flash/</guid>
-          <description>&lt;p&gt;Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。&lt;/p&gt;
-
-&lt;p&gt;Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1) Adobe Flash Player インストールのページを開く&lt;/strong&gt;&lt;br /&gt;
-&lt;a target=&#34;_blank&#34; href=&#34;https://get.adobe.com/jp/flashplayer/otherversions/&#34;&gt;&lt;a href=&#34;https://get.adobe.com/flashplayer/otherversions/&#34;&gt;https://get.adobe.com/flashplayer/otherversions/&lt;/a&gt;&lt;/a&gt; を適当なブラウザで開きます。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2) 開いたページで、手順1と手順2を選択する&lt;/strong&gt;&lt;br /&gt;
-手順1のオペレーティングシステムを環境のOSを選択します。&lt;br /&gt;
-手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。&lt;br /&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-select.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3) 提供オプションを任意で選択する&lt;/strong&gt;&lt;br /&gt;
-インストールで追加のソフトウェアを入れるかの提供オプションがありますが、任意です。提供オプションはチェックオフでもインストール可能です。&lt;br /&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-option.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4) 「インストール」ボタンからインストーラをダウンロード&lt;/strong&gt;&lt;br /&gt;
-「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。&lt;br /&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/install-ppapi-flash-download.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。&lt;/p&gt;
-</description>
-          <desctext>Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。 Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。 1) Adobe Flash Player インストールのページを開く https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。 2) 開いたページで、手順1と手順2を選択する 手順1のオペレーティングシステムを環境のOSを選択します。 手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。 3) 提供オプションを任意で選択する インストールで追加のソフトウェアを入れるかの提供オプションがありますが、任意です。提供オプションはチェックオフでもインストール可能です。 4) 「インストール」ボタンからインストーラをダウンロード 「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。 あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/flash.png</eyecatch>
-          <datetimeUnix>1460214000</datetimeUnix>
         </item>
       
     
