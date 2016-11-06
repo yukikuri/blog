@@ -6,8 +6,48 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-10-31 00:00:01 &#43;0900 JST</updated>
+    <updated>2016-11-07 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.124 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19124/</link>
+          <pubDate>2016-11-07 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19124/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.124をリリースしています。アプリケーションの終了時にウインドウの位置保存で失敗する場合があり、次回起動時に設定情報が失われる致命的な不具合が修正されています。
+更新内容は次の通りとなります。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:387ef2b5f7252ba62d65d8ed971c7f73&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定の場合、アプリケーションのウインドウ位置保存が正常に動作せず、次回起動時に設定情報が失われるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;
+設定情報を setting/App.json に書き込む際、異常な値が書き込まれる場合がありました。次回起動時に異常な設定値を読み取ることができない不具合を修正しています。報告ありがとうございました。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;高DPI環境で一部のダイアログのテキストが途切れているのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;よく表示するサイトがない場合、情報なしを表示&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;XP以前の環境でaboutダイアログが出ないのを表示するように&lt;/strong&gt;
+&lt;p&gt;他は細かな不具合修正などを行っています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:387ef2b5f7252ba62d65d8ed971c7f73&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19124.zip&#34;&gt;ダウンロード Ancia 1.9.124&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19124Beta&#34;&gt;更新一覧 Ancia 1.9.124&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:387ef2b5f7252ba62d65d8ed971c7f73&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.124をリリースしています。アプリケーションの終了時にウインドウの位置保存で失敗する場合があり、次回起動時に設定情報が失われる致命的な不具合が修正されています。 更新内容は次の通りとなります。 更新内容 fix 特定の場合、アプリケーションのウインドウ位置保存が正常に動作せず、次回起動時に設定情報が失われるのを修正 報告ありがとうございます 設定情報を setting/App.json に書き込む際、異常な値が書き込まれる場合がありました。次回起動時に異常な設定値を読み取ることができない不具合を修正しています。報告ありがとうございました。 fix 高DPI環境で一部のダイアログのテキストが途切れているのを修正 mod よく表示するサイトがない場合、情報なしを表示 mod XP以前の環境でaboutダイアログが出ないのを表示するように 他は細かな不具合修正などを行っています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.124 更新一覧はこちらとなります。更新一覧 Ancia 1.9.124 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19124.png</eyecatch>
+          <datetimeUnix>1478444401</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -592,65 +632,6 @@ Google Chrome の最新の更新内容は &lt;a target=&#34;_blank&#34; href=&#3
           <desctext>ダウンロード 更新内容 Ancia Chrome Version 0.5.3 ダウンロード (AnciaChrome053.7z) Ancia Chrome Ver0.5.3 をリリースしています。重くなる現象が常用に耐えられないため内容は少ないですが、更新を行っています。 更新内容 mod タブを多く開くとパフォーマンスが大幅に低下するのを改善 タブを多く開くと、スクロールがもっさりになるなど全体的に重くなる現象が改善しています。Google Chrome と同様の速度になったと思います。 mod blink版Chrome/49.0.2623.112に更新 4/7に更新されたGoogle Chrome 安定板 49.0.2623.112 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容は Chrome Releases: Stable Channel Update から確認できます。 49.0.2623.112の更新内容を見ると、テキストに方向指定がある場合のテキスト幅計算問題が修正されているようです。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/anciachrome053.jpg</eyecatch>
           <datetimeUnix>1460300400</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Chrome Ver0.5.2 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia-chrome052/</link>
-          <pubDate>2016-04-06 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia-chrome052/</guid>
-          <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0520&#34;&gt;更新内容 Ancia Chrome Version 0.5.2&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome052.7z&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:59bb5e72e481b86c70066f35d020139d&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように&lt;/strong&gt;
-&lt;p&gt;Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。
-&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/crashview.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Twitterの動画が再生できなくなっていたのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように&lt;/strong&gt;
-&lt;p&gt;
-TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。
-&lt;/p&gt;
-&lt;p&gt;動画再生で、コントロール表示ができるものは表示するようにしています。&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/videocontrol.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Flash上など、特定の場合でメニューが表示されないのを修正&lt;/strong&gt;
-&lt;p&gt;ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。
-Flash上に限らず、メニューが出ない部分は出るようになったと思います。&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/flashmenu.png&#34;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決&lt;/strong&gt;
-&lt;p&gt;マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。
-今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます&lt;/strong&gt;
-&lt;p&gt;ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ソースの表示では、view-sourceプロトコルハンドラを使用するように&lt;/strong&gt;
-&lt;p&gt;今までは、IEのHTMLエディタでソースを開いていましたが、
-本バージョンよりview-sourceプロトコルによりソースを表示します。
-残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Ancia1.9.118までの更新を反映(全てではありません)&lt;/strong&gt;
-&lt;p&gt;Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/49.0.2623.110に更新&lt;/strong&gt;
-&lt;p&gt;現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。
-Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34;http://googlechromereleases.blogspot.jp/2016/03/stable-channel-update_28.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+GoogleChromeReleases+(Google+Chrome+Releases)&#34;&gt;Chrome Releases: Stable Channel Update&lt;/a&gt;
-から確認できます。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-
-&lt;p&gt;少し自分で使ってみた感じですが、どうもスクロールが Google Chrome と比べてスムーズではない感じがします。ここは改善したいところです。&lt;/p&gt;
-</description>
-          <desctext>更新内容 Ancia Chrome Version 0.5.2 ダウンロード Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。 更新内容 add rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。 fix Twitterの動画が再生できなくなっていたのを修正 fix Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。 動画再生で、コントロール表示ができるものは表示するようにしています。 fix Flash上など、特定の場合でメニューが表示されないのを修正 ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。 Flash上に限らず、メニューが出ない部分は出るようになったと思います。 fix 稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決 マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。 今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。 fix Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。 mod ソースの表示では、view-sourceプロトコルハンドラを使用するように 今までは、IEのHTMLエディタでソースを開いていましたが、 本バージョンよりview-sourceプロトコルによりソースを表示します。 残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。 mod Ancia1.9.118までの更新を反映(全てではありません) Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。 mod blink版Chrome/49.0.2623.110に更新 現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。 少し自分で使ってみた感じですが、どうもスクロールが Google Chrome と比べてスムーズではない感じがします。ここは改善したいところです。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/anciachrome052.jpg</eyecatch>
-          <datetimeUnix>1459868400</datetimeUnix>
         </item>
       
     

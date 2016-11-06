@@ -6,8 +6,48 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-10-31 00:00:01 &#43;0900 JST</updated>
+    <updated>2016-11-07 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.124 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19124/</link>
+          <pubDate>2016-11-07 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19124/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.124をリリースしています。アプリケーションの終了時にウインドウの位置保存で失敗する場合があり、次回起動時に設定情報が失われる致命的な不具合が修正されています。
+更新内容は次の通りとなります。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:387ef2b5f7252ba62d65d8ed971c7f73&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定の場合、アプリケーションのウインドウ位置保存が正常に動作せず、次回起動時に設定情報が失われるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;
+設定情報を setting/App.json に書き込む際、異常な値が書き込まれる場合がありました。次回起動時に異常な設定値を読み取ることができない不具合を修正しています。報告ありがとうございました。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;高DPI環境で一部のダイアログのテキストが途切れているのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;よく表示するサイトがない場合、情報なしを表示&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;XP以前の環境でaboutダイアログが出ないのを表示するように&lt;/strong&gt;
+&lt;p&gt;他は細かな不具合修正などを行っています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:387ef2b5f7252ba62d65d8ed971c7f73&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19124.zip&#34;&gt;ダウンロード Ancia 1.9.124&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19124Beta&#34;&gt;更新一覧 Ancia 1.9.124&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:387ef2b5f7252ba62d65d8ed971c7f73&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.124をリリースしています。アプリケーションの終了時にウインドウの位置保存で失敗する場合があり、次回起動時に設定情報が失われる致命的な不具合が修正されています。 更新内容は次の通りとなります。 更新内容 fix 特定の場合、アプリケーションのウインドウ位置保存が正常に動作せず、次回起動時に設定情報が失われるのを修正 報告ありがとうございます 設定情報を setting/App.json に書き込む際、異常な値が書き込まれる場合がありました。次回起動時に異常な設定値を読み取ることができない不具合を修正しています。報告ありがとうございました。 fix 高DPI環境で一部のダイアログのテキストが途切れているのを修正 mod よく表示するサイトがない場合、情報なしを表示 mod XP以前の環境でaboutダイアログが出ないのを表示するように 他は細かな不具合修正などを行っています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.124 更新一覧はこちらとなります。更新一覧 Ancia 1.9.124 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19124.png</eyecatch>
+          <datetimeUnix>1478444401</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -606,85 +646,6 @@ Google Chrome の最新の更新内容は&lt;a target=&#34;_blank&#34; href=&#34
           <desctext>更新内容 Ancia Chrome Version 0.5.2 ダウンロード Ancia Chrome Ver0.5.2 をリリースしています。更新内容は次の通りとなります。 更新内容 add rendererプロセスがcrashした際、Google Chromeと同等のCrash表示を行うように Google Chromeと同様のCrash時のタブ表示をサポートしています。再読み込みボタンによりCrashしたページを再度表示することができます。 fix Twitterの動画が再生できなくなっていたのを修正 fix Instagramの動画再生でclickが反応しないため、Instagramはautoplayにより再生するように TwitterやInstagramで動画が再生できない現象が再発したため、再生できるよう対応しています。Instagramでは、動画のクリック判定がどうしても行われないため、Instagramだけは自動再生が行われます(現状での仕様)。 動画再生で、コントロール表示ができるものは表示するようにしています。 fix Flash上など、特定の場合でメニューが表示されないのを修正 ニコニコ動画や生放送でのコメントなど、Flash上でのメニューが出ない問題に対応しています。 Flash上に限らず、メニューが出ない部分は出るようになったと思います。 fix 稀にメニューの項目が選択できない、マウスジェスチャでボタンが選択できないの問題部分が特定でき、現象の解決 マウスジェスチャやブラウザのメニュー項目が選択できない現象が稀に発生し今まで原因が不明でした。 今回原因が特定でき、項目が選択できない等の問題は発生しないと思います。 fix Popupから新しいタブを開くとcrashするのを修正 報告ありがとうございます ポップウインドウからリンクを新規で開くとクラッシュしていた問題に対応しています。 mod ソースの表示では、view-sourceプロトコルハンドラを使用するように 今までは、IEのHTMLエディタでソースを開いていましたが、 本バージョンよりview-sourceプロトコルによりソースを表示します。 残念ながら仕様となりHTMLエディタで開くオプション設定を追加する予定はしばらくありません。 mod Ancia1.9.118までの更新を反映(全てではありません) Windows7でアプリケーションアイコンのリソースリークなど Ancia での更新内容を反映しています。 mod blink版Chrome/49.0.2623.110に更新 現時点で Google Chrome 最新安定板 49.0.2623.110 にBlinkのバージョンを更新しています。 Google Chrome の最新の更新内容はChrome Releases: Stable Channel Update から確認できます。 もし不具合がある場合、ソフトウェアフォーラム までお願いします。 少し自分で使ってみた感じですが、どうもスクロールが Google Chrome と比べてスムーズではない感じがします。ここは改善したいところです。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/anciachrome052.jpg</eyecatch>
           <datetimeUnix>1459868400</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Ver1.9.118 のリリース内容</title>
-          <link>http://blog.anciasoft.jp/post/ancia19118/</link>
-          <pubDate>2016-03-23 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia19118/</guid>
-          <description>
-
-&lt;p&gt;Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:f559805c96877e5a809e768dd3bb7410&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;アプリアイコンの処理でリソースリークしているのを修正&lt;/strong&gt;
-&lt;p&gt;
-報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118mixer.jpg&#34;&gt;&lt;/div&gt;&lt;br /&gt;
-この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。
-報告ありがとうございました。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正&lt;/strong&gt;
-&lt;p&gt;Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正&lt;/strong&gt;
-&lt;p&gt;非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、
-固まったようになる問題を対応しています。
-報告ありがとうございました。&lt;/p&gt;
-&lt;p&gt;
-巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。
-この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、
-この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。&lt;/p&gt;
-&lt;p&gt;ハイライト、インライン検索でもこの対応を行う予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;GMailでURLが複数開かない状態でのTrident安定動作化&lt;/strong&gt;
-&lt;p&gt;GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。
-もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように&lt;/strong&gt;
-&lt;p&gt;Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。
-タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。&lt;/p&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/19118flash.jpg&#34;&gt;&lt;/div&gt;
-&lt;p&gt;
-アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。
-そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに
-関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。
-&lt;/p&gt;
-&lt;p&gt;現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブリストのサイドバー、ツールバーでfaviconを表示するように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;リンクのAタグコピーscriptでAタグを小文字に&lt;/strong&gt;
-&lt;p&gt;他は軽い更新を行っています。
-お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。
-Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。
-&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:f559805c96877e5a809e768dd3bb7410&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://www.egrath.net/download/Ancia19118.zip&#34;&gt;Ancia1.9.118.zip&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19118Beta&#34;&gt;更新一覧&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ブログリニューアルなど:f559805c96877e5a809e768dd3bb7410&#34;&gt;ブログリニューアルなど&lt;/h2&gt;
-
-&lt;p&gt;ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、
-管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。
-コメントはForumがあるため、受け付けることはやめることにしました。&lt;/p&gt;
-
-&lt;p&gt;今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。
-DISQUSへのインポートに時間がかかるかもしれません。&lt;/p&gt;
-
-&lt;p&gt;今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。&lt;/p&gt;
-</description>
-          <desctext>Ancia Ver1.9.118をリリースしています。更新内容は、次の通りとなります。 更新内容 fix Windows7などでミキサーの表示でアプリアイコンが異常に大きいのを修正 fix アプリアイコンの処理でリソースリークしているのを修正 報告をいただきました通り、下のようにWindows7での音量ミキサーアイコンが256サイズで表示されてしまい、音量ミキサーの操作も行えない問題が修正されています。 この問題の修正のおかげでアイコンの設定でリソースリークが見つかり、Windows7以外の環境でもリソースリークが解消されています。 報告ありがとうございました。 fix セキュリティー設定でscriptが無効だとlocalhomeなどが正常でないのを修正 Trident動作安定の対応で、新規タブ表示などでscriptが実行できない場合がありました。報告ありがとうございました。 fix 強大なtextだけのページをopenすると、textlinkの処理に時間がかかりすぎるのを修正 非常にサイズが大きいHTMLではなくTextのページで、Textからリンクを作成する処理に異常に時間がかかり、 固まったようになる問題を対応しています。 報告ありがとうございました。 巨大なTextページを開くと分かるのですが、徐々にTextLinkを生成していく動作になっています。 この動作はTextページだけでなく、通常のHTMLページでも有効です。通常は100ミリ秒もかからないTextLinkの処理ですが、 この修正のおかげでHTMLページでTextLinkに時間がかかる場合でも固まることなくLink化を行います。 ハイライト、インライン検索でもこの対応を行う予定です。 mod GMailでURLが複数開かない状態でのTrident安定動作化 GMailでLinkを開く際多重にタブが開かない状態で、Trident動作を安定化する対応を入れてります。 もしタブが多重に開かれるサイトがあればForumまで報告していただけると幸いです。 mod タブを強制終了したときなどブラウザプロセスが終了しない場合、30秒後に強制的に終了するように Tridentでタブが固まり強制終了すると、プロセスがゾンビ化し終了しない状況が発生することがあります。 タブが固まったときで強制終了し、ゾンビ化したプロセスを見てみると、Flash関係のスレッドが多量に存在するということがありました。 アプリケーションでは、強制終了したタブでTrident側がどのようなスレッドを生成しているかなど動作を把握することは困難です。 そのため、強制終了した際は、正常終了は無理な状況となり、タブをすべて閉じたとき、強制終了した/しないに 関わらずプロセスが30秒で終了しない場合は、強制的に終了するようにしています。 現状ではマルチプロセスとマルチスレッド(ブラウザプロセス生成)で有効で、今後シングルスレッド・マルチスレッドでも有効にする予定です。 mod お気に入りメニューでアプリケーションアイコンなどを表示すると表示に時間がかかるため、URLアイテムのみfavicon表示をする仕様に mod タブリストの保存で、保存チェックを行いやすいように(check部分以外でもcheck状態toggleを可能に) mod タブリストのサイドバー、ツールバーでfaviconを表示するように mod リンクのAタグコピーscriptでAタグを小文字に 他は軽い更新を行っています。 お気に入りメニューでのアイコン表示は、アプリケーションなど特定のアイコンの表示に時間がかかるため、URLアイテムのみFaviconを表示するようにしています。 Faviconはアプリケーションで取得に成功したFaviconを使用します。Faviconが出ない場合は、ページアクセスを行ってみてください。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。Ancia1.9.118.zip 更新一覧はこちらとなります。更新一覧 ブログリニューアルなど ブログは今までデータベースを使用するなど動作環境を選ぶもの、また定期的なバージョンアップが必要なものを使用してきましたが、 管理を単純にするため、セキュリティ的に安心なstaticなものに移行しました。 コメントはForumがあるため、受け付けることはやめることにしました。 今までいただいたコメントは凍結状態として表示するようにしています。コメント表示はDISQUSを使用しています。 DISQUSへのインポートに時間がかかるかもしれません。 今までブログにリリース内容を書くことを行ってきませんでしたが、これからはできる限りブログに更新内容を書いていこうと思います。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/19118.jpg</eyecatch>
-          <datetimeUnix>1458658800</datetimeUnix>
         </item>
       
     
