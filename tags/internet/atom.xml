@@ -6,8 +6,34 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-04-10 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-12-12 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>「Ancia Chrome」が窓の杜大賞にノミネート</title>
+          <link>http://blog.anciasoft.jp/post/madonomori-taisyou-nominate2016/</link>
+          <pubDate>2016-12-12 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/madonomori-taisyou-nominate2016/</guid>
+          <description>&lt;p&gt;「Ancia Chrome」が窓の杜大賞の一覧にノミネートされました。
+まだ作りが甘い部分もありますが、Ancia Chrome がここまで開発を続けられてきたのは、不具合など報告していただいた皆様のおかげです。&lt;/p&gt;
+
+&lt;p&gt;ノミネート作品には、7-Zip など非常に有名なソフトもあります。これを機会にお世話になっているソフト・役に立ったソフトに投票してみてはいかがでしょうか。&lt;/p&gt;
+
+&lt;p&gt;自分は 7-Zip に大変にお世話になっているため(自作ソフトでも LZMA ライブラリを使用)、LZMA なしではソフトの作成はできませんでした。
+7-Zip あっての Ancia Chrome ですので自分のソフトに投票したいところですが、7-Zip に投票しようかなと思っています。&lt;/p&gt;
+
+&lt;p&gt;投票ページは以下のページからとなります。&lt;br /&gt;
+&lt;a href=&#34;http://forest.watch.impress.co.jp/docs/prize/2016/&#34;&gt;【2016年 窓の杜大賞】窓の杜大賞 概要 - 窓の杜&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;※ 締め切りは2016年12月16日(金)正午までとなっています。&lt;/p&gt;
+</description>
+          <desctext>「Ancia Chrome」が窓の杜大賞の一覧にノミネートされました。 まだ作りが甘い部分もありますが、Ancia Chrome がここまで開発を続けられてきたのは、不具合など報告していただいた皆様のおかげです。 ノミネート作品には、7-Zip など非常に有名なソフトもあります。これを機会にお世話になっているソフト・役に立ったソフトに投票してみてはいかがでしょうか。 自分は 7-Zip に大変にお世話になっているため(自作ソフトでも LZMA ライブラリを使用)、LZMA なしではソフトの作成はできませんでした。 7-Zip あっての Ancia Chrome ですので自分のソフトに投票したいところですが、7-Zip に投票しようかなと思っています。 投票ページは以下のページからとなります。 【2016年 窓の杜大賞】窓の杜大賞 概要 - 窓の杜 ※ 締め切りは2016年12月16日(金)正午までとなっています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/madonominate2016.jpg</eyecatch>
+          <datetimeUnix>1481468400</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -262,36 +288,6 @@ Jsonのパーサに使えるかもしれません。&lt;/p&gt;
           <desctext>Windows7用Internet Explorer11がdownload可能となりました。 ダウンロード - Internet Explorer Anciaでは今のところ相性が悪いです。以前報告があるとおり、シングルスレッド・マルチスレッド・マルチプロセスいずれでもタブを10程度開くとJavascriptの動作が次第に遅くなり、そのうち固まります。どうも1ブラウザプロセスでIEコンポを多数作成するとだめなようです。 現時点での解決手段として、オプションからタブの動作をマルチプロセスにし、タブグループのチェックを外します。これでリソースを消費しますが、タブ毎に別プロセスで動作し、Javascriptの問題はとりあえず出なくなります。 タブグループのチェックを外すと、セッションがタブ毎に別々のセッションとなることに注意してください。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
           <datetimeUnix>1384095600</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>新しいメニュー動作</title>
-          <link>http://blog.anciasoft.jp/post/post-62/</link>
-          <pubDate>2013-10-02 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/post-62/</guid>
-          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1939Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia1939.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。&lt;/p&gt;
-
-&lt;p&gt;テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。&lt;br /&gt;
-&lt;img alt=&#34;selectionmenu.png&#34; src=&#34;http://blog.anciasoft.jp/img/selectionmenu.png&#34; width=&#34;521&#34; height=&#34;275&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;imageのメニューだとGoogle画像検索も行えます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;imgmenu.png&#34; src=&#34;http://blog.anciasoft.jp/img/imgmenu.png&#34; width=&#34;417&#34; height=&#34;196&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#34;testfeature_a.png&#34; src=&#34;http://blog.anciasoft.jp/img/testfeature_a.png&#34; width=&#34;595&#34; height=&#34;183&#34;  /&gt;&lt;/p&gt;
-
-&lt;p&gt;メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。&lt;/p&gt;
-</description>
-          <desctext>更新履歴 download 1.3.19でブラウザのメニュー動作を新しくしています。たとえばリンクのメニューだと、「開く」はOfficeのように「開く」が選択できるサブメニューになっています。サブメニューから違うブラウザで開くことができます。「新しいタブで開く」のサブメニューだと、アクティブか非アクティブかタブグループで開くか選択できます。 テキストの選択だとハイライトやインライン検索、さらにGoogle検索や検索エンジン一覧からの選択が可能です。 imageのメニューだとGoogle画像検索も行えます。 新しいメニューの動作は規定ではoffで、オプション設定の「試験機能を使用する - testFeature」をonにしアプリの再起動が必要です。 メニューの内容は、resource/menu_trident.jsonをsetting/customizeにコピーし、setting/customize/menu_trident.jsonを編集することで変更できます。残念ながら変更UIはまだ用意されていません。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/linkmenu.png</eyecatch>
-          <datetimeUnix>1380639600</datetimeUnix>
         </item>
       
     
