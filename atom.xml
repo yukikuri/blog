@@ -6,8 +6,96 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-12-12 00:00:00 &#43;0900 JST</updated>
+    <updated>2016-12-31 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.7 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome057/</link>
+          <pubDate>2016-12-31 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome057/</guid>
+          <description>
+
+&lt;p&gt;今年最後となる Ancia Chrome Ver 0.5.7 をリリースしています。窓の杜大賞は入賞することはなくダメでしたが、投票していただいた方にお礼申し上げます。
+Ver 0.5.7 では、Blink のバージョンを 55.0.2883.87 に更新、Backspace 誤動作の修正、タブを切り替え時のちらつき改善など、多数の更新が含まれます。&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;b&gt;0.5.7 にはバグがあります&lt;/b&gt;
+&lt;p&gt;
+Windows10 の環境でタブをバックグラウンドで開いたとき、まれにホイールスクロールができないバグがあります。
+スクロールできない場合、ページを最新に更新するか、リンククリックなどでページ遷移するとスクロールできるようになります。&lt;/p&gt;
+
+調査中ですが残念ながら原因がわかっていません。原因がわかり次第更新予定です。&lt;/div&gt;
+
+&lt;h2 id=&#34;更新内容:378bf2f53a3a0f6499804cb1a5988bf8&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;フォームなどでBackspaceが効かないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;FlashでBackspaceを入力すると戻ってしまうのを修正&lt;/strong&gt;
+&lt;p&gt;Google Chromeとほぼ同じショートカットキーの判定処理を入れたため、フォームやFlashで入力に問題がありましたが、今回の更新で今後も発生しないと思います。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ホイールのスクロールがもたつくことがあるのを修正&lt;/strong&gt;
+&lt;p&gt;後述の MDI を廃止など表示配置を見直したことで、ホイールスクロールのもたつきがなくなりました。
+ホイールができない問題は、この更新と無関係(ホイールの処理自体は変更していない)と思われ調査中です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;非Activeのとき、captionがactive状態で描画されることがあるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;インライン検索で上下キーでブラウザがスクロールしないのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ダウンロード完了画面でファイル実行などのボタンが何度も実行され、ファイル実行が何度も行われることがあるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;名前を付けて対象を保存で保存タイプなどがおかしい場合があるのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ドロップでの画像を名前を付けて保存などで画像のURL取得に失敗するのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Trident版で発生している貼り付け新規タブが常に先頭に追加されるのを修正(Trident版は次回更新時に反映)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;「新規タブのアクティブ指定」オプションで「ページからの新規タブアクティブ指定」が効いていないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ナビゲートロックが動作していないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;クローズロックタブがマウスジェスチャでの閉じるなど確認なしに閉じられてしまうのを修正&lt;/strong&gt;
+&lt;p&gt;ほか報告がありました不具合修正や気が付いたバグを修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Chrome 54で非サポートとなったwindow.externalをサポートするように(AddSearchProviderなどが動作、AddUserScriptは一時的に動作しません、今後対応予定です)&lt;/strong&gt;
+&lt;p&gt;Chrome 54 から window.external が非サポートとなっています。Ancia Chrome では検索エンジン追加などページから行いたいため、 window.external の一部メソッドを独自にサポートしました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;MDIを廃止。廃止によりタブ切替が高速化。MDI関係の処理(並べて表示など)は現状何もしない動作としています&lt;/strong&gt;
+&lt;p&gt;Chrome のレンダラプロセスはページが表示中(アクティブタブ)だとCPU使用率が増えます。非表示(非アクティブタブ)にするとレンダラプロセスの優先順位を低くしCPU負荷を減らします
+(もう少し書くとメディア再生をしているページは非アクティブでもプロセス優先度が下がりません。メディア再生しているタブは開きすぎないことが Chrome 系ブラウザを軽く使う1つの方法です)。&lt;/p&gt;
+&lt;p&gt;
+MDI 表示で複数ページを同時に表示すると、CPU の使用率が増えUIが重くなるなどの現象が出ます。タブの切り離しができるため、MDI 表示は不要の機能となるため削除しました。&lt;/p&gt;
+&lt;p&gt;Trident版でもこの更新を含める予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Google Chromeで削除されたエンコード変更メニューを今まで通りサポート&lt;/strong&gt;
+&lt;p&gt;Google Chrome でエンコードメニューが削除されてしまいましたが、Ancia Chrome ではエンコードメニューをサポートするようにしました。
+Gogle Chrome でのエンコード関係削除は、 Blink 側でのエンコード変更メソッドごと削除されていますが、エンコード変更メソッドまで削除しなくてもよいのではと思いました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;今まで通りのページ見た目を維持するため、Chrome更新によりページ表示スケールがディスプレイのdpiに従うことを抑止&lt;/strong&gt;
+&lt;p&gt;Blink の更新でページの表示が環境の高DPIに従い自動で拡大表示するようになりました。ですが、Ancia Chrome では、今までのページ見た目を維持するため、自動で高DPIに従わないようにしています。
+強制設定ですが今後高DPI表示に従うよう変更可能にするかもしれません。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Regist.exeはアンチウイルス誤検知が多いため削除&lt;/strong&gt;
+&lt;p&gt;Regist.exe は、アプリケーションを既定のブラウザに設定するため、レジストリに情報を設定することに使用しています。
+Regist.exe がなぜかウイルス誤検知されやすいため削除し、アプリケーションが代わりにレジストリ設定するようにしました。&lt;/p&gt;
+&lt;p&gt;アンチウイルスの誤検知はアンチウイルスソフト側の動作に依存し、作者側ではどうすることもできないため、誤検知されやすいファイルを含めないといった対応等しかできないことをご理解ください。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;localhomeはchrome://newtabを開く仕様に&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;検索履歴でdeleteキーでは検索エンジンを削除しないように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Alt+Tabなどでアプリを切り替えたとき、直前のfocusを維持するように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブを切り離した後、切り離し元windowがactiveになることがあるのを抑止&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ハイライトバーでescapeキーでハイライトをキャンセルした場合、ブラウザへfocusを設定するように、キーワードがない場合バーを閉じるように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;エンコード変更メニューで自動検出をサポート(自動検出メニュー項目を選択した際の動作をサポート)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Twitterの画像変更などでのファイル選択で選択フィルタをGoogle Chromeと同じように 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;複数画面であってもダウンロード画面をアプリを基準とした位置で表示するように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;IEツールバーは非サポートによりメニュー項目を削除&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;開発者ツールを最小化したとき、desktopの左下に画面が残るのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;(仕様情報) フルスクリーンでタスクバーを自動で隠す場合、タスクバーが自動で表示されないのはIEやGoogle Chromeと同じく仕様となります 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;QRコード生成スクリプト(QRCodeGenerator.js)でGoogle Chart APIを使用するように変更&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/55.0.2883.87に更新&lt;/strong&gt;
+&lt;p&gt;他、報告のありましたファイル選択の拡張子をまとめるなどの更新を行っています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:378bf2f53a3a0f6499804cb1a5988bf8&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome057.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.7&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0570&#34;&gt;更新一覧 Ancia Chrome 0.5.7&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:378bf2f53a3a0f6499804cb1a5988bf8&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>今年最後となる Ancia Chrome Ver 0.5.7 をリリースしています。窓の杜大賞は入賞することはなくダメでしたが、投票していただいた方にお礼申し上げます。 Ver 0.5.7 では、Blink のバージョンを 55.0.2883.87 に更新、Backspace 誤動作の修正、タブを切り替え時のちらつき改善など、多数の更新が含まれます。 0.5.7 にはバグがあります Windows10 の環境でタブをバックグラウンドで開いたとき、まれにホイールスクロールができないバグがあります。 スクロールできない場合、ページを最新に更新するか、リンククリックなどでページ遷移するとスクロールできるようになります。 調査中ですが残念ながら原因がわかっていません。原因がわかり次第更新予定です。 更新内容 fix フォームなどでBackspaceが効かないのを修正 報告ありがとうございます fix FlashでBackspaceを入力すると戻ってしまうのを修正 Google Chromeとほぼ同じショートカットキーの判定処理を入れたため、フォームやFlashで入力に問題がありましたが、今回の更新で今後も発生しないと思います。 fix ホイールのスクロールがもたつくことがあるのを修正 後述の MDI を廃止など表示配置を見直したことで、ホイールスクロールのもたつきがなくなりました。 ホイールができない問題は、この更新と無関係(ホイールの処理自体は変更していない)と思われ調査中です。 fix 非Activeのとき、captionがactive状態で描画されることがあるのを修正 fix インライン検索で上下キーでブラウザがスクロールしないのを修正 fix ダウンロード完了画面でファイル実行などのボタンが何度も実行され、ファイル実行が何度も行われることがあるのを修正 fix 名前を付けて対象を保存で保存タイプなどがおかしい場合があるのを修正 報告ありがとうございます fix ドロップでの画像を名前を付けて保存などで画像のURL取得に失敗するのを修正 報告ありがとうございます fix Trident版で発生している貼り付け新規タブが常に先頭に追加されるのを修正(Trident版は次回更新時に反映) fix 「新規タブのアクティブ指定」オプションで「ページからの新規タブアクティブ指定」が効いていないのを修正 報告ありがとうございます fix ナビゲートロックが動作していないのを修正 報告ありがとうございます fix クローズロックタブがマウスジェスチャでの閉じるなど確認なしに閉じられてしまうのを修正 ほか報告がありました不具合修正や気が付いたバグを修正しています。 mod Chrome 54で非サポートとなったwindow.externalをサポートするように(AddSearchProviderなどが動作、AddUserScriptは一時的に動作しません、今後対応予定です) Chrome 54 から window.external が非サポートとなっています。Ancia Chrome では検索エンジン追加などページから行いたいため、 window.external の一部メソッドを独自にサポートしました。 mod MDIを廃止。廃止によりタブ切替が高速化。MDI関係の処理(並べて表示など)は現状何もしない動作としています</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome057.jpg</eyecatch>
+          <datetimeUnix>1483110000</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -573,84 +661,6 @@ Active Scriptの実行Versionが環境に応じて最新のVersionで実行し�
           <desctext>ブログの更新が遅れましたが、2016/5/2 に Ancia Chrome Ver0.5.4 をリリースしています。Blinkのバージョンは49のままですので、XPでも使用できます。 更新内容 add DNSエラーや404エラーなどで、Google Chromeと同様のエラーページを表示を行うように Google Chromeと同等のページエラー表示を可能にしています。 add mp4やmp3直リンを再生可能に mp4やmp3の直リンク表示(??.mp4)などの直接の再生を可能にしています。報告ありがとうございます。 add 新規タブでよく表示すページを表示するように add よく表示するページやHistory、Thumbnailを保存するように(現時点では、よく表示するページを新規タブで表示するのみをサポート) 表示したページの履歴などをローカルに保存するようにしています。新規タブでよく表示するページを表示するようにしてみました。 fix 特定のvideoタグでmedia fallbackが動作しないのを修正 videoタグでsourceの指定方法によりmp4などの再生が行われない場合を修正しています。 fix 特定のFormでsubmit時にcrashするのを修正 報告ありがとうございます 特定のフォームで送信すると、フォームのオートコンプリート関係でクラッシュする問題を修正しています。 fix pdfが表示できないのを修正 PDFが表示できていなかったのを、表示可能になりました。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.5.4 更新一覧はこちらとなります。更新一覧 Ancia Chrome 0.5.4 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/anciachrome054.jpg</eyecatch>
           <datetimeUnix>1463929200</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>速吸なし 水上艦攻6スロットで攻略する2016春イベントE7ゲージ破壊構成</title>
-          <link>http://blog.anciasoft.jp/post/kancolle2016e7last/</link>
-          <pubDate>2016-05-20 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/kancolle2016e7last/</guid>
-          <description>
-
-&lt;p&gt;2016春イベントE7甲は、沼っている人が多そうで現状でも最適な編成が見つかっていない状況ですので、参考にこちらがゲージを破壊した編成を紹介します。
-課金アイテムの洋上補給は使用していませんので、洋上補給を使用したくない人にもおすすめです。なお、削りではなくゲージ破壊の編成です。
-自身はこの編成で3回目の出撃でゲージ破壊ができました。&lt;/p&gt;
-
-&lt;h2 id=&#34;第一艦隊構成:b20f6429ec539c32d4c125202822d855&#34;&gt;第一艦隊構成&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-1.jpg&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;編成は水上打撃での秋津洲固定ルートです。&lt;/p&gt;
-
-&lt;p&gt;軽空母を2隻使用し、搭載数の多い隼鷹改二、飛鷹改を推奨します。搭載数の多いスロットに強力な艦攻を6スロット載せます。
-水上ルートは艦攻が結構残るため、ボスで機動なみの開幕攻撃が期待できます。&lt;/p&gt;
-
-&lt;p&gt;秋津洲には、熟練度MAXの Ro.44水上戦闘機 と 二式水戦改 を載せ制空値を底上げしています(Ro.44水上戦闘機 や二式水戦改 が足りない場合、
-&lt;a target=&#34;_blank&#34; href=&#34;http://wikiwiki.jp/kancolle/?Pola%B2%FE&#34;&gt;Pola改&lt;/a&gt; から手に入れる方法があります)。この装備で制空を計算すると下になります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img style=&#34;border: solid 1px #000&#34; src=&#34;http://blog.anciasoft.jp/img/2016e7-a.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;道中は制空がとれますがボスで制空は互角となります。ですが、&lt;b&gt;基地航空隊のおかげで敵制空値を削ることができるため、
-艦戦が少なくても優勢をとることができました。&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;戦艦にはテンプレの徹甲弾・弾着装備です。
-軽空母は駆逐の攻撃でも大破することがあったため旗艦としています。また、できるだけ攻撃させるため上に持ってきています。&lt;/p&gt;
-
-&lt;p&gt;初回マスでは軽空母が対潜してくれるため、多少事故が減ります。
-補強増設が余っているときは大破しやすい艦に使用し、ダメコンを載せるのもよいと思います。&lt;/p&gt;
-
-&lt;p&gt;水上ルートは艦攻の熟練度が落ちることがあります。熟練度が落ちた艦攻が多くなった時は、一休みして熟練度の付け直しをしていました。&lt;/p&gt;
-
-&lt;h2 id=&#34;第二艦隊構成:b20f6429ec539c32d4c125202822d855&#34;&gt;第二艦隊構成&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-2.jpg&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;第二艦隊構成は攻略サイトによくあるテンプレ装備です。
-WGの所持数は3つのため航巡と軽巡に回し、戦艦を2隻に三式弾、さらに夜偵を載せています。&lt;/p&gt;
-
-&lt;p&gt;駆逐は今回あまり活躍できないため、探照灯・対空カットイン要員にしています。&lt;/p&gt;
-
-&lt;h2 id=&#34;決戦支援:b20f6429ec539c32d4c125202822d855&#34;&gt;決戦支援&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-3.jpg&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;道中はよくあるテンプレ支援のため省略します。決戦支援は、艦爆・艦攻も試してみましたが、艦攻での航空支援のほうがダメージが出ていました。
-意味があるか分かりませんが、飛龍など死にスロットに二式艦上偵察機を装備し旗艦にしています。ボスに攻撃が集中したのか450overのダメージが出たことがありました。&lt;/p&gt;
-
-&lt;p&gt;駆逐は何を装備しても変わらないと思ったため、適当に機銃を載せました。&lt;/p&gt;
-
-&lt;h2 id=&#34;基地航空隊:b20f6429ec539c32d4c125202822d855&#34;&gt;基地航空隊&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-kk.jpg&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;基地航空隊はよくある構成で、21型熟練(戦闘行動範囲7)を第一航空隊、第二航空隊、第三航空隊に2つ、1つ、1つ配置しています。
-流星など戦闘行動範囲が足りてなくても攻撃させたほうが良い結果が出ていました。&lt;/p&gt;
-
-&lt;p&gt;熟練度は2、3回出撃すると消えることがあるため、熟練度が無くなった航空隊が多くなったとき付け直しました(面倒ですが)。&lt;/p&gt;
-
-&lt;h2 id=&#34;最後に:b20f6429ec539c32d4c125202822d855&#34;&gt;最後に&lt;/h2&gt;
-
-&lt;p&gt;最後は開幕攻撃が強力ではなければ突破が厳しい感じがします。基地航空隊に頼るのではなく、
-艦攻を多く構成することで開幕攻撃を強力にすることができます。今回の構成がお役に立てれば幸いです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.anciasoft.jp/img/2016e7-end.jpg&#34;&gt;&lt;/p&gt;
-</description>
-          <desctext>2016春イベントE7甲は、沼っている人が多そうで現状でも最適な編成が見つかっていない状況ですので、参考にこちらがゲージを破壊した編成を紹介します。 課金アイテムの洋上補給は使用していませんので、洋上補給を使用したくない人にもおすすめです。なお、削りではなくゲージ破壊の編成です。 自身はこの編成で3回目の出撃でゲージ破壊ができました。 第一艦隊構成 編成は水上打撃での秋津洲固定ルートです。 軽空母を2隻使用し、搭載数の多い隼鷹改二、飛鷹改を推奨します。搭載数の多いスロットに強力な艦攻を6スロット載せます。 水上ルートは艦攻が結構残るため、ボスで機動なみの開幕攻撃が期待できます。 秋津洲には、熟練度MAXの Ro.44水上戦闘機 と 二式水戦改 を載せ制空値を底上げしています(Ro.44水上戦闘機 や二式水戦改 が足りない場合、 Pola改 から手に入れる方法があります)。この装備で制空を計算すると下になります。 道中は制空がとれますがボスで制空は互角となります。ですが、基地航空隊のおかげで敵制空値を削ることができるため、 艦戦が少なくても優勢をとることができました。 戦艦にはテンプレの徹甲弾・弾着装備です。 軽空母は駆逐の攻撃でも大破することがあったため旗艦としています。また、できるだけ攻撃させるため上に持ってきています。 初回マスでは軽空母が対潜してくれるため、多少事故が減ります。 補強増設が余っているときは大破しやすい艦に使用し、ダメコンを載せるのもよいと思います。 水上ルートは艦攻の熟練度が落ちることがあります。熟練度が落ちた艦攻が多くなった時は、一休みして熟練度の付け直しをしていました。 第二艦隊構成 第二艦隊構成は攻略サイトによくあるテンプレ装備です。 WGの所持数は3つのため航巡と軽巡に回し、戦艦を2隻に三式弾、さらに夜偵を載せています。 駆逐は今回あまり活躍できないため、探照灯・対空カットイン要員にしています。 決戦支援 道中はよくあるテンプレ支援のため省略します。決戦支援は、艦爆・艦攻も試してみましたが、艦攻での航空支援のほうがダメージが出ていました。 意味があるか分かりませんが、飛龍など死にスロットに二式艦上偵察機を装備し旗艦にしています。ボスに攻撃が集中したのか450overのダメージが出たことがありました。 駆逐は何を装備しても変わらないと思ったため、適当に機銃を載せました。 基地航空隊 基地航空隊はよくある構成で、21型熟練(戦闘行動範囲7)を第一航空隊、第二航空隊、第三航空隊に2つ、1つ、1つ配置しています。 流星など戦闘行動範囲が足りてなくても攻撃させたほうが良い結果が出ていました。 熟練度は2、3回出撃すると消えることがあるため、熟練度が無くなった航空隊が多くなったとき付け直しました(面倒ですが)。 最後に 最後は開幕攻撃が強力ではなければ突破が厳しい感じがします。基地航空隊に頼るのではなく、 艦攻を多く構成することで開幕攻撃を強力にすることができます。今回の構成がお役に立てれば幸いです。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/2016e7.png</eyecatch>
-          <datetimeUnix>1463670000</datetimeUnix>
         </item>
       
     
