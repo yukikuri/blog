@@ -5,9 +5,73 @@
     <link>http://blog.anciasoft.jp/tags/online-soft/</link>
     <language>ja-jp</language>
     <author>ykuri</author>
-    <rights>Copyright (C) 2016 y-kurimoto.</rights>
-    <updated>2016-12-31 00:00:00 &#43;0900 JST</updated>
+    <rights>Copyright (C) 2017 y-kurimoto.</rights>
+    <updated>2017-02-20 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.5.8 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome058/</link>
+          <pubDate>2017-02-20 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome058/</guid>
+          <description>
+
+&lt;p&gt;Ancia Chrome Ver 0.5.8 をリリースしています。
+0.5.8 では、オプション設定のデザインを一新し、項目を設定しやすいよう改善しています。また報告いただいた不具合をいくつか修正しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:f6c06d664a79181caaadbd3036a69249&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;オプション設定のデザインを一新。新規タブからオプション設定を表示できるようになど設定表示について改善しました(一部設定は、変更が反映されません、近日実装予定)&lt;/strong&gt;
+&lt;p&gt;オプション設定は、専用画面を出すのではなく、タブに表示するようにしています。また新規タブからオプション設定も表示できるようにし、探す手間を省いています。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/newoption.jpg&#39; style=&#39;border: 1px solid #000&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;オプション設定に適用ボタンはなく、変更は一部設定を除き即反映されます。オプション設定の「ウェブ コンテンツ」「キャッシュ・閲覧データ」は変更が反映されず、近日実装予定です。また従来まであった設定(ページ上でのマウス動作など)も追加予定です。&lt;/p&gt;
+&lt;p&gt;設定では、細かな設定や知識が必要なものは非表示となっています。そのような設定は、「詳細設定を表示」をチェックすることで表示することができます。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/option_expert_check.png&#39; style=&#39;border: 1px solid #000&#39;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;新規タブには、前回起動時のタブなども表示する予定です。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;ページ表示がディスプレイのDPIに従うかの設定追加(設定名pageHighDpi 規定値: ON)&lt;/strong&gt;
+&lt;p&gt;
+オプション設定の全般からページ表示がDPIに従うかを設定できるようにしています。デフォルトで従うため、従来のDPI表示(DPI100%表示)としたい場合は、OFFとし再起動してください。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;autofillのとき、特定のformでclients1.google.comに無意味な通信を行うのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;
+最初のフォームフィルで意味のないデータ(フィルしたかどうか？)を Google に送信することがあったため、抑止しています。気づかなかった動作で、報告ありがとうございました。
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;高DPI環境でバックグラウンドでタブを開くと、ホイールが効かないことがあるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ボタン型・カーソル型でのマウスジェスチャが利かないことがあるのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;右クリックメニューからの検索でsearchNewTab、searchTabGroupの設定が効いていないのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;定期的にタブスナップショットを保存するが動作していないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Firefox、Operaのブックマーク設定が保存されないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ナビゲートロックで最新の状態に更新すると、新規タブができてしまうのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブがない状態でクリックでサイドバーが自動で隠れないのを修正(マウスが離れたとき隠れないのは仕様となります) 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ブラウザ内でのマウス第4，5ボタンが動作していないのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;気づいた不具合、報告いただきました不具合を修正しています。タブがない状態でアプリケーションを終了するとクラッシュすることがあるのは、対応することができませんでした(調査継続中です)。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;既定のブラウザに設定するとき、システムのUIを開かずに設定するように、設定できない場合は従来通りシステムの規定プログラム選択UIを出すように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;最後のタブを閉じたとき、ほかのブラウザと動作を合わせ、新規タブを開く動作を規定に(オプション設定 lastTabOpen で変更可能)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Javaの実行制御は機能していないため、メニューから削除&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;オプション設定を開く動作は、新規activeタブでchrome://newtab/#optionを開くように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;オプション設定からタブ幅などリアルタイムで表示幅を確認しながら変更などが可能に&lt;/strong&gt;
+&lt;p&gt;
+他は、細かな動作の変更を行っています。デフォルトブラウザの選択で、Windows10 の場合は、Windows10 用のブラウザ選択画面を出すようにしています。
+&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:f6c06d664a79181caaadbd3036a69249&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome058.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.8&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0580&#34;&gt;更新一覧 Ancia Chrome 0.5.8&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:f6c06d664a79181caaadbd3036a69249&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Chrome Ver 0.5.8 をリリースしています。 0.5.8 では、オプション設定のデザインを一新し、項目を設定しやすいよう改善しています。また報告いただいた不具合をいくつか修正しています。 更新内容 add オプション設定のデザインを一新。新規タブからオプション設定を表示できるようになど設定表示について改善しました(一部設定は、変更が反映されません、近日実装予定) オプション設定は、専用画面を出すのではなく、タブに表示するようにしています。また新規タブからオプション設定も表示できるようにし、探す手間を省いています。 オプション設定に適用ボタンはなく、変更は一部設定を除き即反映されます。オプション設定の「ウェブ コンテンツ」「キャッシュ・閲覧データ」は変更が反映されず、近日実装予定です。また従来まであった設定(ページ上でのマウス動作など)も追加予定です。 設定では、細かな設定や知識が必要なものは非表示となっています。そのような設定は、「詳細設定を表示」をチェックすることで表示することができます。 新規タブには、前回起動時のタブなども表示する予定です。 add ページ表示がディスプレイのDPIに従うかの設定追加(設定名pageHighDpi 規定値: ON) オプション設定の全般からページ表示がDPIに従うかを設定できるようにしています。デフォルトで従うため、従来のDPI表示(DPI100%表示)としたい場合は、OFFとし再起動してください。 fix autofillのとき、特定のformでclients1.google.comに無意味な通信を行うのを修正 報告ありがとうございます 最初のフォームフィルで意味のないデータ(フィルしたかどうか？)を Google に送信することがあったため、抑止しています。気づかなかった動作で、報告ありがとうございました。 fix 高DPI環境でバックグラウンドでタブを開くと、ホイールが効かないことがあるのを修正 fix ボタン型・カーソル型でのマウスジェスチャが利かないことがあるのを修正 報告ありがとうございます fix 右クリックメニューからの検索でsearchNewTab、searchTabGroupの設定が効いていないのを修正 fix 定期的にタブスナップショットを保存するが動作していないのを修正 報告ありがとうございます fix Firefox、Operaのブックマーク設定が保存されないのを修正 報告ありがとうございます fix ナビゲートロックで最新の状態に更新すると、新規タブができてしまうのを修正 報告ありがとうございます fix タブがない状態でクリックでサイドバーが自動で隠れないのを修正(マウスが離れたとき隠れないのは仕様となります) 報告ありがとうございます fix ブラウザ内でのマウス第4，5ボタンが動作していないのを修正 報告ありがとうございます 気づいた不具合、報告いただきました不具合を修正しています。タブがない状態でアプリケーションを終了するとクラッシュすることがあるのは、対応することができませんでした(調査継続中です)。 mod 既定のブラウザに設定するとき、システムのUIを開かずに設定するように、設定できない場合は従来通りシステムの規定プログラム選択UIを出すように mod 最後のタブを閉じたとき、ほかのブラウザと動作を合わせ、新規タブを開く動作を規定に(オプション設定 lastTabOpen で変更可能) mod Javaの実行制御は機能していないため、メニューから削除 mod オプション設定を開く動作は、新規activeタブでchrome://newtab/#optionを開くように mod オプション設定からタブ幅などリアルタイムで表示幅を確認しながら変更などが可能に 他は、細かな動作の変更を行っています。デフォルトブラウザの選択で、Windows10 の場合は、Windows10 用のブラウザ選択画面を出すようにしています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.5.8 更新一覧はこちらとなります。更新一覧</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome058.jpg</eyecatch>
+          <datetimeUnix>1487516400</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -617,50 +681,6 @@ Active Scriptの実行Versionが環境に応じて最新のVersionで実行し�
           <desctext>Ancia Ver1.9.119をリリースしています。更新内容は、次の通りとなります。 更新内容 add ActiveScriptの実行Versionで環境に応じた最新のJScriptで実行を追加、また規定の設定に Active Scriptの実行Versionが環境に応じて最新のVersionで実行します。IE9以降がインストールされていれば、高速なエンジン(JScript9.dll)でユーザスクリプトが実行されます。 fix youtubeでfullscreenが動作しないのを修正 報告ありがとうございます Youtube で Player でのフルスクリーンボタンが反応しないのが修正されています。報告ありがとうございました。 fix 起動時のタブ復元でcloselockを外しても復活するのを修正 ナビゲートロックだけしている状態で、タブを復元するとクローズロックを外していても復活する不具合を修正しています。 fix Google Chrome がインストールされていない場合、Chromeのブックマークを表示するとCrashするのを修正 報告ありがとうございます Google Chrome がインストールされていない状態で Google Chrome のお気に入りを表示するとクラッシュする不具合を修正しています。報告ありがとうございます。 fix Windows Storeでのアプリをゲットのボタンが動作しないのを修正 Windows ストア のページで、「アプリをゲット」ボタンが無反応である不具合を修正しています。 mod 前回終了時のタブ保存で、タブ情報が取得できない場合できるだけ情報を保存するように(その場合、ハイライト、戻る進む履歴、自動更新情報は失われます) mod IPC通信のタイムアウト時間を長めに マルチプロセスでタブの終了状態が取得できない場合の発生が起こる場合があり(こちらでは再現できず)、IPC通信のタイムアウトと取得失敗時でもできるだけタブ情報を保存するようにしています。 mod window.open()でタブを開く際のpopup block設定が効いていないのを修正 ポップアップブロックの設定が、window.open()でタブを開く場合に判定されていない(常にIEでの判定が行われる)不具合を修正しています。報告により試すと発見できました。報告ありがとうございました。 mod ローカルファイルやインターネットショートカットなどをタブバーにdropできるように 今更ですがタブにローカルファイルなどをドロップして開けるようにしました。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.119 更新一覧はこちらとなります。更新一覧 Ancia 1.9.119 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/19119.jpg</eyecatch>
           <datetimeUnix>1463929201</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Chrome Ver0.5.4 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia-chrome054/</link>
-          <pubDate>2016-05-23 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia-chrome054/</guid>
-          <description>
-
-&lt;p&gt;ブログの更新が遅れましたが、2016/5/2 に Ancia Chrome Ver0.5.4 をリリースしています。Blinkのバージョンは49のままですので、XPでも使用できます。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:7ef3111c3026e68b66f148c666f65c80&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;DNSエラーや404エラーなどで、Google Chromeと同様のエラーページを表示を行うように&lt;/strong&gt;
-&lt;p&gt;Google Chromeと同等のページエラー表示を可能にしています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;mp4やmp3直リンを再生可能に&lt;/strong&gt;
-&lt;p&gt;mp4やmp3の直リンク表示(??.mp4)などの直接の再生を可能にしています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;b&gt;新規タブでよく表示すページを表示するように&lt;/b&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;b&gt;よく表示するページやHistory、Thumbnailを保存するように(現時点では、よく表示するページを新規タブで表示するのみをサポート)&lt;/b&gt;
-&lt;p&gt;表示したページの履歴などをローカルに保存するようにしています。新規タブでよく表示するページを表示するようにしてみました。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のvideoタグでmedia fallbackが動作しないのを修正&lt;/strong&gt;
-&lt;p&gt;videoタグでsourceの指定方法によりmp4などの再生が行われない場合を修正しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のFormでsubmit時にcrashするのを修正 報告ありがとうございます&lt;/strong&gt;
-&lt;p&gt;特定のフォームで送信すると、フォームのオートコンプリート関係でクラッシュする問題を修正しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;pdfが表示できないのを修正&lt;/strong&gt;
-&lt;p&gt;PDFが表示できていなかったのを、表示可能になりました。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:7ef3111c3026e68b66f148c666f65c80&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://www.egrath.net/download/AnciaChrome054.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.4&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0540&#34;&gt;更新一覧 Ancia Chrome 0.5.4&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;不具合について:7ef3111c3026e68b66f148c666f65c80&#34;&gt;不具合について&lt;/h2&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-</description>
-          <desctext>ブログの更新が遅れましたが、2016/5/2 に Ancia Chrome Ver0.5.4 をリリースしています。Blinkのバージョンは49のままですので、XPでも使用できます。 更新内容 add DNSエラーや404エラーなどで、Google Chromeと同様のエラーページを表示を行うように Google Chromeと同等のページエラー表示を可能にしています。 add mp4やmp3直リンを再生可能に mp4やmp3の直リンク表示(??.mp4)などの直接の再生を可能にしています。報告ありがとうございます。 add 新規タブでよく表示すページを表示するように add よく表示するページやHistory、Thumbnailを保存するように(現時点では、よく表示するページを新規タブで表示するのみをサポート) 表示したページの履歴などをローカルに保存するようにしています。新規タブでよく表示するページを表示するようにしてみました。 fix 特定のvideoタグでmedia fallbackが動作しないのを修正 videoタグでsourceの指定方法によりmp4などの再生が行われない場合を修正しています。 fix 特定のFormでsubmit時にcrashするのを修正 報告ありがとうございます 特定のフォームで送信すると、フォームのオートコンプリート関係でクラッシュする問題を修正しています。 fix pdfが表示できないのを修正 PDFが表示できていなかったのを、表示可能になりました。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.5.4 更新一覧はこちらとなります。更新一覧 Ancia Chrome 0.5.4 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/anciachrome054.jpg</eyecatch>
-          <datetimeUnix>1463929200</datetimeUnix>
         </item>
       
     
