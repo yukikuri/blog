@@ -6,8 +6,66 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2017 y-kurimoto.</rights>
-    <updated>2017-03-23 00:00:00 &#43;0900 JST</updated>
+    <updated>2017-04-04 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.125 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19125/</link>
+          <pubDate>2017-04-04 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19125/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.125 をリリースしています。大きな更新はないですが、新規タブ表示で前回終了時のタブなどタブリストを表示できるようになっています。
+更新内容は次の通りです。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:b885bac10608f9bc15ef39864646498d&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;chrome://newtabでタブリスト一覧を表示するように&lt;/strong&gt;
+&lt;p&gt;新規タブ表示で、前回終了時タブなどタブリスト一覧をすべて表示するようにしました。一覧からはリストの削除や変更もできます。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/newtab_tablist.png&#39; style=&#39;border: 1px solid #000&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;chrome://newtabを開いた場合ですぐにタブを閉じた場合、プロセスが終了せず残ってしまうのを修正&lt;/strong&gt;
+&lt;p&gt;新規タブ(chrome://newtab)を表示しすぐにタブを閉じるとプロセスが終了せず残ってしまう問題を修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;貼り付け新規タブが常に先頭に追加されるのを修正&lt;/strong&gt;
+&lt;p&gt;Blink版では既に修正済みですが、Trident版でも修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;MDI機能の廃止 メニュー項目、ツールバーボタンなど関連項目を削除&lt;/strong&gt;
+&lt;p&gt;MDI機能は削除し、関連するメニューなどの項目は削除しています。MDI機能はタブを別ウインドウに切り離せるためサポート予定はありません。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;アプリケーション終了時に履歴を削除する設定(設定名:deleteHistoryOnClose)で、独自履歴、よく表示するページもすべて削除するように&lt;/strong&gt;
+&lt;p&gt;独自に保存している履歴が終了時に削除されていませんでしたが、削除する設定の場合、終了時に削除するようにしています。よく表示するページ情報も同時に削除されます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;アプリケーションの更新チェックや更新での一時ディレクトリで、システムのTempディレクトリではなく、アプリケーションディレクトリの一時ディレクトリ _UpdateTemp を作成し使用するように(使用後は自動削除されます)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;既定のアプリケーションの登録でRegist.exeは削除し使用しないように&lt;/strong&gt;
+&lt;p&gt;アプリケーション更新では、更新情報のダウンロードでシステムの一時ディレクトリを使用しています。
+アンチウイルスソフトによっては、更新情報を削除してしまうことがあるようなので、アプリケーションのディレクトリに更新情報をダウンロードするようにしました。
+アプリケーションのディレクトリをアンチウイルスソフトで除外対象となっていれば、ダウンロードした更新情報をウイルス扱いしなくなると思います。
+&lt;/p&gt;
+&lt;p&gt;Regist.exeはウイルス誤検知が多く見られるため削除しました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;検索履歴でdeleteキーでは検索エンジンを削除しないように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Live Previewでブラウザ部分の表示が実際のサイズと合わないことがあるのを合わせるように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Faviconの取得でサイトに複数設定がある場合、ico形式を優先して取得するように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ステータスバーのズーム変更は直接クリックしなければ動作しないように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;chrome schemeでステータスバーにURLを表示するように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;version情報から更新できることにより、Updaterの単独起動によるアプリケーションの更新機能を削除&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;sqlite3.18.0に更新&lt;/strong&gt;
+&lt;p&gt;ほかは細かな更新を行っています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:b885bac10608f9bc15ef39864646498d&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19125.zip&#34;&gt;ダウンロード Ancia 1.9.125&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19125Beta&#34;&gt;更新一覧 Ancia 1.9.125&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:b885bac10608f9bc15ef39864646498d&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.125 をリリースしています。大きな更新はないですが、新規タブ表示で前回終了時のタブなどタブリストを表示できるようになっています。 更新内容は次の通りです。 更新内容 add chrome://newtabでタブリスト一覧を表示するように 新規タブ表示で、前回終了時タブなどタブリスト一覧をすべて表示するようにしました。一覧からはリストの削除や変更もできます。 fix chrome://newtabを開いた場合ですぐにタブを閉じた場合、プロセスが終了せず残ってしまうのを修正 新規タブ(chrome://newtab)を表示しすぐにタブを閉じるとプロセスが終了せず残ってしまう問題を修正しています。 fix 貼り付け新規タブが常に先頭に追加されるのを修正 Blink版では既に修正済みですが、Trident版でも修正しています。 mod MDI機能の廃止 メニュー項目、ツールバーボタンなど関連項目を削除 MDI機能は削除し、関連するメニューなどの項目は削除しています。MDI機能はタブを別ウインドウに切り離せるためサポート予定はありません。 mod アプリケーション終了時に履歴を削除する設定(設定名:deleteHistoryOnClose)で、独自履歴、よく表示するページもすべて削除するように 独自に保存している履歴が終了時に削除されていませんでしたが、削除する設定の場合、終了時に削除するようにしています。よく表示するページ情報も同時に削除されます。 mod アプリケーションの更新チェックや更新での一時ディレクトリで、システムのTempディレクトリではなく、アプリケーションディレクトリの一時ディレクトリ _UpdateTemp を作成し使用するように(使用後は自動削除されます) mod 既定のアプリケーションの登録でRegist.exeは削除し使用しないように アプリケーション更新では、更新情報のダウンロードでシステムの一時ディレクトリを使用しています。 アンチウイルスソフトによっては、更新情報を削除してしまうことがあるようなので、アプリケーションのディレクトリに更新情報をダウンロードするようにしました。 アプリケーションのディレクトリをアンチウイルスソフトで除外対象となっていれば、ダウンロードした更新情報をウイルス扱いしなくなると思います。 Regist.exeはウイルス誤検知が多く見られるため削除しました。 mod 検索履歴でdeleteキーでは検索エンジンを削除しないように mod Live Previewでブラウザ部分の表示が実際のサイズと合わないことがあるのを合わせるように mod Faviconの取得でサイトに複数設定がある場合、ico形式を優先して取得するように mod ステータスバーのズーム変更は直接クリックしなければ動作しないように mod chrome schemeでステータスバーにURLを表示するように mod version情報から更新できることにより、Updaterの単独起動によるアプリケーションの更新機能を削除 mod sqlite3.18.0に更新 ほかは細かな更新を行っています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.125 更新一覧はこちらとなります。更新一覧 Ancia 1.9.125 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19125.jpg</eyecatch>
+          <datetimeUnix>1491231601</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -610,86 +668,6 @@ Internet Explorer 11 以外を非サポートとする可能性があります�
           <desctext>Ancia Ver1.9.120をリリースしています。更新内容は、次の通りとなります。更新内容の中にはフリーズすることがある問題修正や、ページ検索動作の軽量化を行っています。 更新内容 fix fixActiveXが有効なとき、iframe表示などでページ表示が固まる場合があるのを修正 報告ありがとうございます fixActiveXの設定が有効なとき、iframeなどで応答が固まってしまう現象を修正しています。報告ありがとうございました。 1.9.120で修正されていますが、以前のバージョンでもfixActiveXを無効にすることでも問題は発生しません。 fix ローソン店舗検索を新規タブで開くなど、新規タブでリファラエラーが出るのを修正 報告ありがとうございます 新規タブを開くとき、リファラが失われ、ページによっては表示できない問題を修正しています。報告ありがとうございます。 fix フレームでハイライトやインライン検索が行われたとき、ページ遷移してもハイライトが残るのを修正 フレームにハイライトが行われると、ページ遷移してもハイライト数が残ってしまう問題を修正しています fix DNSエラーなどページ表示エラーで最新に更新すると、タブが読み込み中のままになるのを修正 fix 特定のサイトで最新に更新後、読み込み状態のままになるのを修正 報告ありがとうございます 以下のようなエラー表示ページで最新に更新すると読み込み中のままになる問題を修正しています。 また、特定のサイトでも最新に更新時、タブが読み込み中状態になる問題を修正しています。報告ありがとうございます。 fix ハイ コントラストでの描画を修正 報告ありがとうございます 掲示板に報告がありましたハイ コンストラクトのタイトル部分の描画を修正しています。報告ありがとうございます。 mod ページが非常に巨大なとき、ハイライトやインライン検索で非常に時間がかかるのを修正(ハイライト動作の軽量化) ハイライトやインライン検索でヒットする数が多い時やページの内容が非常に大きいとき検索に時間がかかり、固まった動作になっていました。 1.9.120ではキーワードの検索の処理を変更することで固まることなくハイライトを行えるようにしています。時間がかかる場合は、画像のように次々ハイライトが行われていきます。 mod SSLエラーがあるページでセキュリティー警告ダイアログを出すのではなく、IEと同じ証明書エラーページを表示する動作に 1.9.119まではSSLでセキュリティー証明書にエラーがあるとダイアログが表示される動作です。 Internet Explorer はダイアログではなく証明書エラーページが表示されます。1.9.120でも Internet Explorer と同じく証明書エラーページを表示するようにし、ダイアログを閉じる動作を省略するようにしています。 mod ダウンロード中にアプリケーションを終了した場合の確認表示はデフォルトoffに(ダウンロード中にアプリを終了してもデフォルトでダウンロードは継続するため) mod タブの最大数のデフォルトを100から200に mod AutoPagerizeでハイライトが自動で行われる機能は非サポートへ 他はデフォルト設定の変更などを行っています。 今後の更新で、Internet Explorerサポートポリシー変更の重要なお知らせ - Microsoft より、 Internet Explorer 11 以外を非サポートとする可能性があります。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.120 更新一覧はこちらとなります。更新一覧 Ancia 1.9.120 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/19120.jpg</eyecatch>
           <datetimeUnix>1469458801</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Chrome Ver0.5.5 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia-chrome055/</link>
-          <pubDate>2016-07-18 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia-chrome055/</guid>
-          <description>
-
-&lt;p&gt;Ancia Chrome Ver 0.5.5 をリリースしています。
-7/18現在、Google Chrome のレンダリングエンジンバージョンは 51.0.2704.106 ですが、49のままです。
-次回レンダリングエンジンのバージョンを上げる予定です。&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-&lt;b&gt;0.5.5 ダウンロードファイル差し替え&lt;/b&gt;&lt;br&gt;
-ダウンロードに含まれる Updater.exe がクラッシュする問題がありました。
-ダウンロードファイル &lt;a href=&#39;http://download.anciasoft.jp/AnciaChrome055.7z&#39;&gt;AnciaChrome055.7z&lt;/a&gt;
-で Updater.exe だけ差し替えています。もし7/17までにダウンロードされた方がいましたら、再度のダウンロードをお願いいたします。
-&lt;/div&gt;
-
-&lt;h2 id=&#34;更新内容:7d53a36ed45665e293a32e1d91b5a419&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;新規タブ(about:tabs)で表示履歴を表示可能に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;新規タブ表示履歴から個別の履歴削除、表示履歴の削除(1時間以内やすべてなど)を可能に&lt;/strong&gt;
-&lt;p&gt;新規タブ about:tabs#history から直接履歴を表示できます。スクロールすることで次々表示されますが、最大512件までしか表示できません。今後表示件数を増やす予定です。
-Google Chrome と同様の履歴の削除も可能です。
-&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/deletehistory.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;新規タブ(about:tabs)でダウンロード履歴を表示可能に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;新規タブダウンロード履歴表示から履歴のクリア、個別履歴の削除を可能に&lt;/strong&gt;
-&lt;p&gt;ダウンロード履歴を保存し表示可能になりました。
-ダウンロード履歴は about:tabs#downloads から直接開くことができます。
-表示履歴と同じく、ダウンロード履歴の削除が可能です。
-&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/deldownloads.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;新規タブ(about:tabs)でバージョン情報やChromium、Flashバージョン情報など確認可能に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;新規タブバージョン情報表示でアプリケーションの更新があるか確認可能に。次回更新があった場合、更新確認と自動Updateが可能です&lt;/strong&gt;
-&lt;p&gt;
-バージョン情報を新規タブから表示可能になりました。about:tabs#version から直接開くこともできます。
-また、新しいリリースがあるか確認することができます。新しいバージョンがある場合、ダウンロード・展開までを行い、再起動することで更新することもできます。
-&lt;div class=&#39;text-center&#39;&gt;
-&lt;div class=&#39;img-container&#39;&gt;
-&lt;span&gt;バージョンチェック&lt;/span&gt;&lt;br&gt;
-&lt;img class=&#39;border-bottom nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/versioncheck.gif&#39;&gt;
-&lt;/div&gt;
-&lt;div class=&#39;img-container&#39;&gt;
-&lt;span&gt;更新がある場合&lt;/span&gt;&lt;br&gt;
-&lt;img class=&#39;border-bottom nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/update.gif&#39;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブを閉じた後、閉じる確認ダイアログが表示されることがあるのを表示されないように(タブを閉じる場合、before unload confirmダイアログが表示されないのは仕様となります) 報告ありがとうございます&lt;/strong&gt;
-&lt;p&gt;ページ遷移で確認ダイアログが出るページがありますが、そのようなページでタブを閉じた後にダイアログが出る場合があり、出ないように対応しています。報告ありがとうございました。&lt;/p&gt;
-&lt;p&gt;Ancia Chrome ではタブを複数同時に閉じる場合があり、タブを閉じるときに確認ダイアログは表示しないのが仕様となります。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;開発者ツールが1回の閉じるボタンでとじないのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブを閉じても開発者ツールが表示中のままになるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;DevtoolでCtrl+Fなどショートカットキーが効かないのを修正&lt;/strong&gt;
-&lt;p&gt;開発者関係のバグをいくつか修正しています。Google Chrome では開発者ツールからファイル保存などができますが、Ancia Chrome ではできません。今後可能にする予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;テキストからリンク作成がリンク内、フォーム内にも行われることがあるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;非activeタブでのPDF表示が縮小した状態で表示されるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;debug.logが肥大化するため、起動時に削除するように(サイズが1G以上ある場合があります。その場合はアプリ動作が遅くなる可能性があります。次回更新では、何らかの対策を行います)&lt;/strong&gt;
-&lt;p&gt;いくつかのバグを修正しています。debug.logは、いままで削除することがありませんでしたが、その場合サイズが非常に大きい場合があります。そのため、debug.log を起動時に削除するようにしています。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Twitter でログイン後に動作が遅くなる報告があります。Twitter のページは、ログイン後に window.Notification を参照しますが、Ancia Chrome では Notification が参照できないのが原因のようです(参照できるよう対応予定)。&lt;/p&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:7d53a36ed45665e293a32e1d91b5a419&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome055.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.5&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0550&#34;&gt;更新一覧 Ancia Chrome 0.5.5&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;不具合について:7d53a36ed45665e293a32e1d91b5a419&#34;&gt;不具合について&lt;/h2&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-</description>
-          <desctext>Ancia Chrome Ver 0.5.5 をリリースしています。 7/18現在、Google Chrome のレンダリングエンジンバージョンは 51.0.2704.106 ですが、49のままです。 次回レンダリングエンジンのバージョンを上げる予定です。 0.5.5 ダウンロードファイル差し替え ダウンロードに含まれる Updater.exe がクラッシュする問題がありました。 ダウンロードファイル AnciaChrome055.7z で Updater.exe だけ差し替えています。もし7/17までにダウンロードされた方がいましたら、再度のダウンロードをお願いいたします。 更新内容 add 新規タブ(about:tabs)で表示履歴を表示可能に add 新規タブ表示履歴から個別の履歴削除、表示履歴の削除(1時間以内やすべてなど)を可能に 新規タブ about:tabs#history から直接履歴を表示できます。スクロールすることで次々表示されますが、最大512件までしか表示できません。今後表示件数を増やす予定です。 Google Chrome と同様の履歴の削除も可能です。 add 新規タブ(about:tabs)でダウンロード履歴を表示可能に add 新規タブダウンロード履歴表示から履歴のクリア、個別履歴の削除を可能に ダウンロード履歴を保存し表示可能になりました。 ダウンロード履歴は about:tabs#downloads から直接開くことができます。 表示履歴と同じく、ダウンロード履歴の削除が可能です。 add 新規タブ(about:tabs)でバージョン情報やChromium、Flashバージョン情報など確認可能に add 新規タブバージョン情報表示でアプリケーションの更新があるか確認可能に。次回更新があった場合、更新確認と自動Updateが可能です バージョン情報を新規タブから表示可能になりました。about:tabs#version から直接開くこともできます。 また、新しいリリースがあるか確認することができます。新しいバージョンがある場合、ダウンロード・展開までを行い、再起動することで更新することもできます。 バージョンチェック 更新がある場合 fix タブを閉じた後、閉じる確認ダイアログが表示されることがあるのを表示されないように(タブを閉じる場合、before unload confirmダイアログが表示されないのは仕様となります) 報告ありがとうございます ページ遷移で確認ダイアログが出るページがありますが、そのようなページでタブを閉じた後にダイアログが出る場合があり、出ないように対応しています。報告ありがとうございました。 Ancia Chrome ではタブを複数同時に閉じる場合があり、タブを閉じるときに確認ダイアログは表示しないのが仕様となります。 fix 開発者ツールが1回の閉じるボタンでとじないのを修正 fix タブを閉じても開発者ツールが表示中のままになるのを修正 fix DevtoolでCtrl+Fなどショートカットキーが効かないのを修正 開発者関係のバグをいくつか修正しています。Google Chrome では開発者ツールからファイル保存などができますが、Ancia Chrome ではできません。今後可能にする予定です。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/anciachrome055.jpg</eyecatch>
-          <datetimeUnix>1468767600</datetimeUnix>
         </item>
       
     
