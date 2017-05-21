@@ -6,8 +6,87 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2017 y-kurimoto.</rights>
-    <updated>2017-05-16 00:00:00 &#43;0900 JST</updated>
+    <updated>2017-05-22 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.6.2 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome062/</link>
+          <pubDate>2017-05-22 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome062/</guid>
+          <description>
+
+&lt;p&gt;Ancia Chrome Ver 0.6.2 をリリースしています。&lt;/p&gt;
+
+&lt;p&gt;PDF を表示したページでメニュー表示に致命的な問題があり修正しています。更新内容は次の通りです。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:07d3effe05eeb872d51accc5f6cfb0ad&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;pdfのページで右クリックを行うとcrashするため、pdfクリックメニューは非表示に(対応までの動作仕様) 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;PDF を表示したページで右クリックなどメニューを表示するとプロセスがクリックし、ほかのタブもすべて落ちていました。
+PDF ページではメニュー表示は非表示としています。本動作は対応まで仕様となります。&lt;/p&gt;
+&lt;p&gt;PDF ページでのテキスト選択のコピーなどは、ショートカットキーCtrl+Cや、メニューバーの「編集」「コピー」が利用できます。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:07d3effe05eeb872d51accc5f6cfb0ad&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome062.7z&#34;&gt;ダウンロード Ancia Chrome 0.6.2&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0620&#34;&gt;更新一覧 Ancia Chrome 0.6.2&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:07d3effe05eeb872d51accc5f6cfb0ad&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Chrome Ver 0.6.2 をリリースしています。 PDF を表示したページでメニュー表示に致命的な問題があり修正しています。更新内容は次の通りです。 更新内容 fix pdfのページで右クリックを行うとcrashするため、pdfクリックメニューは非表示に(対応までの動作仕様) 報告ありがとうございます PDF を表示したページで右クリックなどメニューを表示するとプロセスがクリックし、ほかのタブもすべて落ちていました。 PDF ページではメニュー表示は非表示としています。本動作は対応まで仕様となります。 PDF ページでのテキスト選択のコピーなどは、ショートカットキーCtrl+Cや、メニューバーの「編集」「コピー」が利用できます。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.6.2 更新一覧はこちらとなります。更新一覧 Ancia Chrome 0.6.2 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome062.jpg</eyecatch>
+          <datetimeUnix>1495378801</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver1.9.127 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19127/</link>
+          <pubDate>2017-05-22 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19127/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.127 をリリースしています。関連付けでアプリケーションが固まってしまう不具合などを修正しています。
+更新内容は次の通りです。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:238f810f267ae8c8505fc2878bdc6b02&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;オプション設定から関連付けのためレジストリ設定を行うと固まるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;でアンチウイルス誤検知対策のため関連付けを行う動作を 1.9.125 で変更したのですが、関連付けのためレジストリ登録を行うと固まっていました。Debug バージョンでは発生せず Release バージョンで出る問題です。
+今回固まる致命的な問題を修正しています。報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;これ以外のタブを閉じる, 選択リンクを開く(closeExcept.js, openSelectionLink.js)のアイコンを追加 作成ありがとうございます&lt;/strong&gt;
+&lt;p&gt;Blink 版では先に追加していますが、Trident 版でも作成していただいたスクリプトアイコンを追加しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブがないときに新規タブを作成したとき、新規タブにフォーカスが設定されないのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブがシングルラインの時、タブ幅の設定が効いていないのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;ほか細かなバグを修正しています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;作者環境では Windows10 で Creators Update を適用し今のところ特に問題なく動作しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:238f810f267ae8c8505fc2878bdc6b02&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19127.zip&#34;&gt;ダウンロード Ancia 1.9.127&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19127Beta&#34;&gt;更新一覧 Ancia 1.9.127&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:238f810f267ae8c8505fc2878bdc6b02&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.127 をリリースしています。関連付けでアプリケーションが固まってしまう不具合などを修正しています。 更新内容は次の通りです。 更新内容 fix オプション設定から関連付けのためレジストリ設定を行うと固まるのを修正 報告ありがとうございます でアンチウイルス誤検知対策のため関連付けを行う動作を 1.9.125 で変更したのですが、関連付けのためレジストリ登録を行うと固まっていました。Debug バージョンでは発生せず Release バージョンで出る問題です。 今回固まる致命的な問題を修正しています。報告ありがとうございました。 mod これ以外のタブを閉じる, 選択リンクを開く(closeExcept.js, openSelectionLink.js)のアイコンを追加 作成ありがとうございます Blink 版では先に追加していますが、Trident 版でも作成していただいたスクリプトアイコンを追加しています。 fix タブがないときに新規タブを作成したとき、新規タブにフォーカスが設定されないのを修正 fix タブがシングルラインの時、タブ幅の設定が効いていないのを修正 報告ありがとうございます ほか細かなバグを修正しています。 作者環境では Windows10 で Creators Update を適用し今のところ特に問題なく動作しています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.127 更新一覧はこちらとなります。更新一覧 Ancia 1.9.127 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19127.jpg</eyecatch>
+          <datetimeUnix>1495378800</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -446,189 +525,6 @@ Regist.exe がなぜかウイルス誤検知されやすいため削除し、ア
           <desctext>Ancia Ver1.9.124 をリリースしています。アプリケーションの終了時にウインドウの位置保存で失敗する場合があり、次回起動時に設定情報が失われる致命的な不具合が修正されています。 アプリケーションの更新は、1.9.123 から chrome://newtab/#version の「更新を確認」ボタンから行うことができます。 更新内容は次の通りです。 更新内容 fix 特定の場合、アプリケーションのウインドウ位置保存が正常に動作せず、次回起動時に設定情報が失われるのを修正 報告ありがとうございます 設定情報を setting/App.json に書き込む際、異常な値が書き込まれる場合がありました。次回起動時に異常な設定値を読み取ることができない不具合を修正しています。報告ありがとうございました。 fix 高DPI環境で一部のダイアログのテキストが途切れているのを修正 mod よく表示するサイトがない場合、情報なしを表示 mod XP以前の環境でaboutダイアログが出ないのを表示するように 他は細かな不具合修正などを行っています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.124 更新一覧はこちらとなります。更新一覧 Ancia 1.9.124 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/19124.png</eyecatch>
           <datetimeUnix>1478444401</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Ver1.9.123 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia19123/</link>
-          <pubDate>2016-10-31 00:00:01 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia19123/</guid>
-          <description>
-
-&lt;p&gt;Ancia Ver1.9.123をリリースしています。混在したコンテンツのメッセージが頻繁に表示される場合がある現象が改善されています。
-また、IEとは別に独自に履歴を管理するようにし、新規タブから独自履歴に基づいたよく使用するするページ表示や独自履歴の検索・削除ができます。
-更新内容は次の通りとなります。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:2971c67e2000513ec2f446c8458bf2ee&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;独自の履歴管理をサポート。IEでの履歴を削除しても独自の履歴が残ります(独自履歴も削除可能)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;chrome://newtabで、独自履歴に基づいたよく使用するサイトの表示と、表示履歴を管理・削除できるように(初回、使用するサイト表示が空表示になるのは仕様です)&lt;/strong&gt;
-&lt;p&gt;
-IE とは別に履歴をアプリケーションで保存するようにしました。履歴は chrome://newtab/#history から直接開くことができます。
-IE では履歴がエクスプローラで表示できるからか取得に手間がかかる・保存されないページがあるなどありましたので、独自に保存する仕様にしました。
-IE での履歴を削除しても独自履歴は残るため、ポータブルでも履歴の参照ができます。サイドバーの履歴表示が IE 側を参照していますが、独自履歴を表示する仕様とする予定です。
-&lt;/p&gt;
-&lt;p&gt;
-Google Chrome や Internet Explorer からの履歴インポートをサポートするかもしれません。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;混在コンテンツの表示でのメッセージ表示で、すべてのコンテンツを表示・アンセキュアなコンテンツを非表示を選択し、設定保存できるように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;混在コンテンツメッセージの表示がよく行われるところで、表示条件をIEと同等に&lt;/strong&gt;
-&lt;p&gt;「この表示を規定にする」をチェックすることで、表示の設定を保存できるようにしています。またメッセージ表示が邪魔にならないよう小さめに調整しています。&lt;/p&gt;
-&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/mixedcontent19123.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;混在コンテンツメッセージの表示が頻繁に出る(特に画像関係)ことがあるため、表示条件がIEと同様になるよう対応しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;localhome,tabsは廃止し、about:localhome,about:tabsはchrome://newtabを開く仕様に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;動作対象をIE9以降に IE8以前でも起動できますが、新規タブ画面の表示が乱れる弊害が出ます(まだオプション設定は開けますが今後IE8以前では開けなくなります)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報の表示は chrome://newtab/#version を開くように&lt;/strong&gt;
-&lt;p&gt;以前のバージョンのローカルホームや新規タブページは IE8 でも動くことを想定してか古い HTML や Javascript を使用していたため、表示が重くなっていました。
-今回 IE9 以降を動作対象とし、 古い Javascript が動作しないことで新規タブ表示が早くなっています。&lt;/p&gt;
-&lt;p&gt;
-新規タブはローカルホームといった特定のページを開くのではなく、履歴やバージョン情報など表示できる共通の chrome://newtab を開くことで動作を簡略化しています(例えばバージョン情報を表示するとき、メニューなどを探す必要はなく新規タブを開けばよい)。
-&lt;/p&gt;
-&lt;p&gt;オプション設定まだ IE8 以前でも開くことができますが、今後開けなくなる予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;クラッシュページで、about:crashはchrome://crashを表示するように、クラッシュページのデザインを変更・動作を軽量に&lt;/strong&gt;
-&lt;p&gt;クラッシュページの表示方法を見直し、画像を svg 埋め込みにするなど表示が軽くなるよう対応しています。対応前はクラッシュ情報ファイルを常に読み込むようにしていましたが、クラッシュ内容を表示するまでは読み込まないなどです。
-また、戻る・進むを行うとクラッシュしたページのURLなどの情報が失われていましたが、失われないよう対応しています。&lt;/p&gt;
-&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/crash_page.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;デフォルトで起動時に開始するページは前回起動時のページに&lt;/strong&gt;
-&lt;p&gt;ローカルホームを廃止したことにより、起動時にローカルホームを開く設定の場合は、自動的に前回起動時のページを開くよう置き換えられます。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ツールバーでchevronを右クリックするとおかしな動作になるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;混在コンテンツの表示で、メッセージではなくダイアログが出ることがあるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブがアクティブではないとき、ページのスクリプトエラーメッセージなどの表示サイズがおかしいのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;chrome://newtab#versionでversion情報コピーの一部がおかしいのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ページからwindows storeアプリインストールページが開けない問題が特定のページで起こるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;コンパイラをvc2015に変更&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;sqlite3.15.0に更新&lt;/strong&gt;
-&lt;p&gt;他は細かな不具合修正などを行っています。Windows Storeアプリインストールページ開けない特定ページは、Edge の拡張機能インストールページが該当します。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:2971c67e2000513ec2f446c8458bf2ee&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19123.zip&#34;&gt;ダウンロード Ancia 1.9.123&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19123Beta&#34;&gt;更新一覧 Ancia 1.9.123&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;不具合について:2971c67e2000513ec2f446c8458bf2ee&#34;&gt;不具合について&lt;/h2&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-</description>
-          <desctext>Ancia Ver1.9.123をリリースしています。混在したコンテンツのメッセージが頻繁に表示される場合がある現象が改善されています。 また、IEとは別に独自に履歴を管理するようにし、新規タブから独自履歴に基づいたよく使用するするページ表示や独自履歴の検索・削除ができます。 更新内容は次の通りとなります。 更新内容 add 独自の履歴管理をサポート。IEでの履歴を削除しても独自の履歴が残ります(独自履歴も削除可能) add chrome://newtabで、独自履歴に基づいたよく使用するサイトの表示と、表示履歴を管理・削除できるように(初回、使用するサイト表示が空表示になるのは仕様です) IE とは別に履歴をアプリケーションで保存するようにしました。履歴は chrome://newtab/#history から直接開くことができます。 IE では履歴がエクスプローラで表示できるからか取得に手間がかかる・保存されないページがあるなどありましたので、独自に保存する仕様にしました。 IE での履歴を削除しても独自履歴は残るため、ポータブルでも履歴の参照ができます。サイドバーの履歴表示が IE 側を参照していますが、独自履歴を表示する仕様とする予定です。 Google Chrome や Internet Explorer からの履歴インポートをサポートするかもしれません。 add 混在コンテンツの表示でのメッセージ表示で、すべてのコンテンツを表示・アンセキュアなコンテンツを非表示を選択し、設定保存できるように mod 混在コンテンツメッセージの表示がよく行われるところで、表示条件をIEと同等に 「この表示を規定にする」をチェックすることで、表示の設定を保存できるようにしています。またメッセージ表示が邪魔にならないよう小さめに調整しています。 混在コンテンツメッセージの表示が頻繁に出る(特に画像関係)ことがあるため、表示条件がIEと同様になるよう対応しています。 mod localhome,tabsは廃止し、about:localhome,about:tabsはchrome://newtabを開く仕様に mod 動作対象をIE9以降に IE8以前でも起動できますが、新規タブ画面の表示が乱れる弊害が出ます(まだオプション設定は開けますが今後IE8以前では開けなくなります) mod バージョン情報の表示は chrome://newtab/#version を開くように 以前のバージョンのローカルホームや新規タブページは IE8 でも動くことを想定してか古い HTML や Javascript を使用していたため、表示が重くなっていました。 今回 IE9 以降を動作対象とし、 古い Javascript が動作しないことで新規タブ表示が早くなっています。 新規タブはローカルホームといった特定のページを開くのではなく、履歴やバージョン情報など表示できる共通の chrome://newtab を開くことで動作を簡略化しています(例えばバージョン情報を表示するとき、メニューなどを探す必要はなく新規タブを開けばよい)。 オプション設定まだ IE8 以前でも開くことができますが、今後開けなくなる予定です。 mod クラッシュページで、about:crashはchrome://crashを表示するように、クラッシュページのデザインを変更・動作を軽量に クラッシュページの表示方法を見直し、画像を svg 埋め込みにするなど表示が軽くなるよう対応しています。対応前はクラッシュ情報ファイルを常に読み込むようにしていましたが、クラッシュ内容を表示するまでは読み込まないなどです。 また、戻る・進むを行うとクラッシュしたページのURLなどの情報が失われていましたが、失われないよう対応しています。 mod デフォルトで起動時に開始するページは前回起動時のページに ローカルホームを廃止したことにより、起動時にローカルホームを開く設定の場合は、自動的に前回起動時のページを開くよう置き換えられます。 fix ツールバーでchevronを右クリックするとおかしな動作になるのを修正</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/19123.png</eyecatch>
-          <datetimeUnix>1477839601</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Chrome Ver0.5.6 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia-chrome056/</link>
-          <pubDate>2016-10-04 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia-chrome056/</guid>
-          <description>
-
-&lt;p&gt;Ancia Chrome Ver 0.5.6 をリリースしています。
-今後の更新で最難関と思われたメディア再生に対応しています。0.5.5 使用中の方は、chrome://tabs/#version から更新を行えます。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;mp3,mp4などChromeと同等のmedia再生に対応 TwitterやVineなど動画再生が可能に&lt;/strong&gt;
-&lt;p&gt;動画が再生できないことは既定のブラウザにできないほど致命的なもので対応に悩んでいましたが、いろいろ調べやっと対応することができました。
-ライセンスについても調べていますが、労力がかかっているため内容は一切伏せさせていただきます。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;証明書にエラーがあるページでは、空のページ表示ではなくエラー内容を表示するように&lt;/strong&gt;
-&lt;p&gt;HTTPS のページで証明書でエラーがある場合、Google Chrome と同じエラー画面を表示するようにしています。
-Google Chrome では「セキュリティに関する事象についての詳細を Google に自動送信します。」のチェックがありますが、
-Ancia Chrome ではチェックは非表示で送信することはありません。
-&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;border&#39; src=&#39;http://blog.anciasoft.jp/img/ssherror.png&#39;&gt;&lt;/div&gt;&lt;p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;sourcetree://などの外部プロトコルで確認画面を出しオープンできるように&lt;/strong&gt;
-&lt;p&gt;外部プロトコルのリンクを開く際何もしていませんでしたが、確認画面を出しオープン可能になりました。
-「このようなリンク設定をすべて保存する」は、起動中のアプリケーションに保存されます。再起動すると設定は失われ、再度確認画面が表示されます。
-&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/externalprotocol.png&#39;&gt;&lt;/div&gt;&lt;p&gt;
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Twitter動作不安定に対する対策(window.notificationを動作deniedでのサポート) 報告ありがとうございます&lt;/strong&gt;
-&lt;p&gt;Twitterにログインすると window.notification を参照しエラーが出ていたため、window.notification を denied動作(許可しない) でサポートしています。
-0.5.6 でしばらくツイートしてみましたが特に不安定になることはありませんでした。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のタブから新規タブを開くと、空のタブが生成されることがあるのを修正&lt;/strong&gt;
-&lt;p&gt;Amazon で新規タブが開かれる場合無駄に空タブができる報告がありましたが、このような空タブができる場合を修正しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;開発者ツールの表示で選択要素がメニューでの選択要素とならないのを修正&lt;/strong&gt;
-&lt;p&gt;右クリックから「検証(I)」で開発者ツールを表示すると、初期の選択要素が右クリックした要素になるよう対応しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;メニュー表示でメモリの2重開放などバグ修正&lt;/strong&gt;
-&lt;p&gt;右クリック動作でメモリ2重開放があったため修正しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;オプション設定ショートカットキーでBackspaceの表示が常に0になるのを修正&lt;/strong&gt;
-&lt;p&gt;オプション設定のショートカットキーで Backspace を登録するとショートカットキー表示がおかしい問題を修正しています。
-Trident 版でも起こる問題で、Trident 版は次回更新対応されます。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;TabManagerでBlink版のタブ一覧が表示できないのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;タブスナップショットが動作していないのを修正&lt;/strong&gt;
-&lt;p&gt;Blink板では TabManager での表示とタブスナップショットが動作していませんでしたが、0.5.6 から動作可能になりました。
-TabManager でのタブのプロセスIDがレンダラプロセスではありませんが、今後対応予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;zoomの拡大率がおかしいのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;起動時や閉じたタブの開き直しでzoom状態が復元されないのを修正&lt;/strong&gt;
-&lt;p&gt;ズームの拡大率が実際と合わない動作でしたが、正常な拡大率になるよう対応しています。タブを開きなおした時もズームを復元するようにしています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;consoleメッセージがdebug.logに吐き出されるのを抑止&lt;/strong&gt;
-&lt;p&gt;ページ側の Javascript で console 出力を行うと、debug.log に吐き出され、ページによっては多量に出力される場合がありました。
-そのため、debug.log のサイズが肥大化することがありましたが、 これを抑止しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;mp3,mp4再生伴いFlashでの疑似再生機能を削除&lt;/strong&gt;
-&lt;p&gt;メディア再生対応でmp3などを Flash で疑似再生する機能が不要となりましたので削除しています。
-chrome://tabs/#version から更新した場合は、疑似再生でのファイルも自動で削除されます(resource/loader 配下)。
-resource/loader 配下はもう使用されませんので、手動で削除しても大丈夫です。
-&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;videoタグやaudioタグ、canvasタグでメニュー項目をChromeと同等に&lt;/strong&gt;
-&lt;p&gt;一部の要素で右クリックメニューが通常時のものが出ていましたが、各タグ固有メニューを表示するようにしています。
-&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/mediamenu.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ChromiumよりDirectWrite有効無効の処理が削除されたため、DirectWrite有効無効オプション削除&lt;/strong&gt;
-&lt;p&gt;Chromium 52への更新でコードから DirectWrite の有効無効オプションが削除されていました。
-さらにコードから DirectWrite が有効かのチェック自体も削除され、DirectWrite 前提のコードのように見えます。&lt;/p&gt;
-&lt;p&gt;Chromium は数百のプロジェクトからなっており、DirectWrite がどこで使用されているかの判断は難しい状況です。
-そのため、DirectWrite 有効無効を独自で対応するのは無理があり、残念ながら DirectWrite 有効無効のサポートは不可となります。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Backspaceで戻るが標準ショートカットではなくなったため、Backspaceで戻るを既定のショートカットキーに追加(ショートカットキーを変更している場合は、Backspace動作をオプション設定から追加する必要があります)&lt;/strong&gt;
-&lt;p&gt;今までは Blink 側の規定ショートカットキーで Backspace で戻るが行われていました。&lt;/p&gt;
-&lt;p&gt;52.0.2743.116 への更新で Backspace で戻るが既定のショートカットから削除されたため、アプリケーション側のショートカットキーに Backspace を追加しています。
-もし、0.5.6 以前にショートカットキーを変更している場合、オプション設定から Backspace を追加する必要があります。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ホイールスクロールでもたつくことがあることへの対策&lt;/strong&gt;
-&lt;p&gt;ページスクロールでもたつくことがあり対応しましたが、、こちら環境で試すとまだもたつきが発生しています。もう少し調べてみます。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報 chrome://tabs/#version からバージョン情報のコピーを可能に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報のコピーでFlash Versionは、PPAPI側のFlash Versionがコピーされるように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;履歴でabout:関係は追加しないように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;バージョン情報の表示は ダイアログではなく chrome://newtab/#version を開くように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;chrome://newtab/#version から利用規約(EULA)を表示できるように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;初期のよく表示するサイトで配布ページと開発ブログを表示(よく表示しなければいずれ消えます)&lt;/strong&gt;
-&lt;p&gt;新規タブ表示で細かな対応を行っています。バージョン情報で chrome://newtab/#version を表示するのは、Trident 版でも行う予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;デフォルトで起動時に開始するページは前回起動時のページに&lt;/strong&gt;
-&lt;p&gt;規定でアプリケーション起動時は、前回起動時のタブを復元する設定としています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Update時、不要になったファイルを削除するように&lt;/strong&gt;
-&lt;p&gt;chrome://tabs/#version から更新を行った場合、動作に不要となったファイルを削除するようにしています。
-今回は resource/loader 配下が該当します。&lt;/p&gt;
-&lt;p&gt;chrome://tabs/#version と chrome://newtab/#version と2種類ありますが、どちらも同じ内容を表示します。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ChromiumのBuild環境の影響でサポートOSからXpとVistaを削除(XPとVistaは動作対象外となります)&lt;/strong&gt;
-&lt;p&gt;Chromium の Build 環境で XP が非サポートとなったことから、動作環境から XP と Vista を削除しています。
-厳密には Vista だと動作できるかもしれませんが、こちらでは未確認です。
-ただ、XP ではコンパイラが XP を対象としないもののため、起動することはできません。&lt;/p&gt;
-&lt;p&gt;Chromium は数百ものプロジェクトからなっていると書きましたが、数百のプロジェクトを同じコンパイル設定で Build します。
-独自に XP も対象とする Build とすることもできますが、数百のプロジェクトが XP も対象としているコードとなっているかの保証はなく、
-独自に対応するにもプロジェクト数の関係で無理があります。残念ながら XP への対応は難しくなります。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/52.0.2743.116に更新&lt;/strong&gt;
-&lt;p&gt;2016/10/3 現在 Google Chrome の最新バージョンは、53.0.2785.143 ですが、時間の関係で最新にはできませんでした。
-次回更新時はできるだけ最新バージョンに更新予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;0.5.6 からタブの切り替えでちらつきが発生するようになりました。できれば早めに対処したいところです。&lt;/p&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome056.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.6&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0560&#34;&gt;更新一覧 Ancia Chrome 0.5.6&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;不具合について:48a65cc00a4089b1cf1e10e350001b95&#34;&gt;不具合について&lt;/h2&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-</description>
-          <desctext>Ancia Chrome Ver 0.5.6 をリリースしています。 今後の更新で最難関と思われたメディア再生に対応しています。0.5.5 使用中の方は、chrome://tabs/#version から更新を行えます。 更新内容 add mp3,mp4などChromeと同等のmedia再生に対応 TwitterやVineなど動画再生が可能に 動画が再生できないことは既定のブラウザにできないほど致命的なもので対応に悩んでいましたが、いろいろ調べやっと対応することができました。 ライセンスについても調べていますが、労力がかかっているため内容は一切伏せさせていただきます。 add 証明書にエラーがあるページでは、空のページ表示ではなくエラー内容を表示するように HTTPS のページで証明書でエラーがある場合、Google Chrome と同じエラー画面を表示するようにしています。 Google Chrome では「セキュリティに関する事象についての詳細を Google に自動送信します。」のチェックがありますが、 Ancia Chrome ではチェックは非表示で送信することはありません。 add sourcetree://などの外部プロトコルで確認画面を出しオープンできるように 外部プロトコルのリンクを開く際何もしていませんでしたが、確認画面を出しオープン可能になりました。 「このようなリンク設定をすべて保存する」は、起動中のアプリケーションに保存されます。再起動すると設定は失われ、再度確認画面が表示されます。 fix Twitter動作不安定に対する対策(window.notificationを動作deniedでのサポート) 報告ありがとうございます Twitterにログインすると window.notification を参照しエラーが出ていたため、window.notification を denied動作(許可しない) でサポートしています。 0.5.6 でしばらくツイートしてみましたが特に不安定になることはありませんでした。 fix 特定のタブから新規タブを開くと、空のタブが生成されることがあるのを修正 Amazon で新規タブが開かれる場合無駄に空タブができる報告がありましたが、このような空タブができる場合を修正しています。 fix 開発者ツールの表示で選択要素がメニューでの選択要素とならないのを修正 右クリックから「検証(I)」で開発者ツールを表示すると、初期の選択要素が右クリックした要素になるよう対応しています。 fix メニュー表示でメモリの2重開放などバグ修正 右クリック動作でメモリ2重開放があったため修正しています。 fix オプション設定ショートカットキーでBackspaceの表示が常に0になるのを修正 オプション設定のショートカットキーで Backspace を登録するとショートカットキー表示がおかしい問題を修正しています。 Trident 版でも起こる問題で、Trident 版は次回更新対応されます。 fix TabManagerでBlink版のタブ一覧が表示できないのを修正 fix タブスナップショットが動作していないのを修正 Blink板では TabManager での表示とタブスナップショットが動作していませんでしたが、0.5.6 から動作可能になりました。 TabManager</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/anciachrome056.jpg</eyecatch>
-          <datetimeUnix>1475506800</datetimeUnix>
         </item>
       
     
