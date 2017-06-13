@@ -6,8 +6,51 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2017 y-kurimoto.</rights>
-    <updated>2017-05-22 00:00:01 &#43;0900 JST</updated>
+    <updated>2017-06-14 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.6.3 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome063/</link>
+          <pubDate>2017-06-14 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome063/</guid>
+          <description>
+
+&lt;p&gt;Ancia Chrome Ver 0.6.3 をリリースしています。&lt;/p&gt;
+
+&lt;p&gt;更新内容は少なく主にlinkエンジンの更新や細かなバグ修正です。更新内容は次の通りです。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:036bb85eecdd728ebfbf4a99f2f83203&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;オプション設定にオートフィルの有効の設定追加(設定名:autofill、既定有効)&lt;/strong&gt;
+&lt;p&gt;フォームへのオートフィルを使用するかしないかを設定可能にしています。デフォルトは使用するです。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;検索バーでの履歴メニューを表示し、さらにメニューを表示すると履歴メニューが閉じない場合があるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;アニメーションgifなどの再生ページで右クリックメニューの動作がおかしいことがあるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;オプション画面でダウンロードなどのロゴ画像が表示されないことがあるのを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Windows10以外でインライン検索にフォーカスがあるときページでホイールスクロールできないのを修正&lt;/strong&gt;
+&lt;p&gt;細かなバグを修正しています。メニューの動作がおかしい件は、動画の再生ページだと、今回の対応で再生部分が描画されない影響が出ています。描画については対応を考えています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/59.0.3071.86に更新&lt;/strong&gt;
+&lt;p&gt;レンダリングエンジンの更新を行っています。Google Chrome 59での更新内容は、&lt;a href=&#34;http://coliss.com/articles/browser/chrome/devtools-new-features-in-chrome59.html&#34;&gt;Web制作者は使わないと損！Chrome 59でアップデートされたデベロッパーツールの便利な新機能 | コリス&lt;/a&gt;が参考になります。
+フルサイズのスクリーンショットをキャプチャができないのですが、対応したいところです。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:036bb85eecdd728ebfbf4a99f2f83203&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome063.7z&#34;&gt;ダウンロード Ancia Chrome 0.6.3&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0630&#34;&gt;更新一覧 Ancia Chrome 0.6.3&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:036bb85eecdd728ebfbf4a99f2f83203&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Chrome Ver 0.6.3 をリリースしています。 更新内容は少なく主にlinkエンジンの更新や細かなバグ修正です。更新内容は次の通りです。 更新内容 add オプション設定にオートフィルの有効の設定追加(設定名:autofill、既定有効) フォームへのオートフィルを使用するかしないかを設定可能にしています。デフォルトは使用するです。 fix 検索バーでの履歴メニューを表示し、さらにメニューを表示すると履歴メニューが閉じない場合があるのを修正 fix アニメーションgifなどの再生ページで右クリックメニューの動作がおかしいことがあるのを修正 fix オプション画面でダウンロードなどのロゴ画像が表示されないことがあるのを修正 mod Windows10以外でインライン検索にフォーカスがあるときページでホイールスクロールできないのを修正 細かなバグを修正しています。メニューの動作がおかしい件は、動画の再生ページだと、今回の対応で再生部分が描画されない影響が出ています。描画については対応を考えています。 mod blink版Chrome/59.0.3071.86に更新 レンダリングエンジンの更新を行っています。Google Chrome 59での更新内容は、Web制作者は使わないと損！Chrome 59でアップデートされたデベロッパーツールの便利な新機能 | コリスが参考になります。 フルサイズのスクリーンショットをキャプチャができないのですが、対応したいところです。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.6.3 更新一覧はこちらとなります。更新一覧 Ancia Chrome 0.6.3 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome063.jpg</eyecatch>
+          <datetimeUnix>1497366001</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -484,32 +527,6 @@ Regist.exe がなぜかウイルス誤検知されやすいため削除し、ア
           <desctext>今年最後となる Ancia Chrome Ver 0.5.7 をリリースしています。窓の杜大賞は入賞することはなくダメでしたが、投票していただいた方にお礼申し上げます。 Ver 0.5.7 では、Blink のバージョンを 55.0.2883.87 に更新、Backspace 誤動作の修正、タブを切り替え時のちらつき改善など、多数の更新が含まれます。 0.5.7 にはバグがあります Windows10 の環境でタブをバックグラウンドで開いたとき、まれにホイールスクロールができないバグがあります。 スクロールできない場合、ページを最新に更新するか、リンククリックなどでページ遷移するとスクロールできるようになります。 調査中ですが残念ながら原因がわかっていません。原因がわかり次第更新予定です。 更新内容 fix フォームなどでBackspaceが効かないのを修正 報告ありがとうございます fix FlashでBackspaceを入力すると戻ってしまうのを修正 Google Chromeとほぼ同じショートカットキーの判定処理を入れたため、フォームやFlashで入力に問題がありましたが、今回の更新で今後も発生しないと思います。 fix ホイールのスクロールがもたつくことがあるのを修正 後述の MDI を廃止など表示配置を見直したことで、ホイールスクロールのもたつきがなくなりました。 ホイールができない問題は、この更新と無関係(ホイールの処理自体は変更していない)と思われ調査中です。 fix 非Activeのとき、captionがactive状態で描画されることがあるのを修正 fix インライン検索で上下キーでブラウザがスクロールしないのを修正 fix ダウンロード完了画面でファイル実行などのボタンが何度も実行され、ファイル実行が何度も行われることがあるのを修正 fix 名前を付けて対象を保存で保存タイプなどがおかしい場合があるのを修正 報告ありがとうございます fix ドロップでの画像を名前を付けて保存などで画像のURL取得に失敗するのを修正 報告ありがとうございます fix Trident版で発生している貼り付け新規タブが常に先頭に追加されるのを修正(Trident版は次回更新時に反映) fix 「新規タブのアクティブ指定」オプションで「ページからの新規タブアクティブ指定」が効いていないのを修正 報告ありがとうございます fix ナビゲートロックが動作していないのを修正 報告ありがとうございます fix クローズロックタブがマウスジェスチャでの閉じるなど確認なしに閉じられてしまうのを修正 ほか報告がありました不具合修正や気が付いたバグを修正しています。 mod Chrome 54で非サポートとなったwindow.externalをサポートするように(AddSearchProviderなどが動作、AddUserScriptは一時的に動作しません、今後対応予定です) Chrome 54 から window.external が非サポートとなっています。Ancia Chrome では検索エンジン追加などページから行いたいため、 window.external の一部メソッドを独自にサポートしました。 mod MDIを廃止。廃止によりタブ切替が高速化。MDI関係の処理(並べて表示など)は現状何もしない動作としています</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/anciachrome057.jpg</eyecatch>
           <datetimeUnix>1483110000</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>「Ancia Chrome」が窓の杜大賞にノミネート</title>
-          <link>http://blog.anciasoft.jp/post/madonomori-taisyou-nominate2016/</link>
-          <pubDate>2016-12-12 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/madonomori-taisyou-nominate2016/</guid>
-          <description>&lt;p&gt;「Ancia Chrome」が窓の杜大賞の一覧にノミネートされました。
-まだ作りが甘い部分もありますが、Ancia Chrome がここまで開発を続けられてきたのは、不具合など報告していただいた皆様のおかげです。&lt;/p&gt;
-
-&lt;p&gt;ノミネート作品には、7-Zip など非常に有名なソフトもあります。これを機会にお世話になっているソフト・役に立ったソフトに投票してみてはいかがでしょうか。&lt;/p&gt;
-
-&lt;p&gt;自分は 7-Zip に大変にお世話になっているため(自作ソフトでも LZMA ライブラリを使用)、LZMA なしではソフトの作成はできませんでした。
-7-Zip あっての Ancia Chrome ですので自分のソフトに投票したいところですが、7-Zip に投票しようかなと思っています。&lt;/p&gt;
-
-&lt;p&gt;投票ページは以下のページからとなります。&lt;br /&gt;
-&lt;a href=&#34;http://forest.watch.impress.co.jp/docs/prize/2016/&#34;&gt;【2016年 窓の杜大賞】窓の杜大賞 概要 - 窓の杜&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;※ 締め切りは2016年12月16日(金)正午までとなっています。&lt;/p&gt;
-</description>
-          <desctext>「Ancia Chrome」が窓の杜大賞の一覧にノミネートされました。 まだ作りが甘い部分もありますが、Ancia Chrome がここまで開発を続けられてきたのは、不具合など報告していただいた皆様のおかげです。 ノミネート作品には、7-Zip など非常に有名なソフトもあります。これを機会にお世話になっているソフト・役に立ったソフトに投票してみてはいかがでしょうか。 自分は 7-Zip に大変にお世話になっているため(自作ソフトでも LZMA ライブラリを使用)、LZMA なしではソフトの作成はできませんでした。 7-Zip あっての Ancia Chrome ですので自分のソフトに投票したいところですが、7-Zip に投票しようかなと思っています。 投票ページは以下のページからとなります。 【2016年 窓の杜大賞】窓の杜大賞 概要 - 窓の杜 ※ 締め切りは2016年12月16日(金)正午までとなっています。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/madonominate2016.jpg</eyecatch>
-          <datetimeUnix>1481468400</datetimeUnix>
         </item>
       
     
