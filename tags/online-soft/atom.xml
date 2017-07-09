@@ -6,8 +6,52 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2017 y-kurimoto.</rights>
-    <updated>2017-06-14 00:00:01 &#43;0900 JST</updated>
+    <updated>2017-07-10 00:00:01 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Chrome Ver0.6.4 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia-chrome064/</link>
+          <pubDate>2017-07-10 00:00:01 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia-chrome064/</guid>
+          <description>
+
+&lt;p&gt;Ancia Chrome Ver 0.6.4 をリリースしています。&lt;/p&gt;
+
+&lt;p&gt;主な更新内容として、Opera で搭載されているマウス左ボタン+右ボタンクリックなどの ロッカージェスチャー の設定、タブに対するマウス動作の指定を可能にしています。
+Blinkエンジンの更新やメニューを表示すると動が描画が止まるなども対応しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:4aecdeebde81d66434aeb895b4ff8d32&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;オプションタブ設定で、タブとタブ背景に対するShift+クリックなどの動作指定を可能に(第4、第5ボタンに対する設定は詳細設定表示のチェックが必要です)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;オプションマウス設定で、ブラウザ上でのマウス動作の指定、右＋左などロッカージェスチャーの指定を可能に&lt;/strong&gt;
+&lt;p&gt;オプションからタブとブラウザでのマウス動作の設定を可能にしています。Trident版では、ブラウザでのマウス動作でCTRL+ ホイールダウンアップの動作が指定できますが、Blink版では未サポートです。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;画面スタイルの変更をオプション設定から可能に(設定名: viewStyle、詳細設定を表示する必要があります)&lt;/strong&gt;
+&lt;p&gt;オプション設定一新後、画面スタイルの設定が行えませんでしたが対応しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;動画再生ページなどで右クリックメニューを表示すると、再生動作が止まってしまうのを止まらないように&lt;/strong&gt;
+&lt;p&gt;動画やFlashなど定期的に描画などするページで右クリックすると動作が止まってしまうのを、止まらないよう対応しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;新規タブ表示で画像などのメモリリークを修正&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/59.0.3071.115に更新&lt;/strong&gt;
+&lt;p&gt;他、Blink更新や細かなバグを修正しています。メモリリークは、新規タブを表示すると、Blinkでの画像などを読み込むことがあり、その際常にメモリリークしていました。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:4aecdeebde81d66434aeb895b4ff8d32&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome064.7z&#34;&gt;ダウンロード Ancia Chrome 0.6.4&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0640&#34;&gt;更新一覧 Ancia Chrome 0.6.4&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:4aecdeebde81d66434aeb895b4ff8d32&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Chrome Ver 0.6.4 をリリースしています。 主な更新内容として、Opera で搭載されているマウス左ボタン+右ボタンクリックなどの ロッカージェスチャー の設定、タブに対するマウス動作の指定を可能にしています。 Blinkエンジンの更新やメニューを表示すると動が描画が止まるなども対応しています。 更新内容 add オプションタブ設定で、タブとタブ背景に対するShift+クリックなどの動作指定を可能に(第4、第5ボタンに対する設定は詳細設定表示のチェックが必要です) add オプションマウス設定で、ブラウザ上でのマウス動作の指定、右＋左などロッカージェスチャーの指定を可能に オプションからタブとブラウザでのマウス動作の設定を可能にしています。Trident版では、ブラウザでのマウス動作でCTRL+ ホイールダウンアップの動作が指定できますが、Blink版では未サポートです。 add 画面スタイルの変更をオプション設定から可能に(設定名: viewStyle、詳細設定を表示する必要があります) オプション設定一新後、画面スタイルの設定が行えませんでしたが対応しています。 mod 動画再生ページなどで右クリックメニューを表示すると、再生動作が止まってしまうのを止まらないように 動画やFlashなど定期的に描画などするページで右クリックすると動作が止まってしまうのを、止まらないよう対応しています。 fix 新規タブ表示で画像などのメモリリークを修正 mod blink版Chrome/59.0.3071.115に更新 他、Blink更新や細かなバグを修正しています。メモリリークは、新規タブを表示すると、Blinkでの画像などを読み込むことがあり、その際常にメモリリークしていました。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.6.4 更新一覧はこちらとなります。更新一覧 Ancia Chrome 0.6.4 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/anciachrome064.jpg</eyecatch>
+          <datetimeUnix>1499612401</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -439,94 +483,6 @@ Widevine CDM のファイルは関係上同梱できないため、含めない�
           <desctext>Ancia Chrome Ver 0.5.8 をリリースしています。 0.5.8 では、オプション設定のデザインを一新し、項目を設定しやすいよう改善しています。また報告いただいた不具合をいくつか修正しています。 更新内容 add オプション設定のデザインを一新。新規タブからオプション設定を表示できるようになど設定表示について改善しました(一部設定は、変更が反映されません、近日実装予定) オプション設定は、専用画面を出すのではなく、タブに表示するようにしています。また新規タブからオプション設定も表示できるようにし、探す手間を省いています。 オプション設定に適用ボタンはなく、変更は一部設定を除き即反映されます。オプション設定の「ウェブ コンテンツ」「キャッシュ・閲覧データ」は変更が反映されず、近日実装予定です。また従来まであった設定(ページ上でのマウス動作など)も追加予定です。 設定では、細かな設定や知識が必要なものは非表示となっています。そのような設定は、「詳細設定を表示」をチェックすることで表示することができます。 新規タブには、前回起動時のタブなども表示する予定です。 add ページ表示がディスプレイのDPIに従うかの設定追加(設定名pageHighDpi 規定値: ON) オプション設定の全般からページ表示がDPIに従うかを設定できるようにしています。デフォルトで従うため、従来のDPI表示(DPI100%表示)としたい場合は、OFFとし再起動してください。 fix autofillのとき、特定のformでclients1.google.comに無意味な通信を行うのを修正 報告ありがとうございます 最初のフォームフィルで意味のないデータ(フィルしたかどうか？)を Google に送信することがあったため、抑止しています。気づかなかった動作で、報告ありがとうございました。 fix 高DPI環境でバックグラウンドでタブを開くと、ホイールが効かないことがあるのを修正 fix ボタン型・カーソル型でのマウスジェスチャが利かないことがあるのを修正 報告ありがとうございます fix 右クリックメニューからの検索でsearchNewTab、searchTabGroupの設定が効いていないのを修正 fix 定期的にタブスナップショットを保存するが動作していないのを修正 報告ありがとうございます fix Firefox、Operaのブックマーク設定が保存されないのを修正 報告ありがとうございます fix ナビゲートロックで最新の状態に更新すると、新規タブができてしまうのを修正 報告ありがとうございます fix タブがない状態でクリックでサイドバーが自動で隠れないのを修正(マウスが離れたとき隠れないのは仕様となります) 報告ありがとうございます fix ブラウザ内でのマウス第4，5ボタンが動作していないのを修正 報告ありがとうございます 気づいた不具合、報告いただきました不具合を修正しています。タブがない状態でアプリケーションを終了するとクラッシュすることがあるのは、対応することができませんでした(調査継続中です)。 mod 既定のブラウザに設定するとき、システムのUIを開かずに設定するように、設定できない場合は従来通りシステムの規定プログラム選択UIを出すように mod 最後のタブを閉じたとき、ほかのブラウザと動作を合わせ、新規タブを開く動作を規定に(オプション設定 lastTabOpen で変更可能) mod Javaの実行制御は機能していないため、メニューから削除 mod オプション設定を開く動作は、新規activeタブでchrome://newtab/#optionを開くように mod オプション設定からタブ幅などリアルタイムで表示幅を確認しながら変更などが可能に 他は、細かな動作の変更を行っています。デフォルトブラウザの選択で、Windows10 の場合は、Windows10 用のブラウザ選択画面を出すようにしています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia Chrome 0.5.8 更新一覧はこちらとなります。更新一覧</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/anciachrome058.jpg</eyecatch>
           <datetimeUnix>1487516400</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Chrome Ver0.5.7 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia-chrome057/</link>
-          <pubDate>2016-12-31 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia-chrome057/</guid>
-          <description>
-
-&lt;p&gt;今年最後となる Ancia Chrome Ver 0.5.7 をリリースしています。窓の杜大賞は入賞することはなくダメでしたが、投票していただいた方にお礼申し上げます。
-Ver 0.5.7 では、Blink のバージョンを 55.0.2883.87 に更新、Backspace 誤動作の修正、タブを切り替え時のちらつき改善など、多数の更新が含まれます。&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-&lt;b&gt;0.5.7 にはバグがあります&lt;/b&gt;
-&lt;p&gt;
-Windows10 の環境でタブをバックグラウンドで開いたとき、まれにホイールスクロールができないバグがあります。
-スクロールできない場合、ページを最新に更新するか、リンククリックなどでページ遷移するとスクロールできるようになります。&lt;/p&gt;
-
-調査中ですが残念ながら原因がわかっていません。原因がわかり次第更新予定です。&lt;/div&gt;
-
-&lt;h2 id=&#34;更新内容:378bf2f53a3a0f6499804cb1a5988bf8&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;フォームなどでBackspaceが効かないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;FlashでBackspaceを入力すると戻ってしまうのを修正&lt;/strong&gt;
-&lt;p&gt;Google Chromeとほぼ同じショートカットキーの判定処理を入れたため、フォームやFlashで入力に問題がありましたが、今回の更新で今後も発生しないと思います。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ホイールのスクロールがもたつくことがあるのを修正&lt;/strong&gt;
-&lt;p&gt;後述の MDI を廃止など表示配置を見直したことで、ホイールスクロールのもたつきがなくなりました。
-ホイールができない問題は、この更新と無関係(ホイールの処理自体は変更していない)と思われ調査中です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;非Activeのとき、captionがactive状態で描画されることがあるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;インライン検索で上下キーでブラウザがスクロールしないのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ダウンロード完了画面でファイル実行などのボタンが何度も実行され、ファイル実行が何度も行われることがあるのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;名前を付けて対象を保存で保存タイプなどがおかしい場合があるのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ドロップでの画像を名前を付けて保存などで画像のURL取得に失敗するのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;Trident版で発生している貼り付け新規タブが常に先頭に追加されるのを修正(Trident版は次回更新時に反映)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;「新規タブのアクティブ指定」オプションで「ページからの新規タブアクティブ指定」が効いていないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;ナビゲートロックが動作していないのを修正 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;クローズロックタブがマウスジェスチャでの閉じるなど確認なしに閉じられてしまうのを修正&lt;/strong&gt;
-&lt;p&gt;ほか報告がありました不具合修正や気が付いたバグを修正しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Chrome 54で非サポートとなったwindow.externalをサポートするように(AddSearchProviderなどが動作、AddUserScriptは一時的に動作しません、今後対応予定です)&lt;/strong&gt;
-&lt;p&gt;Chrome 54 から window.external が非サポートとなっています。Ancia Chrome では検索エンジン追加などページから行いたいため、 window.external の一部メソッドを独自にサポートしました。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;MDIを廃止。廃止によりタブ切替が高速化。MDI関係の処理(並べて表示など)は現状何もしない動作としています&lt;/strong&gt;
-&lt;p&gt;Chrome のレンダラプロセスはページが表示中(アクティブタブ)だとCPU使用率が増えます。非表示(非アクティブタブ)にするとレンダラプロセスの優先順位を低くしCPU負荷を減らします
-(もう少し書くとメディア再生をしているページは非アクティブでもプロセス優先度が下がりません。メディア再生しているタブは開きすぎないことが Chrome 系ブラウザを軽く使う1つの方法です)。&lt;/p&gt;
-&lt;p&gt;
-MDI 表示で複数ページを同時に表示すると、CPU の使用率が増えUIが重くなるなどの現象が出ます。タブの切り離しができるため、MDI 表示は不要の機能となるため削除しました。&lt;/p&gt;
-&lt;p&gt;Trident版でもこの更新を含める予定です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Google Chromeで削除されたエンコード変更メニューを今まで通りサポート&lt;/strong&gt;
-&lt;p&gt;Google Chrome でエンコードメニューが削除されてしまいましたが、Ancia Chrome ではエンコードメニューをサポートするようにしました。
-Gogle Chrome でのエンコード関係削除は、 Blink 側でのエンコード変更メソッドごと削除されていますが、エンコード変更メソッドまで削除しなくてもよいのではと思いました。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;今まで通りのページ見た目を維持するため、Chrome更新によりページ表示スケールがディスプレイのdpiに従うことを抑止&lt;/strong&gt;
-&lt;p&gt;Blink の更新でページの表示が環境の高DPIに従い自動で拡大表示するようになりました。ですが、Ancia Chrome では、今までのページ見た目を維持するため、自動で高DPIに従わないようにしています。
-強制設定ですが今後高DPI表示に従うよう変更可能にするかもしれません。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Regist.exeはアンチウイルス誤検知が多いため削除&lt;/strong&gt;
-&lt;p&gt;Regist.exe は、アプリケーションを既定のブラウザに設定するため、レジストリに情報を設定することに使用しています。
-Regist.exe がなぜかウイルス誤検知されやすいため削除し、アプリケーションが代わりにレジストリ設定するようにしました。&lt;/p&gt;
-&lt;p&gt;アンチウイルスの誤検知はアンチウイルスソフト側の動作に依存し、作者側ではどうすることもできないため、誤検知されやすいファイルを含めないといった対応等しかできないことをご理解ください。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;localhomeはchrome://newtabを開く仕様に&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;検索履歴でdeleteキーでは検索エンジンを削除しないように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Alt+Tabなどでアプリを切り替えたとき、直前のfocusを維持するように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;タブを切り離した後、切り離し元windowがactiveになることがあるのを抑止&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ハイライトバーでescapeキーでハイライトをキャンセルした場合、ブラウザへfocusを設定するように、キーワードがない場合バーを閉じるように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;エンコード変更メニューで自動検出をサポート(自動検出メニュー項目を選択した際の動作をサポート)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Twitterの画像変更などでのファイル選択で選択フィルタをGoogle Chromeと同じように 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;複数画面であってもダウンロード画面をアプリを基準とした位置で表示するように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;IEツールバーは非サポートによりメニュー項目を削除&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;開発者ツールを最小化したとき、desktopの左下に画面が残るのを修正&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;(仕様情報) フルスクリーンでタスクバーを自動で隠す場合、タスクバーが自動で表示されないのはIEやGoogle Chromeと同じく仕様となります 報告ありがとうございます&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;QRコード生成スクリプト(QRCodeGenerator.js)でGoogle Chart APIを使用するように変更&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;blink版Chrome/55.0.2883.87に更新&lt;/strong&gt;
-&lt;p&gt;他、報告のありましたファイル選択の拡張子をまとめるなどの更新を行っています。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:378bf2f53a3a0f6499804cb1a5988bf8&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/AnciaChrome057.7z&#34;&gt;ダウンロード Ancia Chrome 0.5.7&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0570&#34;&gt;更新一覧 Ancia Chrome 0.5.7&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;不具合について:378bf2f53a3a0f6499804cb1a5988bf8&#34;&gt;不具合について&lt;/h2&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-</description>
-          <desctext>今年最後となる Ancia Chrome Ver 0.5.7 をリリースしています。窓の杜大賞は入賞することはなくダメでしたが、投票していただいた方にお礼申し上げます。 Ver 0.5.7 では、Blink のバージョンを 55.0.2883.87 に更新、Backspace 誤動作の修正、タブを切り替え時のちらつき改善など、多数の更新が含まれます。 0.5.7 にはバグがあります Windows10 の環境でタブをバックグラウンドで開いたとき、まれにホイールスクロールができないバグがあります。 スクロールできない場合、ページを最新に更新するか、リンククリックなどでページ遷移するとスクロールできるようになります。 調査中ですが残念ながら原因がわかっていません。原因がわかり次第更新予定です。 更新内容 fix フォームなどでBackspaceが効かないのを修正 報告ありがとうございます fix FlashでBackspaceを入力すると戻ってしまうのを修正 Google Chromeとほぼ同じショートカットキーの判定処理を入れたため、フォームやFlashで入力に問題がありましたが、今回の更新で今後も発生しないと思います。 fix ホイールのスクロールがもたつくことがあるのを修正 後述の MDI を廃止など表示配置を見直したことで、ホイールスクロールのもたつきがなくなりました。 ホイールができない問題は、この更新と無関係(ホイールの処理自体は変更していない)と思われ調査中です。 fix 非Activeのとき、captionがactive状態で描画されることがあるのを修正 fix インライン検索で上下キーでブラウザがスクロールしないのを修正 fix ダウンロード完了画面でファイル実行などのボタンが何度も実行され、ファイル実行が何度も行われることがあるのを修正 fix 名前を付けて対象を保存で保存タイプなどがおかしい場合があるのを修正 報告ありがとうございます fix ドロップでの画像を名前を付けて保存などで画像のURL取得に失敗するのを修正 報告ありがとうございます fix Trident版で発生している貼り付け新規タブが常に先頭に追加されるのを修正(Trident版は次回更新時に反映) fix 「新規タブのアクティブ指定」オプションで「ページからの新規タブアクティブ指定」が効いていないのを修正 報告ありがとうございます fix ナビゲートロックが動作していないのを修正 報告ありがとうございます fix クローズロックタブがマウスジェスチャでの閉じるなど確認なしに閉じられてしまうのを修正 ほか報告がありました不具合修正や気が付いたバグを修正しています。 mod Chrome 54で非サポートとなったwindow.externalをサポートするように(AddSearchProviderなどが動作、AddUserScriptは一時的に動作しません、今後対応予定です) Chrome 54 から window.external が非サポートとなっています。Ancia Chrome では検索エンジン追加などページから行いたいため、 window.external の一部メソッドを独自にサポートしました。 mod MDIを廃止。廃止によりタブ切替が高速化。MDI関係の処理(並べて表示など)は現状何もしない動作としています</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/anciachrome057.jpg</eyecatch>
-          <datetimeUnix>1483110000</datetimeUnix>
         </item>
       
     
