@@ -6,8 +6,54 @@
     <language>ja-jp</language>
     <author>ykuri</author>
     <rights>Copyright (C) 2017 y-kurimoto.</rights>
-    <updated>2017-08-17 00:00:01 &#43;0900 JST</updated>
+    <updated>2017-09-19 00:00:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Ancia Ver1.9.129 リリース</title>
+          <link>http://blog.anciasoft.jp/post/ancia19129/</link>
+          <pubDate>2017-09-19 00:00:00 &#43;0900 JST</pubDate>
+          <author>ykuri</author>
+          <guid>http://blog.anciasoft.jp/post/ancia19129/</guid>
+          <description>
+
+&lt;p&gt;Ancia Ver1.9.129 をリリースしています。既定のブラウザによりリンクバーやサイドバーで favicon が表示できない不具合などが修正されています。
+更新内容は次の通りです。&lt;/p&gt;
+
+&lt;h2 id=&#34;更新内容:41a2b50b43a6cb5169d74b444a70c2a5&#34;&gt;更新内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のブラウザが規定の場合、規定のブラウザアイコンが優先され、お気に入りバーなどでfaviconが表示されないのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;Edgeなどが規定のブラウザのとき、リンクバーやサイドバーで favicon が正常に表示されない不具合を修正しています。報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;一度タブグループとなったタブから新規タブを開くと新規タブの追加位置設定がおかしくなることがあるのを修正 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;タブの追加位置が設定と違った動作がする場合があり修正しています。フォーラムへの報告ありがとうございました。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;特定のページでfaviconが表示されないのを修正(アプリでのリクエストヘッダに関わる問題、表示されないサイトの例: &lt;a href=&#34;https://wowma.jp/&#34;&gt;https://wowma.jp/&lt;/a&gt;) 報告ありがとうございます&lt;/strong&gt;
+&lt;p&gt;favicon を取得する際のリクエストヘッダにより正常に favicon が返却されない場合がある問題を修正しています。報告ありがとうございます。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;起動時にブラウザ部分が空白になる現象が出ることがあるのを修正&lt;/strong&gt;
+&lt;p&gt;以前報告があったと思うのですが、起動時にブラウザ部分が空白となる現象が再現しました。マルチスレッド関係の問題で発生しないように対応しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;応答なしの現象が出るため、Windows10環境ではALT＋TAB動作対応はオプション設定testFeatureが有効の場合のみ動作するように&lt;/strong&gt;
+&lt;p&gt;1.9.128 で Windows10 限定でALT+TAB 動作修正を行いましたが固まる現象が出てしまいました。オプション設定の testFeature が有効の場合のみ ALT+TAB 対応が動作する対応を行っています。ALT+TAB が2回押す必要がある動作は対応が難しく仕様となります。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img class=&#39;nomargin-top&#39; src=&#39;http://blog.anciasoft.jp/img/19129testfeature.png&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;リンクバーなどインターネットショートカット(.url等)のアイコン表示で、favicon指定があってもfaviconが表示できない場合、できるだけfaviconを表示するように&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;sqlite3.20.1に更新&lt;/strong&gt;
+&lt;p&gt;他sqlite3の更新などを行っています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ダウンロードと更新一覧:41a2b50b43a6cb5169d74b444a70c2a5&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19129.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;br /&gt;
+更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19129Beta&#34;&gt;更新一覧&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;不具合について:41a2b50b43a6cb5169d74b444a70c2a5&#34;&gt;不具合について&lt;/h2&gt;
+
+&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
+</description>
+          <desctext>Ancia Ver1.9.129 をリリースしています。既定のブラウザによりリンクバーやサイドバーで favicon が表示できない不具合などが修正されています。 更新内容は次の通りです。 更新内容 fix 特定のブラウザが規定の場合、規定のブラウザアイコンが優先され、お気に入りバーなどでfaviconが表示されないのを修正 報告ありがとうございます Edgeなどが規定のブラウザのとき、リンクバーやサイドバーで favicon が正常に表示されない不具合を修正しています。報告ありがとうございました。 fix 一度タブグループとなったタブから新規タブを開くと新規タブの追加位置設定がおかしくなることがあるのを修正 報告ありがとうございます タブの追加位置が設定と違った動作がする場合があり修正しています。フォーラムへの報告ありがとうございました。 fix 特定のページでfaviconが表示されないのを修正(アプリでのリクエストヘッダに関わる問題、表示されないサイトの例: https://wowma.jp/) 報告ありがとうございます favicon を取得する際のリクエストヘッダにより正常に favicon が返却されない場合がある問題を修正しています。報告ありがとうございます。 fix 起動時にブラウザ部分が空白になる現象が出ることがあるのを修正 以前報告があったと思うのですが、起動時にブラウザ部分が空白となる現象が再現しました。マルチスレッド関係の問題で発生しないように対応しています。 mod 応答なしの現象が出るため、Windows10環境ではALT＋TAB動作対応はオプション設定testFeatureが有効の場合のみ動作するように 1.9.128 で Windows10 限定でALT+TAB 動作修正を行いましたが固まる現象が出てしまいました。オプション設定の testFeature が有効の場合のみ ALT+TAB 対応が動作する対応を行っています。ALT+TAB が2回押す必要がある動作は対応が難しく仕様となります。 mod リンクバーなどインターネットショートカット(.url等)のアイコン表示で、favicon指定があってもfaviconが表示できない場合、できるだけfaviconを表示するように mod sqlite3.20.1に更新 他sqlite3の更新などを行っています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード 更新一覧はこちらとなります。更新一覧 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/19129.jpg</eyecatch>
+          <datetimeUnix>1505746800</datetimeUnix>
+        </item>
+      
     
       
         <item>
@@ -387,64 +433,6 @@ Widevine CDM のファイルは関係上同梱できないため、含めない�
           <desctext>Ancia Ver1.9.126 をリリースしています。1.9.125 で発生した細かなバグ修正やタブがないときの表示変更を行っています。 更新内容は次の通りです。 更新内容 fix タブをすべて閉じた状態で右押しながら＋左クリックなどが動作しないのを修正 報告ありがとうございます タブがないとき右＋左クリックなどマウス処理が動作していないバグを修正しています。報告ありがとうございました。 fix アクティブタブを閉じると、focusがアプリから失われることがあるのを修正 アクティブタブを閉じるとき、focusが以前アクティブだったアプリケーションに移ってしまう問題を修正しています。特にマウスジェスチャで閉じると発生しやすいです。今回の対応で移ることはありません。 mod タブをすべて閉じたとき背景を以前と同じ背景(グレー色)で描画するように タブをすべて閉じたとき、従来と同じようにグレー背景で表示しています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.126 更新一覧はこちらとなります。更新一覧 Ancia 1.9.126 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/19126.jpg</eyecatch>
           <datetimeUnix>1494255601</datetimeUnix>
-        </item>
-      
-    
-      
-        <item>
-          <title>Ancia Ver1.9.125 リリース</title>
-          <link>http://blog.anciasoft.jp/post/ancia19125/</link>
-          <pubDate>2017-04-04 00:00:01 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
-          <guid>http://blog.anciasoft.jp/post/ancia19125/</guid>
-          <description>
-
-&lt;p&gt;Ancia Ver1.9.125 をリリースしています。大きな更新はないですが、新規タブ表示で前回終了時のタブなどタブリストを表示するようにしています。
-更新内容は次の通りです。&lt;/p&gt;
-
-&lt;h2 id=&#34;更新内容:b885bac10608f9bc15ef39864646498d&#34;&gt;更新内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#39;add&#39;&gt;add&lt;/span&gt; &lt;strong&gt;chrome://newtabでタブリスト一覧を表示するように&lt;/strong&gt;
-&lt;p&gt;新規タブ表示で、前回終了時タブなどタブリスト一覧をすべて表示するようにしました。一覧からはリストの削除や変更もできます。&lt;/p&gt;
-&lt;p&gt;&lt;div class=&#39;text-center&#39;&gt;&lt;img src=&#39;http://blog.anciasoft.jp/img/newtab_tablist.png&#39; style=&#39;border: 1px solid #000&#39;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;chrome://newtabを開いた場合ですぐにタブを閉じた場合、プロセスが終了せず残ってしまうのを修正&lt;/strong&gt;
-&lt;p&gt;新規タブ(chrome://newtab)を表示しすぐにタブを閉じるとプロセスが終了せず残ってしまう問題を修正しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;fix&#39;&gt;fix&lt;/span&gt; &lt;strong&gt;貼り付け新規タブが常に先頭に追加されるのを修正&lt;/strong&gt;
-&lt;p&gt;Blink版では既に修正済みですが、Trident版でも修正しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;MDI機能の廃止 メニュー項目、ツールバーボタンなど関連項目を削除&lt;/strong&gt;
-&lt;p&gt;MDI機能は削除し、関連するメニューなどの項目は削除しています。MDI機能はタブを別ウインドウに切り離せるためサポート予定はありません。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;アプリケーション終了時に履歴を削除する設定(設定名:deleteHistoryOnClose)で、独自履歴、よく表示するページもすべて削除するように&lt;/strong&gt;
-&lt;p&gt;独自に保存している履歴が終了時に削除されていませんでしたが、削除する設定の場合、終了時に削除するようにしています。よく表示するページ情報も同時に削除されます。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;アプリケーションの更新チェックや更新での一時ディレクトリで、システムのTempディレクトリではなく、アプリケーションディレクトリの一時ディレクトリ _UpdateTemp を作成し使用するように(使用後は自動削除されます)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;既定のアプリケーションの登録でRegist.exeは削除し使用しないように&lt;/strong&gt;
-&lt;p&gt;アプリケーション更新では、更新情報のダウンロードでシステムの一時ディレクトリを使用しています。
-アンチウイルスソフトによっては、更新情報を削除してしまうことがあるようなので、アプリケーションのディレクトリに更新情報をダウンロードするようにしました。
-アプリケーションのディレクトリをアンチウイルスソフトで除外対象となっていれば、ダウンロードした更新情報をウイルス扱いしなくなると思います。
-&lt;/p&gt;
-&lt;p&gt;Regist.exeはウイルス誤検知が多く見られるため削除しました。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;検索履歴でdeleteキーでは検索エンジンを削除しないように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Live Previewでブラウザ部分の表示が実際のサイズと合わないことがあるのを合わせるように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;Faviconの取得でサイトに複数設定がある場合、ico形式を優先して取得するように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;ステータスバーのズーム変更は直接クリックしなければ動作しないように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;chrome schemeでステータスバーにURLを表示するように&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;version情報から更新できることにより、Updaterの単独起動によるアプリケーションの更新機能を削除&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#39;mod&#39;&gt;mod&lt;/span&gt; &lt;strong&gt;sqlite3.18.0に更新&lt;/strong&gt;
-&lt;p&gt;ほかは細かな更新を行っています。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ダウンロードと更新一覧:b885bac10608f9bc15ef39864646498d&#34;&gt;ダウンロードと更新一覧&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードはこちらより行えます。&lt;a href=&#34;http://download.anciasoft.jp/Ancia19125.zip&#34;&gt;ダウンロード Ancia 1.9.125&lt;/a&gt;&lt;br /&gt;
-更新一覧はこちらとなります。&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t19125Beta&#34;&gt;更新一覧 Ancia 1.9.125&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;不具合について:b885bac10608f9bc15ef39864646498d&#34;&gt;不具合について&lt;/h2&gt;
-
-&lt;p&gt;もし不具合がある場合、&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;ソフトウェアフォーラム&lt;/a&gt; までお願いします。&lt;/p&gt;
-</description>
-          <desctext>Ancia Ver1.9.125 をリリースしています。大きな更新はないですが、新規タブ表示で前回終了時のタブなどタブリストを表示するようにしています。 更新内容は次の通りです。 更新内容 add chrome://newtabでタブリスト一覧を表示するように 新規タブ表示で、前回終了時タブなどタブリスト一覧をすべて表示するようにしました。一覧からはリストの削除や変更もできます。 fix chrome://newtabを開いた場合ですぐにタブを閉じた場合、プロセスが終了せず残ってしまうのを修正 新規タブ(chrome://newtab)を表示しすぐにタブを閉じるとプロセスが終了せず残ってしまう問題を修正しています。 fix 貼り付け新規タブが常に先頭に追加されるのを修正 Blink版では既に修正済みですが、Trident版でも修正しています。 mod MDI機能の廃止 メニュー項目、ツールバーボタンなど関連項目を削除 MDI機能は削除し、関連するメニューなどの項目は削除しています。MDI機能はタブを別ウインドウに切り離せるためサポート予定はありません。 mod アプリケーション終了時に履歴を削除する設定(設定名:deleteHistoryOnClose)で、独自履歴、よく表示するページもすべて削除するように 独自に保存している履歴が終了時に削除されていませんでしたが、削除する設定の場合、終了時に削除するようにしています。よく表示するページ情報も同時に削除されます。 mod アプリケーションの更新チェックや更新での一時ディレクトリで、システムのTempディレクトリではなく、アプリケーションディレクトリの一時ディレクトリ _UpdateTemp を作成し使用するように(使用後は自動削除されます) mod 既定のアプリケーションの登録でRegist.exeは削除し使用しないように アプリケーション更新では、更新情報のダウンロードでシステムの一時ディレクトリを使用しています。 アンチウイルスソフトによっては、更新情報を削除してしまうことがあるようなので、アプリケーションのディレクトリに更新情報をダウンロードするようにしました。 アプリケーションのディレクトリをアンチウイルスソフトで除外対象となっていれば、ダウンロードした更新情報をウイルス扱いしなくなると思います。 Regist.exeはウイルス誤検知が多く見られるため削除しました。 mod 検索履歴でdeleteキーでは検索エンジンを削除しないように mod Live Previewでブラウザ部分の表示が実際のサイズと合わないことがあるのを合わせるように mod Faviconの取得でサイトに複数設定がある場合、ico形式を優先して取得するように mod ステータスバーのズーム変更は直接クリックしなければ動作しないように mod chrome schemeでステータスバーにURLを表示するように mod version情報から更新できることにより、Updaterの単独起動によるアプリケーションの更新機能を削除 mod sqlite3.18.0に更新 ほかは細かな更新を行っています。 ダウンロードと更新一覧 ダウンロードはこちらより行えます。ダウンロード Ancia 1.9.125 更新一覧はこちらとなります。更新一覧 Ancia 1.9.125 不具合について もし不具合がある場合、ソフトウェアフォーラム までお願いします。</desctext>
-          <eyecatch>http://blog.anciasoft.jp/img/19125.jpg</eyecatch>
-          <datetimeUnix>1491231601</datetimeUnix>
         </item>
       
     
