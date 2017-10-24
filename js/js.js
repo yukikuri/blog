@@ -37,4 +37,13 @@ document.addEventListener('DOMContentLoaded',function(){
   new Sticky('sticky', stickycb);
   window.setTimeout(hide_new(), 0);
   //article_ani();
+  
+  // scroll top
+  var goTop = document.getElementById('goPageTop');
+  goTop.addEventListener('click', function(e) {
+    scrollTo(
+      document.documentElement ? document.documentElement : document.body, 0, 400);
+    e.preventDefault();
+  });
+
 });
