@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://blog.anciasoft.jp/</loc>
-    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://blog.anciasoft.jp/post/ancia-chrome066/</loc>
@@ -1270,6 +1265,155 @@
   <url>
     <loc>http://blog.anciasoft.jp/post/test/</loc>
     <lastmod>2005-05-21T02:46:05+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2005/</loc>
+    <lastmod>2005-12-31T20:22:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2006/</loc>
+    <lastmod>2006-12-23T00:28:13+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2007/</loc>
+    <lastmod>2007-11-04T02:07:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2008/</loc>
+    <lastmod>2008-12-31T02:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2009/</loc>
+    <lastmod>2009-12-23T06:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2010/</loc>
+    <lastmod>2010-12-28T02:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2011/</loc>
+    <lastmod>2011-11-22T02:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2012/</loc>
+    <lastmod>2012-10-18T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2013/</loc>
+    <lastmod>2013-11-11T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2014/</loc>
+    <lastmod>2014-12-23T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2015/</loc>
+    <lastmod>2015-09-03T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2016/</loc>
+    <lastmod>2016-12-31T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/2017/</loc>
+    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/archives/</loc>
+    <lastmod>2005-12-31T20:22:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/flash/</loc>
+    <lastmod>2016-04-10T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/internet/</loc>
+    <lastmod>2016-12-12T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/kancolle/</loc>
+    <lastmod>2016-05-20T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/no-category/</loc>
+    <lastmod>2009-01-03T13:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/online-soft/</loc>
+    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/post/</loc>
+    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/programming/</loc>
+    <lastmod>2016-04-24T23:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/release/</loc>
+    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/tags/</loc>
+    <lastmod>2016-04-10T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/ykuri/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/</loc>
+    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

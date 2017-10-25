@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/archives/2007/</link>
+    <language>ja-jp</language>
+    <author></author>
+    <rights>Copyright (C) 2017 y-kurimoto.</rights>
+    <updated>2007-11-04 02:07:33 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.3.2</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-29/</link>
+          <pubDate>2007-11-04 02:07:33 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-29/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1320&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus132.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;バグ修正のみです。&lt;br /&gt;
+パスに日本語が含まれると、フィードの情報を保存するデータベースの作成に失敗する問題を修正しています。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+バグ修正のみです。
+パスに日本語が含まれると、フィードの情報を保存するデータベースの作成に失敗する問題を修正しています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1194109653</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.3.1</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-28/</link>
+          <pubDate>2007-09-24 04:19:12 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-28/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1310&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus131.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;メールチェック機能で、削除マークをつけるフィルタ機能を追加しました。これでクイックPOPFileなどの迷惑メール対策ソフトと連携できます。&lt;/p&gt;
+
+&lt;p&gt;クイックPOPFileは、まだ無料でダウンロードできるようです。&lt;br /&gt;
+&lt;a href=&#34;https://www.quickpopfile.jp/form/qpopcampaingn/&#34;&gt;https://www.quickpopfile.jp/form/qpopcampaingn/&lt;/a&gt;&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+メールチェック機能で、削除マークをつけるフィルタ機能を追加しました。これでクイックPOPFileなどの迷惑メール対策ソフトと連携できます。
+クイックPOPFileは、まだ無料でダウンロードできるようです。
+https://www.quickpopfile.jp/form/qpopcampaingn/</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1190575152</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>QuickLinkBarEx 1.1.4</title>
+          <link>http://blog.anciasoft.jp/post/quicklinkbarex/</link>
+          <pubDate>2007-08-21 02:22:27 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/quicklinkbarex/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?QuickLinkBarEx%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1140&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/qlinkex1140.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;お休みでソースコードを手にする機会があったので、&lt;a href=&#34;http://blog.anciasoft.jp/archives/2007/06/sitecheck_1.html&#34;&gt;問題&lt;/a&gt;を修正しました。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+お休みでソースコードを手にする機会があったので、問題を修正しました。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1187630547</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Yahoo!ニュース - トピックスAPI</title>
+          <link>http://blog.anciasoft.jp/post/yahoo-api/</link>
+          <pubDate>2007-08-01 00:25:18 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/yahoo-api/</guid>
+          <description>&lt;p&gt;Yahoo! JAPANトップページのみだし一覧などを取得する&lt;a href=&#34;http://developer.yahoo.co.jp/news/topics/V1/topics.html&#34;&gt;Yahoo Webサービス&lt;/a&gt;が出ています。&lt;/p&gt;
+</description>
+          <desctext>Yahoo! JAPANトップページのみだし一覧などを取得するYahoo Webサービスが出ています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1185895518</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.3.0</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-27/</link>
+          <pubDate>2007-07-30 01:22:37 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-27/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1300&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus130.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;お気に入りのツールチップで、URLが長いとき画面からはみ出す感じになるため、URLが長いときある程度で省略するようにしました。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+お気に入りのツールチップで、URLが長いとき画面からはみ出す感じになるため、URLが長いときある程度で省略するようにしました。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1185726157</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.2.9</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-26/</link>
+          <pubDate>2007-07-25 23:12:11 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-26/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1290&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus129.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yahooディレクトリ検索機能で、はてなブックマーク数とlivedoorクリップ数順での表示に対応しました。はてなブックマーク数が多い順で検索結果を表示できます。あとIEが落ちる重大なバグを修正しています。&lt;/p&gt;
+
+&lt;p&gt;m_cchBuf = HeapSize(GetProcessHeap(), 0, pszAlloc))/sizeof(TCHAR);で、HeapSize()をsizeof(TCHAR)で割ってないというバグでした。。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+Yahooディレクトリ検索機能で、はてなブックマーク数とlivedoorクリップ数順での表示に対応しました。はてなブックマーク数が多い順で検索結果を表示できます。あとIEが落ちる重大なバグを修正しています。
+m_cchBuf = HeapSize(GetProcessHeap(), 0, pszAlloc))/sizeof(TCHAR);で、HeapSize()をsizeof(TCHAR)で割ってないというバグでした。。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/YahooDirSearch2.png</eyecatch>
+          <datetimeUnix>1185372731</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.2.8</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-25/</link>
+          <pubDate>2007-07-19 01:54:54 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-25/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1280&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus128.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yahooディレクトリ検索機能で&lt;a href=&#34;http://d.hatena.ne.jp/keyword/%a4%cf%a4%c6%a4%ca%a5%d6%a5%c3%a5%af%a5%de%a1%bc%a5%af%b7%ef%bf%f4%bc%e8%c6%c0API&#34;&gt;はてなブックマーク数&lt;/a&gt;と&lt;a href=&#34;http://wiki.livedoor.jp/staff_clip/d/%a5%af%a5%ea%a5%c3%a5%d7%b7%ef%bf%f4%bc%e8%c6%c0%20API&#34;&gt;livedoorクリップ数&lt;/a&gt;の表示に対応しました。ブックマーク数での並び替えはまだ出来ません。&lt;/p&gt;
+
+&lt;p&gt;FirefoxとIEとOperaのお気に入り表示で水平スクロールバーの表示オプションを追加しています。水平スクロールバーの表示は、表示する設定にしたあとIEを終了・起動すると有効になります。&lt;/p&gt;
+
+&lt;p&gt;Webページを表示する機能で、ローカルなHTMLファイルを表示すると情報バーが出ることがありますが、出なくするようなオプションを追加しています。このオプションは安全なページを表示するときに指定してください。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+Yahooディレクトリ検索機能ではてなブックマーク数とlivedoorクリップ数の表示に対応しました。ブックマーク数での並び替えはまだ出来ません。
+FirefoxとIEとOperaのお気に入り表示で水平スクロールバーの表示オプションを追加しています。水平スクロールバーの表示は、表示する設定にしたあとIEを終了・起動すると有効になります。
+Webページを表示する機能で、ローカルなHTMLファイルを表示すると情報バーが出ることがありますが、出なくするようなオプションを追加しています。このオプションは安全なページを表示するときに指定してください。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1184777694</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ブックマークカウント</title>
+          <link>http://blog.anciasoft.jp/post/post-13/</link>
+          <pubDate>2007-07-13 02:22:22 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/post-13/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/keyword/%a4%cf%a4%c6%a4%ca%a5%d6%a5%c3%a5%af%a5%de%a1%bc%a5%af%b7%ef%bf%f4%bc%e8%c6%c0API&#34;&gt;はてなブックマーク件数取得API&lt;/a&gt;、&lt;a href=&#34;http://wiki.livedoor.jp/staff_clip/d/%a5%af%a5%ea%a5%c3%a5%d7%b7%ef%bf%f4%bc%e8%c6%c0%20API&#34;&gt;クリップ件数取得 API&lt;/a&gt;とURLのブックマーク数を取得するXML-RPCがあるので、これをYahooディレクトリ検索結果に出してみようと思います。&lt;/p&gt;
+</description>
+          <desctext>はてなブックマーク件数取得API、クリップ件数取得 APIとURLのブックマーク数を取得するXML-RPCがあるので、これをYahooディレクトリ検索結果に出してみようと思います。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1184260942</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>XML-RPC</title>
+          <link>http://blog.anciasoft.jp/post/xmlrpc/</link>
+          <pubDate>2007-07-12 02:22:22 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/xmlrpc/</guid>
+          <description>&lt;p&gt;特にライブラリは必要なく、IXMLHTTPRequestで簡単に出来ます。&lt;/p&gt;
+
+&lt;p&gt;// はてな被ブックマーク合計数取得APIの場合&lt;br /&gt;
+LPCWSTR pszTotal =&lt;br /&gt;
+L&amp;rdquo;&amp;lt;?xml version=\&amp;ldquo;1.0\&amp;ldquo;?&amp;gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;methodCall&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;methodName&gt;bookmark.getTotalCount&lt;/methodName&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;params&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;param&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;value&gt;&lt;string&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hatenadiary/&#34;&gt;http://d.hatena.ne.jp/hatenadiary/&lt;/a&gt;&lt;/string&gt;&lt;/value&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;/param&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;/params&gt;&amp;rdquo;&lt;br /&gt;
+L&amp;rdquo;&lt;/methodCall&gt;&amp;rdquo;;&lt;/p&gt;
+
+&lt;p&gt;// call&lt;br /&gt;
+CComPtr&lt;a href=&#34;MSXML2::IXMLHTTPRequest&#34;&gt;MSXML2::IXMLHTTPRequest&lt;/a&gt;    pReq;&lt;br /&gt;
+HRESULT hr = pReq.CoCreateInstance(MSXML2::CLSID_XMLHTTP);&lt;br /&gt;
+hr = pReq-&amp;gt;open(&lt;br /&gt;
+&amp;nbsp;CComBSTR(L&amp;rdquo;POST&amp;rdquo;),&lt;br /&gt;
+&amp;nbsp;CComBSTR(L&amp;rdquo;&lt;a href=&#34;http://b.hatena.ne.jp/xmlrpc&#34;&gt;http://b.hatena.ne.jp/xmlrpc&lt;/a&gt; &amp;ldquo;),&lt;br /&gt;
+&amp;nbsp;CComVariant(false),&lt;br /&gt;
+&amp;nbsp;CComVariant(),&lt;br /&gt;
+&amp;nbsp;CComVariant());&lt;br /&gt;
+hr = pReq-&amp;gt;send(CComVariant(pszTotal));&lt;br /&gt;
+CComBSTR    txt;&lt;br /&gt;
+hr = pReq-&amp;gt;get_responseText(&amp;amp;txt);&lt;br /&gt;
+cout &amp;lt;&amp;lt; CW2A(txt) &amp;lt;&amp;lt; endl;&lt;/p&gt;
+</description>
+          <desctext>特にライブラリは必要なく、IXMLHTTPRequestで簡単に出来ます。
+// はてな被ブックマーク合計数取得APIの場合
+LPCWSTR pszTotal =
+L&amp;rdquo;&amp;lt;?xml version=\&amp;ldquo;1.0\&amp;ldquo;?&amp;gt;&amp;rdquo;
+L&amp;rdquo;&amp;rdquo;
+L&amp;rdquo;bookmark.getTotalCount&amp;rdquo;
+L&amp;rdquo;&amp;rdquo;
+L&amp;rdquo;&amp;rdquo;
+L&amp;rdquo;http://d.hatena.ne.jp/hatenadiary/&amp;rdquo;
+L&amp;rdquo;&amp;rdquo;
+L&amp;rdquo;&amp;rdquo;
+L&amp;rdquo;&amp;rdquo;;
+// call
+CComPtrMSXML2::IXMLHTTPRequest pReq;
+HRESULT hr = pReq.CoCreateInstance(MSXML2::CLSID_XMLHTTP);
+hr = pReq-&amp;gt;open(
+&amp;nbsp;CComBSTR(L&amp;rdquo;POST&amp;rdquo;),
+&amp;nbsp;CComBSTR(L&amp;rdquo;http://b.hatena.ne.jp/xmlrpc &amp;ldquo;),
+&amp;nbsp;CComVariant(false),
+&amp;nbsp;CComVariant(),
+&amp;nbsp;CComVariant());
+hr = pReq-&amp;gt;send(CComVariant(pszTotal));
+CComBSTR txt;
+hr = pReq-&amp;gt;get_responseText(&amp;amp;txt);
+cout &amp;lt;&amp;lt; CW2A(txt) &amp;lt;&amp;lt; endl;</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1184174542</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.2.7</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-24/</link>
+          <pubDate>2007-07-09 02:22:22 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-24/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1270&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus127.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yahooディレクトリ検索機能でWindowsXpで情報バーが出てしまうのを修正しました。テキストを検索クエリにドラッグドロップで受け付けるようにもしています。ハイライトもつけましたが多少重くなります。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+Yahooディレクトリ検索機能でWindowsXpで情報バーが出てしまうのを修正しました。テキストを検索クエリにドラッグドロップで受け付けるようにもしています。ハイライトもつけましたが多少重くなります。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1183915342</datetimeUnix>
+        </item>
+      
+    
+
+  </channel>
+</rss>

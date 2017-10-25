@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/archives/2005/</link>
+    <language>ja-jp</language>
+    <author></author>
+    <rights>Copyright (C) 2017 y-kurimoto.</rights>
+    <updated>2005-12-31 20:22:26 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.0.5</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-3/</link>
+          <pubDate>2005-12-31 20:22:26 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-3/</guid>
+          <description>&lt;p&gt;ExplorerBarPlus 1.0.5をリリース。&lt;a href=&#34;http://www.egrath.net/index.php?ExplorerBarPlus%2F%A5%D1%A5%CD%A5%EB%B0%EC%CD%F7%2FSpFavReader&#34;&gt;Sleipnirのお気に入りを表示できる機能&lt;/a&gt;の追加、IEFavPanelやExtractLinkPanelのバグなどがいくつか修正されています。&lt;/p&gt;
+
+&lt;p&gt;ダウンロードは&lt;a href=&#34;http://www.egrath.net/index.php?ExplorerBarPlus#bb3a05ab&#34;&gt;こちら&lt;/a&gt;からできます。&lt;/p&gt;
+</description>
+          <desctext>ExplorerBarPlus 1.0.5をリリース。Sleipnirのお気に入りを表示できる機能の追加、IEFavPanelやExtractLinkPanelのバグなどがいくつか修正されています。
+ダウンロードはこちらからできます。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1136028146</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.0.4</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-2/</link>
+          <pubDate>2005-12-21 23:04:31 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-2/</guid>
+          <description>&lt;p&gt;ExplorerBarPlusを更新。フレームに関するバグ修正に加え、WebPagePanelの機能を強化。今回追加したWebPagePanelのアドレスバーにURLをドロップすると移動できます。同じドメインをブラウズする設定はbloglinesなどのWebベースのRSSリーダーを使うときに便利だと思います。&lt;/p&gt;
+</description>
+          <desctext>ExplorerBarPlusを更新。フレームに関するバグ修正に加え、WebPagePanelの機能を強化。今回追加したWebPagePanelのアドレスバーにURLをドロップすると移動できます。同じドメインをブラウズする設定はbloglinesなどのWebベースのRSSリーダーを使うときに便利だと思います。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1135173871</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ベクターソフトニュースでExplorerBarPlusが紹介</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus/</link>
+          <pubDate>2005-12-07 19:48:12 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.vector.co.jp/magazine/softnews/051207/n0512071.html&#34;&gt;ExplorerBarPlus - ベクターソフトニュース&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;紹介してもらえることはやっぱり嬉しいことです。&lt;br /&gt;
+ベクターさんに紹介していただき、記事を書いていただいた皆様に感謝すると共にお礼を述べさせていただく次第です。&lt;br /&gt;
+今後もできるだけ要望に対応していきたいと思います。&lt;/p&gt;
+</description>
+          <desctext>ExplorerBarPlus - ベクターソフトニュース
+紹介してもらえることはやっぱり嬉しいことです。
+ベクターさんに紹介していただき、記事を書いていただいた皆様に感謝すると共にお礼を述べさせていただく次第です。
+今後もできるだけ要望に対応していきたいと思います。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1133952492</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>窓の社NEWSでExplorerBarPlusが紹介</title>
+          <link>http://blog.anciasoft.jp/post/newsexplorerbar/</link>
+          <pubDate>2005-11-30 23:04:26 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/newsexplorerbar/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.forest.impress.co.jp/article/2005/11/30/expbarplus.html&#34;&gt;● IEのエクスプローラバーにRSSリーダー機能などを追加「ExplorerBarPlus」 &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;正直に嬉しいです。紹介していただけるとは思っていなかったので。。記事を書いていただいた中井様、この場を借りて御礼申し上げます。&lt;/p&gt;
+
+&lt;p&gt;SimpleFavPanelはいくつも追加できるので、お気に入りをカテゴリ毎にパネル分けするといった使い方もできます。&lt;br /&gt;
+今後ともExplorerBarPlusをよろしくお願いします。&lt;/p&gt;
+</description>
+          <desctext>● IEのエクスプローラバーにRSSリーダー機能などを追加「ExplorerBarPlus」 
+正直に嬉しいです。紹介していただけるとは思っていなかったので。。記事を書いていただいた中井様、この場を借りて御礼申し上げます。
+SimpleFavPanelはいくつも追加できるので、お気に入りをカテゴリ毎にパネル分けするといった使い方もできます。
+今後ともExplorerBarPlusをよろしくお願いします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1133359466</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.0.2.0</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-1/</link>
+          <pubDate>2005-10-18 02:16:45 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-1/</guid>
+          <description>&lt;p&gt;久しぶりに更新。SimpleFavoritesPanelでRSSリーダー機能追加が主な更新内容。独自履歴管理付き。&lt;/p&gt;
+</description>
+          <desctext>久しぶりに更新。SimpleFavoritesPanelでRSSリーダー機能追加が主な更新内容。独自履歴管理付き。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1129569405</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>WinInet</title>
+          <link>http://blog.anciasoft.jp/post/wininet/</link>
+          <pubDate>2005-09-24 01:49:18 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/wininet/</guid>
+          <description>&lt;p&gt;WinInet関数でコネクションを閉じるときRSTがでているようだけど、こういう動作なのだろうか。。IEを閉じるときもRSTがでているようなので、こういう動作かもしれない。&lt;/p&gt;
+</description>
+          <desctext>WinInet関数でコネクションを閉じるときRSTがでているようだけど、こういう動作なのだろうか。。IEを閉じるときもRSTがでているようなので、こういう動作かもしれない。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1127494158</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Windows Vista Beta 1 スクリーンショット</title>
+          <link>http://blog.anciasoft.jp/post/windows-vista-b/</link>
+          <pubDate>2005-07-28 02:10:13 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/windows-vista-b/</guid>
+          <description>&lt;p&gt;Vistaのスクリーンショット&lt;br /&gt;
+&lt;a href=&#34;http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx&#34;&gt;http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx&lt;/a&gt;&lt;/p&gt;
+</description>
+          <desctext>Vistaのスクリーンショット
+http://www.microsoft.com/presspass/presskits/windowsvista/default.mspx</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1122484213</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>MultiSelect TreeView</title>
+          <link>http://blog.anciasoft.jp/post/multiselect-tre/</link>
+          <pubDate>2005-06-26 00:46:30 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/multiselect-tre/</guid>
+          <description>&lt;p&gt;複数選択できるツリービュー。&lt;br /&gt;
+&lt;a href=&#34;http://groups.yahoo.com/group/wtl/message/11952&#34;&gt;WTL MultiSelect TreeView &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;MFC版もあるようだ。&lt;br /&gt;
+&lt;a href=&#34;http://www.codeguru.com/Cpp/controls/treeview/misc-advanced/article.php/c629/&#34;&gt;A multi-select tree control class&lt;/a&gt;&lt;/p&gt;
+</description>
+          <desctext>複数選択できるツリービュー。
+WTL MultiSelect TreeView 
+MFC版もあるようだ。
+A multi-select tree control class</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1119714390</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>マウスホイール</title>
+          <link>http://blog.anciasoft.jp/post/post-6/</link>
+          <pubDate>2005-06-16 23:02:18 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/post-6/</guid>
+          <description>&lt;p&gt;非アクティブでもホイールできる便利なソフト。&lt;br /&gt;
+&lt;a href=&#34;http://www.vector.co.jp/soft/win95/util/se261633.html&#34;&gt;Wheel Redirector&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://toshi.pobox.ne.jp/&#34;&gt;WheelPlus&lt;/a&gt;&lt;/p&gt;
+</description>
+          <desctext>非アクティブでもホイールできる便利なソフト。
+Wheel Redirector
+WheelPlus</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1118930538</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>test</title>
+          <link>http://blog.anciasoft.jp/post/test/</link>
+          <pubDate>2005-05-21 02:46:05 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/test/</guid>
+          <description>&lt;p&gt;test&lt;/p&gt;
+</description>
+          <desctext>test</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1116611165</datetimeUnix>
+        </item>
+      
+    
+
+  </channel>
+</rss>

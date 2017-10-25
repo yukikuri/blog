@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/archives/2014/</link>
+    <language>ja-jp</language>
+    <author></author>
+    <rights>Copyright (C) 2017 y-kurimoto.</rights>
+    <updated>2014-12-23 00:00:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>新機能: 応答なしページの検出</title>
+          <link>http://blog.anciasoft.jp/post/post-65/</link>
+          <pubDate>2014-12-23 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/post-65/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t1988Beta&#34;&gt;更新履歴&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/download/Ancia1988.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。&lt;/p&gt;
+
+&lt;p&gt;応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;foption.png&#34; src=&#34;http://blog.anciasoft.jp/img/foption.png&#34; width=&#34;752&#34; height=&#34;172&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、&lt;br /&gt;
+&lt;img alt=&#34;nofreeze.png&#34; src=&#34;http://blog.anciasoft.jp/img/nofreeze.png&#34; width=&#34;419&#34; height=&#34;131&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。&lt;/p&gt;
+</description>
+          <desctext>更新履歴
+Download
+ver1.9.88で、応答なしページを検出する機能を追加しています。応答なしページを検出すると、上のような強制終了できるボタン付き画面が表示されます。応答が復活すると、表示は自動的に消えます(画像はわざと応答なしにしています)。
+応答なしページの検出機能は、デフォルトで有効です。機能の無効は、オプション設定FreezeCheckのチェックを外します。
+応答なしページの検出は、FreezeChecker.exeが本体で、FreezeChecker.exeはそのままで起動が可能です。そのままで起動したとき、応答なしページの一覧か、応答なしページがなければ、
+の画面が表示されます。オプション設定FreezeCheckチェックオフでも、FreezeChecker.exeを起動すれば、応答なしページを表示できる予定だったんですが、1.9.88では動作していません。これは次回対応予定です。FreezeChecker.exeは、High DPI/per monitorにも対応しています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/freezechecker.png</eyecatch>
+          <datetimeUnix>1419260400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>キョリ測が動かないときがある</title>
+          <link>http://blog.anciasoft.jp/post/post-64/</link>
+          <pubDate>2014-10-23 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/post-64/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.mapion.co.jp/m/route/35.65484_139.75481_2/?lab=1&amp;amp;set_c=1&#34;&gt;キョリ測&lt;/a&gt;という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。&lt;/p&gt;
+
+&lt;p&gt;・204応答でNavigateError&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;naverror.png&#34; src=&#34;http://blog.anciasoft.jp/img/naverror.png&#34; width=&#34;915&#34; height=&#34;185&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;iecapture.png&#34; src=&#34;http://blog.anciasoft.jp/img/iecapture.png&#34; width=&#34;783&#34; height=&#34;441&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。&lt;/p&gt;
+</description>
+          <desctext>キョリ測という距離を測るサービスがありますが、Anciaでページを表示できないことがあります。調べると右上の広告のiframe取得で、サーバからHTTP応答204を受け取ると発生することがわかりました。
+・204応答でNavigateError
+204応答を受け取ると、その後のリクエストがstopしてしまい、キョリ測のFlash表示もstopしてしまいます。204応答でリクエストがstopする現象は、なぜかIEでは発生しません。IEでは、204応答を受け取っても、その後のリクエストを続行するためです。
+200応答を受け取ると、Anciaでも表示できます。IEコンポで発生する現象なのか、対応には調べる時間が必要そうです。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/kyorisoku.png</eyecatch>
+          <datetimeUnix>1413990000</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Lunascape が表示ページ上部に広告を表示するかもしれない</title>
+          <link>http://blog.anciasoft.jp/post/lunascape/</link>
+          <pubDate>2014-08-28 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/lunascape/</guid>
+          <description>&lt;p&gt;試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。&lt;/p&gt;
+</description>
+          <desctext>試したのは6.9.2 RCです。今はどういうわけか表示されなくなっています。。もしAds by Lunascapeで表示ページ上部に広告を表示するようになると、いろいろ意見が出そうですね。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/adluna.png</eyecatch>
+          <datetimeUnix>1409151600</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>個人でのソフトウェア作成について</title>
+          <link>http://blog.anciasoft.jp/post/post-63/</link>
+          <pubDate>2014-07-29 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/post-63/</guid>
+          <description>&lt;p&gt;Microsoft様よりIE11環境でTridentが固まる対応が行われました。ありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://support.microsoft.com/kb/2980020/en-us&#34;&gt;SessionStorage is shared incorrectly and Internet Explorer 11 becomes slow when you create WebBrowser controls&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;報告しました&lt;a href=&#34;https://connect.microsoft.com/IE/feedback/details/816140/ie11-webbrowser-control-if-domstorage-enable-webbrowser-control-freeze&#34;&gt;[IE11,WebBrowser Control] if DOMStorage enable, WebBrowser Control freeze Microsoft Connect&lt;/a&gt;で、バグを再現できる人数にご協力していただいた方ありがとうございました。対応が行われたのは、&lt;a href=&#34;http://blog.clientside.jp/archives/5371368.html&#34;&gt;Funguardの作者さんが報告したこと&lt;/a&gt;も関係しているかもしれません。&lt;/p&gt;
+
+&lt;p&gt;行われた対応ですが、調べるとシングルスレッドでは対応は効いていません(connectにバグ報告したアプリケーションで固まりが発生する)。ただ、マルチスレッドだと固まりは発生しなくなりました。&lt;/p&gt;
+
+&lt;p&gt;内容が変わりますが、どこの誰か作っているかわからない個人作者であるがために、オンラインソフトの使用が信頼できないといったことがあるかもしれません。個人情報の公開はそれなりのリスクが伴います。ただ、個人作者であっても、バグ内容を調べ報告しているという活動が、作者が怪しい事をしないことのいくらかの証明になると思っています。&lt;/p&gt;
+
+&lt;p&gt;個人作者の作ったフリーソフトなので使用を敬遠する、といったことはできればなくなればよいと願っています。&lt;/p&gt;
+
+&lt;p&gt;Yukihisa Kurimoto&lt;/p&gt;
+</description>
+          <desctext>Microsoft様よりIE11環境でTridentが固まる対応が行われました。ありがとうございます。
+SessionStorage is shared incorrectly and Internet Explorer 11 becomes slow when you create WebBrowser controls
+報告しました[IE11,WebBrowser Control] if DOMStorage enable, WebBrowser Control freeze Microsoft Connectで、バグを再現できる人数にご協力していただいた方ありがとうございました。対応が行われたのは、Funguardの作者さんが報告したことも関係しているかもしれません。
+行われた対応ですが、調べるとシングルスレッドでは対応は効いていません(connectにバグ報告したアプリケーションで固まりが発生する)。ただ、マルチスレッドだと固まりは発生しなくなりました。
+内容が変わりますが、どこの誰か作っているかわからない個人作者であるがために、オンラインソフトの使用が信頼できないといったことがあるかもしれません。個人情報の公開はそれなりのリスクが伴います。ただ、個人作者であっても、バグ内容を調べ報告しているという活動が、作者が怪しい事をしないことのいくらかの証明になると思っています。
+個人作者の作ったフリーソフトなので使用を敬遠する、といったことはできればなくなればよいと願っています。
+Yukihisa Kurimoto</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/ie11sessionstorage.png</eyecatch>
+          <datetimeUnix>1406559600</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Anciaソフトウェアフォーラム</title>
+          <link>http://blog.anciasoft.jp/post/ancia/</link>
+          <pubDate>2014-05-08 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia/</guid>
+          <description>&lt;p&gt;今回、不具合報告などを受け付ける&lt;br /&gt;
+&lt;a href=&#34;http://forum.anciasoft.jp/&#34;&gt;Anciaソフトウェアフォーラム&lt;/a&gt;&lt;br /&gt;
+を作成したことをお知らせします。&lt;/p&gt;
+
+&lt;p&gt;投稿には、画像やcrashしたときのdumpファイルなどファイル添付が可能です。投稿の際にユーザ登録は必要ありません。&lt;/p&gt;
+
+&lt;p&gt;メールやブログコメントやtwitter、掲示板で不具合報告を受けることが多く、分散してしまっていることが作成した理由です。Forumだと投稿が残り、検索も可能であるため、出来ればForum側への不具合報告をお願いいたします。&lt;/p&gt;
+</description>
+          <desctext>今回、不具合報告などを受け付ける
+Anciaソフトウェアフォーラム
+を作成したことをお知らせします。
+投稿には、画像やcrashしたときのdumpファイルなどファイル添付が可能です。投稿の際にユーザ登録は必要ありません。
+メールやブログコメントやtwitter、掲示板で不具合報告を受けることが多く、分散してしまっていることが作成した理由です。Forumだと投稿が残り、検索も可能であるため、出来ればForum側への不具合報告をお願いいたします。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/forum.png</eyecatch>
+          <datetimeUnix>1399474800</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia,AnciaChromeのアイコンを募集中です</title>
+          <link>http://blog.anciasoft.jp/post/anciaanciachrom/</link>
+          <pubDate>2014-04-28 18:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/anciaanciachrom/</guid>
+          <description>&lt;p&gt;AnciaとAnciaChromeでアプリケーションアイコンの募集を行っています。&lt;/p&gt;
+
+&lt;p&gt;こちらより応募可能となっています。&lt;br /&gt;
+&lt;a href=&#34;https://crowdworks.jp/public/jobs/88284&#34;&gt;Windowsウェブブラウザ用アイコン作成依頼&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;アイコンは、アプリケーションの象徴となることと、Trident系とWebkit系2種類の作成をお願いしていることもあり、お支払い金額はそれなりとなっています。たくさんの応募があると作者が喜びます。応募をお待ちしています。&lt;/p&gt;
+
+&lt;p&gt;画像はブログ記事とは直接関係ないですが、なかなかいいデザインですね。&lt;/p&gt;
+</description>
+          <desctext>AnciaとAnciaChromeでアプリケーションアイコンの募集を行っています。
+こちらより応募可能となっています。
+Windowsウェブブラウザ用アイコン作成依頼
+アイコンは、アプリケーションの象徴となることと、Trident系とWebkit系2種類の作成をお願いしていることもあり、お支払い金額はそれなりとなっています。たくさんの応募があると作者が喜びます。応募をお待ちしています。
+画像はブログ記事とは直接関係ないですが、なかなかいいデザインですね。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/a1180_010203_m.jpg</eyecatch>
+          <datetimeUnix>1398675600</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる(解決)</title>
+          <link>http://blog.anciasoft.jp/post/ie11-domstorage-1/</link>
+          <pubDate>2014-04-17 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ie11-domstorage-1/</guid>
+          <description>&lt;p&gt;だいぶ前のversion 1.9.56(最新versionは1.9.62)で、&lt;a href=&#34;http://blog.anciasoft.jp/2014/01/ie11-domstorage.html&#34;&gt;IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記&lt;/a&gt; は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。&lt;/p&gt;
+
+&lt;p&gt;こちらで特定した原因は、IE内部で保持するsession storage値がタブを開くたびに倍で増えていき、そのsession storage値分ループ処理が動き、これが固まりにつながります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/spreadsheet/ccc?key=0At_G9JVgfatGdExlYXBkWlZjOWpsdERIaDFkalRjQ2c#gid=0&#34;&gt;ie11 session(google document) storage&lt;/a&gt;&lt;br /&gt;
+上は、再現動画(&lt;a href=&#34;http://www.youtube.com/watch?v=0xACMTPPoM8&#34;&gt;http://www.youtube.com/watch?v=0xACMTPPoM8&lt;/a&gt;)での増えていく値です。&lt;/p&gt;
+
+&lt;p&gt;1タブ目では1つの値が、2タブ目には2個、3タブ目には4個、4タブ目には8個、動画で固まった18タブ目には65536個となり、65536個分のループで長時間固まります。タブを開くごとに遅くなるという現象も、session storage値が倍で増え、その分ループ時間が増えるため、と説明できます。&lt;/p&gt;
+
+&lt;p&gt;恐らく、IEはマルチプロセスの関係で、新規タブプロセスにsession storageを引き継ぐ必要があり、開き元タブのsession storageを新規タブ側に渡しているのではと考えています。渡す先にsession storageが無ければ問題ないですが、もし、マルチスレッドやシングルスレッドで、すでにsession storageが存在する場合、開き元から引き継がれると、倍に増えることに、と内部動作を予想しています。&lt;/p&gt;
+
+&lt;p&gt;session storageの調べ方は、残念ながら非公開です。&lt;/p&gt;
+</description>
+          <desctext>だいぶ前のversion 1.9.56(最新versionは1.9.62)で、IE11 DOMStorageが有効だとWebBrowser Controlが固まる - 不定期日記 は、原因を特定し対処を行い、固まり問題は出なくなっています。Anciaは、IE11をコンポで使用した際の固まり問題に対応している数少ないブラウザとなります。
+こちらで特定した原因は、IE内部で保持するsession storage値がタブを開くたびに倍で増えていき、そのsession storage値分ループ処理が動き、これが固まりにつながります。
+ie11 session(google document) storage
+上は、再現動画(http://www.youtube.com/watch?v=0xACMTPPoM8)での増えていく値です。
+1タブ目では1つの値が、2タブ目には2個、3タブ目には4個、4タブ目には8個、動画で固まった18タブ目には65536個となり、65536個分のループで長時間固まります。タブを開くごとに遅くなるという現象も、session storage値が倍で増え、その分ループ時間が増えるため、と説明できます。
+恐らく、IEはマルチプロセスの関係で、新規タブプロセスにsession storageを引き継ぐ必要があり、開き元タブのsession storageを新規タブ側に渡しているのではと考えています。渡す先にsession storageが無ければ問題ないですが、もし、マルチスレッドやシングルスレッドで、すでにsession storageが存在する場合、開き元から引き継がれると、倍に増えることに、と内部動作を予想しています。
+session storageの調べ方は、残念ながら非公開です。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/sessionstorage.png</eyecatch>
+          <datetimeUnix>1397660400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>IE11 DOMStorageが有効だとWebBrowser Controlが固まる</title>
+          <link>http://blog.anciasoft.jp/post/ie11-domstorage/</link>
+          <pubDate>2014-01-31 23:59:59 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ie11-domstorage/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://blog.anciasoft.jp/post/internet-explor-2/&#34;&gt;Internet Explorer 11でのJavascript問題 - 不定期日記&lt;/a&gt;のIE11環境で固まる現象で、DOMStorageを無効にすれば発生しないことがわかっています。&lt;/p&gt;
+
+&lt;p&gt;IE11での対応が無いとどうしようもなさそうで、フィードバックを送っています。英語がちょっとおかしいかもしれませんが、日本語も書いてあるのでたぶん大丈夫です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://connect.microsoft.com/IE/feedback/details/816140/ie11-webbrowser-control-if-domstorage-enable-webbrowser-control-freeze&#34;&gt;[IE11,WebBrowser Control] if DOMStorage enable, WebBrowser Control freeze&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;わかってもらえるように再現動画まで撮りました。ただ残念ながら、最近のフィードバックにコメントがつくことがほとんど無く、見てもらえずに直らない可能性が出てきました。IE10のころまでは、大体のフィードバックにMicrosoftからのコメントがついていました(再現しませんでしたといわれますが)。もしかするとフィードバックのバグを再現できるユーザ数が増えると見てくれるかもしれません(下の画像部分)。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;feedbackcnt.png&#34; src=&#34;http://blog.anciasoft.jp/img/feedbackcnt.png&#34; width=&#34;424&#34; height=&#34;41&#34; style=&#34;float: left; margin: 0 20px 20px 0;border: 1px solid #000000;&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;再現動画(&lt;a href=&#34;http://www.youtube.com/watch?v=0xACMTPPoM8&#34;&gt;http://www.youtube.com/watch?v=0xACMTPPoM8&lt;/a&gt;)のままで行えば、誰でも再現できると思います。ブラウザ以外でもWebBrowser Controlを複数作成して使用するアプリは結構ありそうで、固まり現象が出ていないのか不思議です。&lt;/p&gt;
+</description>
+          <desctext>Internet Explorer 11でのJavascript問題 - 不定期日記のIE11環境で固まる現象で、DOMStorageを無効にすれば発生しないことがわかっています。
+IE11での対応が無いとどうしようもなさそうで、フィードバックを送っています。英語がちょっとおかしいかもしれませんが、日本語も書いてあるのでたぶん大丈夫です。
+[IE11,WebBrowser Control] if DOMStorage enable, WebBrowser Control freeze
+わかってもらえるように再現動画まで撮りました。ただ残念ながら、最近のフィードバックにコメントがつくことがほとんど無く、見てもらえずに直らない可能性が出てきました。IE10のころまでは、大体のフィードバックにMicrosoftからのコメントがついていました(再現しませんでしたといわれますが)。もしかするとフィードバックのバグを再現できるユーザ数が増えると見てくれるかもしれません(下の画像部分)。
+再現動画(http://www.youtube.com/watch?v=0xACMTPPoM8)のままで行えば、誰でも再現できると思います。ブラウザ以外でもWebBrowser Controlを複数作成して使用するアプリは結構ありそうで、固まり現象が出ていないのか不思議です。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/ie11domstoragefreeze.png</eyecatch>
+          <datetimeUnix>1391180399</datetimeUnix>
+        </item>
+      
+    
+
+  </channel>
+</rss>

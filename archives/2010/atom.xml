@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/archives/2010/</link>
+    <language>ja-jp</language>
+    <author></author>
+    <rights>Copyright (C) 2017 y-kurimoto.</rights>
+    <updated>2010-12-28 02:00:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>VirusTotalUrlScan、TweetThisPageなど</title>
+          <link>http://blog.anciasoft.jp/post/virustotalurlsc/</link>
+          <pubDate>2010-12-28 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/virustotalurlsc/</guid>
+          <description>&lt;p&gt;いままでの更新でいろいろ便利な機能を追加しているので、いくつか紹介したいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;VirusTotalでのUrlスキャン&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;
+リンク先の詳細を調べるのにドロップアクションから、&lt;a href=&#34;http://www.aguse.jp/&#34;&gt;aguse&lt;/a&gt;で簡単に調べることができますが、&lt;a href=&#34;http://www.virustotal.com/&#34;&gt;VirusTotal&lt;/a&gt;でのURLスキャンも可能になっています。0.9.16ではデフォルトでボタンが設定されていますが、ボタンがない場合は、ドロップアクションの設定からボタンを追加できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;m_addda.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/m_addda.jpg&#34; width=&#34;429&#34; height=&#34;348&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;あとは、リンクをドラッグし、VirustotalでURLをスキャンボタンにドロップするだけでスキャンが始まります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;m_aning.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/m_aning.jpg&#34; width=&#34;400&#34; height=&#34;276&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;見ているページをツイートする&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;
+今見ているページをツイートするTweetButtonのような動作を、ブラウザのツールバーボタンから行うことができます。デフォルトではボタンが表示されていないため、標準ツールバーを表示し、ツールバー右クリックから「ツールバーのボタンを変更&amp;copy;&amp;hellip;」を選びます。&lt;br /&gt;
+&lt;img alt=&#34;m_addbtn.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/m_addbtn.jpg&#34; width=&#34;374&#34; height=&#34;132&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;ツールバーの変更で、種類：規定のスクリプトにある「このページをツイートする」ボタンを追加します。&lt;br /&gt;
+&lt;img alt=&#34;addbutton.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/addbutton.jpg&#34; width=&#34;643&#34; height=&#34;259&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;あとは、ツイートしたいページでボタンを押せば、ツイートページが開きます。簡単ですね。&lt;br /&gt;
+&lt;img alt=&#34;tweetbutton.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/tweetbutton.jpg&#34; width=&#34;400&#34; height=&#34;291&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;ツイートボタンは、htsignさんに作成してもらいました！ありがとうございます。htsignさんには、他に&lt;a href=&#34;http://www.tumblr.com/&#34;&gt;Tumblr&lt;/a&gt;へのリンク投稿スクリプトも作成してもらっています。Tumblrへのリンク投稿は、このページをツイートするボタンと同じく、ボタン追加で使用することができます。&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;短縮URLをクリップボードにコピー&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;
+VirusTotalでのURLスキャンと同じく、ドラッグ＆ドロップで短縮URLをクリップボードにコピーすることができます。現在可能なのは、&lt;a href=&#34;http://bit.ly/&#34;&gt;bit.ly&lt;/a&gt;、&lt;a href=&#34;http://mcaf.ee/&#34;&gt;McAfee&lt;/a&gt;、&lt;a href=&#34;http://tinyurl.com/&#34;&gt;TinyURL&lt;/a&gt;、次のバージョン0.9.17では、&lt;a href=&#34;http://ux.nu/&#34;&gt;ux.nu&lt;/a&gt;も使用可能になります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;shrt.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/shrt.jpg&#34; width=&#34;326&#34; height=&#34;300&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;bit.lyで、アカウント情報を使用したいときは、オプション設定 -&amp;gt; スクリプトの設定の「スクリプト個別動作設定」で、bitlyで短縮URLをコピーの「設定」からユーザ情報を設定できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;bitlysetting.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/bitlysetting.jpg&#34; width=&#34;400&#34; height=&#34;267&#34;  /&gt;&lt;/p&gt;
+</description>
+          <desctext>いままでの更新でいろいろ便利な機能を追加しているので、いくつか紹介したいと思います。
+VirusTotalでのUrlスキャン
+リンク先の詳細を調べるのにドロップアクションから、aguseで簡単に調べることができますが、VirusTotalでのURLスキャンも可能になっています。0.9.16ではデフォルトでボタンが設定されていますが、ボタンがない場合は、ドロップアクションの設定からボタンを追加できます。
+あとは、リンクをドラッグし、VirustotalでURLをスキャンボタンにドロップするだけでスキャンが始まります。
+見ているページをツイートする
+今見ているページをツイートするTweetButtonのような動作を、ブラウザのツールバーボタンから行うことができます。デフォルトではボタンが表示されていないため、標準ツールバーを表示し、ツールバー右クリックから「ツールバーのボタンを変更&amp;copy;&amp;hellip;」を選びます。
+ツールバーの変更で、種類：規定のスクリプトにある「このページをツイートする」ボタンを追加します。
+あとは、ツイートしたいページでボタンを押せば、ツイートページが開きます。簡単ですね。
+ツイートボタンは、htsignさんに作成してもらいました！ありがとうございます。htsignさんには、他にTumblrへのリンク投稿スクリプトも作成してもらっています。Tumblrへのリンク投稿は、このページをツイートするボタンと同じく、ボタン追加で使用することができます。
+短縮URLをクリップボードにコピー
+VirusTotalでのURLスキャンと同じく、ドラッグ＆ドロップで短縮URLをクリップボードにコピーすることができます。現在可能なのは、bit.ly、McAfee、TinyURL、次のバージョン0.9.17では、ux.nuも使用可能になります。
+bit.lyで、アカウント情報を使用したいときは、オプション設定 -&amp;gt; スクリプトの設定の「スクリプト個別動作設定」で、bitlyで短縮URLをコピーの「設定」からユーザ情報を設定できます。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1293469200</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.16 TabManagerでタブリスト保存</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver0916-t/</link>
+          <pubDate>2010-12-27 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver0916-t/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09160&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0916.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;TabManagerの機能を強化しています。Anciaが固まっても、TabManagerでタブが表示されれば、「Ancia」右クリック -&amp;gt; 「タブリストで保存(S)」からタブリストで保存ダイアログを開くことができます。もし表示されない場合は、すみませんが、あきらめるしかないです。タブアイテム右クリックからURLをコピーなど、また、ドラッグ＆ドロップも可能です。&lt;/p&gt;
+
+&lt;p&gt;「全タブURLをクリップボードにコピー」はまだ未サポートです。タブリストの保存は、アプリでの保存と同じくセキュリティ、ハイライト、戻る進む履歴等も保存します。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+TabManagerの機能を強化しています。Anciaが固まっても、TabManagerでタブが表示されれば、「Ancia」右クリック -&amp;gt; 「タブリストで保存(S)」からタブリストで保存ダイアログを開くことができます。もし表示されない場合は、すみませんが、あきらめるしかないです。タブアイテム右クリックからURLをコピーなど、また、ドラッグ＆ドロップも可能です。
+「全タブURLをクリップボードにコピー」はまだ未サポートです。タブリストの保存は、アプリでの保存と同じくセキュリティ、ハイライト、戻る進む履歴等も保存します。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/TabManager2.png</eyecatch>
+          <datetimeUnix>1293382800</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.15 貼り付け検索、標準ツールバーAero表示、動画再生できないなど</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver0915-a/</link>
+          <pubDate>2010-12-14 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver0915-a/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09150&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0915.zip&#34;&gt;download&lt;/a&gt;&lt;br /&gt;
+標準ツールバーだけ、Aero表示切替の対応をしています。標準ツールバーの右クリック -&amp;gt; 「ツールバーをAero表示」を選択することで切り替えられます。Aero表示の切り替えは、画面スタイルがIEスタイルである必要があります。Xpだと少し見た目が悪いかもしれません。他のツールバーも切り替え対応予定です。&lt;br /&gt;
+&lt;img alt=&#34;check_aero.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/check_aero.jpg&#34; width=&#34;298&#34; height=&#34;158&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;検索バーの右クリックからクリップボードテキストで貼り付け検索出来るようになっています。貼り付け検索では、ステータスバーに貼り付けるクリップボードテキストが出るので事前に確認できます。検索エンジンをメニューから選んでの貼り付け検索も可能です。&lt;br /&gt;
+&lt;img alt=&#34;pasteandsearch.jpg&#34; src=&#34;http://blog.anciasoft.jp/img/pasteandsearch.jpg&#34; width=&#34;437&#34; height=&#34;114&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong style=&#34;color:red&#34;&gt;また、動画が再生できないバグが見つかっています。もし動画が再生できない場合は、IEなどで開くようお願いします。&lt;/strong&gt;再生できないサイトとしては、例えば&lt;a href=&#34;http://mlb.mlb.com/video/play.jsp&#34;&gt;http://mlb.mlb.com/video/play.jsp&lt;/a&gt; があります。調べたんですが、ちょっと直し方は見当がつきません。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+標準ツールバーだけ、Aero表示切替の対応をしています。標準ツールバーの右クリック -&amp;gt; 「ツールバーをAero表示」を選択することで切り替えられます。Aero表示の切り替えは、画面スタイルがIEスタイルである必要があります。Xpだと少し見た目が悪いかもしれません。他のツールバーも切り替え対応予定です。
+検索バーの右クリックからクリップボードテキストで貼り付け検索出来るようになっています。貼り付け検索では、ステータスバーに貼り付けるクリップボードテキストが出るので事前に確認できます。検索エンジンをメニューから選んでの貼り付け検索も可能です。
+また、動画が再生できないバグが見つかっています。もし動画が再生できない場合は、IEなどで開くようお願いします。再生できないサイトとしては、例えばhttp://mlb.mlb.com/video/play.jsp があります。調べたんですが、ちょっと直し方は見当がつきません。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/tbaero.jpg</eyecatch>
+          <datetimeUnix>1292259600</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.12 Aero表示でのバー移動</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver0912-a/</link>
+          <pubDate>2010-11-16 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver0912-a/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09120&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0912.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aero表示のとき上部のバーを移動できるようにしています。配置によっては、IE9っぽくすることもできます。0.9.12でAero表示(オプション設定-&amp;gt;画面スタイル-&amp;gt;Internet Explorerスタイル)にすると、強制的に全ての検索バーとアドレスバーが上部に配置されます。今後の更新で、上部に配置する・配置しないを出来るようにする予定です。&lt;/p&gt;
+
+&lt;p&gt;デフォルトの画面スタイルでアドレスバーの背景をちょっと変えています。&lt;br /&gt;
+&lt;img alt=&#34;normal.png&#34; src=&#34;http://blog.anciasoft.jp/img/normal.png&#34; width=&#34;286&#34; height=&#34;49&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;0.9.12のバグで、favicon表示されませんが、修正したものを&lt;a href=&#34;http://www.egrath.net/download/Ancia0912favicon_fix.zip&#34;&gt;http://www.egrath.net/download/Ancia0912favicon_fix.zip&lt;/a&gt;に置いています。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+Aero表示のとき上部のバーを移動できるようにしています。配置によっては、IE9っぽくすることもできます。0.9.12でAero表示(オプション設定-&amp;gt;画面スタイル-&amp;gt;Internet Explorerスタイル)にすると、強制的に全ての検索バーとアドレスバーが上部に配置されます。今後の更新で、上部に配置する・配置しないを出来るようにする予定です。
+デフォルトの画面スタイルでアドレスバーの背景をちょっと変えています。
+0.9.12のバグで、favicon表示されませんが、修正したものをhttp://www.egrath.net/download/Ancia0912favicon_fix.zipに置いています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/aero_singleline.png</eyecatch>
+          <datetimeUnix>1289840400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.11 App.InputBox()について</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver0911-a/</link>
+          <pubDate>2010-11-02 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver0911-a/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09110&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0911.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。&lt;br /&gt;
+&lt;pre&gt;var input=App.InputBox(&lt;br /&gt;
+    {   caption:&amp;ldquo;Windowキャプション&amp;rdquo;,&lt;br /&gt;
+        statics:[{text:&amp;ldquo;上部スタティックテキスト&amp;rdquo;},{text:&amp;ldquo;下部スタティックテキスト&amp;rdquo;}],//2つまで&lt;br /&gt;
+        inputs:[{label:&amp;ldquo;Input1(&amp;amp;1):&amp;ldquo;,value:&amp;ldquo;value1value1&amp;rdquo;},&lt;br /&gt;
+           {label:&amp;ldquo;Input2(&amp;amp;2):&amp;ldquo;,value:&amp;ldquo;value2value2&amp;rdquo;},&lt;br /&gt;
+           {label:&amp;ldquo;Input3(&amp;amp;3):&amp;ldquo;,value:&amp;ldquo;value3value3&amp;rdquo;},&lt;br /&gt;
+           {label:&amp;ldquo;Input4(&amp;amp;4):&amp;ldquo;,value:&amp;ldquo;1234567890&amp;rdquo;,style:&amp;ldquo;number&amp;rdquo;},// number: 数値入力のみ&lt;br /&gt;
+           {label:&amp;ldquo;Input5(&amp;amp;5):&amp;ldquo;,value:&amp;ldquo;1234567890&amp;rdquo;,style:&amp;ldquo;number&amp;rdquo;}],// 5つまで&lt;br /&gt;
+        buttons:[{text:&amp;ldquo;OK&amp;rdquo;},{text:&amp;ldquo;キャンセル&amp;rdquo;,style:&amp;ldquo;default&amp;rdquo;}]});&lt;br /&gt;
+// input： OKだとjson形式のテキスト、Cancelだとfalseが返却&lt;br /&gt;
+// json形式のテキストは以下の通り&lt;br /&gt;
+// {&amp;ldquo;inputs&amp;rdquo;:[&amp;ldquo;value1value1&amp;rdquo;,&amp;ldquo;value2value2&amp;rdquo;,&amp;ldquo;value3value3&amp;rdquo;,&amp;ldquo;1234567890&amp;rdquo;,&amp;ldquo;1234567890&amp;rdquo;]}&lt;br /&gt;
+&lt;/pre&gt;OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&amp;ldquo;(&amp;rdquo;+input+&amp;ldquo;)&amp;rdquo;).inputs[0]のように入力結果を取得できます。&lt;/p&gt;
+
+&lt;p&gt;Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。&lt;/p&gt;
+
+&lt;p&gt;inputのタイプは、指定なし(普通のedtibox)、style:&amp;ldquo;number&amp;rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+スクリプトで、App.InputBoxメソッドを追加しています。配布ファイルのscript\reserved\bitly.jsを見ると分かりますが、下のコードで画像のダイアログが表示されます。
+var input=App.InputBox(
+{ caption:&amp;ldquo;Windowキャプション&amp;rdquo;,
+statics:[{text:&amp;ldquo;上部スタティックテキスト&amp;rdquo;},{text:&amp;ldquo;下部スタティックテキスト&amp;rdquo;}],//2つまで
+inputs:[{label:&amp;ldquo;Input1(&amp;amp;1):&amp;ldquo;,value:&amp;ldquo;value1value1&amp;rdquo;},
+{label:&amp;ldquo;Input2(&amp;amp;2):&amp;ldquo;,value:&amp;ldquo;value2value2&amp;rdquo;},
+{label:&amp;ldquo;Input3(&amp;amp;3):&amp;ldquo;,value:&amp;ldquo;value3value3&amp;rdquo;},
+{label:&amp;ldquo;Input4(&amp;amp;4):&amp;ldquo;,value:&amp;ldquo;1234567890&amp;rdquo;,style:&amp;ldquo;number&amp;rdquo;},// number: 数値入力のみ
+{label:&amp;ldquo;Input5(&amp;amp;5):&amp;ldquo;,value:&amp;ldquo;1234567890&amp;rdquo;,style:&amp;ldquo;number&amp;rdquo;}],// 5つまで
+buttons:[{text:&amp;ldquo;OK&amp;rdquo;},{text:&amp;ldquo;キャンセル&amp;rdquo;,style:&amp;ldquo;default&amp;rdquo;}]});
+// input： OKだとjson形式のテキスト、Cancelだとfalseが返却
+// json形式のテキストは以下の通り
+// {&amp;ldquo;inputs&amp;rdquo;:[&amp;ldquo;value1value1&amp;rdquo;,&amp;ldquo;value2value2&amp;rdquo;,&amp;ldquo;value3value3&amp;rdquo;,&amp;ldquo;1234567890&amp;rdquo;,&amp;ldquo;1234567890&amp;rdquo;]}
+OKが押されたときのApp.InpuｔBox()の応答をevalすることで、eval(&amp;ldquo;(&amp;rdquo;+input+&amp;ldquo;)&amp;rdquo;).inputs[0]のように入力結果を取得できます。
+Context.settingPathがスクリプトに対する個別な設定ファイルパスを返却するので、json形式の入力結果をScripting.FileSystemObjectオブジェクトで個別設定ファイルに保存することができます。同じくScripting.FileSystemObjectで読み込みも可能です。bit.lyのようなログイン情報が必要なスクリプトも書くことが可能になったと思います。
+inputのタイプは、指定なし(普通のedtibox)、style:&amp;ldquo;number&amp;rdquo;(数値のみ入力)しかありませんが、チェックボックスやcomboboxを増やすつもりです。次回はAero表示あたりを更新する予定です。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/inputbox.png</eyecatch>
+          <datetimeUnix>1288630800</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.10 タブのフォント変更</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver0910/</link>
+          <pubDate>2010-10-25 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver0910/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t09100&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia0910.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;タブのフォントを変更できるようになっています。タブのフォントサイズは大きすぎてもタブのスキン最大表示サイズまで丸められます。それと、オプション設定の見た目を少し変えています。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+タブのフォントを変更できるようになっています。タブのフォントサイズは大きすぎてもタブのスキン最大表示サイズまで丸められます。それと、オプション設定の見た目を少し変えています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/tabfont.png</eyecatch>
+          <datetimeUnix>1287939600</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.8 IEレンダリング指定、Jscript9対応</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver098-ie/</link>
+          <pubDate>2010-10-12 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver098-ie/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0980&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia098.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;インストールされているIEのバージョンに応じて最新のレンダリングを使用するよう対応しています。IE9ベータがインストールされていれば、自動的にIE9のレンダリングを使用します。画像はAnciaをIE9で使用したものですが、最初のオープンでAcid3は92点、なぜかリロードすると95点です。またIE9のみですが、最新のJavaScriptエンジンを使用するようになっています。&lt;/p&gt;
+
+&lt;p&gt;レンダリングとJavaScriptエンジンの指定は、最新のIEの機能を使用するために、レジストリを使用します。レジストリに書き込む値は、設定ファイルで決まり、起動時に毎回書き込むため、あらかじめレジストリに設定がないと動かない、というわけではありません。アプリ設定の保存にレジストリを使用しないのは従来どおりです。&lt;/p&gt;
+
+&lt;p&gt;できれば互換表示も対応したいんですが、なかなかうまくいってません。&lt;/p&gt;
+
+&lt;p&gt;設定ファイルの書き込みバグを修正しています。このバグが発生すると、前回起動時のタブの読み込みなど失敗するので、このようなバグが直っています。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+インストールされているIEのバージョンに応じて最新のレンダリングを使用するよう対応しています。IE9ベータがインストールされていれば、自動的にIE9のレンダリングを使用します。画像はAnciaをIE9で使用したものですが、最初のオープンでAcid3は92点、なぜかリロードすると95点です。またIE9のみですが、最新のJavaScriptエンジンを使用するようになっています。
+レンダリングとJavaScriptエンジンの指定は、最新のIEの機能を使用するために、レジストリを使用します。レジストリに書き込む値は、設定ファイルで決まり、起動時に毎回書き込むため、あらかじめレジストリに設定がないと動かない、というわけではありません。アプリ設定の保存にレジストリを使用しないのは従来どおりです。
+できれば互換表示も対応したいんですが、なかなかうまくいってません。
+設定ファイルの書き込みバグを修正しています。このバグが発生すると、前回起動時のタブの読み込みなど失敗するので、このようなバグが直っています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/Acid3_098.png</eyecatch>
+          <datetimeUnix>1286816400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.7 バグ修正、Aeroでのアドレスバー変更</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver097-ae/</link>
+          <pubDate>2010-10-04 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver097-ae/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0970&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia097.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;教えてもらった&lt;a href=&#34;http://blog.anciasoft.jp/archives/2010/09/ancia-ver095-ae.html#comment-454&#34;&gt;XpでIMEが消える現象&lt;/a&gt;など、他多くのバグ修正しています。Anciaでは、Web表示部分をポップアップで表示している関係で、なかなかそれ絡みのバグ(ZOrderなど)が多かったのですが、だいぶ減ってきていると思います。バグのご指摘ありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;Aeroあたりの更新もしたいのですが、XpでスクリプトからBrowserオブジェクトのNavigateを行うと固まる問題があり、これが修正できるか微妙です。Aero表示でのアドレスバー変更は可能にしています。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+教えてもらったXpでIMEが消える現象など、他多くのバグ修正しています。Anciaでは、Web表示部分をポップアップで表示している関係で、なかなかそれ絡みのバグ(ZOrderなど)が多かったのですが、だいぶ減ってきていると思います。バグのご指摘ありがとうございます。
+Aeroあたりの更新もしたいのですが、XpでスクリプトからBrowserオブジェクトのNavigateを行うと固まる問題があり、これが修正できるか微妙です。Aero表示でのアドレスバー変更は可能にしています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1286125200</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.6 タブAero表示対応</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver096-ae/</link>
+          <pubDate>2010-09-27 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver096-ae/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0960&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia096.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;IEスタイルでのTab Aero表示に対応しています。マルチライン・シングルラインの変更にも対応しています。タブ位置指定はできませんが、可能にする予定です。IEスタイルでは、アドレスバーが横に長くなってしまうので、ちょっとどうするか考えます。0.9.6からはタブ描画でスキン画像を使用します。&lt;/p&gt;
+
+&lt;p&gt;報告してもらっているバグ、修正できていないので、次は手を付けたいと思います。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+IEスタイルでのTab Aero表示に対応しています。マルチライン・シングルラインの変更にも対応しています。タブ位置指定はできませんが、可能にする予定です。IEスタイルでは、アドレスバーが横に長くなってしまうので、ちょっとどうするか考えます。0.9.6からはタブ描画でスキン画像を使用します。
+報告してもらっているバグ、修正できていないので、次は手を付けたいと思います。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/AeroMultiTab.png</eyecatch>
+          <datetimeUnix>1285520400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia Ver0.9.5 Aeroスタイル途中</title>
+          <link>http://blog.anciasoft.jp/post/ancia-ver095-ae/</link>
+          <pubDate>2010-09-22 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-ver095-ae/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t0950&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia095.zip&#34;&gt;download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;IE9のスタイルがなんかいいので、Aeroスタイルに対応中です。オプション設定の画面スタイルで選択できますが、アドレスバーテキスト選択で見づらいバグがあります。予定ではタブもIE9のようにするつもりです。ただタブはアドレスバーの下に置けるようにします。Aero無効でもこのスタイルが表示できるようにしたいです(いまはAero有効のみ表示)。&lt;/p&gt;
+
+&lt;p&gt;Xpでタスクバーが隠れるバグ修正で、検索バーからの検索でZオーダーがおかしくなるのを修正しています。これが起こるとブラウザが白くなったりしたので、IMEが消える現象や、白くなる減少が直っている可能性があります。再起動などで設定ファイルが保存できないことがあるバグも修正しています。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download
+IE9のスタイルがなんかいいので、Aeroスタイルに対応中です。オプション設定の画面スタイルで選択できますが、アドレスバーテキスト選択で見づらいバグがあります。予定ではタブもIE9のようにするつもりです。ただタブはアドレスバーの下に置けるようにします。Aero無効でもこのスタイルが表示できるようにしたいです(いまはAero有効のみ表示)。
+Xpでタスクバーが隠れるバグ修正で、検索バーからの検索でZオーダーがおかしくなるのを修正しています。これが起こるとブラウザが白くなったりしたので、IMEが消える現象や、白くなる減少が直っている可能性があります。再起動などで設定ファイルが保存できないことがあるバグも修正しています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/Aero.png</eyecatch>
+          <datetimeUnix>1285081200</datetimeUnix>
+        </item>
+      
+    
+
+  </channel>
+</rss>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/archives/2008/</link>
+    <language>ja-jp</language>
+    <author></author>
+    <rights>Copyright (C) 2017 y-kurimoto.</rights>
+    <updated>2008-12-31 02:00:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>dyn menu</title>
+          <link>http://blog.anciasoft.jp/post/dyn-menu-1/</link>
+          <pubDate>2008-12-31 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/dyn-menu-1/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?Ancia&#34;&gt;Ancia&lt;/a&gt;は、ResHackerでみると分かりますが、メニューリソースを持っていません。メニューは全てファイルで持ち、メニューファイルには、動的メニューアイテム（dynamic menu）を定義できます。実装済み動的メニューは、placeholderのprefixではじまる&lt;br /&gt;
+&lt;ul&gt;&lt;li&gt;placeholder.ietoolbar 〜 Internet Explorerツールバー&lt;br /&gt;
+&lt;li&gt;placeholder.ievertbar 〜 Internet Explorerエクスプローラバー&lt;br /&gt;
+&lt;li&gt;placeholder.up 〜 上へ移動&lt;br /&gt;
+&lt;li&gt;placeholder.back 〜 トラベルログの戻る&lt;br /&gt;
+&lt;li&gt;placeholder.forward 〜 トラベルログの進む&lt;br /&gt;
+&lt;li&gt;placeholder.travellog 〜 トラベルログ全て&lt;br /&gt;
+&lt;li&gt;placeholder.closed 〜 最近閉じたタブ&lt;br /&gt;
+&lt;li&gt;placeholder.new.closed 〜 最近閉じたタブ（新しいタブで開く）&lt;br /&gt;
+&lt;li&gt;placeholder.home 〜 Internet ExplorerのホームURL&lt;br /&gt;
+&lt;li&gt;placeholder.new.home 〜 Internet ExplorerのホームURL(新しいタブで開く)&lt;br /&gt;
+&lt;li&gt;placeholder.toolbar 〜 アドレスバー、検索バーなど表示・非表示&lt;br /&gt;
+&lt;li&gt;placeholder.searchengine 〜 検索エンジン&lt;br /&gt;
+&lt;li&gt;placeholder.encoding 〜 エンコーディング&lt;br /&gt;
+&lt;li&gt;placeholder.tab 〜 タブ一覧（次回更新に含まれます）&lt;br /&gt;
+&lt;/ul&gt;です。&lt;/p&gt;
+
+&lt;p&gt;ツールバーのメニューファイルmenu_toolbar.jsonを&lt;br /&gt;
+{&amp;ldquo;menu&amp;rdquo;:[    ← 次回更新でrootからmenuへ変更されます&lt;br /&gt;
+{&amp;ldquo;popup&amp;rdquo;:[&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.toolbar&amp;rdquo;},&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;null,&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;ハイライトバー&amp;rdquo;,&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;show.hilitebar&amp;rdquo;},&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;インラインサーチ(&amp;amp;I)&amp;ldquo;,&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;isearch&amp;rdquo;},&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;ステータスバー(&amp;amp;B)&amp;ldquo;,&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;statusbar&amp;rdquo;},&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;null,&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;エクスプローラバー&amp;rdquo;,&amp;ldquo;popup&amp;rdquo;:[&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.ievertbar&amp;rdquo;}]},&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;null,&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.ietoolbar&amp;rdquo;},&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;null,&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;ツールバー固定する(&amp;amp;B)&amp;ldquo;, &amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;locktoolbar&amp;rdquo;}]}&lt;br /&gt;
+]}&lt;br /&gt;
+とした場合、ツールバーで右クリックすると、placeholder.toolbar、ietoolbarが動的に展開され、上の画像のメニューが表示されます。placeholderでの展開がないときは「なし」になります。nullはセパレータです。&lt;/p&gt;
+
+&lt;p&gt;仕様として、下のように&lt;br /&gt;
+{&amp;ldquo;menu&amp;rdquo;:[&lt;br /&gt;
+{&amp;ldquo;popup&amp;rdquo;:[&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.toolbar&amp;rdquo;},&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.toolbar&amp;rdquo;}]}&lt;br /&gt;
+]}&lt;br /&gt;
+同一階層で同じ動的メニューは含めることが出来ません。&lt;/p&gt;
+
+&lt;p&gt;現在のメニューファイルの意味です。&lt;br /&gt;
+&lt;ul&gt;&lt;li&gt;menu_addresshist.json 〜 アドレスバー履歴メニュー&lt;br /&gt;
+&lt;li&gt;menu_back.json 〜 戻るドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_closed.json 〜 閉じたタブドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_cmdbar.json 〜 コマンドバーメニュー&lt;br /&gt;
+&lt;li&gt;menu_encoding.json 〜 エンコーディングドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_fontsize.json 〜 フォントサイズドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_forward.json 〜 進むドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_go.json 〜 進むドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_hilite.json 〜 ハイライトバーメニュー&lt;br /&gt;
+&lt;li&gt;menu_home.json 〜 ホームドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_incsearchhist.json 〜 インクリメンタルサーチ履歴メニュー&lt;br /&gt;
+&lt;li&gt;menu_new.json 〜 新しいタブドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_refresh.json 〜 最新の状態に更新ドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_script.json 〜 スクリプトドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_searchhist.json 〜 検索履歴メニュー&lt;br /&gt;
+&lt;li&gt;menu_security.json 〜 セキュリティードロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_sidebar.json 〜 サイドバーメニュー&lt;br /&gt;
+&lt;li&gt;menu_statusbar.json 〜 ステータスパーメニュー（各ペイン）&lt;br /&gt;
+&lt;li&gt;menu_stop.json 〜 中止ドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_tab.json 〜 タブメニュー&lt;br /&gt;
+&lt;li&gt;menu_toolbar.json 〜 ツールバーメニュー&lt;br /&gt;
+&lt;li&gt;menu_travellog.json 〜 トラベルログドロップダウンメニュー&lt;br /&gt;
+&lt;li&gt;menu_up.json 〜 上へ移動ドロップダウンメニュー&lt;br /&gt;
+&lt;/ul&gt;各ファイルで、動的メニューやコマンド・スクリプト・検索メニューアイテムの内容に、アプリは制限を設けていません。menu_tab.jsonに動的メニューplaceholderを全て定義することも可能です。&lt;/p&gt;
+</description>
+          <desctext>Anciaは、ResHackerでみると分かりますが、メニューリソースを持っていません。メニューは全てファイルで持ち、メニューファイルには、動的メニューアイテム（dynamic menu）を定義できます。実装済み動的メニューは、placeholderのprefixではじまる
+placeholder.ietoolbar 〜 Internet Explorerツールバー
+placeholder.ievertbar 〜 Internet Explorerエクスプローラバー
+placeholder.up 〜 上へ移動
+placeholder.back 〜 トラベルログの戻る
+placeholder.forward 〜 トラベルログの進む
+placeholder.travellog 〜 トラベルログ全て
+placeholder.closed 〜 最近閉じたタブ
+placeholder.new.closed 〜 最近閉じたタブ（新しいタブで開く）
+placeholder.home 〜 Internet ExplorerのホームURL
+placeholder.new.home 〜 Internet ExplorerのホームURL(新しいタブで開く)
+placeholder.toolbar 〜 アドレスバー、検索バーなど表示・非表示
+placeholder.searchengine 〜 検索エンジン
+placeholder.encoding 〜 エンコーディング
+placeholder.tab 〜 タブ一覧（次回更新に含まれます）
+です。
+ツールバーのメニューファイルmenu_toolbar.jsonを
+{&amp;ldquo;menu&amp;rdquo;:[ ← 次回更新でrootからmenuへ変更されます
+{&amp;ldquo;popup&amp;rdquo;:[
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.toolbar&amp;rdquo;},
+&amp;nbsp;&amp;nbsp;null,
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;ハイライトバー&amp;rdquo;,&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;show.hilitebar&amp;rdquo;},
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;インラインサーチ(&amp;amp;I)&amp;ldquo;,&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;isearch&amp;rdquo;},
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;ステータスバー(&amp;amp;B)&amp;ldquo;,&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;statusbar&amp;rdquo;},
+&amp;nbsp;&amp;nbsp;null,
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;エクスプローラバー&amp;rdquo;,&amp;ldquo;popup&amp;rdquo;:[
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.ievertbar&amp;rdquo;}]},
+&amp;nbsp;&amp;nbsp;null,
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;placeholder.ietoolbar&amp;rdquo;},
+&amp;nbsp;&amp;nbsp;null,
+&amp;nbsp;&amp;nbsp;{&amp;ldquo;txt&amp;rdquo;:&amp;ldquo;ツールバー固定する(&amp;amp;B)&amp;ldquo;, &amp;ldquo;cmd&amp;rdquo;:&amp;ldquo;locktoolbar&amp;rdquo;}]}
+]}
+とした場合、ツールバーで右クリックすると、placeholder.toolbar、ietoolbarが動的に展開され、上の画像のメニューが表示されます。placeholderでの展開がないときは「なし」になります。nullはセパレータです。
+仕様として、下のように</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/dynmenu.png</eyecatch>
+          <datetimeUnix>1230656400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>creating ancia</title>
+          <link>http://blog.anciasoft.jp/post/creating-ancia/</link>
+          <pubDate>2008-12-29 08:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/creating-ancia/</guid>
+          <description>&lt;p&gt;Anciaの開発に当たって、実装をあきらめた機能があります。それは、タブごとにスレッドとする機能です。&lt;/p&gt;
+
+&lt;p&gt;タブを複数作成すると、1つのUIスレッドで複数tridentエンジンが動作するため、1タブが重いページを読み込むと他のタブも固まってしまいます。新しいタブブラウザを開発するからには、タブごとにスレッドとすることが実装目的の一つでした。&lt;/p&gt;
+
+&lt;p&gt;しかし残念ながら、タブごとにスレッドで動作させることは可能でしたが、どうしても解決できない問題があり、あきらめてしまいました。スレッドで生成したtridentエンジンで、どうにもスクロールがスレッドではないときに比べ、もたついてしまうのです。タブごとのスレッドの&lt;a href=&#34;http://www.ioage.com/en/&#34;&gt;TheWorld&lt;/a&gt;で、&lt;a href=&#34;http://www.yahoo.co.jp/を開くと、ホイール上下でのスクロールがIEに比べスムーズではないことが分かります。&#34;&gt;http://www.yahoo.co.jp/を開くと、ホイール上下でのスクロールがIEに比べスムーズではないことが分かります。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1UIスレッド・複数タブで実装が進んでしまった今では、タブごとのスレッドやプロセス対応は、無理そうです。&lt;/p&gt;
+</description>
+          <desctext>Anciaの開発に当たって、実装をあきらめた機能があります。それは、タブごとにスレッドとする機能です。
+タブを複数作成すると、1つのUIスレッドで複数tridentエンジンが動作するため、1タブが重いページを読み込むと他のタブも固まってしまいます。新しいタブブラウザを開発するからには、タブごとにスレッドとすることが実装目的の一つでした。
+しかし残念ながら、タブごとにスレッドで動作させることは可能でしたが、どうしても解決できない問題があり、あきらめてしまいました。スレッドで生成したtridentエンジンで、どうにもスクロールがスレッドではないときに比べ、もたついてしまうのです。タブごとのスレッドのTheWorldで、http://www.yahoo.co.jp/を開くと、ホイール上下でのスクロールがIEに比べスムーズではないことが分かります。
+1UIスレッド・複数タブで実装が進んでしまった今では、タブごとのスレッドやプロセス対応は、無理そうです。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1230505200</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>AutoTextLink</title>
+          <link>http://blog.anciasoft.jp/post/autotextlink/</link>
+          <pubDate>2008-12-11 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/autotextlink/</guid>
+          <description>&lt;p&gt;オートテキストリンクとは、テキストのURLを自動的にリンクにする機能です。Firefoxのアドオン、&lt;a href=&#34;https://addons.mozilla.org/ja/firefox/addon/1939&#34;&gt;テキストリンク&lt;/a&gt;のようなものです。このテキスト &lt;a href=&#34;http://www.egrath.net/?AnciaがAnciaで開くとリンクになります。オートテキストリンクされたことが区別できるよう、作成されたリンクにはアイコンを表示します。アイコンが表示されなければ、ページのリンクなのか、作成されたリンクなのか区別できません。&#34;&gt;http://www.egrath.net/?AnciaがAnciaで開くとリンクになります。オートテキストリンクされたことが区別できるよう、作成されたリンクにはアイコンを表示します。アイコンが表示されなければ、ページのリンクなのか、作成されたリンクなのか区別できません。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下のURLらしいテキストでもリンクを作成します。&lt;br /&gt;
+&lt;li&gt;ttps://addons.mozilla.org/ja/firefox/addon/1939&lt;br /&gt;
+&lt;li&gt;tps://addons.mozilla.org/ja/firefox/addon/1939&lt;br /&gt;
+&lt;li&gt;ps://addons.mozilla.org/ja/firefox/addon/1939&lt;br /&gt;
+&lt;li&gt;ttp://www.egrath.net/?Ancia&lt;br /&gt;
+&lt;li&gt;tp://www.egrath.net/?Ancia&lt;br /&gt;
+&lt;li&gt;全角 ｈｔｔｐ：／／ｗｗｗ．ｅｇｒａｔｈ．ｎｅｔ／？Ａｎｃｉａ&lt;/p&gt;
+
+&lt;p&gt;欠点として、たとえば掲示板で怪しいURLのテキストをリンクとしてしまうため、クリックすると確認無しに開けてしまうことです。これは、次回更新でオートテキストリンクを開くときは、確認ダイログを表示する対応を入れます。&lt;/p&gt;
+
+&lt;p&gt;オートテキストリンクでも&lt;a href=&#34;../post-14&#34;&gt;ドロップアクション&lt;/a&gt;が動作するため、&lt;br /&gt;
+&lt;li&gt;怪しいURLは、aguse.jpへドロップ&lt;br /&gt;
+&lt;li&gt;aguse.jpの調査結果で、大丈夫なら、調査結果のページから怪しいURLをオープン(オートテキストリンクが動作し、怪しいURLがリンクになってる）&lt;br /&gt;
+と、マウスの操作だけで出来ます。&lt;/p&gt;
+</description>
+          <desctext>オートテキストリンクとは、テキストのURLを自動的にリンクにする機能です。Firefoxのアドオン、テキストリンクのようなものです。このテキスト http://www.egrath.net/?AnciaがAnciaで開くとリンクになります。オートテキストリンクされたことが区別できるよう、作成されたリンクにはアイコンを表示します。アイコンが表示されなければ、ページのリンクなのか、作成されたリンクなのか区別できません。
+下のURLらしいテキストでもリンクを作成します。
+ttps://addons.mozilla.org/ja/firefox/addon/1939
+tps://addons.mozilla.org/ja/firefox/addon/1939
+ps://addons.mozilla.org/ja/firefox/addon/1939
+ttp://www.egrath.net/?Ancia
+tp://www.egrath.net/?Ancia
+全角 ｈｔｔｐ：／／ｗｗｗ．ｅｇｒａｔｈ．ｎｅｔ／？Ａｎｃｉａ
+欠点として、たとえば掲示板で怪しいURLのテキストをリンクとしてしまうため、クリックすると確認無しに開けてしまうことです。これは、次回更新でオートテキストリンクを開くときは、確認ダイログを表示する対応を入れます。
+オートテキストリンクでもドロップアクションが動作するため、
+怪しいURLは、aguse.jpへドロップ
+aguse.jpの調査結果で、大丈夫なら、調査結果のページから怪しいURLをオープン(オートテキストリンクが動作し、怪しいURLがリンクになってる）
+と、マウスの操作だけで出来ます。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/alink.png</eyecatch>
+          <datetimeUnix>1228928400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>DropAction</title>
+          <link>http://blog.anciasoft.jp/post/post-14/</link>
+          <pubDate>2008-12-09 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/post-14/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?Ancia&#34;&gt;Ancia&lt;/a&gt;のドロップアクションとは、簡単にいうとドロップターゲットの表示です。リンクやテキストをドラッグすると、ボタンが表示されるので、直感的に行ないたいボタンへドロップします。&lt;/p&gt;
+
+&lt;p&gt;設定ファイルは、resourceのdrop_link.json（リンクの場合）、drop_text.json（テキストの場合）です。ボタンは、設定ファイルでdropdownがあると階層構造になります。アプリでは、階層構造の深さに制限は設けていません。dropdownとしてもdropdownボタンにドロップ可能です。&lt;/p&gt;
+
+&lt;p&gt;ボタンは、&lt;br /&gt;
+&lt;li&gt;スクリプト（script）&lt;br /&gt;
+&lt;li&gt;検索（search）&lt;br /&gt;
+が登録できます。アクションをスクリプトで書かなければならないことが面倒ですが、アプリでアクションを実装するときりがないので、その様にしました。逆にスクリプトが実行できるので、ActiveXObject等でインスタンスを作成し、ダウンローダを起動するなども簡単に出来ます。&lt;/p&gt;
+
+&lt;p&gt;ドロップアクションは、単なるOleDragDropのイベント契機に表示しているので、他のアプリからのドラッグなどでも表示できます。たとえば、こんなことが可能です。&lt;br /&gt;
+&lt;li&gt;他のブラウザからドラッグされたリンクを新しいタブで開く&lt;br /&gt;
+&lt;li&gt;他のブラウザからドラッグされたリンクをクリップボードにコピー&lt;br /&gt;
+&lt;li&gt;Wordや秀丸からドロップされたテキストでGoogle検索し、ハイライト&lt;br /&gt;
+&lt;li&gt;Anciaのリンクバーからドラッグされたボタンをバッググラウンドタブで開く&lt;br /&gt;
+・・・など、スクリプトなのでアクションは自由です。&lt;/p&gt;
+</description>
+          <desctext>Anciaのドロップアクションとは、簡単にいうとドロップターゲットの表示です。リンクやテキストをドラッグすると、ボタンが表示されるので、直感的に行ないたいボタンへドロップします。
+設定ファイルは、resourceのdrop_link.json（リンクの場合）、drop_text.json（テキストの場合）です。ボタンは、設定ファイルでdropdownがあると階層構造になります。アプリでは、階層構造の深さに制限は設けていません。dropdownとしてもdropdownボタンにドロップ可能です。
+ボタンは、
+スクリプト（script）
+検索（search）
+が登録できます。アクションをスクリプトで書かなければならないことが面倒ですが、アプリでアクションを実装するときりがないので、その様にしました。逆にスクリプトが実行できるので、ActiveXObject等でインスタンスを作成し、ダウンローダを起動するなども簡単に出来ます。
+ドロップアクションは、単なるOleDragDropのイベント契機に表示しているので、他のアプリからのドラッグなどでも表示できます。たとえば、こんなことが可能です。
+他のブラウザからドラッグされたリンクを新しいタブで開く
+他のブラウザからドラッグされたリンクをクリップボードにコピー
+Wordや秀丸からドロップされたテキストでGoogle検索し、ハイライト
+Anciaのリンクバーからドラッグされたボタンをバッググラウンドタブで開く
+・・・など、スクリプトなのでアクションは自由です。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/da029.png</eyecatch>
+          <datetimeUnix>1228755600</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ancia 0.2.9</title>
+          <link>http://blog.anciasoft.jp/post/ancia-029/</link>
+          <pubDate>2008-12-08 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/ancia-029/</guid>
+          <description>&lt;p&gt;まだ開発途中ですが&lt;a href=&#34;http://www.egrath.net/?Ancia&#34;&gt;Ancia&lt;/a&gt;を更新しました。アドレスバーと検索バーのスキン対応、ユーザエージョント変更など。他に、スクリプトの汎用性向上の仕様変更も入れる予定でしたが、時間がありませんでした。&lt;/p&gt;
+
+&lt;p&gt;スクリプトの汎用性向上とは、&lt;br /&gt;
+&lt;li&gt;アプリはアドレスバーのとき、DataObjectのTextにURL、UniformResourceLocatorにURLを設定し、スクリプトを実行&lt;br /&gt;
+&lt;li&gt;アプリは検索バーのとき、DataObjectのTextに検索キーワード、URLに検索クエリURLを設定し、スクリプトを実行&lt;br /&gt;
+&lt;li&gt;スクリプトのコピー.jsは、実行元によらず、DataObjectのTextをクリップボードにコピーする処理を書けばよい&lt;/p&gt;
+
+&lt;p&gt;というものです。この仕様とすれば、ドロップアクション用のスクリプトを別ファイルに書く必要がなくなくなり、DataObjectを扱うスクリプトだけを書けばよい、となります。&lt;/p&gt;
+
+&lt;p&gt;Anciaについては、なにも書いていないので、備忘録としてもこれから少しずつでも書いていこうと思います。プロセスが残ったり、ドロップアクションを表示すると落ちることがあったり、まだまだです。。&lt;/p&gt;
+</description>
+          <desctext>まだ開発途中ですがAnciaを更新しました。アドレスバーと検索バーのスキン対応、ユーザエージョント変更など。他に、スクリプトの汎用性向上の仕様変更も入れる予定でしたが、時間がありませんでした。
+スクリプトの汎用性向上とは、
+アプリはアドレスバーのとき、DataObjectのTextにURL、UniformResourceLocatorにURLを設定し、スクリプトを実行
+アプリは検索バーのとき、DataObjectのTextに検索キーワード、URLに検索クエリURLを設定し、スクリプトを実行
+スクリプトのコピー.jsは、実行元によらず、DataObjectのTextをクリップボードにコピーする処理を書けばよい
+というものです。この仕様とすれば、ドロップアクション用のスクリプトを別ファイルに書く必要がなくなくなり、DataObjectを扱うスクリプトだけを書けばよい、となります。
+Anciaについては、なにも書いていないので、備忘録としてもこれから少しずつでも書いていこうと思います。プロセスが残ったり、ドロップアクションを表示すると落ちることがあったり、まだまだです。。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/a029.png</eyecatch>
+          <datetimeUnix>1228669200</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.3.5</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-32/</link>
+          <pubDate>2008-08-12 19:46:20 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-32/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1350&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus135.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefoxのブックマーク読み取りで、フォルダの展開で表示異常になることがある問題を修正しています。placeのキーワード読み込みも対応しました。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+Firefoxのブックマーク読み取りで、フォルダの展開で表示異常になることがある問題を修正しています。placeのキーワード読み込みも対応しました。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1218537980</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>FxFavReader</title>
+          <link>http://blog.anciasoft.jp/post/fxfavreader/</link>
+          <pubDate>2008-07-29 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/fxfavreader/</guid>
+          <description>&lt;p&gt;描画がおかしくなることがあるので直します。&lt;/p&gt;
+</description>
+          <desctext>描画がおかしくなることがあるので直します。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1217264400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.3.4</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-31/</link>
+          <pubDate>2008-07-24 02:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-31/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1340&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus134.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefox3のブックマークplaces.sqliteの読み込み対応を行ないました。&lt;a href=&#34;http://developer.mozilla.org/ja/docs/Places_query_URIs&#34;&gt;Places query URIs&lt;/a&gt;には対応していません。&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+Firefox3のブックマークplaces.sqliteの読み込み対応を行ないました。Places query URIsには対応していません。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1216832400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>places 2</title>
+          <link>http://blog.anciasoft.jp/post/places-2/</link>
+          <pubDate>2008-07-16 02:00:54 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/places-2/</guid>
+          <description>&lt;p&gt;firefox-3.0-source\mozilla\toolkit\components\places\src\nsNavHistory.cpp(766):&lt;br /&gt;
+  rv = mDBConn-&amp;gt;ExecuteSimpleSQL(&lt;br /&gt;
+    NS_LITERAL_CSTRING(&amp;ldquo;PRAGMA locking_mode = EXCLUSIVE&amp;rdquo;));&lt;/p&gt;
+
+&lt;p&gt;排他ロックなので、firefox3動作中のデータベースアクセスは無理ですね&lt;/p&gt;
+</description>
+          <desctext>firefox-3.0-source\mozilla\toolkit\components\places\src\nsNavHistory.cpp(766):
+rv = mDBConn-&amp;gt;ExecuteSimpleSQL(
+NS_LITERAL_CSTRING(&amp;ldquo;PRAGMA locking_mode = EXCLUSIVE&amp;rdquo;));
+排他ロックなので、firefox3動作中のデータベースアクセスは無理ですね</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1216141254</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>places</title>
+          <link>http://blog.anciasoft.jp/post/places/</link>
+          <pubDate>2008-07-14 02:00:21 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/places/</guid>
+          <description>&lt;p&gt;ExplorerBarPlusでのFirefox3ブックマーク読み取り対応で、Firefox3起動中だとデータベースが読み取れないという問題に遭遇。&lt;/p&gt;
+
+&lt;p&gt;Firefox3の複数起動で新たにプロセスが立ち上がらないところを見ると、他プロセスからの読み取りは無理なのか、、sqliteのソースを追うとLockFileで失敗しているし&lt;/p&gt;
+</description>
+          <desctext>ExplorerBarPlusでのFirefox3ブックマーク読み取り対応で、Firefox3起動中だとデータベースが読み取れないという問題に遭遇。
+Firefox3の複数起動で新たにプロセスが立ち上がらないところを見ると、他プロセスからの読み取りは無理なのか、、sqliteのソースを追うとLockFileで失敗しているし</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1215968421</datetimeUnix>
+        </item>
+      
+    
+
+  </channel>
+</rss>

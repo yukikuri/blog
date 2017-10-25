@@ -4,7 +4,7 @@
     <title>ウェブブラウザ開発ブログ </title>
     <link>http://blog.anciasoft.jp/tags/flash/</link>
     <language>ja-jp</language>
-    <author>ykuri</author>
+    <author></author>
     <rights>Copyright (C) 2017 y-kurimoto.</rights>
     <updated>2016-04-10 00:00:00 &#43;0900 JST</updated>
 
@@ -14,7 +14,7 @@
           <title>Chrome 系ブラウザへの PPAPI版 Flash のインストール方法</title>
           <link>http://blog.anciasoft.jp/post/install-ppapi-flash/</link>
           <pubDate>2016-04-10 00:00:00 &#43;0900 JST</pubDate>
-          <author>ykuri</author>
+          <author></author>
           <guid>http://blog.anciasoft.jp/post/install-ppapi-flash/</guid>
           <description>&lt;p&gt;Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。&lt;/p&gt;
 
@@ -38,7 +38,21 @@
 
 &lt;p&gt;あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。&lt;/p&gt;
 </description>
-          <desctext>Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。 Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。 1) Adobe Flash Player インストールのページを開く https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。 2) 開いたページで、手順1と手順2を選択する 手順1のオペレーティングシステムを環境のOSを選択します。 手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。 3) 提供オプションを任意で選択する インストールで追加のソフトウェアを入れるかの提供オプションがありますが、任意です。提供オプションはチェックオフでもインストール可能です。 4) 「インストール」ボタンからインストーラをダウンロード 「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。 あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</desctext>
+          <desctext>Chrome 系ブラウザ(Ancia Chrome 含む)では、初期状態では Flash が再生できないものがあります。
+Flash の再生には PPAPI版 の Flash インストールが必要であり、手順をまとめておきます(記載日：2016年4月9日)。
+1) Adobe Flash Player インストールのページを開く
+https://get.adobe.com/flashplayer/otherversions/ を適当なブラウザで開きます。
+2) 開いたページで、手順1と手順2を選択する
+手順1のオペレーティングシステムを環境のOSを選択します。
+手順2で「FP 数字 for Opera and Chromium - PPAPI」を選択します。数字は最新の Flash のバージョンが表示されます。
+
+3) 提供オプションを任意で選択する
+インストールで追加のソフトウェアを入れるかの提供オプションがありますが、任意です。提供オプションはチェックオフでもインストール可能です。
+
+4) 「インストール」ボタンからインストーラをダウンロード
+「インストール」ボタンからインストーラがダウンロードできます。2016年4月9日では、flashplayer21pp_xa_install.exe がダウンロードファイルでした。
+
+あとはダウンロードしたインストーラを実行すれば、PPAPI版 Flash のインストールは完了です。インストールでOSの再起動は不要でした。ブラウザの再起動は必要です。</desctext>
           <eyecatch>http://blog.anciasoft.jp/img/flash.png</eyecatch>
           <datetimeUnix>1460214000</datetimeUnix>
         </item>

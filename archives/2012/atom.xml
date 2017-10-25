@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ウェブブラウザ開発ブログ </title>
+    <link>http://blog.anciasoft.jp/archives/2012/</link>
+    <language>ja-jp</language>
+    <author></author>
+    <rights>Copyright (C) 2017 y-kurimoto.</rights>
+    <updated>2012-10-18 00:00:00 &#43;0900 JST</updated>
+
+    
+      
+        <item>
+          <title>WebKitでのgdi&#43;&#43;対応について(MacTypeの使用をおすすめ)</title>
+          <link>http://blog.anciasoft.jp/post/webkitdgimactyp/</link>
+          <pubDate>2012-10-18 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/webkitdgimactyp/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0260&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/AnciaChrome026.7z&#34;&gt;download(AnciaChrome026)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Webkit版を更新しています。gdi++対応は含めず、今後も対応することはありません。gdi++で表示すると表示がおかしくなります。ですが、gdi++より高機能なMacTypeを使用するとちゃんと表示できます(@akkie2さんから情報を頂きました。ありがとうございます)。画像はXpでMacTypeで表示したものです。&lt;/p&gt;
+
+&lt;p&gt;・MacTypeの情報&lt;br /&gt;
+&lt;a href=&#34;http://www.google.co.jp/search?hl=ja&amp;amp;as_qdr=y15&amp;amp;lr=lang_ja&amp;amp;num=100&amp;amp;q=mactype&#34;&gt;mactype - Google 検索&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://did2memo.net/2012/04/01/mactype-install-settings/&#34;&gt;gdi++Heliumを越えた（？）と噂のMacTypeをインストールしてみた | 情報科学屋さんを目指す人のメモ&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.sunabox.net/2012/05/mactype.html&#34;&gt;Mactypeを導入してみました。 - Sunabox&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;インストーラは日本語じゃないです。ほかの画面は日本語化されているようです。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download(AnciaChrome026)
+Webkit版を更新しています。gdi++対応は含めず、今後も対応することはありません。gdi++で表示すると表示がおかしくなります。ですが、gdi++より高機能なMacTypeを使用するとちゃんと表示できます(@akkie2さんから情報を頂きました。ありがとうございます)。画像はXpでMacTypeで表示したものです。
+・MacTypeの情報
+mactype - Google 検索
+gdi++Heliumを越えた（？）と噂のMacTypeをインストールしてみた | 情報科学屋さんを目指す人のメモ
+Mactypeを導入してみました。 - Sunabox
+インストーラは日本語じゃないです。ほかの画面は日本語化されているようです。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/MacType.png</eyecatch>
+          <datetimeUnix>1350486000</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ExplorerBarPlus 1.4.7</title>
+          <link>http://blog.anciasoft.jp/post/explorerbarplus-44/</link>
+          <pubDate>2012-09-05 00:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/explorerbarplus-44/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/?ExplorerBarPlus%2F%B9%B9%BF%B7%CD%FA%CE%F2#t1470&#34;&gt;更新内容&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;http://www.egrath.net/download/ebplus147.zip&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?ExplorerBarPlus&#34;&gt;ExplorerBarPlus&lt;/a&gt;のVersion1.4.7を出しています。SimpleFavPanelでProxy設定を可能にしています。Proxy設定は各SimpleFavPanel毎に可能です。「次のアドレスにはプロキシを使用しない」には、セミコロン区切りで複数指定できます。&lt;/p&gt;
+
+&lt;p&gt;あと気付かれない更新としてアイテムの追加でURLをFeedURLにコピーできるようにしています(▼ボタン)。ChromeBookmarkが正しく読み込めないバグも修正しています。&lt;br /&gt;
+&lt;img alt=&#34;ebp147_add.png&#34; src=&#34;http://blog.anciasoft.jp/img/ebp147_add.png&#34; width=&#34;584&#34; height=&#34;291&#34;  /&gt;&lt;/p&gt;
+</description>
+          <desctext>更新内容&amp;nbsp;&amp;nbsp;ダウンロード
+ExplorerBarPlusのVersion1.4.7を出しています。SimpleFavPanelでProxy設定を可能にしています。Proxy設定は各SimpleFavPanel毎に可能です。「次のアドレスにはプロキシを使用しない」には、セミコロン区切りで複数指定できます。
+あと気付かれない更新としてアイテムの追加でURLをFeedURLにコピーできるようにしています(▼ボタン)。ChromeBookmarkが正しく読み込めないバグも修正しています。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/ebp_proxy.png</eyecatch>
+          <datetimeUnix>1346770800</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>ホイールクリックでの貼り付け移動、貼り付け検索</title>
+          <link>http://blog.anciasoft.jp/post/post-58/</link>
+          <pubDate>2012-04-20 08:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/post-58/</guid>
+          <description>&lt;p&gt;&lt;img alt=&#34;wheel_paste_and_go.png&#34; src=&#34;http://blog.anciasoft.jp/img/wheel_paste_and_go.png&#34; width=&#34;599&#34; height=&#34;89&#34;  /&gt;&lt;/p&gt;
+
+&lt;p&gt;Anciaでは、&lt;br /&gt;
+&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;アドレスバーをホイールクリックすると、クリップボードテキストで貼り付け移動(新規タブ)&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;検索バーでホイールクリックすると、クリップボードテキストで貼り付け検索&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;&lt;br /&gt;
+を行うことが出来ます。アドレスバーでの貼り付け移動は、補完込みでの貼り付け移動です。クリップボードの内容が「ttp://www.google.co.jp/」のときは、httpを補完し新規タブ、「aaa &lt;a href=&#34;http://www.google.co.jp/&#34;&gt;http://www.google.co.jp/&lt;/a&gt;   bbbb」の場合は、&lt;a href=&#34;http://www.google.co.jp/&#34;&gt;http://www.google.co.jp/&lt;/a&gt; だけを取り出して、貼り付け新規タブできます。実際は、ホイール移動は、スクリプトのreserved\pasteGoNew.jsを実行しているだけです。&lt;/p&gt;
+
+&lt;p&gt;自身では結構使う機能です。どうもこの機能、更新履歴にしか書いてないようで、存在が知られていないかも、ということで記事にしました。&lt;/p&gt;
+</description>
+          <desctext>Anciaでは、
+
+アドレスバーをホイールクリックすると、クリップボードテキストで貼り付け移動(新規タブ)
+検索バーでホイールクリックすると、クリップボードテキストで貼り付け検索
+
+を行うことが出来ます。アドレスバーでの貼り付け移動は、補完込みでの貼り付け移動です。クリップボードの内容が「ttp://www.google.co.jp/」のときは、httpを補完し新規タブ、「aaa http://www.google.co.jp/ bbbb」の場合は、http://www.google.co.jp/ だけを取り出して、貼り付け新規タブできます。実際は、ホイール移動は、スクリプトのreserved\pasteGoNew.jsを実行しているだけです。
+自身では結構使う機能です。どうもこの機能、更新履歴にしか書いてないようで、存在が知られていないかも、ということで記事にしました。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/default.jpg</eyecatch>
+          <datetimeUnix>1334876400</datetimeUnix>
+        </item>
+      
+    
+      
+        <item>
+          <title>WebKit Basic認証対応</title>
+          <link>http://blog.anciasoft.jp/post/webkit-basic/</link>
+          <pubDate>2012-02-13 08:00:00 &#43;0900 JST</pubDate>
+          <author></author>
+          <guid>http://blog.anciasoft.jp/post/webkit-basic/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.egrath.net/index.php?Ancia%2F%B3%AB%C8%AF%C8%C7%B9%B9%BF%B7%CD%FA%CE%F2#t14500Beta&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/Ancia145.zip&#34;&gt;download(Ancia145)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.egrath.net/index.php?AnciaChrome#t0170&#34;&gt;更新履歴&lt;/a&gt; &lt;a href=&#34;http://www.egrath.net/download/AnciaChrome017.7z&#34;&gt;download(AnciaChrome017)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;WebKitでBasic認証に対応しています。「次回から認証入力を省略」チェックで、ダイアログも出ずに自動で認証します。もし認証エラーとなった場合は、再度アクセスすることで、自動認証はクリアされ、ダイアログが表示されます。WebKitは他、インライン検索に対応しています(ショートカットキーはCTRL+F、または、CTRL+I)。&lt;/p&gt;
+</description>
+          <desctext>更新履歴 download(Ancia145)
+更新履歴 download(AnciaChrome017)
+WebKitでBasic認証に対応しています。「次回から認証入力を省略」チェックで、ダイアログも出ずに自動で認証します。もし認証エラーとなった場合は、再度アクセスすることで、自動認証はクリアされ、ダイアログが表示されます。WebKitは他、インライン検索に対応しています(ショートカットキーはCTRL+F、または、CTRL+I)。</desctext>
+          <eyecatch>http://blog.anciasoft.jp/img/webkit_auth.png</eyecatch>
+          <datetimeUnix>1329087600</datetimeUnix>
+        </item>
+      
+    
+
+  </channel>
+</rss>
