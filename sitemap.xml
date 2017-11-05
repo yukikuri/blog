@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.anciasoft.jp/post/ancia-chrome067/</loc>
+    <lastmod>2017-11-05T17:00:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.anciasoft.jp/post/ancia19132/</loc>
+    <lastmod>2017-11-05T17:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.anciasoft.jp/post/ancia-chrome066/</loc>
     <lastmod>2017-10-23T23:00:01+09:00</lastmod>
   </url>
@@ -1341,7 +1351,7 @@
   
   <url>
     <loc>http://blog.anciasoft.jp/archives/2017/</loc>
-    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <lastmod>2017-11-05T17:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1377,13 +1387,13 @@
   
   <url>
     <loc>http://blog.anciasoft.jp/tags/online-soft/</loc>
-    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <lastmod>2017-11-05T17:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.anciasoft.jp/post/</loc>
-    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <lastmod>2017-11-05T17:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1395,7 +1405,7 @@
   
   <url>
     <loc>http://blog.anciasoft.jp/tags/release/</loc>
-    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <lastmod>2017-11-05T17:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1412,7 +1422,7 @@
   
   <url>
     <loc>http://blog.anciasoft.jp/</loc>
-    <lastmod>2017-10-23T23:00:01+09:00</lastmod>
+    <lastmod>2017-11-05T17:00:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
